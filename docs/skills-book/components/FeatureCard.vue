@@ -4,47 +4,43 @@ defineProps<{
   title: string
   desc: string
   command?: string
+  delay?: number
 }>()
 </script>
 
 <template>
-  <div class="feature-card">
-    <div class="card-icon">{{ icon }}</div>
+  <div class="spotlight-card" :class="'reveal reveal-delay-' + Math.min((delay || 0) + 1, 6)">
+    <div class="feature-icon-ring" v-html="icon"></div>
     <h4 class="card-title">{{ title }}</h4>
     <p class="card-desc">{{ desc }}</p>
-    <code v-if="command" class="card-command">{{ command }}</code>
+    <code v-if="command" class="command-block">{{ command }}</code>
   </div>
 </template>
 
 <style lang="scss" scoped>
-.feature-card {
-  background: var(--vp-c-bg-soft);
-  border: 1px solid var(--vp-c-divider);
-  border-radius: 12px;
-  padding: 24px;
+.feature-icon-ring {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: var(--vp-c-bg-mute);
   display: flex;
-  flex-direction: column;
-  gap: 12px;
-  transition: all 0.25s ease;
-  height: 100%;
-
-  &:hover {
-    border-color: var(--vp-c-brand);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    transform: translateY(-2px);
-  }
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-bottom: 14px;
 }
 
-.card-icon {
-  font-size: 32px;
-  line-height: 1;
+.feature-icon-ring :deep(svg) {
+  width: 20px;
+  height: 20px;
 }
 
 .card-title {
-  margin: 0;
-  font-size: 16px;
+  margin: 0 0 6px;
+  font-size: 15px;
   font-weight: 600;
   color: var(--vp-c-text-1);
+  letter-spacing: -0.01em;
 }
 
 .card-desc {
@@ -53,17 +49,5 @@ defineProps<{
   line-height: 1.6;
   color: var(--vp-c-text-2);
   flex-grow: 1;
-}
-
-.card-command {
-  display: block;
-  background: var(--vp-c-bg);
-  border: 1px solid var(--vp-c-divider);
-  border-radius: 6px;
-  padding: 8px 12px;
-  font-size: 12px;
-  font-family: var(--vp-font-family-mono);
-  color: var(--vp-c-brand);
-  margin-top: auto;
 }
 </style>

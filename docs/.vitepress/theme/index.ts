@@ -12,4 +12,24 @@ export default Object.assign({}, Theme, {
     }
     return h(Theme.Layout, props)
   },
+  enhanceApp({ app, router }) {
+    router.onAfterPageChanged = () => {
+      setTimeout(initSpotlight, 50)
+    }
+    if (typeof window !== 'undefined') {
+      requestAnimationFrame(initSpotlight)
+    }
+  },
 })
+
+function initSpotlight() {
+  if (typeof window === 'undefined') return
+  const cards = document.querySelectorAll('.spotlight-card')
+  cards.forEach((card) => {
+    card.addEventListener('mousemove', (e: MouseEvent) => {
+      const rect = card.getBoundingClientRect()
+      ;(card as HTMLElement).style.setProperty('--mouse-x', `${e.clientX - rect.left}px`)
+      ;(card as HTMLElement).style.setProperty('--mouse-y', `${e.clientY - rect.top}px`)
+    })
+  })
+}

@@ -5,15 +5,16 @@ outline: [2, 3]
 
 <script setup>
 import FeatureSection from './components/FeatureSection.vue'
-
+import TerminalIcon from './components/TerminalIcon.vue'
+import QuickStart from './components/QuickStart.vue'
 import { FEATURE_DATA } from './data'
 </script>
 
-<div class="page-header">
+<div class="page-header-left">
 
 # Skills Book
 
-<p class="subtitle">A skill management tool for Claude Code — browse, search, and install 1500+ community skills with one click</p>
+<p class="subtitle">A skill management tool for Claude Code — browse, search, and install 1500+ community skills with one click.</p>
 
 <div class="badge-group">
 <span class="badge">v0.1.0</span>
@@ -31,22 +32,10 @@ import { FEATURE_DATA } from './data'
   :items="items"
 />
 
-<br />
-
-::: tip Quick Start
-
-```bash
-# First time: fetch skills index
-node scripts/skills-book.mjs fetch --force
-
-# Browse categories
-node scripts/skills-book.mjs categories
-
-# Search for a skill
-node scripts/skills-book.mjs search "testing"
-
-# Install a skill
-node scripts/skills-book.mjs install "stripe/reasoning"
-```
-
-:::
+<div class="quick-start-block">
+  <p class="tip-title">
+    <TerminalIcon />
+    Quick Start
+  </p>
+  <QuickStart />
+</div>

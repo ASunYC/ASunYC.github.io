@@ -5,10 +5,7 @@ layoutClass: 'm-hub-layout'
 hero:
   name: ASunYC
   text: Project Hub
-  tagline: Showcasing open-source projects and developer tools
-  image:
-    src: /logo.jpg
-    alt: ASunYC
+  tagline: Open-source projects and developer tools
   actions:
     - text: Explore Projects
       link: '#projects'
@@ -22,16 +19,19 @@ import { PROJECTS } from './projects/data'
 </script>
 
 <div id="projects" class="project-grid-wrapper">
+  <p class="section-label">Work</p>
   <h2 class="section-title">Projects</h2>
-  <div class="project-grid">
+  <p class="section-desc">Selected open-source projects and tools built for developers.</p>
+
+  <div class="project-grid" style="margin-top: 24px;">
     <a
-      v-for="project in PROJECTS"
+      v-for="(project, i) in PROJECTS"
       :key="project.title"
       :href="project.link"
       class="project-card-link"
     >
-      <div class="project-card">
-        <div class="project-icon">{{ project.icon }}</div>
+      <div class="spotlight-card reveal" :class="'reveal-delay-' + (i + 1)">
+        <div class="project-icon-ring" v-html="project.iconSvg"></div>
         <h3 class="project-title">{{ project.title }}</h3>
         <p class="project-details">{{ project.details }}</p>
       </div>
@@ -41,22 +41,38 @@ import { PROJECTS } from './projects/data'
 
 <style scoped>
 .project-grid-wrapper {
-  max-width: 960px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 24px 64px;
+  padding: 0 32px 80px;
+}
+
+.section-label {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--vp-c-brand);
+  margin: 0 0 8px;
 }
 
 .section-title {
   font-size: 24px;
   font-weight: 600;
   color: var(--vp-c-text-1);
-  margin-bottom: 24px;
-  text-align: center;
+  margin: 0 0 8px;
+}
+
+.section-desc {
+  font-size: 15px;
+  color: var(--vp-c-text-2);
+  line-height: 1.6;
+  max-width: 65ch;
+  margin: 0;
 }
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 20px;
 }
 
@@ -65,34 +81,26 @@ import { PROJECTS } from './projects/data'
   color: inherit;
 }
 
-.project-card {
-  background: var(--vp-c-bg-soft);
-  border: 1px solid var(--vp-c-divider);
+.project-icon-ring {
+  width: 48px;
+  height: 48px;
   border-radius: 12px;
-  padding: 32px 24px;
+  background: var(--vp-c-bg-mute);
   display: flex;
-  flex-direction: column;
   align-items: center;
-  text-align: center;
-  gap: 12px;
-  transition: all 0.25s ease;
-  height: 100%;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-bottom: 16px;
 }
 
-.project-card-link:hover .project-card {
-  border-color: var(--vp-c-brand);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  transform: translateY(-4px);
-}
-
-.project-icon {
-  font-size: 48px;
-  line-height: 1;
+.project-icon-ring :deep(svg) {
+  width: 24px;
+  height: 24px;
 }
 
 .project-title {
-  margin: 0;
-  font-size: 20px;
+  margin: 0 0 8px;
+  font-size: 18px;
   font-weight: 600;
   color: var(--vp-c-text-1);
 }
@@ -107,6 +115,9 @@ import { PROJECTS } from './projects/data'
 @media (max-width: 640px) {
   .project-grid {
     grid-template-columns: 1fr;
+  }
+  .project-grid-wrapper {
+    padding: 0 16px 48px;
   }
 }
 </style>

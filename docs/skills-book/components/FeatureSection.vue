@@ -14,18 +14,16 @@ const formatTitle = computed(() => slugify(props.title))
 
 <template>
   <section class="feature-section">
-    <h2 v-if="title" :id="formatTitle" tabindex="-1">
-      {{ title }}
-      <a class="header-anchor" :href="`#${formatTitle}`" aria-hidden="true">#</a>
-    </h2>
+    <h2 v-if="title" :id="formatTitle" tabindex="-1">{{ title }}</h2>
     <div class="feature-grid">
       <FeatureCard
-        v-for="{ icon, title: cardTitle, desc, command } in items"
-        :key="cardTitle"
-        :icon="icon"
-        :title="cardTitle"
-        :desc="desc"
-        :command="command"
+        v-for="(item, i) in items"
+        :key="item.title"
+        :icon="item.icon"
+        :title="item.title"
+        :desc="item.desc"
+        :command="item.command"
+        :delay="i"
       />
     </div>
   </section>
@@ -33,39 +31,33 @@ const formatTitle = computed(() => slugify(props.title))
 
 <style lang="scss" scoped>
 .feature-section {
-  margin-bottom: 32px;
+  margin-bottom: 40px;
 
   h2 {
-    margin-top: 24px;
-    margin-bottom: 16px;
-    font-size: 20px;
+    margin: 32px 0 16px;
+    font-size: 18px;
     font-weight: 600;
     color: var(--vp-c-text-1);
+    letter-spacing: -0.01em;
   }
 }
 
 .feature-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 16px;
-}
-
-@media (min-width: 640px) {
-  .feature-grid {
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  }
 }
 
 @media (min-width: 960px) {
   .feature-grid {
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
   }
 }
 
-@media (min-width: 1440px) {
+@media (max-width: 640px) {
   .feature-grid {
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: 1fr;
   }
 }
 </style>
