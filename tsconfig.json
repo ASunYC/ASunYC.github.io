@@ -1,0 +1,8 @@
+{
+  "include": [".vitepress/**/*"],
+  "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "target": "ESNext"
+  }
+}

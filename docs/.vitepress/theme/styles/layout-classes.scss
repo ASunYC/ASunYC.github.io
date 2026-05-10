@@ -1,0 +1,76 @@
+/* Hub homepage layout */
+.m-hub-layout {
+  .content {
+    padding-bottom: 32px;
+    .VPDocFooter {
+      display: none;
+    }
+  }
+}
+
+/* Skills Book page layout */
+.m-skills-book-layout {
+  --vp-layout-max-width: 1200px;
+
+  .container {
+    max-width: var(--vp-layout-max-width) !important;
+  }
+  .content-container,
+  .content {
+    max-width: 100% !important;
+  }
+
+  .content {
+    padding-bottom: 32px;
+    .VPDocFooter {
+      display: none;
+    }
+  }
+
+  .vp-doc h2 {
+    margin-top: 24px;
+  }
+
+  .page-header {
+    text-align: center;
+    padding: 40px 0 32px;
+  }
+
+  .page-header h1 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--vp-c-brand), var(--vp-c-brand-light));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .page-header .subtitle {
+    margin: 12px 0 0;
+    font-size: 16px;
+    color: var(--vp-c-text-2);
+    line-height: 1.6;
+  }
+
+  .page-header .badge-group {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+  }
+
+  .page-header .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    background: var(--vp-c-bg-soft);
+    color: var(--vp-c-text-2);
+    border: 1px solid var(--vp-c-divider);
+  }
+}
