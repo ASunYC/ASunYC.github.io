@@ -32,10 +32,10 @@ const stats = [
       <img class="hero-art" src="/logo.jpg" alt="ASunYC avatar" />
       <div class="hero-content">
         <p class="eyebrow">ASunYC / Project Hub</p>
-        <h1>Building useful AI tools with a craftsman's notebook.</h1>
+        <h1>AI engineering tools for modern developer workflows.</h1>
         <p class="hero-copy">
-          A personal homepage for open-source projects, agent skills, engineering notes,
-          and experiments that turn everyday development into a smoother loop.
+          A project hub for open-source systems, agent skills, technical notes,
+          and workflow experiments focused on reliable software delivery.
         </p>
         <div class="hero-actions">
           <a class="primary-action" href="/skills-book/">Explore Skills Book</a>
