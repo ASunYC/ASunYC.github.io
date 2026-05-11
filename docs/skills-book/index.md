@@ -5,16 +5,16 @@ outline: [2, 3]
 
 <script setup>
 import FeatureSection from './components/FeatureSection.vue'
-import TerminalIcon from './components/TerminalIcon.vue'
-import QuickStart from './components/QuickStart.vue'
-import { FEATURE_DATA } from './data'
+import CliSupportStrip from './components/CliSupportStrip.vue'
+import QuicklyUse from './components/QuicklyUse.vue'
+import { CLI_SUPPORT, FEATURE_DATA, QUICK_USE_STEPS } from './data'
 </script>
 
 <div class="page-header-left">
 
 # Skills Book
 
-<p class="subtitle">A skill management tool for Claude Code — browse, search, and install 1500+ community skills with one click.</p>
+<p class="subtitle">A cross-agent skill marketplace CLI — browse, search, rank, and install 1500+ community skills from one local tool.</p>
 
 <div class="badge-group">
 <span class="badge">v0.1.0</span>
@@ -25,17 +25,13 @@ import { FEATURE_DATA } from './data'
 
 </div>
 
+<CliSupportStrip :items="CLI_SUPPORT" />
+
+<QuicklyUse :steps="QUICK_USE_STEPS" />
+
 <FeatureSection
   v-for="{ title, items } in FEATURE_DATA"
   :key="title"
   :title="title"
   :items="items"
 />
-
-<div class="quick-start-block">
-  <p class="tip-title">
-    <TerminalIcon />
-    Quick Start
-  </p>
-  <QuickStart />
-</div>

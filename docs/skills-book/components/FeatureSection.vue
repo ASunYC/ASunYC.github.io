@@ -19,7 +19,7 @@ const formatTitle = computed(() => slugify(props.title))
       <FeatureCard
         v-for="(item, i) in items"
         :key="item.title"
-        :icon="item.icon"
+        :icon="item.iconSvg"
         :title="item.title"
         :desc="item.desc"
         :command="item.command"

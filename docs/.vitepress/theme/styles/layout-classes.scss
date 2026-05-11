@@ -58,15 +58,19 @@
 .m-skills-book-layout {
   --vp-layout-max-width: 1200px;
 
+  overflow-x: clip;
+
   .container {
     max-width: var(--vp-layout-max-width) !important;
   }
   .content-container,
   .content {
     max-width: 100% !important;
+    min-width: 0;
   }
 
   .content {
+    min-width: 0;
     padding-bottom: 32px;
     .VPDocFooter {
       display: none;
@@ -75,6 +79,44 @@
 
   .vp-doc h2 {
     margin-top: 24px;
+  }
+
+  @media (max-width: 640px) {
+    .VPDoc {
+      padding-left: 24px !important;
+      padding-right: 24px !important;
+    }
+
+    .container {
+      width: 100% !important;
+      max-width: 100% !important;
+      min-width: 0 !important;
+      padding: 0 !important;
+    }
+
+    .VPDoc,
+    .vp-doc,
+    .content-container,
+    .content {
+      width: 100% !important;
+      max-width: 100% !important;
+      overflow-x: clip;
+    }
+
+    .page-header-left,
+    .cli-section,
+    .quickly-use,
+    .feature-section {
+      width: calc(100vw - 48px) !important;
+      max-width: calc(100vw - 48px) !important;
+    }
+
+    .page-header-left h1,
+    .page-header-left .subtitle,
+    .page-header-left .badge-group {
+      width: calc(100vw - 64px) !important;
+      max-width: calc(100vw - 64px) !important;
+    }
   }
 }
 

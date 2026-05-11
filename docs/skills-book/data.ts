@@ -10,6 +10,18 @@ export interface FeatureSection {
   items: FeatureItem[]
 }
 
+export interface CliSupportItem {
+  name: string
+  status: string
+  desc: string
+}
+
+export interface QuickUseStep {
+  title: string
+  desc: string
+  code?: string
+}
+
 // SVG icon helpers
 const icons = {
   layers: `<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>`,
@@ -27,6 +39,69 @@ const icons = {
   terminal: `<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>`,
   package: `<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="16.5" y1="9.4" x2="7.5" y2="4.21"/><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>`,
 }
+
+export const CLI_SUPPORT: CliSupportItem[] = [
+  {
+    name: 'Claude Code',
+    status: 'Default target',
+    desc: 'Install Skills Book as a Claude Code skill and let Claude run search, browse, install, and update commands.',
+  },
+  {
+    name: 'OpenAI Codex',
+    status: 'SKILL.md compatible',
+    desc: 'Use the same skill package in Codex-compatible skill directories and run the Node CLI from the workspace.',
+  },
+  {
+    name: 'OpenCode',
+    status: 'SKILL.md compatible',
+    desc: 'Load the skill instructions, then ask OpenCode to search the index or install a selected skill.',
+  },
+  {
+    name: 'Gemini CLI',
+    status: 'Agent compatible',
+    desc: 'Works as an instruction-plus-command package for Gemini CLI style agent workflows.',
+  },
+  {
+    name: 'Cursor',
+    status: 'Agent compatible',
+    desc: 'Keep the repository in your agent context and call the zero-dependency CLI for discovery and install tasks.',
+  },
+  {
+    name: 'Windsurf',
+    status: 'Agent compatible',
+    desc: 'Use Skills Book as a local project utility for browsing agent skills and copying install commands.',
+  },
+  {
+    name: 'Cline',
+    status: 'Agent compatible',
+    desc: 'Expose the SKILL.md and scripts folder to Cline so it can operate the marketplace commands.',
+  },
+  {
+    name: 'Roo Code',
+    status: 'Agent compatible',
+    desc: 'Use the CLI directly from the repository or mirror the skill into Roo-compatible project memory.',
+  },
+]
+
+export const QUICK_USE_STEPS: QuickUseStep[] = [
+  {
+    title: 'Install Skills Book into Claude Code',
+    desc: 'Clone the repository and copy it into Claude Code skills directory.',
+    code: `git clone https://github.com/ASunYC/skills-book.git
+cd skills-book
+cp -r . ~/.claude/skills/skills-book`,
+  },
+  {
+    title: 'Verify the CLI',
+    desc: 'Confirm Node.js 22+ can run the zero-dependency script.',
+    code: 'node ~/.claude/skills/skills-book/scripts/skills-book.mjs help',
+  },
+  {
+    title: 'Ask Claude Code to use it',
+    desc: 'Claude Code can now invoke Skills Book when you ask for skill discovery or installation.',
+    code: 'Use skills-book to search for testing skills, show the top results, and install the best fit.',
+  },
+]
 
 export const FEATURE_DATA: FeatureSection[] = [
   {
