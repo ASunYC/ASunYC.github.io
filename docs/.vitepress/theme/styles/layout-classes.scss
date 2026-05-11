@@ -11,8 +11,43 @@
 
 /* Hub homepage layout */
 .m-hub-layout {
+  .VPContent {
+    padding-top: 0;
+  }
+
+  .VPDoc {
+    padding: 0;
+
+    .container {
+      max-width: none !important;
+    }
+
+    .aside {
+      display: none;
+    }
+  }
+
+  .VPDocAsideOutline {
+    display: none !important;
+  }
+
+  .VPLocalNav {
+    display: none !important;
+  }
+
+  .vp-doc {
+    max-width: none;
+    padding: 0 !important;
+  }
+
+  .content-container,
   .content {
-    padding-bottom: 32px;
+    max-width: none !important;
+  }
+
+  .content {
+    padding: 0 0 32px !important;
+
     .VPDocFooter {
       display: none;
     }
