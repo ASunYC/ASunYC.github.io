@@ -1,9 +1,20 @@
 <script setup lang="ts">
+import { computed } from 'vue'
 import type { CliSupportItem } from '../data'
 
-defineProps<{
+const props = defineProps<{
   items: CliSupportItem[]
 }>()
+
+const leftItems = computed(() => [...props.items, ...props.items])
+const rightItems = computed(() => {
+  const reversed = [...props.items].reverse()
+  return [...reversed, ...reversed]
+})
+
+function logoClass(name: string) {
+  return `logo-${name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`
+}
 </script>
 
 <template>
@@ -18,12 +29,32 @@ defineProps<{
       </p>
     </div>
 
-    <div class="cli-rail" tabindex="0" aria-label="Supported CLI tools">
-      <article v-for="item in items" :key="item.name" class="cli-card">
-        <span>{{ item.status }}</span>
-        <h3>{{ item.name }}</h3>
-        <p>{{ item.desc }}</p>
-      </article>
+    <div class="logo-marquee" aria-label="Supported CLI tools">
+      <div class="marquee-row">
+        <div class="marquee-track marquee-left">
+          <article
+            v-for="(item, index) in leftItems"
+            :key="`${item.name}-left-${index}`"
+            class="logo-tile"
+          >
+            <span class="logo-mark" :class="logoClass(item.name)">{{ item.mark }}</span>
+            <span class="logo-name">{{ item.logo }}</span>
+          </article>
+        </div>
+      </div>
+
+      <div class="marquee-row">
+        <div class="marquee-track marquee-right">
+          <article
+            v-for="(item, index) in rightItems"
+            :key="`${item.name}-right-${index}`"
+            class="logo-tile logo-tile-muted"
+          >
+            <span class="logo-mark" :class="logoClass(item.name)">{{ item.mark }}</span>
+            <span class="logo-name">{{ item.logo }}</span>
+          </article>
+        </div>
+      </div>
     </div>
   </section>
 </template>
@@ -68,86 +99,196 @@ defineProps<{
   overflow-wrap: anywhere;
 }
 
-.cli-rail {
+.logo-marquee {
+  position: relative;
   display: grid;
-  grid-auto-columns: minmax(240px, 290px);
-  grid-auto-flow: column;
   gap: 14px;
-  margin-top: 22px;
-  overflow-x: auto;
-  overscroll-behavior-x: contain;
-  padding: 2px 2px 14px;
-  scroll-snap-type: x proximity;
-  scrollbar-color: var(--vp-c-brand) var(--vp-c-bg-soft);
-  width: 100%;
-  max-width: 100%;
+  margin-top: 24px;
+  overflow: hidden;
+  padding: 2px 0;
 }
 
-.cli-rail::-webkit-scrollbar {
-  height: 10px;
+.logo-marquee::before,
+.logo-marquee::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  width: 92px;
+  height: 100%;
+  pointer-events: none;
 }
 
-.cli-rail::-webkit-scrollbar-track {
-  background: var(--vp-c-bg-soft);
-  border-radius: 999px;
+.logo-marquee::before {
+  left: 0;
+  background: linear-gradient(90deg, var(--vp-c-bg) 0%, transparent 100%);
 }
 
-.cli-rail::-webkit-scrollbar-thumb {
-  background: var(--vp-c-brand);
-  border-radius: 999px;
+.logo-marquee::after {
+  right: 0;
+  background: linear-gradient(270deg, var(--vp-c-bg) 0%, transparent 100%);
 }
 
-.cli-card {
-  min-height: 178px;
-  scroll-snap-align: start;
+.marquee-row {
+  overflow: hidden;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  gap: 14px;
+  will-change: transform;
+}
+
+.marquee-left {
+  animation: marquee-left 34s linear infinite;
+}
+
+.marquee-right {
+  animation: marquee-right 38s linear infinite;
+}
+
+.logo-marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+.logo-tile {
+  display: inline-flex;
+  width: 220px;
+  min-height: 84px;
+  align-items: center;
+  gap: 14px;
   border: 1px solid var(--vp-c-divider);
   border-radius: 8px;
   background: var(--vp-c-bg-soft);
-  padding: 20px;
+  padding: 16px 18px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.02);
 }
 
-.cli-card span {
-  display: inline-flex;
-  align-items: center;
-  min-height: 24px;
-  border: 1px solid rgba(var(--sb-accent-rgb), 0.22);
-  border-radius: 999px;
-  padding: 0 9px;
-  color: var(--vp-c-brand);
-  background: rgba(var(--sb-accent-rgb), 0.08);
-  font-size: 11px;
-  font-weight: 650;
+.logo-tile-muted {
+  opacity: 0.78;
 }
 
-.cli-card h3 {
-  margin: 14px 0 0;
+.logo-mark {
+  display: grid;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  flex: 0 0 auto;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(var(--sb-accent-rgb), 0.2), rgba(132, 149, 255, 0.18));
   color: var(--vp-c-text-1);
-  font-size: 20px;
-  line-height: 1.25;
-  letter-spacing: 0;
+  font-size: 14px;
+  font-weight: 760;
 }
 
-.cli-card p {
-  margin: 10px 0 0;
-  color: var(--vp-c-text-2);
-  font-size: 13px;
-  line-height: 1.65;
+.logo-name {
+  color: var(--vp-c-text-1);
+  font-size: 18px;
+  font-weight: 720;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.logo-claude-code {
+  background: linear-gradient(135deg, #d97745, #fbdfbd);
+  color: #1d1410;
+}
+
+.logo-openai-codex {
+  background: linear-gradient(135deg, #151515, #4d5a55);
+  color: #f6faf7;
+}
+
+.logo-opencode {
+  background: linear-gradient(135deg, #2f6fed, #8dd4ff);
+  color: #07131f;
+}
+
+.logo-gemini-cli {
+  background: linear-gradient(135deg, #7c3aed, #7dd3fc);
+  color: #ffffff;
+}
+
+.logo-cursor {
+  background: linear-gradient(135deg, #f7f7f7, #6f7787);
+  color: #151515;
+}
+
+.logo-windsurf {
+  background: linear-gradient(135deg, #17b7a7, #d8ff7a);
+  color: #061513;
+}
+
+.logo-cline {
+  background: linear-gradient(135deg, #ce5bff, #4f7cff);
+  color: #ffffff;
+}
+
+.logo-roo-code {
+  background: linear-gradient(135deg, #f7c948, #e85d75);
+  color: #1e1012;
+}
+
+@keyframes marquee-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-50% - 7px));
+  }
+}
+
+@keyframes marquee-right {
+  from {
+    transform: translateX(calc(-50% - 7px));
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+  }
 }
 
 @media (max-width: 640px) {
-  .section-heading,
-  .section-heading h2,
-  .section-heading p:not(.section-label) {
-    width: calc(100vw - 64px);
-    max-width: calc(100vw - 64px);
+  .section-heading {
+    max-width: calc(100vw - 96px);
   }
 
   .section-heading h2 {
-    font-size: 22px;
+    max-width: calc(100vw - 96px);
+    font-size: 21px;
   }
 
-  .cli-rail {
-    grid-auto-columns: minmax(240px, 72vw);
+  .section-heading p:not(.section-label) {
+    max-width: calc(100vw - 96px);
+    font-size: 14px;
+  }
+
+  .logo-marquee::before,
+  .logo-marquee::after {
+    width: 38px;
+  }
+
+  .logo-tile {
+    width: 188px;
+    min-height: 72px;
+    padding: 13px 14px;
+  }
+
+  .logo-mark {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+
+  .logo-name {
+    font-size: 16px;
   }
 }
 </style>

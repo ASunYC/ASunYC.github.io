@@ -12,6 +12,8 @@ export interface FeatureSection {
 
 export interface CliSupportItem {
   name: string
+  logo: string
+  mark: string
   status: string
   desc: string
 }
@@ -43,41 +45,57 @@ const icons = {
 export const CLI_SUPPORT: CliSupportItem[] = [
   {
     name: 'Claude Code',
+    logo: 'Claude Code',
+    mark: 'C',
     status: 'Default target',
     desc: 'Install Skills Book as a Claude Code skill and let Claude run search, browse, install, and update commands.',
   },
   {
     name: 'OpenAI Codex',
+    logo: 'OpenAI Codex',
+    mark: 'AI',
     status: 'SKILL.md compatible',
     desc: 'Use the same skill package in Codex-compatible skill directories and run the Node CLI from the workspace.',
   },
   {
     name: 'OpenCode',
+    logo: 'OpenCode',
+    mark: 'OC',
     status: 'SKILL.md compatible',
     desc: 'Load the skill instructions, then ask OpenCode to search the index or install a selected skill.',
   },
   {
     name: 'Gemini CLI',
+    logo: 'Gemini',
+    mark: 'G',
     status: 'Agent compatible',
     desc: 'Works as an instruction-plus-command package for Gemini CLI style agent workflows.',
   },
   {
     name: 'Cursor',
+    logo: 'Cursor',
+    mark: 'Cu',
     status: 'Agent compatible',
     desc: 'Keep the repository in your agent context and call the zero-dependency CLI for discovery and install tasks.',
   },
   {
     name: 'Windsurf',
+    logo: 'Windsurf',
+    mark: 'W',
     status: 'Agent compatible',
     desc: 'Use Skills Book as a local project utility for browsing agent skills and copying install commands.',
   },
   {
     name: 'Cline',
+    logo: 'Cline',
+    mark: 'Cl',
     status: 'Agent compatible',
     desc: 'Expose the SKILL.md and scripts folder to Cline so it can operate the marketplace commands.',
   },
   {
     name: 'Roo Code',
+    logo: 'Roo Code',
+    mark: 'R',
     status: 'Agent compatible',
     desc: 'Use the CLI directly from the repository or mirror the skill into Roo-compatible project memory.',
   },

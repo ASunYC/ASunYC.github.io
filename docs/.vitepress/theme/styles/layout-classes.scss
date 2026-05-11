@@ -114,8 +114,13 @@
     .page-header-left h1,
     .page-header-left .subtitle,
     .page-header-left .badge-group {
-      width: calc(100vw - 64px) !important;
-      max-width: calc(100vw - 64px) !important;
+      width: calc(100vw - 96px) !important;
+      max-width: calc(100vw - 96px) !important;
+    }
+
+    .page-header-left h1,
+    .page-header-left .subtitle {
+      overflow-wrap: anywhere;
     }
   }
 }
