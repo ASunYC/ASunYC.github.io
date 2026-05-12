@@ -6,7 +6,6 @@ const payload = ref(null)
 const activeKey = ref('')
 const loading = ref(true)
 const error = ref('')
-const earthStatus = ref('Initializing globe')
 const earthEl = ref(null)
 const isListOpen = ref(false)
 
@@ -37,7 +36,6 @@ async function loadData() {
 
 async function initEarth() {
   if (!earthEl.value || !payload.value?.locations?.length) {
-    earthStatus.value = 'No mapped skill locations yet'
     return
   }
   try {
@@ -90,9 +88,7 @@ async function initEarth() {
         token: import.meta.env.VITE_METAGL_TOKEN,
         assetsBasePath: '/',
       })
-      earthStatus.value = 'SDK globe ready'
     } catch (sdkError) {
-      earthStatus.value = 'Cesium globe ready'
       console.warn('Metagl SDK initialization fell back to Cesium only:', sdkError)
     }
 
@@ -138,7 +134,6 @@ async function initEarth() {
       duration: 0,
     })
   } catch (earthError) {
-    earthStatus.value = 'List mode'
     console.warn('Globe initialization failed:', earthError)
   }
 }
@@ -194,7 +189,6 @@ onBeforeUnmount(() => {
       <section class="shop-stage">
         <div class="earth-panel">
           <div ref="earthEl" class="earth-canvas" />
-          <div class="earth-status">{{ earthStatus }}</div>
         </div>
 
         <aside class="shop-drawer" v-if="activeLocation">
@@ -319,19 +313,6 @@ onBeforeUnmount(() => {
 .earth-canvas {
   position: absolute;
   inset: 0;
-}
-
-.earth-status {
-  position: absolute;
-  left: 18px;
-  bottom: 18px;
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  border-radius: 999px;
-  padding: 7px 12px;
-  background: rgba(6, 11, 18, 0.72);
-  color: #d9e4f0;
-  font-size: 0.78rem;
-  backdrop-filter: blur(12px);
 }
 
 .shop-drawer {
