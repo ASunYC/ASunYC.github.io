@@ -7,7 +7,8 @@ outline: [2, 3]
 import FeatureSection from './components/FeatureSection.vue'
 import CliSupportStrip from './components/CliSupportStrip.vue'
 import QuicklyUse from './components/QuicklyUse.vue'
-import { CLI_SUPPORT, FEATURE_DATA, QUICK_USE_STEPS } from './data'
+import RecommendedCombos from './components/RecommendedCombos.vue'
+import { CLI_SUPPORT, FEATURE_DATA, QUICK_USE_STEPS, RECOMMENDED_COMBOS } from './data'
 </script>
 
 <div class="page-header-left">
@@ -28,6 +29,8 @@ import { CLI_SUPPORT, FEATURE_DATA, QUICK_USE_STEPS } from './data'
 <CliSupportStrip :items="CLI_SUPPORT" />
 
 <QuicklyUse :steps="QUICK_USE_STEPS" />
+
+<RecommendedCombos :fallback="RECOMMENDED_COMBOS" />
 
 <FeatureSection
   v-for="{ title, items } in FEATURE_DATA"

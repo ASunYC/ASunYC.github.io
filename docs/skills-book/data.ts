@@ -24,6 +24,24 @@ export interface QuickUseStep {
   code?: string
 }
 
+export interface ComboComponent {
+  name: string
+  type: string
+  install: string
+  description: string
+  why?: string
+}
+
+export interface RecommendedCombo {
+  id: string
+  title: string
+  category: string
+  categoryName: string
+  summary: string
+  components: ComboComponent[]
+  workflow?: string[]
+}
+
 // SVG icon helpers
 const icons = {
   layers: `<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>`,
@@ -118,6 +136,44 @@ cp -r . ~/.claude/skills/skills-book`,
     title: 'Ask Claude Code to use it',
     desc: 'Claude Code can now invoke Skills Book when you ask for skill discovery or installation.',
     code: 'Use skills-book to search for testing skills, show the top results, and install the best fit.',
+  },
+]
+
+export const RECOMMENDED_COMBOS: RecommendedCombo[] = [
+  {
+    id: 'coding-research-docs-ui',
+    title: 'Coding Power Combo',
+    category: 'coding',
+    categoryName: 'Coding',
+    summary: 'Search the latest web context, verify official docs, then polish the UI experience before delivery.',
+    components: [
+      {
+        name: 'Firecrawl',
+        type: 'Tool',
+        install: 'npx -y firecrawl-cli@latest init --all --browser',
+        description: 'Search and crawl current web pages before implementation.',
+        why: 'Best for fast-moving APIs, release notes, and product documentation.',
+      },
+      {
+        name: 'Context7',
+        type: 'Tool',
+        install: 'npx ctx7@latest setup',
+        description: 'Fetch current official docs for frameworks, SDKs, and libraries.',
+        why: 'Keeps the agent away from stale API syntax.',
+      },
+      {
+        name: 'UI UX Pro Max',
+        type: 'Skill',
+        install: 'uipro init',
+        description: 'Upgrade frontend output with stronger visual hierarchy and interaction quality.',
+        why: 'Useful when a working page needs to feel like a real product surface.',
+      },
+    ],
+    workflow: [
+      'Use Firecrawl for fresh background research.',
+      'Use Context7 to confirm official API usage.',
+      'Use UI UX Pro Max to refine the final interface.',
+    ],
   },
 ]
 

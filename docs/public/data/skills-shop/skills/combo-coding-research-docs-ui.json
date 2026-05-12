@@ -1,0 +1,25 @@
+{
+  "id": "skill:combo-coding-research-docs-ui",
+  "slug": "combo-coding-research-docs-ui",
+  "name": "coding-research-docs-ui",
+  "displayName": "编码增强组合",
+  "description": "适合需要先检索最新信息、再读取官方文档、最后交付高质量前端体验的编码任务。",
+  "stars": 0,
+  "category": "组合技能 / 编码",
+  "source": "built-in-combo",
+  "url": "skills-book://combo/coding-research-docs-ui",
+  "githubRepo": "",
+  "readme": "# 编码增强组合\n\n> 适合需要先检索最新信息、再读取官方文档、最后交付高质量前端体验的编码任务。\n\n- 分类：编码\n- 适用对象：Claude Code、Codex、OpenCode 等 Agent CLI 用户\n- 组合 ID：coding-research-docs-ui\n\n## 组合内容\n\n### Firecrawl\n\n- 类型：工具\n- 安装：`npx -y firecrawl-cli@latest init --all --browser`\n- 作用：联网搜索和网页抓取工具，让 AI 在开发前先搜索最新技术信息、产品说明和 API 变更。\n- 推荐理由：适合查询 DeepSeek V4 这类快速变化的 API、博客公告、迁移指南和第三方资料。\n- 注意：执行后会自动打开浏览器。\n- 注意：在弹出的授权页面完成授权后，Agent 技能管理中会出现 Firecrawl 相关能力。\n\n### Context7\n\n- 类型：工具\n- 安装：`npx ctx7@latest setup`\n- 作用：技术文档查询工具，让 AI 获取框架、SDK 和库的最新官方文档，减少过时 API 用法。\n- 推荐理由：适合在实现前确认 React、Next.js、Tailwind、Prisma、OpenAI SDK 等库的当前写法。\n- 注意：安装时选择 CLI + Skills。\n- 注意：授权后无需手动获取和输入 API Key。\n\n### UI UX Pro Max\n\n- 类型：技能\n- 安装：`uipro init`\n- 作用：前端体验与视觉质量增强技能包，帮助 Agent 生成更有设计感、更少模板味的页面。\n- 推荐理由：适合把可运行页面提升为更完整的产品界面，减少随意堆卡片、Emoji 或单调配色。\n- 注意：适合作为前端落地阶段的默认美化与交互检查技能。\n\n## 推荐工作流\n\n1. 先用 Firecrawl 检索最新背景、公告和非结构化网页资料。\n2. 再用 Context7 拉取官方文档，确认 API、配置和版本差异。\n3. 最后用 UI UX Pro Max 完成界面体验、视觉层级和响应式质量优化。\n\n## Agent 提示词\n\n```text\n我正在做一个编码任务，请先用 Firecrawl 搜索最新资料，再用 Context7 查询官方文档，最后用 UI UX Pro Max 优化前端体验。\n```\n",
+  "readmeHtml": "<h1>编码增强组合</h1>\n<p>&gt; 适合需要先检索最新信息、再读取官方文档、最后交付高质量前端体验的编码任务。</p>\n<ul>\n<li>分类：编码</li>\n<li>适用对象：Claude Code、Codex、OpenCode 等 Agent CLI 用户</li>\n<li>组合 ID：coding-research-docs-ui</li>\n</ul>\n<h2>组合内容</h2>\n<h3>Firecrawl</h3>\n<ul>\n<li>类型：工具</li>\n<li>安装：<code>npx -y firecrawl-cli@latest init --all --browser</code></li>\n<li>作用：联网搜索和网页抓取工具，让 AI 在开发前先搜索最新技术信息、产品说明和 API 变更。</li>\n<li>推荐理由：适合查询 DeepSeek V4 这类快速变化的 API、博客公告、迁移指南和第三方资料。</li>\n<li>注意：执行后会自动打开浏览器。</li>\n<li>注意：在弹出的授权页面完成授权后，Agent 技能管理中会出现 Firecrawl 相关能力。</li>\n</ul>\n<h3>Context7</h3>\n<ul>\n<li>类型：工具</li>\n<li>安装：<code>npx ctx7@latest setup</code></li>\n<li>作用：技术文档查询工具，让 AI 获取框架、SDK 和库的最新官方文档，减少过时 API 用法。</li>\n<li>推荐理由：适合在实现前确认 React、Next.js、Tailwind、Prisma、OpenAI SDK 等库的当前写法。</li>\n<li>注意：安装时选择 CLI + Skills。</li>\n<li>注意：授权后无需手动获取和输入 API Key。</li>\n</ul>\n<h3>UI UX Pro Max</h3>\n<ul>\n<li>类型：技能</li>\n<li>安装：<code>uipro init</code></li>\n<li>作用：前端体验与视觉质量增强技能包，帮助 Agent 生成更有设计感、更少模板味的页面。</li>\n<li>推荐理由：适合把可运行页面提升为更完整的产品界面，减少随意堆卡片、Emoji 或单调配色。</li>\n<li>注意：适合作为前端落地阶段的默认美化与交互检查技能。</li>\n</ul>\n<h2>推荐工作流</h2>\n<p>1. 先用 Firecrawl 检索最新背景、公告和非结构化网页资料。</p>\n<p>2. 再用 Context7 拉取官方文档，确认 API、配置和版本差异。</p>\n<p>3. 最后用 UI UX Pro Max 完成界面体验、视觉层级和响应式质量优化。</p>\n<h2>Agent 提示词</h2>\n<pre><code>\n我正在做一个编码任务，请先用 Firecrawl 搜索最新资料，再用 Context7 查询官方文档，最后用 UI UX Pro Max 优化前端体验。\n\n</code></pre>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T08:57:27.862Z",
+  "author": {
+    "login": "skills-book",
+    "name": "Skills Book",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/ASunYC/skills-book",
+    "location": ""
+  },
+  "location": null,
+  "related": []
+}

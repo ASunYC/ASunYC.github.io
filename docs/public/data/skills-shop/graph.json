@@ -5,7 +5,7 @@
       "slug": "obra-brainstorming",
       "name": "obra/brainstorming",
       "type": "skill",
-      "stars": 181449,
+      "stars": 186953,
       "category": "Community Skills",
       "author": "obra",
       "location": "berkeley",
@@ -219,6 +219,17 @@
       "author": "obra",
       "location": null,
       "degree": 57
+    },
+    {
+      "id": "skill:combo-coding-research-docs-ui",
+      "slug": "combo-coding-research-docs-ui",
+      "name": "编码增强组合",
+      "type": "skill",
+      "stars": 0,
+      "category": "组合技能 / 编码",
+      "author": "skills-book",
+      "location": null,
+      "degree": 0
     }
   ],
   "edges": [
@@ -4435,10 +4446,17 @@
         "skill:obra-commands",
         "skill:obra-writing-skills"
       ]
+    },
+    {
+      "id": "组合技能-编码",
+      "label": "组合技能 / 编码",
+      "nodeIds": [
+        "skill:combo-coding-research-docs-ui"
+      ]
     }
   ],
   "statistics": {
-    "totalNodes": 20,
+    "totalNodes": 21,
     "totalEdges": 598
   }
 }
