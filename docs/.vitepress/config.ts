@@ -50,9 +50,13 @@ export default defineConfig({
     plugins: [
       viteStaticCopy({
         targets: [
-          { src: `${root}/node_modules/cesium/Build/Cesium/**/*`, dest: 'cesium' },
-          { src: `${root}/node_modules/@metagl/sdk-render/assets/**/*`, dest: 'assets' },
-          { src: `${root}/node_modules/@metagl/sdk-render/resources/**/*`, dest: 'resources' }
+          { src: '../node_modules/cesium/Build/Cesium/Assets/**/*', dest: 'cesium', rename: { stripBase: 4 } },
+          { src: '../node_modules/cesium/Build/Cesium/ThirdParty/**/*', dest: 'cesium', rename: { stripBase: 4 } },
+          { src: '../node_modules/cesium/Build/Cesium/Widgets/**/*', dest: 'cesium', rename: { stripBase: 4 } },
+          { src: '../node_modules/cesium/Build/Cesium/Workers/**/*', dest: 'cesium', rename: { stripBase: 4 } },
+          { src: '../node_modules/@metagl/sdk-render/assets/Images/**/*', dest: 'assets', rename: { stripBase: 4 } },
+          { src: '../node_modules/@metagl/sdk-render/assets/Textures/**/*', dest: 'assets', rename: { stripBase: 4 } },
+          { src: '../node_modules/@metagl/sdk-render/resources/**/*', dest: '.', rename: { stripBase: 3 } }
         ]
       })
     ],

@@ -1,5 +1,5 @@
 <script setup>
-import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
+import { computed, nextTick, onBeforeUnmount, onMounted, ref } from 'vue'
 import 'cesium/Build/Cesium/Widgets/widgets.css'
 
 const payload = ref(null)
@@ -43,11 +43,17 @@ async function initEarth() {
   try {
     const Cesium = await import('cesium')
     window.Cesium = window.Cesium || Cesium
-    const baseLayer = Cesium.ImageryLayer.fromProviderAsync(
-      Cesium.TileMapServiceImageryProvider.fromUrl(
-        Cesium.buildModuleUrl('Assets/Textures/NaturalEarthII')
-      )
-    )
+    const googleTileOptions = {
+      subdomains: ['0', '1', '2', '3'],
+      maximumLevel: 20,
+      tilingScheme: new Cesium.WebMercatorTilingScheme(),
+    }
+    const satelliteProvider = new Cesium.UrlTemplateImageryProvider({
+      ...googleTileOptions,
+      url: 'https://mt{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',
+      credit: 'Google Satellite',
+    })
+    const baseLayer = new Cesium.ImageryLayer(satelliteProvider)
     viewer = new Cesium.Viewer(earthEl.value, {
       animation: false,
       baseLayer,
@@ -62,6 +68,14 @@ async function initEarth() {
       navigationHelpButton: false,
       vrButton: false,
     })
+    const labelLayer = viewer.imageryLayers.addImageryProvider(
+      new Cesium.UrlTemplateImageryProvider({
+        ...googleTileOptions,
+        url: 'https://mt{s}.google.com/vt/lyrs=h&x={x}&y={y}&z={z}',
+        credit: 'Google Labels',
+      })
+    )
+    labelLayer.alpha = 0.88
     viewer.scene.backgroundColor = Cesium.Color.fromCssColorString('#050912')
     viewer.scene.globe.baseColor = Cesium.Color.fromCssColorString('#1f3b4d')
     viewer.scene.skyAtmosphere.show = true
@@ -142,10 +156,11 @@ function focusLocation(location) {
 onMounted(async () => {
   try {
     await loadData()
+    loading.value = false
+    await nextTick()
     await initEarth()
   } catch (loadError) {
     error.value = loadError.message || 'Skills Shop data is not ready yet.'
-  } finally {
     loading.value = false
   }
 })
