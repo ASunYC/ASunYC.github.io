@@ -34,11 +34,11 @@ export default defineConfig({
     resolve: {
       alias: [
         {
-          find: 'Cesium',
+          find: /^Cesium$/,
           replacement: path.resolve(process.cwd(), 'node_modules/cesium/Source/Cesium.js')
         },
         {
-          find: 'cesium',
+          find: /^cesium$/,
           replacement: path.resolve(process.cwd(), 'node_modules/cesium/Source/Cesium.js')
         },
         {

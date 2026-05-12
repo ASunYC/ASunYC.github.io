@@ -1,5 +1,6 @@
 <script setup>
 import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
+import 'cesium/Build/Cesium/Widgets/widgets.css'
 
 const payload = ref(null)
 const activeKey = ref('')
@@ -42,9 +43,15 @@ async function initEarth() {
   try {
     const Cesium = await import('cesium')
     window.Cesium = window.Cesium || Cesium
+    const baseLayer = Cesium.ImageryLayer.fromProviderAsync(
+      Cesium.TileMapServiceImageryProvider.fromUrl(
+        Cesium.buildModuleUrl('Assets/Textures/NaturalEarthII')
+      )
+    )
     viewer = new Cesium.Viewer(earthEl.value, {
       animation: false,
-      baseLayer: false,
+      baseLayer,
+      baseLayerPicker: false,
       fullscreenButton: false,
       geocoder: false,
       homeButton: false,
@@ -55,7 +62,8 @@ async function initEarth() {
       navigationHelpButton: false,
       vrButton: false,
     })
-    viewer.scene.globe.baseColor = Cesium.Color.fromCssColorString('#10222f')
+    viewer.scene.backgroundColor = Cesium.Color.fromCssColorString('#050912')
+    viewer.scene.globe.baseColor = Cesium.Color.fromCssColorString('#1f3b4d')
     viewer.scene.skyAtmosphere.show = true
     viewer.scene.screenSpaceCameraController.minimumZoomDistance = 1200000
     viewer.scene.screenSpaceCameraController.maximumZoomDistance = 25000000
