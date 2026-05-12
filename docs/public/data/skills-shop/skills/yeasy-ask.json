@@ -1,0 +1,89 @@
+{
+  "id": "skill:yeasy-ask",
+  "slug": "yeasy-ask",
+  "name": "ask",
+  "displayName": "yeasy/ask",
+  "description": "The most powerful Package Manager for Agents Skills: search, query and install/uninstall in seconds!",
+  "stars": 18,
+  "category": "Discovered",
+  "source": "discover:topic",
+  "url": "https://github.com/yeasy/ask",
+  "githubRepo": "yeasy/ask",
+  "readme": "# yeasy/ask\n\nThe most powerful Package Manager for Agents Skills: search, query and install/uninstall in seconds!",
+  "readmeHtml": "<h1>yeasy/ask</h1>\n<p>The most powerful Package Manager for Agents Skills: search, query and install/uninstall in seconds!</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.064Z",
+  "author": {
+    "login": "yeasy",
+    "name": "yeasy",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/yeasy",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "yeasy-awesome-agent-skills",
+      "displayName": "yeasy/awesome-agent-skills",
+      "stars": 1,
+      "relation": "source_overlap",
+      "evidence": "author:yeasy"
+    },
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 73174,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "bytedance-deer-flow",
+      "displayName": "bytedance/deer-flow",
+      "stars": 65827,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "farion1231-cc-switch",
+      "displayName": "farion1231/cc-switch",
+      "stars": 62022,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "gsd-build-get-shit-done",
+      "displayName": "gsd-build/get-shit-done",
+      "stars": 60616,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-san-francisco",
+    "label": "Global Skill Market / San Francisco / Discovered",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "virtual_market"
+  }
+}

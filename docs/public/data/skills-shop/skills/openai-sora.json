@@ -1,0 +1,89 @@
+{
+  "id": "skill:openai-sora",
+  "slug": "openai-sora",
+  "name": "sora",
+  "displayName": "openai/sora",
+  "description": "Generate, remix, and manage short video clips via OpenAI's Sora API",
+  "stars": 0,
+  "category": "TypeScript Skills",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/openai/skills/sora",
+  "githubRepo": "",
+  "readme": "# openai/sora\n\nGenerate, remix, and manage short video clips via OpenAI's Sora API",
+  "readmeHtml": "<h1>openai/sora</h1>\n<p>Generate, remix, and manage short video clips via OpenAI's Sora API</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.125Z",
+  "author": {
+    "login": "openai",
+    "name": "openai",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/openai",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "openai-skills",
+      "displayName": "openai/skills",
+      "stars": 18508,
+      "relation": "source_overlap",
+      "evidence": "author:openai"
+    },
+    {
+      "slug": "openai-cloudflare-deploy",
+      "displayName": "openai/cloudflare-deploy",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:openai"
+    },
+    {
+      "slug": "openai-develop-web-game",
+      "displayName": "openai/develop-web-game",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:openai"
+    },
+    {
+      "slug": "openai-doc",
+      "displayName": "openai/doc",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:openai"
+    },
+    {
+      "slug": "openai-gh-address-comments",
+      "displayName": "openai/gh-address-comments",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:openai"
+    },
+    {
+      "slug": "openai-gh-fix-ci",
+      "displayName": "openai/gh-fix-ci",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:openai"
+    },
+    {
+      "slug": "openai-imagegen",
+      "displayName": "openai/imagegen",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:openai"
+    },
+    {
+      "slug": "openai-jupyter-notebook",
+      "displayName": "openai/jupyter-notebook",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:openai"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-paris",
+    "label": "Global Skill Market / Paris / TypeScript Skills",
+    "lat": 48.8566,
+    "lon": 2.3522,
+    "source": "virtual_market"
+  }
+}

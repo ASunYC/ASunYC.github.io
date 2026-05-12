@@ -1,0 +1,89 @@
+{
+  "id": "skill:fvadicamo-dev-agent-skills",
+  "slug": "fvadicamo-dev-agent-skills",
+  "name": "dev-agent-skills",
+  "displayName": "fvadicamo/dev-agent-skills",
+  "description": "Git and GitHub workflow skills for commits, PRs, and code reviews",
+  "stars": 61,
+  "category": "Community Skills",
+  "source": "voltagent",
+  "url": "https://github.com/fvadicamo/dev-agent-skills",
+  "githubRepo": "fvadicamo/dev-agent-skills",
+  "readme": "# fvadicamo/dev-agent-skills\n\nGit and GitHub workflow skills for commits, PRs, and code reviews",
+  "readmeHtml": "<h1>fvadicamo/dev-agent-skills</h1>\n<p>Git and GitHub workflow skills for commits, PRs, and code reviews</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.052Z",
+  "author": {
+    "login": "fvadicamo",
+    "name": "fvadicamo",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/fvadicamo",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "obra-defense-in-depth",
+      "displayName": "obra/defense-in-depth",
+      "stars": 186953,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
+      "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "stars": 77115,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mvanhorn-last30days-skill",
+      "displayName": "mvanhorn/last30days-skill",
+      "stars": 25573,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "k-dense-ai-claude-scientific-skills",
+      "displayName": "K-Dense-AI/claude-scientific-skills",
+      "stars": 20299,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "muratcankoylan-context-fundamentals",
+      "displayName": "muratcankoylan/context-fundamentals",
+      "stars": 15494,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "muratcankoylan-context-degradation",
+      "displayName": "muratcankoylan/context-degradation",
+      "stars": 15494,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "muratcankoylan-context-compression",
+      "displayName": "muratcankoylan/context-compression",
+      "stars": 15494,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "muratcankoylan-context-optimization",
+      "displayName": "muratcankoylan/context-optimization",
+      "stars": 15494,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-new-york",
+    "label": "Global Skill Market / New York / Community Skills",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "source": "virtual_market"
+  }
+}

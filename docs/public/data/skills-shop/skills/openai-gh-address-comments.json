@@ -1,0 +1,89 @@
+{
+  "id": "skill:openai-gh-address-comments",
+  "slug": "openai-gh-address-comments",
+  "name": "gh-address-comments",
+  "displayName": "openai/gh-address-comments",
+  "description": "Address review and issue comments on open GitHub PRs via CLI",
+  "stars": 0,
+  "category": "TypeScript Skills",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/openai/skills/gh-address-comments",
+  "githubRepo": "",
+  "readme": "# openai/gh-address-comments\n\nAddress review and issue comments on open GitHub PRs via CLI",
+  "readmeHtml": "<h1>openai/gh-address-comments</h1>\n<p>Address review and issue comments on open GitHub PRs via CLI</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.120Z",
+  "author": {
+    "login": "openai",
+    "name": "openai",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/openai",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "openai-skills",
+      "displayName": "openai/skills",
+      "stars": 18508,
+      "relation": "source_overlap",
+      "evidence": "author:openai"
+    },
+    {
+      "slug": "openai-cloudflare-deploy",
+      "displayName": "openai/cloudflare-deploy",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:openai"
+    },
+    {
+      "slug": "openai-develop-web-game",
+      "displayName": "openai/develop-web-game",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:openai"
+    },
+    {
+      "slug": "openai-doc",
+      "displayName": "openai/doc",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:openai"
+    },
+    {
+      "slug": "openai-gh-fix-ci",
+      "displayName": "openai/gh-fix-ci",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:openai"
+    },
+    {
+      "slug": "openai-imagegen",
+      "displayName": "openai/imagegen",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:openai"
+    },
+    {
+      "slug": "openai-jupyter-notebook",
+      "displayName": "openai/jupyter-notebook",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:openai"
+    },
+    {
+      "slug": "openai-linear",
+      "displayName": "openai/linear",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:openai"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-singapore",
+    "label": "Global Skill Market / Singapore / TypeScript Skills",
+    "lat": 1.3521,
+    "lon": 103.8198,
+    "source": "virtual_market"
+  }
+}

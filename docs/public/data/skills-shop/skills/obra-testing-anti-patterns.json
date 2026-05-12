@@ -4,7 +4,7 @@
   "name": "testing-anti-patterns",
   "displayName": "obra/testing-anti-patterns",
   "description": "Identify ineffective testing practices",
-  "stars": 181449,
+  "stars": 186953,
   "category": "Community Skills",
   "source": "voltagent",
   "url": "https://github.com/obra/superpowers/blob/main/skills/testing-anti-patterns/SKILL.md",
@@ -12,7 +12,7 @@
   "readme": "# obra/testing-anti-patterns\n\nIdentify ineffective testing practices",
   "readmeHtml": "<h1>obra/testing-anti-patterns</h1>\n<p>Identify ineffective testing practices</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T02:46:43.848Z",
+  "updatedAt": "2026-05-12T12:38:06.996Z",
   "author": {
     "login": "obra",
     "name": "obra",
@@ -32,51 +32,58 @@
     {
       "slug": "obra-writing-plans",
       "displayName": "obra/writing-plans",
-      "stars": 181449,
+      "stars": 186953,
       "relation": "source_overlap",
       "evidence": "repo:obra/superpowers"
     },
     {
       "slug": "obra-executing-plans",
       "displayName": "obra/executing-plans",
-      "stars": 181449,
+      "stars": 186953,
       "relation": "source_overlap",
       "evidence": "repo:obra/superpowers"
     },
     {
       "slug": "obra-dispatching-parallel-agents",
       "displayName": "obra/dispatching-parallel-agents",
-      "stars": 181449,
+      "stars": 186953,
       "relation": "source_overlap",
       "evidence": "repo:obra/superpowers"
     },
     {
       "slug": "obra-sharing-skills",
       "displayName": "obra/sharing-skills",
-      "stars": 181449,
+      "stars": 186953,
       "relation": "source_overlap",
       "evidence": "repo:obra/superpowers"
     },
     {
       "slug": "obra-using-superpowers",
       "displayName": "obra/using-superpowers",
-      "stars": 181449,
+      "stars": 186953,
       "relation": "source_overlap",
       "evidence": "repo:obra/superpowers"
     },
     {
       "slug": "obra-test-driven-development",
       "displayName": "obra/test-driven-development",
-      "stars": 181449,
+      "stars": 186953,
       "relation": "source_overlap",
       "evidence": "repo:obra/superpowers"
     },
     {
       "slug": "obra-subagent-driven-development",
       "displayName": "obra/subagent-driven-development",
-      "stars": 181449,
+      "stars": 186953,
       "relation": "source_overlap",
       "evidence": "repo:obra/superpowers"
     }
-  ]
+  ],
+  "mapLocation": {
+    "id": "virtual-berlin",
+    "label": "Global Skill Market / Berlin / Community Skills",
+    "lat": 52.52,
+    "lon": 13.405,
+    "source": "virtual_market"
+  }
 }

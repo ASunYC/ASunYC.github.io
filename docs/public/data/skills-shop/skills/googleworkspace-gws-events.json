@@ -1,0 +1,89 @@
+{
+  "id": "skill:googleworkspace-gws-events",
+  "slug": "googleworkspace-gws-events",
+  "name": "gws-events",
+  "displayName": "googleworkspace/gws-events",
+  "description": "Subscribe to Google Workspace events",
+  "stars": 0,
+  "category": "Skills by Typefully",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/googleworkspace/skills/gws-events",
+  "githubRepo": "",
+  "readme": "# googleworkspace/gws-events\n\nSubscribe to Google Workspace events",
+  "readmeHtml": "<h1>googleworkspace/gws-events</h1>\n<p>Subscribe to Google Workspace events</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.102Z",
+  "author": {
+    "login": "googleworkspace",
+    "name": "googleworkspace",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/googleworkspace",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "googleworkspace-cli",
+      "displayName": "googleworkspace/cli",
+      "stars": 25868,
+      "relation": "source_overlap",
+      "evidence": "author:googleworkspace"
+    },
+    {
+      "slug": "googleworkspace-gws-shared",
+      "displayName": "googleworkspace/gws-shared",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:googleworkspace"
+    },
+    {
+      "slug": "googleworkspace-gws-drive",
+      "displayName": "googleworkspace/gws-drive",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:googleworkspace"
+    },
+    {
+      "slug": "googleworkspace-gws-sheets",
+      "displayName": "googleworkspace/gws-sheets",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:googleworkspace"
+    },
+    {
+      "slug": "googleworkspace-gws-gmail",
+      "displayName": "googleworkspace/gws-gmail",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:googleworkspace"
+    },
+    {
+      "slug": "googleworkspace-gws-calendar",
+      "displayName": "googleworkspace/gws-calendar",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:googleworkspace"
+    },
+    {
+      "slug": "googleworkspace-gws-admin-reports",
+      "displayName": "googleworkspace/gws-admin-reports",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:googleworkspace"
+    },
+    {
+      "slug": "googleworkspace-gws-docs",
+      "displayName": "googleworkspace/gws-docs",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:googleworkspace"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-new-york",
+    "label": "Global Skill Market / New York / Skills by Typefully",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "source": "virtual_market"
+  }
+}

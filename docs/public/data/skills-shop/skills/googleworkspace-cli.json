@@ -1,0 +1,89 @@
+{
+  "id": "skill:googleworkspace-cli",
+  "slug": "googleworkspace-cli",
+  "name": "cli",
+  "displayName": "googleworkspace/cli",
+  "description": "Google Workspace CLI — one command-line tool for Drive, Gmail, Calendar, Sheets, Docs, Chat, Admin, and more. Dynamically built from Google Discovery Service. Includes AI agent skills.",
+  "stars": 25868,
+  "category": "Discovered",
+  "source": "discover:keyword",
+  "url": "https://github.com/googleworkspace/cli",
+  "githubRepo": "googleworkspace/cli",
+  "readme": "# googleworkspace/cli\n\nGoogle Workspace CLI — one command-line tool for Drive, Gmail, Calendar, Sheets, Docs, Chat, Admin, and more. Dynamically built from Google Discovery Service. Includes AI agent skills.",
+  "readmeHtml": "<h1>googleworkspace/cli</h1>\n<p>Google Workspace CLI — one command-line tool for Drive, Gmail, Calendar, Sheets, Docs, Chat, Admin, and more. Dynamically built from Google Discovery Service. Includes AI agent skills.</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.001Z",
+  "author": {
+    "login": "googleworkspace",
+    "name": "googleworkspace",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/googleworkspace",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "googleworkspace-gws-shared",
+      "displayName": "googleworkspace/gws-shared",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:googleworkspace"
+    },
+    {
+      "slug": "googleworkspace-gws-drive",
+      "displayName": "googleworkspace/gws-drive",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:googleworkspace"
+    },
+    {
+      "slug": "googleworkspace-gws-sheets",
+      "displayName": "googleworkspace/gws-sheets",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:googleworkspace"
+    },
+    {
+      "slug": "googleworkspace-gws-gmail",
+      "displayName": "googleworkspace/gws-gmail",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:googleworkspace"
+    },
+    {
+      "slug": "googleworkspace-gws-calendar",
+      "displayName": "googleworkspace/gws-calendar",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:googleworkspace"
+    },
+    {
+      "slug": "googleworkspace-gws-admin-reports",
+      "displayName": "googleworkspace/gws-admin-reports",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:googleworkspace"
+    },
+    {
+      "slug": "googleworkspace-gws-docs",
+      "displayName": "googleworkspace/gws-docs",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:googleworkspace"
+    },
+    {
+      "slug": "googleworkspace-gws-slides",
+      "displayName": "googleworkspace/gws-slides",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:googleworkspace"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-bengaluru",
+    "label": "Global Skill Market / Bengaluru / Discovered",
+    "lat": 12.9716,
+    "lon": 77.5946,
+    "source": "virtual_market"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "skill:expo-native-data-fetching",
+  "slug": "expo-native-data-fetching",
+  "name": "native-data-fetching",
+  "displayName": "expo/native-data-fetching",
+  "description": "Network requests, API calls, caching, and offline support",
+  "stars": 0,
+  "category": "Skills by Typefully",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/expo/skills/native-data-fetching",
+  "githubRepo": "",
+  "readme": "# expo/native-data-fetching\n\nNetwork requests, API calls, caching, and offline support",
+  "readmeHtml": "<h1>expo/native-data-fetching</h1>\n<p>Network requests, API calls, caching, and offline support</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.103Z",
+  "author": {
+    "login": "expo",
+    "name": "expo",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/expo",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "expo-skills",
+      "displayName": "expo/skills",
+      "stars": 1862,
+      "relation": "source_overlap",
+      "evidence": "author:expo"
+    },
+    {
+      "slug": "expo-building-native-ui",
+      "displayName": "expo/building-native-ui",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:expo"
+    },
+    {
+      "slug": "expo-expo-api-routes",
+      "displayName": "expo/expo-api-routes",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:expo"
+    },
+    {
+      "slug": "expo-expo-cicd-workflows",
+      "displayName": "expo/expo-cicd-workflows",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:expo"
+    },
+    {
+      "slug": "expo-expo-deployment",
+      "displayName": "expo/expo-deployment",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:expo"
+    },
+    {
+      "slug": "expo-expo-dev-client",
+      "displayName": "expo/expo-dev-client",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:expo"
+    },
+    {
+      "slug": "expo-expo-tailwind-setup",
+      "displayName": "expo/expo-tailwind-setup",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:expo"
+    },
+    {
+      "slug": "expo-expo-ui-jetpack-compose",
+      "displayName": "expo/expo-ui-jetpack-compose",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:expo"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-singapore",
+    "label": "Global Skill Market / Singapore / Skills by Typefully",
+    "lat": 1.3521,
+    "lon": 103.8198,
+    "source": "virtual_market"
+  }
+}

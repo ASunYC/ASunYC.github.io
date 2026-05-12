@@ -1,0 +1,89 @@
+{
+  "id": "skill:op7418-nanobanana-ppt-skills",
+  "slug": "op7418-nanobanana-ppt-skills",
+  "name": "nanobanana-ppt-skills",
+  "displayName": "op7418/NanoBanana-PPT-Skills",
+  "description": "AI-powered PPT generation with document analysis and styled images",
+  "stars": 2613,
+  "category": "Community Skills",
+  "source": "voltagent",
+  "url": "https://github.com/op7418/NanoBanana-PPT-Skills",
+  "githubRepo": "op7418/NanoBanana-PPT-Skills",
+  "readme": "# op7418/NanoBanana-PPT-Skills\n\nAI-powered PPT generation with document analysis and styled images",
+  "readmeHtml": "<h1>op7418/NanoBanana-PPT-Skills</h1>\n<p>AI-powered PPT generation with document analysis and styled images</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.025Z",
+  "author": {
+    "login": "op7418",
+    "name": "op7418",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/op7418",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "op7418-humanizer-zh",
+      "displayName": "op7418/Humanizer-zh",
+      "stars": 7055,
+      "relation": "source_overlap",
+      "evidence": "author:op7418"
+    },
+    {
+      "slug": "op7418-codepilot",
+      "displayName": "op7418/CodePilot",
+      "stars": 5647,
+      "relation": "source_overlap",
+      "evidence": "author:op7418"
+    },
+    {
+      "slug": "op7418-guizang-ppt-skill",
+      "displayName": "op7418/guizang-ppt-skill",
+      "stars": 5444,
+      "relation": "source_overlap",
+      "evidence": "author:op7418"
+    },
+    {
+      "slug": "op7418-claude-to-im-skill",
+      "displayName": "op7418/Claude-to-IM-skill",
+      "stars": 2447,
+      "relation": "source_overlap",
+      "evidence": "author:op7418"
+    },
+    {
+      "slug": "op7418-youtube-clipper-skill",
+      "displayName": "op7418/Youtube-clipper-skill",
+      "stars": 1828,
+      "relation": "source_overlap",
+      "evidence": "author:op7418"
+    },
+    {
+      "slug": "obra-defense-in-depth",
+      "displayName": "obra/defense-in-depth",
+      "stars": 186953,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
+      "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "stars": 77115,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mvanhorn-last30days-skill",
+      "displayName": "mvanhorn/last30days-skill",
+      "stars": 25573,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-paris",
+    "label": "Global Skill Market / Paris / Community Skills",
+    "lat": 48.8566,
+    "lon": 2.3522,
+    "source": "virtual_market"
+  }
+}

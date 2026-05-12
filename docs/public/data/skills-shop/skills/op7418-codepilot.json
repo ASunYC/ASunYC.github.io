@@ -1,0 +1,89 @@
+{
+  "id": "skill:op7418-codepilot",
+  "slug": "op7418-codepilot",
+  "name": "codepilot",
+  "displayName": "op7418/CodePilot",
+  "description": "A multi-model AI agent desktop client — connect any AI provider, extend with MCP & skills, control from your phone. Built with Electron + Next.js.",
+  "stars": 5647,
+  "category": "Discovered",
+  "source": "discover:topic",
+  "url": "https://github.com/op7418/CodePilot",
+  "githubRepo": "op7418/CodePilot",
+  "readme": "# op7418/CodePilot\n\nA multi-model AI agent desktop client — connect any AI provider, extend with MCP & skills, control from your phone. Built with Electron + Next.js.",
+  "readmeHtml": "<h1>op7418/CodePilot</h1>\n<p>A multi-model AI agent desktop client — connect any AI provider, extend with MCP &amp; skills, control from your phone. Built with Electron + Next.js.</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.014Z",
+  "author": {
+    "login": "op7418",
+    "name": "op7418",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/op7418",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "op7418-humanizer-zh",
+      "displayName": "op7418/Humanizer-zh",
+      "stars": 7055,
+      "relation": "source_overlap",
+      "evidence": "author:op7418"
+    },
+    {
+      "slug": "op7418-guizang-ppt-skill",
+      "displayName": "op7418/guizang-ppt-skill",
+      "stars": 5444,
+      "relation": "source_overlap",
+      "evidence": "author:op7418"
+    },
+    {
+      "slug": "op7418-nanobanana-ppt-skills",
+      "displayName": "op7418/NanoBanana-PPT-Skills",
+      "stars": 2613,
+      "relation": "source_overlap",
+      "evidence": "author:op7418"
+    },
+    {
+      "slug": "op7418-claude-to-im-skill",
+      "displayName": "op7418/Claude-to-IM-skill",
+      "stars": 2447,
+      "relation": "source_overlap",
+      "evidence": "author:op7418"
+    },
+    {
+      "slug": "op7418-youtube-clipper-skill",
+      "displayName": "op7418/Youtube-clipper-skill",
+      "stars": 1828,
+      "relation": "source_overlap",
+      "evidence": "author:op7418"
+    },
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-toronto",
+    "label": "Global Skill Market / Toronto / Discovered",
+    "lat": 43.6532,
+    "lon": -79.3832,
+    "source": "virtual_market"
+  }
+}

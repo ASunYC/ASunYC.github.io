@@ -1,0 +1,89 @@
+{
+  "id": "skill:smixs-osint-skill",
+  "slug": "smixs-osint-skill",
+  "name": "osint-skill",
+  "displayName": "smixs/osint-skill",
+  "description": "OSINT Skill for AI agents (Claude Code, OpenClaw, Codex, OpenCode) — from a name to a scored dossier with psychoprofile, career map, and confidence grades. 55+ Apify actors, 7 search APIs, swarm mode. Early Beta.",
+  "stars": 34,
+  "category": "Discovered",
+  "source": "discover:topic",
+  "url": "https://github.com/smixs/osint-skill",
+  "githubRepo": "smixs/osint-skill",
+  "readme": "# smixs/osint-skill\n\nOSINT Skill for AI agents (Claude Code, OpenClaw, Codex, OpenCode) — from a name to a scored dossier with psychoprofile, career map, and confidence grades. 55+ Apify actors, 7 search APIs, swarm mode. Early Beta.",
+  "readmeHtml": "<h1>smixs/osint-skill</h1>\n<p>OSINT Skill for AI agents (Claude Code, OpenClaw, Codex, OpenCode) — from a name to a scored dossier with psychoprofile, career map, and confidence grades. 55+ Apify actors, 7 search APIs, swarm mode. Early Beta.</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.059Z",
+  "author": {
+    "login": "smixs",
+    "name": "smixs",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/smixs",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "smixs-creative-director-skill",
+      "displayName": "smixs/creative-director-skill",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:smixs"
+    },
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 73174,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "bytedance-deer-flow",
+      "displayName": "bytedance/deer-flow",
+      "stars": 65827,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "farion1231-cc-switch",
+      "displayName": "farion1231/cc-switch",
+      "stars": 62022,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "gsd-build-get-shit-done",
+      "displayName": "gsd-build/get-shit-done",
+      "stars": 60616,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-london",
+    "label": "Global Skill Market / London / Discovered",
+    "lat": 51.5072,
+    "lon": -0.1276,
+    "source": "virtual_market"
+  }
+}

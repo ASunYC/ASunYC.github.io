@@ -1,0 +1,89 @@
+{
+  "id": "skill:bergside-awesome-design-skills",
+  "slug": "bergside-awesome-design-skills",
+  "name": "awesome-design-skills",
+  "displayName": "bergside/awesome-design-skills",
+  "description": "List of 67 awesome DESIGN.md and SKILL.md design skill files for agentic tools like Claude Design, Google Stitch, Codex, Cursor, and other AI tools",
+  "stars": 395,
+  "category": "Discovered",
+  "source": "discover:keyword",
+  "url": "https://github.com/bergside/awesome-design-skills",
+  "githubRepo": "bergside/awesome-design-skills",
+  "readme": "# bergside/awesome-design-skills\n\nList of 67 awesome DESIGN.md and SKILL.md design skill files for agentic tools like Claude Design, Google Stitch, Codex, Cursor, and other AI tools",
+  "readmeHtml": "<h1>bergside/awesome-design-skills</h1>\n<p>List of 67 awesome DESIGN.md and SKILL.md design skill files for agentic tools like Claude Design, Google Stitch, Codex, Cursor, and other AI tools</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.047Z",
+  "author": {
+    "login": "bergside",
+    "name": "bergside",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/bergside",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "bergside-design-md-chrome",
+      "displayName": "bergside/design-md-chrome",
+      "stars": 1810,
+      "relation": "source_overlap",
+      "evidence": "author:bergside"
+    },
+    {
+      "slug": "bergside-typeui",
+      "displayName": "bergside/typeui",
+      "stars": 813,
+      "relation": "source_overlap",
+      "evidence": "author:bergside"
+    },
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 73174,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "bytedance-deer-flow",
+      "displayName": "bytedance/deer-flow",
+      "stars": 65827,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "farion1231-cc-switch",
+      "displayName": "farion1231/cc-switch",
+      "stars": 62022,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-london",
+    "label": "Global Skill Market / London / Discovered",
+    "lat": 51.5072,
+    "lon": -0.1276,
+    "source": "virtual_market"
+  }
+}

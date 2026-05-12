@@ -1,0 +1,68 @@
+{
+  "id": "skill:callstackincubator-upgrading-react-native",
+  "slug": "callstackincubator-upgrading-react-native",
+  "name": "upgrading-react-native",
+  "displayName": "callstackincubator/upgrading-react-native",
+  "description": "React Native upgrade workflow: templates, dependencies, and common pitfalls",
+  "stars": 0,
+  "category": "Skills by CallStack",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/callstackincubator/skills/upgrading-react-native",
+  "githubRepo": "",
+  "readme": "# callstackincubator/upgrading-react-native\n\nReact Native upgrade workflow: templates, dependencies, and common pitfalls",
+  "readmeHtml": "<h1>callstackincubator/upgrading-react-native</h1>\n<p>React Native upgrade workflow: templates, dependencies, and common pitfalls</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.090Z",
+  "author": {
+    "login": "callstackincubator",
+    "name": "callstackincubator",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/callstackincubator",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "callstackincubator-agent-skills",
+      "displayName": "callstackincubator/agent-skills",
+      "stars": 1307,
+      "relation": "source_overlap",
+      "evidence": "author:callstackincubator"
+    },
+    {
+      "slug": "callstackincubator-react-native-best-practices",
+      "displayName": "callstackincubator/react-native-best-practices",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:callstackincubator"
+    },
+    {
+      "slug": "callstackincubator-github",
+      "displayName": "callstackincubator/github",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:callstackincubator"
+    },
+    {
+      "slug": "callstackincubator-react-native-best-practices",
+      "displayName": "callstackincubator/react-native-best-practices",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Skills by CallStack"
+    },
+    {
+      "slug": "callstackincubator-github",
+      "displayName": "callstackincubator/github",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Skills by CallStack"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-new-york",
+    "label": "Global Skill Market / New York / Skills by CallStack",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "source": "virtual_market"
+  }
+}

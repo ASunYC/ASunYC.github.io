@@ -1,0 +1,89 @@
+{
+  "id": "skill:vercel-labs-react-view-transitions-demo",
+  "slug": "vercel-labs-react-view-transitions-demo",
+  "name": "react-view-transitions-demo",
+  "displayName": "vercel-labs/react-view-transitions-demo",
+  "description": "Next.js gallery app showcasing React View Transitions — shared element morphs, directional navigation, Suspense reveals, and more",
+  "stars": 19,
+  "category": "Discovered",
+  "source": "discover:topic",
+  "url": "https://github.com/vercel-labs/react-view-transitions-demo",
+  "githubRepo": "vercel-labs/react-view-transitions-demo",
+  "readme": "# vercel-labs/react-view-transitions-demo\n\nNext.js gallery app showcasing React View Transitions — shared element morphs, directional navigation, Suspense reveals, and more",
+  "readmeHtml": "<h1>vercel-labs/react-view-transitions-demo</h1>\n<p>Next.js gallery app showcasing React View Transitions — shared element morphs, directional navigation, Suspense reveals, and more</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.063Z",
+  "author": {
+    "login": "vercel-labs",
+    "name": "vercel-labs",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/vercel-labs",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "vercel-labs-react-best-practices",
+      "displayName": "vercel-labs/react-best-practices",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:vercel-labs"
+    },
+    {
+      "slug": "vercel-labs-web-design-guidelines",
+      "displayName": "vercel-labs/web-design-guidelines",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:vercel-labs"
+    },
+    {
+      "slug": "vercel-labs-composition-patterns",
+      "displayName": "vercel-labs/composition-patterns",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:vercel-labs"
+    },
+    {
+      "slug": "vercel-labs-next-best-practices",
+      "displayName": "vercel-labs/next-best-practices",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:vercel-labs"
+    },
+    {
+      "slug": "vercel-labs-next-cache-components",
+      "displayName": "vercel-labs/next-cache-components",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:vercel-labs"
+    },
+    {
+      "slug": "vercel-labs-next-upgrade",
+      "displayName": "vercel-labs/next-upgrade",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:vercel-labs"
+    },
+    {
+      "slug": "vercel-labs-react-native-skills",
+      "displayName": "vercel-labs/react-native-skills",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:vercel-labs"
+    },
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-sao-paulo",
+    "label": "Global Skill Market / Sao Paulo / Discovered",
+    "lat": -23.5558,
+    "lon": -46.6396,
+    "source": "virtual_market"
+  }
+}

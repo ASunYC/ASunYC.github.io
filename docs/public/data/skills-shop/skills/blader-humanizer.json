@@ -1,0 +1,89 @@
+{
+  "id": "skill:blader-humanizer",
+  "slug": "blader-humanizer",
+  "name": "humanizer",
+  "displayName": "blader/humanizer",
+  "description": "Remove signs of AI-generated writing from text, making it sound more natural and human",
+  "stars": 0,
+  "category": "Community Skills",
+  "source": "voltagent",
+  "url": "https://github.com/blader/humanizer",
+  "githubRepo": "blader/humanizer",
+  "readme": "# blader/humanizer\n\nRemove signs of AI-generated writing from text, making it sound more natural and human",
+  "readmeHtml": "<h1>blader/humanizer</h1>\n<p>Remove signs of AI-generated writing from text, making it sound more natural and human</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.153Z",
+  "author": {
+    "login": "blader",
+    "name": "blader",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/blader",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "obra-defense-in-depth",
+      "displayName": "obra/defense-in-depth",
+      "stars": 186953,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
+      "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "stars": 77115,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mvanhorn-last30days-skill",
+      "displayName": "mvanhorn/last30days-skill",
+      "stars": 25573,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "k-dense-ai-claude-scientific-skills",
+      "displayName": "K-Dense-AI/claude-scientific-skills",
+      "stars": 20299,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "muratcankoylan-context-fundamentals",
+      "displayName": "muratcankoylan/context-fundamentals",
+      "stars": 15494,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "muratcankoylan-context-degradation",
+      "displayName": "muratcankoylan/context-degradation",
+      "stars": 15494,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "muratcankoylan-context-compression",
+      "displayName": "muratcankoylan/context-compression",
+      "stars": 15494,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "muratcankoylan-context-optimization",
+      "displayName": "muratcankoylan/context-optimization",
+      "stars": 15494,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-bengaluru",
+    "label": "Global Skill Market / Bengaluru / Community Skills",
+    "lat": 12.9716,
+    "lon": 77.5946,
+    "source": "virtual_market"
+  }
+}

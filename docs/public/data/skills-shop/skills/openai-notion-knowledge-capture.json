@@ -1,0 +1,89 @@
+{
+  "id": "skill:openai-notion-knowledge-capture",
+  "slug": "openai-notion-knowledge-capture",
+  "name": "notion-knowledge-capture",
+  "displayName": "openai/notion-knowledge-capture",
+  "description": "Convert conversations into structured, searchable Notion wiki entries",
+  "stars": 0,
+  "category": "TypeScript Skills",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/openai/skills/notion-knowledge-capture",
+  "githubRepo": "",
+  "readme": "# openai/notion-knowledge-capture\n\nConvert conversations into structured, searchable Notion wiki entries",
+  "readmeHtml": "<h1>openai/notion-knowledge-capture</h1>\n<p>Convert conversations into structured, searchable Notion wiki entries</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.120Z",
+  "author": {
+    "login": "openai",
+    "name": "openai",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/openai",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "openai-skills",
+      "displayName": "openai/skills",
+      "stars": 18508,
+      "relation": "source_overlap",
+      "evidence": "author:openai"
+    },
+    {
+      "slug": "openai-cloudflare-deploy",
+      "displayName": "openai/cloudflare-deploy",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:openai"
+    },
+    {
+      "slug": "openai-develop-web-game",
+      "displayName": "openai/develop-web-game",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:openai"
+    },
+    {
+      "slug": "openai-doc",
+      "displayName": "openai/doc",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:openai"
+    },
+    {
+      "slug": "openai-gh-address-comments",
+      "displayName": "openai/gh-address-comments",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:openai"
+    },
+    {
+      "slug": "openai-gh-fix-ci",
+      "displayName": "openai/gh-fix-ci",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:openai"
+    },
+    {
+      "slug": "openai-imagegen",
+      "displayName": "openai/imagegen",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:openai"
+    },
+    {
+      "slug": "openai-jupyter-notebook",
+      "displayName": "openai/jupyter-notebook",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:openai"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-paris",
+    "label": "Global Skill Market / Paris / TypeScript Skills",
+    "lat": 48.8566,
+    "lon": 2.3522,
+    "source": "virtual_market"
+  }
+}

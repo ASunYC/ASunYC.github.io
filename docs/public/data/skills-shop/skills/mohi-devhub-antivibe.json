@@ -1,0 +1,89 @@
+{
+  "id": "skill:mohi-devhub-antivibe",
+  "slug": "mohi-devhub-antivibe",
+  "name": "antivibe",
+  "displayName": "mohi-devhub/antivibe",
+  "description": "Learn what AI writes, not just accept it. A Claude Code skill that turns AI-generated code into educational deep dives.",
+  "stars": 638,
+  "category": "Discovered",
+  "source": "discover:keyword",
+  "url": "https://github.com/mohi-devhub/antivibe",
+  "githubRepo": "mohi-devhub/antivibe",
+  "readme": "# mohi-devhub/antivibe\n\nLearn what AI writes, not just accept it. A Claude Code skill that turns AI-generated code into educational deep dives.",
+  "readmeHtml": "<h1>mohi-devhub/antivibe</h1>\n<p>Learn what AI writes, not just accept it. A Claude Code skill that turns AI-generated code into educational deep dives.</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.041Z",
+  "author": {
+    "login": "mohi-devhub",
+    "name": "mohi-devhub",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/mohi-devhub",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 73174,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "bytedance-deer-flow",
+      "displayName": "bytedance/deer-flow",
+      "stars": 65827,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "farion1231-cc-switch",
+      "displayName": "farion1231/cc-switch",
+      "stars": 62022,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "gsd-build-get-shit-done",
+      "displayName": "gsd-build/get-shit-done",
+      "stars": 60616,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "shareai-lab-learn-claude-code",
+      "displayName": "shareAI-lab/learn-claude-code",
+      "stars": 58737,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-shanghai",
+    "label": "Global Skill Market / Shanghai / Discovered",
+    "lat": 31.2304,
+    "lon": 121.4737,
+    "source": "virtual_market"
+  }
+}

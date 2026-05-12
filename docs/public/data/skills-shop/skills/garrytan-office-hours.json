@@ -1,0 +1,89 @@
+{
+  "id": "skill:garrytan-office-hours",
+  "slug": "garrytan-office-hours",
+  "name": "office-hours",
+  "displayName": "garrytan/office-hours",
+  "description": "YC Office Hours: six forcing questions that reframe your product before you write code",
+  "stars": 0,
+  "category": "TypeScript Skills",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/garrytan/skills/office-hours",
+  "githubRepo": "",
+  "readme": "# garrytan/office-hours\n\nYC Office Hours: six forcing questions that reframe your product before you write code",
+  "readmeHtml": "<h1>garrytan/office-hours</h1>\n<p>YC Office Hours: six forcing questions that reframe your product before you write code</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.145Z",
+  "author": {
+    "login": "garrytan",
+    "name": "garrytan",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/garrytan",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "garrytan-gstack",
+      "displayName": "garrytan/gstack",
+      "stars": 90855,
+      "relation": "source_overlap",
+      "evidence": "author:garrytan"
+    },
+    {
+      "slug": "garrytan-plan-ceo-review",
+      "displayName": "garrytan/plan-ceo-review",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:garrytan"
+    },
+    {
+      "slug": "garrytan-plan-eng-review",
+      "displayName": "garrytan/plan-eng-review",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:garrytan"
+    },
+    {
+      "slug": "garrytan-plan-design-review",
+      "displayName": "garrytan/plan-design-review",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:garrytan"
+    },
+    {
+      "slug": "garrytan-design-consultation",
+      "displayName": "garrytan/design-consultation",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:garrytan"
+    },
+    {
+      "slug": "garrytan-design-review",
+      "displayName": "garrytan/design-review",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:garrytan"
+    },
+    {
+      "slug": "garrytan-review",
+      "displayName": "garrytan/review",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:garrytan"
+    },
+    {
+      "slug": "garrytan-investigate",
+      "displayName": "garrytan/investigate",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:garrytan"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-toronto",
+    "label": "Global Skill Market / Toronto / TypeScript Skills",
+    "lat": 43.6532,
+    "lon": -79.3832,
+    "source": "virtual_market"
+  }
+}

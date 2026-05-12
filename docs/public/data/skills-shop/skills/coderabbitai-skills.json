@@ -1,0 +1,89 @@
+{
+  "id": "skill:coderabbitai-skills",
+  "slug": "coderabbitai-skills",
+  "name": "skills",
+  "displayName": "coderabbitai/skills",
+  "description": "Code review and PR autofix workflows for coding agents",
+  "stars": 91,
+  "category": "Community Skills",
+  "source": "voltagent",
+  "url": "https://github.com/coderabbitai/skills",
+  "githubRepo": "coderabbitai/skills",
+  "readme": "# coderabbitai/skills\n\nCode review and PR autofix workflows for coding agents",
+  "readmeHtml": "<h1>coderabbitai/skills</h1>\n<p>Code review and PR autofix workflows for coding agents</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.051Z",
+  "author": {
+    "login": "coderabbitai",
+    "name": "coderabbitai",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/coderabbitai",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "coderabbitai-autofix",
+      "displayName": "coderabbitai/autofix",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:coderabbitai"
+    },
+    {
+      "slug": "coderabbitai-code-review",
+      "displayName": "coderabbitai/code-review",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:coderabbitai"
+    },
+    {
+      "slug": "obra-defense-in-depth",
+      "displayName": "obra/defense-in-depth",
+      "stars": 186953,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
+      "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "stars": 77115,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mvanhorn-last30days-skill",
+      "displayName": "mvanhorn/last30days-skill",
+      "stars": 25573,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "k-dense-ai-claude-scientific-skills",
+      "displayName": "K-Dense-AI/claude-scientific-skills",
+      "stars": 20299,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "muratcankoylan-context-fundamentals",
+      "displayName": "muratcankoylan/context-fundamentals",
+      "stars": 15494,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "muratcankoylan-context-degradation",
+      "displayName": "muratcankoylan/context-degradation",
+      "stars": 15494,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-shanghai",
+    "label": "Global Skill Market / Shanghai / Community Skills",
+    "lat": 31.2304,
+    "lon": 121.4737,
+    "source": "virtual_market"
+  }
+}

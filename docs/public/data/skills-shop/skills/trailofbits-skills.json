@@ -1,0 +1,89 @@
+{
+  "id": "skill:trailofbits-skills",
+  "slug": "trailofbits-skills",
+  "name": "skills",
+  "displayName": "trailofbits/skills",
+  "description": "Trail of Bits Claude Code skills for security research, vulnerability detection, and audit workflows",
+  "stars": 5043,
+  "category": "Discovered",
+  "source": "discover:keyword",
+  "url": "https://github.com/trailofbits/skills",
+  "githubRepo": "trailofbits/skills",
+  "readme": "# trailofbits/skills\n\nTrail of Bits Claude Code skills for security research, vulnerability detection, and audit workflows",
+  "readmeHtml": "<h1>trailofbits/skills</h1>\n<p>Trail of Bits Claude Code skills for security research, vulnerability detection, and audit workflows</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.014Z",
+  "author": {
+    "login": "trailofbits",
+    "name": "trailofbits",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/trailofbits",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "trailofbits-ask-questions-if-underspecified",
+      "displayName": "trailofbits/ask-questions-if-underspecified",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:trailofbits"
+    },
+    {
+      "slug": "trailofbits-audit-context-building",
+      "displayName": "trailofbits/audit-context-building",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:trailofbits"
+    },
+    {
+      "slug": "trailofbits-building-secure-contracts",
+      "displayName": "trailofbits/building-secure-contracts",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:trailofbits"
+    },
+    {
+      "slug": "trailofbits-burpsuite-project-parser",
+      "displayName": "trailofbits/burpsuite-project-parser",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:trailofbits"
+    },
+    {
+      "slug": "trailofbits-claude-in-chrome-troubleshooting",
+      "displayName": "trailofbits/claude-in-chrome-troubleshooting",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:trailofbits"
+    },
+    {
+      "slug": "trailofbits-constant-time-analysis",
+      "displayName": "trailofbits/constant-time-analysis",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:trailofbits"
+    },
+    {
+      "slug": "trailofbits-culture-index",
+      "displayName": "trailofbits/culture-index",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:trailofbits"
+    },
+    {
+      "slug": "trailofbits-differential-review",
+      "displayName": "trailofbits/differential-review",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:trailofbits"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-toronto",
+    "label": "Global Skill Market / Toronto / Discovered",
+    "lat": 43.6532,
+    "lon": -79.3832,
+    "source": "virtual_market"
+  }
+}

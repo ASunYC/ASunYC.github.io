@@ -1,0 +1,89 @@
+{
+  "id": "skill:cloudflare-cloudflare",
+  "slug": "cloudflare-cloudflare",
+  "name": "cloudflare",
+  "displayName": "cloudflare/cloudflare",
+  "description": "Comprehensive Cloudflare platform skill covering Workers, Pages, storage, AI, networking, security, and IaC",
+  "stars": 0,
+  "category": "Skills by Typefully",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/cloudflare/skills/cloudflare",
+  "githubRepo": "",
+  "readme": "# cloudflare/cloudflare\n\nComprehensive Cloudflare platform skill covering Workers, Pages, storage, AI, networking, security, and IaC",
+  "readmeHtml": "<h1>cloudflare/cloudflare</h1>\n<p>Comprehensive Cloudflare platform skill covering Workers, Pages, storage, AI, networking, security, and IaC</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.100Z",
+  "author": {
+    "login": "cloudflare",
+    "name": "cloudflare",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/cloudflare",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "cloudflare-agents-sdk",
+      "displayName": "cloudflare/agents-sdk",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:cloudflare"
+    },
+    {
+      "slug": "cloudflare-cloudflare-email-service",
+      "displayName": "cloudflare/cloudflare-email-service",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:cloudflare"
+    },
+    {
+      "slug": "cloudflare-durable-objects",
+      "displayName": "cloudflare/durable-objects",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:cloudflare"
+    },
+    {
+      "slug": "cloudflare-sandbox-sdk",
+      "displayName": "cloudflare/sandbox-sdk",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:cloudflare"
+    },
+    {
+      "slug": "cloudflare-web-perf",
+      "displayName": "cloudflare/web-perf",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:cloudflare"
+    },
+    {
+      "slug": "cloudflare-workers-best-practices",
+      "displayName": "cloudflare/workers-best-practices",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:cloudflare"
+    },
+    {
+      "slug": "cloudflare-wrangler",
+      "displayName": "cloudflare/wrangler",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:cloudflare"
+    },
+    {
+      "slug": "cloudflare-building-ai-agent-on-cloudflare",
+      "displayName": "cloudflare/building-ai-agent-on-cloudflare",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:cloudflare"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-toronto",
+    "label": "Global Skill Market / Toronto / Skills by Typefully",
+    "lat": 43.6532,
+    "lon": -79.3832,
+    "source": "virtual_market"
+  }
+}

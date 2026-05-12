@@ -1,0 +1,89 @@
+{
+  "id": "skill:duckdb-query",
+  "slug": "duckdb-query",
+  "name": "query",
+  "displayName": "duckdb/query",
+  "description": "Run SQL queries against attached databases or ad-hoc against files using Friendly SQL dialect",
+  "stars": 0,
+  "category": "TypeScript Skills",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/duckdb/skills/query",
+  "githubRepo": "",
+  "readme": "# duckdb/query\n\nRun SQL queries against attached databases or ad-hoc against files using Friendly SQL dialect",
+  "readmeHtml": "<h1>duckdb/query</h1>\n<p>Run SQL queries against attached databases or ad-hoc against files using Friendly SQL dialect</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.144Z",
+  "author": {
+    "login": "duckdb",
+    "name": "duckdb",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/duckdb",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "duckdb-attach-db",
+      "displayName": "duckdb/attach-db",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:duckdb"
+    },
+    {
+      "slug": "duckdb-read-file",
+      "displayName": "duckdb/read-file",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:duckdb"
+    },
+    {
+      "slug": "duckdb-duckdb-docs",
+      "displayName": "duckdb/duckdb-docs",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:duckdb"
+    },
+    {
+      "slug": "duckdb-read-memories",
+      "displayName": "duckdb/read-memories",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:duckdb"
+    },
+    {
+      "slug": "duckdb-install-duckdb",
+      "displayName": "duckdb/install-duckdb",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:duckdb"
+    },
+    {
+      "slug": "deanpeters-acquisition-channel-advisor",
+      "displayName": "deanpeters/acquisition-channel-advisor",
+      "stars": 4159,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    },
+    {
+      "slug": "deanpeters-ai-shaped-readiness-advisor",
+      "displayName": "deanpeters/ai-shaped-readiness-advisor",
+      "stars": 4159,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    },
+    {
+      "slug": "deanpeters-altitude-horizon-framework",
+      "displayName": "deanpeters/altitude-horizon-framework",
+      "stars": 4159,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-singapore",
+    "label": "Global Skill Market / Singapore / TypeScript Skills",
+    "lat": 1.3521,
+    "lon": 103.8198,
+    "source": "virtual_market"
+  }
+}

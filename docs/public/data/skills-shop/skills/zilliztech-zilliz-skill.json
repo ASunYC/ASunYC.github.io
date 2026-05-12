@@ -1,0 +1,89 @@
+{
+  "id": "skill:zilliztech-zilliz-skill",
+  "slug": "zilliztech-zilliz-skill",
+  "name": "zilliz-skill",
+  "displayName": "zilliztech/zilliz-skill",
+  "description": "Agent skill that teaches AI agents how to manage Zilliz Cloud vector databases through zilliz-cli",
+  "stars": 3,
+  "category": "Discovered",
+  "source": "discover:topic",
+  "url": "https://github.com/zilliztech/zilliz-skill",
+  "githubRepo": "zilliztech/zilliz-skill",
+  "readme": "# zilliztech/zilliz-skill\n\nAgent skill that teaches AI agents how to manage Zilliz Cloud vector databases through zilliz-cli",
+  "readmeHtml": "<h1>zilliztech/zilliz-skill</h1>\n<p>Agent skill that teaches AI agents how to manage Zilliz Cloud vector databases through zilliz-cli</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.079Z",
+  "author": {
+    "login": "zilliztech",
+    "name": "zilliztech",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/zilliztech",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "zilliztech-claude-context",
+      "displayName": "zilliztech/claude-context",
+      "stars": 10835,
+      "relation": "source_overlap",
+      "evidence": "author:zilliztech"
+    },
+    {
+      "slug": "zilliztech-memsearch",
+      "displayName": "zilliztech/memsearch",
+      "stars": 1619,
+      "relation": "source_overlap",
+      "evidence": "author:zilliztech"
+    },
+    {
+      "slug": "zilliztech-milvus-skill",
+      "displayName": "zilliztech/milvus-skill",
+      "stars": 19,
+      "relation": "source_overlap",
+      "evidence": "author:zilliztech"
+    },
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 73174,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "bytedance-deer-flow",
+      "displayName": "bytedance/deer-flow",
+      "stars": 65827,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-shanghai",
+    "label": "Global Skill Market / Shanghai / Discovered",
+    "lat": 31.2304,
+    "lon": 121.4737,
+    "source": "virtual_market"
+  }
+}

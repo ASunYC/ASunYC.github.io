@@ -1,0 +1,89 @@
+{
+  "id": "skill:tirth8205-code-review-graph",
+  "slug": "tirth8205-code-review-graph",
+  "name": "code-review-graph",
+  "displayName": "tirth8205/code-review-graph",
+  "description": "Local knowledge graph for Claude Code. Builds a persistent map of your codebase so Claude reads only what matters — 6.8× fewer tokens on reviews and up to 49× on daily coding tasks.",
+  "stars": 15659,
+  "category": "Discovered",
+  "source": "discover:topic",
+  "url": "https://github.com/tirth8205/code-review-graph",
+  "githubRepo": "tirth8205/code-review-graph",
+  "readme": "# tirth8205/code-review-graph\n\nLocal knowledge graph for Claude Code. Builds a persistent map of your codebase so Claude reads only what matters — 6.8× fewer tokens on reviews and up to 49× on daily coding tasks.",
+  "readmeHtml": "<h1>tirth8205/code-review-graph</h1>\n<p>Local knowledge graph for Claude Code. Builds a persistent map of your codebase so Claude reads only what matters — 6.8× fewer tokens on reviews and up to 49× on daily coding tasks.</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.003Z",
+  "author": {
+    "login": "tirth8205",
+    "name": "tirth8205",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/tirth8205",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 73174,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "bytedance-deer-flow",
+      "displayName": "bytedance/deer-flow",
+      "stars": 65827,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "farion1231-cc-switch",
+      "displayName": "farion1231/cc-switch",
+      "stars": 62022,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "gsd-build-get-shit-done",
+      "displayName": "gsd-build/get-shit-done",
+      "stars": 60616,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "shareai-lab-learn-claude-code",
+      "displayName": "shareAI-lab/learn-claude-code",
+      "stars": 58737,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-tokyo",
+    "label": "Global Skill Market / Tokyo / Discovered",
+    "lat": 35.6762,
+    "lon": 139.6503,
+    "source": "virtual_market"
+  }
+}

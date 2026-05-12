@@ -1,0 +1,89 @@
+{
+  "id": "skill:auth0-auth0-android",
+  "slug": "auth0-auth0-android",
+  "name": "auth0-android",
+  "displayName": "auth0/auth0-android",
+  "description": "Add authentication to native Android apps using the Auth0 SDK",
+  "stars": 0,
+  "category": "TypeScript Skills",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/auth0/skills/auth0-android",
+  "githubRepo": "",
+  "readme": "# auth0/auth0-android\n\nAdd authentication to native Android apps using the Auth0 SDK",
+  "readmeHtml": "<h1>auth0/auth0-android</h1>\n<p>Add authentication to native Android apps using the Auth0 SDK</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.131Z",
+  "author": {
+    "login": "auth0",
+    "name": "auth0",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/auth0",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "auth0-auth0-angular",
+      "displayName": "auth0/auth0-angular",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:auth0"
+    },
+    {
+      "slug": "auth0-auth0-aspnetcore-api",
+      "displayName": "auth0/auth0-aspnetcore-api",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:auth0"
+    },
+    {
+      "slug": "auth0-auth0-express",
+      "displayName": "auth0/auth0-express",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:auth0"
+    },
+    {
+      "slug": "auth0-auth0-fastify",
+      "displayName": "auth0/auth0-fastify",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:auth0"
+    },
+    {
+      "slug": "auth0-auth0-fastify-api",
+      "displayName": "auth0/auth0-fastify-api",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:auth0"
+    },
+    {
+      "slug": "auth0-auth0-mfa",
+      "displayName": "auth0/auth0-mfa",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:auth0"
+    },
+    {
+      "slug": "auth0-auth0-migration",
+      "displayName": "auth0/auth0-migration",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:auth0"
+    },
+    {
+      "slug": "auth0-auth0-nextjs",
+      "displayName": "auth0/auth0-nextjs",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:auth0"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-berlin",
+    "label": "Global Skill Market / Berlin / TypeScript Skills",
+    "lat": 52.52,
+    "lon": 13.405,
+    "source": "virtual_market"
+  }
+}

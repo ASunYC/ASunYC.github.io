@@ -1,0 +1,89 @@
+{
+  "id": "skill:sanjay3290-deep-research",
+  "slug": "sanjay3290-deep-research",
+  "name": "deep-research",
+  "displayName": "sanjay3290/deep-research",
+  "description": "Autonomous multi-step research using Gemini Deep Research Agent",
+  "stars": 268,
+  "category": "Community Skills",
+  "source": "voltagent",
+  "url": "https://github.com/sanjay3290/ai-skills/tree/main/skills/deep-research",
+  "githubRepo": "sanjay3290/ai-skills",
+  "readme": "# sanjay3290/deep-research\n\nAutonomous multi-step research using Gemini Deep Research Agent",
+  "readmeHtml": "<h1>sanjay3290/deep-research</h1>\n<p>Autonomous multi-step research using Gemini Deep Research Agent</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.049Z",
+  "author": {
+    "login": "sanjay3290",
+    "name": "sanjay3290",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/sanjay3290",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "sanjay3290-postgres",
+      "displayName": "sanjay3290/postgres",
+      "stars": 268,
+      "relation": "source_overlap",
+      "evidence": "repo:sanjay3290/ai-skills"
+    },
+    {
+      "slug": "sanjay3290-imagen",
+      "displayName": "sanjay3290/imagen",
+      "stars": 268,
+      "relation": "source_overlap",
+      "evidence": "repo:sanjay3290/ai-skills"
+    },
+    {
+      "slug": "sanjay3290-postgres",
+      "displayName": "sanjay3290/postgres",
+      "stars": 268,
+      "relation": "source_overlap",
+      "evidence": "author:sanjay3290"
+    },
+    {
+      "slug": "sanjay3290-imagen",
+      "displayName": "sanjay3290/imagen",
+      "stars": 268,
+      "relation": "source_overlap",
+      "evidence": "author:sanjay3290"
+    },
+    {
+      "slug": "obra-defense-in-depth",
+      "displayName": "obra/defense-in-depth",
+      "stars": 186953,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
+      "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "stars": 77115,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mvanhorn-last30days-skill",
+      "displayName": "mvanhorn/last30days-skill",
+      "stars": 25573,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "k-dense-ai-claude-scientific-skills",
+      "displayName": "K-Dense-AI/claude-scientific-skills",
+      "stars": 20299,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-paris",
+    "label": "Global Skill Market / Paris / Community Skills",
+    "lat": 48.8566,
+    "lon": 2.3522,
+    "source": "virtual_market"
+  }
+}

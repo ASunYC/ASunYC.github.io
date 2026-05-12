@@ -1,0 +1,89 @@
+{
+  "id": "skill:smixs-creative-director-skill",
+  "slug": "smixs-creative-director-skill",
+  "name": "creative-director-skill",
+  "displayName": "smixs/creative-director-skill",
+  "description": "AI creative director with recursive self-assessment: 20+ methodologies (SIT, TRIZ, Bisociation, SCAMPER, Synectics), 3-axis evaluation calibrated against Cannes/D&AD/HumanKind, 5-phase process from brief to presentation",
+  "stars": 0,
+  "category": "Community Skills",
+  "source": "voltagent",
+  "url": "https://github.com/smixs/creative-director-skill",
+  "githubRepo": "smixs/creative-director-skill",
+  "readme": "# smixs/creative-director-skill\n\nAI creative director with recursive self-assessment: 20+ methodologies (SIT, TRIZ, Bisociation, SCAMPER, Synectics), 3-axis evaluation calibrated against Cannes/D&AD/HumanKind, 5-phase process from brief to presentation",
+  "readmeHtml": "<h1>smixs/creative-director-skill</h1>\n<p>AI creative director with recursive self-assessment: 20+ methodologies (SIT, TRIZ, Bisociation, SCAMPER, Synectics), 3-axis evaluation calibrated against Cannes/D&amp;AD/HumanKind, 5-phase process from brief to presentation</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.153Z",
+  "author": {
+    "login": "smixs",
+    "name": "smixs",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/smixs",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "smixs-osint-skill",
+      "displayName": "smixs/osint-skill",
+      "stars": 34,
+      "relation": "source_overlap",
+      "evidence": "author:smixs"
+    },
+    {
+      "slug": "obra-defense-in-depth",
+      "displayName": "obra/defense-in-depth",
+      "stars": 186953,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
+      "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "stars": 77115,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mvanhorn-last30days-skill",
+      "displayName": "mvanhorn/last30days-skill",
+      "stars": 25573,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "k-dense-ai-claude-scientific-skills",
+      "displayName": "K-Dense-AI/claude-scientific-skills",
+      "stars": 20299,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "muratcankoylan-context-fundamentals",
+      "displayName": "muratcankoylan/context-fundamentals",
+      "stars": 15494,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "muratcankoylan-context-degradation",
+      "displayName": "muratcankoylan/context-degradation",
+      "stars": 15494,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "muratcankoylan-context-compression",
+      "displayName": "muratcankoylan/context-compression",
+      "stars": 15494,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-new-york",
+    "label": "Global Skill Market / New York / Community Skills",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "source": "virtual_market"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "skill:browserbase-cookie-sync",
+  "slug": "browserbase-cookie-sync",
+  "name": "cookie-sync",
+  "displayName": "browserbase/cookie-sync",
+  "description": "Export cookies from local Chrome into a Browserbase persistent context",
+  "stars": 0,
+  "category": "TypeScript Skills",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/browserbase/skills/cookie-sync",
+  "githubRepo": "",
+  "readme": "# browserbase/cookie-sync\n\nExport cookies from local Chrome into a Browserbase persistent context",
+  "readmeHtml": "<h1>browserbase/cookie-sync</h1>\n<p>Export cookies from local Chrome into a Browserbase persistent context</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.132Z",
+  "author": {
+    "login": "browserbase",
+    "name": "browserbase",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/browserbase",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "browserbase-skills",
+      "displayName": "browserbase/skills",
+      "stars": 2581,
+      "relation": "source_overlap",
+      "evidence": "author:browserbase"
+    },
+    {
+      "slug": "browserbase-browser",
+      "displayName": "browserbase/browser",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:browserbase"
+    },
+    {
+      "slug": "browserbase-browserbase-cli",
+      "displayName": "browserbase/browserbase-cli",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:browserbase"
+    },
+    {
+      "slug": "browserbase-fetch",
+      "displayName": "browserbase/fetch",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:browserbase"
+    },
+    {
+      "slug": "browserbase-functions",
+      "displayName": "browserbase/functions",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:browserbase"
+    },
+    {
+      "slug": "browserbase-search",
+      "displayName": "browserbase/search",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:browserbase"
+    },
+    {
+      "slug": "browserbase-ui-test",
+      "displayName": "browserbase/ui-test",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:browserbase"
+    },
+    {
+      "slug": "deanpeters-acquisition-channel-advisor",
+      "displayName": "deanpeters/acquisition-channel-advisor",
+      "stars": 4159,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-toronto",
+    "label": "Global Skill Market / Toronto / TypeScript Skills",
+    "lat": 43.6532,
+    "lon": -79.3832,
+    "source": "virtual_market"
+  }
+}

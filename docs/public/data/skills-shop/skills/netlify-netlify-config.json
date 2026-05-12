@@ -1,0 +1,89 @@
+{
+  "id": "skill:netlify-netlify-config",
+  "slug": "netlify-netlify-config",
+  "name": "netlify-config",
+  "displayName": "netlify/netlify-config",
+  "description": "Reference for netlify.toml site configuration",
+  "stars": 0,
+  "category": "Skills by Typefully",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/netlify/skills/netlify-config",
+  "githubRepo": "",
+  "readme": "# netlify/netlify-config\n\nReference for netlify.toml site configuration",
+  "readmeHtml": "<h1>netlify/netlify-config</h1>\n<p>Reference for netlify.toml site configuration</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.101Z",
+  "author": {
+    "login": "netlify",
+    "name": "netlify",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/netlify",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "netlify-netlify-functions",
+      "displayName": "netlify/netlify-functions",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:netlify"
+    },
+    {
+      "slug": "netlify-netlify-edge-functions",
+      "displayName": "netlify/netlify-edge-functions",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:netlify"
+    },
+    {
+      "slug": "netlify-netlify-blobs",
+      "displayName": "netlify/netlify-blobs",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:netlify"
+    },
+    {
+      "slug": "netlify-netlify-db",
+      "displayName": "netlify/netlify-db",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:netlify"
+    },
+    {
+      "slug": "netlify-netlify-image-cdn",
+      "displayName": "netlify/netlify-image-cdn",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:netlify"
+    },
+    {
+      "slug": "netlify-netlify-forms",
+      "displayName": "netlify/netlify-forms",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:netlify"
+    },
+    {
+      "slug": "netlify-netlify-frameworks",
+      "displayName": "netlify/netlify-frameworks",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:netlify"
+    },
+    {
+      "slug": "netlify-netlify-caching",
+      "displayName": "netlify/netlify-caching",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:netlify"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-shanghai",
+    "label": "Global Skill Market / Shanghai / Skills by Typefully",
+    "lat": 31.2304,
+    "lon": 121.4737,
+    "source": "virtual_market"
+  }
+}

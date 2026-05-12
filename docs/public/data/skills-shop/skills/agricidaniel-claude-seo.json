@@ -1,0 +1,89 @@
+{
+  "id": "skill:agricidaniel-claude-seo",
+  "slug": "agricidaniel-claude-seo",
+  "name": "claude-seo",
+  "displayName": "AgriciDaniel/claude-seo",
+  "description": "Universal SEO skill for comprehensive website analysis and optimization",
+  "stars": 0,
+  "category": "Community Skills",
+  "source": "voltagent",
+  "url": "https://github.com/AgriciDaniel/claude-seo",
+  "githubRepo": "AgriciDaniel/claude-seo",
+  "readme": "# AgriciDaniel/claude-seo\n\nUniversal SEO skill for comprehensive website analysis and optimization",
+  "readmeHtml": "<h1>AgriciDaniel/claude-seo</h1>\n<p>Universal SEO skill for comprehensive website analysis and optimization</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.153Z",
+  "author": {
+    "login": "agricidaniel",
+    "name": "agricidaniel",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/agricidaniel",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "agricidaniel-claude-obsidian",
+      "displayName": "AgriciDaniel/claude-obsidian",
+      "stars": 4455,
+      "relation": "source_overlap",
+      "evidence": "author:agricidaniel"
+    },
+    {
+      "slug": "agricidaniel-claude-ads",
+      "displayName": "AgriciDaniel/claude-ads",
+      "stars": 4368,
+      "relation": "source_overlap",
+      "evidence": "author:agricidaniel"
+    },
+    {
+      "slug": "agricidaniel-claude-blog",
+      "displayName": "AgriciDaniel/claude-blog",
+      "stars": 686,
+      "relation": "source_overlap",
+      "evidence": "author:agricidaniel"
+    },
+    {
+      "slug": "obra-defense-in-depth",
+      "displayName": "obra/defense-in-depth",
+      "stars": 186953,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
+      "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "stars": 77115,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mvanhorn-last30days-skill",
+      "displayName": "mvanhorn/last30days-skill",
+      "stars": 25573,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "k-dense-ai-claude-scientific-skills",
+      "displayName": "K-Dense-AI/claude-scientific-skills",
+      "stars": 20299,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "muratcankoylan-context-fundamentals",
+      "displayName": "muratcankoylan/context-fundamentals",
+      "stars": 15494,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-berlin",
+    "label": "Global Skill Market / Berlin / Community Skills",
+    "lat": 52.52,
+    "lon": 13.405,
+    "source": "virtual_market"
+  }
+}

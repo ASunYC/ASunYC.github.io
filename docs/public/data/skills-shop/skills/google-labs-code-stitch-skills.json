@@ -1,0 +1,89 @@
+{
+  "id": "skill:google-labs-code-stitch-skills",
+  "slug": "google-labs-code-stitch-skills",
+  "name": "stitch-skills",
+  "displayName": "google-labs-code/stitch-skills",
+  "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
+  "stars": 5259,
+  "category": "Discovered",
+  "source": "discover:keyword",
+  "url": "https://github.com/google-labs-code/stitch-skills",
+  "githubRepo": "google-labs-code/stitch-skills",
+  "readme": "# google-labs-code/stitch-skills\n\nA library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
+  "readmeHtml": "<h1>google-labs-code/stitch-skills</h1>\n<p>A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.014Z",
+  "author": {
+    "login": "google-labs-code",
+    "name": "google-labs-code",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/google-labs-code",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "google-labs-code-design-md",
+      "displayName": "google-labs-code/design-md",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:google-labs-code"
+    },
+    {
+      "slug": "google-labs-code-enhance-prompt",
+      "displayName": "google-labs-code/enhance-prompt",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:google-labs-code"
+    },
+    {
+      "slug": "google-labs-code-react-components",
+      "displayName": "google-labs-code/react-components",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:google-labs-code"
+    },
+    {
+      "slug": "google-labs-code-remotion",
+      "displayName": "google-labs-code/remotion",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:google-labs-code"
+    },
+    {
+      "slug": "google-labs-code-shadcn-ui",
+      "displayName": "google-labs-code/shadcn-ui",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:google-labs-code"
+    },
+    {
+      "slug": "google-labs-code-stitch-loop",
+      "displayName": "google-labs-code/stitch-loop",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:google-labs-code"
+    },
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-new-york",
+    "label": "Global Skill Market / New York / Discovered",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "source": "virtual_market"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "skill:siteboon-claudecodeui",
+  "slug": "siteboon-claudecodeui",
+  "name": "claudecodeui",
+  "displayName": "siteboon/claudecodeui",
+  "description": "Use Claude Code, Cursor CLI or Codex on mobile and web with CloudCLI (aka Claude Code UI). CloudCLI is a free open source webui/GUI that helps you manage your Claude Code session and projects remotely",
+  "stars": 10643,
+  "category": "Discovered",
+  "source": "discover:topic",
+  "url": "https://github.com/siteboon/claudecodeui",
+  "githubRepo": "siteboon/claudecodeui",
+  "readme": "# siteboon/claudecodeui\n\nUse Claude Code, Cursor CLI or Codex on mobile and web with CloudCLI (aka Claude Code UI). CloudCLI is a free open source webui/GUI that helps you manage your Claude Code session and projects remotely",
+  "readmeHtml": "<h1>siteboon/claudecodeui</h1>\n<p>Use Claude Code, Cursor CLI or Codex on mobile and web with CloudCLI (aka Claude Code UI). CloudCLI is a free open source webui/GUI that helps you manage your Claude Code session and projects remotely</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.005Z",
+  "author": {
+    "login": "siteboon",
+    "name": "siteboon",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/siteboon",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 73174,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "bytedance-deer-flow",
+      "displayName": "bytedance/deer-flow",
+      "stars": 65827,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "farion1231-cc-switch",
+      "displayName": "farion1231/cc-switch",
+      "stars": 62022,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "gsd-build-get-shit-done",
+      "displayName": "gsd-build/get-shit-done",
+      "stars": 60616,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "shareai-lab-learn-claude-code",
+      "displayName": "shareAI-lab/learn-claude-code",
+      "stars": 58737,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-bengaluru",
+    "label": "Global Skill Market / Bengaluru / Discovered",
+    "lat": 12.9716,
+    "lon": 77.5946,
+    "source": "virtual_market"
+  }
+}

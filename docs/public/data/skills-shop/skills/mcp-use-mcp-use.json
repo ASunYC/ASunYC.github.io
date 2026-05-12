@@ -1,0 +1,89 @@
+{
+  "id": "skill:mcp-use-mcp-use",
+  "slug": "mcp-use-mcp-use",
+  "name": "mcp-use",
+  "displayName": "mcp-use/mcp-use",
+  "description": "The fullstack MCP framework to develop MCP Apps for ChatGPT / Claude & MCP Servers for AI Agents.",
+  "stars": 9898,
+  "category": "Discovered",
+  "source": "discover:topic",
+  "url": "https://github.com/mcp-use/mcp-use",
+  "githubRepo": "mcp-use/mcp-use",
+  "readme": "# mcp-use/mcp-use\n\nThe fullstack MCP framework to develop MCP Apps for ChatGPT / Claude & MCP Servers for AI Agents.",
+  "readmeHtml": "<h1>mcp-use/mcp-use</h1>\n<p>The fullstack MCP framework to develop MCP Apps for ChatGPT / Claude &amp; MCP Servers for AI Agents.</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.006Z",
+  "author": {
+    "login": "mcp-use",
+    "name": "mcp-use",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/mcp-use",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 73174,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "bytedance-deer-flow",
+      "displayName": "bytedance/deer-flow",
+      "stars": 65827,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "farion1231-cc-switch",
+      "displayName": "farion1231/cc-switch",
+      "stars": 62022,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "gsd-build-get-shit-done",
+      "displayName": "gsd-build/get-shit-done",
+      "stars": 60616,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "shareai-lab-learn-claude-code",
+      "displayName": "shareAI-lab/learn-claude-code",
+      "stars": 58737,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-berlin",
+    "label": "Global Skill Market / Berlin / Discovered",
+    "lat": 52.52,
+    "lon": 13.405,
+    "source": "virtual_market"
+  }
+}

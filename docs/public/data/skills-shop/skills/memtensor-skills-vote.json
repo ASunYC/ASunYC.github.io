@@ -1,0 +1,89 @@
+{
+  "id": "skill:memtensor-skills-vote",
+  "slug": "memtensor-skills-vote",
+  "name": "skills-vote",
+  "displayName": "MemTensor/skills-vote",
+  "description": "The Next-Gen Agent-Native Skill Recommendation Engine",
+  "stars": 62,
+  "category": "Discovered",
+  "source": "discover:topic",
+  "url": "https://github.com/MemTensor/skills-vote",
+  "githubRepo": "MemTensor/skills-vote",
+  "readme": "# MemTensor/skills-vote\n\nThe Next-Gen Agent-Native Skill Recommendation Engine",
+  "readmeHtml": "<h1>MemTensor/skills-vote</h1>\n<p>The Next-Gen Agent-Native Skill Recommendation Engine</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.052Z",
+  "author": {
+    "login": "memtensor",
+    "name": "memtensor",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/memtensor",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "memtensor-memos",
+      "displayName": "MemTensor/MemOS",
+      "stars": 8944,
+      "relation": "source_overlap",
+      "evidence": "author:memtensor"
+    },
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 73174,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "bytedance-deer-flow",
+      "displayName": "bytedance/deer-flow",
+      "stars": 65827,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "farion1231-cc-switch",
+      "displayName": "farion1231/cc-switch",
+      "stars": 62022,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "gsd-build-get-shit-done",
+      "displayName": "gsd-build/get-shit-done",
+      "stars": 60616,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-tokyo",
+    "label": "Global Skill Market / Tokyo / Discovered",
+    "lat": 35.6762,
+    "lon": 139.6503,
+    "source": "virtual_market"
+  }
+}

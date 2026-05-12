@@ -1,0 +1,89 @@
+{
+  "id": "skill:browserbase-functions",
+  "slug": "browserbase-functions",
+  "name": "functions",
+  "displayName": "browserbase/functions",
+  "description": "Deploy browser automation scripts as serverless cloud functions",
+  "stars": 0,
+  "category": "TypeScript Skills",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/browserbase/skills/functions",
+  "githubRepo": "",
+  "readme": "# browserbase/functions\n\nDeploy browser automation scripts as serverless cloud functions",
+  "readmeHtml": "<h1>browserbase/functions</h1>\n<p>Deploy browser automation scripts as serverless cloud functions</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.132Z",
+  "author": {
+    "login": "browserbase",
+    "name": "browserbase",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/browserbase",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "browserbase-skills",
+      "displayName": "browserbase/skills",
+      "stars": 2581,
+      "relation": "source_overlap",
+      "evidence": "author:browserbase"
+    },
+    {
+      "slug": "browserbase-browser",
+      "displayName": "browserbase/browser",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:browserbase"
+    },
+    {
+      "slug": "browserbase-browserbase-cli",
+      "displayName": "browserbase/browserbase-cli",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:browserbase"
+    },
+    {
+      "slug": "browserbase-cookie-sync",
+      "displayName": "browserbase/cookie-sync",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:browserbase"
+    },
+    {
+      "slug": "browserbase-fetch",
+      "displayName": "browserbase/fetch",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:browserbase"
+    },
+    {
+      "slug": "browserbase-search",
+      "displayName": "browserbase/search",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:browserbase"
+    },
+    {
+      "slug": "browserbase-ui-test",
+      "displayName": "browserbase/ui-test",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:browserbase"
+    },
+    {
+      "slug": "deanpeters-acquisition-channel-advisor",
+      "displayName": "deanpeters/acquisition-channel-advisor",
+      "stars": 4159,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-sao-paulo",
+    "label": "Global Skill Market / Sao Paulo / TypeScript Skills",
+    "lat": -23.5558,
+    "lon": -46.6396,
+    "source": "virtual_market"
+  }
+}

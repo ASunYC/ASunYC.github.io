@@ -1,0 +1,89 @@
+{
+  "id": "skill:microsoft-zustand-store-ts",
+  "slug": "microsoft-zustand-store-ts",
+  "name": "zustand-store-ts",
+  "displayName": "microsoft/zustand-store-ts",
+  "description": "Zustand stores with middleware patterns",
+  "stars": 0,
+  "category": "TypeScript Skills",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/microsoft/skills/zustand-store-ts",
+  "githubRepo": "",
+  "readme": "# microsoft/zustand-store-ts\n\nZustand stores with middleware patterns",
+  "readmeHtml": "<h1>microsoft/zustand-store-ts</h1>\n<p>Zustand stores with middleware patterns</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.118Z",
+  "author": {
+    "login": "microsoft",
+    "name": "microsoft",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/microsoft",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "microsoft-agent-skills",
+      "displayName": "microsoft/agent-skills",
+      "stars": 2248,
+      "relation": "source_overlap",
+      "evidence": "author:microsoft"
+    },
+    {
+      "slug": "microsoft-cloud-solution-architect",
+      "displayName": "microsoft/cloud-solution-architect",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:microsoft"
+    },
+    {
+      "slug": "microsoft-continual-learning",
+      "displayName": "microsoft/continual-learning",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:microsoft"
+    },
+    {
+      "slug": "microsoft-copilot-sdk",
+      "displayName": "microsoft/copilot-sdk",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:microsoft"
+    },
+    {
+      "slug": "microsoft-entra-agent-id",
+      "displayName": "microsoft/entra-agent-id",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:microsoft"
+    },
+    {
+      "slug": "microsoft-frontend-design-review",
+      "displayName": "microsoft/frontend-design-review",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:microsoft"
+    },
+    {
+      "slug": "microsoft-github-issue-creator",
+      "displayName": "microsoft/github-issue-creator",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:microsoft"
+    },
+    {
+      "slug": "microsoft-mcp-builder",
+      "displayName": "microsoft/mcp-builder",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:microsoft"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-berlin",
+    "label": "Global Skill Market / Berlin / TypeScript Skills",
+    "lat": 52.52,
+    "lon": 13.405,
+    "source": "virtual_market"
+  }
+}

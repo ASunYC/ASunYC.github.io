@@ -1,0 +1,89 @@
+{
+  "id": "skill:openai-figma-use",
+  "slug": "openai-figma-use",
+  "name": "figma-use",
+  "displayName": "openai/figma-use",
+  "description": "Prerequisite skill for every use_figma tool call — write/read actions in Figma context",
+  "stars": 0,
+  "category": "TypeScript Skills",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/openai/skills/figma-use",
+  "githubRepo": "",
+  "readme": "# openai/figma-use\n\nPrerequisite skill for every use_figma tool call — write/read actions in Figma context",
+  "readmeHtml": "<h1>openai/figma-use</h1>\n<p>Prerequisite skill for every use_figma tool call — write/read actions in Figma context</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.125Z",
+  "author": {
+    "login": "openai",
+    "name": "openai",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/openai",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "openai-skills",
+      "displayName": "openai/skills",
+      "stars": 18508,
+      "relation": "source_overlap",
+      "evidence": "author:openai"
+    },
+    {
+      "slug": "openai-cloudflare-deploy",
+      "displayName": "openai/cloudflare-deploy",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:openai"
+    },
+    {
+      "slug": "openai-develop-web-game",
+      "displayName": "openai/develop-web-game",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:openai"
+    },
+    {
+      "slug": "openai-doc",
+      "displayName": "openai/doc",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:openai"
+    },
+    {
+      "slug": "openai-gh-address-comments",
+      "displayName": "openai/gh-address-comments",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:openai"
+    },
+    {
+      "slug": "openai-gh-fix-ci",
+      "displayName": "openai/gh-fix-ci",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:openai"
+    },
+    {
+      "slug": "openai-imagegen",
+      "displayName": "openai/imagegen",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:openai"
+    },
+    {
+      "slug": "openai-jupyter-notebook",
+      "displayName": "openai/jupyter-notebook",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:openai"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-tokyo",
+    "label": "Global Skill Market / Tokyo / TypeScript Skills",
+    "lat": 35.6762,
+    "lon": 139.6503,
+    "source": "virtual_market"
+  }
+}

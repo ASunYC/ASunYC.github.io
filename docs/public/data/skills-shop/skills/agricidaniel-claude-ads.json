@@ -1,0 +1,89 @@
+{
+  "id": "skill:agricidaniel-claude-ads",
+  "slug": "agricidaniel-claude-ads",
+  "name": "claude-ads",
+  "displayName": "AgriciDaniel/claude-ads",
+  "description": "Comprehensive paid advertising audit & optimization skill for Claude Code. 250+ checks across Google, Meta, YouTube, LinkedIn, TikTok, Microsoft & Apple Ads with weighted scoring, parallel agents, industry templates, and AI creative generation.",
+  "stars": 4368,
+  "category": "Discovered",
+  "source": "discover:topic",
+  "url": "https://github.com/AgriciDaniel/claude-ads",
+  "githubRepo": "AgriciDaniel/claude-ads",
+  "readme": "# AgriciDaniel/claude-ads\n\nComprehensive paid advertising audit & optimization skill for Claude Code. 250+ checks across Google, Meta, YouTube, LinkedIn, TikTok, Microsoft & Apple Ads with weighted scoring, parallel agents, industry templates, and AI creative generation.",
+  "readmeHtml": "<h1>AgriciDaniel/claude-ads</h1>\n<p>Comprehensive paid advertising audit &amp; optimization skill for Claude Code. 250+ checks across Google, Meta, YouTube, LinkedIn, TikTok, Microsoft &amp; Apple Ads with weighted scoring, parallel agents, industry templates, and AI creative generation.</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.016Z",
+  "author": {
+    "login": "agricidaniel",
+    "name": "agricidaniel",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/agricidaniel",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "agricidaniel-claude-obsidian",
+      "displayName": "AgriciDaniel/claude-obsidian",
+      "stars": 4455,
+      "relation": "source_overlap",
+      "evidence": "author:agricidaniel"
+    },
+    {
+      "slug": "agricidaniel-claude-blog",
+      "displayName": "AgriciDaniel/claude-blog",
+      "stars": 686,
+      "relation": "source_overlap",
+      "evidence": "author:agricidaniel"
+    },
+    {
+      "slug": "agricidaniel-claude-seo",
+      "displayName": "AgriciDaniel/claude-seo",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:agricidaniel"
+    },
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 73174,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "bytedance-deer-flow",
+      "displayName": "bytedance/deer-flow",
+      "stars": 65827,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-toronto",
+    "label": "Global Skill Market / Toronto / Discovered",
+    "lat": 43.6532,
+    "lon": -79.3832,
+    "source": "virtual_market"
+  }
+}

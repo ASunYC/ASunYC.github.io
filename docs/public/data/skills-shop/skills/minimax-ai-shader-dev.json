@@ -1,0 +1,89 @@
+{
+  "id": "skill:minimax-ai-shader-dev",
+  "slug": "minimax-ai-shader-dev",
+  "name": "shader-dev",
+  "displayName": "MiniMax-AI/shader-dev",
+  "description": "GLSL shader techniques for ray marching, fluid simulation, particle systems, and procedural generation",
+  "stars": 0,
+  "category": "TypeScript Skills",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/MiniMax-AI/skills/shader-dev",
+  "githubRepo": "",
+  "readme": "# MiniMax-AI/shader-dev\n\nGLSL shader techniques for ray marching, fluid simulation, particle systems, and procedural generation",
+  "readmeHtml": "<h1>MiniMax-AI/shader-dev</h1>\n<p>GLSL shader techniques for ray marching, fluid simulation, particle systems, and procedural generation</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.144Z",
+  "author": {
+    "login": "minimax-ai",
+    "name": "minimax-ai",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/minimax-ai",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "minimax-ai-cli",
+      "displayName": "MiniMax-AI/cli",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:minimax-ai"
+    },
+    {
+      "slug": "minimax-ai-frontend-dev",
+      "displayName": "MiniMax-AI/frontend-dev",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:minimax-ai"
+    },
+    {
+      "slug": "minimax-ai-fullstack-dev",
+      "displayName": "MiniMax-AI/fullstack-dev",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:minimax-ai"
+    },
+    {
+      "slug": "minimax-ai-android-native-dev",
+      "displayName": "MiniMax-AI/android-native-dev",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:minimax-ai"
+    },
+    {
+      "slug": "minimax-ai-ios-application-dev",
+      "displayName": "MiniMax-AI/ios-application-dev",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:minimax-ai"
+    },
+    {
+      "slug": "minimax-ai-gif-sticker-maker",
+      "displayName": "MiniMax-AI/gif-sticker-maker",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:minimax-ai"
+    },
+    {
+      "slug": "minimax-ai-minimax-pdf",
+      "displayName": "MiniMax-AI/minimax-pdf",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:minimax-ai"
+    },
+    {
+      "slug": "minimax-ai-pptx-generator",
+      "displayName": "MiniMax-AI/pptx-generator",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:minimax-ai"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-tokyo",
+    "label": "Global Skill Market / Tokyo / TypeScript Skills",
+    "lat": 35.6762,
+    "lon": 139.6503,
+    "source": "virtual_market"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "skill:leonsong09-session-wrap",
+  "slug": "leonsong09-session-wrap",
+  "name": "session-wrap",
+  "displayName": "leonsong09/session-wrap",
+  "description": "Wrap up the current coding session into a concise summary of outcomes, verification, risks, and next actions.",
+  "stars": 8,
+  "category": "Discovered",
+  "source": "discover:topic",
+  "url": "https://github.com/leonsong09/session-wrap",
+  "githubRepo": "leonsong09/session-wrap",
+  "readme": "# leonsong09/session-wrap\n\nWrap up the current coding session into a concise summary of outcomes, verification, risks, and next actions.",
+  "readmeHtml": "<h1>leonsong09/session-wrap</h1>\n<p>Wrap up the current coding session into a concise summary of outcomes, verification, risks, and next actions.</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.068Z",
+  "author": {
+    "login": "leonsong09",
+    "name": "leonsong09",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/leonsong09",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "leonsong09-research-note-wrap",
+      "displayName": "leonsong09/research-note-wrap",
+      "stars": 16,
+      "relation": "source_overlap",
+      "evidence": "author:leonsong09"
+    },
+    {
+      "slug": "leonsong09-commit-daily-summary",
+      "displayName": "leonsong09/commit-daily-summary",
+      "stars": 8,
+      "relation": "source_overlap",
+      "evidence": "author:leonsong09"
+    },
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 73174,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "bytedance-deer-flow",
+      "displayName": "bytedance/deer-flow",
+      "stars": 65827,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "farion1231-cc-switch",
+      "displayName": "farion1231/cc-switch",
+      "stars": 62022,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-berlin",
+    "label": "Global Skill Market / Berlin / Discovered",
+    "lat": 52.52,
+    "lon": 13.405,
+    "source": "virtual_market"
+  }
+}

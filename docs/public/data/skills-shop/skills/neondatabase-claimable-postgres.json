@@ -1,0 +1,61 @@
+{
+  "id": "skill:neondatabase-claimable-postgres",
+  "slug": "neondatabase-claimable-postgres",
+  "name": "claimable-postgres",
+  "displayName": "neondatabase/claimable-postgres",
+  "description": "Claimable Postgres database provisioning with Neon",
+  "stars": 0,
+  "category": "Skills by Neon",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/neondatabase/skills/claimable-postgres",
+  "githubRepo": "",
+  "readme": "# neondatabase/claimable-postgres\n\nClaimable Postgres database provisioning with Neon",
+  "readmeHtml": "<h1>neondatabase/claimable-postgres</h1>\n<p>Claimable Postgres database provisioning with Neon</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.092Z",
+  "author": {
+    "login": "neondatabase",
+    "name": "neondatabase",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/neondatabase",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "neondatabase-neon-postgres",
+      "displayName": "neondatabase/neon-postgres",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:neondatabase"
+    },
+    {
+      "slug": "neondatabase-neon-postgres-egress-optimizer",
+      "displayName": "neondatabase/neon-postgres-egress-optimizer",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:neondatabase"
+    },
+    {
+      "slug": "neondatabase-neon-postgres",
+      "displayName": "neondatabase/neon-postgres",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Skills by Neon"
+    },
+    {
+      "slug": "neondatabase-neon-postgres-egress-optimizer",
+      "displayName": "neondatabase/neon-postgres-egress-optimizer",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Skills by Neon"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-toronto",
+    "label": "Global Skill Market / Toronto / Skills by Neon",
+    "lat": 43.6532,
+    "lon": -79.3832,
+    "source": "virtual_market"
+  }
+}

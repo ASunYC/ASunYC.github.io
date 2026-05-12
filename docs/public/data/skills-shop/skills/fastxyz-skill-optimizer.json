@@ -1,0 +1,89 @@
+{
+  "id": "skill:fastxyz-skill-optimizer",
+  "slug": "fastxyz-skill-optimizer",
+  "name": "skill-optimizer",
+  "displayName": "fastxyz/skill-optimizer",
+  "description": "Benchmark, evaluate, and optimize skills to ensure reliable performance across all LLMs",
+  "stars": 51,
+  "category": "Discovered",
+  "source": "discover:topic",
+  "url": "https://github.com/fastxyz/skill-optimizer",
+  "githubRepo": "fastxyz/skill-optimizer",
+  "readme": "# fastxyz/skill-optimizer\n\nBenchmark, evaluate, and optimize skills to ensure reliable performance across all LLMs",
+  "readmeHtml": "<h1>fastxyz/skill-optimizer</h1>\n<p>Benchmark, evaluate, and optimize skills to ensure reliable performance across all LLMs</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.053Z",
+  "author": {
+    "login": "fastxyz",
+    "name": "fastxyz",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/fastxyz",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 73174,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "bytedance-deer-flow",
+      "displayName": "bytedance/deer-flow",
+      "stars": 65827,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "farion1231-cc-switch",
+      "displayName": "farion1231/cc-switch",
+      "stars": 62022,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "gsd-build-get-shit-done",
+      "displayName": "gsd-build/get-shit-done",
+      "stars": 60616,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "shareai-lab-learn-claude-code",
+      "displayName": "shareAI-lab/learn-claude-code",
+      "stars": 58737,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-sao-paulo",
+    "label": "Global Skill Market / Sao Paulo / Discovered",
+    "lat": -23.5558,
+    "lon": -46.6396,
+    "source": "virtual_market"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "skill:cloudflare-building-mcp-server-on-cloudflare",
+  "slug": "cloudflare-building-mcp-server-on-cloudflare",
+  "name": "building-mcp-server-on-cloudflare",
+  "displayName": "cloudflare/building-mcp-server-on-cloudflare",
+  "description": "Build remote MCP servers with tools and OAuth",
+  "stars": 0,
+  "category": "Skills by Cloudflare",
+  "source": "heilcheng",
+  "url": "https://agent-skill.co/cloudflare/skills/building-mcp-server-on-cloudflare",
+  "githubRepo": "",
+  "readme": "# cloudflare/building-mcp-server-on-cloudflare\n\nBuild remote MCP servers with tools and OAuth",
+  "readmeHtml": "<h1>cloudflare/building-mcp-server-on-cloudflare</h1>\n<p>Build remote MCP servers with tools and OAuth</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.156Z",
+  "author": {
+    "login": "cloudflare",
+    "name": "cloudflare",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/cloudflare",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "cloudflare-agents-sdk",
+      "displayName": "cloudflare/agents-sdk",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:cloudflare"
+    },
+    {
+      "slug": "cloudflare-cloudflare",
+      "displayName": "cloudflare/cloudflare",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:cloudflare"
+    },
+    {
+      "slug": "cloudflare-cloudflare-email-service",
+      "displayName": "cloudflare/cloudflare-email-service",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:cloudflare"
+    },
+    {
+      "slug": "cloudflare-durable-objects",
+      "displayName": "cloudflare/durable-objects",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:cloudflare"
+    },
+    {
+      "slug": "cloudflare-sandbox-sdk",
+      "displayName": "cloudflare/sandbox-sdk",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:cloudflare"
+    },
+    {
+      "slug": "cloudflare-web-perf",
+      "displayName": "cloudflare/web-perf",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:cloudflare"
+    },
+    {
+      "slug": "cloudflare-workers-best-practices",
+      "displayName": "cloudflare/workers-best-practices",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:cloudflare"
+    },
+    {
+      "slug": "cloudflare-wrangler",
+      "displayName": "cloudflare/wrangler",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:cloudflare"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-tokyo",
+    "label": "Global Skill Market / Tokyo / Skills by Cloudflare",
+    "lat": 35.6762,
+    "lon": 139.6503,
+    "source": "virtual_market"
+  }
+}

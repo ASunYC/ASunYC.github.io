@@ -1,0 +1,89 @@
+{
+  "id": "skill:alexgreensh-repo-forensics",
+  "slug": "alexgreensh-repo-forensics",
+  "name": "repo-forensics",
+  "displayName": "alexgreensh/repo-forensics",
+  "description": "Automated Security scanner for GitHub repos, Agent Skills, Plugins, and MCP servers. 18 scanners. Zero dependencies. Keeps you and your agent safe.",
+  "stars": 62,
+  "category": "Discovered",
+  "source": "discover:topic",
+  "url": "https://github.com/alexgreensh/repo-forensics",
+  "githubRepo": "alexgreensh/repo-forensics",
+  "readme": "# alexgreensh/repo-forensics\n\nAutomated Security scanner for GitHub repos, Agent Skills, Plugins, and MCP servers. 18 scanners. Zero dependencies. Keeps you and your agent safe.",
+  "readmeHtml": "<h1>alexgreensh/repo-forensics</h1>\n<p>Automated Security scanner for GitHub repos, Agent Skills, Plugins, and MCP servers. 18 scanners. Zero dependencies. Keeps you and your agent safe.</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.052Z",
+  "author": {
+    "login": "alexgreensh",
+    "name": "alexgreensh",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/alexgreensh",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 73174,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "bytedance-deer-flow",
+      "displayName": "bytedance/deer-flow",
+      "stars": 65827,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "farion1231-cc-switch",
+      "displayName": "farion1231/cc-switch",
+      "stars": 62022,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "gsd-build-get-shit-done",
+      "displayName": "gsd-build/get-shit-done",
+      "stars": 60616,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "shareai-lab-learn-claude-code",
+      "displayName": "shareAI-lab/learn-claude-code",
+      "stars": 58737,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-paris",
+    "label": "Global Skill Market / Paris / Discovered",
+    "lat": 48.8566,
+    "lon": 2.3522,
+    "source": "virtual_market"
+  }
+}

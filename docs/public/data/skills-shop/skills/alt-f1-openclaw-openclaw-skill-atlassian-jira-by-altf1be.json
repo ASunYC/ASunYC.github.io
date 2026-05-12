@@ -1,0 +1,89 @@
+{
+  "id": "skill:alt-f1-openclaw-openclaw-skill-atlassian-jira-by-altf1be",
+  "slug": "alt-f1-openclaw-openclaw-skill-atlassian-jira-by-altf1be",
+  "name": "openclaw-skill-atlassian-jira-by-altf1be",
+  "displayName": "ALT-F1-OpenClaw/openclaw-skill-atlassian-jira-by-altf1be",
+  "description": "OpenClaw skill for Atlassian Jira Cloud — CRUD issues, comments, attachments, workflow transitions, and JQL search via Jira REST API v3. By Abdelkrim BOUJRAF / ALT-F1 SRL, Brussels.",
+  "stars": 2,
+  "category": "Discovered",
+  "source": "discover:topic",
+  "url": "https://github.com/ALT-F1-OpenClaw/openclaw-skill-atlassian-jira-by-altf1be",
+  "githubRepo": "ALT-F1-OpenClaw/openclaw-skill-atlassian-jira-by-altf1be",
+  "readme": "# ALT-F1-OpenClaw/openclaw-skill-atlassian-jira-by-altf1be\n\nOpenClaw skill for Atlassian Jira Cloud — CRUD issues, comments, attachments, workflow transitions, and JQL search via Jira REST API v3. By Abdelkrim BOUJRAF / ALT-F1 SRL, Brussels.",
+  "readmeHtml": "<h1>ALT-F1-OpenClaw/openclaw-skill-atlassian-jira-by-altf1be</h1>\n<p>OpenClaw skill for Atlassian Jira Cloud — CRUD issues, comments, attachments, workflow transitions, and JQL search via Jira REST API v3. By Abdelkrim BOUJRAF / ALT-F1 SRL, Brussels.</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.080Z",
+  "author": {
+    "login": "alt-f1-openclaw",
+    "name": "alt-f1-openclaw",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/alt-f1-openclaw",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 73174,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "bytedance-deer-flow",
+      "displayName": "bytedance/deer-flow",
+      "stars": 65827,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "farion1231-cc-switch",
+      "displayName": "farion1231/cc-switch",
+      "stars": 62022,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "gsd-build-get-shit-done",
+      "displayName": "gsd-build/get-shit-done",
+      "stars": 60616,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "shareai-lab-learn-claude-code",
+      "displayName": "shareAI-lab/learn-claude-code",
+      "stars": 58737,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-singapore",
+    "label": "Global Skill Market / Singapore / Discovered",
+    "lat": 1.3521,
+    "lon": 103.8198,
+    "source": "virtual_market"
+  }
+}

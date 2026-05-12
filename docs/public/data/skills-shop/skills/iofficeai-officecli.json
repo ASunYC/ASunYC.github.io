@@ -1,0 +1,89 @@
+{
+  "id": "skill:iofficeai-officecli",
+  "slug": "iofficeai-officecli",
+  "name": "officecli",
+  "displayName": "iOfficeAI/OfficeCLI",
+  "description": "OfficeCLI is the first and best Office suite  purpose-built for AI agents to read, edit, and automate Word, Excel, and PowerPoint files. Free, open-source, single binary, no Office installation required.",
+  "stars": 3097,
+  "category": "Discovered",
+  "source": "discover:keyword",
+  "url": "https://github.com/iOfficeAI/OfficeCLI",
+  "githubRepo": "iOfficeAI/OfficeCLI",
+  "readme": "# iOfficeAI/OfficeCLI\n\nOfficeCLI is the first and best Office suite  purpose-built for AI agents to read, edit, and automate Word, Excel, and PowerPoint files. Free, open-source, single binary, no Office installation required.",
+  "readmeHtml": "<h1>iOfficeAI/OfficeCLI</h1>\n<p>OfficeCLI is the first and best Office suite  purpose-built for AI agents to read, edit, and automate Word, Excel, and PowerPoint files. Free, open-source, single binary, no Office installation required.</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.024Z",
+  "author": {
+    "login": "iofficeai",
+    "name": "iofficeai",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/iofficeai",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "iofficeai-aionui",
+      "displayName": "iOfficeAI/AionUi",
+      "stars": 23952,
+      "relation": "source_overlap",
+      "evidence": "author:iofficeai"
+    },
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 73174,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "bytedance-deer-flow",
+      "displayName": "bytedance/deer-flow",
+      "stars": 65827,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "farion1231-cc-switch",
+      "displayName": "farion1231/cc-switch",
+      "stars": 62022,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "gsd-build-get-shit-done",
+      "displayName": "gsd-build/get-shit-done",
+      "stars": 60616,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-singapore",
+    "label": "Global Skill Market / Singapore / Discovered",
+    "lat": 1.3521,
+    "lon": 103.8198,
+    "source": "virtual_market"
+  }
+}

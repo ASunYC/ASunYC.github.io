@@ -1,0 +1,89 @@
+{
+  "id": "skill:avdlee-swift-concurrency-agent-skill",
+  "slug": "avdlee-swift-concurrency-agent-skill",
+  "name": "swift-concurrency-agent-skill",
+  "displayName": "AvdLee/Swift-Concurrency-Agent-Skill",
+  "description": "Add expert Swift Concurrency guidance to your AI coding tool (Agent Skills open format): safe concurrency, performance optimization, and Swift 6 migration.",
+  "stars": 1482,
+  "category": "Discovered",
+  "source": "discover:keyword",
+  "url": "https://github.com/AvdLee/Swift-Concurrency-Agent-Skill",
+  "githubRepo": "AvdLee/Swift-Concurrency-Agent-Skill",
+  "readme": "# AvdLee/Swift-Concurrency-Agent-Skill\n\nAdd expert Swift Concurrency guidance to your AI coding tool (Agent Skills open format): safe concurrency, performance optimization, and Swift 6 migration.",
+  "readmeHtml": "<h1>AvdLee/Swift-Concurrency-Agent-Skill</h1>\n<p>Add expert Swift Concurrency guidance to your AI coding tool (Agent Skills open format): safe concurrency, performance optimization, and Swift 6 migration.</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.030Z",
+  "author": {
+    "login": "avdlee",
+    "name": "avdlee",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/avdlee",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "avdlee-swiftui-expert-skill",
+      "displayName": "AvdLee/swiftui-expert-skill",
+      "stars": 2835,
+      "relation": "source_overlap",
+      "evidence": "author:avdlee"
+    },
+    {
+      "slug": "avdlee-swiftui-agent-skill",
+      "displayName": "AvdLee/SwiftUI-Agent-Skill",
+      "stars": 2809,
+      "relation": "source_overlap",
+      "evidence": "author:avdlee"
+    },
+    {
+      "slug": "avdlee-rocketsimapp",
+      "displayName": "AvdLee/RocketSimApp",
+      "stars": 738,
+      "relation": "source_overlap",
+      "evidence": "author:avdlee"
+    },
+    {
+      "slug": "avdlee-core-data-agent-skill",
+      "displayName": "AvdLee/Core-Data-Agent-Skill",
+      "stars": 257,
+      "relation": "source_overlap",
+      "evidence": "author:avdlee"
+    },
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 73174,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-san-francisco",
+    "label": "Global Skill Market / San Francisco / Discovered",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "virtual_market"
+  }
+}

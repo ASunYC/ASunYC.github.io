@@ -1,0 +1,89 @@
+{
+  "id": "skill:huggingface-upskill",
+  "slug": "huggingface-upskill",
+  "name": "upskill",
+  "displayName": "huggingface/upskill",
+  "description": "Generate and evaluate agent skills for code agents like Claude Code, Open Code, OpenAI Codex",
+  "stars": 517,
+  "category": "Discovered",
+  "source": "discover:keyword",
+  "url": "https://github.com/huggingface/upskill",
+  "githubRepo": "huggingface/upskill",
+  "readme": "# huggingface/upskill\n\nGenerate and evaluate agent skills for code agents like Claude Code, Open Code, OpenAI Codex",
+  "readmeHtml": "<h1>huggingface/upskill</h1>\n<p>Generate and evaluate agent skills for code agents like Claude Code, Open Code, OpenAI Codex</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.042Z",
+  "author": {
+    "login": "huggingface",
+    "name": "huggingface",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/huggingface",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "huggingface-hf-cli",
+      "displayName": "huggingface/hf-cli",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:huggingface"
+    },
+    {
+      "slug": "huggingface-hugging-face-dataset-viewer",
+      "displayName": "huggingface/hugging-face-dataset-viewer",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:huggingface"
+    },
+    {
+      "slug": "huggingface-hugging-face-datasets",
+      "displayName": "huggingface/hugging-face-datasets",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:huggingface"
+    },
+    {
+      "slug": "huggingface-hugging-face-evaluation",
+      "displayName": "huggingface/hugging-face-evaluation",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:huggingface"
+    },
+    {
+      "slug": "huggingface-hugging-face-jobs",
+      "displayName": "huggingface/hugging-face-jobs",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:huggingface"
+    },
+    {
+      "slug": "huggingface-hugging-face-model-trainer",
+      "displayName": "huggingface/hugging-face-model-trainer",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:huggingface"
+    },
+    {
+      "slug": "huggingface-hugging-face-paper-pages",
+      "displayName": "huggingface/hugging-face-paper-pages",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:huggingface"
+    },
+    {
+      "slug": "huggingface-hugging-face-paper-publisher",
+      "displayName": "huggingface/hugging-face-paper-publisher",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:huggingface"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-new-york",
+    "label": "Global Skill Market / New York / Discovered",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "source": "virtual_market"
+  }
+}

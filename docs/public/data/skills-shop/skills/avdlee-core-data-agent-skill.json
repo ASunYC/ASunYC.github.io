@@ -1,0 +1,89 @@
+{
+  "id": "skill:avdlee-core-data-agent-skill",
+  "slug": "avdlee-core-data-agent-skill",
+  "name": "core-data-agent-skill",
+  "displayName": "AvdLee/Core-Data-Agent-Skill",
+  "description": "An Agent Skill focused on Apple’s Core Data framework, helping with data modeling, fetch requests, performance, and common persistence patterns.",
+  "stars": 257,
+  "category": "Discovered",
+  "source": "discover:topic",
+  "url": "https://github.com/AvdLee/Core-Data-Agent-Skill",
+  "githubRepo": "AvdLee/Core-Data-Agent-Skill",
+  "readme": "# AvdLee/Core-Data-Agent-Skill\n\nAn Agent Skill focused on Apple’s Core Data framework, helping with data modeling, fetch requests, performance, and common persistence patterns.",
+  "readmeHtml": "<h1>AvdLee/Core-Data-Agent-Skill</h1>\n<p>An Agent Skill focused on Apple’s Core Data framework, helping with data modeling, fetch requests, performance, and common persistence patterns.</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.049Z",
+  "author": {
+    "login": "avdlee",
+    "name": "avdlee",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/avdlee",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "avdlee-swiftui-expert-skill",
+      "displayName": "AvdLee/swiftui-expert-skill",
+      "stars": 2835,
+      "relation": "source_overlap",
+      "evidence": "author:avdlee"
+    },
+    {
+      "slug": "avdlee-swiftui-agent-skill",
+      "displayName": "AvdLee/SwiftUI-Agent-Skill",
+      "stars": 2809,
+      "relation": "source_overlap",
+      "evidence": "author:avdlee"
+    },
+    {
+      "slug": "avdlee-swift-concurrency-agent-skill",
+      "displayName": "AvdLee/Swift-Concurrency-Agent-Skill",
+      "stars": 1482,
+      "relation": "source_overlap",
+      "evidence": "author:avdlee"
+    },
+    {
+      "slug": "avdlee-rocketsimapp",
+      "displayName": "AvdLee/RocketSimApp",
+      "stars": 738,
+      "relation": "source_overlap",
+      "evidence": "author:avdlee"
+    },
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 73174,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-san-francisco",
+    "label": "Global Skill Market / San Francisco / Discovered",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "virtual_market"
+  }
+}

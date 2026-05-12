@@ -1,0 +1,89 @@
+{
+  "id": "skill:wrsmith108-varlock-claude-skill",
+  "slug": "wrsmith108-varlock-claude-skill",
+  "name": "varlock-claude-skill",
+  "displayName": "wrsmith108/varlock-claude-skill",
+  "description": "Secure environment variable management ensuring secrets are never exposed in Claude sessions, terminals, logs, or git commits",
+  "stars": 21,
+  "category": "Community Skills",
+  "source": "voltagent",
+  "url": "https://github.com/wrsmith108/varlock-claude-skill",
+  "githubRepo": "wrsmith108/varlock-claude-skill",
+  "readme": "# wrsmith108/varlock-claude-skill\n\nSecure environment variable management ensuring secrets are never exposed in Claude sessions, terminals, logs, or git commits",
+  "readmeHtml": "<h1>wrsmith108/varlock-claude-skill</h1>\n<p>Secure environment variable management ensuring secrets are never exposed in Claude sessions, terminals, logs, or git commits</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.063Z",
+  "author": {
+    "login": "wrsmith108",
+    "name": "wrsmith108",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/wrsmith108",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "wrsmith108-linear-claude-skill",
+      "displayName": "wrsmith108/linear-claude-skill",
+      "stars": 97,
+      "relation": "source_overlap",
+      "evidence": "author:wrsmith108"
+    },
+    {
+      "slug": "obra-defense-in-depth",
+      "displayName": "obra/defense-in-depth",
+      "stars": 186953,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
+      "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "stars": 77115,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mvanhorn-last30days-skill",
+      "displayName": "mvanhorn/last30days-skill",
+      "stars": 25573,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "k-dense-ai-claude-scientific-skills",
+      "displayName": "K-Dense-AI/claude-scientific-skills",
+      "stars": 20299,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "muratcankoylan-context-fundamentals",
+      "displayName": "muratcankoylan/context-fundamentals",
+      "stars": 15494,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "muratcankoylan-context-degradation",
+      "displayName": "muratcankoylan/context-degradation",
+      "stars": 15494,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "muratcankoylan-context-compression",
+      "displayName": "muratcankoylan/context-compression",
+      "stars": 15494,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-sydney",
+    "label": "Global Skill Market / Sydney / Community Skills",
+    "lat": -33.8688,
+    "lon": 151.2093,
+    "source": "virtual_market"
+  }
+}

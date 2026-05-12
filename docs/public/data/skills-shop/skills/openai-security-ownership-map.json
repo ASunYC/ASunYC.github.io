@@ -1,0 +1,89 @@
+{
+  "id": "skill:openai-security-ownership-map",
+  "slug": "openai-security-ownership-map",
+  "name": "security-ownership-map",
+  "displayName": "openai/security-ownership-map",
+  "description": "Map people-to-file ownership, compute bus factor, and identify risks",
+  "stars": 0,
+  "category": "TypeScript Skills",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/openai/skills/security-ownership-map",
+  "githubRepo": "",
+  "readme": "# openai/security-ownership-map\n\nMap people-to-file ownership, compute bus factor, and identify risks",
+  "readmeHtml": "<h1>openai/security-ownership-map</h1>\n<p>Map people-to-file ownership, compute bus factor, and identify risks</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.125Z",
+  "author": {
+    "login": "openai",
+    "name": "openai",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/openai",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "openai-skills",
+      "displayName": "openai/skills",
+      "stars": 18508,
+      "relation": "source_overlap",
+      "evidence": "author:openai"
+    },
+    {
+      "slug": "openai-cloudflare-deploy",
+      "displayName": "openai/cloudflare-deploy",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:openai"
+    },
+    {
+      "slug": "openai-develop-web-game",
+      "displayName": "openai/develop-web-game",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:openai"
+    },
+    {
+      "slug": "openai-doc",
+      "displayName": "openai/doc",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:openai"
+    },
+    {
+      "slug": "openai-gh-address-comments",
+      "displayName": "openai/gh-address-comments",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:openai"
+    },
+    {
+      "slug": "openai-gh-fix-ci",
+      "displayName": "openai/gh-fix-ci",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:openai"
+    },
+    {
+      "slug": "openai-imagegen",
+      "displayName": "openai/imagegen",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:openai"
+    },
+    {
+      "slug": "openai-jupyter-notebook",
+      "displayName": "openai/jupyter-notebook",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:openai"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-tokyo",
+    "label": "Global Skill Market / Tokyo / TypeScript Skills",
+    "lat": 35.6762,
+    "lon": 139.6503,
+    "source": "virtual_market"
+  }
+}

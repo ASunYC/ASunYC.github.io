@@ -1,0 +1,89 @@
+{
+  "id": "skill:resend-agent-email-inbox",
+  "slug": "resend-agent-email-inbox",
+  "name": "agent-email-inbox",
+  "displayName": "resend/agent-email-inbox",
+  "description": "AI agent email inbox management",
+  "stars": 0,
+  "category": "TypeScript Skills",
+  "source": "voltagent",
+  "url": "https://github.com/resend/resend-skills/tree/main/skills/agent-email-inbox",
+  "githubRepo": "resend/resend-skills",
+  "readme": "# resend/agent-email-inbox\n\nAI agent email inbox management",
+  "readmeHtml": "<h1>resend/agent-email-inbox</h1>\n<p>AI agent email inbox management</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.152Z",
+  "author": {
+    "login": "resend",
+    "name": "resend",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/resend",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "resend-resend",
+      "displayName": "resend/resend",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:resend/resend-skills"
+    },
+    {
+      "slug": "resend-react-email",
+      "displayName": "resend/react-email",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:resend/resend-skills"
+    },
+    {
+      "slug": "resend-email-best-practices",
+      "displayName": "resend/email-best-practices",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:resend/resend-skills"
+    },
+    {
+      "slug": "resend-resend-cli",
+      "displayName": "resend/resend-cli",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:resend/resend-skills"
+    },
+    {
+      "slug": "resend-resend",
+      "displayName": "resend/resend",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:resend"
+    },
+    {
+      "slug": "resend-react-email",
+      "displayName": "resend/react-email",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:resend"
+    },
+    {
+      "slug": "resend-email-best-practices",
+      "displayName": "resend/email-best-practices",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:resend"
+    },
+    {
+      "slug": "resend-resend-cli",
+      "displayName": "resend/resend-cli",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:resend"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-london",
+    "label": "Global Skill Market / London / TypeScript Skills",
+    "lat": 51.5072,
+    "lon": -0.1276,
+    "source": "virtual_market"
+  }
+}

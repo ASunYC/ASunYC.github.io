@@ -1,0 +1,89 @@
+{
+  "id": "skill:op7418-guizang-ppt-skill",
+  "slug": "op7418-guizang-ppt-skill",
+  "name": "guizang-ppt-skill",
+  "displayName": "op7418/guizang-ppt-skill",
+  "description": "A Claude Code Skill that turns prompts into horizontal-swipe magazine-style HTML decks — 10 layouts, 5 curated themes, WebGL hero backgrounds, single-file output.",
+  "stars": 5444,
+  "category": "Discovered",
+  "source": "discover:keyword",
+  "url": "https://github.com/op7418/guizang-ppt-skill",
+  "githubRepo": "op7418/guizang-ppt-skill",
+  "readme": "# op7418/guizang-ppt-skill\n\nA Claude Code Skill that turns prompts into horizontal-swipe magazine-style HTML decks — 10 layouts, 5 curated themes, WebGL hero backgrounds, single-file output.",
+  "readmeHtml": "<h1>op7418/guizang-ppt-skill</h1>\n<p>A Claude Code Skill that turns prompts into horizontal-swipe magazine-style HTML decks — 10 layouts, 5 curated themes, WebGL hero backgrounds, single-file output.</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.014Z",
+  "author": {
+    "login": "op7418",
+    "name": "op7418",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/op7418",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "op7418-humanizer-zh",
+      "displayName": "op7418/Humanizer-zh",
+      "stars": 7055,
+      "relation": "source_overlap",
+      "evidence": "author:op7418"
+    },
+    {
+      "slug": "op7418-codepilot",
+      "displayName": "op7418/CodePilot",
+      "stars": 5647,
+      "relation": "source_overlap",
+      "evidence": "author:op7418"
+    },
+    {
+      "slug": "op7418-nanobanana-ppt-skills",
+      "displayName": "op7418/NanoBanana-PPT-Skills",
+      "stars": 2613,
+      "relation": "source_overlap",
+      "evidence": "author:op7418"
+    },
+    {
+      "slug": "op7418-claude-to-im-skill",
+      "displayName": "op7418/Claude-to-IM-skill",
+      "stars": 2447,
+      "relation": "source_overlap",
+      "evidence": "author:op7418"
+    },
+    {
+      "slug": "op7418-youtube-clipper-skill",
+      "displayName": "op7418/Youtube-clipper-skill",
+      "stars": 1828,
+      "relation": "source_overlap",
+      "evidence": "author:op7418"
+    },
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-singapore",
+    "label": "Global Skill Market / Singapore / Discovered",
+    "lat": 1.3521,
+    "lon": 103.8198,
+    "source": "virtual_market"
+  }
+}

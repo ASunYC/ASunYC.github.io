@@ -1,0 +1,89 @@
+{
+  "id": "skill:czlonkowski-n8n-node-configuration",
+  "slug": "czlonkowski-n8n-node-configuration",
+  "name": "n8n-node-configuration",
+  "displayName": "czlonkowski/n8n-node-configuration",
+  "description": "Node configuration with dependency rules and AI connections",
+  "stars": 4849,
+  "category": "Community Skills",
+  "source": "voltagent",
+  "url": "https://github.com/czlonkowski/n8n-skills/tree/main/skills/n8n-node-configuration",
+  "githubRepo": "czlonkowski/n8n-skills",
+  "readme": "# czlonkowski/n8n-node-configuration\n\nNode configuration with dependency rules and AI connections",
+  "readmeHtml": "<h1>czlonkowski/n8n-node-configuration</h1>\n<p>Node configuration with dependency rules and AI connections</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.015Z",
+  "author": {
+    "login": "czlonkowski",
+    "name": "czlonkowski",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/czlonkowski",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "czlonkowski-n8n-code-javascript",
+      "displayName": "czlonkowski/n8n-code-javascript",
+      "stars": 4849,
+      "relation": "source_overlap",
+      "evidence": "repo:czlonkowski/n8n-skills"
+    },
+    {
+      "slug": "czlonkowski-n8n-code-python",
+      "displayName": "czlonkowski/n8n-code-python",
+      "stars": 4849,
+      "relation": "source_overlap",
+      "evidence": "repo:czlonkowski/n8n-skills"
+    },
+    {
+      "slug": "czlonkowski-n8n-expression-syntax",
+      "displayName": "czlonkowski/n8n-expression-syntax",
+      "stars": 4849,
+      "relation": "source_overlap",
+      "evidence": "repo:czlonkowski/n8n-skills"
+    },
+    {
+      "slug": "czlonkowski-n8n-mcp-tools-expert",
+      "displayName": "czlonkowski/n8n-mcp-tools-expert",
+      "stars": 4849,
+      "relation": "source_overlap",
+      "evidence": "repo:czlonkowski/n8n-skills"
+    },
+    {
+      "slug": "czlonkowski-n8n-validation-expert",
+      "displayName": "czlonkowski/n8n-validation-expert",
+      "stars": 4849,
+      "relation": "source_overlap",
+      "evidence": "repo:czlonkowski/n8n-skills"
+    },
+    {
+      "slug": "czlonkowski-n8n-workflow-patterns",
+      "displayName": "czlonkowski/n8n-workflow-patterns",
+      "stars": 4849,
+      "relation": "source_overlap",
+      "evidence": "repo:czlonkowski/n8n-skills"
+    },
+    {
+      "slug": "czlonkowski-n8n-skills",
+      "displayName": "czlonkowski/n8n-skills",
+      "stars": 4849,
+      "relation": "source_overlap",
+      "evidence": "repo:czlonkowski/n8n-skills"
+    },
+    {
+      "slug": "czlonkowski-n8n-code-javascript",
+      "displayName": "czlonkowski/n8n-code-javascript",
+      "stars": 4849,
+      "relation": "source_overlap",
+      "evidence": "author:czlonkowski"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-sao-paulo",
+    "label": "Global Skill Market / Sao Paulo / Community Skills",
+    "lat": -23.5558,
+    "lon": -46.6396,
+    "source": "virtual_market"
+  }
+}

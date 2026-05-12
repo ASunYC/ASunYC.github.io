@@ -1,0 +1,89 @@
+{
+  "id": "skill:microsoft-agents-v2-py",
+  "slug": "microsoft-agents-v2-py",
+  "name": "agents-v2-py",
+  "displayName": "microsoft/agents-v2-py",
+  "description": "Foundry Agents SDK — container-based agents with custom images",
+  "stars": 0,
+  "category": "Python Skills",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/microsoft/skills/agents-v2-py",
+  "githubRepo": "",
+  "readme": "# microsoft/agents-v2-py\n\nFoundry Agents SDK — container-based agents with custom images",
+  "readmeHtml": "<h1>microsoft/agents-v2-py</h1>\n<p>Foundry Agents SDK — container-based agents with custom images</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.115Z",
+  "author": {
+    "login": "microsoft",
+    "name": "microsoft",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/microsoft",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "microsoft-agent-skills",
+      "displayName": "microsoft/agent-skills",
+      "stars": 2248,
+      "relation": "source_overlap",
+      "evidence": "author:microsoft"
+    },
+    {
+      "slug": "microsoft-cloud-solution-architect",
+      "displayName": "microsoft/cloud-solution-architect",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:microsoft"
+    },
+    {
+      "slug": "microsoft-continual-learning",
+      "displayName": "microsoft/continual-learning",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:microsoft"
+    },
+    {
+      "slug": "microsoft-copilot-sdk",
+      "displayName": "microsoft/copilot-sdk",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:microsoft"
+    },
+    {
+      "slug": "microsoft-entra-agent-id",
+      "displayName": "microsoft/entra-agent-id",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:microsoft"
+    },
+    {
+      "slug": "microsoft-frontend-design-review",
+      "displayName": "microsoft/frontend-design-review",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:microsoft"
+    },
+    {
+      "slug": "microsoft-github-issue-creator",
+      "displayName": "microsoft/github-issue-creator",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:microsoft"
+    },
+    {
+      "slug": "microsoft-mcp-builder",
+      "displayName": "microsoft/mcp-builder",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:microsoft"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-san-francisco",
+    "label": "Global Skill Market / San Francisco / Python Skills",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "virtual_market"
+  }
+}

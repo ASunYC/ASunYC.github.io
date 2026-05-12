@@ -1,0 +1,89 @@
+{
+  "id": "skill:mvanhorn-clawdbot-skill-search-x",
+  "slug": "mvanhorn-clawdbot-skill-search-x",
+  "name": "clawdbot-skill-search-x",
+  "displayName": "mvanhorn/clawdbot-skill-search-x",
+  "description": "Real-time X/Twitter search powered by Grok-4 and Grok-4.20 - find tweets, read threads, track trends, analyze profiles, and get image results. OpenClaw skill.",
+  "stars": 6,
+  "category": "Discovered",
+  "source": "discover:topic",
+  "url": "https://github.com/mvanhorn/clawdbot-skill-search-x",
+  "githubRepo": "mvanhorn/clawdbot-skill-search-x",
+  "readme": "# mvanhorn/clawdbot-skill-search-x\n\nReal-time X/Twitter search powered by Grok-4 and Grok-4.20 - find tweets, read threads, track trends, analyze profiles, and get image results. OpenClaw skill.",
+  "readmeHtml": "<h1>mvanhorn/clawdbot-skill-search-x</h1>\n<p>Real-time X/Twitter search powered by Grok-4 and Grok-4.20 - find tweets, read threads, track trends, analyze profiles, and get image results. OpenClaw skill.</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.075Z",
+  "author": {
+    "login": "mvanhorn",
+    "name": "mvanhorn",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/mvanhorn",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "mvanhorn-last30days-skill",
+      "displayName": "mvanhorn/last30days-skill",
+      "stars": 25573,
+      "relation": "source_overlap",
+      "evidence": "author:mvanhorn"
+    },
+    {
+      "slug": "mvanhorn-clawdbot-skill-manus",
+      "displayName": "mvanhorn/clawdbot-skill-manus",
+      "stars": 20,
+      "relation": "source_overlap",
+      "evidence": "author:mvanhorn"
+    },
+    {
+      "slug": "mvanhorn-clawdbot-skill-parallel",
+      "displayName": "mvanhorn/clawdbot-skill-parallel",
+      "stars": 16,
+      "relation": "source_overlap",
+      "evidence": "author:mvanhorn"
+    },
+    {
+      "slug": "mvanhorn-clawdbot-skill-polymarket",
+      "displayName": "mvanhorn/clawdbot-skill-polymarket",
+      "stars": 15,
+      "relation": "source_overlap",
+      "evidence": "author:mvanhorn"
+    },
+    {
+      "slug": "mvanhorn-clawdbot-skill-tesla",
+      "displayName": "mvanhorn/clawdbot-skill-tesla",
+      "stars": 5,
+      "relation": "source_overlap",
+      "evidence": "author:mvanhorn"
+    },
+    {
+      "slug": "mvanhorn-nano-triple",
+      "displayName": "mvanhorn/nano-triple",
+      "stars": 4,
+      "relation": "source_overlap",
+      "evidence": "author:mvanhorn"
+    },
+    {
+      "slug": "mvanhorn-clawdbot-skill-xai",
+      "displayName": "mvanhorn/clawdbot-skill-xai",
+      "stars": 2,
+      "relation": "source_overlap",
+      "evidence": "author:mvanhorn"
+    },
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-bengaluru",
+    "label": "Global Skill Market / Bengaluru / Discovered",
+    "lat": 12.9716,
+    "lon": 77.5946,
+    "source": "virtual_market"
+  }
+}

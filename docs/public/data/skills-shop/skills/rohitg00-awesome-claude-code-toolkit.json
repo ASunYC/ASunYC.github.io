@@ -1,0 +1,89 @@
+{
+  "id": "skill:rohitg00-awesome-claude-code-toolkit",
+  "slug": "rohitg00-awesome-claude-code-toolkit",
+  "name": "awesome-claude-code-toolkit",
+  "displayName": "rohitg00/awesome-claude-code-toolkit",
+  "description": "The most comprehensive toolkit for Claude Code -- 135 agents, 35 curated skills (+400,000 via SkillKit), 42 commands, 176+ plugins, 20 hooks, 15 rules, 7 templates, 14 MCP configs, 26 companion apps, 52 ecosystem entries, and more.",
+  "stars": 1564,
+  "category": "Discovered",
+  "source": "discover:keyword",
+  "url": "https://github.com/rohitg00/awesome-claude-code-toolkit",
+  "githubRepo": "rohitg00/awesome-claude-code-toolkit",
+  "readme": "# rohitg00/awesome-claude-code-toolkit\n\nThe most comprehensive toolkit for Claude Code -- 135 agents, 35 curated skills (+400,000 via SkillKit), 42 commands, 176+ plugins, 20 hooks, 15 rules, 7 templates, 14 MCP configs, 26 companion apps, 52 ecosystem entries, and more.",
+  "readmeHtml": "<h1>rohitg00/awesome-claude-code-toolkit</h1>\n<p>The most comprehensive toolkit for Claude Code -- 135 agents, 35 curated skills (+400,000 via SkillKit), 42 commands, 176+ plugins, 20 hooks, 15 rules, 7 templates, 14 MCP configs, 26 companion apps, 52 ecosystem entries, and more.</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.029Z",
+  "author": {
+    "login": "rohitg00",
+    "name": "rohitg00",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/rohitg00",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "rohitg00-pro-workflow",
+      "displayName": "rohitg00/pro-workflow",
+      "stars": 2057,
+      "relation": "source_overlap",
+      "evidence": "author:rohitg00"
+    },
+    {
+      "slug": "rohitg00-skillkit",
+      "displayName": "rohitg00/skillkit",
+      "stars": 933,
+      "relation": "source_overlap",
+      "evidence": "author:rohitg00"
+    },
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 73174,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "bytedance-deer-flow",
+      "displayName": "bytedance/deer-flow",
+      "stars": 65827,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "farion1231-cc-switch",
+      "displayName": "farion1231/cc-switch",
+      "stars": 62022,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-singapore",
+    "label": "Global Skill Market / Singapore / Discovered",
+    "lat": 1.3521,
+    "lon": 103.8198,
+    "source": "virtual_market"
+  }
+}

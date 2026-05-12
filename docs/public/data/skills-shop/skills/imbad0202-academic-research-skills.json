@@ -1,0 +1,89 @@
+{
+  "id": "skill:imbad0202-academic-research-skills",
+  "slug": "imbad0202-academic-research-skills",
+  "name": "academic-research-skills",
+  "displayName": "Imbad0202/academic-research-skills",
+  "description": "Academic Research Skills for Claude Code: research → write → review → revise → finalize",
+  "stars": 4836,
+  "category": "Discovered",
+  "source": "discover:topic",
+  "url": "https://github.com/Imbad0202/academic-research-skills",
+  "githubRepo": "Imbad0202/academic-research-skills",
+  "readme": "# Imbad0202/academic-research-skills\n\nAcademic Research Skills for Claude Code: research → write → review → revise → finalize",
+  "readmeHtml": "<h1>Imbad0202/academic-research-skills</h1>\n<p>Academic Research Skills for Claude Code: research → write → review → revise → finalize</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.015Z",
+  "author": {
+    "login": "imbad0202",
+    "name": "imbad0202",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/imbad0202",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "imbad0202-tw-formal-writing",
+      "displayName": "Imbad0202/tw-formal-writing",
+      "stars": 7,
+      "relation": "source_overlap",
+      "evidence": "author:imbad0202"
+    },
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 73174,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "bytedance-deer-flow",
+      "displayName": "bytedance/deer-flow",
+      "stars": 65827,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "farion1231-cc-switch",
+      "displayName": "farion1231/cc-switch",
+      "stars": 62022,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "gsd-build-get-shit-done",
+      "displayName": "gsd-build/get-shit-done",
+      "stars": 60616,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-london",
+    "label": "Global Skill Market / London / Discovered",
+    "lat": 51.5072,
+    "lon": -0.1276,
+    "source": "virtual_market"
+  }
+}

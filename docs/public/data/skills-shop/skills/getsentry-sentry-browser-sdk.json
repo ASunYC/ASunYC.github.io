@@ -1,0 +1,89 @@
+{
+  "id": "skill:getsentry-sentry-browser-sdk",
+  "slug": "getsentry-sentry-browser-sdk",
+  "name": "sentry-browser-sdk",
+  "displayName": "getsentry/sentry-browser-sdk",
+  "description": "Full Sentry SDK setup for browser JavaScript",
+  "stars": 0,
+  "category": "Skills by Typefully",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/getsentry/skills/sentry-browser-sdk",
+  "githubRepo": "",
+  "readme": "# getsentry/sentry-browser-sdk\n\nFull Sentry SDK setup for browser JavaScript",
+  "readmeHtml": "<h1>getsentry/sentry-browser-sdk</h1>\n<p>Full Sentry SDK setup for browser JavaScript</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.105Z",
+  "author": {
+    "login": "getsentry",
+    "name": "getsentry",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/getsentry",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "getsentry-skills",
+      "displayName": "getsentry/skills",
+      "stars": 674,
+      "relation": "source_overlap",
+      "evidence": "author:getsentry"
+    },
+    {
+      "slug": "getsentry-sentry-sdk-setup",
+      "displayName": "getsentry/sentry-sdk-setup",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:getsentry"
+    },
+    {
+      "slug": "getsentry-sentry-workflow",
+      "displayName": "getsentry/sentry-workflow",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:getsentry"
+    },
+    {
+      "slug": "getsentry-sentry-fix-issues",
+      "displayName": "getsentry/sentry-fix-issues",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:getsentry"
+    },
+    {
+      "slug": "getsentry-sentry-code-review",
+      "displayName": "getsentry/sentry-code-review",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:getsentry"
+    },
+    {
+      "slug": "getsentry-sentry-pr-code-review",
+      "displayName": "getsentry/sentry-pr-code-review",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:getsentry"
+    },
+    {
+      "slug": "getsentry-sentry-create-alert",
+      "displayName": "getsentry/sentry-create-alert",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:getsentry"
+    },
+    {
+      "slug": "getsentry-sentry-feature-setup",
+      "displayName": "getsentry/sentry-feature-setup",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:getsentry"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-london",
+    "label": "Global Skill Market / London / Skills by Typefully",
+    "lat": 51.5072,
+    "lon": -0.1276,
+    "source": "virtual_market"
+  }
+}

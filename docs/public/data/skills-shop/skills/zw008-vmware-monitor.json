@@ -1,0 +1,89 @@
+{
+  "id": "skill:zw008-vmware-monitor",
+  "slug": "zw008-vmware-monitor",
+  "name": "vmware-monitor",
+  "displayName": "zw008/VMware-Monitor",
+  "description": "Read-only VMware vCenter/ESXi monitoring — code-level enforced safety, zero destructive operations",
+  "stars": 8,
+  "category": "Discovered",
+  "source": "discover:topic",
+  "url": "https://github.com/zw008/VMware-Monitor",
+  "githubRepo": "zw008/VMware-Monitor",
+  "readme": "# zw008/VMware-Monitor\n\nRead-only VMware vCenter/ESXi monitoring — code-level enforced safety, zero destructive operations",
+  "readmeHtml": "<h1>zw008/VMware-Monitor</h1>\n<p>Read-only VMware vCenter/ESXi monitoring — code-level enforced safety, zero destructive operations</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.073Z",
+  "author": {
+    "login": "zw008",
+    "name": "zw008",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/zw008",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "zw008-vmware-aiops",
+      "displayName": "zw008/VMware-AIops",
+      "stars": 42,
+      "relation": "source_overlap",
+      "evidence": "author:zw008"
+    },
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 73174,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "bytedance-deer-flow",
+      "displayName": "bytedance/deer-flow",
+      "stars": 65827,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "farion1231-cc-switch",
+      "displayName": "farion1231/cc-switch",
+      "stars": 62022,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "gsd-build-get-shit-done",
+      "displayName": "gsd-build/get-shit-done",
+      "stars": 60616,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-shanghai",
+    "label": "Global Skill Market / Shanghai / Discovered",
+    "lat": 31.2304,
+    "lon": 121.4737,
+    "source": "virtual_market"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "skill:k-dense-ai-scientific-agent-skills",
+  "slug": "k-dense-ai-scientific-agent-skills",
+  "name": "scientific-agent-skills",
+  "displayName": "K-Dense-AI/scientific-agent-skills",
+  "description": "A set of ready to use Agent Skills for research, science, engineering, analysis, finance and writing.",
+  "stars": 20301,
+  "category": "Discovered",
+  "source": "discover:keyword",
+  "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+  "githubRepo": "K-Dense-AI/scientific-agent-skills",
+  "readme": "# K-Dense-AI/scientific-agent-skills\n\nA set of ready to use Agent Skills for research, science, engineering, analysis, finance and writing.",
+  "readmeHtml": "<h1>K-Dense-AI/scientific-agent-skills</h1>\n<p>A set of ready to use Agent Skills for research, science, engineering, analysis, finance and writing.</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.002Z",
+  "author": {
+    "login": "k-dense-ai",
+    "name": "k-dense-ai",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/k-dense-ai",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "k-dense-ai-claude-scientific-skills",
+      "displayName": "K-Dense-AI/claude-scientific-skills",
+      "stars": 20299,
+      "relation": "source_overlap",
+      "evidence": "author:k-dense-ai"
+    },
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 73174,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "bytedance-deer-flow",
+      "displayName": "bytedance/deer-flow",
+      "stars": 65827,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "farion1231-cc-switch",
+      "displayName": "farion1231/cc-switch",
+      "stars": 62022,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "gsd-build-get-shit-done",
+      "displayName": "gsd-build/get-shit-done",
+      "stars": 60616,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-san-francisco",
+    "label": "Global Skill Market / San Francisco / Discovered",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "virtual_market"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "skill:neolabhq-context-engineering-kit",
+  "slug": "neolabhq-context-engineering-kit",
+  "name": "context-engineering-kit",
+  "displayName": "NeoLabHQ/context-engineering-kit",
+  "description": "Hand-crafted Claude Code Skills focused on improving agent results quality. Compatible with OpenCode, Cursor, Antigravity, Gemini CLI, and others.",
+  "stars": 967,
+  "category": "Discovered",
+  "source": "discover:keyword",
+  "url": "https://github.com/NeoLabHQ/context-engineering-kit",
+  "githubRepo": "NeoLabHQ/context-engineering-kit",
+  "readme": "# NeoLabHQ/context-engineering-kit\n\nHand-crafted Claude Code Skills focused on improving agent results quality. Compatible with OpenCode, Cursor, Antigravity, Gemini CLI, and others.",
+  "readmeHtml": "<h1>NeoLabHQ/context-engineering-kit</h1>\n<p>Hand-crafted Claude Code Skills focused on improving agent results quality. Compatible with OpenCode, Cursor, Antigravity, Gemini CLI, and others.</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.037Z",
+  "author": {
+    "login": "neolabhq",
+    "name": "neolabhq",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/neolabhq",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "neolabhq-write-concisely",
+      "displayName": "NeoLabHQ/write-concisely",
+      "stars": 989,
+      "relation": "source_overlap",
+      "evidence": "repo:NeoLabHQ/context-engineering-kit"
+    },
+    {
+      "slug": "neolabhq-code-review",
+      "displayName": "NeoLabHQ/code-review",
+      "stars": 989,
+      "relation": "source_overlap",
+      "evidence": "repo:NeoLabHQ/context-engineering-kit"
+    },
+    {
+      "slug": "neolabhq-reflexion",
+      "displayName": "NeoLabHQ/reflexion",
+      "stars": 989,
+      "relation": "source_overlap",
+      "evidence": "repo:NeoLabHQ/context-engineering-kit"
+    },
+    {
+      "slug": "neolabhq-sdd",
+      "displayName": "NeoLabHQ/sdd",
+      "stars": 989,
+      "relation": "source_overlap",
+      "evidence": "repo:NeoLabHQ/context-engineering-kit"
+    },
+    {
+      "slug": "neolabhq-ddd",
+      "displayName": "NeoLabHQ/ddd",
+      "stars": 989,
+      "relation": "source_overlap",
+      "evidence": "repo:NeoLabHQ/context-engineering-kit"
+    },
+    {
+      "slug": "neolabhq-sadd",
+      "displayName": "NeoLabHQ/sadd",
+      "stars": 989,
+      "relation": "source_overlap",
+      "evidence": "repo:NeoLabHQ/context-engineering-kit"
+    },
+    {
+      "slug": "neolabhq-kaizen",
+      "displayName": "NeoLabHQ/kaizen",
+      "stars": 989,
+      "relation": "source_overlap",
+      "evidence": "repo:NeoLabHQ/context-engineering-kit"
+    },
+    {
+      "slug": "neolabhq-prompt-engineering",
+      "displayName": "NeoLabHQ/prompt-engineering",
+      "stars": 989,
+      "relation": "source_overlap",
+      "evidence": "repo:NeoLabHQ/context-engineering-kit"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-san-francisco",
+    "label": "Global Skill Market / San Francisco / Discovered",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "virtual_market"
+  }
+}

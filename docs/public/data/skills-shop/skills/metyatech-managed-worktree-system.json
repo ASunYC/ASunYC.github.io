@@ -1,0 +1,89 @@
+{
+  "id": "skill:metyatech-managed-worktree-system",
+  "slug": "metyatech-managed-worktree-system",
+  "name": "managed-worktree-system",
+  "displayName": "metyatech/managed-worktree-system",
+  "description": "Managed Git worktree CLI for parallel human and AI task work",
+  "stars": 0,
+  "category": "Discovered",
+  "source": "discover:topic",
+  "url": "https://github.com/metyatech/managed-worktree-system",
+  "githubRepo": "metyatech/managed-worktree-system",
+  "readme": "# metyatech/managed-worktree-system\n\nManaged Git worktree CLI for parallel human and AI task work",
+  "readmeHtml": "<h1>metyatech/managed-worktree-system</h1>\n<p>Managed Git worktree CLI for parallel human and AI task work</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.157Z",
+  "author": {
+    "login": "metyatech",
+    "name": "metyatech",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/metyatech",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "metyatech-markdown-to-qti",
+      "displayName": "metyatech/markdown-to-qti",
+      "stars": 2,
+      "relation": "source_overlap",
+      "evidence": "author:metyatech"
+    },
+    {
+      "slug": "metyatech-workspace-template-generator",
+      "displayName": "metyatech/workspace-template-generator",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:metyatech"
+    },
+    {
+      "slug": "metyatech-ai-quota",
+      "displayName": "metyatech/ai-quota",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:metyatech"
+    },
+    {
+      "slug": "metyatech-agent-runner",
+      "displayName": "metyatech/agent-runner",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:metyatech"
+    },
+    {
+      "slug": "metyatech-roster-to-qti-results",
+      "displayName": "metyatech/roster-to-qti-results",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:metyatech"
+    },
+    {
+      "slug": "metyatech-agents-mcp",
+      "displayName": "metyatech/agents-mcp",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:metyatech"
+    },
+    {
+      "slug": "metyatech-task-tracker",
+      "displayName": "metyatech/task-tracker",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:metyatech"
+    },
+    {
+      "slug": "metyatech-robotframework-unity-editor",
+      "displayName": "metyatech/robotframework-unity-editor",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:metyatech"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-bengaluru",
+    "label": "Global Skill Market / Bengaluru / Discovered",
+    "lat": 12.9716,
+    "lon": 77.5946,
+    "source": "virtual_market"
+  }
+}

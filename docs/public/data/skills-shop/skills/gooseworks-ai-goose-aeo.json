@@ -1,0 +1,89 @@
+{
+  "id": "skill:gooseworks-ai-goose-aeo",
+  "slug": "gooseworks-ai-goose-aeo",
+  "name": "goose-aeo",
+  "displayName": "gooseworks-ai/goose-aeo",
+  "description": "AEO tracking toolkit (CLI + dashboard) built for AI agents like Claude Code, Cowork, Codex, OpenClaw, Gooseworks",
+  "stars": 20,
+  "category": "Discovered",
+  "source": "discover:topic",
+  "url": "https://github.com/gooseworks-ai/goose-aeo",
+  "githubRepo": "gooseworks-ai/goose-aeo",
+  "readme": "# gooseworks-ai/goose-aeo\n\nAEO tracking toolkit (CLI + dashboard) built for AI agents like Claude Code, Cowork, Codex, OpenClaw, Gooseworks",
+  "readmeHtml": "<h1>gooseworks-ai/goose-aeo</h1>\n<p>AEO tracking toolkit (CLI + dashboard) built for AI agents like Claude Code, Cowork, Codex, OpenClaw, Gooseworks</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.063Z",
+  "author": {
+    "login": "gooseworks-ai",
+    "name": "gooseworks-ai",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/gooseworks-ai",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "gooseworks-ai-goose-skills",
+      "displayName": "gooseworks-ai/goose-skills",
+      "stars": 657,
+      "relation": "source_overlap",
+      "evidence": "author:gooseworks-ai"
+    },
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 73174,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "bytedance-deer-flow",
+      "displayName": "bytedance/deer-flow",
+      "stars": 65827,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "farion1231-cc-switch",
+      "displayName": "farion1231/cc-switch",
+      "stars": 62022,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "gsd-build-get-shit-done",
+      "displayName": "gsd-build/get-shit-done",
+      "stars": 60616,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-berlin",
+    "label": "Global Skill Market / Berlin / Discovered",
+    "lat": 52.52,
+    "lon": 13.405,
+    "source": "virtual_market"
+  }
+}

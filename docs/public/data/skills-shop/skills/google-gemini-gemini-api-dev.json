@@ -1,0 +1,75 @@
+{
+  "id": "skill:google-gemini-gemini-api-dev",
+  "slug": "google-gemini-gemini-api-dev",
+  "name": "gemini-api-dev",
+  "displayName": "google-gemini/gemini-api-dev",
+  "description": "Best practices for developing Gemini-powered apps using the Gemini API",
+  "stars": 0,
+  "category": "Skills by Google Gemini",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/google-gemini/skills/gemini-api-dev",
+  "githubRepo": "",
+  "readme": "# google-gemini/gemini-api-dev\n\nBest practices for developing Gemini-powered apps using the Gemini API",
+  "readmeHtml": "<h1>google-gemini/gemini-api-dev</h1>\n<p>Best practices for developing Gemini-powered apps using the Gemini API</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.090Z",
+  "author": {
+    "login": "google-gemini",
+    "name": "google-gemini",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/google-gemini",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "google-gemini-vertex-ai-api-dev",
+      "displayName": "google-gemini/vertex-ai-api-dev",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:google-gemini"
+    },
+    {
+      "slug": "google-gemini-gemini-live-api-dev",
+      "displayName": "google-gemini/gemini-live-api-dev",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:google-gemini"
+    },
+    {
+      "slug": "google-gemini-gemini-interactions-api",
+      "displayName": "google-gemini/gemini-interactions-api",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:google-gemini"
+    },
+    {
+      "slug": "google-gemini-vertex-ai-api-dev",
+      "displayName": "google-gemini/vertex-ai-api-dev",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Skills by Google Gemini"
+    },
+    {
+      "slug": "google-gemini-gemini-live-api-dev",
+      "displayName": "google-gemini/gemini-live-api-dev",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Skills by Google Gemini"
+    },
+    {
+      "slug": "google-gemini-gemini-interactions-api",
+      "displayName": "google-gemini/gemini-interactions-api",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Skills by Google Gemini"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-singapore",
+    "label": "Global Skill Market / Singapore / Skills by Google Gemini",
+    "lat": 1.3521,
+    "lon": 103.8198,
+    "source": "virtual_market"
+  }
+}

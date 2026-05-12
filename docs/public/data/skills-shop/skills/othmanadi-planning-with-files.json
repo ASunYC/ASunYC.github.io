@@ -1,0 +1,89 @@
+{
+  "id": "skill:othmanadi-planning-with-files",
+  "slug": "othmanadi-planning-with-files",
+  "name": "planning-with-files",
+  "displayName": "OthmanAdi/planning-with-files",
+  "description": "Claude Code skill implementing Manus-style persistent markdown planning — the workflow pattern behind the $2B acquisition.",
+  "stars": 20573,
+  "category": "Discovered",
+  "source": "discover:topic",
+  "url": "https://github.com/OthmanAdi/planning-with-files",
+  "githubRepo": "OthmanAdi/planning-with-files",
+  "readme": "# OthmanAdi/planning-with-files\n\nClaude Code skill implementing Manus-style persistent markdown planning — the workflow pattern behind the $2B acquisition.",
+  "readmeHtml": "<h1>OthmanAdi/planning-with-files</h1>\n<p>Claude Code skill implementing Manus-style persistent markdown planning — the workflow pattern behind the $2B acquisition.</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.002Z",
+  "author": {
+    "login": "othmanadi",
+    "name": "othmanadi",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/othmanadi",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "othmanadi-codebase-knowledge-builder",
+      "displayName": "OthmanAdi/codebase-knowledge-builder",
+      "stars": 8,
+      "relation": "source_overlap",
+      "evidence": "author:othmanadi"
+    },
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 73174,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "bytedance-deer-flow",
+      "displayName": "bytedance/deer-flow",
+      "stars": 65827,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "farion1231-cc-switch",
+      "displayName": "farion1231/cc-switch",
+      "stars": 62022,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "gsd-build-get-shit-done",
+      "displayName": "gsd-build/get-shit-done",
+      "stars": 60616,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-sydney",
+    "label": "Global Skill Market / Sydney / Discovered",
+    "lat": -33.8688,
+    "lon": 151.2093,
+    "source": "virtual_market"
+  }
+}

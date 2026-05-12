@@ -1,0 +1,89 @@
+{
+  "id": "skill:neolabhq-prompt-engineering",
+  "slug": "neolabhq-prompt-engineering",
+  "name": "prompt-engineering",
+  "displayName": "NeoLabHQ/prompt-engineering",
+  "description": "Widely used prompt engineering techniques and patterns, including Anthropic best practices and agent persuasion principles.",
+  "stars": 989,
+  "category": "Community Skills",
+  "source": "voltagent",
+  "url": "https://github.com/NeoLabHQ/context-engineering-kit/tree/master/plugins/customaize-agent/skills/prompt-engineering",
+  "githubRepo": "NeoLabHQ/context-engineering-kit",
+  "readme": "# NeoLabHQ/prompt-engineering\n\nWidely used prompt engineering techniques and patterns, including Anthropic best practices and agent persuasion principles.",
+  "readmeHtml": "<h1>NeoLabHQ/prompt-engineering</h1>\n<p>Widely used prompt engineering techniques and patterns, including Anthropic best practices and agent persuasion principles.</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.037Z",
+  "author": {
+    "login": "neolabhq",
+    "name": "neolabhq",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/neolabhq",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "neolabhq-write-concisely",
+      "displayName": "NeoLabHQ/write-concisely",
+      "stars": 989,
+      "relation": "source_overlap",
+      "evidence": "repo:NeoLabHQ/context-engineering-kit"
+    },
+    {
+      "slug": "neolabhq-code-review",
+      "displayName": "NeoLabHQ/code-review",
+      "stars": 989,
+      "relation": "source_overlap",
+      "evidence": "repo:NeoLabHQ/context-engineering-kit"
+    },
+    {
+      "slug": "neolabhq-reflexion",
+      "displayName": "NeoLabHQ/reflexion",
+      "stars": 989,
+      "relation": "source_overlap",
+      "evidence": "repo:NeoLabHQ/context-engineering-kit"
+    },
+    {
+      "slug": "neolabhq-sdd",
+      "displayName": "NeoLabHQ/sdd",
+      "stars": 989,
+      "relation": "source_overlap",
+      "evidence": "repo:NeoLabHQ/context-engineering-kit"
+    },
+    {
+      "slug": "neolabhq-ddd",
+      "displayName": "NeoLabHQ/ddd",
+      "stars": 989,
+      "relation": "source_overlap",
+      "evidence": "repo:NeoLabHQ/context-engineering-kit"
+    },
+    {
+      "slug": "neolabhq-sadd",
+      "displayName": "NeoLabHQ/sadd",
+      "stars": 989,
+      "relation": "source_overlap",
+      "evidence": "repo:NeoLabHQ/context-engineering-kit"
+    },
+    {
+      "slug": "neolabhq-kaizen",
+      "displayName": "NeoLabHQ/kaizen",
+      "stars": 989,
+      "relation": "source_overlap",
+      "evidence": "repo:NeoLabHQ/context-engineering-kit"
+    },
+    {
+      "slug": "neolabhq-context-engineering-kit",
+      "displayName": "NeoLabHQ/context-engineering-kit",
+      "stars": 967,
+      "relation": "source_overlap",
+      "evidence": "repo:NeoLabHQ/context-engineering-kit"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-shanghai",
+    "label": "Global Skill Market / Shanghai / Community Skills",
+    "lat": 31.2304,
+    "lon": 121.4737,
+    "source": "virtual_market"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "skill:coinbase-x402",
+  "slug": "coinbase-x402",
+  "name": "x402",
+  "displayName": "coinbase/x402",
+  "description": "Discover and call paid API endpoints using the x402 payment protocol",
+  "stars": 0,
+  "category": "TypeScript Skills",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/coinbase/skills/x402",
+  "githubRepo": "",
+  "readme": "# coinbase/x402\n\nDiscover and call paid API endpoints using the x402 payment protocol",
+  "readmeHtml": "<h1>coinbase/x402</h1>\n<p>Discover and call paid API endpoints using the x402 payment protocol</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.133Z",
+  "author": {
+    "login": "coinbase",
+    "name": "coinbase",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/coinbase",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "coinbase-authenticate-wallet",
+      "displayName": "coinbase/authenticate-wallet",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:coinbase"
+    },
+    {
+      "slug": "coinbase-fund",
+      "displayName": "coinbase/fund",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:coinbase"
+    },
+    {
+      "slug": "coinbase-monetize-service",
+      "displayName": "coinbase/monetize-service",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:coinbase"
+    },
+    {
+      "slug": "coinbase-pay-for-service",
+      "displayName": "coinbase/pay-for-service",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:coinbase"
+    },
+    {
+      "slug": "coinbase-query-onchain-data",
+      "displayName": "coinbase/query-onchain-data",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:coinbase"
+    },
+    {
+      "slug": "coinbase-search-for-service",
+      "displayName": "coinbase/search-for-service",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:coinbase"
+    },
+    {
+      "slug": "coinbase-send-usdc",
+      "displayName": "coinbase/send-usdc",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:coinbase"
+    },
+    {
+      "slug": "coinbase-trade",
+      "displayName": "coinbase/trade",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:coinbase"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-paris",
+    "label": "Global Skill Market / Paris / TypeScript Skills",
+    "lat": 48.8566,
+    "lon": 2.3522,
+    "source": "virtual_market"
+  }
+}

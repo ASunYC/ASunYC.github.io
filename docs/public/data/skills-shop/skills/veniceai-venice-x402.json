@@ -1,0 +1,89 @@
+{
+  "id": "skill:veniceai-venice-x402",
+  "slug": "veniceai-venice-x402",
+  "name": "venice-x402",
+  "displayName": "veniceai/venice-x402",
+  "description": "Wallet credits and x402 payments on Base",
+  "stars": 0,
+  "category": "Skills by Typefully",
+  "source": "voltagent",
+  "url": "https://github.com/veniceai/skills/tree/main/skills/venice-x402",
+  "githubRepo": "veniceai/skills",
+  "readme": "# veniceai/venice-x402\n\nWallet credits and x402 payments on Base",
+  "readmeHtml": "<h1>veniceai/venice-x402</h1>\n<p>Wallet credits and x402 payments on Base</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.100Z",
+  "author": {
+    "login": "veniceai",
+    "name": "veniceai",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/veniceai",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "veniceai-venice-api-overview",
+      "displayName": "veniceai/venice-api-overview",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:veniceai/skills"
+    },
+    {
+      "slug": "veniceai-venice-auth",
+      "displayName": "veniceai/venice-auth",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:veniceai/skills"
+    },
+    {
+      "slug": "veniceai-venice-chat",
+      "displayName": "veniceai/venice-chat",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:veniceai/skills"
+    },
+    {
+      "slug": "veniceai-venice-responses",
+      "displayName": "veniceai/venice-responses",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:veniceai/skills"
+    },
+    {
+      "slug": "veniceai-venice-embeddings",
+      "displayName": "veniceai/venice-embeddings",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:veniceai/skills"
+    },
+    {
+      "slug": "veniceai-venice-image-generate",
+      "displayName": "veniceai/venice-image-generate",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:veniceai/skills"
+    },
+    {
+      "slug": "veniceai-venice-image-edit",
+      "displayName": "veniceai/venice-image-edit",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:veniceai/skills"
+    },
+    {
+      "slug": "veniceai-venice-audio-speech",
+      "displayName": "veniceai/venice-audio-speech",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:veniceai/skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-bengaluru",
+    "label": "Global Skill Market / Bengaluru / Skills by Typefully",
+    "lat": 12.9716,
+    "lon": 77.5946,
+    "source": "virtual_market"
+  }
+}

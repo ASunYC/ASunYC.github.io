@@ -1,0 +1,89 @@
+{
+  "id": "skill:zarazhangrui-codebase-to-course",
+  "slug": "zarazhangrui-codebase-to-course",
+  "name": "codebase-to-course",
+  "displayName": "zarazhangrui/codebase-to-course",
+  "description": "A Claude Code skill that turns any codebase into a beautiful, interactive single-page HTML course for non-technical vibe coders.",
+  "stars": 4258,
+  "category": "Discovered",
+  "source": "discover:keyword",
+  "url": "https://github.com/zarazhangrui/codebase-to-course",
+  "githubRepo": "zarazhangrui/codebase-to-course",
+  "readme": "# zarazhangrui/codebase-to-course\n\nA Claude Code skill that turns any codebase into a beautiful, interactive single-page HTML course for non-technical vibe coders.",
+  "readmeHtml": "<h1>zarazhangrui/codebase-to-course</h1>\n<p>A Claude Code skill that turns any codebase into a beautiful, interactive single-page HTML course for non-technical vibe coders.</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.016Z",
+  "author": {
+    "login": "zarazhangrui",
+    "name": "zarazhangrui",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/zarazhangrui",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "zarazhangrui-frontend-slides",
+      "displayName": "zarazhangrui/frontend-slides",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:zarazhangrui"
+    },
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 73174,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "bytedance-deer-flow",
+      "displayName": "bytedance/deer-flow",
+      "stars": 65827,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "farion1231-cc-switch",
+      "displayName": "farion1231/cc-switch",
+      "stars": 62022,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "gsd-build-get-shit-done",
+      "displayName": "gsd-build/get-shit-done",
+      "stars": 60616,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-berlin",
+    "label": "Global Skill Market / Berlin / Discovered",
+    "lat": 52.52,
+    "lon": 13.405,
+    "source": "virtual_market"
+  }
+}

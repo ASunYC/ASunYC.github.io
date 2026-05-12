@@ -1,0 +1,89 @@
+{
+  "id": "skill:netlify-netlify-image-cdn",
+  "slug": "netlify-netlify-image-cdn",
+  "name": "netlify-image-cdn",
+  "displayName": "netlify/netlify-image-cdn",
+  "description": "Optimize and transform images via CDN",
+  "stars": 0,
+  "category": "Skills by Typefully",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/netlify/skills/netlify-image-cdn",
+  "githubRepo": "",
+  "readme": "# netlify/netlify-image-cdn\n\nOptimize and transform images via CDN",
+  "readmeHtml": "<h1>netlify/netlify-image-cdn</h1>\n<p>Optimize and transform images via CDN</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.101Z",
+  "author": {
+    "login": "netlify",
+    "name": "netlify",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/netlify",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "netlify-netlify-functions",
+      "displayName": "netlify/netlify-functions",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:netlify"
+    },
+    {
+      "slug": "netlify-netlify-edge-functions",
+      "displayName": "netlify/netlify-edge-functions",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:netlify"
+    },
+    {
+      "slug": "netlify-netlify-blobs",
+      "displayName": "netlify/netlify-blobs",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:netlify"
+    },
+    {
+      "slug": "netlify-netlify-db",
+      "displayName": "netlify/netlify-db",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:netlify"
+    },
+    {
+      "slug": "netlify-netlify-forms",
+      "displayName": "netlify/netlify-forms",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:netlify"
+    },
+    {
+      "slug": "netlify-netlify-frameworks",
+      "displayName": "netlify/netlify-frameworks",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:netlify"
+    },
+    {
+      "slug": "netlify-netlify-caching",
+      "displayName": "netlify/netlify-caching",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:netlify"
+    },
+    {
+      "slug": "netlify-netlify-config",
+      "displayName": "netlify/netlify-config",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:netlify"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-bengaluru",
+    "label": "Global Skill Market / Bengaluru / Skills by Typefully",
+    "lat": 12.9716,
+    "lon": 77.5946,
+    "source": "virtual_market"
+  }
+}

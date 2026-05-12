@@ -1,0 +1,89 @@
+{
+  "id": "skill:resend-email-best-practices",
+  "slug": "resend-email-best-practices",
+  "name": "email-best-practices",
+  "displayName": "resend/email-best-practices",
+  "description": "Email deliverability and design best practices",
+  "stars": 0,
+  "category": "TypeScript Skills",
+  "source": "voltagent",
+  "url": "https://github.com/resend/resend-skills/tree/main/skills/email-best-practices",
+  "githubRepo": "resend/resend-skills",
+  "readme": "# resend/email-best-practices\n\nEmail deliverability and design best practices",
+  "readmeHtml": "<h1>resend/email-best-practices</h1>\n<p>Email deliverability and design best practices</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.152Z",
+  "author": {
+    "login": "resend",
+    "name": "resend",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/resend",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "resend-resend",
+      "displayName": "resend/resend",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:resend/resend-skills"
+    },
+    {
+      "slug": "resend-react-email",
+      "displayName": "resend/react-email",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:resend/resend-skills"
+    },
+    {
+      "slug": "resend-agent-email-inbox",
+      "displayName": "resend/agent-email-inbox",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:resend/resend-skills"
+    },
+    {
+      "slug": "resend-resend-cli",
+      "displayName": "resend/resend-cli",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:resend/resend-skills"
+    },
+    {
+      "slug": "resend-resend",
+      "displayName": "resend/resend",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:resend"
+    },
+    {
+      "slug": "resend-react-email",
+      "displayName": "resend/react-email",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:resend"
+    },
+    {
+      "slug": "resend-agent-email-inbox",
+      "displayName": "resend/agent-email-inbox",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:resend"
+    },
+    {
+      "slug": "resend-resend-cli",
+      "displayName": "resend/resend-cli",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:resend"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-singapore",
+    "label": "Global Skill Market / Singapore / TypeScript Skills",
+    "lat": 1.3521,
+    "lon": 103.8198,
+    "source": "virtual_market"
+  }
+}

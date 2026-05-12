@@ -1,0 +1,89 @@
+{
+  "id": "skill:dominikmartn-nothing-design-skill",
+  "slug": "dominikmartn-nothing-design-skill",
+  "name": "nothing-design-skill",
+  "displayName": "dominikmartn/nothing-design-skill",
+  "description": "A Claude Code skill for generating UI in the Nothing design language. Monochrome, typographic, industrial.",
+  "stars": 2259,
+  "category": "Discovered",
+  "source": "discover:keyword",
+  "url": "https://github.com/dominikmartn/nothing-design-skill",
+  "githubRepo": "dominikmartn/nothing-design-skill",
+  "readme": "# dominikmartn/nothing-design-skill\n\nA Claude Code skill for generating UI in the Nothing design language. Monochrome, typographic, industrial.",
+  "readmeHtml": "<h1>dominikmartn/nothing-design-skill</h1>\n<p>A Claude Code skill for generating UI in the Nothing design language. Monochrome, typographic, industrial.</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.026Z",
+  "author": {
+    "login": "dominikmartn",
+    "name": "dominikmartn",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/dominikmartn",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "dominikmartn-hue",
+      "displayName": "dominikmartn/hue",
+      "stars": 547,
+      "relation": "source_overlap",
+      "evidence": "author:dominikmartn"
+    },
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 73174,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "bytedance-deer-flow",
+      "displayName": "bytedance/deer-flow",
+      "stars": 65827,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "farion1231-cc-switch",
+      "displayName": "farion1231/cc-switch",
+      "stars": 62022,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "gsd-build-get-shit-done",
+      "displayName": "gsd-build/get-shit-done",
+      "stars": 60616,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-berlin",
+    "label": "Global Skill Market / Berlin / Discovered",
+    "lat": 52.52,
+    "lon": 13.405,
+    "source": "virtual_market"
+  }
+}

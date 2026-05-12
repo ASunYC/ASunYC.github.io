@@ -1,0 +1,89 @@
+{
+  "id": "skill:addyosmani-agent-skills",
+  "slug": "addyosmani-agent-skills",
+  "name": "agent-skills",
+  "displayName": "addyosmani/agent-skills",
+  "description": "Production-grade engineering skills for AI coding agents.",
+  "stars": 32222,
+  "category": "Discovered",
+  "source": "discover:topic",
+  "url": "https://github.com/addyosmani/agent-skills",
+  "githubRepo": "addyosmani/agent-skills",
+  "readme": "# addyosmani/agent-skills\n\nProduction-grade engineering skills for AI coding agents.",
+  "readmeHtml": "<h1>addyosmani/agent-skills</h1>\n<p>Production-grade engineering skills for AI coding agents.</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.000Z",
+  "author": {
+    "login": "addyosmani",
+    "name": "addyosmani",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/addyosmani",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "addyosmani-web-quality-audit",
+      "displayName": "addyosmani/web-quality-audit",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:addyosmani"
+    },
+    {
+      "slug": "addyosmani-performance",
+      "displayName": "addyosmani/performance",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:addyosmani"
+    },
+    {
+      "slug": "addyosmani-core-web-vitals",
+      "displayName": "addyosmani/core-web-vitals",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:addyosmani"
+    },
+    {
+      "slug": "addyosmani-accessibility",
+      "displayName": "addyosmani/accessibility",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:addyosmani"
+    },
+    {
+      "slug": "addyosmani-seo",
+      "displayName": "addyosmani/seo",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:addyosmani"
+    },
+    {
+      "slug": "addyosmani-best-practices",
+      "displayName": "addyosmani/best-practices",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:addyosmani"
+    },
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-bengaluru",
+    "label": "Global Skill Market / Bengaluru / Discovered",
+    "lat": 12.9716,
+    "lon": 77.5946,
+    "source": "virtual_market"
+  }
+}

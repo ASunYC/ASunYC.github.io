@@ -1,0 +1,68 @@
+{
+  "id": "skill:callstackincubator-react-native-best-practices",
+  "slug": "callstackincubator-react-native-best-practices",
+  "name": "react-native-best-practices",
+  "displayName": "callstackincubator/react-native-best-practices",
+  "description": "Performance optimization for React Native apps from Callstack",
+  "stars": 0,
+  "category": "Skills by CallStack",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/callstackincubator/skills/react-native-best-practices",
+  "githubRepo": "",
+  "readme": "# callstackincubator/react-native-best-practices\n\nPerformance optimization for React Native apps from Callstack",
+  "readmeHtml": "<h1>callstackincubator/react-native-best-practices</h1>\n<p>Performance optimization for React Native apps from Callstack</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.090Z",
+  "author": {
+    "login": "callstackincubator",
+    "name": "callstackincubator",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/callstackincubator",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "callstackincubator-agent-skills",
+      "displayName": "callstackincubator/agent-skills",
+      "stars": 1307,
+      "relation": "source_overlap",
+      "evidence": "author:callstackincubator"
+    },
+    {
+      "slug": "callstackincubator-github",
+      "displayName": "callstackincubator/github",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:callstackincubator"
+    },
+    {
+      "slug": "callstackincubator-upgrading-react-native",
+      "displayName": "callstackincubator/upgrading-react-native",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:callstackincubator"
+    },
+    {
+      "slug": "callstackincubator-github",
+      "displayName": "callstackincubator/github",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Skills by CallStack"
+    },
+    {
+      "slug": "callstackincubator-upgrading-react-native",
+      "displayName": "callstackincubator/upgrading-react-native",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Skills by CallStack"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-san-francisco",
+    "label": "Global Skill Market / San Francisco / Skills by CallStack",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "virtual_market"
+  }
+}

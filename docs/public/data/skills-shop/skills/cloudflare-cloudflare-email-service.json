@@ -1,0 +1,89 @@
+{
+  "id": "skill:cloudflare-cloudflare-email-service",
+  "slug": "cloudflare-cloudflare-email-service",
+  "name": "cloudflare-email-service",
+  "displayName": "cloudflare/cloudflare-email-service",
+  "description": "Send transactional email and route inbound mail with Cloudflare Email Sending and Email Routing",
+  "stars": 0,
+  "category": "Skills by Typefully",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/cloudflare/skills/cloudflare-email-service",
+  "githubRepo": "",
+  "readme": "# cloudflare/cloudflare-email-service\n\nSend transactional email and route inbound mail with Cloudflare Email Sending and Email Routing",
+  "readmeHtml": "<h1>cloudflare/cloudflare-email-service</h1>\n<p>Send transactional email and route inbound mail with Cloudflare Email Sending and Email Routing</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.100Z",
+  "author": {
+    "login": "cloudflare",
+    "name": "cloudflare",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/cloudflare",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "cloudflare-agents-sdk",
+      "displayName": "cloudflare/agents-sdk",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:cloudflare"
+    },
+    {
+      "slug": "cloudflare-cloudflare",
+      "displayName": "cloudflare/cloudflare",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:cloudflare"
+    },
+    {
+      "slug": "cloudflare-durable-objects",
+      "displayName": "cloudflare/durable-objects",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:cloudflare"
+    },
+    {
+      "slug": "cloudflare-sandbox-sdk",
+      "displayName": "cloudflare/sandbox-sdk",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:cloudflare"
+    },
+    {
+      "slug": "cloudflare-web-perf",
+      "displayName": "cloudflare/web-perf",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:cloudflare"
+    },
+    {
+      "slug": "cloudflare-workers-best-practices",
+      "displayName": "cloudflare/workers-best-practices",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:cloudflare"
+    },
+    {
+      "slug": "cloudflare-wrangler",
+      "displayName": "cloudflare/wrangler",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:cloudflare"
+    },
+    {
+      "slug": "cloudflare-building-ai-agent-on-cloudflare",
+      "displayName": "cloudflare/building-ai-agent-on-cloudflare",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:cloudflare"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-sao-paulo",
+    "label": "Global Skill Market / Sao Paulo / Skills by Typefully",
+    "lat": -23.5558,
+    "lon": -46.6396,
+    "source": "virtual_market"
+  }
+}

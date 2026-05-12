@@ -1,0 +1,89 @@
+{
+  "id": "skill:metyatech-agents-mcp",
+  "slug": "metyatech-agents-mcp",
+  "name": "agents-mcp",
+  "displayName": "metyatech/agents-mcp",
+  "description": "MCP server for spawning coding sub-agents (metyatech fork of swarmify/agents-mcp)",
+  "stars": 0,
+  "category": "Discovered",
+  "source": "discover:topic",
+  "url": "https://github.com/metyatech/agents-mcp",
+  "githubRepo": "metyatech/agents-mcp",
+  "readme": "# metyatech/agents-mcp\n\nMCP server for spawning coding sub-agents (metyatech fork of swarmify/agents-mcp)",
+  "readmeHtml": "<h1>metyatech/agents-mcp</h1>\n<p>MCP server for spawning coding sub-agents (metyatech fork of swarmify/agents-mcp)</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.158Z",
+  "author": {
+    "login": "metyatech",
+    "name": "metyatech",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/metyatech",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "metyatech-markdown-to-qti",
+      "displayName": "metyatech/markdown-to-qti",
+      "stars": 2,
+      "relation": "source_overlap",
+      "evidence": "author:metyatech"
+    },
+    {
+      "slug": "metyatech-workspace-template-generator",
+      "displayName": "metyatech/workspace-template-generator",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:metyatech"
+    },
+    {
+      "slug": "metyatech-managed-worktree-system",
+      "displayName": "metyatech/managed-worktree-system",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:metyatech"
+    },
+    {
+      "slug": "metyatech-ai-quota",
+      "displayName": "metyatech/ai-quota",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:metyatech"
+    },
+    {
+      "slug": "metyatech-agent-runner",
+      "displayName": "metyatech/agent-runner",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:metyatech"
+    },
+    {
+      "slug": "metyatech-roster-to-qti-results",
+      "displayName": "metyatech/roster-to-qti-results",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:metyatech"
+    },
+    {
+      "slug": "metyatech-task-tracker",
+      "displayName": "metyatech/task-tracker",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:metyatech"
+    },
+    {
+      "slug": "metyatech-robotframework-unity-editor",
+      "displayName": "metyatech/robotframework-unity-editor",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:metyatech"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-bengaluru",
+    "label": "Global Skill Market / Bengaluru / Discovered",
+    "lat": 12.9716,
+    "lon": 77.5946,
+    "source": "virtual_market"
+  }
+}

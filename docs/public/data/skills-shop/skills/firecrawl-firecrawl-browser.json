@@ -1,0 +1,89 @@
+{
+  "id": "skill:firecrawl-firecrawl-browser",
+  "slug": "firecrawl-firecrawl-browser",
+  "name": "firecrawl-browser",
+  "displayName": "firecrawl/firecrawl-browser",
+  "description": "Browser-based web scraping and interaction",
+  "stars": 0,
+  "category": "Skills by Firecrawl",
+  "source": "heilcheng",
+  "url": "https://agent-skill.co/firecrawl/skills/firecrawl-browser",
+  "githubRepo": "",
+  "readme": "# firecrawl/firecrawl-browser\n\nBrowser-based web scraping and interaction",
+  "readmeHtml": "<h1>firecrawl/firecrawl-browser</h1>\n<p>Browser-based web scraping and interaction</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.156Z",
+  "author": {
+    "login": "firecrawl",
+    "name": "firecrawl",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/firecrawl",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "firecrawl-cli",
+      "displayName": "firecrawl/cli",
+      "stars": 369,
+      "relation": "source_overlap",
+      "evidence": "author:firecrawl"
+    },
+    {
+      "slug": "firecrawl-firecrawl-build",
+      "displayName": "firecrawl/firecrawl-build",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:firecrawl"
+    },
+    {
+      "slug": "firecrawl-firecrawl-build-interact",
+      "displayName": "firecrawl/firecrawl-build-interact",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:firecrawl"
+    },
+    {
+      "slug": "firecrawl-firecrawl-build-onboarding",
+      "displayName": "firecrawl/firecrawl-build-onboarding",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:firecrawl"
+    },
+    {
+      "slug": "firecrawl-firecrawl-build-scrape",
+      "displayName": "firecrawl/firecrawl-build-scrape",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:firecrawl"
+    },
+    {
+      "slug": "firecrawl-firecrawl-build-search",
+      "displayName": "firecrawl/firecrawl-build-search",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:firecrawl"
+    },
+    {
+      "slug": "firecrawl-firecrawl-cli",
+      "displayName": "firecrawl/firecrawl-cli",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:firecrawl"
+    },
+    {
+      "slug": "firecrawl-firecrawl-agent",
+      "displayName": "firecrawl/firecrawl-agent",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:firecrawl"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-san-francisco",
+    "label": "Global Skill Market / San Francisco / Skills by Firecrawl",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "virtual_market"
+  }
+}

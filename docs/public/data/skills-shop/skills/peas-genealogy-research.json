@@ -1,0 +1,89 @@
+{
+  "id": "skill:peas-genealogy-research",
+  "slug": "peas-genealogy-research",
+  "name": "genealogy-research",
+  "displayName": "peas/genealogy-research",
+  "description": "Genealogy research agent with OCR, FamilySearch, YAML data, and human-in-the-loop",
+  "stars": 0,
+  "category": "Community Skills",
+  "source": "voltagent",
+  "url": "https://paulo.com.br/skills/genealogy-research/SKILL.md",
+  "githubRepo": "",
+  "readme": "# peas/genealogy-research\n\nGenealogy research agent with OCR, FamilySearch, YAML data, and human-in-the-loop",
+  "readmeHtml": "<h1>peas/genealogy-research</h1>\n<p>Genealogy research agent with OCR, FamilySearch, YAML data, and human-in-the-loop</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.156Z",
+  "author": {
+    "login": "peas",
+    "name": "peas",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/peas",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "obra-defense-in-depth",
+      "displayName": "obra/defense-in-depth",
+      "stars": 186953,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
+      "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "stars": 77115,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mvanhorn-last30days-skill",
+      "displayName": "mvanhorn/last30days-skill",
+      "stars": 25573,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "k-dense-ai-claude-scientific-skills",
+      "displayName": "K-Dense-AI/claude-scientific-skills",
+      "stars": 20299,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "muratcankoylan-context-fundamentals",
+      "displayName": "muratcankoylan/context-fundamentals",
+      "stars": 15494,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "muratcankoylan-context-degradation",
+      "displayName": "muratcankoylan/context-degradation",
+      "stars": 15494,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "muratcankoylan-context-compression",
+      "displayName": "muratcankoylan/context-compression",
+      "stars": 15494,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "muratcankoylan-context-optimization",
+      "displayName": "muratcankoylan/context-optimization",
+      "stars": 15494,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-berlin",
+    "label": "Global Skill Market / Berlin / Community Skills",
+    "lat": 52.52,
+    "lon": 13.405,
+    "source": "virtual_market"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "skill:veniceai-venice-responses",
+  "slug": "veniceai-venice-responses",
+  "name": "venice-responses",
+  "displayName": "veniceai/venice-responses",
+  "description": "OpenAI-compatible Responses API for Venice",
+  "stars": 0,
+  "category": "Skills by Typefully",
+  "source": "voltagent",
+  "url": "https://github.com/veniceai/skills/tree/main/skills/venice-responses",
+  "githubRepo": "veniceai/skills",
+  "readme": "# veniceai/venice-responses\n\nOpenAI-compatible Responses API for Venice",
+  "readmeHtml": "<h1>veniceai/venice-responses</h1>\n<p>OpenAI-compatible Responses API for Venice</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.099Z",
+  "author": {
+    "login": "veniceai",
+    "name": "veniceai",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/veniceai",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "veniceai-venice-api-overview",
+      "displayName": "veniceai/venice-api-overview",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:veniceai/skills"
+    },
+    {
+      "slug": "veniceai-venice-auth",
+      "displayName": "veniceai/venice-auth",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:veniceai/skills"
+    },
+    {
+      "slug": "veniceai-venice-chat",
+      "displayName": "veniceai/venice-chat",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:veniceai/skills"
+    },
+    {
+      "slug": "veniceai-venice-embeddings",
+      "displayName": "veniceai/venice-embeddings",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:veniceai/skills"
+    },
+    {
+      "slug": "veniceai-venice-image-generate",
+      "displayName": "veniceai/venice-image-generate",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:veniceai/skills"
+    },
+    {
+      "slug": "veniceai-venice-image-edit",
+      "displayName": "veniceai/venice-image-edit",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:veniceai/skills"
+    },
+    {
+      "slug": "veniceai-venice-audio-speech",
+      "displayName": "veniceai/venice-audio-speech",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:veniceai/skills"
+    },
+    {
+      "slug": "veniceai-venice-audio-music",
+      "displayName": "veniceai/venice-audio-music",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:veniceai/skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-tokyo",
+    "label": "Global Skill Market / Tokyo / Skills by Typefully",
+    "lat": 35.6762,
+    "lon": 139.6503,
+    "source": "virtual_market"
+  }
+}

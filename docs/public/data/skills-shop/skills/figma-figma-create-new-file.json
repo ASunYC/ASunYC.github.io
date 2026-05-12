@@ -1,0 +1,89 @@
+{
+  "id": "skill:figma-figma-create-new-file",
+  "slug": "figma-figma-create-new-file",
+  "name": "figma-create-new-file",
+  "displayName": "figma/figma-create-new-file",
+  "description": "Create a new blank Figma Design or FigJam file",
+  "stars": 0,
+  "category": "TypeScript Skills",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/figma/skills/figma-create-new-file",
+  "githubRepo": "",
+  "readme": "# figma/figma-create-new-file\n\nCreate a new blank Figma Design or FigJam file",
+  "readmeHtml": "<h1>figma/figma-create-new-file</h1>\n<p>Create a new blank Figma Design or FigJam file</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.126Z",
+  "author": {
+    "login": "figma",
+    "name": "figma",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/figma",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "figma-figma-code-connect-components",
+      "displayName": "figma/figma-code-connect-components",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:figma"
+    },
+    {
+      "slug": "figma-figma-create-design-system-rules",
+      "displayName": "figma/figma-create-design-system-rules",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:figma"
+    },
+    {
+      "slug": "figma-figma-generate-design",
+      "displayName": "figma/figma-generate-design",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:figma"
+    },
+    {
+      "slug": "figma-figma-generate-library",
+      "displayName": "figma/figma-generate-library",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:figma"
+    },
+    {
+      "slug": "figma-figma-implement-design",
+      "displayName": "figma/figma-implement-design",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:figma"
+    },
+    {
+      "slug": "figma-figma-use",
+      "displayName": "figma/figma-use",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:figma"
+    },
+    {
+      "slug": "deanpeters-acquisition-channel-advisor",
+      "displayName": "deanpeters/acquisition-channel-advisor",
+      "stars": 4159,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    },
+    {
+      "slug": "deanpeters-ai-shaped-readiness-advisor",
+      "displayName": "deanpeters/ai-shaped-readiness-advisor",
+      "stars": 4159,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-san-francisco",
+    "label": "Global Skill Market / San Francisco / TypeScript Skills",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "virtual_market"
+  }
+}

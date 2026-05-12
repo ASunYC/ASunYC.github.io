@@ -1,0 +1,89 @@
+{
+  "id": "skill:composiohq-agent-orchestrator",
+  "slug": "composiohq-agent-orchestrator",
+  "name": "agent-orchestrator",
+  "displayName": "ComposioHQ/agent-orchestrator",
+  "description": " Agentic orchestrator for parallel coding agents — plans tasks, spawns agents, and autonomously handles CI    fixes, merge conflicts, and code reviews.",
+  "stars": 6864,
+  "category": "Discovered",
+  "source": "discover:topic",
+  "url": "https://github.com/ComposioHQ/agent-orchestrator",
+  "githubRepo": "ComposioHQ/agent-orchestrator",
+  "readme": "# ComposioHQ/agent-orchestrator\n\n Agentic orchestrator for parallel coding agents — plans tasks, spawns agents, and autonomously handles CI    fixes, merge conflicts, and code reviews.",
+  "readmeHtml": "<h1>ComposioHQ/agent-orchestrator</h1>\n<p> Agentic orchestrator for parallel coding agents — plans tasks, spawns agents, and autonomously handles CI    fixes, merge conflicts, and code reviews.</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.013Z",
+  "author": {
+    "login": "composiohq",
+    "name": "composiohq",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/composiohq",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "composiohq-awesome-claude-skills",
+      "displayName": "ComposioHQ/awesome-claude-skills",
+      "stars": 58467,
+      "relation": "source_overlap",
+      "evidence": "author:composiohq"
+    },
+    {
+      "slug": "composiohq-awesome-codex-skills",
+      "displayName": "ComposioHQ/awesome-codex-skills",
+      "stars": 7337,
+      "relation": "source_overlap",
+      "evidence": "author:composiohq"
+    },
+    {
+      "slug": "composiohq-open-claude-cowork",
+      "displayName": "ComposioHQ/open-claude-cowork",
+      "stars": 4090,
+      "relation": "source_overlap",
+      "evidence": "author:composiohq"
+    },
+    {
+      "slug": "composiohq-composio",
+      "displayName": "composiohq/composio",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:composiohq"
+    },
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 73174,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-toronto",
+    "label": "Global Skill Market / Toronto / Discovered",
+    "lat": 43.6532,
+    "lon": -79.3832,
+    "source": "virtual_market"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "skill:wordpress-wp-interactivity-api",
+  "slug": "wordpress-wp-interactivity-api",
+  "name": "wp-interactivity-api",
+  "displayName": "WordPress/wp-interactivity-api",
+  "description": "Frontend interactivity with data-wp-* directives and stores",
+  "stars": 0,
+  "category": "TypeScript Skills",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/WordPress/skills/wp-interactivity-api",
+  "githubRepo": "",
+  "readme": "# WordPress/wp-interactivity-api\n\nFrontend interactivity with data-wp-* directives and stores",
+  "readmeHtml": "<h1>WordPress/wp-interactivity-api</h1>\n<p>Frontend interactivity with data-wp-* directives and stores</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.119Z",
+  "author": {
+    "login": "wordpress",
+    "name": "wordpress",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/wordpress",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "wordpress-wordpress-router",
+      "displayName": "WordPress/wordpress-router",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:wordpress"
+    },
+    {
+      "slug": "wordpress-wp-project-triage",
+      "displayName": "WordPress/wp-project-triage",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:wordpress"
+    },
+    {
+      "slug": "wordpress-wp-block-development",
+      "displayName": "WordPress/wp-block-development",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:wordpress"
+    },
+    {
+      "slug": "wordpress-wp-block-themes",
+      "displayName": "WordPress/wp-block-themes",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:wordpress"
+    },
+    {
+      "slug": "wordpress-wp-plugin-development",
+      "displayName": "WordPress/wp-plugin-development",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:wordpress"
+    },
+    {
+      "slug": "wordpress-wp-rest-api",
+      "displayName": "WordPress/wp-rest-api",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:wordpress"
+    },
+    {
+      "slug": "wordpress-wp-abilities-api",
+      "displayName": "WordPress/wp-abilities-api",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:wordpress"
+    },
+    {
+      "slug": "wordpress-wp-wpcli-and-ops",
+      "displayName": "WordPress/wp-wpcli-and-ops",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:wordpress"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-paris",
+    "label": "Global Skill Market / Paris / TypeScript Skills",
+    "lat": 48.8566,
+    "lon": 2.3522,
+    "source": "virtual_market"
+  }
+}

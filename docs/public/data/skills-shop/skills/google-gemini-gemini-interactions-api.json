@@ -1,0 +1,75 @@
+{
+  "id": "skill:google-gemini-gemini-interactions-api",
+  "slug": "google-gemini-gemini-interactions-api",
+  "name": "gemini-interactions-api",
+  "displayName": "google-gemini/gemini-interactions-api",
+  "description": "Building apps with the Gemini Interactions API for text, chat, streaming, and image generation",
+  "stars": 0,
+  "category": "Skills by Google Gemini",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/google-gemini/skills/gemini-interactions-api",
+  "githubRepo": "",
+  "readme": "# google-gemini/gemini-interactions-api\n\nBuilding apps with the Gemini Interactions API for text, chat, streaming, and image generation",
+  "readmeHtml": "<h1>google-gemini/gemini-interactions-api</h1>\n<p>Building apps with the Gemini Interactions API for text, chat, streaming, and image generation</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.090Z",
+  "author": {
+    "login": "google-gemini",
+    "name": "google-gemini",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/google-gemini",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "google-gemini-gemini-api-dev",
+      "displayName": "google-gemini/gemini-api-dev",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:google-gemini"
+    },
+    {
+      "slug": "google-gemini-vertex-ai-api-dev",
+      "displayName": "google-gemini/vertex-ai-api-dev",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:google-gemini"
+    },
+    {
+      "slug": "google-gemini-gemini-live-api-dev",
+      "displayName": "google-gemini/gemini-live-api-dev",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:google-gemini"
+    },
+    {
+      "slug": "google-gemini-gemini-api-dev",
+      "displayName": "google-gemini/gemini-api-dev",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Skills by Google Gemini"
+    },
+    {
+      "slug": "google-gemini-vertex-ai-api-dev",
+      "displayName": "google-gemini/vertex-ai-api-dev",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Skills by Google Gemini"
+    },
+    {
+      "slug": "google-gemini-gemini-live-api-dev",
+      "displayName": "google-gemini/gemini-live-api-dev",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Skills by Google Gemini"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-london",
+    "label": "Global Skill Market / London / Skills by Google Gemini",
+    "lat": 51.5072,
+    "lon": -0.1276,
+    "source": "virtual_market"
+  }
+}

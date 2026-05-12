@@ -1,0 +1,89 @@
+{
+  "id": "skill:microsoft-cloud-solution-architect",
+  "slug": "microsoft-cloud-solution-architect",
+  "name": "cloud-solution-architect",
+  "displayName": "microsoft/cloud-solution-architect",
+  "description": "Design well-architected Azure cloud systems",
+  "stars": 0,
+  "category": "Core Skills",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/microsoft/skills/cloud-solution-architect",
+  "githubRepo": "",
+  "readme": "# microsoft/cloud-solution-architect\n\nDesign well-architected Azure cloud systems",
+  "readmeHtml": "<h1>microsoft/cloud-solution-architect</h1>\n<p>Design well-architected Azure cloud systems</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.106Z",
+  "author": {
+    "login": "microsoft",
+    "name": "microsoft",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/microsoft",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "microsoft-agent-skills",
+      "displayName": "microsoft/agent-skills",
+      "stars": 2248,
+      "relation": "source_overlap",
+      "evidence": "author:microsoft"
+    },
+    {
+      "slug": "microsoft-continual-learning",
+      "displayName": "microsoft/continual-learning",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:microsoft"
+    },
+    {
+      "slug": "microsoft-copilot-sdk",
+      "displayName": "microsoft/copilot-sdk",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:microsoft"
+    },
+    {
+      "slug": "microsoft-entra-agent-id",
+      "displayName": "microsoft/entra-agent-id",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:microsoft"
+    },
+    {
+      "slug": "microsoft-frontend-design-review",
+      "displayName": "microsoft/frontend-design-review",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:microsoft"
+    },
+    {
+      "slug": "microsoft-github-issue-creator",
+      "displayName": "microsoft/github-issue-creator",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:microsoft"
+    },
+    {
+      "slug": "microsoft-mcp-builder",
+      "displayName": "microsoft/mcp-builder",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:microsoft"
+    },
+    {
+      "slug": "microsoft-podcast-generation",
+      "displayName": "microsoft/podcast-generation",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:microsoft"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-singapore",
+    "label": "Global Skill Market / Singapore / Core Skills",
+    "lat": 1.3521,
+    "lon": 103.8198,
+    "source": "virtual_market"
+  }
+}

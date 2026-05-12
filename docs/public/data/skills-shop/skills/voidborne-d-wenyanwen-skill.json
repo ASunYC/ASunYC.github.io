@@ -1,0 +1,89 @@
+{
+  "id": "skill:voidborne-d-wenyanwen-skill",
+  "slug": "voidborne-d-wenyanwen-skill",
+  "name": "wenyanwen-skill",
+  "displayName": "voidborne-d/wenyanwen-skill",
+  "description": "用文言文省 token 的 AI Skill。令 AI 以文言文作答，本地脚本零成本译为白话文。",
+  "stars": 7,
+  "category": "Discovered",
+  "source": "discover:topic",
+  "url": "https://github.com/voidborne-d/wenyanwen-skill",
+  "githubRepo": "voidborne-d/wenyanwen-skill",
+  "readme": "# voidborne-d/wenyanwen-skill\n\n用文言文省 token 的 AI Skill。令 AI 以文言文作答，本地脚本零成本译为白话文。",
+  "readmeHtml": "<h1>voidborne-d/wenyanwen-skill</h1>\n<p>用文言文省 token 的 AI Skill。令 AI 以文言文作答，本地脚本零成本译为白话文。</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.073Z",
+  "author": {
+    "login": "voidborne-d",
+    "name": "voidborne-d",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/voidborne-d",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "voidborne-d-humanize-chinese",
+      "displayName": "voidborne-d/humanize-chinese",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:voidborne-d"
+    },
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 73174,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "bytedance-deer-flow",
+      "displayName": "bytedance/deer-flow",
+      "stars": 65827,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "farion1231-cc-switch",
+      "displayName": "farion1231/cc-switch",
+      "stars": 62022,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "gsd-build-get-shit-done",
+      "displayName": "gsd-build/get-shit-done",
+      "stars": 60616,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-london",
+    "label": "Global Skill Market / London / Discovered",
+    "lat": 51.5072,
+    "lon": -0.1276,
+    "source": "virtual_market"
+  }
+}

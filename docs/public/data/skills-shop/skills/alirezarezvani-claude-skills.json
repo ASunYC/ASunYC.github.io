@@ -1,0 +1,89 @@
+{
+  "id": "skill:alirezarezvani-claude-skills",
+  "slug": "alirezarezvani-claude-skills",
+  "name": "claude-skills",
+  "displayName": "alirezarezvani/claude-skills",
+  "description": "232+ Claude Code skills & agent plugins for Claude Code, Codex, Gemini CLI, Cursor, and 8 more coding agents — engineering, marketing, product, compliance, C-level advisory.",
+  "stars": 13986,
+  "category": "Discovered",
+  "source": "discover:topic",
+  "url": "https://github.com/alirezarezvani/claude-skills",
+  "githubRepo": "alirezarezvani/claude-skills",
+  "readme": "# alirezarezvani/claude-skills\n\n232+ Claude Code skills & agent plugins for Claude Code, Codex, Gemini CLI, Cursor, and 8 more coding agents — engineering, marketing, product, compliance, C-level advisory.",
+  "readmeHtml": "<h1>alirezarezvani/claude-skills</h1>\n<p>232+ Claude Code skills &amp; agent plugins for Claude Code, Codex, Gemini CLI, Cursor, and 8 more coding agents — engineering, marketing, product, compliance, C-level advisory.</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.004Z",
+  "author": {
+    "login": "alirezarezvani",
+    "name": "alirezarezvani",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/alirezarezvani",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "alirezarezvani-claude-code-skill-factory",
+      "displayName": "alirezarezvani/claude-code-skill-factory",
+      "stars": 757,
+      "relation": "source_overlap",
+      "evidence": "author:alirezarezvani"
+    },
+    {
+      "slug": "alirezarezvani-claude-code-tresor",
+      "displayName": "alirezarezvani/claude-code-tresor",
+      "stars": 705,
+      "relation": "source_overlap",
+      "evidence": "author:alirezarezvani"
+    },
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 73174,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "bytedance-deer-flow",
+      "displayName": "bytedance/deer-flow",
+      "stars": 65827,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "farion1231-cc-switch",
+      "displayName": "farion1231/cc-switch",
+      "stars": 62022,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-sao-paulo",
+    "label": "Global Skill Market / Sao Paulo / Discovered",
+    "lat": -23.5558,
+    "lon": -46.6396,
+    "source": "virtual_market"
+  }
+}

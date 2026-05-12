@@ -1,0 +1,89 @@
+{
+  "id": "skill:microsoft-azure-ai-contentsafety-ts",
+  "slug": "microsoft-azure-ai-contentsafety-ts",
+  "name": "azure-ai-contentsafety-ts",
+  "displayName": "microsoft/azure-ai-contentsafety-ts",
+  "description": "Content safety for text and images",
+  "stars": 0,
+  "category": "TypeScript Skills",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/microsoft/skills/azure-ai-contentsafety-ts",
+  "githubRepo": "",
+  "readme": "# microsoft/azure-ai-contentsafety-ts\n\nContent safety for text and images",
+  "readmeHtml": "<h1>microsoft/azure-ai-contentsafety-ts</h1>\n<p>Content safety for text and images</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.117Z",
+  "author": {
+    "login": "microsoft",
+    "name": "microsoft",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/microsoft",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "microsoft-agent-skills",
+      "displayName": "microsoft/agent-skills",
+      "stars": 2248,
+      "relation": "source_overlap",
+      "evidence": "author:microsoft"
+    },
+    {
+      "slug": "microsoft-cloud-solution-architect",
+      "displayName": "microsoft/cloud-solution-architect",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:microsoft"
+    },
+    {
+      "slug": "microsoft-continual-learning",
+      "displayName": "microsoft/continual-learning",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:microsoft"
+    },
+    {
+      "slug": "microsoft-copilot-sdk",
+      "displayName": "microsoft/copilot-sdk",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:microsoft"
+    },
+    {
+      "slug": "microsoft-entra-agent-id",
+      "displayName": "microsoft/entra-agent-id",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:microsoft"
+    },
+    {
+      "slug": "microsoft-frontend-design-review",
+      "displayName": "microsoft/frontend-design-review",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:microsoft"
+    },
+    {
+      "slug": "microsoft-github-issue-creator",
+      "displayName": "microsoft/github-issue-creator",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:microsoft"
+    },
+    {
+      "slug": "microsoft-mcp-builder",
+      "displayName": "microsoft/mcp-builder",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:microsoft"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-paris",
+    "label": "Global Skill Market / Paris / TypeScript Skills",
+    "lat": 48.8566,
+    "lon": 2.3522,
+    "source": "virtual_market"
+  }
+}

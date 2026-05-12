@@ -1,0 +1,89 @@
+{
+  "id": "skill:cloudai-x-threejs-skills",
+  "slug": "cloudai-x-threejs-skills",
+  "name": "threejs-skills",
+  "displayName": "CloudAI-X/threejs-skills",
+  "description": "Three.js skills for creating 3D elements and interactive experiences",
+  "stars": 2174,
+  "category": "Community Skills",
+  "source": "voltagent",
+  "url": "https://github.com/CloudAI-X/threejs-skills",
+  "githubRepo": "CloudAI-X/threejs-skills",
+  "readme": "# CloudAI-X/threejs-skills\n\nThree.js skills for creating 3D elements and interactive experiences",
+  "readmeHtml": "<h1>CloudAI-X/threejs-skills</h1>\n<p>Three.js skills for creating 3D elements and interactive experiences</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.027Z",
+  "author": {
+    "login": "cloudai-x",
+    "name": "cloudai-x",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/cloudai-x",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "cloudai-x-claude-workflow-v2",
+      "displayName": "CloudAI-X/claude-workflow-v2",
+      "stars": 1353,
+      "relation": "source_overlap",
+      "evidence": "author:cloudai-x"
+    },
+    {
+      "slug": "obra-defense-in-depth",
+      "displayName": "obra/defense-in-depth",
+      "stars": 186953,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
+      "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "stars": 77115,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mvanhorn-last30days-skill",
+      "displayName": "mvanhorn/last30days-skill",
+      "stars": 25573,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "k-dense-ai-claude-scientific-skills",
+      "displayName": "K-Dense-AI/claude-scientific-skills",
+      "stars": 20299,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "muratcankoylan-context-fundamentals",
+      "displayName": "muratcankoylan/context-fundamentals",
+      "stars": 15494,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "muratcankoylan-context-degradation",
+      "displayName": "muratcankoylan/context-degradation",
+      "stars": 15494,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "muratcankoylan-context-compression",
+      "displayName": "muratcankoylan/context-compression",
+      "stars": 15494,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-san-francisco",
+    "label": "Global Skill Market / San Francisco / Community Skills",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "virtual_market"
+  }
+}

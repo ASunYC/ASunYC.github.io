@@ -1,0 +1,89 @@
+{
+  "id": "skill:trailofbits-semgrep-rule-creator",
+  "slug": "trailofbits-semgrep-rule-creator",
+  "name": "semgrep-rule-creator",
+  "displayName": "trailofbits/semgrep-rule-creator",
+  "description": "Create and refine Semgrep rules for vulnerability detection",
+  "stars": 0,
+  "category": "Skills by Typefully",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/trailofbits/skills/semgrep-rule-creator",
+  "githubRepo": "",
+  "readme": "# trailofbits/semgrep-rule-creator\n\nCreate and refine Semgrep rules for vulnerability detection",
+  "readmeHtml": "<h1>trailofbits/semgrep-rule-creator</h1>\n<p>Create and refine Semgrep rules for vulnerability detection</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.104Z",
+  "author": {
+    "login": "trailofbits",
+    "name": "trailofbits",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/trailofbits",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "trailofbits-skills",
+      "displayName": "trailofbits/skills",
+      "stars": 5043,
+      "relation": "source_overlap",
+      "evidence": "author:trailofbits"
+    },
+    {
+      "slug": "trailofbits-ask-questions-if-underspecified",
+      "displayName": "trailofbits/ask-questions-if-underspecified",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:trailofbits"
+    },
+    {
+      "slug": "trailofbits-audit-context-building",
+      "displayName": "trailofbits/audit-context-building",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:trailofbits"
+    },
+    {
+      "slug": "trailofbits-building-secure-contracts",
+      "displayName": "trailofbits/building-secure-contracts",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:trailofbits"
+    },
+    {
+      "slug": "trailofbits-burpsuite-project-parser",
+      "displayName": "trailofbits/burpsuite-project-parser",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:trailofbits"
+    },
+    {
+      "slug": "trailofbits-claude-in-chrome-troubleshooting",
+      "displayName": "trailofbits/claude-in-chrome-troubleshooting",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:trailofbits"
+    },
+    {
+      "slug": "trailofbits-constant-time-analysis",
+      "displayName": "trailofbits/constant-time-analysis",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:trailofbits"
+    },
+    {
+      "slug": "trailofbits-culture-index",
+      "displayName": "trailofbits/culture-index",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:trailofbits"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-new-york",
+    "label": "Global Skill Market / New York / Skills by Typefully",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "source": "virtual_market"
+  }
+}

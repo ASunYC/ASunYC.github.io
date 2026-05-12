@@ -1,0 +1,89 @@
+{
+  "id": "skill:zilliztech-claude-context",
+  "slug": "zilliztech-claude-context",
+  "name": "claude-context",
+  "displayName": "zilliztech/claude-context",
+  "description": "Code search MCP for Claude Code. Make entire codebase the context for any coding agent.",
+  "stars": 10835,
+  "category": "Discovered",
+  "source": "discover:topic",
+  "url": "https://github.com/zilliztech/claude-context",
+  "githubRepo": "zilliztech/claude-context",
+  "readme": "# zilliztech/claude-context\n\nCode search MCP for Claude Code. Make entire codebase the context for any coding agent.",
+  "readmeHtml": "<h1>zilliztech/claude-context</h1>\n<p>Code search MCP for Claude Code. Make entire codebase the context for any coding agent.</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.005Z",
+  "author": {
+    "login": "zilliztech",
+    "name": "zilliztech",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/zilliztech",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "zilliztech-memsearch",
+      "displayName": "zilliztech/memsearch",
+      "stars": 1619,
+      "relation": "source_overlap",
+      "evidence": "author:zilliztech"
+    },
+    {
+      "slug": "zilliztech-milvus-skill",
+      "displayName": "zilliztech/milvus-skill",
+      "stars": 19,
+      "relation": "source_overlap",
+      "evidence": "author:zilliztech"
+    },
+    {
+      "slug": "zilliztech-zilliz-skill",
+      "displayName": "zilliztech/zilliz-skill",
+      "stars": 3,
+      "relation": "source_overlap",
+      "evidence": "author:zilliztech"
+    },
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 73174,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "bytedance-deer-flow",
+      "displayName": "bytedance/deer-flow",
+      "stars": 65827,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-london",
+    "label": "Global Skill Market / London / Discovered",
+    "lat": 51.5072,
+    "lon": -0.1276,
+    "source": "virtual_market"
+  }
+}

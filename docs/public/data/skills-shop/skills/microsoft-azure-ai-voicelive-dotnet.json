@@ -1,0 +1,89 @@
+{
+  "id": "skill:microsoft-azure-ai-voicelive-dotnet",
+  "slug": "microsoft-azure-ai-voicelive-dotnet",
+  "name": "azure-ai-voicelive-dotnet",
+  "displayName": "microsoft/azure-ai-voicelive-dotnet",
+  "description": "Real-time bidirectional voice AI",
+  "stars": 0,
+  "category": ".NET Skills",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/microsoft/skills/azure-ai-voicelive-dotnet",
+  "githubRepo": "",
+  "readme": "# microsoft/azure-ai-voicelive-dotnet\n\nReal-time bidirectional voice AI",
+  "readmeHtml": "<h1>microsoft/azure-ai-voicelive-dotnet</h1>\n<p>Real-time bidirectional voice AI</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.107Z",
+  "author": {
+    "login": "microsoft",
+    "name": "microsoft",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/microsoft",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "microsoft-agent-skills",
+      "displayName": "microsoft/agent-skills",
+      "stars": 2248,
+      "relation": "source_overlap",
+      "evidence": "author:microsoft"
+    },
+    {
+      "slug": "microsoft-cloud-solution-architect",
+      "displayName": "microsoft/cloud-solution-architect",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:microsoft"
+    },
+    {
+      "slug": "microsoft-continual-learning",
+      "displayName": "microsoft/continual-learning",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:microsoft"
+    },
+    {
+      "slug": "microsoft-copilot-sdk",
+      "displayName": "microsoft/copilot-sdk",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:microsoft"
+    },
+    {
+      "slug": "microsoft-entra-agent-id",
+      "displayName": "microsoft/entra-agent-id",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:microsoft"
+    },
+    {
+      "slug": "microsoft-frontend-design-review",
+      "displayName": "microsoft/frontend-design-review",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:microsoft"
+    },
+    {
+      "slug": "microsoft-github-issue-creator",
+      "displayName": "microsoft/github-issue-creator",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:microsoft"
+    },
+    {
+      "slug": "microsoft-mcp-builder",
+      "displayName": "microsoft/mcp-builder",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:microsoft"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-new-york",
+    "label": "Global Skill Market / New York / .NET Skills",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "source": "virtual_market"
+  }
+}

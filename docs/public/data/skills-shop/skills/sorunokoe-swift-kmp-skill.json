@@ -1,0 +1,89 @@
+{
+  "id": "skill:sorunokoe-swift-kmp-skill",
+  "slug": "sorunokoe-swift-kmp-skill",
+  "name": "swift-kmp-skill",
+  "displayName": "sorunokoe/swift-kmp-skill",
+  "description": "AI coding skill for the Kotlin Multiplatform → Swift bridge layer.",
+  "stars": 4,
+  "category": "Discovered",
+  "source": "discover:topic",
+  "url": "https://github.com/sorunokoe/swift-kmp-skill",
+  "githubRepo": "sorunokoe/swift-kmp-skill",
+  "readme": "# sorunokoe/swift-kmp-skill\n\nAI coding skill for the Kotlin Multiplatform → Swift bridge layer.",
+  "readmeHtml": "<h1>sorunokoe/swift-kmp-skill</h1>\n<p>AI coding skill for the Kotlin Multiplatform → Swift bridge layer.</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.077Z",
+  "author": {
+    "login": "sorunokoe",
+    "name": "sorunokoe",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/sorunokoe",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "sorunokoe-swiftui-compose-skill",
+      "displayName": "sorunokoe/swiftui-compose-skill",
+      "stars": 3,
+      "relation": "source_overlap",
+      "evidence": "author:sorunokoe"
+    },
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 73174,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "bytedance-deer-flow",
+      "displayName": "bytedance/deer-flow",
+      "stars": 65827,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "farion1231-cc-switch",
+      "displayName": "farion1231/cc-switch",
+      "stars": 62022,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "gsd-build-get-shit-done",
+      "displayName": "gsd-build/get-shit-done",
+      "stars": 60616,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-paris",
+    "label": "Global Skill Market / Paris / Discovered",
+    "lat": 48.8566,
+    "lon": 2.3522,
+    "source": "virtual_market"
+  }
+}

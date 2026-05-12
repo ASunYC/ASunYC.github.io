@@ -1,0 +1,89 @@
+{
+  "id": "skill:twostraws-swift-concurrency-agent-skill",
+  "slug": "twostraws-swift-concurrency-agent-skill",
+  "name": "swift-concurrency-agent-skill",
+  "displayName": "twostraws/Swift-Concurrency-Agent-Skill",
+  "description": "Swift Concurrency agent skill for Claude Code, Codex, and other AI tools.",
+  "stars": 395,
+  "category": "Discovered",
+  "source": "discover:keyword",
+  "url": "https://github.com/twostraws/Swift-Concurrency-Agent-Skill",
+  "githubRepo": "twostraws/Swift-Concurrency-Agent-Skill",
+  "readme": "# twostraws/Swift-Concurrency-Agent-Skill\n\nSwift Concurrency agent skill for Claude Code, Codex, and other AI tools.",
+  "readmeHtml": "<h1>twostraws/Swift-Concurrency-Agent-Skill</h1>\n<p>Swift Concurrency agent skill for Claude Code, Codex, and other AI tools.</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.047Z",
+  "author": {
+    "login": "twostraws",
+    "name": "twostraws",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/twostraws",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "twostraws-swiftui-agent-skill",
+      "displayName": "twostraws/SwiftUI-Agent-Skill",
+      "stars": 3826,
+      "relation": "source_overlap",
+      "evidence": "author:twostraws"
+    },
+    {
+      "slug": "twostraws-swift-agent-skills",
+      "displayName": "twostraws/Swift-Agent-Skills",
+      "stars": 1633,
+      "relation": "source_overlap",
+      "evidence": "author:twostraws"
+    },
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 73174,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "bytedance-deer-flow",
+      "displayName": "bytedance/deer-flow",
+      "stars": 65827,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "farion1231-cc-switch",
+      "displayName": "farion1231/cc-switch",
+      "stars": 62022,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-sao-paulo",
+    "label": "Global Skill Market / Sao Paulo / Discovered",
+    "lat": -23.5558,
+    "lon": -46.6396,
+    "source": "virtual_market"
+  }
+}

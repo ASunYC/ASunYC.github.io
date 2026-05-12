@@ -1,0 +1,89 @@
+{
+  "id": "skill:op7418-claude-to-im-skill",
+  "slug": "op7418-claude-to-im-skill",
+  "name": "claude-to-im-skill",
+  "displayName": "op7418/Claude-to-IM-skill",
+  "description": "Bridge Claude Code / Codex to IM platforms — chat with AI coding agents from Telegram, Discord, or Feishu/Lark.",
+  "stars": 2447,
+  "category": "Discovered",
+  "source": "discover:keyword",
+  "url": "https://github.com/op7418/Claude-to-IM-skill",
+  "githubRepo": "op7418/Claude-to-IM-skill",
+  "readme": "# op7418/Claude-to-IM-skill\n\nBridge Claude Code / Codex to IM platforms — chat with AI coding agents from Telegram, Discord, or Feishu/Lark.",
+  "readmeHtml": "<h1>op7418/Claude-to-IM-skill</h1>\n<p>Bridge Claude Code / Codex to IM platforms — chat with AI coding agents from Telegram, Discord, or Feishu/Lark.</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.026Z",
+  "author": {
+    "login": "op7418",
+    "name": "op7418",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/op7418",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "op7418-humanizer-zh",
+      "displayName": "op7418/Humanizer-zh",
+      "stars": 7055,
+      "relation": "source_overlap",
+      "evidence": "author:op7418"
+    },
+    {
+      "slug": "op7418-codepilot",
+      "displayName": "op7418/CodePilot",
+      "stars": 5647,
+      "relation": "source_overlap",
+      "evidence": "author:op7418"
+    },
+    {
+      "slug": "op7418-guizang-ppt-skill",
+      "displayName": "op7418/guizang-ppt-skill",
+      "stars": 5444,
+      "relation": "source_overlap",
+      "evidence": "author:op7418"
+    },
+    {
+      "slug": "op7418-nanobanana-ppt-skills",
+      "displayName": "op7418/NanoBanana-PPT-Skills",
+      "stars": 2613,
+      "relation": "source_overlap",
+      "evidence": "author:op7418"
+    },
+    {
+      "slug": "op7418-youtube-clipper-skill",
+      "displayName": "op7418/Youtube-clipper-skill",
+      "stars": 1828,
+      "relation": "source_overlap",
+      "evidence": "author:op7418"
+    },
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-sydney",
+    "label": "Global Skill Market / Sydney / Discovered",
+    "lat": -33.8688,
+    "lon": 151.2093,
+    "source": "virtual_market"
+  }
+}

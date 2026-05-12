@@ -1,0 +1,89 @@
+{
+  "id": "skill:zubair-trabzada-ai-marketing-claude",
+  "slug": "zubair-trabzada-ai-marketing-claude",
+  "name": "ai-marketing-claude",
+  "displayName": "zubair-trabzada/ai-marketing-claude",
+  "description": "AI Marketing Suite for Claude Code. 15 marketing skills with parallel subagents — audit any website, generate copy, email sequences, ad campaigns, content calendars, competitive intelligence, and client-ready PDF reports.",
+  "stars": 1611,
+  "category": "Discovered",
+  "source": "discover:keyword",
+  "url": "https://github.com/zubair-trabzada/ai-marketing-claude",
+  "githubRepo": "zubair-trabzada/ai-marketing-claude",
+  "readme": "# zubair-trabzada/ai-marketing-claude\n\nAI Marketing Suite for Claude Code. 15 marketing skills with parallel subagents — audit any website, generate copy, email sequences, ad campaigns, content calendars, competitive intelligence, and client-ready PDF reports.",
+  "readmeHtml": "<h1>zubair-trabzada/ai-marketing-claude</h1>\n<p>AI Marketing Suite for Claude Code. 15 marketing skills with parallel subagents — audit any website, generate copy, email sequences, ad campaigns, content calendars, competitive intelligence, and client-ready PDF reports.</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.029Z",
+  "author": {
+    "login": "zubair-trabzada",
+    "name": "zubair-trabzada",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/zubair-trabzada",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "zubair-trabzada-geo-seo-claude",
+      "displayName": "zubair-trabzada/geo-seo-claude",
+      "stars": 7057,
+      "relation": "source_overlap",
+      "evidence": "author:zubair-trabzada"
+    },
+    {
+      "slug": "zubair-trabzada-ai-legal-claude",
+      "displayName": "zubair-trabzada/ai-legal-claude",
+      "stars": 1191,
+      "relation": "source_overlap",
+      "evidence": "author:zubair-trabzada"
+    },
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 73174,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "bytedance-deer-flow",
+      "displayName": "bytedance/deer-flow",
+      "stars": 65827,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "farion1231-cc-switch",
+      "displayName": "farion1231/cc-switch",
+      "stars": 62022,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-shanghai",
+    "label": "Global Skill Market / Shanghai / Discovered",
+    "lat": 31.2304,
+    "lon": 121.4737,
+    "source": "virtual_market"
+  }
+}

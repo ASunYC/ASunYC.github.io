@@ -1,0 +1,89 @@
+{
+  "id": "skill:mvanhorn-last30days-skill",
+  "slug": "mvanhorn-last30days-skill",
+  "name": "last30days-skill",
+  "displayName": "mvanhorn/last30days-skill",
+  "description": "Research any topic across Reddit, X, YouTube, HN, Polymarket, and the web, ranked by upvotes, likes, and real money instead of editors",
+  "stars": 25573,
+  "category": "Community Skills",
+  "source": "voltagent",
+  "url": "https://github.com/mvanhorn/last30days-skill",
+  "githubRepo": "mvanhorn/last30days-skill",
+  "readme": "# mvanhorn/last30days-skill\n\nResearch any topic across Reddit, X, YouTube, HN, Polymarket, and the web, ranked by upvotes, likes, and real money instead of editors",
+  "readmeHtml": "<h1>mvanhorn/last30days-skill</h1>\n<p>Research any topic across Reddit, X, YouTube, HN, Polymarket, and the web, ranked by upvotes, likes, and real money instead of editors</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.001Z",
+  "author": {
+    "login": "mvanhorn",
+    "name": "mvanhorn",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/mvanhorn",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "mvanhorn-clawdbot-skill-manus",
+      "displayName": "mvanhorn/clawdbot-skill-manus",
+      "stars": 20,
+      "relation": "source_overlap",
+      "evidence": "author:mvanhorn"
+    },
+    {
+      "slug": "mvanhorn-clawdbot-skill-parallel",
+      "displayName": "mvanhorn/clawdbot-skill-parallel",
+      "stars": 16,
+      "relation": "source_overlap",
+      "evidence": "author:mvanhorn"
+    },
+    {
+      "slug": "mvanhorn-clawdbot-skill-polymarket",
+      "displayName": "mvanhorn/clawdbot-skill-polymarket",
+      "stars": 15,
+      "relation": "source_overlap",
+      "evidence": "author:mvanhorn"
+    },
+    {
+      "slug": "mvanhorn-clawdbot-skill-search-x",
+      "displayName": "mvanhorn/clawdbot-skill-search-x",
+      "stars": 6,
+      "relation": "source_overlap",
+      "evidence": "author:mvanhorn"
+    },
+    {
+      "slug": "mvanhorn-clawdbot-skill-tesla",
+      "displayName": "mvanhorn/clawdbot-skill-tesla",
+      "stars": 5,
+      "relation": "source_overlap",
+      "evidence": "author:mvanhorn"
+    },
+    {
+      "slug": "mvanhorn-nano-triple",
+      "displayName": "mvanhorn/nano-triple",
+      "stars": 4,
+      "relation": "source_overlap",
+      "evidence": "author:mvanhorn"
+    },
+    {
+      "slug": "mvanhorn-clawdbot-skill-xai",
+      "displayName": "mvanhorn/clawdbot-skill-xai",
+      "stars": 2,
+      "relation": "source_overlap",
+      "evidence": "author:mvanhorn"
+    },
+    {
+      "slug": "obra-defense-in-depth",
+      "displayName": "obra/defense-in-depth",
+      "stars": 186953,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-singapore",
+    "label": "Global Skill Market / Singapore / Community Skills",
+    "lat": 1.3521,
+    "lon": 103.8198,
+    "source": "virtual_market"
+  }
+}

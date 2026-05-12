@@ -1,0 +1,89 @@
+{
+  "id": "skill:shpigford-readme",
+  "slug": "shpigford-readme",
+  "name": "readme",
+  "displayName": "Shpigford/readme",
+  "description": "Generate comprehensive project documentation",
+  "stars": 0,
+  "category": "Community Skills",
+  "source": "voltagent",
+  "url": "https://github.com/Shpigford/skills/tree/main/readme",
+  "githubRepo": "Shpigford/skills",
+  "readme": "# Shpigford/readme\n\nGenerate comprehensive project documentation",
+  "readmeHtml": "<h1>Shpigford/readme</h1>\n<p>Generate comprehensive project documentation</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.154Z",
+  "author": {
+    "login": "shpigford",
+    "name": "shpigford",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/shpigford",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "shpigford-screenshots",
+      "displayName": "Shpigford/screenshots",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:Shpigford/skills"
+    },
+    {
+      "slug": "shpigford-chops",
+      "displayName": "Shpigford/chops",
+      "stars": 1306,
+      "relation": "source_overlap",
+      "evidence": "author:shpigford"
+    },
+    {
+      "slug": "shpigford-screenshots",
+      "displayName": "Shpigford/screenshots",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:shpigford"
+    },
+    {
+      "slug": "obra-defense-in-depth",
+      "displayName": "obra/defense-in-depth",
+      "stars": 186953,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
+      "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "stars": 77115,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mvanhorn-last30days-skill",
+      "displayName": "mvanhorn/last30days-skill",
+      "stars": 25573,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "k-dense-ai-claude-scientific-skills",
+      "displayName": "K-Dense-AI/claude-scientific-skills",
+      "stars": 20299,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "muratcankoylan-context-fundamentals",
+      "displayName": "muratcankoylan/context-fundamentals",
+      "stars": 15494,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-sao-paulo",
+    "label": "Global Skill Market / Sao Paulo / Community Skills",
+    "lat": -23.5558,
+    "lon": -46.6396,
+    "source": "virtual_market"
+  }
+}

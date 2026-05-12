@@ -1,0 +1,89 @@
+{
+  "id": "skill:garrytan-gstack",
+  "slug": "garrytan-gstack",
+  "name": "gstack",
+  "displayName": "garrytan/gstack",
+  "description": "YC founder stack recommendations for infra, tooling, and deployment",
+  "stars": 90855,
+  "category": "Skills by Garry Tan (gstack)",
+  "source": "heilcheng",
+  "url": "https://github.com/garrytan/gstack",
+  "githubRepo": "garrytan/gstack",
+  "readme": "# garrytan/gstack\n\nYC founder stack recommendations for infra, tooling, and deployment",
+  "readmeHtml": "<h1>garrytan/gstack</h1>\n<p>YC founder stack recommendations for infra, tooling, and deployment</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:06.997Z",
+  "author": {
+    "login": "garrytan",
+    "name": "garrytan",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/garrytan",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "garrytan-office-hours",
+      "displayName": "garrytan/office-hours",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:garrytan"
+    },
+    {
+      "slug": "garrytan-plan-ceo-review",
+      "displayName": "garrytan/plan-ceo-review",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:garrytan"
+    },
+    {
+      "slug": "garrytan-plan-eng-review",
+      "displayName": "garrytan/plan-eng-review",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:garrytan"
+    },
+    {
+      "slug": "garrytan-plan-design-review",
+      "displayName": "garrytan/plan-design-review",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:garrytan"
+    },
+    {
+      "slug": "garrytan-design-consultation",
+      "displayName": "garrytan/design-consultation",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:garrytan"
+    },
+    {
+      "slug": "garrytan-design-review",
+      "displayName": "garrytan/design-review",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:garrytan"
+    },
+    {
+      "slug": "garrytan-review",
+      "displayName": "garrytan/review",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:garrytan"
+    },
+    {
+      "slug": "garrytan-investigate",
+      "displayName": "garrytan/investigate",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:garrytan"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-tokyo",
+    "label": "Global Skill Market / Tokyo / Skills by Garry Tan (gstack)",
+    "lat": 35.6762,
+    "lon": 139.6503,
+    "source": "virtual_market"
+  }
+}

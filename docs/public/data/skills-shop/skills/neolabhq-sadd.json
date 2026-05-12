@@ -1,0 +1,89 @@
+{
+  "id": "skill:neolabhq-sadd",
+  "slug": "neolabhq-sadd",
+  "name": "sadd",
+  "displayName": "NeoLabHQ/sadd",
+  "description": "Dispatches independent subagents for individual tasks with code review checkpoints between iterations for rapid, controlled development.",
+  "stars": 989,
+  "category": "Community Skills",
+  "source": "voltagent",
+  "url": "https://github.com/NeoLabHQ/context-engineering-kit/tree/master/plugins/sadd",
+  "githubRepo": "NeoLabHQ/context-engineering-kit",
+  "readme": "# NeoLabHQ/sadd\n\nDispatches independent subagents for individual tasks with code review checkpoints between iterations for rapid, controlled development.",
+  "readmeHtml": "<h1>NeoLabHQ/sadd</h1>\n<p>Dispatches independent subagents for individual tasks with code review checkpoints between iterations for rapid, controlled development.</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.037Z",
+  "author": {
+    "login": "neolabhq",
+    "name": "neolabhq",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/neolabhq",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "neolabhq-write-concisely",
+      "displayName": "NeoLabHQ/write-concisely",
+      "stars": 989,
+      "relation": "source_overlap",
+      "evidence": "repo:NeoLabHQ/context-engineering-kit"
+    },
+    {
+      "slug": "neolabhq-code-review",
+      "displayName": "NeoLabHQ/code-review",
+      "stars": 989,
+      "relation": "source_overlap",
+      "evidence": "repo:NeoLabHQ/context-engineering-kit"
+    },
+    {
+      "slug": "neolabhq-reflexion",
+      "displayName": "NeoLabHQ/reflexion",
+      "stars": 989,
+      "relation": "source_overlap",
+      "evidence": "repo:NeoLabHQ/context-engineering-kit"
+    },
+    {
+      "slug": "neolabhq-sdd",
+      "displayName": "NeoLabHQ/sdd",
+      "stars": 989,
+      "relation": "source_overlap",
+      "evidence": "repo:NeoLabHQ/context-engineering-kit"
+    },
+    {
+      "slug": "neolabhq-ddd",
+      "displayName": "NeoLabHQ/ddd",
+      "stars": 989,
+      "relation": "source_overlap",
+      "evidence": "repo:NeoLabHQ/context-engineering-kit"
+    },
+    {
+      "slug": "neolabhq-kaizen",
+      "displayName": "NeoLabHQ/kaizen",
+      "stars": 989,
+      "relation": "source_overlap",
+      "evidence": "repo:NeoLabHQ/context-engineering-kit"
+    },
+    {
+      "slug": "neolabhq-prompt-engineering",
+      "displayName": "NeoLabHQ/prompt-engineering",
+      "stars": 989,
+      "relation": "source_overlap",
+      "evidence": "repo:NeoLabHQ/context-engineering-kit"
+    },
+    {
+      "slug": "neolabhq-context-engineering-kit",
+      "displayName": "NeoLabHQ/context-engineering-kit",
+      "stars": 967,
+      "relation": "source_overlap",
+      "evidence": "repo:NeoLabHQ/context-engineering-kit"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-san-francisco",
+    "label": "Global Skill Market / San Francisco / Community Skills",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "virtual_market"
+  }
+}

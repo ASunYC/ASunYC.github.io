@@ -1,0 +1,89 @@
+{
+  "id": "skill:phuryn-ideal-customer-profile",
+  "slug": "phuryn-ideal-customer-profile",
+  "name": "ideal-customer-profile",
+  "displayName": "phuryn/ideal-customer-profile",
+  "description": "Identify ICP with demographics, behaviors, and JTBD",
+  "stars": 0,
+  "category": "TypeScript Skills",
+  "source": "voltagent",
+  "url": "https://github.com/phuryn/pm-skills/tree/main/pm-go-to-market/skills/ideal-customer-profile",
+  "githubRepo": "phuryn/pm-skills",
+  "readme": "# phuryn/ideal-customer-profile\n\nIdentify ICP with demographics, behaviors, and JTBD",
+  "readmeHtml": "<h1>phuryn/ideal-customer-profile</h1>\n<p>Identify ICP with demographics, behaviors, and JTBD</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.141Z",
+  "author": {
+    "login": "phuryn",
+    "name": "phuryn",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/phuryn",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "phuryn-ab-test-analysis",
+      "displayName": "phuryn/ab-test-analysis",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:phuryn/pm-skills"
+    },
+    {
+      "slug": "phuryn-cohort-analysis",
+      "displayName": "phuryn/cohort-analysis",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:phuryn/pm-skills"
+    },
+    {
+      "slug": "phuryn-sql-queries",
+      "displayName": "phuryn/sql-queries",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:phuryn/pm-skills"
+    },
+    {
+      "slug": "phuryn-brainstorm-okrs",
+      "displayName": "phuryn/brainstorm-okrs",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:phuryn/pm-skills"
+    },
+    {
+      "slug": "phuryn-create-prd",
+      "displayName": "phuryn/create-prd",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:phuryn/pm-skills"
+    },
+    {
+      "slug": "phuryn-dummy-dataset",
+      "displayName": "phuryn/dummy-dataset",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:phuryn/pm-skills"
+    },
+    {
+      "slug": "phuryn-job-stories",
+      "displayName": "phuryn/job-stories",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:phuryn/pm-skills"
+    },
+    {
+      "slug": "phuryn-outcome-roadmap",
+      "displayName": "phuryn/outcome-roadmap",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:phuryn/pm-skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-paris",
+    "label": "Global Skill Market / Paris / TypeScript Skills",
+    "lat": 48.8566,
+    "lon": 2.3522,
+    "source": "virtual_market"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "skill:greensock-gsap-frameworks",
+  "slug": "greensock-gsap-frameworks",
+  "name": "gsap-frameworks",
+  "displayName": "greensock/gsap-frameworks",
+  "description": "Vue, Svelte, and other frameworks with lifecycle, scoping, and cleanup patterns",
+  "stars": 0,
+  "category": "TypeScript Skills",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/greensock/skills/gsap-frameworks",
+  "githubRepo": "",
+  "readme": "# greensock/gsap-frameworks\n\nVue, Svelte, and other frameworks with lifecycle, scoping, and cleanup patterns",
+  "readmeHtml": "<h1>greensock/gsap-frameworks</h1>\n<p>Vue, Svelte, and other frameworks with lifecycle, scoping, and cleanup patterns</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.145Z",
+  "author": {
+    "login": "greensock",
+    "name": "greensock",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/greensock",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "greensock-gsap-skills",
+      "displayName": "greensock/gsap-skills",
+      "stars": 3127,
+      "relation": "source_overlap",
+      "evidence": "author:greensock"
+    },
+    {
+      "slug": "greensock-gsap-core",
+      "displayName": "greensock/gsap-core",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:greensock"
+    },
+    {
+      "slug": "greensock-gsap-timeline",
+      "displayName": "greensock/gsap-timeline",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:greensock"
+    },
+    {
+      "slug": "greensock-gsap-scrolltrigger",
+      "displayName": "greensock/gsap-scrolltrigger",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:greensock"
+    },
+    {
+      "slug": "greensock-gsap-plugins",
+      "displayName": "greensock/gsap-plugins",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:greensock"
+    },
+    {
+      "slug": "greensock-gsap-utils",
+      "displayName": "greensock/gsap-utils",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:greensock"
+    },
+    {
+      "slug": "greensock-gsap-react",
+      "displayName": "greensock/gsap-react",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:greensock"
+    },
+    {
+      "slug": "greensock-gsap-performance",
+      "displayName": "greensock/gsap-performance",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:greensock"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-singapore",
+    "label": "Global Skill Market / Singapore / TypeScript Skills",
+    "lat": 1.3521,
+    "lon": 103.8198,
+    "source": "virtual_market"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "skill:huggingface-huggingface-gradio",
+  "slug": "huggingface-huggingface-gradio",
+  "name": "huggingface-gradio",
+  "displayName": "huggingface/huggingface-gradio",
+  "description": "Build Gradio apps and deploy to HF Spaces",
+  "stars": 0,
+  "category": "Skills by Typefully",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/huggingface/skills/huggingface-gradio",
+  "githubRepo": "",
+  "readme": "# huggingface/huggingface-gradio\n\nBuild Gradio apps and deploy to HF Spaces",
+  "readmeHtml": "<h1>huggingface/huggingface-gradio</h1>\n<p>Build Gradio apps and deploy to HF Spaces</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.103Z",
+  "author": {
+    "login": "huggingface",
+    "name": "huggingface",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/huggingface",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "huggingface-upskill",
+      "displayName": "huggingface/upskill",
+      "stars": 517,
+      "relation": "source_overlap",
+      "evidence": "author:huggingface"
+    },
+    {
+      "slug": "huggingface-hf-cli",
+      "displayName": "huggingface/hf-cli",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:huggingface"
+    },
+    {
+      "slug": "huggingface-hugging-face-dataset-viewer",
+      "displayName": "huggingface/hugging-face-dataset-viewer",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:huggingface"
+    },
+    {
+      "slug": "huggingface-hugging-face-datasets",
+      "displayName": "huggingface/hugging-face-datasets",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:huggingface"
+    },
+    {
+      "slug": "huggingface-hugging-face-evaluation",
+      "displayName": "huggingface/hugging-face-evaluation",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:huggingface"
+    },
+    {
+      "slug": "huggingface-hugging-face-jobs",
+      "displayName": "huggingface/hugging-face-jobs",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:huggingface"
+    },
+    {
+      "slug": "huggingface-hugging-face-model-trainer",
+      "displayName": "huggingface/hugging-face-model-trainer",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:huggingface"
+    },
+    {
+      "slug": "huggingface-hugging-face-paper-pages",
+      "displayName": "huggingface/hugging-face-paper-pages",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:huggingface"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-sao-paulo",
+    "label": "Global Skill Market / Sao Paulo / Skills by Typefully",
+    "lat": -23.5558,
+    "lon": -46.6396,
+    "source": "virtual_market"
+  }
+}

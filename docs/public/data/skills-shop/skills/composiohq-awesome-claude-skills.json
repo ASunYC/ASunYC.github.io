@@ -1,0 +1,89 @@
+{
+  "id": "skill:composiohq-awesome-claude-skills",
+  "slug": "composiohq-awesome-claude-skills",
+  "name": "awesome-claude-skills",
+  "displayName": "ComposioHQ/awesome-claude-skills",
+  "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
+  "stars": 58467,
+  "category": "Discovered",
+  "source": "discover:topic",
+  "url": "https://github.com/ComposioHQ/awesome-claude-skills",
+  "githubRepo": "ComposioHQ/awesome-claude-skills",
+  "readme": "# ComposioHQ/awesome-claude-skills\n\nA curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
+  "readmeHtml": "<h1>ComposioHQ/awesome-claude-skills</h1>\n<p>A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:06.998Z",
+  "author": {
+    "login": "composiohq",
+    "name": "composiohq",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/composiohq",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "composiohq-awesome-codex-skills",
+      "displayName": "ComposioHQ/awesome-codex-skills",
+      "stars": 7337,
+      "relation": "source_overlap",
+      "evidence": "author:composiohq"
+    },
+    {
+      "slug": "composiohq-agent-orchestrator",
+      "displayName": "ComposioHQ/agent-orchestrator",
+      "stars": 6864,
+      "relation": "source_overlap",
+      "evidence": "author:composiohq"
+    },
+    {
+      "slug": "composiohq-open-claude-cowork",
+      "displayName": "ComposioHQ/open-claude-cowork",
+      "stars": 4090,
+      "relation": "source_overlap",
+      "evidence": "author:composiohq"
+    },
+    {
+      "slug": "composiohq-composio",
+      "displayName": "composiohq/composio",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:composiohq"
+    },
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 73174,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-berlin",
+    "label": "Global Skill Market / Berlin / Discovered",
+    "lat": 52.52,
+    "lon": 13.405,
+    "source": "virtual_market"
+  }
+}

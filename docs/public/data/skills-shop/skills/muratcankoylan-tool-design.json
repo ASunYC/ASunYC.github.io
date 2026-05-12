@@ -1,0 +1,89 @@
+{
+  "id": "skill:muratcankoylan-tool-design",
+  "slug": "muratcankoylan-tool-design",
+  "name": "tool-design",
+  "displayName": "muratcankoylan/tool-design",
+  "description": "Build tools that agents can use effectively, including architectural reduction patterns",
+  "stars": 15494,
+  "category": "Community Skills",
+  "source": "voltagent",
+  "url": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/tree/main/skills/tool-design",
+  "githubRepo": "muratcankoylan/Agent-Skills-for-Context-Engineering",
+  "readme": "# muratcankoylan/tool-design\n\nBuild tools that agents can use effectively, including architectural reduction patterns",
+  "readmeHtml": "<h1>muratcankoylan/tool-design</h1>\n<p>Build tools that agents can use effectively, including architectural reduction patterns</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.004Z",
+  "author": {
+    "login": "muratcankoylan",
+    "name": "muratcankoylan",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/muratcankoylan",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "muratcankoylan-context-fundamentals",
+      "displayName": "muratcankoylan/context-fundamentals",
+      "stars": 15494,
+      "relation": "source_overlap",
+      "evidence": "repo:muratcankoylan/Agent-Skills-for-Context-Engineering"
+    },
+    {
+      "slug": "muratcankoylan-context-degradation",
+      "displayName": "muratcankoylan/context-degradation",
+      "stars": 15494,
+      "relation": "source_overlap",
+      "evidence": "repo:muratcankoylan/Agent-Skills-for-Context-Engineering"
+    },
+    {
+      "slug": "muratcankoylan-context-compression",
+      "displayName": "muratcankoylan/context-compression",
+      "stars": 15494,
+      "relation": "source_overlap",
+      "evidence": "repo:muratcankoylan/Agent-Skills-for-Context-Engineering"
+    },
+    {
+      "slug": "muratcankoylan-context-optimization",
+      "displayName": "muratcankoylan/context-optimization",
+      "stars": 15494,
+      "relation": "source_overlap",
+      "evidence": "repo:muratcankoylan/Agent-Skills-for-Context-Engineering"
+    },
+    {
+      "slug": "muratcankoylan-multi-agent-patterns",
+      "displayName": "muratcankoylan/multi-agent-patterns",
+      "stars": 15494,
+      "relation": "source_overlap",
+      "evidence": "repo:muratcankoylan/Agent-Skills-for-Context-Engineering"
+    },
+    {
+      "slug": "muratcankoylan-memory-systems",
+      "displayName": "muratcankoylan/memory-systems",
+      "stars": 15494,
+      "relation": "source_overlap",
+      "evidence": "repo:muratcankoylan/Agent-Skills-for-Context-Engineering"
+    },
+    {
+      "slug": "muratcankoylan-evaluation",
+      "displayName": "muratcankoylan/evaluation",
+      "stars": 15494,
+      "relation": "source_overlap",
+      "evidence": "repo:muratcankoylan/Agent-Skills-for-Context-Engineering"
+    },
+    {
+      "slug": "muratcankoylan-context-fundamentals",
+      "displayName": "muratcankoylan/context-fundamentals",
+      "stars": 15494,
+      "relation": "source_overlap",
+      "evidence": "author:muratcankoylan"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-singapore",
+    "label": "Global Skill Market / Singapore / Community Skills",
+    "lat": 1.3521,
+    "lon": 103.8198,
+    "source": "virtual_market"
+  }
+}

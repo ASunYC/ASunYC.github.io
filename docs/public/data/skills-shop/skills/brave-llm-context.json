@@ -1,0 +1,89 @@
+{
+  "id": "skill:brave-llm-context",
+  "slug": "brave-llm-context",
+  "name": "llm-context",
+  "displayName": "brave/llm-context",
+  "description": "Return pre-extracted web content (text, tables, code) from Brave Search",
+  "stars": 0,
+  "category": "TypeScript Skills",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/brave/skills/llm-context",
+  "githubRepo": "",
+  "readme": "# brave/llm-context\n\nReturn pre-extracted web content (text, tables, code) from Brave Search",
+  "readmeHtml": "<h1>brave/llm-context</h1>\n<p>Return pre-extracted web content (text, tables, code) from Brave Search</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.131Z",
+  "author": {
+    "login": "brave",
+    "name": "brave",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/brave",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "brave-answers",
+      "displayName": "brave/answers",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:brave"
+    },
+    {
+      "slug": "brave-bx",
+      "displayName": "brave/bx",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:brave"
+    },
+    {
+      "slug": "brave-images-search",
+      "displayName": "brave/images-search",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:brave"
+    },
+    {
+      "slug": "brave-local-descriptions",
+      "displayName": "brave/local-descriptions",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:brave"
+    },
+    {
+      "slug": "brave-local-pois",
+      "displayName": "brave/local-pois",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:brave"
+    },
+    {
+      "slug": "brave-news-search",
+      "displayName": "brave/news-search",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:brave"
+    },
+    {
+      "slug": "brave-spellcheck",
+      "displayName": "brave/spellcheck",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:brave"
+    },
+    {
+      "slug": "brave-suggest",
+      "displayName": "brave/suggest",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:brave"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-shanghai",
+    "label": "Global Skill Market / Shanghai / TypeScript Skills",
+    "lat": 31.2304,
+    "lon": 121.4737,
+    "source": "virtual_market"
+  }
+}

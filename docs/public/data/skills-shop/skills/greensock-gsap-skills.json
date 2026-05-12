@@ -1,0 +1,89 @@
+{
+  "id": "skill:greensock-gsap-skills",
+  "slug": "greensock-gsap-skills",
+  "name": "gsap-skills",
+  "displayName": "greensock/gsap-skills",
+  "description": "Official AI skills for GSAP. These skills teach AI coding agents how to correctly use GSAP (GreenSock Animation Platform), including best practices, common animation patterns, and plugin usage.",
+  "stars": 3127,
+  "category": "Discovered",
+  "source": "discover:keyword",
+  "url": "https://github.com/greensock/gsap-skills",
+  "githubRepo": "greensock/gsap-skills",
+  "readme": "# greensock/gsap-skills\n\nOfficial AI skills for GSAP. These skills teach AI coding agents how to correctly use GSAP (GreenSock Animation Platform), including best practices, common animation patterns, and plugin usage.",
+  "readmeHtml": "<h1>greensock/gsap-skills</h1>\n<p>Official AI skills for GSAP. These skills teach AI coding agents how to correctly use GSAP (GreenSock Animation Platform), including best practices, common animation patterns, and plugin usage.</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.024Z",
+  "author": {
+    "login": "greensock",
+    "name": "greensock",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/greensock",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "greensock-gsap-core",
+      "displayName": "greensock/gsap-core",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:greensock"
+    },
+    {
+      "slug": "greensock-gsap-timeline",
+      "displayName": "greensock/gsap-timeline",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:greensock"
+    },
+    {
+      "slug": "greensock-gsap-scrolltrigger",
+      "displayName": "greensock/gsap-scrolltrigger",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:greensock"
+    },
+    {
+      "slug": "greensock-gsap-plugins",
+      "displayName": "greensock/gsap-plugins",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:greensock"
+    },
+    {
+      "slug": "greensock-gsap-utils",
+      "displayName": "greensock/gsap-utils",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:greensock"
+    },
+    {
+      "slug": "greensock-gsap-react",
+      "displayName": "greensock/gsap-react",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:greensock"
+    },
+    {
+      "slug": "greensock-gsap-performance",
+      "displayName": "greensock/gsap-performance",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:greensock"
+    },
+    {
+      "slug": "greensock-gsap-frameworks",
+      "displayName": "greensock/gsap-frameworks",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:greensock"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-berlin",
+    "label": "Global Skill Market / Berlin / Discovered",
+    "lat": 52.52,
+    "lon": 13.405,
+    "source": "virtual_market"
+  }
+}

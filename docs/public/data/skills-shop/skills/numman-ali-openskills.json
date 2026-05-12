@@ -1,0 +1,89 @@
+{
+  "id": "skill:numman-ali-openskills",
+  "slug": "numman-ali-openskills",
+  "name": "openskills",
+  "displayName": "numman-ali/openskills",
+  "description": "Universal skills loader for AI coding agents - npm i -g openskills",
+  "stars": 10039,
+  "category": "Discovered",
+  "source": "discover:keyword",
+  "url": "https://github.com/numman-ali/openskills",
+  "githubRepo": "numman-ali/openskills",
+  "readme": "# numman-ali/openskills\n\nUniversal skills loader for AI coding agents - npm i -g openskills",
+  "readmeHtml": "<h1>numman-ali/openskills</h1>\n<p>Universal skills loader for AI coding agents - npm i -g openskills</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.006Z",
+  "author": {
+    "login": "numman-ali",
+    "name": "numman-ali",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/numman-ali",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "numman-ali-n-skills",
+      "displayName": "numman-ali/n-skills",
+      "stars": 979,
+      "relation": "source_overlap",
+      "evidence": "author:numman-ali"
+    },
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 73174,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "bytedance-deer-flow",
+      "displayName": "bytedance/deer-flow",
+      "stars": 65827,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "farion1231-cc-switch",
+      "displayName": "farion1231/cc-switch",
+      "stars": 62022,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "gsd-build-get-shit-done",
+      "displayName": "gsd-build/get-shit-done",
+      "stars": 60616,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-new-york",
+    "label": "Global Skill Market / New York / Discovered",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "source": "virtual_market"
+  }
+}

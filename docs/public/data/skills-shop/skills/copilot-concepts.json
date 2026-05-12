@@ -1,0 +1,40 @@
+{
+  "id": "skill:copilot-concepts",
+  "slug": "copilot-concepts",
+  "name": "concepts",
+  "displayName": "copilot/concepts",
+  "description": "GitHub documentation",
+  "stars": 0,
+  "category": "GitHub Copilot",
+  "source": "heilcheng",
+  "url": "https://docs.github.com/copilot/concepts/agents/about-agent-skills",
+  "githubRepo": "copilot/concepts",
+  "readme": "# copilot/concepts\n\nGitHub documentation",
+  "readmeHtml": "<h1>copilot/concepts</h1>\n<p>GitHub documentation</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.157Z",
+  "author": {
+    "login": "copilot",
+    "name": "copilot",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/copilot",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "unknown-vs-code-agent-skills",
+      "displayName": "unknown/vs-code-agent-skills",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "GitHub Copilot"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-tokyo",
+    "label": "Global Skill Market / Tokyo / GitHub Copilot",
+    "lat": 35.6762,
+    "lon": 139.6503,
+    "source": "virtual_market"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "skill:microsoft-azure-keyvault-keys-rust",
+  "slug": "microsoft-azure-keyvault-keys-rust",
+  "name": "azure-keyvault-keys-rust",
+  "displayName": "microsoft/azure-keyvault-keys-rust",
+  "description": "Key Vault cryptographic key management",
+  "stars": 0,
+  "category": "Rust Skills",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/microsoft/skills/azure-keyvault-keys-rust",
+  "githubRepo": "",
+  "readme": "# microsoft/azure-keyvault-keys-rust\n\nKey Vault cryptographic key management",
+  "readmeHtml": "<h1>microsoft/azure-keyvault-keys-rust</h1>\n<p>Key Vault cryptographic key management</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.117Z",
+  "author": {
+    "login": "microsoft",
+    "name": "microsoft",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/microsoft",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "microsoft-agent-skills",
+      "displayName": "microsoft/agent-skills",
+      "stars": 2248,
+      "relation": "source_overlap",
+      "evidence": "author:microsoft"
+    },
+    {
+      "slug": "microsoft-cloud-solution-architect",
+      "displayName": "microsoft/cloud-solution-architect",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:microsoft"
+    },
+    {
+      "slug": "microsoft-continual-learning",
+      "displayName": "microsoft/continual-learning",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:microsoft"
+    },
+    {
+      "slug": "microsoft-copilot-sdk",
+      "displayName": "microsoft/copilot-sdk",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:microsoft"
+    },
+    {
+      "slug": "microsoft-entra-agent-id",
+      "displayName": "microsoft/entra-agent-id",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:microsoft"
+    },
+    {
+      "slug": "microsoft-frontend-design-review",
+      "displayName": "microsoft/frontend-design-review",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:microsoft"
+    },
+    {
+      "slug": "microsoft-github-issue-creator",
+      "displayName": "microsoft/github-issue-creator",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:microsoft"
+    },
+    {
+      "slug": "microsoft-mcp-builder",
+      "displayName": "microsoft/mcp-builder",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:microsoft"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-sydney",
+    "label": "Global Skill Market / Sydney / Rust Skills",
+    "lat": -33.8688,
+    "lon": 151.2093,
+    "source": "virtual_market"
+  }
+}

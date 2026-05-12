@@ -1,0 +1,89 @@
+{
+  "id": "skill:neolabhq-code-review",
+  "slug": "neolabhq-code-review",
+  "name": "code-review",
+  "displayName": "NeoLabHQ/code-review",
+  "description": "Comprehensive PR code review using specialized agents: bug-hunter, security-auditor, code-quality-reviewer, contracts-reviewer, historical-context-reviewer, test-coverage-reviewer",
+  "stars": 989,
+  "category": "Community Skills",
+  "source": "voltagent",
+  "url": "https://github.com/NeoLabHQ/context-engineering-kit/tree/master/plugins/code-review",
+  "githubRepo": "NeoLabHQ/context-engineering-kit",
+  "readme": "# NeoLabHQ/code-review\n\nComprehensive PR code review using specialized agents: bug-hunter, security-auditor, code-quality-reviewer, contracts-reviewer, historical-context-reviewer, test-coverage-reviewer",
+  "readmeHtml": "<h1>NeoLabHQ/code-review</h1>\n<p>Comprehensive PR code review using specialized agents: bug-hunter, security-auditor, code-quality-reviewer, contracts-reviewer, historical-context-reviewer, test-coverage-reviewer</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.036Z",
+  "author": {
+    "login": "neolabhq",
+    "name": "neolabhq",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/neolabhq",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "neolabhq-write-concisely",
+      "displayName": "NeoLabHQ/write-concisely",
+      "stars": 989,
+      "relation": "source_overlap",
+      "evidence": "repo:NeoLabHQ/context-engineering-kit"
+    },
+    {
+      "slug": "neolabhq-reflexion",
+      "displayName": "NeoLabHQ/reflexion",
+      "stars": 989,
+      "relation": "source_overlap",
+      "evidence": "repo:NeoLabHQ/context-engineering-kit"
+    },
+    {
+      "slug": "neolabhq-sdd",
+      "displayName": "NeoLabHQ/sdd",
+      "stars": 989,
+      "relation": "source_overlap",
+      "evidence": "repo:NeoLabHQ/context-engineering-kit"
+    },
+    {
+      "slug": "neolabhq-ddd",
+      "displayName": "NeoLabHQ/ddd",
+      "stars": 989,
+      "relation": "source_overlap",
+      "evidence": "repo:NeoLabHQ/context-engineering-kit"
+    },
+    {
+      "slug": "neolabhq-sadd",
+      "displayName": "NeoLabHQ/sadd",
+      "stars": 989,
+      "relation": "source_overlap",
+      "evidence": "repo:NeoLabHQ/context-engineering-kit"
+    },
+    {
+      "slug": "neolabhq-kaizen",
+      "displayName": "NeoLabHQ/kaizen",
+      "stars": 989,
+      "relation": "source_overlap",
+      "evidence": "repo:NeoLabHQ/context-engineering-kit"
+    },
+    {
+      "slug": "neolabhq-prompt-engineering",
+      "displayName": "NeoLabHQ/prompt-engineering",
+      "stars": 989,
+      "relation": "source_overlap",
+      "evidence": "repo:NeoLabHQ/context-engineering-kit"
+    },
+    {
+      "slug": "neolabhq-context-engineering-kit",
+      "displayName": "NeoLabHQ/context-engineering-kit",
+      "stars": 967,
+      "relation": "source_overlap",
+      "evidence": "repo:NeoLabHQ/context-engineering-kit"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-sydney",
+    "label": "Global Skill Market / Sydney / Community Skills",
+    "lat": -33.8688,
+    "lon": 151.2093,
+    "source": "virtual_market"
+  }
+}

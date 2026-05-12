@@ -1,0 +1,89 @@
+{
+  "id": "skill:vercel-labs-next-upgrade",
+  "slug": "vercel-labs-next-upgrade",
+  "name": "next-upgrade",
+  "displayName": "vercel-labs/next-upgrade",
+  "description": "Upgrade Next.js projects to newer versions",
+  "stars": 0,
+  "category": "Skills by Typefully",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/vercel-labs/skills/next-upgrade",
+  "githubRepo": "",
+  "readme": "# vercel-labs/next-upgrade\n\nUpgrade Next.js projects to newer versions",
+  "readmeHtml": "<h1>vercel-labs/next-upgrade</h1>\n<p>Upgrade Next.js projects to newer versions</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.100Z",
+  "author": {
+    "login": "vercel-labs",
+    "name": "vercel-labs",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/vercel-labs",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "vercel-labs-react-view-transitions-demo",
+      "displayName": "vercel-labs/react-view-transitions-demo",
+      "stars": 19,
+      "relation": "source_overlap",
+      "evidence": "author:vercel-labs"
+    },
+    {
+      "slug": "vercel-labs-react-best-practices",
+      "displayName": "vercel-labs/react-best-practices",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:vercel-labs"
+    },
+    {
+      "slug": "vercel-labs-web-design-guidelines",
+      "displayName": "vercel-labs/web-design-guidelines",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:vercel-labs"
+    },
+    {
+      "slug": "vercel-labs-composition-patterns",
+      "displayName": "vercel-labs/composition-patterns",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:vercel-labs"
+    },
+    {
+      "slug": "vercel-labs-next-best-practices",
+      "displayName": "vercel-labs/next-best-practices",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:vercel-labs"
+    },
+    {
+      "slug": "vercel-labs-next-cache-components",
+      "displayName": "vercel-labs/next-cache-components",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:vercel-labs"
+    },
+    {
+      "slug": "vercel-labs-react-native-skills",
+      "displayName": "vercel-labs/react-native-skills",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:vercel-labs"
+    },
+    {
+      "slug": "typefully-typefully",
+      "displayName": "typefully/typefully",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Skills by Typefully"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-berlin",
+    "label": "Global Skill Market / Berlin / Skills by Typefully",
+    "lat": 52.52,
+    "lon": 13.405,
+    "source": "virtual_market"
+  }
+}

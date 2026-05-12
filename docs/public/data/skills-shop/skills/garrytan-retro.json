@@ -1,0 +1,89 @@
+{
+  "id": "skill:garrytan-retro",
+  "slug": "garrytan-retro",
+  "name": "retro",
+  "displayName": "garrytan/retro",
+  "description": "Eng Manager weekly retro with per-person breakdowns and shipping streaks",
+  "stars": 0,
+  "category": "TypeScript Skills",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/garrytan/skills/retro",
+  "githubRepo": "",
+  "readme": "# garrytan/retro\n\nEng Manager weekly retro with per-person breakdowns and shipping streaks",
+  "readmeHtml": "<h1>garrytan/retro</h1>\n<p>Eng Manager weekly retro with per-person breakdowns and shipping streaks</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.146Z",
+  "author": {
+    "login": "garrytan",
+    "name": "garrytan",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/garrytan",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "garrytan-gstack",
+      "displayName": "garrytan/gstack",
+      "stars": 90855,
+      "relation": "source_overlap",
+      "evidence": "author:garrytan"
+    },
+    {
+      "slug": "garrytan-office-hours",
+      "displayName": "garrytan/office-hours",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:garrytan"
+    },
+    {
+      "slug": "garrytan-plan-ceo-review",
+      "displayName": "garrytan/plan-ceo-review",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:garrytan"
+    },
+    {
+      "slug": "garrytan-plan-eng-review",
+      "displayName": "garrytan/plan-eng-review",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:garrytan"
+    },
+    {
+      "slug": "garrytan-plan-design-review",
+      "displayName": "garrytan/plan-design-review",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:garrytan"
+    },
+    {
+      "slug": "garrytan-design-consultation",
+      "displayName": "garrytan/design-consultation",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:garrytan"
+    },
+    {
+      "slug": "garrytan-design-review",
+      "displayName": "garrytan/design-review",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:garrytan"
+    },
+    {
+      "slug": "garrytan-review",
+      "displayName": "garrytan/review",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:garrytan"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-sydney",
+    "label": "Global Skill Market / Sydney / TypeScript Skills",
+    "lat": -33.8688,
+    "lon": 151.2093,
+    "source": "virtual_market"
+  }
+}

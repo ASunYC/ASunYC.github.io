@@ -1,0 +1,89 @@
+{
+  "id": "skill:zxkane-aws-skills",
+  "slug": "zxkane-aws-skills",
+  "name": "aws-skills",
+  "displayName": "zxkane/aws-skills",
+  "description": "AWS development with infrastructure automation and cloud architecture patterns",
+  "stars": 277,
+  "category": "Community Skills",
+  "source": "voltagent",
+  "url": "https://github.com/zxkane/aws-skills",
+  "githubRepo": "zxkane/aws-skills",
+  "readme": "# zxkane/aws-skills\n\nAWS development with infrastructure automation and cloud architecture patterns",
+  "readmeHtml": "<h1>zxkane/aws-skills</h1>\n<p>AWS development with infrastructure automation and cloud architecture patterns</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.049Z",
+  "author": {
+    "login": "zxkane",
+    "name": "zxkane",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/zxkane",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "obra-defense-in-depth",
+      "displayName": "obra/defense-in-depth",
+      "stars": 186953,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
+      "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "stars": 77115,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mvanhorn-last30days-skill",
+      "displayName": "mvanhorn/last30days-skill",
+      "stars": 25573,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "k-dense-ai-claude-scientific-skills",
+      "displayName": "K-Dense-AI/claude-scientific-skills",
+      "stars": 20299,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "muratcankoylan-context-fundamentals",
+      "displayName": "muratcankoylan/context-fundamentals",
+      "stars": 15494,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "muratcankoylan-context-degradation",
+      "displayName": "muratcankoylan/context-degradation",
+      "stars": 15494,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "muratcankoylan-context-compression",
+      "displayName": "muratcankoylan/context-compression",
+      "stars": 15494,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "muratcankoylan-context-optimization",
+      "displayName": "muratcankoylan/context-optimization",
+      "stars": 15494,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-tokyo",
+    "label": "Global Skill Market / Tokyo / Community Skills",
+    "lat": 35.6762,
+    "lon": 139.6503,
+    "source": "virtual_market"
+  }
+}

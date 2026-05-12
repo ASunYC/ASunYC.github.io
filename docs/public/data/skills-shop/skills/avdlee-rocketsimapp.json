@@ -1,0 +1,89 @@
+{
+  "id": "skill:avdlee-rocketsimapp",
+  "slug": "avdlee-rocketsimapp",
+  "name": "rocketsimapp",
+  "displayName": "AvdLee/RocketSimApp",
+  "description": "RocketSim — 30+ tools for Xcode's iOS Simulator. Testing, debugging, network monitoring, captures, accessibility, app actions, and AI agent automation via the RocketSim CLI. Used by 80k+ developers.",
+  "stars": 738,
+  "category": "Discovered",
+  "source": "discover:topic",
+  "url": "https://github.com/AvdLee/RocketSimApp",
+  "githubRepo": "AvdLee/RocketSimApp",
+  "readme": "# AvdLee/RocketSimApp\n\nRocketSim — 30+ tools for Xcode's iOS Simulator. Testing, debugging, network monitoring, captures, accessibility, app actions, and AI agent automation via the RocketSim CLI. Used by 80k+ developers.",
+  "readmeHtml": "<h1>AvdLee/RocketSimApp</h1>\n<p>RocketSim — 30+ tools for Xcode's iOS Simulator. Testing, debugging, network monitoring, captures, accessibility, app actions, and AI agent automation via the RocketSim CLI. Used by 80k+ developers.</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.039Z",
+  "author": {
+    "login": "avdlee",
+    "name": "avdlee",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/avdlee",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "avdlee-swiftui-expert-skill",
+      "displayName": "AvdLee/swiftui-expert-skill",
+      "stars": 2835,
+      "relation": "source_overlap",
+      "evidence": "author:avdlee"
+    },
+    {
+      "slug": "avdlee-swiftui-agent-skill",
+      "displayName": "AvdLee/SwiftUI-Agent-Skill",
+      "stars": 2809,
+      "relation": "source_overlap",
+      "evidence": "author:avdlee"
+    },
+    {
+      "slug": "avdlee-swift-concurrency-agent-skill",
+      "displayName": "AvdLee/Swift-Concurrency-Agent-Skill",
+      "stars": 1482,
+      "relation": "source_overlap",
+      "evidence": "author:avdlee"
+    },
+    {
+      "slug": "avdlee-core-data-agent-skill",
+      "displayName": "AvdLee/Core-Data-Agent-Skill",
+      "stars": 257,
+      "relation": "source_overlap",
+      "evidence": "author:avdlee"
+    },
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 73174,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-sydney",
+    "label": "Global Skill Market / Sydney / Discovered",
+    "lat": -33.8688,
+    "lon": 151.2093,
+    "source": "virtual_market"
+  }
+}

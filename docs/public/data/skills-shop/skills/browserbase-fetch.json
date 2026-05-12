@@ -1,0 +1,89 @@
+{
+  "id": "skill:browserbase-fetch",
+  "slug": "browserbase-fetch",
+  "name": "fetch",
+  "displayName": "browserbase/fetch",
+  "description": "Fetch HTML, JSON, headers, and status codes through the Browserbase API",
+  "stars": 0,
+  "category": "TypeScript Skills",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/browserbase/skills/fetch",
+  "githubRepo": "",
+  "readme": "# browserbase/fetch\n\nFetch HTML, JSON, headers, and status codes through the Browserbase API",
+  "readmeHtml": "<h1>browserbase/fetch</h1>\n<p>Fetch HTML, JSON, headers, and status codes through the Browserbase API</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.132Z",
+  "author": {
+    "login": "browserbase",
+    "name": "browserbase",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/browserbase",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "browserbase-skills",
+      "displayName": "browserbase/skills",
+      "stars": 2581,
+      "relation": "source_overlap",
+      "evidence": "author:browserbase"
+    },
+    {
+      "slug": "browserbase-browser",
+      "displayName": "browserbase/browser",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:browserbase"
+    },
+    {
+      "slug": "browserbase-browserbase-cli",
+      "displayName": "browserbase/browserbase-cli",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:browserbase"
+    },
+    {
+      "slug": "browserbase-cookie-sync",
+      "displayName": "browserbase/cookie-sync",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:browserbase"
+    },
+    {
+      "slug": "browserbase-functions",
+      "displayName": "browserbase/functions",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:browserbase"
+    },
+    {
+      "slug": "browserbase-search",
+      "displayName": "browserbase/search",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:browserbase"
+    },
+    {
+      "slug": "browserbase-ui-test",
+      "displayName": "browserbase/ui-test",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:browserbase"
+    },
+    {
+      "slug": "deanpeters-acquisition-channel-advisor",
+      "displayName": "deanpeters/acquisition-channel-advisor",
+      "stars": 4159,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-paris",
+    "label": "Global Skill Market / Paris / TypeScript Skills",
+    "lat": 48.8566,
+    "lon": 2.3522,
+    "source": "virtual_market"
+  }
+}

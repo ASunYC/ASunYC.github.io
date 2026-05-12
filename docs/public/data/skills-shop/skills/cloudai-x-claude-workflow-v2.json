@@ -1,0 +1,89 @@
+{
+  "id": "skill:cloudai-x-claude-workflow-v2",
+  "slug": "cloudai-x-claude-workflow-v2",
+  "name": "claude-workflow-v2",
+  "displayName": "CloudAI-X/claude-workflow-v2",
+  "description": "Universal Claude Code workflow plugin with agents, skills, hooks, and commands",
+  "stars": 1353,
+  "category": "Discovered",
+  "source": "discover:keyword",
+  "url": "https://github.com/CloudAI-X/claude-workflow-v2",
+  "githubRepo": "CloudAI-X/claude-workflow-v2",
+  "readme": "# CloudAI-X/claude-workflow-v2\n\nUniversal Claude Code workflow plugin with agents, skills, hooks, and commands",
+  "readmeHtml": "<h1>CloudAI-X/claude-workflow-v2</h1>\n<p>Universal Claude Code workflow plugin with agents, skills, hooks, and commands</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.030Z",
+  "author": {
+    "login": "cloudai-x",
+    "name": "cloudai-x",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/cloudai-x",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "cloudai-x-threejs-skills",
+      "displayName": "CloudAI-X/threejs-skills",
+      "stars": 2174,
+      "relation": "source_overlap",
+      "evidence": "author:cloudai-x"
+    },
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 73174,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "bytedance-deer-flow",
+      "displayName": "bytedance/deer-flow",
+      "stars": 65827,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "farion1231-cc-switch",
+      "displayName": "farion1231/cc-switch",
+      "stars": 62022,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "gsd-build-get-shit-done",
+      "displayName": "gsd-build/get-shit-done",
+      "stars": 60616,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-sydney",
+    "label": "Global Skill Market / Sydney / Discovered",
+    "lat": -33.8688,
+    "lon": 151.2093,
+    "source": "virtual_market"
+  }
+}

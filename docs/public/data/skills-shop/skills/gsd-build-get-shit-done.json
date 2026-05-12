@@ -1,0 +1,89 @@
+{
+  "id": "skill:gsd-build-get-shit-done",
+  "slug": "gsd-build-get-shit-done",
+  "name": "get-shit-done",
+  "displayName": "gsd-build/get-shit-done",
+  "description": "A light-weight and powerful meta-prompting, context engineering and spec-driven development system for Claude Code by TÂCHES.",
+  "stars": 60616,
+  "category": "Discovered",
+  "source": "discover:topic",
+  "url": "https://github.com/gsd-build/get-shit-done",
+  "githubRepo": "gsd-build/get-shit-done",
+  "readme": "# gsd-build/get-shit-done\n\nA light-weight and powerful meta-prompting, context engineering and spec-driven development system for Claude Code by TÂCHES.",
+  "readmeHtml": "<h1>gsd-build/get-shit-done</h1>\n<p>A light-weight and powerful meta-prompting, context engineering and spec-driven development system for Claude Code by TÂCHES.</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:06.998Z",
+  "author": {
+    "login": "gsd-build",
+    "name": "gsd-build",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/gsd-build",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 73174,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "bytedance-deer-flow",
+      "displayName": "bytedance/deer-flow",
+      "stars": 65827,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "farion1231-cc-switch",
+      "displayName": "farion1231/cc-switch",
+      "stars": 62022,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "shareai-lab-learn-claude-code",
+      "displayName": "shareAI-lab/learn-claude-code",
+      "stars": 58737,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "composiohq-awesome-claude-skills",
+      "displayName": "ComposioHQ/awesome-claude-skills",
+      "stars": 58467,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-paris",
+    "label": "Global Skill Market / Paris / Discovered",
+    "lat": 48.8566,
+    "lon": 2.3522,
+    "source": "virtual_market"
+  }
+}

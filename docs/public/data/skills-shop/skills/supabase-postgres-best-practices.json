@@ -1,0 +1,40 @@
+{
+  "id": "skill:supabase-postgres-best-practices",
+  "slug": "supabase-postgres-best-practices",
+  "name": "postgres-best-practices",
+  "displayName": "supabase/postgres-best-practices",
+  "description": "PostgreSQL best practices for Supabase",
+  "stars": 0,
+  "category": "Skills by Supabase Team",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/supabase/skills/postgres-best-practices",
+  "githubRepo": "",
+  "readme": "# supabase/postgres-best-practices\n\nPostgreSQL best practices for Supabase",
+  "readmeHtml": "<h1>supabase/postgres-best-practices</h1>\n<p>PostgreSQL best practices for Supabase</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.090Z",
+  "author": {
+    "login": "supabase",
+    "name": "supabase",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/supabase",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "supabase-agent-skills",
+      "displayName": "supabase/agent-skills",
+      "stars": 2046,
+      "relation": "source_overlap",
+      "evidence": "author:supabase"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-toronto",
+    "label": "Global Skill Market / Toronto / Skills by Supabase Team",
+    "lat": 43.6532,
+    "lon": -79.3832,
+    "source": "virtual_market"
+  }
+}

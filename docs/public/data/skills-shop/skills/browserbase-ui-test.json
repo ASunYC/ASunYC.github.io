@@ -1,0 +1,89 @@
+{
+  "id": "skill:browserbase-ui-test",
+  "slug": "browserbase-ui-test",
+  "name": "ui-test",
+  "displayName": "browserbase/ui-test",
+  "description": "Run adversarial UI tests by analyzing git diffs in a real browser",
+  "stars": 0,
+  "category": "TypeScript Skills",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/browserbase/skills/ui-test",
+  "githubRepo": "",
+  "readme": "# browserbase/ui-test\n\nRun adversarial UI tests by analyzing git diffs in a real browser",
+  "readmeHtml": "<h1>browserbase/ui-test</h1>\n<p>Run adversarial UI tests by analyzing git diffs in a real browser</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.132Z",
+  "author": {
+    "login": "browserbase",
+    "name": "browserbase",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/browserbase",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "browserbase-skills",
+      "displayName": "browserbase/skills",
+      "stars": 2581,
+      "relation": "source_overlap",
+      "evidence": "author:browserbase"
+    },
+    {
+      "slug": "browserbase-browser",
+      "displayName": "browserbase/browser",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:browserbase"
+    },
+    {
+      "slug": "browserbase-browserbase-cli",
+      "displayName": "browserbase/browserbase-cli",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:browserbase"
+    },
+    {
+      "slug": "browserbase-cookie-sync",
+      "displayName": "browserbase/cookie-sync",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:browserbase"
+    },
+    {
+      "slug": "browserbase-fetch",
+      "displayName": "browserbase/fetch",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:browserbase"
+    },
+    {
+      "slug": "browserbase-functions",
+      "displayName": "browserbase/functions",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:browserbase"
+    },
+    {
+      "slug": "browserbase-search",
+      "displayName": "browserbase/search",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:browserbase"
+    },
+    {
+      "slug": "deanpeters-acquisition-channel-advisor",
+      "displayName": "deanpeters/acquisition-channel-advisor",
+      "stars": 4159,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-london",
+    "label": "Global Skill Market / London / TypeScript Skills",
+    "lat": 51.5072,
+    "lon": -0.1276,
+    "source": "virtual_market"
+  }
+}

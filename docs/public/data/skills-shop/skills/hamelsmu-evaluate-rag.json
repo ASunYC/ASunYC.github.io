@@ -1,0 +1,89 @@
+{
+  "id": "skill:hamelsmu-evaluate-rag",
+  "slug": "hamelsmu-evaluate-rag",
+  "name": "evaluate-rag",
+  "displayName": "hamelsmu/evaluate-rag",
+  "description": "Evaluate RAG retrieval and generation quality",
+  "stars": 0,
+  "category": "Community Skills",
+  "source": "voltagent",
+  "url": "https://github.com/hamelsmu/prompts/tree/main/evals-skills/skills/evaluate-rag",
+  "githubRepo": "hamelsmu/prompts",
+  "readme": "# hamelsmu/evaluate-rag\n\nEvaluate RAG retrieval and generation quality",
+  "readmeHtml": "<h1>hamelsmu/evaluate-rag</h1>\n<p>Evaluate RAG retrieval and generation quality</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.155Z",
+  "author": {
+    "login": "hamelsmu",
+    "name": "hamelsmu",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/hamelsmu",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "hamelsmu-eval-audit",
+      "displayName": "hamelsmu/eval-audit",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:hamelsmu/prompts"
+    },
+    {
+      "slug": "hamelsmu-error-analysis",
+      "displayName": "hamelsmu/error-analysis",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:hamelsmu/prompts"
+    },
+    {
+      "slug": "hamelsmu-generate-synthetic-data",
+      "displayName": "hamelsmu/generate-synthetic-data",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:hamelsmu/prompts"
+    },
+    {
+      "slug": "hamelsmu-write-judge-prompt",
+      "displayName": "hamelsmu/write-judge-prompt",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:hamelsmu/prompts"
+    },
+    {
+      "slug": "hamelsmu-validate-evaluator",
+      "displayName": "hamelsmu/validate-evaluator",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:hamelsmu/prompts"
+    },
+    {
+      "slug": "hamelsmu-build-review-interface",
+      "displayName": "hamelsmu/build-review-interface",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:hamelsmu/prompts"
+    },
+    {
+      "slug": "hamelsmu-eval-audit",
+      "displayName": "hamelsmu/eval-audit",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:hamelsmu"
+    },
+    {
+      "slug": "hamelsmu-error-analysis",
+      "displayName": "hamelsmu/error-analysis",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:hamelsmu"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-bengaluru",
+    "label": "Global Skill Market / Bengaluru / Community Skills",
+    "lat": 12.9716,
+    "lon": 77.5946,
+    "source": "virtual_market"
+  }
+}

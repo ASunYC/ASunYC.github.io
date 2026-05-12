@@ -1,0 +1,89 @@
+{
+  "id": "skill:muratcankoylan-memory-systems",
+  "slug": "muratcankoylan-memory-systems",
+  "name": "memory-systems",
+  "displayName": "muratcankoylan/memory-systems",
+  "description": "Design short-term, long-term, and graph-based memory architectures",
+  "stars": 15494,
+  "category": "Community Skills",
+  "source": "voltagent",
+  "url": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/tree/main/skills/memory-systems",
+  "githubRepo": "muratcankoylan/Agent-Skills-for-Context-Engineering",
+  "readme": "# muratcankoylan/memory-systems\n\nDesign short-term, long-term, and graph-based memory architectures",
+  "readmeHtml": "<h1>muratcankoylan/memory-systems</h1>\n<p>Design short-term, long-term, and graph-based memory architectures</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.004Z",
+  "author": {
+    "login": "muratcankoylan",
+    "name": "muratcankoylan",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/muratcankoylan",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "muratcankoylan-context-fundamentals",
+      "displayName": "muratcankoylan/context-fundamentals",
+      "stars": 15494,
+      "relation": "source_overlap",
+      "evidence": "repo:muratcankoylan/Agent-Skills-for-Context-Engineering"
+    },
+    {
+      "slug": "muratcankoylan-context-degradation",
+      "displayName": "muratcankoylan/context-degradation",
+      "stars": 15494,
+      "relation": "source_overlap",
+      "evidence": "repo:muratcankoylan/Agent-Skills-for-Context-Engineering"
+    },
+    {
+      "slug": "muratcankoylan-context-compression",
+      "displayName": "muratcankoylan/context-compression",
+      "stars": 15494,
+      "relation": "source_overlap",
+      "evidence": "repo:muratcankoylan/Agent-Skills-for-Context-Engineering"
+    },
+    {
+      "slug": "muratcankoylan-context-optimization",
+      "displayName": "muratcankoylan/context-optimization",
+      "stars": 15494,
+      "relation": "source_overlap",
+      "evidence": "repo:muratcankoylan/Agent-Skills-for-Context-Engineering"
+    },
+    {
+      "slug": "muratcankoylan-multi-agent-patterns",
+      "displayName": "muratcankoylan/multi-agent-patterns",
+      "stars": 15494,
+      "relation": "source_overlap",
+      "evidence": "repo:muratcankoylan/Agent-Skills-for-Context-Engineering"
+    },
+    {
+      "slug": "muratcankoylan-tool-design",
+      "displayName": "muratcankoylan/tool-design",
+      "stars": 15494,
+      "relation": "source_overlap",
+      "evidence": "repo:muratcankoylan/Agent-Skills-for-Context-Engineering"
+    },
+    {
+      "slug": "muratcankoylan-evaluation",
+      "displayName": "muratcankoylan/evaluation",
+      "stars": 15494,
+      "relation": "source_overlap",
+      "evidence": "repo:muratcankoylan/Agent-Skills-for-Context-Engineering"
+    },
+    {
+      "slug": "muratcankoylan-context-fundamentals",
+      "displayName": "muratcankoylan/context-fundamentals",
+      "stars": 15494,
+      "relation": "source_overlap",
+      "evidence": "author:muratcankoylan"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-shanghai",
+    "label": "Global Skill Market / Shanghai / Community Skills",
+    "lat": 31.2304,
+    "lon": 121.4737,
+    "source": "virtual_market"
+  }
+}

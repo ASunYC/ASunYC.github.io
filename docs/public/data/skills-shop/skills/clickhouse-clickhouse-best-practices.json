@@ -1,0 +1,89 @@
+{
+  "id": "skill:clickhouse-clickhouse-best-practices",
+  "slug": "clickhouse-clickhouse-best-practices",
+  "name": "clickhouse-best-practices",
+  "displayName": "clickhouse/clickhouse-best-practices",
+  "description": "Best practices for working with ClickHouse",
+  "stars": 0,
+  "category": "Skills by ClickHouse",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/clickhouse/skills/clickhouse-best-practices",
+  "githubRepo": "",
+  "readme": "# clickhouse/clickhouse-best-practices\n\nBest practices for working with ClickHouse",
+  "readmeHtml": "<h1>clickhouse/clickhouse-best-practices</h1>\n<p>Best practices for working with ClickHouse</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.092Z",
+  "author": {
+    "login": "clickhouse",
+    "name": "clickhouse",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/clickhouse",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "clickhouse-chdb-datastore",
+      "displayName": "clickhouse/chdb-datastore",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:clickhouse"
+    },
+    {
+      "slug": "clickhouse-chdb-sql",
+      "displayName": "clickhouse/chdb-sql",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:clickhouse"
+    },
+    {
+      "slug": "clickhouse-clickhouse-architecture-advisor",
+      "displayName": "clickhouse/clickhouse-architecture-advisor",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:clickhouse"
+    },
+    {
+      "slug": "clickhouse-clickhousectl-cloud-deploy",
+      "displayName": "clickhouse/clickhousectl-cloud-deploy",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:clickhouse"
+    },
+    {
+      "slug": "clickhouse-clickhousectl-local-dev",
+      "displayName": "clickhouse/clickhousectl-local-dev",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:clickhouse"
+    },
+    {
+      "slug": "clickhouse-chdb-datastore",
+      "displayName": "clickhouse/chdb-datastore",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Skills by ClickHouse"
+    },
+    {
+      "slug": "clickhouse-chdb-sql",
+      "displayName": "clickhouse/chdb-sql",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Skills by ClickHouse"
+    },
+    {
+      "slug": "clickhouse-clickhouse-architecture-advisor",
+      "displayName": "clickhouse/clickhouse-architecture-advisor",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Skills by ClickHouse"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-toronto",
+    "label": "Global Skill Market / Toronto / Skills by ClickHouse",
+    "lat": 43.6532,
+    "lon": -79.3832,
+    "source": "virtual_market"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "skill:duckdb-attach-db",
+  "slug": "duckdb-attach-db",
+  "name": "attach-db",
+  "displayName": "duckdb/attach-db",
+  "description": "Attach a DuckDB database file for interactive querying with automatic schema exploration",
+  "stars": 0,
+  "category": "TypeScript Skills",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/duckdb/skills/attach-db",
+  "githubRepo": "",
+  "readme": "# duckdb/attach-db\n\nAttach a DuckDB database file for interactive querying with automatic schema exploration",
+  "readmeHtml": "<h1>duckdb/attach-db</h1>\n<p>Attach a DuckDB database file for interactive querying with automatic schema exploration</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.144Z",
+  "author": {
+    "login": "duckdb",
+    "name": "duckdb",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/duckdb",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "duckdb-query",
+      "displayName": "duckdb/query",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:duckdb"
+    },
+    {
+      "slug": "duckdb-read-file",
+      "displayName": "duckdb/read-file",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:duckdb"
+    },
+    {
+      "slug": "duckdb-duckdb-docs",
+      "displayName": "duckdb/duckdb-docs",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:duckdb"
+    },
+    {
+      "slug": "duckdb-read-memories",
+      "displayName": "duckdb/read-memories",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:duckdb"
+    },
+    {
+      "slug": "duckdb-install-duckdb",
+      "displayName": "duckdb/install-duckdb",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:duckdb"
+    },
+    {
+      "slug": "deanpeters-acquisition-channel-advisor",
+      "displayName": "deanpeters/acquisition-channel-advisor",
+      "stars": 4159,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    },
+    {
+      "slug": "deanpeters-ai-shaped-readiness-advisor",
+      "displayName": "deanpeters/ai-shaped-readiness-advisor",
+      "stars": 4159,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    },
+    {
+      "slug": "deanpeters-altitude-horizon-framework",
+      "displayName": "deanpeters/altitude-horizon-framework",
+      "stars": 4159,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-shanghai",
+    "label": "Global Skill Market / Shanghai / TypeScript Skills",
+    "lat": 31.2304,
+    "lon": 121.4737,
+    "source": "virtual_market"
+  }
+}

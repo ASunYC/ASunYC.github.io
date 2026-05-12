@@ -1,0 +1,89 @@
+{
+  "id": "skill:rootly-ai-labs-rootly-incident-responder",
+  "slug": "rootly-ai-labs-rootly-incident-responder",
+  "name": "rootly-incident-responder",
+  "displayName": "Rootly-AI-Labs/rootly-incident-responder",
+  "description": "AI-powered incident response with ML similarity matching, solution suggestions, and on-call coordination. Requires [Rootly MCP Server](https://github.com/Rootly-AI-Labs/Rootly-MCP-server)",
+  "stars": 43,
+  "category": "Community Skills",
+  "source": "voltagent",
+  "url": "https://github.com/Rootly-AI-Labs/Rootly-MCP-server/blob/main/examples/skills/rootly-incident-responder.md",
+  "githubRepo": "Rootly-AI-Labs/Rootly-MCP-server",
+  "readme": "# Rootly-AI-Labs/rootly-incident-responder\n\nAI-powered incident response with ML similarity matching, solution suggestions, and on-call coordination. Requires [Rootly MCP Server](https://github.com/Rootly-AI-Labs/Rootly-MCP-server)",
+  "readmeHtml": "<h1>Rootly-AI-Labs/rootly-incident-responder</h1>\n<p>AI-powered incident response with ML similarity matching, solution suggestions, and on-call coordination. Requires <a href=\"https://github.com/Rootly-AI-Labs/Rootly-MCP-server\" target=\"_blank\" rel=\"noreferrer\">Rootly MCP Server</a></p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.054Z",
+  "author": {
+    "login": "rootly-ai-labs",
+    "name": "rootly-ai-labs",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/rootly-ai-labs",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "obra-defense-in-depth",
+      "displayName": "obra/defense-in-depth",
+      "stars": 186953,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
+      "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "stars": 77115,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mvanhorn-last30days-skill",
+      "displayName": "mvanhorn/last30days-skill",
+      "stars": 25573,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "k-dense-ai-claude-scientific-skills",
+      "displayName": "K-Dense-AI/claude-scientific-skills",
+      "stars": 20299,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "muratcankoylan-context-fundamentals",
+      "displayName": "muratcankoylan/context-fundamentals",
+      "stars": 15494,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "muratcankoylan-context-degradation",
+      "displayName": "muratcankoylan/context-degradation",
+      "stars": 15494,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "muratcankoylan-context-compression",
+      "displayName": "muratcankoylan/context-compression",
+      "stars": 15494,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "muratcankoylan-context-optimization",
+      "displayName": "muratcankoylan/context-optimization",
+      "stars": 15494,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-paris",
+    "label": "Global Skill Market / Paris / Community Skills",
+    "lat": 48.8566,
+    "lon": 2.3522,
+    "source": "virtual_market"
+  }
+}

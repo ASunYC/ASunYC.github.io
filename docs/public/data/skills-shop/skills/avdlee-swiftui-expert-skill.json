@@ -1,0 +1,89 @@
+{
+  "id": "skill:avdlee-swiftui-expert-skill",
+  "slug": "avdlee-swiftui-expert-skill",
+  "name": "swiftui-expert-skill",
+  "displayName": "AvdLee/swiftui-expert-skill",
+  "description": "Modern SwiftUI best practices and iOS 26+ Liquid Glass adoption",
+  "stars": 2835,
+  "category": "Community Skills",
+  "source": "voltagent",
+  "url": "https://github.com/AvdLee/SwiftUI-Agent-Skill/tree/main/swiftui-expert-skill",
+  "githubRepo": "AvdLee/SwiftUI-Agent-Skill",
+  "readme": "# AvdLee/swiftui-expert-skill\n\nModern SwiftUI best practices and iOS 26+ Liquid Glass adoption",
+  "readmeHtml": "<h1>AvdLee/swiftui-expert-skill</h1>\n<p>Modern SwiftUI best practices and iOS 26+ Liquid Glass adoption</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.024Z",
+  "author": {
+    "login": "avdlee",
+    "name": "avdlee",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/avdlee",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "avdlee-swiftui-agent-skill",
+      "displayName": "AvdLee/SwiftUI-Agent-Skill",
+      "stars": 2809,
+      "relation": "source_overlap",
+      "evidence": "repo:AvdLee/SwiftUI-Agent-Skill"
+    },
+    {
+      "slug": "avdlee-swiftui-agent-skill",
+      "displayName": "AvdLee/SwiftUI-Agent-Skill",
+      "stars": 2809,
+      "relation": "source_overlap",
+      "evidence": "author:avdlee"
+    },
+    {
+      "slug": "avdlee-swift-concurrency-agent-skill",
+      "displayName": "AvdLee/Swift-Concurrency-Agent-Skill",
+      "stars": 1482,
+      "relation": "source_overlap",
+      "evidence": "author:avdlee"
+    },
+    {
+      "slug": "avdlee-rocketsimapp",
+      "displayName": "AvdLee/RocketSimApp",
+      "stars": 738,
+      "relation": "source_overlap",
+      "evidence": "author:avdlee"
+    },
+    {
+      "slug": "avdlee-core-data-agent-skill",
+      "displayName": "AvdLee/Core-Data-Agent-Skill",
+      "stars": 257,
+      "relation": "source_overlap",
+      "evidence": "author:avdlee"
+    },
+    {
+      "slug": "obra-defense-in-depth",
+      "displayName": "obra/defense-in-depth",
+      "stars": 186953,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
+      "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "stars": 77115,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mvanhorn-last30days-skill",
+      "displayName": "mvanhorn/last30days-skill",
+      "stars": 25573,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-paris",
+    "label": "Global Skill Market / Paris / Community Skills",
+    "lat": 48.8566,
+    "lon": 2.3522,
+    "source": "virtual_market"
+  }
+}

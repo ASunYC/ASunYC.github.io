@@ -1,0 +1,89 @@
+{
+  "id": "skill:huggingface-transformers-js",
+  "slug": "huggingface-transformers-js",
+  "name": "transformers.js",
+  "displayName": "huggingface/transformers.js",
+  "description": "Run ML models in the browser with Transformers.js",
+  "stars": 0,
+  "category": "Skills by Typefully",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/huggingface/skills/transformers.js",
+  "githubRepo": "",
+  "readme": "# huggingface/transformers.js\n\nRun ML models in the browser with Transformers.js",
+  "readmeHtml": "<h1>huggingface/transformers.js</h1>\n<p>Run ML models in the browser with Transformers.js</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.103Z",
+  "author": {
+    "login": "huggingface",
+    "name": "huggingface",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/huggingface",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "huggingface-upskill",
+      "displayName": "huggingface/upskill",
+      "stars": 517,
+      "relation": "source_overlap",
+      "evidence": "author:huggingface"
+    },
+    {
+      "slug": "huggingface-hf-cli",
+      "displayName": "huggingface/hf-cli",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:huggingface"
+    },
+    {
+      "slug": "huggingface-hugging-face-dataset-viewer",
+      "displayName": "huggingface/hugging-face-dataset-viewer",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:huggingface"
+    },
+    {
+      "slug": "huggingface-hugging-face-datasets",
+      "displayName": "huggingface/hugging-face-datasets",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:huggingface"
+    },
+    {
+      "slug": "huggingface-hugging-face-evaluation",
+      "displayName": "huggingface/hugging-face-evaluation",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:huggingface"
+    },
+    {
+      "slug": "huggingface-hugging-face-jobs",
+      "displayName": "huggingface/hugging-face-jobs",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:huggingface"
+    },
+    {
+      "slug": "huggingface-hugging-face-model-trainer",
+      "displayName": "huggingface/hugging-face-model-trainer",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:huggingface"
+    },
+    {
+      "slug": "huggingface-hugging-face-paper-pages",
+      "displayName": "huggingface/hugging-face-paper-pages",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:huggingface"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-san-francisco",
+    "label": "Global Skill Market / San Francisco / Skills by Typefully",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "virtual_market"
+  }
+}

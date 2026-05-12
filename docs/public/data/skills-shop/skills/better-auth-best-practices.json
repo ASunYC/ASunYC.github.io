@@ -1,0 +1,89 @@
+{
+  "id": "skill:better-auth-best-practices",
+  "slug": "better-auth-best-practices",
+  "name": "best-practices",
+  "displayName": "better-auth/best-practices",
+  "description": "Best practices for Better Auth integration",
+  "stars": 0,
+  "category": "Skills by Better Auth Team",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/better-auth/skills/best-practices",
+  "githubRepo": "",
+  "readme": "# better-auth/best-practices\n\nBest practices for Better Auth integration",
+  "readmeHtml": "<h1>better-auth/best-practices</h1>\n<p>Best practices for Better Auth integration</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.090Z",
+  "author": {
+    "login": "better-auth",
+    "name": "better-auth",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/better-auth",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "better-auth-skills",
+      "displayName": "better-auth/skills",
+      "stars": 187,
+      "relation": "source_overlap",
+      "evidence": "author:better-auth"
+    },
+    {
+      "slug": "better-auth-explain-error",
+      "displayName": "better-auth/explain-error",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:better-auth"
+    },
+    {
+      "slug": "better-auth-providers",
+      "displayName": "better-auth/providers",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:better-auth"
+    },
+    {
+      "slug": "better-auth-create-auth",
+      "displayName": "better-auth/create-auth",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:better-auth"
+    },
+    {
+      "slug": "better-auth-emailandpassword",
+      "displayName": "better-auth/emailAndPassword",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:better-auth"
+    },
+    {
+      "slug": "better-auth-organization",
+      "displayName": "better-auth/organization",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:better-auth"
+    },
+    {
+      "slug": "better-auth-twofactor",
+      "displayName": "better-auth/twoFactor",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:better-auth"
+    },
+    {
+      "slug": "better-auth-explain-error",
+      "displayName": "better-auth/explain-error",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Skills by Better Auth Team"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-san-francisco",
+    "label": "Global Skill Market / San Francisco / Skills by Better Auth Team",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "virtual_market"
+  }
+}

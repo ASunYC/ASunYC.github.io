@@ -1,0 +1,89 @@
+{
+  "id": "skill:minimax-ai-minimax-xlsx",
+  "slug": "minimax-ai-minimax-xlsx",
+  "name": "minimax-xlsx",
+  "displayName": "MiniMax-AI/minimax-xlsx",
+  "description": "Create, read, analyze, and validate Excel/spreadsheet files with zero format loss",
+  "stars": 0,
+  "category": "TypeScript Skills",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/MiniMax-AI/skills/minimax-xlsx",
+  "githubRepo": "",
+  "readme": "# MiniMax-AI/minimax-xlsx\n\nCreate, read, analyze, and validate Excel/spreadsheet files with zero format loss",
+  "readmeHtml": "<h1>MiniMax-AI/minimax-xlsx</h1>\n<p>Create, read, analyze, and validate Excel/spreadsheet files with zero format loss</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.144Z",
+  "author": {
+    "login": "minimax-ai",
+    "name": "minimax-ai",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/minimax-ai",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "minimax-ai-cli",
+      "displayName": "MiniMax-AI/cli",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:minimax-ai"
+    },
+    {
+      "slug": "minimax-ai-frontend-dev",
+      "displayName": "MiniMax-AI/frontend-dev",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:minimax-ai"
+    },
+    {
+      "slug": "minimax-ai-fullstack-dev",
+      "displayName": "MiniMax-AI/fullstack-dev",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:minimax-ai"
+    },
+    {
+      "slug": "minimax-ai-android-native-dev",
+      "displayName": "MiniMax-AI/android-native-dev",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:minimax-ai"
+    },
+    {
+      "slug": "minimax-ai-ios-application-dev",
+      "displayName": "MiniMax-AI/ios-application-dev",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:minimax-ai"
+    },
+    {
+      "slug": "minimax-ai-shader-dev",
+      "displayName": "MiniMax-AI/shader-dev",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:minimax-ai"
+    },
+    {
+      "slug": "minimax-ai-gif-sticker-maker",
+      "displayName": "MiniMax-AI/gif-sticker-maker",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:minimax-ai"
+    },
+    {
+      "slug": "minimax-ai-minimax-pdf",
+      "displayName": "MiniMax-AI/minimax-pdf",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:minimax-ai"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-berlin",
+    "label": "Global Skill Market / Berlin / TypeScript Skills",
+    "lat": 52.52,
+    "lon": 13.405,
+    "source": "virtual_market"
+  }
+}

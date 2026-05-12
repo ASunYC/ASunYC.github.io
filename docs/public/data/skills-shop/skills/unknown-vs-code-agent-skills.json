@@ -1,0 +1,75 @@
+{
+  "id": "skill:unknown-vs-code-agent-skills",
+  "slug": "unknown-vs-code-agent-skills",
+  "name": "vs-code-agent-skills",
+  "displayName": "unknown/vs-code-agent-skills",
+  "description": "VS Code integration",
+  "stars": 0,
+  "category": "GitHub Copilot",
+  "source": "heilcheng",
+  "url": "https://code.visualstudio.com/docs/copilot/customization/agent-skills",
+  "githubRepo": "",
+  "readme": "# unknown/vs-code-agent-skills\n\nVS Code integration",
+  "readmeHtml": "<h1>unknown/vs-code-agent-skills</h1>\n<p>VS Code integration</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.157Z",
+  "author": {
+    "login": "unknown",
+    "name": "unknown",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/unknown",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "unknown-using-skills-in-claude",
+      "displayName": "unknown/using-skills-in-claude",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:unknown"
+    },
+    {
+      "slug": "unknown-how-to-create-custom-skills",
+      "displayName": "unknown/how-to-create-custom-skills",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:unknown"
+    },
+    {
+      "slug": "unknown-claude-code-skills-documentation",
+      "displayName": "unknown/claude-code-skills-documentation",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:unknown"
+    },
+    {
+      "slug": "unknown-mcp-official-documentation",
+      "displayName": "unknown/mcp-official-documentation",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:unknown"
+    },
+    {
+      "slug": "unknown-build-your-first-mcp-server",
+      "displayName": "unknown/build-your-first-mcp-server",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:unknown"
+    },
+    {
+      "slug": "copilot-concepts",
+      "displayName": "copilot/concepts",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "GitHub Copilot"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-sao-paulo",
+    "label": "Global Skill Market / Sao Paulo / GitHub Copilot",
+    "lat": -23.5558,
+    "lon": -46.6396,
+    "source": "virtual_market"
+  }
+}

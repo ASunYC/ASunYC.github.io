@@ -1,0 +1,89 @@
+{
+  "id": "skill:realkimbarrett-objection-crusher",
+  "slug": "realkimbarrett-objection-crusher",
+  "name": "objection-crusher",
+  "displayName": "realkimbarrett/objection-crusher",
+  "description": "Identify and neutralize buyer objections and hesitation",
+  "stars": 0,
+  "category": "TypeScript Skills",
+  "source": "voltagent",
+  "url": "https://github.com/realkimbarrett/advertising-skills/tree/main/skills/copy-chief/objection-crusher",
+  "githubRepo": "realkimbarrett/advertising-skills",
+  "readme": "# realkimbarrett/objection-crusher\n\nIdentify and neutralize buyer objections and hesitation",
+  "readmeHtml": "<h1>realkimbarrett/objection-crusher</h1>\n<p>Identify and neutralize buyer objections and hesitation</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.129Z",
+  "author": {
+    "login": "realkimbarrett",
+    "name": "realkimbarrett",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/realkimbarrett",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "realkimbarrett-advertising-skills",
+      "displayName": "realkimbarrett/advertising-skills",
+      "stars": 608,
+      "relation": "source_overlap",
+      "evidence": "repo:realkimbarrett/advertising-skills"
+    },
+    {
+      "slug": "realkimbarrett-avatar-extraction",
+      "displayName": "realkimbarrett/avatar-extraction",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:realkimbarrett/advertising-skills"
+    },
+    {
+      "slug": "realkimbarrett-offer-extraction",
+      "displayName": "realkimbarrett/offer-extraction",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:realkimbarrett/advertising-skills"
+    },
+    {
+      "slug": "realkimbarrett-schwartz-awareness-mapper",
+      "displayName": "realkimbarrett/schwartz-awareness-mapper",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:realkimbarrett/advertising-skills"
+    },
+    {
+      "slug": "realkimbarrett-mechanism-builder",
+      "displayName": "realkimbarrett/mechanism-builder",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:realkimbarrett/advertising-skills"
+    },
+    {
+      "slug": "realkimbarrett-headline-matrix",
+      "displayName": "realkimbarrett/headline-matrix",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:realkimbarrett/advertising-skills"
+    },
+    {
+      "slug": "realkimbarrett-ad-angle-multiplier",
+      "displayName": "realkimbarrett/ad-angle-multiplier",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:realkimbarrett/advertising-skills"
+    },
+    {
+      "slug": "realkimbarrett-scroll-stopping-creative",
+      "displayName": "realkimbarrett/scroll-stopping-creative",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:realkimbarrett/advertising-skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-san-francisco",
+    "label": "Global Skill Market / San Francisco / TypeScript Skills",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "virtual_market"
+  }
+}

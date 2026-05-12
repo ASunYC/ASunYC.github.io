@@ -1,0 +1,89 @@
+{
+  "id": "skill:deanpeters-jobs-to-be-done",
+  "slug": "deanpeters-jobs-to-be-done",
+  "name": "jobs-to-be-done",
+  "displayName": "deanpeters/jobs-to-be-done",
+  "description": "Understand customer objectives using the JTBD framework",
+  "stars": 4159,
+  "category": "TypeScript Skills",
+  "source": "voltagent",
+  "url": "https://github.com/deanpeters/Product-Manager-Skills/tree/main/skills/jobs-to-be-done",
+  "githubRepo": "deanpeters/Product-Manager-Skills",
+  "readme": "# deanpeters/jobs-to-be-done\n\nUnderstand customer objectives using the JTBD framework",
+  "readmeHtml": "<h1>deanpeters/jobs-to-be-done</h1>\n<p>Understand customer objectives using the JTBD framework</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.017Z",
+  "author": {
+    "login": "deanpeters",
+    "name": "deanpeters",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/deanpeters",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "deanpeters-acquisition-channel-advisor",
+      "displayName": "deanpeters/acquisition-channel-advisor",
+      "stars": 4159,
+      "relation": "source_overlap",
+      "evidence": "repo:deanpeters/Product-Manager-Skills"
+    },
+    {
+      "slug": "deanpeters-ai-shaped-readiness-advisor",
+      "displayName": "deanpeters/ai-shaped-readiness-advisor",
+      "stars": 4159,
+      "relation": "source_overlap",
+      "evidence": "repo:deanpeters/Product-Manager-Skills"
+    },
+    {
+      "slug": "deanpeters-altitude-horizon-framework",
+      "displayName": "deanpeters/altitude-horizon-framework",
+      "stars": 4159,
+      "relation": "source_overlap",
+      "evidence": "repo:deanpeters/Product-Manager-Skills"
+    },
+    {
+      "slug": "deanpeters-business-health-diagnostic",
+      "displayName": "deanpeters/business-health-diagnostic",
+      "stars": 4159,
+      "relation": "source_overlap",
+      "evidence": "repo:deanpeters/Product-Manager-Skills"
+    },
+    {
+      "slug": "deanpeters-company-research",
+      "displayName": "deanpeters/company-research",
+      "stars": 4159,
+      "relation": "source_overlap",
+      "evidence": "repo:deanpeters/Product-Manager-Skills"
+    },
+    {
+      "slug": "deanpeters-customer-journey-map",
+      "displayName": "deanpeters/customer-journey-map",
+      "stars": 4159,
+      "relation": "source_overlap",
+      "evidence": "repo:deanpeters/Product-Manager-Skills"
+    },
+    {
+      "slug": "deanpeters-eol-message",
+      "displayName": "deanpeters/eol-message",
+      "stars": 4159,
+      "relation": "source_overlap",
+      "evidence": "repo:deanpeters/Product-Manager-Skills"
+    },
+    {
+      "slug": "deanpeters-epic-hypothesis",
+      "displayName": "deanpeters/epic-hypothesis",
+      "stars": 4159,
+      "relation": "source_overlap",
+      "evidence": "repo:deanpeters/Product-Manager-Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-sydney",
+    "label": "Global Skill Market / Sydney / TypeScript Skills",
+    "lat": -33.8688,
+    "lon": 151.2093,
+    "source": "virtual_market"
+  }
+}

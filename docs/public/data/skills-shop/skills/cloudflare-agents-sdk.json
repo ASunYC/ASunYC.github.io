@@ -1,0 +1,89 @@
+{
+  "id": "skill:cloudflare-agents-sdk",
+  "slug": "cloudflare-agents-sdk",
+  "name": "agents-sdk",
+  "displayName": "cloudflare/agents-sdk",
+  "description": "Build stateful AI agents with scheduling, RPC, and MCP servers",
+  "stars": 0,
+  "category": "Skills by Typefully",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/cloudflare/skills/agents-sdk",
+  "githubRepo": "",
+  "readme": "# cloudflare/agents-sdk\n\nBuild stateful AI agents with scheduling, RPC, and MCP servers",
+  "readmeHtml": "<h1>cloudflare/agents-sdk</h1>\n<p>Build stateful AI agents with scheduling, RPC, and MCP servers</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.100Z",
+  "author": {
+    "login": "cloudflare",
+    "name": "cloudflare",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/cloudflare",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "cloudflare-cloudflare",
+      "displayName": "cloudflare/cloudflare",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:cloudflare"
+    },
+    {
+      "slug": "cloudflare-cloudflare-email-service",
+      "displayName": "cloudflare/cloudflare-email-service",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:cloudflare"
+    },
+    {
+      "slug": "cloudflare-durable-objects",
+      "displayName": "cloudflare/durable-objects",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:cloudflare"
+    },
+    {
+      "slug": "cloudflare-sandbox-sdk",
+      "displayName": "cloudflare/sandbox-sdk",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:cloudflare"
+    },
+    {
+      "slug": "cloudflare-web-perf",
+      "displayName": "cloudflare/web-perf",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:cloudflare"
+    },
+    {
+      "slug": "cloudflare-workers-best-practices",
+      "displayName": "cloudflare/workers-best-practices",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:cloudflare"
+    },
+    {
+      "slug": "cloudflare-wrangler",
+      "displayName": "cloudflare/wrangler",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:cloudflare"
+    },
+    {
+      "slug": "cloudflare-building-ai-agent-on-cloudflare",
+      "displayName": "cloudflare/building-ai-agent-on-cloudflare",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:cloudflare"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-sydney",
+    "label": "Global Skill Market / Sydney / Skills by Typefully",
+    "lat": -33.8688,
+    "lon": 151.2093,
+    "source": "virtual_market"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "skill:smtg-ai-claude-squad",
+  "slug": "smtg-ai-claude-squad",
+  "name": "claude-squad",
+  "displayName": "smtg-ai/claude-squad",
+  "description": "Manage multiple AI terminal agents like Claude Code, Codex, OpenCode, and Amp.",
+  "stars": 7350,
+  "category": "Discovered",
+  "source": "discover:topic",
+  "url": "https://github.com/smtg-ai/claude-squad",
+  "githubRepo": "smtg-ai/claude-squad",
+  "readme": "# smtg-ai/claude-squad\n\nManage multiple AI terminal agents like Claude Code, Codex, OpenCode, and Amp.",
+  "readmeHtml": "<h1>smtg-ai/claude-squad</h1>\n<p>Manage multiple AI terminal agents like Claude Code, Codex, OpenCode, and Amp.</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.013Z",
+  "author": {
+    "login": "smtg-ai",
+    "name": "smtg-ai",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/smtg-ai",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 73174,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "bytedance-deer-flow",
+      "displayName": "bytedance/deer-flow",
+      "stars": 65827,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "farion1231-cc-switch",
+      "displayName": "farion1231/cc-switch",
+      "stars": 62022,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "gsd-build-get-shit-done",
+      "displayName": "gsd-build/get-shit-done",
+      "stars": 60616,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "shareai-lab-learn-claude-code",
+      "displayName": "shareAI-lab/learn-claude-code",
+      "stars": 58737,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-singapore",
+    "label": "Global Skill Market / Singapore / Discovered",
+    "lat": 1.3521,
+    "lon": 103.8198,
+    "source": "virtual_market"
+  }
+}

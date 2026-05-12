@@ -1,0 +1,89 @@
+{
+  "id": "skill:browserbase-skills",
+  "slug": "browserbase-skills",
+  "name": "skills",
+  "displayName": "browserbase/skills",
+  "description": "Claude Agent SDK with a web browsing tool",
+  "stars": 2581,
+  "category": "Discovered",
+  "source": "discover:keyword",
+  "url": "https://github.com/browserbase/skills",
+  "githubRepo": "browserbase/skills",
+  "readme": "# browserbase/skills\n\nClaude Agent SDK with a web browsing tool",
+  "readmeHtml": "<h1>browserbase/skills</h1>\n<p>Claude Agent SDK with a web browsing tool</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.025Z",
+  "author": {
+    "login": "browserbase",
+    "name": "browserbase",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/browserbase",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "browserbase-browser",
+      "displayName": "browserbase/browser",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:browserbase"
+    },
+    {
+      "slug": "browserbase-browserbase-cli",
+      "displayName": "browserbase/browserbase-cli",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:browserbase"
+    },
+    {
+      "slug": "browserbase-cookie-sync",
+      "displayName": "browserbase/cookie-sync",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:browserbase"
+    },
+    {
+      "slug": "browserbase-fetch",
+      "displayName": "browserbase/fetch",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:browserbase"
+    },
+    {
+      "slug": "browserbase-functions",
+      "displayName": "browserbase/functions",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:browserbase"
+    },
+    {
+      "slug": "browserbase-search",
+      "displayName": "browserbase/search",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:browserbase"
+    },
+    {
+      "slug": "browserbase-ui-test",
+      "displayName": "browserbase/ui-test",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:browserbase"
+    },
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-tokyo",
+    "label": "Global Skill Market / Tokyo / Discovered",
+    "lat": 35.6762,
+    "lon": 139.6503,
+    "source": "virtual_market"
+  }
+}

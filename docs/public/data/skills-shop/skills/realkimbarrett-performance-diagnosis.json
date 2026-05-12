@@ -1,0 +1,89 @@
+{
+  "id": "skill:realkimbarrett-performance-diagnosis",
+  "slug": "realkimbarrett-performance-diagnosis",
+  "name": "performance-diagnosis",
+  "displayName": "realkimbarrett/performance-diagnosis",
+  "description": "Diagnose why campaigns are underperforming — low conversion, high CPL, bad ads",
+  "stars": 0,
+  "category": "TypeScript Skills",
+  "source": "voltagent",
+  "url": "https://github.com/realkimbarrett/advertising-skills/tree/main/skills/operator-os/performance-diagnosis",
+  "githubRepo": "realkimbarrett/advertising-skills",
+  "readme": "# realkimbarrett/performance-diagnosis\n\nDiagnose why campaigns are underperforming — low conversion, high CPL, bad ads",
+  "readmeHtml": "<h1>realkimbarrett/performance-diagnosis</h1>\n<p>Diagnose why campaigns are underperforming — low conversion, high CPL, bad ads</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.129Z",
+  "author": {
+    "login": "realkimbarrett",
+    "name": "realkimbarrett",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/realkimbarrett",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "realkimbarrett-advertising-skills",
+      "displayName": "realkimbarrett/advertising-skills",
+      "stars": 608,
+      "relation": "source_overlap",
+      "evidence": "repo:realkimbarrett/advertising-skills"
+    },
+    {
+      "slug": "realkimbarrett-avatar-extraction",
+      "displayName": "realkimbarrett/avatar-extraction",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:realkimbarrett/advertising-skills"
+    },
+    {
+      "slug": "realkimbarrett-offer-extraction",
+      "displayName": "realkimbarrett/offer-extraction",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:realkimbarrett/advertising-skills"
+    },
+    {
+      "slug": "realkimbarrett-schwartz-awareness-mapper",
+      "displayName": "realkimbarrett/schwartz-awareness-mapper",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:realkimbarrett/advertising-skills"
+    },
+    {
+      "slug": "realkimbarrett-mechanism-builder",
+      "displayName": "realkimbarrett/mechanism-builder",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:realkimbarrett/advertising-skills"
+    },
+    {
+      "slug": "realkimbarrett-headline-matrix",
+      "displayName": "realkimbarrett/headline-matrix",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:realkimbarrett/advertising-skills"
+    },
+    {
+      "slug": "realkimbarrett-objection-crusher",
+      "displayName": "realkimbarrett/objection-crusher",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:realkimbarrett/advertising-skills"
+    },
+    {
+      "slug": "realkimbarrett-ad-angle-multiplier",
+      "displayName": "realkimbarrett/ad-angle-multiplier",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:realkimbarrett/advertising-skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-tokyo",
+    "label": "Global Skill Market / Tokyo / TypeScript Skills",
+    "lat": 35.6762,
+    "lon": 139.6503,
+    "source": "virtual_market"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "skill:tencent-ai-infra-guard",
+  "slug": "tencent-ai-infra-guard",
+  "name": "ai-infra-guard",
+  "displayName": "Tencent/AI-Infra-Guard",
+  "description": "A full-stack AI Red Teaming platform securing AI ecosystems via OpenClaw Security Scan, Agent Scan, Skills Scan, MCP scan, AI Infra scan and LLM jailbreak evaluation.",
+  "stars": 3642,
+  "category": "Discovered",
+  "source": "discover:keyword",
+  "url": "https://github.com/Tencent/AI-Infra-Guard",
+  "githubRepo": "Tencent/AI-Infra-Guard",
+  "readme": "# Tencent/AI-Infra-Guard\n\nA full-stack AI Red Teaming platform securing AI ecosystems via OpenClaw Security Scan, Agent Scan, Skills Scan, MCP scan, AI Infra scan and LLM jailbreak evaluation.",
+  "readmeHtml": "<h1>Tencent/AI-Infra-Guard</h1>\n<p>A full-stack AI Red Teaming platform securing AI ecosystems via OpenClaw Security Scan, Agent Scan, Skills Scan, MCP scan, AI Infra scan and LLM jailbreak evaluation.</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.020Z",
+  "author": {
+    "login": "tencent",
+    "name": "tencent",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/tencent",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "tencent-workrally",
+      "displayName": "Tencent/workrally",
+      "stars": 23,
+      "relation": "source_overlap",
+      "evidence": "author:tencent"
+    },
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 73174,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "bytedance-deer-flow",
+      "displayName": "bytedance/deer-flow",
+      "stars": 65827,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "farion1231-cc-switch",
+      "displayName": "farion1231/cc-switch",
+      "stars": 62022,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "gsd-build-get-shit-done",
+      "displayName": "gsd-build/get-shit-done",
+      "stars": 60616,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-san-francisco",
+    "label": "Global Skill Market / San Francisco / Discovered",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "virtual_market"
+  }
+}

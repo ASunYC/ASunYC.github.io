@@ -1,0 +1,47 @@
+{
+  "id": "skill:stripe-upgrade-stripe",
+  "slug": "stripe-upgrade-stripe",
+  "name": "upgrade-stripe",
+  "displayName": "stripe/upgrade-stripe",
+  "description": "Upgrade Stripe SDK and API versions",
+  "stars": 0,
+  "category": "Skills by Stripe Team",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/stripe/skills/upgrade-stripe",
+  "githubRepo": "",
+  "readme": "# stripe/upgrade-stripe\n\nUpgrade Stripe SDK and API versions",
+  "readmeHtml": "<h1>stripe/upgrade-stripe</h1>\n<p>Upgrade Stripe SDK and API versions</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.090Z",
+  "author": {
+    "login": "stripe",
+    "name": "stripe",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/stripe",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "stripe-stripe-best-practices",
+      "displayName": "stripe/stripe-best-practices",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:stripe"
+    },
+    {
+      "slug": "stripe-stripe-best-practices",
+      "displayName": "stripe/stripe-best-practices",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Skills by Stripe Team"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-sydney",
+    "label": "Global Skill Market / Sydney / Skills by Stripe Team",
+    "lat": -33.8688,
+    "lon": 151.2093,
+    "source": "virtual_market"
+  }
+}

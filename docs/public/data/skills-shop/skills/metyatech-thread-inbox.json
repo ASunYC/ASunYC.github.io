@@ -1,0 +1,89 @@
+{
+  "id": "skill:metyatech-thread-inbox",
+  "slug": "metyatech-thread-inbox",
+  "name": "thread-inbox",
+  "displayName": "metyatech/thread-inbox",
+  "description": "Threaded conversation inbox for managing user-AI interactions",
+  "stars": 0,
+  "category": "Discovered",
+  "source": "discover:topic",
+  "url": "https://github.com/metyatech/thread-inbox",
+  "githubRepo": "metyatech/thread-inbox",
+  "readme": "# metyatech/thread-inbox\n\nThreaded conversation inbox for managing user-AI interactions",
+  "readmeHtml": "<h1>metyatech/thread-inbox</h1>\n<p>Threaded conversation inbox for managing user-AI interactions</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.158Z",
+  "author": {
+    "login": "metyatech",
+    "name": "metyatech",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/metyatech",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "metyatech-markdown-to-qti",
+      "displayName": "metyatech/markdown-to-qti",
+      "stars": 2,
+      "relation": "source_overlap",
+      "evidence": "author:metyatech"
+    },
+    {
+      "slug": "metyatech-workspace-template-generator",
+      "displayName": "metyatech/workspace-template-generator",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:metyatech"
+    },
+    {
+      "slug": "metyatech-managed-worktree-system",
+      "displayName": "metyatech/managed-worktree-system",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:metyatech"
+    },
+    {
+      "slug": "metyatech-ai-quota",
+      "displayName": "metyatech/ai-quota",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:metyatech"
+    },
+    {
+      "slug": "metyatech-agent-runner",
+      "displayName": "metyatech/agent-runner",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:metyatech"
+    },
+    {
+      "slug": "metyatech-roster-to-qti-results",
+      "displayName": "metyatech/roster-to-qti-results",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:metyatech"
+    },
+    {
+      "slug": "metyatech-agents-mcp",
+      "displayName": "metyatech/agents-mcp",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:metyatech"
+    },
+    {
+      "slug": "metyatech-task-tracker",
+      "displayName": "metyatech/task-tracker",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:metyatech"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-london",
+    "label": "Global Skill Market / London / Discovered",
+    "lat": 51.5072,
+    "lon": -0.1276,
+    "source": "virtual_market"
+  }
+}

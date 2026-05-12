@@ -1,0 +1,89 @@
+{
+  "id": "skill:voltagent-voltagent-docs-bundle",
+  "slug": "voltagent-voltagent-docs-bundle",
+  "name": "voltagent-docs-bundle",
+  "displayName": "voltagent/voltagent-docs-bundle",
+  "description": "Lookup embedded docs from @voltagent/core for version-matched documentation",
+  "stars": 0,
+  "category": "Skills by VoltAgent",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/voltagent/skills/voltagent-docs-bundle",
+  "githubRepo": "",
+  "readme": "# voltagent/voltagent-docs-bundle\n\nLookup embedded docs from @voltagent/core for version-matched documentation",
+  "readmeHtml": "<h1>voltagent/voltagent-docs-bundle</h1>\n<p>Lookup embedded docs from @voltagent/core for version-matched documentation</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.089Z",
+  "author": {
+    "login": "voltagent",
+    "name": "voltagent",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/voltagent",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "voltagent-awesome-design-md",
+      "displayName": "voltagent/awesome-design-md",
+      "stars": 72503,
+      "relation": "source_overlap",
+      "evidence": "author:voltagent"
+    },
+    {
+      "slug": "voltagent-awesome-openclaw-skills",
+      "displayName": "voltagent/awesome-openclaw-skills",
+      "stars": 48125,
+      "relation": "source_overlap",
+      "evidence": "author:voltagent"
+    },
+    {
+      "slug": "voltagent-awesome-agent-skills",
+      "displayName": "VoltAgent/awesome-agent-skills",
+      "stars": 20610,
+      "relation": "source_overlap",
+      "evidence": "author:voltagent"
+    },
+    {
+      "slug": "voltagent-create-voltagent",
+      "displayName": "voltagent/create-voltagent",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:voltagent"
+    },
+    {
+      "slug": "voltagent-voltagent-best-practices",
+      "displayName": "voltagent/voltagent-best-practices",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:voltagent"
+    },
+    {
+      "slug": "voltagent-voltagent-core-reference",
+      "displayName": "voltagent/voltagent-core-reference",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:voltagent"
+    },
+    {
+      "slug": "voltagent-create-voltagent",
+      "displayName": "voltagent/create-voltagent",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Skills by VoltAgent"
+    },
+    {
+      "slug": "voltagent-voltagent-best-practices",
+      "displayName": "voltagent/voltagent-best-practices",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Skills by VoltAgent"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-new-york",
+    "label": "Global Skill Market / New York / Skills by VoltAgent",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "source": "virtual_market"
+  }
+}

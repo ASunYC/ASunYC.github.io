@@ -1,0 +1,89 @@
+{
+  "id": "skill:muratcankoylan-multi-agent-patterns",
+  "slug": "muratcankoylan-multi-agent-patterns",
+  "name": "multi-agent-patterns",
+  "displayName": "muratcankoylan/multi-agent-patterns",
+  "description": "Master orchestrator, peer-to-peer, and hierarchical multi-agent architectures",
+  "stars": 15494,
+  "category": "Community Skills",
+  "source": "voltagent",
+  "url": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/tree/main/skills/multi-agent-patterns",
+  "githubRepo": "muratcankoylan/Agent-Skills-for-Context-Engineering",
+  "readme": "# muratcankoylan/multi-agent-patterns\n\nMaster orchestrator, peer-to-peer, and hierarchical multi-agent architectures",
+  "readmeHtml": "<h1>muratcankoylan/multi-agent-patterns</h1>\n<p>Master orchestrator, peer-to-peer, and hierarchical multi-agent architectures</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.003Z",
+  "author": {
+    "login": "muratcankoylan",
+    "name": "muratcankoylan",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/muratcankoylan",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "muratcankoylan-context-fundamentals",
+      "displayName": "muratcankoylan/context-fundamentals",
+      "stars": 15494,
+      "relation": "source_overlap",
+      "evidence": "repo:muratcankoylan/Agent-Skills-for-Context-Engineering"
+    },
+    {
+      "slug": "muratcankoylan-context-degradation",
+      "displayName": "muratcankoylan/context-degradation",
+      "stars": 15494,
+      "relation": "source_overlap",
+      "evidence": "repo:muratcankoylan/Agent-Skills-for-Context-Engineering"
+    },
+    {
+      "slug": "muratcankoylan-context-compression",
+      "displayName": "muratcankoylan/context-compression",
+      "stars": 15494,
+      "relation": "source_overlap",
+      "evidence": "repo:muratcankoylan/Agent-Skills-for-Context-Engineering"
+    },
+    {
+      "slug": "muratcankoylan-context-optimization",
+      "displayName": "muratcankoylan/context-optimization",
+      "stars": 15494,
+      "relation": "source_overlap",
+      "evidence": "repo:muratcankoylan/Agent-Skills-for-Context-Engineering"
+    },
+    {
+      "slug": "muratcankoylan-memory-systems",
+      "displayName": "muratcankoylan/memory-systems",
+      "stars": 15494,
+      "relation": "source_overlap",
+      "evidence": "repo:muratcankoylan/Agent-Skills-for-Context-Engineering"
+    },
+    {
+      "slug": "muratcankoylan-tool-design",
+      "displayName": "muratcankoylan/tool-design",
+      "stars": 15494,
+      "relation": "source_overlap",
+      "evidence": "repo:muratcankoylan/Agent-Skills-for-Context-Engineering"
+    },
+    {
+      "slug": "muratcankoylan-evaluation",
+      "displayName": "muratcankoylan/evaluation",
+      "stars": 15494,
+      "relation": "source_overlap",
+      "evidence": "repo:muratcankoylan/Agent-Skills-for-Context-Engineering"
+    },
+    {
+      "slug": "muratcankoylan-context-fundamentals",
+      "displayName": "muratcankoylan/context-fundamentals",
+      "stars": 15494,
+      "relation": "source_overlap",
+      "evidence": "author:muratcankoylan"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-toronto",
+    "label": "Global Skill Market / Toronto / Community Skills",
+    "lat": 43.6532,
+    "lon": -79.3832,
+    "source": "virtual_market"
+  }
+}

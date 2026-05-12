@@ -1,0 +1,47 @@
+{
+  "id": "skill:modelcontextprotocol-servers",
+  "slug": "modelcontextprotocol-servers",
+  "name": "servers",
+  "displayName": "modelcontextprotocol/servers",
+  "description": "Official server implementations",
+  "stars": 85195,
+  "category": "Model Context Protocol (MCP)",
+  "source": "heilcheng",
+  "url": "https://github.com/modelcontextprotocol/servers",
+  "githubRepo": "modelcontextprotocol/servers",
+  "readme": "# modelcontextprotocol/servers\n\nOfficial server implementations",
+  "readmeHtml": "<h1>modelcontextprotocol/servers</h1>\n<p>Official server implementations</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:06.997Z",
+  "author": {
+    "login": "modelcontextprotocol",
+    "name": "modelcontextprotocol",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/modelcontextprotocol",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "unknown-mcp-official-documentation",
+      "displayName": "unknown/mcp-official-documentation",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Model Context Protocol (MCP)"
+    },
+    {
+      "slug": "unknown-build-your-first-mcp-server",
+      "displayName": "unknown/build-your-first-mcp-server",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Model Context Protocol (MCP)"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-singapore",
+    "label": "Global Skill Market / Singapore / Model Context Protocol (MCP)",
+    "lat": 1.3521,
+    "lon": 103.8198,
+    "source": "virtual_market"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "skill:masum-msnr-awesome-java-android-agent-skills",
+  "slug": "masum-msnr-awesome-java-android-agent-skills",
+  "name": "awesome-java-android-agent-skills",
+  "displayName": "Masum-MSNR/awesome-java-android-agent-skills",
+  "description": "Curated agent skills, conventions, and workflows for building Java Android apps with AI coding agents.",
+  "stars": 1,
+  "category": "Discovered",
+  "source": "discover:keyword",
+  "url": "https://github.com/Masum-MSNR/awesome-java-android-agent-skills",
+  "githubRepo": "Masum-MSNR/awesome-java-android-agent-skills",
+  "readme": "# Masum-MSNR/awesome-java-android-agent-skills\n\nCurated agent skills, conventions, and workflows for building Java Android apps with AI coding agents.",
+  "readmeHtml": "<h1>Masum-MSNR/awesome-java-android-agent-skills</h1>\n<p>Curated agent skills, conventions, and workflows for building Java Android apps with AI coding agents.</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.088Z",
+  "author": {
+    "login": "masum-msnr",
+    "name": "masum-msnr",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/masum-msnr",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "masum-msnr-awesome-mobile-security-agent-skills",
+      "displayName": "Masum-MSNR/awesome-mobile-security-agent-skills",
+      "stars": 2,
+      "relation": "source_overlap",
+      "evidence": "author:masum-msnr"
+    },
+    {
+      "slug": "masum-msnr-awesome-mobile-agent-skills",
+      "displayName": "Masum-MSNR/awesome-mobile-agent-skills",
+      "stars": 1,
+      "relation": "source_overlap",
+      "evidence": "author:masum-msnr"
+    },
+    {
+      "slug": "masum-msnr-awesome-kotlin-multiplatform-agent-skills",
+      "displayName": "Masum-MSNR/awesome-kotlin-multiplatform-agent-skills",
+      "stars": 1,
+      "relation": "source_overlap",
+      "evidence": "author:masum-msnr"
+    },
+    {
+      "slug": "masum-msnr-awesome-mobile-release-agent-skills",
+      "displayName": "Masum-MSNR/awesome-mobile-release-agent-skills",
+      "stars": 1,
+      "relation": "source_overlap",
+      "evidence": "author:masum-msnr"
+    },
+    {
+      "slug": "masum-msnr-awesome-react-native-agent-skills",
+      "displayName": "Masum-MSNR/awesome-react-native-agent-skills",
+      "stars": 1,
+      "relation": "source_overlap",
+      "evidence": "author:masum-msnr"
+    },
+    {
+      "slug": "masum-msnr-awesome-mobile-accessibility-agent-skills",
+      "displayName": "Masum-MSNR/awesome-mobile-accessibility-agent-skills",
+      "stars": 1,
+      "relation": "source_overlap",
+      "evidence": "author:masum-msnr"
+    },
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-shanghai",
+    "label": "Global Skill Market / Shanghai / Discovered",
+    "lat": 31.2304,
+    "lon": 121.4737,
+    "source": "virtual_market"
+  }
+}

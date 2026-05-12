@@ -1,0 +1,89 @@
+{
+  "id": "skill:xjtulyc-medgeclaw",
+  "slug": "xjtulyc-medgeclaw",
+  "name": "medgeclaw",
+  "displayName": "xjtulyc/MedgeClaw",
+  "description": "Open-source AI research assistant for biomedicine — chat to run RNA-seq, drug discovery, clinical analysis, and more. Built on Claude Code with 140 K-Dense scientific skills, real-time dashboard, and RStudio/JupyterLab integration. | 开源生物医学 AI 研究助手，对话即可驱动转录组、药物发现、临床分析等工作流，集成 140 个科学技能与实时研究看板。",
+  "stars": 643,
+  "category": "Discovered",
+  "source": "discover:keyword",
+  "url": "https://github.com/xjtulyc/MedgeClaw",
+  "githubRepo": "xjtulyc/MedgeClaw",
+  "readme": "# xjtulyc/MedgeClaw\n\nOpen-source AI research assistant for biomedicine — chat to run RNA-seq, drug discovery, clinical analysis, and more. Built on Claude Code with 140 K-Dense scientific skills, real-time dashboard, and RStudio/JupyterLab integration. | 开源生物医学 AI 研究助手，对话即可驱动转录组、药物发现、临床分析等工作流，集成 140 个科学技能与实时研究看板。",
+  "readmeHtml": "<h1>xjtulyc/MedgeClaw</h1>\n<p>Open-source AI research assistant for biomedicine — chat to run RNA-seq, drug discovery, clinical analysis, and more. Built on Claude Code with 140 K-Dense scientific skills, real-time dashboard, and RStudio/JupyterLab integration. | 开源生物医学 AI 研究助手，对话即可驱动转录组、药物发现、临床分析等工作流，集成 140 个科学技能与实时研究看板。</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.041Z",
+  "author": {
+    "login": "xjtulyc",
+    "name": "xjtulyc",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/xjtulyc",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "xjtulyc-awesome-rosetta-skills",
+      "displayName": "xjtulyc/awesome-rosetta-skills",
+      "stars": 23,
+      "relation": "source_overlap",
+      "evidence": "author:xjtulyc"
+    },
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 73174,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "bytedance-deer-flow",
+      "displayName": "bytedance/deer-flow",
+      "stars": 65827,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "farion1231-cc-switch",
+      "displayName": "farion1231/cc-switch",
+      "stars": 62022,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "gsd-build-get-shit-done",
+      "displayName": "gsd-build/get-shit-done",
+      "stars": 60616,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-sydney",
+    "label": "Global Skill Market / Sydney / Discovered",
+    "lat": -33.8688,
+    "lon": 151.2093,
+    "source": "virtual_market"
+  }
+}

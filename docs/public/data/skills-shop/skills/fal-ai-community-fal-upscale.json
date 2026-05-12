@@ -1,0 +1,89 @@
+{
+  "id": "skill:fal-ai-community-fal-upscale",
+  "slug": "fal-ai-community-fal-upscale",
+  "name": "fal-upscale",
+  "displayName": "fal-ai-community/fal-upscale",
+  "description": "Upscale and enhance image and video resolution using AI",
+  "stars": 0,
+  "category": "TypeScript Skills",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/fal-ai-community/skills/fal-upscale",
+  "githubRepo": "",
+  "readme": "# fal-ai-community/fal-upscale\n\nUpscale and enhance image and video resolution using AI",
+  "readmeHtml": "<h1>fal-ai-community/fal-upscale</h1>\n<p>Upscale and enhance image and video resolution using AI</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.119Z",
+  "author": {
+    "login": "fal-ai-community",
+    "name": "fal-ai-community",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/fal-ai-community",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "fal-ai-community-fal-3d",
+      "displayName": "fal-ai-community/fal-3d",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:fal-ai-community"
+    },
+    {
+      "slug": "fal-ai-community-fal-audio",
+      "displayName": "fal-ai-community/fal-audio",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:fal-ai-community"
+    },
+    {
+      "slug": "fal-ai-community-fal-generate",
+      "displayName": "fal-ai-community/fal-generate",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:fal-ai-community"
+    },
+    {
+      "slug": "fal-ai-community-fal-image-edit",
+      "displayName": "fal-ai-community/fal-image-edit",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:fal-ai-community"
+    },
+    {
+      "slug": "fal-ai-community-fal-kling-o3",
+      "displayName": "fal-ai-community/fal-kling-o3",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:fal-ai-community"
+    },
+    {
+      "slug": "fal-ai-community-fal-lip-sync",
+      "displayName": "fal-ai-community/fal-lip-sync",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:fal-ai-community"
+    },
+    {
+      "slug": "fal-ai-community-fal-platform",
+      "displayName": "fal-ai-community/fal-platform",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:fal-ai-community"
+    },
+    {
+      "slug": "fal-ai-community-fal-realtime",
+      "displayName": "fal-ai-community/fal-realtime",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:fal-ai-community"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-sao-paulo",
+    "label": "Global Skill Market / Sao Paulo / TypeScript Skills",
+    "lat": -23.5558,
+    "lon": -46.6396,
+    "source": "virtual_market"
+  }
+}

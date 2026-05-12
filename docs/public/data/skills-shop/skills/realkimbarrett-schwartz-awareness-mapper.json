@@ -1,0 +1,89 @@
+{
+  "id": "skill:realkimbarrett-schwartz-awareness-mapper",
+  "slug": "realkimbarrett-schwartz-awareness-mapper",
+  "name": "schwartz-awareness-mapper",
+  "displayName": "realkimbarrett/schwartz-awareness-mapper",
+  "description": "Determine audience awareness level and the correct messaging approach",
+  "stars": 0,
+  "category": "TypeScript Skills",
+  "source": "voltagent",
+  "url": "https://github.com/realkimbarrett/advertising-skills/tree/main/skills/copy-chief/schwartz-awareness-mapper",
+  "githubRepo": "realkimbarrett/advertising-skills",
+  "readme": "# realkimbarrett/schwartz-awareness-mapper\n\nDetermine audience awareness level and the correct messaging approach",
+  "readmeHtml": "<h1>realkimbarrett/schwartz-awareness-mapper</h1>\n<p>Determine audience awareness level and the correct messaging approach</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.129Z",
+  "author": {
+    "login": "realkimbarrett",
+    "name": "realkimbarrett",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/realkimbarrett",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "realkimbarrett-advertising-skills",
+      "displayName": "realkimbarrett/advertising-skills",
+      "stars": 608,
+      "relation": "source_overlap",
+      "evidence": "repo:realkimbarrett/advertising-skills"
+    },
+    {
+      "slug": "realkimbarrett-avatar-extraction",
+      "displayName": "realkimbarrett/avatar-extraction",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:realkimbarrett/advertising-skills"
+    },
+    {
+      "slug": "realkimbarrett-offer-extraction",
+      "displayName": "realkimbarrett/offer-extraction",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:realkimbarrett/advertising-skills"
+    },
+    {
+      "slug": "realkimbarrett-mechanism-builder",
+      "displayName": "realkimbarrett/mechanism-builder",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:realkimbarrett/advertising-skills"
+    },
+    {
+      "slug": "realkimbarrett-headline-matrix",
+      "displayName": "realkimbarrett/headline-matrix",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:realkimbarrett/advertising-skills"
+    },
+    {
+      "slug": "realkimbarrett-objection-crusher",
+      "displayName": "realkimbarrett/objection-crusher",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:realkimbarrett/advertising-skills"
+    },
+    {
+      "slug": "realkimbarrett-ad-angle-multiplier",
+      "displayName": "realkimbarrett/ad-angle-multiplier",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:realkimbarrett/advertising-skills"
+    },
+    {
+      "slug": "realkimbarrett-scroll-stopping-creative",
+      "displayName": "realkimbarrett/scroll-stopping-creative",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:realkimbarrett/advertising-skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-san-francisco",
+    "label": "Global Skill Market / San Francisco / TypeScript Skills",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "virtual_market"
+  }
+}

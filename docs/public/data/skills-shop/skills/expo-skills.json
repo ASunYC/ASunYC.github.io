@@ -1,0 +1,89 @@
+{
+  "id": "skill:expo-skills",
+  "slug": "expo-skills",
+  "name": "skills",
+  "displayName": "expo/skills",
+  "description": "A collection of AI agent skills for working with Expo projects and Expo Application Services",
+  "stars": 1862,
+  "category": "Discovered",
+  "source": "discover:keyword",
+  "url": "https://github.com/expo/skills",
+  "githubRepo": "expo/skills",
+  "readme": "# expo/skills\n\nA collection of AI agent skills for working with Expo projects and Expo Application Services",
+  "readmeHtml": "<h1>expo/skills</h1>\n<p>A collection of AI agent skills for working with Expo projects and Expo Application Services</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.028Z",
+  "author": {
+    "login": "expo",
+    "name": "expo",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/expo",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "expo-building-native-ui",
+      "displayName": "expo/building-native-ui",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:expo"
+    },
+    {
+      "slug": "expo-expo-api-routes",
+      "displayName": "expo/expo-api-routes",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:expo"
+    },
+    {
+      "slug": "expo-expo-cicd-workflows",
+      "displayName": "expo/expo-cicd-workflows",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:expo"
+    },
+    {
+      "slug": "expo-expo-deployment",
+      "displayName": "expo/expo-deployment",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:expo"
+    },
+    {
+      "slug": "expo-expo-dev-client",
+      "displayName": "expo/expo-dev-client",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:expo"
+    },
+    {
+      "slug": "expo-expo-tailwind-setup",
+      "displayName": "expo/expo-tailwind-setup",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:expo"
+    },
+    {
+      "slug": "expo-expo-ui-jetpack-compose",
+      "displayName": "expo/expo-ui-jetpack-compose",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:expo"
+    },
+    {
+      "slug": "expo-expo-ui-swift-ui",
+      "displayName": "expo/expo-ui-swift-ui",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:expo"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-berlin",
+    "label": "Global Skill Market / Berlin / Discovered",
+    "lat": 52.52,
+    "lon": 13.405,
+    "source": "virtual_market"
+  }
+}

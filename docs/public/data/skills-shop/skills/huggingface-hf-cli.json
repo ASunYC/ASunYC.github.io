@@ -1,0 +1,89 @@
+{
+  "id": "skill:huggingface-hf-cli",
+  "slug": "huggingface-hf-cli",
+  "name": "hf-cli",
+  "displayName": "huggingface/hf-cli",
+  "description": "HF CLI tool for Hub operations",
+  "stars": 0,
+  "category": "Skills by Typefully",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/huggingface/skills/hf-cli",
+  "githubRepo": "",
+  "readme": "# huggingface/hf-cli\n\nHF CLI tool for Hub operations",
+  "readmeHtml": "<h1>huggingface/hf-cli</h1>\n<p>HF CLI tool for Hub operations</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.103Z",
+  "author": {
+    "login": "huggingface",
+    "name": "huggingface",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/huggingface",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "huggingface-upskill",
+      "displayName": "huggingface/upskill",
+      "stars": 517,
+      "relation": "source_overlap",
+      "evidence": "author:huggingface"
+    },
+    {
+      "slug": "huggingface-hugging-face-dataset-viewer",
+      "displayName": "huggingface/hugging-face-dataset-viewer",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:huggingface"
+    },
+    {
+      "slug": "huggingface-hugging-face-datasets",
+      "displayName": "huggingface/hugging-face-datasets",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:huggingface"
+    },
+    {
+      "slug": "huggingface-hugging-face-evaluation",
+      "displayName": "huggingface/hugging-face-evaluation",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:huggingface"
+    },
+    {
+      "slug": "huggingface-hugging-face-jobs",
+      "displayName": "huggingface/hugging-face-jobs",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:huggingface"
+    },
+    {
+      "slug": "huggingface-hugging-face-model-trainer",
+      "displayName": "huggingface/hugging-face-model-trainer",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:huggingface"
+    },
+    {
+      "slug": "huggingface-hugging-face-paper-pages",
+      "displayName": "huggingface/hugging-face-paper-pages",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:huggingface"
+    },
+    {
+      "slug": "huggingface-hugging-face-paper-publisher",
+      "displayName": "huggingface/hugging-face-paper-publisher",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:huggingface"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-shanghai",
+    "label": "Global Skill Market / Shanghai / Skills by Typefully",
+    "lat": 31.2304,
+    "lon": 121.4737,
+    "source": "virtual_market"
+  }
+}

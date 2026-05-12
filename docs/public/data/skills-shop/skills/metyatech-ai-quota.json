@@ -1,0 +1,89 @@
+{
+  "id": "skill:metyatech-ai-quota",
+  "slug": "metyatech-ai-quota",
+  "name": "ai-quota",
+  "displayName": "metyatech/ai-quota",
+  "description": "AI agent quota/rate-limit fetching library for Claude, Gemini, Copilot, and Codex",
+  "stars": 0,
+  "category": "Discovered",
+  "source": "discover:topic",
+  "url": "https://github.com/metyatech/ai-quota",
+  "githubRepo": "metyatech/ai-quota",
+  "readme": "# metyatech/ai-quota\n\nAI agent quota/rate-limit fetching library for Claude, Gemini, Copilot, and Codex",
+  "readmeHtml": "<h1>metyatech/ai-quota</h1>\n<p>AI agent quota/rate-limit fetching library for Claude, Gemini, Copilot, and Codex</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.158Z",
+  "author": {
+    "login": "metyatech",
+    "name": "metyatech",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/metyatech",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "metyatech-markdown-to-qti",
+      "displayName": "metyatech/markdown-to-qti",
+      "stars": 2,
+      "relation": "source_overlap",
+      "evidence": "author:metyatech"
+    },
+    {
+      "slug": "metyatech-workspace-template-generator",
+      "displayName": "metyatech/workspace-template-generator",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:metyatech"
+    },
+    {
+      "slug": "metyatech-managed-worktree-system",
+      "displayName": "metyatech/managed-worktree-system",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:metyatech"
+    },
+    {
+      "slug": "metyatech-agent-runner",
+      "displayName": "metyatech/agent-runner",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:metyatech"
+    },
+    {
+      "slug": "metyatech-roster-to-qti-results",
+      "displayName": "metyatech/roster-to-qti-results",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:metyatech"
+    },
+    {
+      "slug": "metyatech-agents-mcp",
+      "displayName": "metyatech/agents-mcp",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:metyatech"
+    },
+    {
+      "slug": "metyatech-task-tracker",
+      "displayName": "metyatech/task-tracker",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:metyatech"
+    },
+    {
+      "slug": "metyatech-robotframework-unity-editor",
+      "displayName": "metyatech/robotframework-unity-editor",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:metyatech"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-shanghai",
+    "label": "Global Skill Market / Shanghai / Discovered",
+    "lat": 31.2304,
+    "lon": 121.4737,
+    "source": "virtual_market"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "skill:deanpeters-acquisition-channel-advisor",
+  "slug": "deanpeters-acquisition-channel-advisor",
+  "name": "acquisition-channel-advisor",
+  "displayName": "deanpeters/acquisition-channel-advisor",
+  "description": "Evaluate channels using unit economics and recommend scale/test/kill decisions",
+  "stars": 4159,
+  "category": "TypeScript Skills",
+  "source": "voltagent",
+  "url": "https://github.com/deanpeters/Product-Manager-Skills/tree/main/skills/acquisition-channel-advisor",
+  "githubRepo": "deanpeters/Product-Manager-Skills",
+  "readme": "# deanpeters/acquisition-channel-advisor\n\nEvaluate channels using unit economics and recommend scale/test/kill decisions",
+  "readmeHtml": "<h1>deanpeters/acquisition-channel-advisor</h1>\n<p>Evaluate channels using unit economics and recommend scale/test/kill decisions</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.016Z",
+  "author": {
+    "login": "deanpeters",
+    "name": "deanpeters",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/deanpeters",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "deanpeters-ai-shaped-readiness-advisor",
+      "displayName": "deanpeters/ai-shaped-readiness-advisor",
+      "stars": 4159,
+      "relation": "source_overlap",
+      "evidence": "repo:deanpeters/Product-Manager-Skills"
+    },
+    {
+      "slug": "deanpeters-altitude-horizon-framework",
+      "displayName": "deanpeters/altitude-horizon-framework",
+      "stars": 4159,
+      "relation": "source_overlap",
+      "evidence": "repo:deanpeters/Product-Manager-Skills"
+    },
+    {
+      "slug": "deanpeters-business-health-diagnostic",
+      "displayName": "deanpeters/business-health-diagnostic",
+      "stars": 4159,
+      "relation": "source_overlap",
+      "evidence": "repo:deanpeters/Product-Manager-Skills"
+    },
+    {
+      "slug": "deanpeters-company-research",
+      "displayName": "deanpeters/company-research",
+      "stars": 4159,
+      "relation": "source_overlap",
+      "evidence": "repo:deanpeters/Product-Manager-Skills"
+    },
+    {
+      "slug": "deanpeters-customer-journey-map",
+      "displayName": "deanpeters/customer-journey-map",
+      "stars": 4159,
+      "relation": "source_overlap",
+      "evidence": "repo:deanpeters/Product-Manager-Skills"
+    },
+    {
+      "slug": "deanpeters-eol-message",
+      "displayName": "deanpeters/eol-message",
+      "stars": 4159,
+      "relation": "source_overlap",
+      "evidence": "repo:deanpeters/Product-Manager-Skills"
+    },
+    {
+      "slug": "deanpeters-epic-hypothesis",
+      "displayName": "deanpeters/epic-hypothesis",
+      "stars": 4159,
+      "relation": "source_overlap",
+      "evidence": "repo:deanpeters/Product-Manager-Skills"
+    },
+    {
+      "slug": "deanpeters-finance-metrics-quickref",
+      "displayName": "deanpeters/finance-metrics-quickref",
+      "stars": 4159,
+      "relation": "source_overlap",
+      "evidence": "repo:deanpeters/Product-Manager-Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-shanghai",
+    "label": "Global Skill Market / Shanghai / TypeScript Skills",
+    "lat": 31.2304,
+    "lon": 121.4737,
+    "source": "virtual_market"
+  }
+}

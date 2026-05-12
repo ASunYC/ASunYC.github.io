@@ -1,0 +1,89 @@
+{
+  "id": "skill:neolabhq-sdd",
+  "slug": "neolabhq-sdd",
+  "name": "sdd",
+  "displayName": "NeoLabHQ/sdd",
+  "description": "Spec-driven development workflow that transforms prompts into production-ready implementations through structured planning, architecture design, and LLM-as-a-Judge based quality gates.",
+  "stars": 989,
+  "category": "Community Skills",
+  "source": "voltagent",
+  "url": "https://github.com/NeoLabHQ/context-engineering-kit/tree/master/plugins/sdd",
+  "githubRepo": "NeoLabHQ/context-engineering-kit",
+  "readme": "# NeoLabHQ/sdd\n\nSpec-driven development workflow that transforms prompts into production-ready implementations through structured planning, architecture design, and LLM-as-a-Judge based quality gates.",
+  "readmeHtml": "<h1>NeoLabHQ/sdd</h1>\n<p>Spec-driven development workflow that transforms prompts into production-ready implementations through structured planning, architecture design, and LLM-as-a-Judge based quality gates.</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.036Z",
+  "author": {
+    "login": "neolabhq",
+    "name": "neolabhq",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/neolabhq",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "neolabhq-write-concisely",
+      "displayName": "NeoLabHQ/write-concisely",
+      "stars": 989,
+      "relation": "source_overlap",
+      "evidence": "repo:NeoLabHQ/context-engineering-kit"
+    },
+    {
+      "slug": "neolabhq-code-review",
+      "displayName": "NeoLabHQ/code-review",
+      "stars": 989,
+      "relation": "source_overlap",
+      "evidence": "repo:NeoLabHQ/context-engineering-kit"
+    },
+    {
+      "slug": "neolabhq-reflexion",
+      "displayName": "NeoLabHQ/reflexion",
+      "stars": 989,
+      "relation": "source_overlap",
+      "evidence": "repo:NeoLabHQ/context-engineering-kit"
+    },
+    {
+      "slug": "neolabhq-ddd",
+      "displayName": "NeoLabHQ/ddd",
+      "stars": 989,
+      "relation": "source_overlap",
+      "evidence": "repo:NeoLabHQ/context-engineering-kit"
+    },
+    {
+      "slug": "neolabhq-sadd",
+      "displayName": "NeoLabHQ/sadd",
+      "stars": 989,
+      "relation": "source_overlap",
+      "evidence": "repo:NeoLabHQ/context-engineering-kit"
+    },
+    {
+      "slug": "neolabhq-kaizen",
+      "displayName": "NeoLabHQ/kaizen",
+      "stars": 989,
+      "relation": "source_overlap",
+      "evidence": "repo:NeoLabHQ/context-engineering-kit"
+    },
+    {
+      "slug": "neolabhq-prompt-engineering",
+      "displayName": "NeoLabHQ/prompt-engineering",
+      "stars": 989,
+      "relation": "source_overlap",
+      "evidence": "repo:NeoLabHQ/context-engineering-kit"
+    },
+    {
+      "slug": "neolabhq-context-engineering-kit",
+      "displayName": "NeoLabHQ/context-engineering-kit",
+      "stars": 967,
+      "relation": "source_overlap",
+      "evidence": "repo:NeoLabHQ/context-engineering-kit"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-toronto",
+    "label": "Global Skill Market / Toronto / Community Skills",
+    "lat": 43.6532,
+    "lon": -79.3832,
+    "source": "virtual_market"
+  }
+}

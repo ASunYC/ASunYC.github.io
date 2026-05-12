@@ -1,0 +1,89 @@
+{
+  "id": "skill:voltagent-awesome-openclaw-skills",
+  "slug": "voltagent-awesome-openclaw-skills",
+  "name": "awesome-openclaw-skills",
+  "displayName": "voltagent/awesome-openclaw-skills",
+  "description": "Open source agent skills for OpenClaw.",
+  "stars": 48125,
+  "category": "How do I know if a skill is safe to use?",
+  "source": "heilcheng",
+  "url": "https://github.com/VoltAgent/awesome-openclaw-skills",
+  "githubRepo": "VoltAgent/awesome-openclaw-skills",
+  "readme": "# voltagent/awesome-openclaw-skills\n\nOpen source agent skills for OpenClaw.",
+  "readmeHtml": "<h1>voltagent/awesome-openclaw-skills</h1>\n<p>Open source agent skills for OpenClaw.</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:06.999Z",
+  "author": {
+    "login": "voltagent",
+    "name": "voltagent",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/voltagent",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "voltagent-awesome-design-md",
+      "displayName": "voltagent/awesome-design-md",
+      "stars": 72503,
+      "relation": "source_overlap",
+      "evidence": "author:voltagent"
+    },
+    {
+      "slug": "voltagent-awesome-agent-skills",
+      "displayName": "VoltAgent/awesome-agent-skills",
+      "stars": 20610,
+      "relation": "source_overlap",
+      "evidence": "author:voltagent"
+    },
+    {
+      "slug": "voltagent-create-voltagent",
+      "displayName": "voltagent/create-voltagent",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:voltagent"
+    },
+    {
+      "slug": "voltagent-voltagent-best-practices",
+      "displayName": "voltagent/voltagent-best-practices",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:voltagent"
+    },
+    {
+      "slug": "voltagent-voltagent-core-reference",
+      "displayName": "voltagent/voltagent-core-reference",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:voltagent"
+    },
+    {
+      "slug": "voltagent-voltagent-docs-bundle",
+      "displayName": "voltagent/voltagent-docs-bundle",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:voltagent"
+    },
+    {
+      "slug": "punkpeye-awesome-mcp-servers",
+      "displayName": "punkpeye/awesome-mcp-servers",
+      "stars": 86399,
+      "relation": "shared_tag",
+      "evidence": "How do I know if a skill is safe to use?"
+    },
+    {
+      "slug": "voltagent-awesome-design-md",
+      "displayName": "voltagent/awesome-design-md",
+      "stars": 72503,
+      "relation": "shared_tag",
+      "evidence": "How do I know if a skill is safe to use?"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-shanghai",
+    "label": "Global Skill Market / Shanghai / How do I know if a skill is safe to use?",
+    "lat": 31.2304,
+    "lon": 121.4737,
+    "source": "virtual_market"
+  }
+}

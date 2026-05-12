@@ -1,0 +1,89 @@
+{
+  "id": "skill:addyosmani-seo",
+  "slug": "addyosmani-seo",
+  "name": "seo",
+  "displayName": "addyosmani/seo",
+  "description": "Search engine optimization, crawlability, and structured data",
+  "stars": 0,
+  "category": "TypeScript Skills",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/addyosmani/skills/seo",
+  "githubRepo": "",
+  "readme": "# addyosmani/seo\n\nSearch engine optimization, crawlability, and structured data",
+  "readmeHtml": "<h1>addyosmani/seo</h1>\n<p>Search engine optimization, crawlability, and structured data</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.152Z",
+  "author": {
+    "login": "addyosmani",
+    "name": "addyosmani",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/addyosmani",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "addyosmani-agent-skills",
+      "displayName": "addyosmani/agent-skills",
+      "stars": 32222,
+      "relation": "source_overlap",
+      "evidence": "author:addyosmani"
+    },
+    {
+      "slug": "addyosmani-web-quality-audit",
+      "displayName": "addyosmani/web-quality-audit",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:addyosmani"
+    },
+    {
+      "slug": "addyosmani-performance",
+      "displayName": "addyosmani/performance",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:addyosmani"
+    },
+    {
+      "slug": "addyosmani-core-web-vitals",
+      "displayName": "addyosmani/core-web-vitals",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:addyosmani"
+    },
+    {
+      "slug": "addyosmani-accessibility",
+      "displayName": "addyosmani/accessibility",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:addyosmani"
+    },
+    {
+      "slug": "addyosmani-best-practices",
+      "displayName": "addyosmani/best-practices",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:addyosmani"
+    },
+    {
+      "slug": "deanpeters-acquisition-channel-advisor",
+      "displayName": "deanpeters/acquisition-channel-advisor",
+      "stars": 4159,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    },
+    {
+      "slug": "deanpeters-ai-shaped-readiness-advisor",
+      "displayName": "deanpeters/ai-shaped-readiness-advisor",
+      "stars": 4159,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-singapore",
+    "label": "Global Skill Market / Singapore / TypeScript Skills",
+    "lat": 1.3521,
+    "lon": 103.8198,
+    "source": "virtual_market"
+  }
+}

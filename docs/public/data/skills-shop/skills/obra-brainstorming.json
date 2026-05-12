@@ -12,7 +12,7 @@
   "readme": "# obra/brainstorming\n\nGenerate and explore ideas",
   "readmeHtml": "<h1>obra/brainstorming</h1>\n<p>Generate and explore ideas</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T09:49:18.097Z",
+  "updatedAt": "2026-05-12T12:38:06.993Z",
   "author": {
     "login": "obra",
     "name": "obra",
@@ -25,58 +25,65 @@
     {
       "slug": "obra-writing-plans",
       "displayName": "obra/writing-plans",
-      "stars": 181449,
+      "stars": 186953,
       "relation": "source_overlap",
       "evidence": "repo:obra/superpowers"
     },
     {
       "slug": "obra-executing-plans",
       "displayName": "obra/executing-plans",
-      "stars": 181449,
+      "stars": 186953,
       "relation": "source_overlap",
       "evidence": "repo:obra/superpowers"
     },
     {
       "slug": "obra-dispatching-parallel-agents",
       "displayName": "obra/dispatching-parallel-agents",
-      "stars": 181449,
+      "stars": 186953,
       "relation": "source_overlap",
       "evidence": "repo:obra/superpowers"
     },
     {
       "slug": "obra-sharing-skills",
       "displayName": "obra/sharing-skills",
-      "stars": 181449,
+      "stars": 186953,
       "relation": "source_overlap",
       "evidence": "repo:obra/superpowers"
     },
     {
       "slug": "obra-using-superpowers",
       "displayName": "obra/using-superpowers",
-      "stars": 181449,
+      "stars": 186953,
       "relation": "source_overlap",
       "evidence": "repo:obra/superpowers"
     },
     {
       "slug": "obra-test-driven-development",
       "displayName": "obra/test-driven-development",
-      "stars": 181449,
+      "stars": 186953,
       "relation": "source_overlap",
       "evidence": "repo:obra/superpowers"
     },
     {
       "slug": "obra-subagent-driven-development",
       "displayName": "obra/subagent-driven-development",
-      "stars": 181449,
+      "stars": 186953,
       "relation": "source_overlap",
       "evidence": "repo:obra/superpowers"
     },
     {
       "slug": "obra-systematic-debugging",
       "displayName": "obra/systematic-debugging",
-      "stars": 181449,
+      "stars": 186953,
       "relation": "source_overlap",
       "evidence": "repo:obra/superpowers"
     }
-  ]
+  ],
+  "mapLocation": {
+    "id": "virtual-london",
+    "label": "Global Skill Market / London / Community Skills",
+    "lat": 51.5072,
+    "lon": -0.1276,
+    "source": "virtual_market"
+  }
 }

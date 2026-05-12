@@ -1,0 +1,61 @@
+{
+  "id": "skill:neondatabase-neon-postgres",
+  "slug": "neondatabase-neon-postgres",
+  "name": "neon-postgres",
+  "displayName": "neondatabase/neon-postgres",
+  "description": "Best practices for Neon Serverless Postgres",
+  "stars": 0,
+  "category": "Skills by Neon",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/neondatabase/skills/neon-postgres",
+  "githubRepo": "",
+  "readme": "# neondatabase/neon-postgres\n\nBest practices for Neon Serverless Postgres",
+  "readmeHtml": "<h1>neondatabase/neon-postgres</h1>\n<p>Best practices for Neon Serverless Postgres</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.092Z",
+  "author": {
+    "login": "neondatabase",
+    "name": "neondatabase",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/neondatabase",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "neondatabase-claimable-postgres",
+      "displayName": "neondatabase/claimable-postgres",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:neondatabase"
+    },
+    {
+      "slug": "neondatabase-neon-postgres-egress-optimizer",
+      "displayName": "neondatabase/neon-postgres-egress-optimizer",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:neondatabase"
+    },
+    {
+      "slug": "neondatabase-claimable-postgres",
+      "displayName": "neondatabase/claimable-postgres",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Skills by Neon"
+    },
+    {
+      "slug": "neondatabase-neon-postgres-egress-optimizer",
+      "displayName": "neondatabase/neon-postgres-egress-optimizer",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Skills by Neon"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-tokyo",
+    "label": "Global Skill Market / Tokyo / Skills by Neon",
+    "lat": 35.6762,
+    "lon": 139.6503,
+    "source": "virtual_market"
+  }
+}

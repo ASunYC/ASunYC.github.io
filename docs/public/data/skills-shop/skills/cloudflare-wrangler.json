@@ -1,0 +1,89 @@
+{
+  "id": "skill:cloudflare-wrangler",
+  "slug": "cloudflare-wrangler",
+  "name": "wrangler",
+  "displayName": "cloudflare/wrangler",
+  "description": "Deploy and manage Workers, KV, R2, D1, Vectorize, Queues, Workflows",
+  "stars": 0,
+  "category": "Skills by Typefully",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/cloudflare/skills/wrangler",
+  "githubRepo": "",
+  "readme": "# cloudflare/wrangler\n\nDeploy and manage Workers, KV, R2, D1, Vectorize, Queues, Workflows",
+  "readmeHtml": "<h1>cloudflare/wrangler</h1>\n<p>Deploy and manage Workers, KV, R2, D1, Vectorize, Queues, Workflows</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.101Z",
+  "author": {
+    "login": "cloudflare",
+    "name": "cloudflare",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/cloudflare",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "cloudflare-agents-sdk",
+      "displayName": "cloudflare/agents-sdk",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:cloudflare"
+    },
+    {
+      "slug": "cloudflare-cloudflare",
+      "displayName": "cloudflare/cloudflare",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:cloudflare"
+    },
+    {
+      "slug": "cloudflare-cloudflare-email-service",
+      "displayName": "cloudflare/cloudflare-email-service",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:cloudflare"
+    },
+    {
+      "slug": "cloudflare-durable-objects",
+      "displayName": "cloudflare/durable-objects",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:cloudflare"
+    },
+    {
+      "slug": "cloudflare-sandbox-sdk",
+      "displayName": "cloudflare/sandbox-sdk",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:cloudflare"
+    },
+    {
+      "slug": "cloudflare-web-perf",
+      "displayName": "cloudflare/web-perf",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:cloudflare"
+    },
+    {
+      "slug": "cloudflare-workers-best-practices",
+      "displayName": "cloudflare/workers-best-practices",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:cloudflare"
+    },
+    {
+      "slug": "cloudflare-building-ai-agent-on-cloudflare",
+      "displayName": "cloudflare/building-ai-agent-on-cloudflare",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:cloudflare"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-paris",
+    "label": "Global Skill Market / Paris / Skills by Typefully",
+    "lat": 48.8566,
+    "lon": 2.3522,
+    "source": "virtual_market"
+  }
+}

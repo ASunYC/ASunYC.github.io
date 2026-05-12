@@ -1,0 +1,89 @@
+{
+  "id": "skill:d1dx-n8n-skill",
+  "slug": "d1dx-n8n-skill",
+  "name": "n8n-skill",
+  "displayName": "D1DX/n8n-skill",
+  "description": "n8n skill for AI agents — workflow building, node configuration, code nodes, expressions, validation, credentials, administration, and MCP tools.",
+  "stars": 3,
+  "category": "Discovered",
+  "source": "discover:topic",
+  "url": "https://github.com/D1DX/n8n-skill",
+  "githubRepo": "D1DX/n8n-skill",
+  "readme": "# D1DX/n8n-skill\n\nn8n skill for AI agents — workflow building, node configuration, code nodes, expressions, validation, credentials, administration, and MCP tools.",
+  "readmeHtml": "<h1>D1DX/n8n-skill</h1>\n<p>n8n skill for AI agents — workflow building, node configuration, code nodes, expressions, validation, credentials, administration, and MCP tools.</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.079Z",
+  "author": {
+    "login": "d1dx",
+    "name": "d1dx",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/d1dx",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "d1dx-make-skill",
+      "displayName": "D1DX/make-skill",
+      "stars": 3,
+      "relation": "source_overlap",
+      "evidence": "author:d1dx"
+    },
+    {
+      "slug": "d1dx-morning-skill",
+      "displayName": "D1DX/morning-skill",
+      "stars": 2,
+      "relation": "source_overlap",
+      "evidence": "author:d1dx"
+    },
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 73174,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "bytedance-deer-flow",
+      "displayName": "bytedance/deer-flow",
+      "stars": 65827,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "farion1231-cc-switch",
+      "displayName": "farion1231/cc-switch",
+      "stars": 62022,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-london",
+    "label": "Global Skill Market / London / Discovered",
+    "lat": 51.5072,
+    "lon": -0.1276,
+    "source": "virtual_market"
+  }
+}

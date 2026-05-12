@@ -1,0 +1,89 @@
+{
+  "id": "skill:coinbase-query-onchain-data",
+  "slug": "coinbase-query-onchain-data",
+  "name": "query-onchain-data",
+  "displayName": "coinbase/query-onchain-data",
+  "description": "Query decoded onchain data (events, tx, blocks) on Base",
+  "stars": 0,
+  "category": "TypeScript Skills",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/coinbase/skills/query-onchain-data",
+  "githubRepo": "",
+  "readme": "# coinbase/query-onchain-data\n\nQuery decoded onchain data (events, tx, blocks) on Base",
+  "readmeHtml": "<h1>coinbase/query-onchain-data</h1>\n<p>Query decoded onchain data (events, tx, blocks) on Base</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.132Z",
+  "author": {
+    "login": "coinbase",
+    "name": "coinbase",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/coinbase",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "coinbase-authenticate-wallet",
+      "displayName": "coinbase/authenticate-wallet",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:coinbase"
+    },
+    {
+      "slug": "coinbase-fund",
+      "displayName": "coinbase/fund",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:coinbase"
+    },
+    {
+      "slug": "coinbase-monetize-service",
+      "displayName": "coinbase/monetize-service",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:coinbase"
+    },
+    {
+      "slug": "coinbase-pay-for-service",
+      "displayName": "coinbase/pay-for-service",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:coinbase"
+    },
+    {
+      "slug": "coinbase-search-for-service",
+      "displayName": "coinbase/search-for-service",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:coinbase"
+    },
+    {
+      "slug": "coinbase-send-usdc",
+      "displayName": "coinbase/send-usdc",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:coinbase"
+    },
+    {
+      "slug": "coinbase-trade",
+      "displayName": "coinbase/trade",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:coinbase"
+    },
+    {
+      "slug": "coinbase-x402",
+      "displayName": "coinbase/x402",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:coinbase"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-london",
+    "label": "Global Skill Market / London / TypeScript Skills",
+    "lat": 51.5072,
+    "lon": -0.1276,
+    "source": "virtual_market"
+  }
+}

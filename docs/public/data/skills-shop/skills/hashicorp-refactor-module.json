@@ -1,0 +1,89 @@
+{
+  "id": "skill:hashicorp-refactor-module",
+  "slug": "hashicorp-refactor-module",
+  "name": "refactor-module",
+  "displayName": "hashicorp/refactor-module",
+  "description": "Transform monolithic Terraform configurations into reusable modules",
+  "stars": 0,
+  "category": "Skills by HashiCorp Team for Terraform",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/hashicorp/skills/refactor-module",
+  "githubRepo": "",
+  "readme": "# hashicorp/refactor-module\n\nTransform monolithic Terraform configurations into reusable modules",
+  "readmeHtml": "<h1>hashicorp/refactor-module</h1>\n<p>Transform monolithic Terraform configurations into reusable modules</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.091Z",
+  "author": {
+    "login": "hashicorp",
+    "name": "hashicorp",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/hashicorp",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "hashicorp-agent-skills",
+      "displayName": "hashicorp/agent-skills",
+      "stars": 604,
+      "relation": "source_overlap",
+      "evidence": "author:hashicorp"
+    },
+    {
+      "slug": "hashicorp-azure-verified-modules",
+      "displayName": "hashicorp/azure-verified-modules",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:hashicorp"
+    },
+    {
+      "slug": "hashicorp-new-terraform-provider",
+      "displayName": "hashicorp/new-terraform-provider",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:hashicorp"
+    },
+    {
+      "slug": "hashicorp-provider-resources",
+      "displayName": "hashicorp/provider-resources",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:hashicorp"
+    },
+    {
+      "slug": "hashicorp-provider-test-patterns",
+      "displayName": "hashicorp/provider-test-patterns",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:hashicorp"
+    },
+    {
+      "slug": "hashicorp-provider-actions",
+      "displayName": "hashicorp/provider-actions",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:hashicorp"
+    },
+    {
+      "slug": "hashicorp-run-acceptance-tests",
+      "displayName": "hashicorp/run-acceptance-tests",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:hashicorp"
+    },
+    {
+      "slug": "hashicorp-terraform-search-import",
+      "displayName": "hashicorp/terraform-search-import",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:hashicorp"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-shanghai",
+    "label": "Global Skill Market / Shanghai / Skills by HashiCorp Team for Terraform",
+    "lat": 31.2304,
+    "lon": 121.4737,
+    "source": "virtual_market"
+  }
+}

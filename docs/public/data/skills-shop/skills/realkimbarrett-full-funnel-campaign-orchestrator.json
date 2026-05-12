@@ -1,0 +1,89 @@
+{
+  "id": "skill:realkimbarrett-full-funnel-campaign-orchestrator",
+  "slug": "realkimbarrett-full-funnel-campaign-orchestrator",
+  "name": "full-funnel-campaign-orchestrator",
+  "displayName": "realkimbarrett/full-funnel-campaign-orchestrator",
+  "description": "Coordinate all skills to build a complete ads + funnel campaign end-to-end",
+  "stars": 0,
+  "category": "TypeScript Skills",
+  "source": "voltagent",
+  "url": "https://github.com/realkimbarrett/advertising-skills/tree/main/skills/orchestrators/full-funnel-campaign-orchestrator",
+  "githubRepo": "realkimbarrett/advertising-skills",
+  "readme": "# realkimbarrett/full-funnel-campaign-orchestrator\n\nCoordinate all skills to build a complete ads + funnel campaign end-to-end",
+  "readmeHtml": "<h1>realkimbarrett/full-funnel-campaign-orchestrator</h1>\n<p>Coordinate all skills to build a complete ads + funnel campaign end-to-end</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.129Z",
+  "author": {
+    "login": "realkimbarrett",
+    "name": "realkimbarrett",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/realkimbarrett",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "realkimbarrett-advertising-skills",
+      "displayName": "realkimbarrett/advertising-skills",
+      "stars": 608,
+      "relation": "source_overlap",
+      "evidence": "repo:realkimbarrett/advertising-skills"
+    },
+    {
+      "slug": "realkimbarrett-avatar-extraction",
+      "displayName": "realkimbarrett/avatar-extraction",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:realkimbarrett/advertising-skills"
+    },
+    {
+      "slug": "realkimbarrett-offer-extraction",
+      "displayName": "realkimbarrett/offer-extraction",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:realkimbarrett/advertising-skills"
+    },
+    {
+      "slug": "realkimbarrett-schwartz-awareness-mapper",
+      "displayName": "realkimbarrett/schwartz-awareness-mapper",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:realkimbarrett/advertising-skills"
+    },
+    {
+      "slug": "realkimbarrett-mechanism-builder",
+      "displayName": "realkimbarrett/mechanism-builder",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:realkimbarrett/advertising-skills"
+    },
+    {
+      "slug": "realkimbarrett-headline-matrix",
+      "displayName": "realkimbarrett/headline-matrix",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:realkimbarrett/advertising-skills"
+    },
+    {
+      "slug": "realkimbarrett-objection-crusher",
+      "displayName": "realkimbarrett/objection-crusher",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:realkimbarrett/advertising-skills"
+    },
+    {
+      "slug": "realkimbarrett-ad-angle-multiplier",
+      "displayName": "realkimbarrett/ad-angle-multiplier",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:realkimbarrett/advertising-skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-bengaluru",
+    "label": "Global Skill Market / Bengaluru / TypeScript Skills",
+    "lat": 12.9716,
+    "lon": 77.5946,
+    "source": "virtual_market"
+  }
+}

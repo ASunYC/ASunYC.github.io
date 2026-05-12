@@ -1,0 +1,89 @@
+{
+  "id": "skill:shadowpr0-beautiful-prose",
+  "slug": "shadowpr0-beautiful-prose",
+  "name": "beautiful_prose",
+  "displayName": "SHADOWPR0/beautiful_prose",
+  "description": "Hard-edged writing style contract for timeless, forceful English prose without AI tics",
+  "stars": 0,
+  "category": "Community Skills",
+  "source": "voltagent",
+  "url": "https://github.com/SHADOWPR0/beautiful_prose",
+  "githubRepo": "SHADOWPR0/beautiful_prose",
+  "readme": "# SHADOWPR0/beautiful_prose\n\nHard-edged writing style contract for timeless, forceful English prose without AI tics",
+  "readmeHtml": "<h1>SHADOWPR0/beautiful_prose</h1>\n<p>Hard-edged writing style contract for timeless, forceful English prose without AI tics</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.153Z",
+  "author": {
+    "login": "shadowpr0",
+    "name": "shadowpr0",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/shadowpr0",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "shadowpr0-security-bluebook-builder",
+      "displayName": "SHADOWPR0/security-bluebook-builder",
+      "stars": 5,
+      "relation": "source_overlap",
+      "evidence": "author:shadowpr0"
+    },
+    {
+      "slug": "obra-defense-in-depth",
+      "displayName": "obra/defense-in-depth",
+      "stars": 186953,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
+      "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "stars": 77115,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mvanhorn-last30days-skill",
+      "displayName": "mvanhorn/last30days-skill",
+      "stars": 25573,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "k-dense-ai-claude-scientific-skills",
+      "displayName": "K-Dense-AI/claude-scientific-skills",
+      "stars": 20299,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "muratcankoylan-context-fundamentals",
+      "displayName": "muratcankoylan/context-fundamentals",
+      "stars": 15494,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "muratcankoylan-context-degradation",
+      "displayName": "muratcankoylan/context-degradation",
+      "stars": 15494,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "muratcankoylan-context-compression",
+      "displayName": "muratcankoylan/context-compression",
+      "stars": 15494,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-san-francisco",
+    "label": "Global Skill Market / San Francisco / Community Skills",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "virtual_market"
+  }
+}

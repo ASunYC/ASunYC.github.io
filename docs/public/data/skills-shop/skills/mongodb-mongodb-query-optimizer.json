@@ -1,0 +1,89 @@
+{
+  "id": "skill:mongodb-mongodb-query-optimizer",
+  "slug": "mongodb-mongodb-query-optimizer",
+  "name": "mongodb-query-optimizer",
+  "displayName": "mongodb/mongodb-query-optimizer",
+  "description": "Analyze and optimize query performance using Atlas Performance Advisor",
+  "stars": 0,
+  "category": "TypeScript Skills",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/mongodb/skills/mongodb-query-optimizer",
+  "githubRepo": "",
+  "readme": "# mongodb/mongodb-query-optimizer\n\nAnalyze and optimize query performance using Atlas Performance Advisor",
+  "readmeHtml": "<h1>mongodb/mongodb-query-optimizer</h1>\n<p>Analyze and optimize query performance using Atlas Performance Advisor</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.152Z",
+  "author": {
+    "login": "mongodb",
+    "name": "mongodb",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/mongodb",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "mongodb-mongodb-mcp-setup",
+      "displayName": "mongodb/mongodb-mcp-setup",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:mongodb"
+    },
+    {
+      "slug": "mongodb-mongodb-connection",
+      "displayName": "mongodb/mongodb-connection",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:mongodb"
+    },
+    {
+      "slug": "mongodb-mongodb-schema-design",
+      "displayName": "mongodb/mongodb-schema-design",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:mongodb"
+    },
+    {
+      "slug": "mongodb-atlas-stream-processing",
+      "displayName": "mongodb/atlas-stream-processing",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:mongodb"
+    },
+    {
+      "slug": "mongodb-mongodb-natural-language-querying",
+      "displayName": "mongodb/mongodb-natural-language-querying",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:mongodb"
+    },
+    {
+      "slug": "mongodb-mongodb-search-and-ai",
+      "displayName": "mongodb/mongodb-search-and-ai",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:mongodb"
+    },
+    {
+      "slug": "deanpeters-acquisition-channel-advisor",
+      "displayName": "deanpeters/acquisition-channel-advisor",
+      "stars": 4159,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    },
+    {
+      "slug": "deanpeters-ai-shaped-readiness-advisor",
+      "displayName": "deanpeters/ai-shaped-readiness-advisor",
+      "stars": 4159,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-singapore",
+    "label": "Global Skill Market / Singapore / TypeScript Skills",
+    "lat": 1.3521,
+    "lon": 103.8198,
+    "source": "virtual_market"
+  }
+}

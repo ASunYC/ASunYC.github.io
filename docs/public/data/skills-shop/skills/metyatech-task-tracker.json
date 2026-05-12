@@ -1,0 +1,89 @@
+{
+  "id": "skill:metyatech-task-tracker",
+  "slug": "metyatech-task-tracker",
+  "name": "task-tracker",
+  "displayName": "metyatech/task-tracker",
+  "description": "Persistent task lifecycle tracker for AI agent sessions",
+  "stars": 0,
+  "category": "Discovered",
+  "source": "discover:topic",
+  "url": "https://github.com/metyatech/task-tracker",
+  "githubRepo": "metyatech/task-tracker",
+  "readme": "# metyatech/task-tracker\n\nPersistent task lifecycle tracker for AI agent sessions",
+  "readmeHtml": "<h1>metyatech/task-tracker</h1>\n<p>Persistent task lifecycle tracker for AI agent sessions</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.158Z",
+  "author": {
+    "login": "metyatech",
+    "name": "metyatech",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/metyatech",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "metyatech-markdown-to-qti",
+      "displayName": "metyatech/markdown-to-qti",
+      "stars": 2,
+      "relation": "source_overlap",
+      "evidence": "author:metyatech"
+    },
+    {
+      "slug": "metyatech-workspace-template-generator",
+      "displayName": "metyatech/workspace-template-generator",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:metyatech"
+    },
+    {
+      "slug": "metyatech-managed-worktree-system",
+      "displayName": "metyatech/managed-worktree-system",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:metyatech"
+    },
+    {
+      "slug": "metyatech-ai-quota",
+      "displayName": "metyatech/ai-quota",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:metyatech"
+    },
+    {
+      "slug": "metyatech-agent-runner",
+      "displayName": "metyatech/agent-runner",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:metyatech"
+    },
+    {
+      "slug": "metyatech-roster-to-qti-results",
+      "displayName": "metyatech/roster-to-qti-results",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:metyatech"
+    },
+    {
+      "slug": "metyatech-agents-mcp",
+      "displayName": "metyatech/agents-mcp",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:metyatech"
+    },
+    {
+      "slug": "metyatech-robotframework-unity-editor",
+      "displayName": "metyatech/robotframework-unity-editor",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:metyatech"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-singapore",
+    "label": "Global Skill Market / Singapore / Discovered",
+    "lat": 1.3521,
+    "lon": 103.8198,
+    "source": "virtual_market"
+  }
+}

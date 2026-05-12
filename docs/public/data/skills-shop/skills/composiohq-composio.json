@@ -1,0 +1,61 @@
+{
+  "id": "skill:composiohq-composio",
+  "slug": "composiohq-composio",
+  "name": "composio",
+  "displayName": "composiohq/composio",
+  "description": "Connect AI agents to 1000+ external apps with managed authentication",
+  "stars": 0,
+  "category": "Skills by Composio Team",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/composiohq/skills/composio",
+  "githubRepo": "",
+  "readme": "# composiohq/composio\n\nConnect AI agents to 1000+ external apps with managed authentication",
+  "readmeHtml": "<h1>composiohq/composio</h1>\n<p>Connect AI agents to 1000+ external apps with managed authentication</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.089Z",
+  "author": {
+    "login": "composiohq",
+    "name": "composiohq",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/composiohq",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "composiohq-awesome-claude-skills",
+      "displayName": "ComposioHQ/awesome-claude-skills",
+      "stars": 58467,
+      "relation": "source_overlap",
+      "evidence": "author:composiohq"
+    },
+    {
+      "slug": "composiohq-awesome-codex-skills",
+      "displayName": "ComposioHQ/awesome-codex-skills",
+      "stars": 7337,
+      "relation": "source_overlap",
+      "evidence": "author:composiohq"
+    },
+    {
+      "slug": "composiohq-agent-orchestrator",
+      "displayName": "ComposioHQ/agent-orchestrator",
+      "stars": 6864,
+      "relation": "source_overlap",
+      "evidence": "author:composiohq"
+    },
+    {
+      "slug": "composiohq-open-claude-cowork",
+      "displayName": "ComposioHQ/open-claude-cowork",
+      "stars": 4090,
+      "relation": "source_overlap",
+      "evidence": "author:composiohq"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-san-francisco",
+    "label": "Global Skill Market / San Francisco / Skills by Composio Team",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "virtual_market"
+  }
+}

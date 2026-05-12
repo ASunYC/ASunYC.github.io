@@ -1,0 +1,89 @@
+{
+  "id": "skill:redis-redis-development",
+  "slug": "redis-redis-development",
+  "name": "redis-development",
+  "displayName": "redis/redis-development",
+  "description": "Redis development best practices — data structures, query engine, vector search, caching, and performance optimization.",
+  "stars": 0,
+  "category": "TypeScript Skills",
+  "source": "voltagent",
+  "url": "https://github.com/redis/agent-skills/tree/main/skills/redis-development",
+  "githubRepo": "redis/agent-skills",
+  "readme": "# redis/redis-development\n\nRedis development best practices — data structures, query engine, vector search, caching, and performance optimization.",
+  "readmeHtml": "<h1>redis/redis-development</h1>\n<p>Redis development best practices — data structures, query engine, vector search, caching, and performance optimization.</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.152Z",
+  "author": {
+    "login": "redis",
+    "name": "redis",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/redis",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "deanpeters-acquisition-channel-advisor",
+      "displayName": "deanpeters/acquisition-channel-advisor",
+      "stars": 4159,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    },
+    {
+      "slug": "deanpeters-ai-shaped-readiness-advisor",
+      "displayName": "deanpeters/ai-shaped-readiness-advisor",
+      "stars": 4159,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    },
+    {
+      "slug": "deanpeters-altitude-horizon-framework",
+      "displayName": "deanpeters/altitude-horizon-framework",
+      "stars": 4159,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    },
+    {
+      "slug": "deanpeters-business-health-diagnostic",
+      "displayName": "deanpeters/business-health-diagnostic",
+      "stars": 4159,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    },
+    {
+      "slug": "deanpeters-company-research",
+      "displayName": "deanpeters/company-research",
+      "stars": 4159,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    },
+    {
+      "slug": "deanpeters-customer-journey-map",
+      "displayName": "deanpeters/customer-journey-map",
+      "stars": 4159,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    },
+    {
+      "slug": "deanpeters-eol-message",
+      "displayName": "deanpeters/eol-message",
+      "stars": 4159,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    },
+    {
+      "slug": "deanpeters-epic-hypothesis",
+      "displayName": "deanpeters/epic-hypothesis",
+      "stars": 4159,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-berlin",
+    "label": "Global Skill Market / Berlin / TypeScript Skills",
+    "lat": 52.52,
+    "lon": 13.405,
+    "source": "virtual_market"
+  }
+}

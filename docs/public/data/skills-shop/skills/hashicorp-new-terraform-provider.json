@@ -1,0 +1,89 @@
+{
+  "id": "skill:hashicorp-new-terraform-provider",
+  "slug": "hashicorp-new-terraform-provider",
+  "name": "new-terraform-provider",
+  "displayName": "hashicorp/new-terraform-provider",
+  "description": "Scaffold a new Terraform provider project using the Plugin Framework",
+  "stars": 0,
+  "category": "Skills by HashiCorp Team for Terraform",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/hashicorp/skills/new-terraform-provider",
+  "githubRepo": "",
+  "readme": "# hashicorp/new-terraform-provider\n\nScaffold a new Terraform provider project using the Plugin Framework",
+  "readmeHtml": "<h1>hashicorp/new-terraform-provider</h1>\n<p>Scaffold a new Terraform provider project using the Plugin Framework</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.091Z",
+  "author": {
+    "login": "hashicorp",
+    "name": "hashicorp",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/hashicorp",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "hashicorp-agent-skills",
+      "displayName": "hashicorp/agent-skills",
+      "stars": 604,
+      "relation": "source_overlap",
+      "evidence": "author:hashicorp"
+    },
+    {
+      "slug": "hashicorp-azure-verified-modules",
+      "displayName": "hashicorp/azure-verified-modules",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:hashicorp"
+    },
+    {
+      "slug": "hashicorp-provider-resources",
+      "displayName": "hashicorp/provider-resources",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:hashicorp"
+    },
+    {
+      "slug": "hashicorp-provider-test-patterns",
+      "displayName": "hashicorp/provider-test-patterns",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:hashicorp"
+    },
+    {
+      "slug": "hashicorp-provider-actions",
+      "displayName": "hashicorp/provider-actions",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:hashicorp"
+    },
+    {
+      "slug": "hashicorp-run-acceptance-tests",
+      "displayName": "hashicorp/run-acceptance-tests",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:hashicorp"
+    },
+    {
+      "slug": "hashicorp-refactor-module",
+      "displayName": "hashicorp/refactor-module",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:hashicorp"
+    },
+    {
+      "slug": "hashicorp-terraform-search-import",
+      "displayName": "hashicorp/terraform-search-import",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:hashicorp"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-berlin",
+    "label": "Global Skill Market / Berlin / Skills by HashiCorp Team for Terraform",
+    "lat": 52.52,
+    "lon": 13.405,
+    "source": "virtual_market"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "skill:pawelmbrzoska-mtg-opponent-simulator",
+  "slug": "pawelmbrzoska-mtg-opponent-simulator",
+  "name": "mtg_opponent-simulator",
+  "displayName": "PawelMBrzoska/MTG_opponent-simulator",
+  "description": "Simple app to goldfish against. 50% real mtg, 50% hydra/xenagos and other single player mtg challanges.",
+  "stars": 0,
+  "category": "Discovered",
+  "source": "discover:topic",
+  "url": "https://github.com/PawelMBrzoska/MTG_opponent-simulator",
+  "githubRepo": "PawelMBrzoska/MTG_opponent-simulator",
+  "readme": "# PawelMBrzoska/MTG_opponent-simulator\n\nSimple app to goldfish against. 50% real mtg, 50% hydra/xenagos and other single player mtg challanges.",
+  "readmeHtml": "<h1>PawelMBrzoska/MTG_opponent-simulator</h1>\n<p>Simple app to goldfish against. 50% real mtg, 50% hydra/xenagos and other single player mtg challanges.</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.157Z",
+  "author": {
+    "login": "pawelmbrzoska",
+    "name": "pawelmbrzoska",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/pawelmbrzoska",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 73174,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "bytedance-deer-flow",
+      "displayName": "bytedance/deer-flow",
+      "stars": 65827,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "farion1231-cc-switch",
+      "displayName": "farion1231/cc-switch",
+      "stars": 62022,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "gsd-build-get-shit-done",
+      "displayName": "gsd-build/get-shit-done",
+      "stars": 60616,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "shareai-lab-learn-claude-code",
+      "displayName": "shareAI-lab/learn-claude-code",
+      "stars": 58737,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-singapore",
+    "label": "Global Skill Market / Singapore / Discovered",
+    "lat": 1.3521,
+    "lon": 103.8198,
+    "source": "virtual_market"
+  }
+}

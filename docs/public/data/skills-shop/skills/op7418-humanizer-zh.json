@@ -1,0 +1,89 @@
+{
+  "id": "skill:op7418-humanizer-zh",
+  "slug": "op7418-humanizer-zh",
+  "name": "humanizer-zh",
+  "displayName": "op7418/Humanizer-zh",
+  "description": "Humanizer 的汉化版本，Claude Code Skills，旨在消除文本中 AI 生成的痕迹。",
+  "stars": 7055,
+  "category": "Discovered",
+  "source": "discover:keyword",
+  "url": "https://github.com/op7418/Humanizer-zh",
+  "githubRepo": "op7418/Humanizer-zh",
+  "readme": "# op7418/Humanizer-zh\n\nHumanizer 的汉化版本，Claude Code Skills，旨在消除文本中 AI 生成的痕迹。",
+  "readmeHtml": "<h1>op7418/Humanizer-zh</h1>\n<p>Humanizer 的汉化版本，Claude Code Skills，旨在消除文本中 AI 生成的痕迹。</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.013Z",
+  "author": {
+    "login": "op7418",
+    "name": "op7418",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/op7418",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "op7418-codepilot",
+      "displayName": "op7418/CodePilot",
+      "stars": 5647,
+      "relation": "source_overlap",
+      "evidence": "author:op7418"
+    },
+    {
+      "slug": "op7418-guizang-ppt-skill",
+      "displayName": "op7418/guizang-ppt-skill",
+      "stars": 5444,
+      "relation": "source_overlap",
+      "evidence": "author:op7418"
+    },
+    {
+      "slug": "op7418-nanobanana-ppt-skills",
+      "displayName": "op7418/NanoBanana-PPT-Skills",
+      "stars": 2613,
+      "relation": "source_overlap",
+      "evidence": "author:op7418"
+    },
+    {
+      "slug": "op7418-claude-to-im-skill",
+      "displayName": "op7418/Claude-to-IM-skill",
+      "stars": 2447,
+      "relation": "source_overlap",
+      "evidence": "author:op7418"
+    },
+    {
+      "slug": "op7418-youtube-clipper-skill",
+      "displayName": "op7418/Youtube-clipper-skill",
+      "stars": 1828,
+      "relation": "source_overlap",
+      "evidence": "author:op7418"
+    },
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-san-francisco",
+    "label": "Global Skill Market / San Francisco / Discovered",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "virtual_market"
+  }
+}

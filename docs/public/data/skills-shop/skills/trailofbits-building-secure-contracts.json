@@ -1,0 +1,89 @@
+{
+  "id": "skill:trailofbits-building-secure-contracts",
+  "slug": "trailofbits-building-secure-contracts",
+  "name": "building-secure-contracts",
+  "displayName": "trailofbits/building-secure-contracts",
+  "description": "Smart contract security toolkit with vulnerability scanners for 6 blockchains",
+  "stars": 0,
+  "category": "Skills by Typefully",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/trailofbits/skills/building-secure-contracts",
+  "githubRepo": "",
+  "readme": "# trailofbits/building-secure-contracts\n\nSmart contract security toolkit with vulnerability scanners for 6 blockchains",
+  "readmeHtml": "<h1>trailofbits/building-secure-contracts</h1>\n<p>Smart contract security toolkit with vulnerability scanners for 6 blockchains</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.103Z",
+  "author": {
+    "login": "trailofbits",
+    "name": "trailofbits",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/trailofbits",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "trailofbits-skills",
+      "displayName": "trailofbits/skills",
+      "stars": 5043,
+      "relation": "source_overlap",
+      "evidence": "author:trailofbits"
+    },
+    {
+      "slug": "trailofbits-ask-questions-if-underspecified",
+      "displayName": "trailofbits/ask-questions-if-underspecified",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:trailofbits"
+    },
+    {
+      "slug": "trailofbits-audit-context-building",
+      "displayName": "trailofbits/audit-context-building",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:trailofbits"
+    },
+    {
+      "slug": "trailofbits-burpsuite-project-parser",
+      "displayName": "trailofbits/burpsuite-project-parser",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:trailofbits"
+    },
+    {
+      "slug": "trailofbits-claude-in-chrome-troubleshooting",
+      "displayName": "trailofbits/claude-in-chrome-troubleshooting",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:trailofbits"
+    },
+    {
+      "slug": "trailofbits-constant-time-analysis",
+      "displayName": "trailofbits/constant-time-analysis",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:trailofbits"
+    },
+    {
+      "slug": "trailofbits-culture-index",
+      "displayName": "trailofbits/culture-index",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:trailofbits"
+    },
+    {
+      "slug": "trailofbits-differential-review",
+      "displayName": "trailofbits/differential-review",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:trailofbits"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-singapore",
+    "label": "Global Skill Market / Singapore / Skills by Typefully",
+    "lat": 1.3521,
+    "lon": 103.8198,
+    "source": "virtual_market"
+  }
+}

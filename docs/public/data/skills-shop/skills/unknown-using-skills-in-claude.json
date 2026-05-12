@@ -1,0 +1,82 @@
+{
+  "id": "skill:unknown-using-skills-in-claude",
+  "slug": "unknown-using-skills-in-claude",
+  "name": "using-skills-in-claude",
+  "displayName": "unknown/using-skills-in-claude",
+  "description": "Official quick start guide",
+  "stars": 0,
+  "category": "Claude and Anthropic",
+  "source": "heilcheng",
+  "url": "https://support.claude.com/en/articles/12512180-using-skills-in-claude",
+  "githubRepo": "",
+  "readme": "# unknown/using-skills-in-claude\n\nOfficial quick start guide",
+  "readmeHtml": "<h1>unknown/using-skills-in-claude</h1>\n<p>Official quick start guide</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.156Z",
+  "author": {
+    "login": "unknown",
+    "name": "unknown",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/unknown",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "unknown-how-to-create-custom-skills",
+      "displayName": "unknown/how-to-create-custom-skills",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:unknown"
+    },
+    {
+      "slug": "unknown-claude-code-skills-documentation",
+      "displayName": "unknown/claude-code-skills-documentation",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:unknown"
+    },
+    {
+      "slug": "unknown-vs-code-agent-skills",
+      "displayName": "unknown/vs-code-agent-skills",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:unknown"
+    },
+    {
+      "slug": "unknown-mcp-official-documentation",
+      "displayName": "unknown/mcp-official-documentation",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:unknown"
+    },
+    {
+      "slug": "unknown-build-your-first-mcp-server",
+      "displayName": "unknown/build-your-first-mcp-server",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:unknown"
+    },
+    {
+      "slug": "unknown-how-to-create-custom-skills",
+      "displayName": "unknown/how-to-create-custom-skills",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Claude and Anthropic"
+    },
+    {
+      "slug": "unknown-claude-code-skills-documentation",
+      "displayName": "unknown/claude-code-skills-documentation",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Claude and Anthropic"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-sydney",
+    "label": "Global Skill Market / Sydney / Claude and Anthropic",
+    "lat": -33.8688,
+    "lon": 151.2093,
+    "source": "virtual_market"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "skill:tencent-workrally",
+  "slug": "tencent-workrally",
+  "name": "workrally",
+  "displayName": "Tencent/workrally",
+  "description": "面向 AI Agent 的 AIGC 漫剧视频创作全流程工具集。",
+  "stars": 23,
+  "category": "Discovered",
+  "source": "discover:topic",
+  "url": "https://github.com/Tencent/workrally",
+  "githubRepo": "Tencent/workrally",
+  "readme": "# Tencent/workrally\n\n面向 AI Agent 的 AIGC 漫剧视频创作全流程工具集。",
+  "readmeHtml": "<h1>Tencent/workrally</h1>\n<p>面向 AI Agent 的 AIGC 漫剧视频创作全流程工具集。</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.062Z",
+  "author": {
+    "login": "tencent",
+    "name": "tencent",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/tencent",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "tencent-ai-infra-guard",
+      "displayName": "Tencent/AI-Infra-Guard",
+      "stars": 3642,
+      "relation": "source_overlap",
+      "evidence": "author:tencent"
+    },
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 73174,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "bytedance-deer-flow",
+      "displayName": "bytedance/deer-flow",
+      "stars": 65827,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "farion1231-cc-switch",
+      "displayName": "farion1231/cc-switch",
+      "stars": 62022,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "gsd-build-get-shit-done",
+      "displayName": "gsd-build/get-shit-done",
+      "stars": 60616,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-london",
+    "label": "Global Skill Market / London / Discovered",
+    "lat": 51.5072,
+    "lon": -0.1276,
+    "source": "virtual_market"
+  }
+}

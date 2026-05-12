@@ -1,0 +1,89 @@
+{
+  "id": "skill:phuryn-sql-queries",
+  "slug": "phuryn-sql-queries",
+  "name": "sql-queries",
+  "displayName": "phuryn/sql-queries",
+  "description": "Generate SQL queries from natural language across major dialects",
+  "stars": 0,
+  "category": "TypeScript Skills",
+  "source": "voltagent",
+  "url": "https://github.com/phuryn/pm-skills/tree/main/pm-data-analytics/skills/sql-queries",
+  "githubRepo": "phuryn/pm-skills",
+  "readme": "# phuryn/sql-queries\n\nGenerate SQL queries from natural language across major dialects",
+  "readmeHtml": "<h1>phuryn/sql-queries</h1>\n<p>Generate SQL queries from natural language across major dialects</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.139Z",
+  "author": {
+    "login": "phuryn",
+    "name": "phuryn",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/phuryn",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "phuryn-ab-test-analysis",
+      "displayName": "phuryn/ab-test-analysis",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:phuryn/pm-skills"
+    },
+    {
+      "slug": "phuryn-cohort-analysis",
+      "displayName": "phuryn/cohort-analysis",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:phuryn/pm-skills"
+    },
+    {
+      "slug": "phuryn-brainstorm-okrs",
+      "displayName": "phuryn/brainstorm-okrs",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:phuryn/pm-skills"
+    },
+    {
+      "slug": "phuryn-create-prd",
+      "displayName": "phuryn/create-prd",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:phuryn/pm-skills"
+    },
+    {
+      "slug": "phuryn-dummy-dataset",
+      "displayName": "phuryn/dummy-dataset",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:phuryn/pm-skills"
+    },
+    {
+      "slug": "phuryn-job-stories",
+      "displayName": "phuryn/job-stories",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:phuryn/pm-skills"
+    },
+    {
+      "slug": "phuryn-outcome-roadmap",
+      "displayName": "phuryn/outcome-roadmap",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:phuryn/pm-skills"
+    },
+    {
+      "slug": "phuryn-pre-mortem",
+      "displayName": "phuryn/pre-mortem",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:phuryn/pm-skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-berlin",
+    "label": "Global Skill Market / Berlin / TypeScript Skills",
+    "lat": 52.52,
+    "lon": 13.405,
+    "source": "virtual_market"
+  }
+}

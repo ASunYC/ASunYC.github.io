@@ -1,0 +1,89 @@
+{
+  "id": "skill:addyosmani-best-practices",
+  "slug": "addyosmani-best-practices",
+  "name": "best-practices",
+  "displayName": "addyosmani/best-practices",
+  "description": "Security, modern web APIs, and code quality patterns",
+  "stars": 0,
+  "category": "TypeScript Skills",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/addyosmani/skills/best-practices",
+  "githubRepo": "",
+  "readme": "# addyosmani/best-practices\n\nSecurity, modern web APIs, and code quality patterns",
+  "readmeHtml": "<h1>addyosmani/best-practices</h1>\n<p>Security, modern web APIs, and code quality patterns</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.152Z",
+  "author": {
+    "login": "addyosmani",
+    "name": "addyosmani",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/addyosmani",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "addyosmani-agent-skills",
+      "displayName": "addyosmani/agent-skills",
+      "stars": 32222,
+      "relation": "source_overlap",
+      "evidence": "author:addyosmani"
+    },
+    {
+      "slug": "addyosmani-web-quality-audit",
+      "displayName": "addyosmani/web-quality-audit",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:addyosmani"
+    },
+    {
+      "slug": "addyosmani-performance",
+      "displayName": "addyosmani/performance",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:addyosmani"
+    },
+    {
+      "slug": "addyosmani-core-web-vitals",
+      "displayName": "addyosmani/core-web-vitals",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:addyosmani"
+    },
+    {
+      "slug": "addyosmani-accessibility",
+      "displayName": "addyosmani/accessibility",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:addyosmani"
+    },
+    {
+      "slug": "addyosmani-seo",
+      "displayName": "addyosmani/seo",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:addyosmani"
+    },
+    {
+      "slug": "deanpeters-acquisition-channel-advisor",
+      "displayName": "deanpeters/acquisition-channel-advisor",
+      "stars": 4159,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    },
+    {
+      "slug": "deanpeters-ai-shaped-readiness-advisor",
+      "displayName": "deanpeters/ai-shaped-readiness-advisor",
+      "stars": 4159,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-new-york",
+    "label": "Global Skill Market / New York / TypeScript Skills",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "source": "virtual_market"
+  }
+}

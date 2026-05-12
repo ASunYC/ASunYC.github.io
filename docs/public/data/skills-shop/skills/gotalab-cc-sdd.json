@@ -1,0 +1,89 @@
+{
+  "id": "skill:gotalab-cc-sdd",
+  "slug": "gotalab-cc-sdd",
+  "name": "cc-sdd",
+  "displayName": "gotalab/cc-sdd",
+  "description": "Turn approved specs into long-running autonomous implementation. A minimal, adaptable SDD harness with Agent Skills for Claude Code, Codex, Cursor, Copilot, Windsurf, OpenCode, Gemini CLI, and Antigravity.",
+  "stars": 3279,
+  "category": "Discovered",
+  "source": "discover:keyword",
+  "url": "https://github.com/gotalab/cc-sdd",
+  "githubRepo": "gotalab/cc-sdd",
+  "readme": "# gotalab/cc-sdd\n\nTurn approved specs into long-running autonomous implementation. A minimal, adaptable SDD harness with Agent Skills for Claude Code, Codex, Cursor, Copilot, Windsurf, OpenCode, Gemini CLI, and Antigravity.",
+  "readmeHtml": "<h1>gotalab/cc-sdd</h1>\n<p>Turn approved specs into long-running autonomous implementation. A minimal, adaptable SDD harness with Agent Skills for Claude Code, Codex, Cursor, Copilot, Windsurf, OpenCode, Gemini CLI, and Antigravity.</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.020Z",
+  "author": {
+    "login": "gotalab",
+    "name": "gotalab",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/gotalab",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "gotalab-skillport",
+      "displayName": "gotalab/skillport",
+      "stars": 385,
+      "relation": "source_overlap",
+      "evidence": "author:gotalab"
+    },
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 73174,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "bytedance-deer-flow",
+      "displayName": "bytedance/deer-flow",
+      "stars": 65827,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "farion1231-cc-switch",
+      "displayName": "farion1231/cc-switch",
+      "stars": 62022,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "gsd-build-get-shit-done",
+      "displayName": "gsd-build/get-shit-done",
+      "stars": 60616,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-paris",
+    "label": "Global Skill Market / Paris / Discovered",
+    "lat": 48.8566,
+    "lon": 2.3522,
+    "source": "virtual_market"
+  }
+}

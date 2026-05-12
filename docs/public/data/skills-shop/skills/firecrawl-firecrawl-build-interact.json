@@ -1,0 +1,89 @@
+{
+  "id": "skill:firecrawl-firecrawl-build-interact",
+  "slug": "firecrawl-firecrawl-build-interact",
+  "name": "firecrawl-build-interact",
+  "displayName": "firecrawl/firecrawl-build-interact",
+  "description": "Multi-step Firecrawl browser flows: clicks, form fills, pagination, and auth-aware navigation",
+  "stars": 0,
+  "category": "Skills by Firecrawl Team",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/firecrawl/skills/firecrawl-build-interact",
+  "githubRepo": "",
+  "readme": "# firecrawl/firecrawl-build-interact\n\nMulti-step Firecrawl browser flows: clicks, form fills, pagination, and auth-aware navigation",
+  "readmeHtml": "<h1>firecrawl/firecrawl-build-interact</h1>\n<p>Multi-step Firecrawl browser flows: clicks, form fills, pagination, and auth-aware navigation</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.091Z",
+  "author": {
+    "login": "firecrawl",
+    "name": "firecrawl",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/firecrawl",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "firecrawl-cli",
+      "displayName": "firecrawl/cli",
+      "stars": 369,
+      "relation": "source_overlap",
+      "evidence": "author:firecrawl"
+    },
+    {
+      "slug": "firecrawl-firecrawl-build",
+      "displayName": "firecrawl/firecrawl-build",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:firecrawl"
+    },
+    {
+      "slug": "firecrawl-firecrawl-build-onboarding",
+      "displayName": "firecrawl/firecrawl-build-onboarding",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:firecrawl"
+    },
+    {
+      "slug": "firecrawl-firecrawl-build-scrape",
+      "displayName": "firecrawl/firecrawl-build-scrape",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:firecrawl"
+    },
+    {
+      "slug": "firecrawl-firecrawl-build-search",
+      "displayName": "firecrawl/firecrawl-build-search",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:firecrawl"
+    },
+    {
+      "slug": "firecrawl-firecrawl-cli",
+      "displayName": "firecrawl/firecrawl-cli",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:firecrawl"
+    },
+    {
+      "slug": "firecrawl-firecrawl-agent",
+      "displayName": "firecrawl/firecrawl-agent",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:firecrawl"
+    },
+    {
+      "slug": "firecrawl-firecrawl-browser",
+      "displayName": "firecrawl/firecrawl-browser",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:firecrawl"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-toronto",
+    "label": "Global Skill Market / Toronto / Skills by Firecrawl Team",
+    "lat": 43.6532,
+    "lon": -79.3832,
+    "source": "virtual_market"
+  }
+}

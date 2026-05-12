@@ -1,0 +1,89 @@
+{
+  "id": "skill:ibelick-ui-skills",
+  "slug": "ibelick-ui-skills",
+  "name": "ui-skills",
+  "displayName": "ibelick/ui-skills",
+  "description": "Opinionated, evolving constraints to guide agents when building interfaces",
+  "stars": 1654,
+  "category": "Community Skills",
+  "source": "voltagent",
+  "url": "https://github.com/ibelick/ui-skills",
+  "githubRepo": "ibelick/ui-skills",
+  "readme": "# ibelick/ui-skills\n\nOpinionated, evolving constraints to guide agents when building interfaces",
+  "readmeHtml": "<h1>ibelick/ui-skills</h1>\n<p>Opinionated, evolving constraints to guide agents when building interfaces</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.029Z",
+  "author": {
+    "login": "ibelick",
+    "name": "ibelick",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/ibelick",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "obra-defense-in-depth",
+      "displayName": "obra/defense-in-depth",
+      "stars": 186953,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
+      "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "stars": 77115,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mvanhorn-last30days-skill",
+      "displayName": "mvanhorn/last30days-skill",
+      "stars": 25573,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "k-dense-ai-claude-scientific-skills",
+      "displayName": "K-Dense-AI/claude-scientific-skills",
+      "stars": 20299,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "muratcankoylan-context-fundamentals",
+      "displayName": "muratcankoylan/context-fundamentals",
+      "stars": 15494,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "muratcankoylan-context-degradation",
+      "displayName": "muratcankoylan/context-degradation",
+      "stars": 15494,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "muratcankoylan-context-compression",
+      "displayName": "muratcankoylan/context-compression",
+      "stars": 15494,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "muratcankoylan-context-optimization",
+      "displayName": "muratcankoylan/context-optimization",
+      "stars": 15494,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-tokyo",
+    "label": "Global Skill Market / Tokyo / Community Skills",
+    "lat": 35.6762,
+    "lon": 139.6503,
+    "source": "virtual_market"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "skill:gokapso-observe-whatsapp",
+  "slug": "gokapso-observe-whatsapp",
+  "name": "observe-whatsapp",
+  "displayName": "gokapso/observe-whatsapp",
+  "description": "Debug WhatsApp delivery issues and run health checks",
+  "stars": 0,
+  "category": "Community Skills",
+  "source": "voltagent",
+  "url": "https://github.com/gokapso/agent-skills/tree/master/skills/observe-whatsapp",
+  "githubRepo": "gokapso/agent-skills",
+  "readme": "# gokapso/observe-whatsapp\n\nDebug WhatsApp delivery issues and run health checks",
+  "readmeHtml": "<h1>gokapso/observe-whatsapp</h1>\n<p>Debug WhatsApp delivery issues and run health checks</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.154Z",
+  "author": {
+    "login": "gokapso",
+    "name": "gokapso",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/gokapso",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "gokapso-integrate-whatsapp",
+      "displayName": "gokapso/integrate-whatsapp",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:gokapso/agent-skills"
+    },
+    {
+      "slug": "gokapso-automate-whatsapp",
+      "displayName": "gokapso/automate-whatsapp",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:gokapso/agent-skills"
+    },
+    {
+      "slug": "gokapso-integrate-whatsapp",
+      "displayName": "gokapso/integrate-whatsapp",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:gokapso"
+    },
+    {
+      "slug": "gokapso-automate-whatsapp",
+      "displayName": "gokapso/automate-whatsapp",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:gokapso"
+    },
+    {
+      "slug": "obra-defense-in-depth",
+      "displayName": "obra/defense-in-depth",
+      "stars": 186953,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
+      "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "stars": 77115,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mvanhorn-last30days-skill",
+      "displayName": "mvanhorn/last30days-skill",
+      "stars": 25573,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "k-dense-ai-claude-scientific-skills",
+      "displayName": "K-Dense-AI/claude-scientific-skills",
+      "stars": 20299,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-london",
+    "label": "Global Skill Market / London / Community Skills",
+    "lat": 51.5072,
+    "lon": -0.1276,
+    "source": "virtual_market"
+  }
+}

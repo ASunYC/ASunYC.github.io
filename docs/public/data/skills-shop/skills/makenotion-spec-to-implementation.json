@@ -1,0 +1,89 @@
+{
+  "id": "skill:makenotion-spec-to-implementation",
+  "slug": "makenotion-spec-to-implementation",
+  "name": "spec-to-implementation",
+  "displayName": "makenotion/spec-to-implementation",
+  "description": "Turn product/tech specs into concrete Notion tasks with acceptance criteria and progress tracking",
+  "stars": 0,
+  "category": "TypeScript Skills",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/makenotion/skills/spec-to-implementation",
+  "githubRepo": "",
+  "readme": "# makenotion/spec-to-implementation\n\nTurn product/tech specs into concrete Notion tasks with acceptance criteria and progress tracking",
+  "readmeHtml": "<h1>makenotion/spec-to-implementation</h1>\n<p>Turn product/tech specs into concrete Notion tasks with acceptance criteria and progress tracking</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.151Z",
+  "author": {
+    "login": "makenotion",
+    "name": "makenotion",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/makenotion",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "makenotion-knowledge-capture",
+      "displayName": "makenotion/knowledge-capture",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:makenotion"
+    },
+    {
+      "slug": "makenotion-meeting-intelligence",
+      "displayName": "makenotion/meeting-intelligence",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:makenotion"
+    },
+    {
+      "slug": "makenotion-research-documentation",
+      "displayName": "makenotion/research-documentation",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:makenotion"
+    },
+    {
+      "slug": "deanpeters-acquisition-channel-advisor",
+      "displayName": "deanpeters/acquisition-channel-advisor",
+      "stars": 4159,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    },
+    {
+      "slug": "deanpeters-ai-shaped-readiness-advisor",
+      "displayName": "deanpeters/ai-shaped-readiness-advisor",
+      "stars": 4159,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    },
+    {
+      "slug": "deanpeters-altitude-horizon-framework",
+      "displayName": "deanpeters/altitude-horizon-framework",
+      "stars": 4159,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    },
+    {
+      "slug": "deanpeters-business-health-diagnostic",
+      "displayName": "deanpeters/business-health-diagnostic",
+      "stars": 4159,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    },
+    {
+      "slug": "deanpeters-company-research",
+      "displayName": "deanpeters/company-research",
+      "stars": 4159,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-san-francisco",
+    "label": "Global Skill Market / San Francisco / TypeScript Skills",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "virtual_market"
+  }
+}

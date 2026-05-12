@@ -1,0 +1,89 @@
+{
+  "id": "skill:garrytan-land-and-deploy",
+  "slug": "garrytan-land-and-deploy",
+  "name": "land-and-deploy",
+  "displayName": "garrytan/land-and-deploy",
+  "description": "Merge the PR, wait for CI and deploy, verify production health",
+  "stars": 0,
+  "category": "TypeScript Skills",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/garrytan/skills/land-and-deploy",
+  "githubRepo": "",
+  "readme": "# garrytan/land-and-deploy\n\nMerge the PR, wait for CI and deploy, verify production health",
+  "readmeHtml": "<h1>garrytan/land-and-deploy</h1>\n<p>Merge the PR, wait for CI and deploy, verify production health</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.146Z",
+  "author": {
+    "login": "garrytan",
+    "name": "garrytan",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/garrytan",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "garrytan-gstack",
+      "displayName": "garrytan/gstack",
+      "stars": 90855,
+      "relation": "source_overlap",
+      "evidence": "author:garrytan"
+    },
+    {
+      "slug": "garrytan-office-hours",
+      "displayName": "garrytan/office-hours",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:garrytan"
+    },
+    {
+      "slug": "garrytan-plan-ceo-review",
+      "displayName": "garrytan/plan-ceo-review",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:garrytan"
+    },
+    {
+      "slug": "garrytan-plan-eng-review",
+      "displayName": "garrytan/plan-eng-review",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:garrytan"
+    },
+    {
+      "slug": "garrytan-plan-design-review",
+      "displayName": "garrytan/plan-design-review",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:garrytan"
+    },
+    {
+      "slug": "garrytan-design-consultation",
+      "displayName": "garrytan/design-consultation",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:garrytan"
+    },
+    {
+      "slug": "garrytan-design-review",
+      "displayName": "garrytan/design-review",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:garrytan"
+    },
+    {
+      "slug": "garrytan-review",
+      "displayName": "garrytan/review",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:garrytan"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-shanghai",
+    "label": "Global Skill Market / Shanghai / TypeScript Skills",
+    "lat": 31.2304,
+    "lon": 121.4737,
+    "source": "virtual_market"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "skill:microsoft-entra-agent-id",
+  "slug": "microsoft-entra-agent-id",
+  "name": "entra-agent-id",
+  "displayName": "microsoft/entra-agent-id",
+  "description": "Microsoft Entra Agent ID OAuth2 identities via Graph API",
+  "stars": 0,
+  "category": "Core Skills",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/microsoft/skills/entra-agent-id",
+  "githubRepo": "",
+  "readme": "# microsoft/entra-agent-id\n\nMicrosoft Entra Agent ID OAuth2 identities via Graph API",
+  "readmeHtml": "<h1>microsoft/entra-agent-id</h1>\n<p>Microsoft Entra Agent ID OAuth2 identities via Graph API</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.106Z",
+  "author": {
+    "login": "microsoft",
+    "name": "microsoft",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/microsoft",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "microsoft-agent-skills",
+      "displayName": "microsoft/agent-skills",
+      "stars": 2248,
+      "relation": "source_overlap",
+      "evidence": "author:microsoft"
+    },
+    {
+      "slug": "microsoft-cloud-solution-architect",
+      "displayName": "microsoft/cloud-solution-architect",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:microsoft"
+    },
+    {
+      "slug": "microsoft-continual-learning",
+      "displayName": "microsoft/continual-learning",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:microsoft"
+    },
+    {
+      "slug": "microsoft-copilot-sdk",
+      "displayName": "microsoft/copilot-sdk",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:microsoft"
+    },
+    {
+      "slug": "microsoft-frontend-design-review",
+      "displayName": "microsoft/frontend-design-review",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:microsoft"
+    },
+    {
+      "slug": "microsoft-github-issue-creator",
+      "displayName": "microsoft/github-issue-creator",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:microsoft"
+    },
+    {
+      "slug": "microsoft-mcp-builder",
+      "displayName": "microsoft/mcp-builder",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:microsoft"
+    },
+    {
+      "slug": "microsoft-podcast-generation",
+      "displayName": "microsoft/podcast-generation",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:microsoft"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-sao-paulo",
+    "label": "Global Skill Market / Sao Paulo / Core Skills",
+    "lat": -23.5558,
+    "lon": -46.6396,
+    "source": "virtual_market"
+  }
+}

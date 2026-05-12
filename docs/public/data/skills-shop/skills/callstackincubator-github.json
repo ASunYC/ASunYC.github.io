@@ -1,0 +1,68 @@
+{
+  "id": "skill:callstackincubator-github",
+  "slug": "callstackincubator-github",
+  "name": "github",
+  "displayName": "callstackincubator/github",
+  "description": "GitHub workflow patterns for PRs, code review, branching",
+  "stars": 0,
+  "category": "Skills by CallStack",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/callstackincubator/skills/github",
+  "githubRepo": "",
+  "readme": "# callstackincubator/github\n\nGitHub workflow patterns for PRs, code review, branching",
+  "readmeHtml": "<h1>callstackincubator/github</h1>\n<p>GitHub workflow patterns for PRs, code review, branching</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.090Z",
+  "author": {
+    "login": "callstackincubator",
+    "name": "callstackincubator",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/callstackincubator",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "callstackincubator-agent-skills",
+      "displayName": "callstackincubator/agent-skills",
+      "stars": 1307,
+      "relation": "source_overlap",
+      "evidence": "author:callstackincubator"
+    },
+    {
+      "slug": "callstackincubator-react-native-best-practices",
+      "displayName": "callstackincubator/react-native-best-practices",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:callstackincubator"
+    },
+    {
+      "slug": "callstackincubator-upgrading-react-native",
+      "displayName": "callstackincubator/upgrading-react-native",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:callstackincubator"
+    },
+    {
+      "slug": "callstackincubator-react-native-best-practices",
+      "displayName": "callstackincubator/react-native-best-practices",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Skills by CallStack"
+    },
+    {
+      "slug": "callstackincubator-upgrading-react-native",
+      "displayName": "callstackincubator/upgrading-react-native",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Skills by CallStack"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-tokyo",
+    "label": "Global Skill Market / Tokyo / Skills by CallStack",
+    "lat": 35.6762,
+    "lon": 139.6503,
+    "source": "virtual_market"
+  }
+}

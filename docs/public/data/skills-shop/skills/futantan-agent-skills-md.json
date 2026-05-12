@@ -1,0 +1,89 @@
+{
+  "id": "skill:futantan-agent-skills-md",
+  "slug": "futantan-agent-skills-md",
+  "name": "agent-skills.md",
+  "displayName": "futantan/agent-skills.md",
+  "description": "Find awesome Agent Skills",
+  "stars": 169,
+  "category": "Discovered",
+  "source": "discover:keyword",
+  "url": "https://github.com/futantan/agent-skills.md",
+  "githubRepo": "futantan/agent-skills.md",
+  "readme": "# futantan/agent-skills.md\n\nFind awesome Agent Skills",
+  "readmeHtml": "<h1>futantan/agent-skills.md</h1>\n<p>Find awesome Agent Skills</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.050Z",
+  "author": {
+    "login": "futantan",
+    "name": "futantan",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/futantan",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 73174,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "bytedance-deer-flow",
+      "displayName": "bytedance/deer-flow",
+      "stars": 65827,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "farion1231-cc-switch",
+      "displayName": "farion1231/cc-switch",
+      "stars": 62022,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "gsd-build-get-shit-done",
+      "displayName": "gsd-build/get-shit-done",
+      "stars": 60616,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "shareai-lab-learn-claude-code",
+      "displayName": "shareAI-lab/learn-claude-code",
+      "stars": 58737,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-bengaluru",
+    "label": "Global Skill Market / Bengaluru / Discovered",
+    "lat": 12.9716,
+    "lon": 77.5946,
+    "source": "virtual_market"
+  }
+}

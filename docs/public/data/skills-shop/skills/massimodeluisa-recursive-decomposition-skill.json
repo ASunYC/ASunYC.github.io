@@ -1,0 +1,89 @@
+{
+  "id": "skill:massimodeluisa-recursive-decomposition-skill",
+  "slug": "massimodeluisa-recursive-decomposition-skill",
+  "name": "recursive-decomposition-skill",
+  "displayName": "massimodeluisa/recursive-decomposition-skill",
+  "description": "Handle long-context tasks (100+ files, 50k+ tokens) through recursive decomposition strategies based on RLM research",
+  "stars": 0,
+  "category": "Community Skills",
+  "source": "voltagent",
+  "url": "https://github.com/massimodeluisa/recursive-decomposition-skill",
+  "githubRepo": "massimodeluisa/recursive-decomposition-skill",
+  "readme": "# massimodeluisa/recursive-decomposition-skill\n\nHandle long-context tasks (100+ files, 50k+ tokens) through recursive decomposition strategies based on RLM research",
+  "readmeHtml": "<h1>massimodeluisa/recursive-decomposition-skill</h1>\n<p>Handle long-context tasks (100+ files, 50k+ tokens) through recursive decomposition strategies based on RLM research</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.154Z",
+  "author": {
+    "login": "massimodeluisa",
+    "name": "massimodeluisa",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/massimodeluisa",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "obra-defense-in-depth",
+      "displayName": "obra/defense-in-depth",
+      "stars": 186953,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
+      "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "stars": 77115,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mvanhorn-last30days-skill",
+      "displayName": "mvanhorn/last30days-skill",
+      "stars": 25573,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "k-dense-ai-claude-scientific-skills",
+      "displayName": "K-Dense-AI/claude-scientific-skills",
+      "stars": 20299,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "muratcankoylan-context-fundamentals",
+      "displayName": "muratcankoylan/context-fundamentals",
+      "stars": 15494,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "muratcankoylan-context-degradation",
+      "displayName": "muratcankoylan/context-degradation",
+      "stars": 15494,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "muratcankoylan-context-compression",
+      "displayName": "muratcankoylan/context-compression",
+      "stars": 15494,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "muratcankoylan-context-optimization",
+      "displayName": "muratcankoylan/context-optimization",
+      "stars": 15494,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-new-york",
+    "label": "Global Skill Market / New York / Community Skills",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "source": "virtual_market"
+  }
+}

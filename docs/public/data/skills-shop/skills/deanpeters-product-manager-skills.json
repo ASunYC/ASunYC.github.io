@@ -1,0 +1,89 @@
+{
+  "id": "skill:deanpeters-product-manager-skills",
+  "slug": "deanpeters-product-manager-skills",
+  "name": "product-manager-skills",
+  "displayName": "deanpeters/Product-Manager-Skills",
+  "description": "Product Management skills framework built on battle-tested methods for Claude Code, Cowork, Codex, and AI agents.",
+  "stars": 4065,
+  "category": "Discovered",
+  "source": "discover:keyword",
+  "url": "https://github.com/deanpeters/Product-Manager-Skills",
+  "githubRepo": "deanpeters/Product-Manager-Skills",
+  "readme": "# deanpeters/Product-Manager-Skills\n\nProduct Management skills framework built on battle-tested methods for Claude Code, Cowork, Codex, and AI agents.",
+  "readmeHtml": "<h1>deanpeters/Product-Manager-Skills</h1>\n<p>Product Management skills framework built on battle-tested methods for Claude Code, Cowork, Codex, and AI agents.</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.019Z",
+  "author": {
+    "login": "deanpeters",
+    "name": "deanpeters",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/deanpeters",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "deanpeters-acquisition-channel-advisor",
+      "displayName": "deanpeters/acquisition-channel-advisor",
+      "stars": 4159,
+      "relation": "source_overlap",
+      "evidence": "repo:deanpeters/Product-Manager-Skills"
+    },
+    {
+      "slug": "deanpeters-ai-shaped-readiness-advisor",
+      "displayName": "deanpeters/ai-shaped-readiness-advisor",
+      "stars": 4159,
+      "relation": "source_overlap",
+      "evidence": "repo:deanpeters/Product-Manager-Skills"
+    },
+    {
+      "slug": "deanpeters-altitude-horizon-framework",
+      "displayName": "deanpeters/altitude-horizon-framework",
+      "stars": 4159,
+      "relation": "source_overlap",
+      "evidence": "repo:deanpeters/Product-Manager-Skills"
+    },
+    {
+      "slug": "deanpeters-business-health-diagnostic",
+      "displayName": "deanpeters/business-health-diagnostic",
+      "stars": 4159,
+      "relation": "source_overlap",
+      "evidence": "repo:deanpeters/Product-Manager-Skills"
+    },
+    {
+      "slug": "deanpeters-company-research",
+      "displayName": "deanpeters/company-research",
+      "stars": 4159,
+      "relation": "source_overlap",
+      "evidence": "repo:deanpeters/Product-Manager-Skills"
+    },
+    {
+      "slug": "deanpeters-customer-journey-map",
+      "displayName": "deanpeters/customer-journey-map",
+      "stars": 4159,
+      "relation": "source_overlap",
+      "evidence": "repo:deanpeters/Product-Manager-Skills"
+    },
+    {
+      "slug": "deanpeters-eol-message",
+      "displayName": "deanpeters/eol-message",
+      "stars": 4159,
+      "relation": "source_overlap",
+      "evidence": "repo:deanpeters/Product-Manager-Skills"
+    },
+    {
+      "slug": "deanpeters-epic-hypothesis",
+      "displayName": "deanpeters/epic-hypothesis",
+      "stars": 4159,
+      "relation": "source_overlap",
+      "evidence": "repo:deanpeters/Product-Manager-Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-paris",
+    "label": "Global Skill Market / Paris / Discovered",
+    "lat": 48.8566,
+    "lon": 2.3522,
+    "source": "virtual_market"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "skill:firecrawl-cli",
+  "slug": "firecrawl-cli",
+  "name": "cli",
+  "displayName": "firecrawl/cli",
+  "description": "Scrape, crawl, search, and map the web via CLI",
+  "stars": 369,
+  "category": "Skills by Firecrawl",
+  "source": "heilcheng",
+  "url": "https://github.com/firecrawl/cli/tree/main/skills/firecrawl-cli",
+  "githubRepo": "firecrawl/cli",
+  "readme": "# firecrawl/cli\n\nScrape, crawl, search, and map the web via CLI",
+  "readmeHtml": "<h1>firecrawl/cli</h1>\n<p>Scrape, crawl, search, and map the web via CLI</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.048Z",
+  "author": {
+    "login": "firecrawl",
+    "name": "firecrawl",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/firecrawl",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "combo-coding-research-docs-ui",
+      "displayName": "编码增强组合",
+      "stars": 0,
+      "relation": "combo_component",
+      "evidence": "编码增强组合 includes Firecrawl"
+    },
+    {
+      "slug": "firecrawl-firecrawl-build",
+      "displayName": "firecrawl/firecrawl-build",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:firecrawl"
+    },
+    {
+      "slug": "firecrawl-firecrawl-build-interact",
+      "displayName": "firecrawl/firecrawl-build-interact",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:firecrawl"
+    },
+    {
+      "slug": "firecrawl-firecrawl-build-onboarding",
+      "displayName": "firecrawl/firecrawl-build-onboarding",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:firecrawl"
+    },
+    {
+      "slug": "firecrawl-firecrawl-build-scrape",
+      "displayName": "firecrawl/firecrawl-build-scrape",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:firecrawl"
+    },
+    {
+      "slug": "firecrawl-firecrawl-build-search",
+      "displayName": "firecrawl/firecrawl-build-search",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:firecrawl"
+    },
+    {
+      "slug": "firecrawl-firecrawl-cli",
+      "displayName": "firecrawl/firecrawl-cli",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:firecrawl"
+    },
+    {
+      "slug": "firecrawl-firecrawl-agent",
+      "displayName": "firecrawl/firecrawl-agent",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:firecrawl"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-sydney",
+    "label": "Global Skill Market / Sydney / Skills by Firecrawl",
+    "lat": -33.8688,
+    "lon": 151.2093,
+    "source": "virtual_market"
+  }
+}

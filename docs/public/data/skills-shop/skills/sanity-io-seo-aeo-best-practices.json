@@ -1,0 +1,82 @@
+{
+  "id": "skill:sanity-io-seo-aeo-best-practices",
+  "slug": "sanity-io-seo-aeo-best-practices",
+  "name": "seo-aeo-best-practices",
+  "displayName": "sanity-io/seo-aeo-best-practices",
+  "description": "SEO and answer engine optimization patterns for content sites",
+  "stars": 0,
+  "category": "Skills by Sanity Team",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/sanity-io/skills/seo-aeo-best-practices",
+  "githubRepo": "",
+  "readme": "# sanity-io/seo-aeo-best-practices\n\nSEO and answer engine optimization patterns for content sites",
+  "readmeHtml": "<h1>sanity-io/seo-aeo-best-practices</h1>\n<p>SEO and answer engine optimization patterns for content sites</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.091Z",
+  "author": {
+    "login": "sanity-io",
+    "name": "sanity-io",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/sanity-io",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "sanity-io-agent-toolkit",
+      "displayName": "sanity-io/agent-toolkit",
+      "stars": 131,
+      "relation": "source_overlap",
+      "evidence": "author:sanity-io"
+    },
+    {
+      "slug": "sanity-io-sanity-best-practices",
+      "displayName": "sanity-io/sanity-best-practices",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:sanity-io"
+    },
+    {
+      "slug": "sanity-io-content-modeling-best-practices",
+      "displayName": "sanity-io/content-modeling-best-practices",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:sanity-io"
+    },
+    {
+      "slug": "sanity-io-content-experimentation-best-practices",
+      "displayName": "sanity-io/content-experimentation-best-practices",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:sanity-io"
+    },
+    {
+      "slug": "sanity-io-sanity-best-practices",
+      "displayName": "sanity-io/sanity-best-practices",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Skills by Sanity Team"
+    },
+    {
+      "slug": "sanity-io-content-modeling-best-practices",
+      "displayName": "sanity-io/content-modeling-best-practices",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Skills by Sanity Team"
+    },
+    {
+      "slug": "sanity-io-content-experimentation-best-practices",
+      "displayName": "sanity-io/content-experimentation-best-practices",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Skills by Sanity Team"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-toronto",
+    "label": "Global Skill Market / Toronto / Skills by Sanity Team",
+    "lat": 43.6532,
+    "lon": -79.3832,
+    "source": "virtual_market"
+  }
+}

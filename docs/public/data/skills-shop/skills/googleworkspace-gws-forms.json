@@ -1,0 +1,89 @@
+{
+  "id": "skill:googleworkspace-gws-forms",
+  "slug": "googleworkspace-gws-forms",
+  "name": "gws-forms",
+  "displayName": "googleworkspace/gws-forms",
+  "description": "Read and write Google Forms",
+  "stars": 0,
+  "category": "Skills by Typefully",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/googleworkspace/skills/gws-forms",
+  "githubRepo": "",
+  "readme": "# googleworkspace/gws-forms\n\nRead and write Google Forms",
+  "readmeHtml": "<h1>googleworkspace/gws-forms</h1>\n<p>Read and write Google Forms</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.102Z",
+  "author": {
+    "login": "googleworkspace",
+    "name": "googleworkspace",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/googleworkspace",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "googleworkspace-cli",
+      "displayName": "googleworkspace/cli",
+      "stars": 25868,
+      "relation": "source_overlap",
+      "evidence": "author:googleworkspace"
+    },
+    {
+      "slug": "googleworkspace-gws-shared",
+      "displayName": "googleworkspace/gws-shared",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:googleworkspace"
+    },
+    {
+      "slug": "googleworkspace-gws-drive",
+      "displayName": "googleworkspace/gws-drive",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:googleworkspace"
+    },
+    {
+      "slug": "googleworkspace-gws-sheets",
+      "displayName": "googleworkspace/gws-sheets",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:googleworkspace"
+    },
+    {
+      "slug": "googleworkspace-gws-gmail",
+      "displayName": "googleworkspace/gws-gmail",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:googleworkspace"
+    },
+    {
+      "slug": "googleworkspace-gws-calendar",
+      "displayName": "googleworkspace/gws-calendar",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:googleworkspace"
+    },
+    {
+      "slug": "googleworkspace-gws-admin-reports",
+      "displayName": "googleworkspace/gws-admin-reports",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:googleworkspace"
+    },
+    {
+      "slug": "googleworkspace-gws-docs",
+      "displayName": "googleworkspace/gws-docs",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:googleworkspace"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-bengaluru",
+    "label": "Global Skill Market / Bengaluru / Skills by Typefully",
+    "lat": 12.9716,
+    "lon": 77.5946,
+    "source": "virtual_market"
+  }
+}

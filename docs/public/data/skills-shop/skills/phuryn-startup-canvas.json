@@ -1,0 +1,89 @@
+{
+  "id": "skill:phuryn-startup-canvas",
+  "slug": "phuryn-startup-canvas",
+  "name": "startup-canvas",
+  "displayName": "phuryn/startup-canvas",
+  "description": "Generate Startup Canvas combining Product Strategy and Business Model",
+  "stars": 0,
+  "category": "TypeScript Skills",
+  "source": "voltagent",
+  "url": "https://github.com/phuryn/pm-skills/tree/main/pm-product-strategy/skills/startup-canvas",
+  "githubRepo": "phuryn/pm-skills",
+  "readme": "# phuryn/startup-canvas\n\nGenerate Startup Canvas combining Product Strategy and Business Model",
+  "readmeHtml": "<h1>phuryn/startup-canvas</h1>\n<p>Generate Startup Canvas combining Product Strategy and Business Model</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.143Z",
+  "author": {
+    "login": "phuryn",
+    "name": "phuryn",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/phuryn",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "phuryn-ab-test-analysis",
+      "displayName": "phuryn/ab-test-analysis",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:phuryn/pm-skills"
+    },
+    {
+      "slug": "phuryn-cohort-analysis",
+      "displayName": "phuryn/cohort-analysis",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:phuryn/pm-skills"
+    },
+    {
+      "slug": "phuryn-sql-queries",
+      "displayName": "phuryn/sql-queries",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:phuryn/pm-skills"
+    },
+    {
+      "slug": "phuryn-brainstorm-okrs",
+      "displayName": "phuryn/brainstorm-okrs",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:phuryn/pm-skills"
+    },
+    {
+      "slug": "phuryn-create-prd",
+      "displayName": "phuryn/create-prd",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:phuryn/pm-skills"
+    },
+    {
+      "slug": "phuryn-dummy-dataset",
+      "displayName": "phuryn/dummy-dataset",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:phuryn/pm-skills"
+    },
+    {
+      "slug": "phuryn-job-stories",
+      "displayName": "phuryn/job-stories",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:phuryn/pm-skills"
+    },
+    {
+      "slug": "phuryn-outcome-roadmap",
+      "displayName": "phuryn/outcome-roadmap",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:phuryn/pm-skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-sao-paulo",
+    "label": "Global Skill Market / Sao Paulo / TypeScript Skills",
+    "lat": -23.5558,
+    "lon": -46.6396,
+    "source": "virtual_market"
+  }
+}

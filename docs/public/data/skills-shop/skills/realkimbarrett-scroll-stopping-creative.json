@@ -1,0 +1,89 @@
+{
+  "id": "skill:realkimbarrett-scroll-stopping-creative",
+  "slug": "realkimbarrett-scroll-stopping-creative",
+  "name": "scroll-stopping-creative",
+  "displayName": "realkimbarrett/scroll-stopping-creative",
+  "description": "Create ad concepts that stop attention in the first 3 seconds",
+  "stars": 0,
+  "category": "TypeScript Skills",
+  "source": "voltagent",
+  "url": "https://github.com/realkimbarrett/advertising-skills/tree/main/skills/operator-os/scroll-stopping-creative",
+  "githubRepo": "realkimbarrett/advertising-skills",
+  "readme": "# realkimbarrett/scroll-stopping-creative\n\nCreate ad concepts that stop attention in the first 3 seconds",
+  "readmeHtml": "<h1>realkimbarrett/scroll-stopping-creative</h1>\n<p>Create ad concepts that stop attention in the first 3 seconds</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.129Z",
+  "author": {
+    "login": "realkimbarrett",
+    "name": "realkimbarrett",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/realkimbarrett",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "realkimbarrett-advertising-skills",
+      "displayName": "realkimbarrett/advertising-skills",
+      "stars": 608,
+      "relation": "source_overlap",
+      "evidence": "repo:realkimbarrett/advertising-skills"
+    },
+    {
+      "slug": "realkimbarrett-avatar-extraction",
+      "displayName": "realkimbarrett/avatar-extraction",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:realkimbarrett/advertising-skills"
+    },
+    {
+      "slug": "realkimbarrett-offer-extraction",
+      "displayName": "realkimbarrett/offer-extraction",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:realkimbarrett/advertising-skills"
+    },
+    {
+      "slug": "realkimbarrett-schwartz-awareness-mapper",
+      "displayName": "realkimbarrett/schwartz-awareness-mapper",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:realkimbarrett/advertising-skills"
+    },
+    {
+      "slug": "realkimbarrett-mechanism-builder",
+      "displayName": "realkimbarrett/mechanism-builder",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:realkimbarrett/advertising-skills"
+    },
+    {
+      "slug": "realkimbarrett-headline-matrix",
+      "displayName": "realkimbarrett/headline-matrix",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:realkimbarrett/advertising-skills"
+    },
+    {
+      "slug": "realkimbarrett-objection-crusher",
+      "displayName": "realkimbarrett/objection-crusher",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:realkimbarrett/advertising-skills"
+    },
+    {
+      "slug": "realkimbarrett-ad-angle-multiplier",
+      "displayName": "realkimbarrett/ad-angle-multiplier",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:realkimbarrett/advertising-skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-toronto",
+    "label": "Global Skill Market / Toronto / TypeScript Skills",
+    "lat": 43.6532,
+    "lon": -79.3832,
+    "source": "virtual_market"
+  }
+}

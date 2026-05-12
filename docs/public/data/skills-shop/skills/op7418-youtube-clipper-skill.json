@@ -1,0 +1,89 @@
+{
+  "id": "skill:op7418-youtube-clipper-skill",
+  "slug": "op7418-youtube-clipper-skill",
+  "name": "youtube-clipper-skill",
+  "displayName": "op7418/Youtube-clipper-skill",
+  "description": "YouTube clip generation and editing with automated workflows",
+  "stars": 1828,
+  "category": "Community Skills",
+  "source": "voltagent",
+  "url": "https://github.com/op7418/Youtube-clipper-skill",
+  "githubRepo": "op7418/Youtube-clipper-skill",
+  "readme": "# op7418/Youtube-clipper-skill\n\nYouTube clip generation and editing with automated workflows",
+  "readmeHtml": "<h1>op7418/Youtube-clipper-skill</h1>\n<p>YouTube clip generation and editing with automated workflows</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.028Z",
+  "author": {
+    "login": "op7418",
+    "name": "op7418",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/op7418",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "op7418-humanizer-zh",
+      "displayName": "op7418/Humanizer-zh",
+      "stars": 7055,
+      "relation": "source_overlap",
+      "evidence": "author:op7418"
+    },
+    {
+      "slug": "op7418-codepilot",
+      "displayName": "op7418/CodePilot",
+      "stars": 5647,
+      "relation": "source_overlap",
+      "evidence": "author:op7418"
+    },
+    {
+      "slug": "op7418-guizang-ppt-skill",
+      "displayName": "op7418/guizang-ppt-skill",
+      "stars": 5444,
+      "relation": "source_overlap",
+      "evidence": "author:op7418"
+    },
+    {
+      "slug": "op7418-nanobanana-ppt-skills",
+      "displayName": "op7418/NanoBanana-PPT-Skills",
+      "stars": 2613,
+      "relation": "source_overlap",
+      "evidence": "author:op7418"
+    },
+    {
+      "slug": "op7418-claude-to-im-skill",
+      "displayName": "op7418/Claude-to-IM-skill",
+      "stars": 2447,
+      "relation": "source_overlap",
+      "evidence": "author:op7418"
+    },
+    {
+      "slug": "obra-defense-in-depth",
+      "displayName": "obra/defense-in-depth",
+      "stars": 186953,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
+      "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "stars": 77115,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mvanhorn-last30days-skill",
+      "displayName": "mvanhorn/last30days-skill",
+      "stars": 25573,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-shanghai",
+    "label": "Global Skill Market / Shanghai / Community Skills",
+    "lat": 31.2304,
+    "lon": 121.4737,
+    "source": "virtual_market"
+  }
+}

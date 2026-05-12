@@ -1,0 +1,89 @@
+{
+  "id": "skill:weizhena-deep-research-skills",
+  "slug": "weizhena-deep-research-skills",
+  "name": "deep-research-skills",
+  "displayName": "Weizhena/Deep-Research-skills",
+  "description": "Structured deep research skill for Claude Code/Open Code/Codex with human-in-the-loop control",
+  "stars": 640,
+  "category": "Discovered",
+  "source": "discover:keyword",
+  "url": "https://github.com/Weizhena/Deep-Research-skills",
+  "githubRepo": "Weizhena/Deep-Research-skills",
+  "readme": "# Weizhena/Deep-Research-skills\n\nStructured deep research skill for Claude Code/Open Code/Codex with human-in-the-loop control",
+  "readmeHtml": "<h1>Weizhena/Deep-Research-skills</h1>\n<p>Structured deep research skill for Claude Code/Open Code/Codex with human-in-the-loop control</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.041Z",
+  "author": {
+    "login": "weizhena",
+    "name": "weizhena",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/weizhena",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 73174,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "bytedance-deer-flow",
+      "displayName": "bytedance/deer-flow",
+      "stars": 65827,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "farion1231-cc-switch",
+      "displayName": "farion1231/cc-switch",
+      "stars": 62022,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "gsd-build-get-shit-done",
+      "displayName": "gsd-build/get-shit-done",
+      "stars": 60616,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "shareai-lab-learn-claude-code",
+      "displayName": "shareAI-lab/learn-claude-code",
+      "stars": 58737,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-shanghai",
+    "label": "Global Skill Market / Shanghai / Discovered",
+    "lat": 31.2304,
+    "lon": 121.4737,
+    "source": "virtual_market"
+  }
+}

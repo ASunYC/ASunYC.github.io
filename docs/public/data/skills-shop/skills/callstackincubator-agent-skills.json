@@ -1,0 +1,89 @@
+{
+  "id": "skill:callstackincubator-agent-skills",
+  "slug": "callstackincubator-agent-skills",
+  "name": "agent-skills",
+  "displayName": "callstackincubator/agent-skills",
+  "description": "A collection of agent-optimized React Native skills for AI coding assistants.",
+  "stars": 1307,
+  "category": "Discovered",
+  "source": "discover:keyword",
+  "url": "https://github.com/callstackincubator/agent-skills",
+  "githubRepo": "callstackincubator/agent-skills",
+  "readme": "# callstackincubator/agent-skills\n\nA collection of agent-optimized React Native skills for AI coding assistants.",
+  "readmeHtml": "<h1>callstackincubator/agent-skills</h1>\n<p>A collection of agent-optimized React Native skills for AI coding assistants.</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.030Z",
+  "author": {
+    "login": "callstackincubator",
+    "name": "callstackincubator",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/callstackincubator",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "callstackincubator-react-native-best-practices",
+      "displayName": "callstackincubator/react-native-best-practices",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:callstackincubator"
+    },
+    {
+      "slug": "callstackincubator-github",
+      "displayName": "callstackincubator/github",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:callstackincubator"
+    },
+    {
+      "slug": "callstackincubator-upgrading-react-native",
+      "displayName": "callstackincubator/upgrading-react-native",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:callstackincubator"
+    },
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 73174,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "bytedance-deer-flow",
+      "displayName": "bytedance/deer-flow",
+      "stars": 65827,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-london",
+    "label": "Global Skill Market / London / Discovered",
+    "lat": 51.5072,
+    "lon": -0.1276,
+    "source": "virtual_market"
+  }
+}

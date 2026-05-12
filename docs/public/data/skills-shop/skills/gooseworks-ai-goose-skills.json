@@ -1,0 +1,89 @@
+{
+  "id": "skill:gooseworks-ai-goose-skills",
+  "slug": "gooseworks-ai-goose-skills",
+  "name": "goose-skills",
+  "displayName": "gooseworks-ai/goose-skills",
+  "description": "Library of GTM skills for Claude Code, Codex, Cursor",
+  "stars": 657,
+  "category": "Discovered",
+  "source": "discover:keyword",
+  "url": "https://github.com/gooseworks-ai/goose-skills",
+  "githubRepo": "gooseworks-ai/goose-skills",
+  "readme": "# gooseworks-ai/goose-skills\n\nLibrary of GTM skills for Claude Code, Codex, Cursor",
+  "readmeHtml": "<h1>gooseworks-ai/goose-skills</h1>\n<p>Library of GTM skills for Claude Code, Codex, Cursor</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.040Z",
+  "author": {
+    "login": "gooseworks-ai",
+    "name": "gooseworks-ai",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/gooseworks-ai",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "gooseworks-ai-goose-aeo",
+      "displayName": "gooseworks-ai/goose-aeo",
+      "stars": 20,
+      "relation": "source_overlap",
+      "evidence": "author:gooseworks-ai"
+    },
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 73174,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "bytedance-deer-flow",
+      "displayName": "bytedance/deer-flow",
+      "stars": 65827,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "farion1231-cc-switch",
+      "displayName": "farion1231/cc-switch",
+      "stars": 62022,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "gsd-build-get-shit-done",
+      "displayName": "gsd-build/get-shit-done",
+      "stars": 60616,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-new-york",
+    "label": "Global Skill Market / New York / Discovered",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "source": "virtual_market"
+  }
+}

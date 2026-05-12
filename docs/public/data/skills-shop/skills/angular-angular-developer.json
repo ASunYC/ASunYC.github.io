@@ -1,0 +1,54 @@
+{
+  "id": "skill:angular-angular-developer",
+  "slug": "angular-angular-developer",
+  "name": "angular-developer",
+  "displayName": "angular/angular-developer",
+  "description": "Generate Angular code and architectural guidance for components, services, reactivity",
+  "stars": 337,
+  "category": "Skills by Angular",
+  "source": "voltagent",
+  "url": "https://github.com/angular/skills",
+  "githubRepo": "angular/skills",
+  "readme": "# angular/angular-developer\n\nGenerate Angular code and architectural guidance for components, services, reactivity",
+  "readmeHtml": "<h1>angular/angular-developer</h1>\n<p>Generate Angular code and architectural guidance for components, services, reactivity</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.048Z",
+  "author": {
+    "login": "angular",
+    "name": "angular",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/angular",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "angular-angular-new-app",
+      "displayName": "angular/angular-new-app",
+      "stars": 337,
+      "relation": "source_overlap",
+      "evidence": "repo:angular/skills"
+    },
+    {
+      "slug": "angular-angular-new-app",
+      "displayName": "angular/angular-new-app",
+      "stars": 337,
+      "relation": "source_overlap",
+      "evidence": "author:angular"
+    },
+    {
+      "slug": "angular-angular-new-app",
+      "displayName": "angular/angular-new-app",
+      "stars": 337,
+      "relation": "shared_tag",
+      "evidence": "Skills by Angular"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-shanghai",
+    "label": "Global Skill Market / Shanghai / Skills by Angular",
+    "lat": 31.2304,
+    "lon": 121.4737,
+    "source": "virtual_market"
+  }
+}

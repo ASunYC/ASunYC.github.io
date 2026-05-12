@@ -1,0 +1,89 @@
+{
+  "id": "skill:anthropics-xlsx",
+  "slug": "anthropics-xlsx",
+  "name": "xlsx",
+  "displayName": "anthropics/xlsx",
+  "description": "Create, edit, and analyze Excel spreadsheets",
+  "stars": 0,
+  "category": "Official Skills by",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/anthropics/skills/xlsx",
+  "githubRepo": "",
+  "readme": "# anthropics/xlsx\n\nCreate, edit, and analyze Excel spreadsheets",
+  "readmeHtml": "<h1>anthropics/xlsx</h1>\n<p>Create, edit, and analyze Excel spreadsheets</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.089Z",
+  "author": {
+    "login": "anthropics",
+    "name": "anthropics",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/anthropics",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "anthropics-claude-plugins-official",
+      "displayName": "anthropics/claude-plugins-official",
+      "stars": 18758,
+      "relation": "source_overlap",
+      "evidence": "author:anthropics"
+    },
+    {
+      "slug": "anthropics-docx",
+      "displayName": "anthropics/docx",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:anthropics"
+    },
+    {
+      "slug": "anthropics-doc-coauthoring",
+      "displayName": "anthropics/doc-coauthoring",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:anthropics"
+    },
+    {
+      "slug": "anthropics-pptx",
+      "displayName": "anthropics/pptx",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:anthropics"
+    },
+    {
+      "slug": "anthropics-pdf",
+      "displayName": "anthropics/pdf",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:anthropics"
+    },
+    {
+      "slug": "anthropics-algorithmic-art",
+      "displayName": "anthropics/algorithmic-art",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:anthropics"
+    },
+    {
+      "slug": "anthropics-canvas-design",
+      "displayName": "anthropics/canvas-design",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:anthropics"
+    },
+    {
+      "slug": "anthropics-frontend-design",
+      "displayName": "anthropics/frontend-design",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:anthropics"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-singapore",
+    "label": "Global Skill Market / Singapore / Official Skills by",
+    "lat": 1.3521,
+    "lon": 103.8198,
+    "source": "virtual_market"
+  }
+}

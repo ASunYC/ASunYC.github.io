@@ -1,0 +1,89 @@
+{
+  "id": "skill:wrsmith108-linear-claude-skill",
+  "slug": "wrsmith108-linear-claude-skill",
+  "name": "linear-claude-skill",
+  "displayName": "wrsmith108/linear-claude-skill",
+  "description": "Manage Linear issues, projects, and teams",
+  "stars": 97,
+  "category": "Community Skills",
+  "source": "voltagent",
+  "url": "https://github.com/wrsmith108/linear-claude-skill",
+  "githubRepo": "wrsmith108/linear-claude-skill",
+  "readme": "# wrsmith108/linear-claude-skill\n\nManage Linear issues, projects, and teams",
+  "readmeHtml": "<h1>wrsmith108/linear-claude-skill</h1>\n<p>Manage Linear issues, projects, and teams</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.051Z",
+  "author": {
+    "login": "wrsmith108",
+    "name": "wrsmith108",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/wrsmith108",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "wrsmith108-varlock-claude-skill",
+      "displayName": "wrsmith108/varlock-claude-skill",
+      "stars": 21,
+      "relation": "source_overlap",
+      "evidence": "author:wrsmith108"
+    },
+    {
+      "slug": "obra-defense-in-depth",
+      "displayName": "obra/defense-in-depth",
+      "stars": 186953,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
+      "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "stars": 77115,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mvanhorn-last30days-skill",
+      "displayName": "mvanhorn/last30days-skill",
+      "stars": 25573,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "k-dense-ai-claude-scientific-skills",
+      "displayName": "K-Dense-AI/claude-scientific-skills",
+      "stars": 20299,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "muratcankoylan-context-fundamentals",
+      "displayName": "muratcankoylan/context-fundamentals",
+      "stars": 15494,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "muratcankoylan-context-degradation",
+      "displayName": "muratcankoylan/context-degradation",
+      "stars": 15494,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "muratcankoylan-context-compression",
+      "displayName": "muratcankoylan/context-compression",
+      "stars": 15494,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-tokyo",
+    "label": "Global Skill Market / Tokyo / Community Skills",
+    "lat": 35.6762,
+    "lon": 139.6503,
+    "source": "virtual_market"
+  }
+}

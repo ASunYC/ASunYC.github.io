@@ -1,0 +1,89 @@
+{
+  "id": "skill:mvanhorn-clawdbot-skill-parallel",
+  "slug": "mvanhorn-clawdbot-skill-parallel",
+  "name": "clawdbot-skill-parallel",
+  "displayName": "mvanhorn/clawdbot-skill-parallel",
+  "description": "High-accuracy web research via Parallel.ai API - outperforms Perplexity and Exa on benchmarks. Rich excerpts, citations, source filtering, batch search, agentic mode. OpenClaw skill.",
+  "stars": 16,
+  "category": "Discovered",
+  "source": "discover:topic",
+  "url": "https://github.com/mvanhorn/clawdbot-skill-parallel",
+  "githubRepo": "mvanhorn/clawdbot-skill-parallel",
+  "readme": "# mvanhorn/clawdbot-skill-parallel\n\nHigh-accuracy web research via Parallel.ai API - outperforms Perplexity and Exa on benchmarks. Rich excerpts, citations, source filtering, batch search, agentic mode. OpenClaw skill.",
+  "readmeHtml": "<h1>mvanhorn/clawdbot-skill-parallel</h1>\n<p>High-accuracy web research via Parallel.ai API - outperforms Perplexity and Exa on benchmarks. Rich excerpts, citations, source filtering, batch search, agentic mode. OpenClaw skill.</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.064Z",
+  "author": {
+    "login": "mvanhorn",
+    "name": "mvanhorn",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/mvanhorn",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "mvanhorn-last30days-skill",
+      "displayName": "mvanhorn/last30days-skill",
+      "stars": 25573,
+      "relation": "source_overlap",
+      "evidence": "author:mvanhorn"
+    },
+    {
+      "slug": "mvanhorn-clawdbot-skill-manus",
+      "displayName": "mvanhorn/clawdbot-skill-manus",
+      "stars": 20,
+      "relation": "source_overlap",
+      "evidence": "author:mvanhorn"
+    },
+    {
+      "slug": "mvanhorn-clawdbot-skill-polymarket",
+      "displayName": "mvanhorn/clawdbot-skill-polymarket",
+      "stars": 15,
+      "relation": "source_overlap",
+      "evidence": "author:mvanhorn"
+    },
+    {
+      "slug": "mvanhorn-clawdbot-skill-search-x",
+      "displayName": "mvanhorn/clawdbot-skill-search-x",
+      "stars": 6,
+      "relation": "source_overlap",
+      "evidence": "author:mvanhorn"
+    },
+    {
+      "slug": "mvanhorn-clawdbot-skill-tesla",
+      "displayName": "mvanhorn/clawdbot-skill-tesla",
+      "stars": 5,
+      "relation": "source_overlap",
+      "evidence": "author:mvanhorn"
+    },
+    {
+      "slug": "mvanhorn-nano-triple",
+      "displayName": "mvanhorn/nano-triple",
+      "stars": 4,
+      "relation": "source_overlap",
+      "evidence": "author:mvanhorn"
+    },
+    {
+      "slug": "mvanhorn-clawdbot-skill-xai",
+      "displayName": "mvanhorn/clawdbot-skill-xai",
+      "stars": 2,
+      "relation": "source_overlap",
+      "evidence": "author:mvanhorn"
+    },
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-london",
+    "label": "Global Skill Market / London / Discovered",
+    "lat": 51.5072,
+    "lon": -0.1276,
+    "source": "virtual_market"
+  }
+}

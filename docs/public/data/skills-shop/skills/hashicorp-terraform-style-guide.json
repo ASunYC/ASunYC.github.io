@@ -1,0 +1,89 @@
+{
+  "id": "skill:hashicorp-terraform-style-guide",
+  "slug": "hashicorp-terraform-style-guide",
+  "name": "terraform-style-guide",
+  "displayName": "hashicorp/terraform-style-guide",
+  "description": "Generate Terraform HCL code following HashiCorp's official style conventions",
+  "stars": 0,
+  "category": "Skills by HashiCorp Team for Terraform",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/hashicorp/skills/terraform-style-guide",
+  "githubRepo": "",
+  "readme": "# hashicorp/terraform-style-guide\n\nGenerate Terraform HCL code following HashiCorp's official style conventions",
+  "readmeHtml": "<h1>hashicorp/terraform-style-guide</h1>\n<p>Generate Terraform HCL code following HashiCorp's official style conventions</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.091Z",
+  "author": {
+    "login": "hashicorp",
+    "name": "hashicorp",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/hashicorp",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "hashicorp-agent-skills",
+      "displayName": "hashicorp/agent-skills",
+      "stars": 604,
+      "relation": "source_overlap",
+      "evidence": "author:hashicorp"
+    },
+    {
+      "slug": "hashicorp-azure-verified-modules",
+      "displayName": "hashicorp/azure-verified-modules",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:hashicorp"
+    },
+    {
+      "slug": "hashicorp-new-terraform-provider",
+      "displayName": "hashicorp/new-terraform-provider",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:hashicorp"
+    },
+    {
+      "slug": "hashicorp-provider-resources",
+      "displayName": "hashicorp/provider-resources",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:hashicorp"
+    },
+    {
+      "slug": "hashicorp-provider-test-patterns",
+      "displayName": "hashicorp/provider-test-patterns",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:hashicorp"
+    },
+    {
+      "slug": "hashicorp-provider-actions",
+      "displayName": "hashicorp/provider-actions",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:hashicorp"
+    },
+    {
+      "slug": "hashicorp-run-acceptance-tests",
+      "displayName": "hashicorp/run-acceptance-tests",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:hashicorp"
+    },
+    {
+      "slug": "hashicorp-refactor-module",
+      "displayName": "hashicorp/refactor-module",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:hashicorp"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-sydney",
+    "label": "Global Skill Market / Sydney / Skills by HashiCorp Team for Terraform",
+    "lat": -33.8688,
+    "lon": 151.2093,
+    "source": "virtual_market"
+  }
+}

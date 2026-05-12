@@ -1,0 +1,89 @@
+{
+  "id": "skill:masum-msnr-awesome-mobile-release-agent-skills",
+  "slug": "masum-msnr-awesome-mobile-release-agent-skills",
+  "name": "awesome-mobile-release-agent-skills",
+  "displayName": "Masum-MSNR/awesome-mobile-release-agent-skills",
+  "description": "Agent skills for mobile release engineering: signing, versioning, store submissions, and rollouts.",
+  "stars": 1,
+  "category": "Discovered",
+  "source": "discover:keyword",
+  "url": "https://github.com/Masum-MSNR/awesome-mobile-release-agent-skills",
+  "githubRepo": "Masum-MSNR/awesome-mobile-release-agent-skills",
+  "readme": "# Masum-MSNR/awesome-mobile-release-agent-skills\n\nAgent skills for mobile release engineering: signing, versioning, store submissions, and rollouts.",
+  "readmeHtml": "<h1>Masum-MSNR/awesome-mobile-release-agent-skills</h1>\n<p>Agent skills for mobile release engineering: signing, versioning, store submissions, and rollouts.</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.088Z",
+  "author": {
+    "login": "masum-msnr",
+    "name": "masum-msnr",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/masum-msnr",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "masum-msnr-awesome-mobile-security-agent-skills",
+      "displayName": "Masum-MSNR/awesome-mobile-security-agent-skills",
+      "stars": 2,
+      "relation": "source_overlap",
+      "evidence": "author:masum-msnr"
+    },
+    {
+      "slug": "masum-msnr-awesome-mobile-agent-skills",
+      "displayName": "Masum-MSNR/awesome-mobile-agent-skills",
+      "stars": 1,
+      "relation": "source_overlap",
+      "evidence": "author:masum-msnr"
+    },
+    {
+      "slug": "masum-msnr-awesome-kotlin-multiplatform-agent-skills",
+      "displayName": "Masum-MSNR/awesome-kotlin-multiplatform-agent-skills",
+      "stars": 1,
+      "relation": "source_overlap",
+      "evidence": "author:masum-msnr"
+    },
+    {
+      "slug": "masum-msnr-awesome-java-android-agent-skills",
+      "displayName": "Masum-MSNR/awesome-java-android-agent-skills",
+      "stars": 1,
+      "relation": "source_overlap",
+      "evidence": "author:masum-msnr"
+    },
+    {
+      "slug": "masum-msnr-awesome-react-native-agent-skills",
+      "displayName": "Masum-MSNR/awesome-react-native-agent-skills",
+      "stars": 1,
+      "relation": "source_overlap",
+      "evidence": "author:masum-msnr"
+    },
+    {
+      "slug": "masum-msnr-awesome-mobile-accessibility-agent-skills",
+      "displayName": "Masum-MSNR/awesome-mobile-accessibility-agent-skills",
+      "stars": 1,
+      "relation": "source_overlap",
+      "evidence": "author:masum-msnr"
+    },
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-new-york",
+    "label": "Global Skill Market / New York / Discovered",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "source": "virtual_market"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "skill:getsentry-sentry-node-sdk",
+  "slug": "getsentry-sentry-node-sdk",
+  "name": "sentry-node-sdk",
+  "displayName": "getsentry/sentry-node-sdk",
+  "description": "Full Sentry SDK setup for Node.js, Bun, and Deno",
+  "stars": 0,
+  "category": "Skills by Typefully",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/getsentry/skills/sentry-node-sdk",
+  "githubRepo": "",
+  "readme": "# getsentry/sentry-node-sdk\n\nFull Sentry SDK setup for Node.js, Bun, and Deno",
+  "readmeHtml": "<h1>getsentry/sentry-node-sdk</h1>\n<p>Full Sentry SDK setup for Node.js, Bun, and Deno</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.106Z",
+  "author": {
+    "login": "getsentry",
+    "name": "getsentry",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/getsentry",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "getsentry-skills",
+      "displayName": "getsentry/skills",
+      "stars": 674,
+      "relation": "source_overlap",
+      "evidence": "author:getsentry"
+    },
+    {
+      "slug": "getsentry-sentry-sdk-setup",
+      "displayName": "getsentry/sentry-sdk-setup",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:getsentry"
+    },
+    {
+      "slug": "getsentry-sentry-workflow",
+      "displayName": "getsentry/sentry-workflow",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:getsentry"
+    },
+    {
+      "slug": "getsentry-sentry-fix-issues",
+      "displayName": "getsentry/sentry-fix-issues",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:getsentry"
+    },
+    {
+      "slug": "getsentry-sentry-code-review",
+      "displayName": "getsentry/sentry-code-review",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:getsentry"
+    },
+    {
+      "slug": "getsentry-sentry-pr-code-review",
+      "displayName": "getsentry/sentry-pr-code-review",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:getsentry"
+    },
+    {
+      "slug": "getsentry-sentry-create-alert",
+      "displayName": "getsentry/sentry-create-alert",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:getsentry"
+    },
+    {
+      "slug": "getsentry-sentry-feature-setup",
+      "displayName": "getsentry/sentry-feature-setup",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:getsentry"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-new-york",
+    "label": "Global Skill Market / New York / Skills by Typefully",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "source": "virtual_market"
+  }
+}

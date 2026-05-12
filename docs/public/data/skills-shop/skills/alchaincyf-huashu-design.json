@@ -1,0 +1,89 @@
+{
+  "id": "skill:alchaincyf-huashu-design",
+  "slug": "alchaincyf-huashu-design",
+  "name": "huashu-design",
+  "displayName": "alchaincyf/huashu-design",
+  "description": "HTML-native design skill for Claude Code - 高保真原型 / 幻灯片 / 动画 + 20 设计哲学 + 5 维评审 + MP4 导出",
+  "stars": 12456,
+  "category": "Community Skills",
+  "source": "manual",
+  "url": "https://github.com/alchaincyf/huashu-design",
+  "githubRepo": "alchaincyf/huashu-design",
+  "readme": "# alchaincyf/huashu-design\n\nHTML-native design skill for Claude Code - 高保真原型 / 幻灯片 / 动画 + 20 设计哲学 + 5 维评审 + MP4 导出",
+  "readmeHtml": "<h1>alchaincyf/huashu-design</h1>\n<p>HTML-native design skill for Claude Code - 高保真原型 / 幻灯片 / 动画 + 20 设计哲学 + 5 维评审 + MP4 导出</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.005Z",
+  "author": {
+    "login": "alchaincyf",
+    "name": "alchaincyf",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/alchaincyf",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "alchaincyf-darwin-skill",
+      "displayName": "alchaincyf/darwin-skill",
+      "stars": 2215,
+      "relation": "source_overlap",
+      "evidence": "author:alchaincyf"
+    },
+    {
+      "slug": "obra-defense-in-depth",
+      "displayName": "obra/defense-in-depth",
+      "stars": 186953,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
+      "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "stars": 77115,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mvanhorn-last30days-skill",
+      "displayName": "mvanhorn/last30days-skill",
+      "stars": 25573,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "k-dense-ai-claude-scientific-skills",
+      "displayName": "K-Dense-AI/claude-scientific-skills",
+      "stars": 20299,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "muratcankoylan-context-fundamentals",
+      "displayName": "muratcankoylan/context-fundamentals",
+      "stars": 15494,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "muratcankoylan-context-degradation",
+      "displayName": "muratcankoylan/context-degradation",
+      "stars": 15494,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "muratcankoylan-context-compression",
+      "displayName": "muratcankoylan/context-compression",
+      "stars": 15494,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-shanghai",
+    "label": "Global Skill Market / Shanghai / Community Skills",
+    "lat": 31.2304,
+    "lon": 121.4737,
+    "source": "virtual_market"
+  }
+}

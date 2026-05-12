@@ -1,0 +1,89 @@
+{
+  "id": "skill:clickhouse-clickhousectl-local-dev",
+  "slug": "clickhouse-clickhousectl-local-dev",
+  "name": "clickhousectl-local-dev",
+  "displayName": "clickhouse/clickhousectl-local-dev",
+  "description": "Spin up a local ClickHouse development environment from zero with clickhousectl",
+  "stars": 0,
+  "category": "Skills by ClickHouse",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/clickhouse/skills/clickhousectl-local-dev",
+  "githubRepo": "",
+  "readme": "# clickhouse/clickhousectl-local-dev\n\nSpin up a local ClickHouse development environment from zero with clickhousectl",
+  "readmeHtml": "<h1>clickhouse/clickhousectl-local-dev</h1>\n<p>Spin up a local ClickHouse development environment from zero with clickhousectl</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.092Z",
+  "author": {
+    "login": "clickhouse",
+    "name": "clickhouse",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/clickhouse",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "clickhouse-clickhouse-best-practices",
+      "displayName": "clickhouse/clickhouse-best-practices",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:clickhouse"
+    },
+    {
+      "slug": "clickhouse-chdb-datastore",
+      "displayName": "clickhouse/chdb-datastore",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:clickhouse"
+    },
+    {
+      "slug": "clickhouse-chdb-sql",
+      "displayName": "clickhouse/chdb-sql",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:clickhouse"
+    },
+    {
+      "slug": "clickhouse-clickhouse-architecture-advisor",
+      "displayName": "clickhouse/clickhouse-architecture-advisor",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:clickhouse"
+    },
+    {
+      "slug": "clickhouse-clickhousectl-cloud-deploy",
+      "displayName": "clickhouse/clickhousectl-cloud-deploy",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:clickhouse"
+    },
+    {
+      "slug": "clickhouse-clickhouse-best-practices",
+      "displayName": "clickhouse/clickhouse-best-practices",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Skills by ClickHouse"
+    },
+    {
+      "slug": "clickhouse-chdb-datastore",
+      "displayName": "clickhouse/chdb-datastore",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Skills by ClickHouse"
+    },
+    {
+      "slug": "clickhouse-chdb-sql",
+      "displayName": "clickhouse/chdb-sql",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Skills by ClickHouse"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-sydney",
+    "label": "Global Skill Market / Sydney / Skills by ClickHouse",
+    "lat": -33.8688,
+    "lon": 151.2093,
+    "source": "virtual_market"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "skill:iannuttall-dotagents",
+  "slug": "iannuttall-dotagents",
+  "name": "dotagents",
+  "displayName": "iannuttall/dotagents",
+  "description": "One location for all of your hooks, commands, skills, and AGENT/CLAUDE.md files.",
+  "stars": 678,
+  "category": "Discovered",
+  "source": "discover:keyword",
+  "url": "https://github.com/iannuttall/dotagents",
+  "githubRepo": "iannuttall/dotagents",
+  "readme": "# iannuttall/dotagents\n\nOne location for all of your hooks, commands, skills, and AGENT/CLAUDE.md files.",
+  "readmeHtml": "<h1>iannuttall/dotagents</h1>\n<p>One location for all of your hooks, commands, skills, and AGENT/CLAUDE.md files.</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.040Z",
+  "author": {
+    "login": "iannuttall",
+    "name": "iannuttall",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/iannuttall",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 73174,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "bytedance-deer-flow",
+      "displayName": "bytedance/deer-flow",
+      "stars": 65827,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "farion1231-cc-switch",
+      "displayName": "farion1231/cc-switch",
+      "stars": 62022,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "gsd-build-get-shit-done",
+      "displayName": "gsd-build/get-shit-done",
+      "stars": 60616,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "shareai-lab-learn-claude-code",
+      "displayName": "shareAI-lab/learn-claude-code",
+      "stars": 58737,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-london",
+    "label": "Global Skill Market / London / Discovered",
+    "lat": 51.5072,
+    "lon": -0.1276,
+    "source": "virtual_market"
+  }
+}

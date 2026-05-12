@@ -1,0 +1,61 @@
+{
+  "id": "skill:neondatabase-neon-postgres-egress-optimizer",
+  "slug": "neondatabase-neon-postgres-egress-optimizer",
+  "name": "neon-postgres-egress-optimizer",
+  "displayName": "neondatabase/neon-postgres-egress-optimizer",
+  "description": "Optimize Neon Postgres egress and data transfer",
+  "stars": 0,
+  "category": "Skills by Neon",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/neondatabase/skills/neon-postgres-egress-optimizer",
+  "githubRepo": "",
+  "readme": "# neondatabase/neon-postgres-egress-optimizer\n\nOptimize Neon Postgres egress and data transfer",
+  "readmeHtml": "<h1>neondatabase/neon-postgres-egress-optimizer</h1>\n<p>Optimize Neon Postgres egress and data transfer</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.092Z",
+  "author": {
+    "login": "neondatabase",
+    "name": "neondatabase",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/neondatabase",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "neondatabase-neon-postgres",
+      "displayName": "neondatabase/neon-postgres",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:neondatabase"
+    },
+    {
+      "slug": "neondatabase-claimable-postgres",
+      "displayName": "neondatabase/claimable-postgres",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:neondatabase"
+    },
+    {
+      "slug": "neondatabase-neon-postgres",
+      "displayName": "neondatabase/neon-postgres",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Skills by Neon"
+    },
+    {
+      "slug": "neondatabase-claimable-postgres",
+      "displayName": "neondatabase/claimable-postgres",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Skills by Neon"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-berlin",
+    "label": "Global Skill Market / Berlin / Skills by Neon",
+    "lat": 52.52,
+    "lon": 13.405,
+    "source": "virtual_market"
+  }
+}

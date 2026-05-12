@@ -1,0 +1,89 @@
+{
+  "id": "skill:auth0-auth0-fastify-api",
+  "slug": "auth0-auth0-fastify-api",
+  "name": "auth0-fastify-api",
+  "displayName": "auth0/auth0-fastify-api",
+  "description": "Secure Fastify API endpoints with JWT Bearer token validation",
+  "stars": 0,
+  "category": "TypeScript Skills",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/auth0/skills/auth0-fastify-api",
+  "githubRepo": "",
+  "readme": "# auth0/auth0-fastify-api\n\nSecure Fastify API endpoints with JWT Bearer token validation",
+  "readmeHtml": "<h1>auth0/auth0-fastify-api</h1>\n<p>Secure Fastify API endpoints with JWT Bearer token validation</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.131Z",
+  "author": {
+    "login": "auth0",
+    "name": "auth0",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/auth0",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "auth0-auth0-android",
+      "displayName": "auth0/auth0-android",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:auth0"
+    },
+    {
+      "slug": "auth0-auth0-angular",
+      "displayName": "auth0/auth0-angular",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:auth0"
+    },
+    {
+      "slug": "auth0-auth0-aspnetcore-api",
+      "displayName": "auth0/auth0-aspnetcore-api",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:auth0"
+    },
+    {
+      "slug": "auth0-auth0-express",
+      "displayName": "auth0/auth0-express",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:auth0"
+    },
+    {
+      "slug": "auth0-auth0-fastify",
+      "displayName": "auth0/auth0-fastify",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:auth0"
+    },
+    {
+      "slug": "auth0-auth0-mfa",
+      "displayName": "auth0/auth0-mfa",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:auth0"
+    },
+    {
+      "slug": "auth0-auth0-migration",
+      "displayName": "auth0/auth0-migration",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:auth0"
+    },
+    {
+      "slug": "auth0-auth0-nextjs",
+      "displayName": "auth0/auth0-nextjs",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:auth0"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-tokyo",
+    "label": "Global Skill Market / Tokyo / TypeScript Skills",
+    "lat": 35.6762,
+    "lon": 139.6503,
+    "source": "virtual_market"
+  }
+}

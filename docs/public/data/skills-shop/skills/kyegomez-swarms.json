@@ -1,0 +1,89 @@
+{
+  "id": "skill:kyegomez-swarms",
+  "slug": "kyegomez-swarms",
+  "name": "swarms",
+  "displayName": "kyegomez/swarms",
+  "description": "The Enterprise-Grade Production-Ready Multi-Agent Orchestration Framework. Website: https://swarms.ai",
+  "stars": 6639,
+  "category": "Discovered",
+  "source": "discover:topic",
+  "url": "https://github.com/kyegomez/swarms",
+  "githubRepo": "kyegomez/swarms",
+  "readme": "# kyegomez/swarms\n\nThe Enterprise-Grade Production-Ready Multi-Agent Orchestration Framework. Website: https://swarms.ai",
+  "readmeHtml": "<h1>kyegomez/swarms</h1>\n<p>The Enterprise-Grade Production-Ready Multi-Agent Orchestration Framework. Website: https://swarms.ai</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.013Z",
+  "author": {
+    "login": "kyegomez",
+    "name": "kyegomez",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/kyegomez",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "kyegomez-openmythos",
+      "displayName": "kyegomez/OpenMythos",
+      "stars": 12173,
+      "relation": "source_overlap",
+      "evidence": "author:kyegomez"
+    },
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 73174,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "bytedance-deer-flow",
+      "displayName": "bytedance/deer-flow",
+      "stars": 65827,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "farion1231-cc-switch",
+      "displayName": "farion1231/cc-switch",
+      "stars": 62022,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "gsd-build-get-shit-done",
+      "displayName": "gsd-build/get-shit-done",
+      "stars": 60616,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-singapore",
+    "label": "Global Skill Market / Singapore / Discovered",
+    "lat": 1.3521,
+    "lon": 103.8198,
+    "source": "virtual_market"
+  }
+}

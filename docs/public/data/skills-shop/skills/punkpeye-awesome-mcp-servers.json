@@ -1,0 +1,54 @@
+{
+  "id": "skill:punkpeye-awesome-mcp-servers",
+  "slug": "punkpeye-awesome-mcp-servers",
+  "name": "awesome-mcp-servers",
+  "displayName": "punkpeye/awesome-mcp-servers",
+  "description": "A collection of Model Context Protocol (MCP) servers.",
+  "stars": 86399,
+  "category": "How do I know if a skill is safe to use?",
+  "source": "heilcheng",
+  "url": "https://github.com/punkpeye/awesome-mcp-servers",
+  "githubRepo": "punkpeye/awesome-mcp-servers",
+  "readme": "# punkpeye/awesome-mcp-servers\n\nA collection of Model Context Protocol (MCP) servers.",
+  "readmeHtml": "<h1>punkpeye/awesome-mcp-servers</h1>\n<p>A collection of Model Context Protocol (MCP) servers.</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:06.997Z",
+  "author": {
+    "login": "punkpeye",
+    "name": "punkpeye",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/punkpeye",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "voltagent-awesome-design-md",
+      "displayName": "voltagent/awesome-design-md",
+      "stars": 72503,
+      "relation": "shared_tag",
+      "evidence": "How do I know if a skill is safe to use?"
+    },
+    {
+      "slug": "voltagent-awesome-openclaw-skills",
+      "displayName": "voltagent/awesome-openclaw-skills",
+      "stars": 48125,
+      "relation": "shared_tag",
+      "evidence": "How do I know if a skill is safe to use?"
+    },
+    {
+      "slug": "hesreallyhim-awesome-claude-code",
+      "displayName": "hesreallyhim/awesome-claude-code",
+      "stars": 42825,
+      "relation": "shared_tag",
+      "evidence": "How do I know if a skill is safe to use?"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-shanghai",
+    "label": "Global Skill Market / Shanghai / How do I know if a skill is safe to use?",
+    "lat": 31.2304,
+    "lon": 121.4737,
+    "source": "virtual_market"
+  }
+}

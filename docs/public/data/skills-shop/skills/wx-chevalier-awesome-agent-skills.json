@@ -1,0 +1,89 @@
+{
+  "id": "skill:wx-chevalier-awesome-agent-skills",
+  "slug": "wx-chevalier-awesome-agent-skills",
+  "name": "awesome-agent-skills",
+  "displayName": "wx-chevalier/Awesome-Agent-Skills",
+  "description": "自己经常使用与总结的一些 Skills",
+  "stars": 5,
+  "category": "Discovered",
+  "source": "discover:keyword",
+  "url": "https://github.com/wx-chevalier/Awesome-Agent-Skills",
+  "githubRepo": "wx-chevalier/Awesome-Agent-Skills",
+  "readme": "# wx-chevalier/Awesome-Agent-Skills\n\n自己经常使用与总结的一些 Skills",
+  "readmeHtml": "<h1>wx-chevalier/Awesome-Agent-Skills</h1>\n<p>自己经常使用与总结的一些 Skills</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.076Z",
+  "author": {
+    "login": "wx-chevalier",
+    "name": "wx-chevalier",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/wx-chevalier",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 73174,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "bytedance-deer-flow",
+      "displayName": "bytedance/deer-flow",
+      "stars": 65827,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "farion1231-cc-switch",
+      "displayName": "farion1231/cc-switch",
+      "stars": 62022,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "gsd-build-get-shit-done",
+      "displayName": "gsd-build/get-shit-done",
+      "stars": 60616,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "shareai-lab-learn-claude-code",
+      "displayName": "shareAI-lab/learn-claude-code",
+      "stars": 58737,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-toronto",
+    "label": "Global Skill Market / Toronto / Discovered",
+    "lat": 43.6532,
+    "lon": -79.3832,
+    "source": "virtual_market"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "skill:trailofbits-modern-python",
+  "slug": "trailofbits-modern-python",
+  "name": "modern-python",
+  "displayName": "trailofbits/modern-python",
+  "description": "Modern Python tooling with uv, ruff, ty, and pytest best practices",
+  "stars": 0,
+  "category": "Skills by Typefully",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/trailofbits/skills/modern-python",
+  "githubRepo": "",
+  "readme": "# trailofbits/modern-python\n\nModern Python tooling with uv, ruff, ty, and pytest best practices",
+  "readmeHtml": "<h1>trailofbits/modern-python</h1>\n<p>Modern Python tooling with uv, ruff, ty, and pytest best practices</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.104Z",
+  "author": {
+    "login": "trailofbits",
+    "name": "trailofbits",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/trailofbits",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "trailofbits-skills",
+      "displayName": "trailofbits/skills",
+      "stars": 5043,
+      "relation": "source_overlap",
+      "evidence": "author:trailofbits"
+    },
+    {
+      "slug": "trailofbits-ask-questions-if-underspecified",
+      "displayName": "trailofbits/ask-questions-if-underspecified",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:trailofbits"
+    },
+    {
+      "slug": "trailofbits-audit-context-building",
+      "displayName": "trailofbits/audit-context-building",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:trailofbits"
+    },
+    {
+      "slug": "trailofbits-building-secure-contracts",
+      "displayName": "trailofbits/building-secure-contracts",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:trailofbits"
+    },
+    {
+      "slug": "trailofbits-burpsuite-project-parser",
+      "displayName": "trailofbits/burpsuite-project-parser",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:trailofbits"
+    },
+    {
+      "slug": "trailofbits-claude-in-chrome-troubleshooting",
+      "displayName": "trailofbits/claude-in-chrome-troubleshooting",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:trailofbits"
+    },
+    {
+      "slug": "trailofbits-constant-time-analysis",
+      "displayName": "trailofbits/constant-time-analysis",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:trailofbits"
+    },
+    {
+      "slug": "trailofbits-culture-index",
+      "displayName": "trailofbits/culture-index",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:trailofbits"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-sydney",
+    "label": "Global Skill Market / Sydney / Skills by Typefully",
+    "lat": -33.8688,
+    "lon": 151.2093,
+    "source": "virtual_market"
+  }
+}

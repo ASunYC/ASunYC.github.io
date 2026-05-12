@@ -1,0 +1,89 @@
+{
+  "id": "skill:netlify-netlify-edge-functions",
+  "slug": "netlify-netlify-edge-functions",
+  "name": "netlify-edge-functions",
+  "displayName": "netlify/netlify-edge-functions",
+  "description": "Low-latency edge middleware and geolocation logic",
+  "stars": 0,
+  "category": "Skills by Typefully",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/netlify/skills/netlify-edge-functions",
+  "githubRepo": "",
+  "readme": "# netlify/netlify-edge-functions\n\nLow-latency edge middleware and geolocation logic",
+  "readmeHtml": "<h1>netlify/netlify-edge-functions</h1>\n<p>Low-latency edge middleware and geolocation logic</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.101Z",
+  "author": {
+    "login": "netlify",
+    "name": "netlify",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/netlify",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "netlify-netlify-functions",
+      "displayName": "netlify/netlify-functions",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:netlify"
+    },
+    {
+      "slug": "netlify-netlify-blobs",
+      "displayName": "netlify/netlify-blobs",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:netlify"
+    },
+    {
+      "slug": "netlify-netlify-db",
+      "displayName": "netlify/netlify-db",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:netlify"
+    },
+    {
+      "slug": "netlify-netlify-image-cdn",
+      "displayName": "netlify/netlify-image-cdn",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:netlify"
+    },
+    {
+      "slug": "netlify-netlify-forms",
+      "displayName": "netlify/netlify-forms",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:netlify"
+    },
+    {
+      "slug": "netlify-netlify-frameworks",
+      "displayName": "netlify/netlify-frameworks",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:netlify"
+    },
+    {
+      "slug": "netlify-netlify-caching",
+      "displayName": "netlify/netlify-caching",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:netlify"
+    },
+    {
+      "slug": "netlify-netlify-config",
+      "displayName": "netlify/netlify-config",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:netlify"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-toronto",
+    "label": "Global Skill Market / Toronto / Skills by Typefully",
+    "lat": 43.6532,
+    "lon": -79.3832,
+    "source": "virtual_market"
+  }
+}

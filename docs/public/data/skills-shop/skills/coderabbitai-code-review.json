@@ -1,0 +1,89 @@
+{
+  "id": "skill:coderabbitai-code-review",
+  "slug": "coderabbitai-code-review",
+  "name": "code-review",
+  "displayName": "coderabbitai/code-review",
+  "description": "Run AI-powered code reviews through the CodeRabbit CLI",
+  "stars": 0,
+  "category": "TypeScript Skills",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/coderabbitai/skills/code-review",
+  "githubRepo": "",
+  "readme": "# coderabbitai/code-review\n\nRun AI-powered code reviews through the CodeRabbit CLI",
+  "readmeHtml": "<h1>coderabbitai/code-review</h1>\n<p>Run AI-powered code reviews through the CodeRabbit CLI</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.132Z",
+  "author": {
+    "login": "coderabbitai",
+    "name": "coderabbitai",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/coderabbitai",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "coderabbitai-skills",
+      "displayName": "coderabbitai/skills",
+      "stars": 91,
+      "relation": "source_overlap",
+      "evidence": "author:coderabbitai"
+    },
+    {
+      "slug": "coderabbitai-autofix",
+      "displayName": "coderabbitai/autofix",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:coderabbitai"
+    },
+    {
+      "slug": "deanpeters-acquisition-channel-advisor",
+      "displayName": "deanpeters/acquisition-channel-advisor",
+      "stars": 4159,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    },
+    {
+      "slug": "deanpeters-ai-shaped-readiness-advisor",
+      "displayName": "deanpeters/ai-shaped-readiness-advisor",
+      "stars": 4159,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    },
+    {
+      "slug": "deanpeters-altitude-horizon-framework",
+      "displayName": "deanpeters/altitude-horizon-framework",
+      "stars": 4159,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    },
+    {
+      "slug": "deanpeters-business-health-diagnostic",
+      "displayName": "deanpeters/business-health-diagnostic",
+      "stars": 4159,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    },
+    {
+      "slug": "deanpeters-company-research",
+      "displayName": "deanpeters/company-research",
+      "stars": 4159,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    },
+    {
+      "slug": "deanpeters-customer-journey-map",
+      "displayName": "deanpeters/customer-journey-map",
+      "stars": 4159,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-tokyo",
+    "label": "Global Skill Market / Tokyo / TypeScript Skills",
+    "lat": 35.6762,
+    "lon": 139.6503,
+    "source": "virtual_market"
+  }
+}

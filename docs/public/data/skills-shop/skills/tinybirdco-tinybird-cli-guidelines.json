@@ -1,0 +1,75 @@
+{
+  "id": "skill:tinybirdco-tinybird-cli-guidelines",
+  "slug": "tinybirdco-tinybird-cli-guidelines",
+  "name": "tinybird-cli-guidelines",
+  "displayName": "tinybirdco/tinybird-cli-guidelines",
+  "description": "Tinybird CLI usage guidelines and commands",
+  "stars": 0,
+  "category": "Skills by Tinybird Team",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/tinybirdco/skills/tinybird-cli-guidelines",
+  "githubRepo": "",
+  "readme": "# tinybirdco/tinybird-cli-guidelines\n\nTinybird CLI usage guidelines and commands",
+  "readmeHtml": "<h1>tinybirdco/tinybird-cli-guidelines</h1>\n<p>Tinybird CLI usage guidelines and commands</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.091Z",
+  "author": {
+    "login": "tinybirdco",
+    "name": "tinybirdco",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/tinybirdco",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "tinybirdco-tinybird-best-practices",
+      "displayName": "tinybirdco/tinybird-best-practices",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:tinybirdco"
+    },
+    {
+      "slug": "tinybirdco-tinybird-python-sdk-guidelines",
+      "displayName": "tinybirdco/tinybird-python-sdk-guidelines",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:tinybirdco"
+    },
+    {
+      "slug": "tinybirdco-tinybird-typescript-sdk-guidelines",
+      "displayName": "tinybirdco/tinybird-typescript-sdk-guidelines",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:tinybirdco"
+    },
+    {
+      "slug": "tinybirdco-tinybird-best-practices",
+      "displayName": "tinybirdco/tinybird-best-practices",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Skills by Tinybird Team"
+    },
+    {
+      "slug": "tinybirdco-tinybird-python-sdk-guidelines",
+      "displayName": "tinybirdco/tinybird-python-sdk-guidelines",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Skills by Tinybird Team"
+    },
+    {
+      "slug": "tinybirdco-tinybird-typescript-sdk-guidelines",
+      "displayName": "tinybirdco/tinybird-typescript-sdk-guidelines",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Skills by Tinybird Team"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-paris",
+    "label": "Global Skill Market / Paris / Skills by Tinybird Team",
+    "lat": 48.8566,
+    "lon": 2.3522,
+    "source": "virtual_market"
+  }
+}

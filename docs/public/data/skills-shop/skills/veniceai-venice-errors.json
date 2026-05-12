@@ -1,0 +1,89 @@
+{
+  "id": "skill:veniceai-venice-errors",
+  "slug": "veniceai-venice-errors",
+  "name": "venice-errors",
+  "displayName": "veniceai/venice-errors",
+  "description": "Error handling, retries, and API status codes",
+  "stars": 0,
+  "category": "Skills by Typefully",
+  "source": "voltagent",
+  "url": "https://github.com/veniceai/skills/tree/main/skills/venice-errors",
+  "githubRepo": "veniceai/skills",
+  "readme": "# veniceai/venice-errors\n\nError handling, retries, and API status codes",
+  "readmeHtml": "<h1>veniceai/venice-errors</h1>\n<p>Error handling, retries, and API status codes</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.100Z",
+  "author": {
+    "login": "veniceai",
+    "name": "veniceai",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/veniceai",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "veniceai-venice-api-overview",
+      "displayName": "veniceai/venice-api-overview",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:veniceai/skills"
+    },
+    {
+      "slug": "veniceai-venice-auth",
+      "displayName": "veniceai/venice-auth",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:veniceai/skills"
+    },
+    {
+      "slug": "veniceai-venice-chat",
+      "displayName": "veniceai/venice-chat",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:veniceai/skills"
+    },
+    {
+      "slug": "veniceai-venice-responses",
+      "displayName": "veniceai/venice-responses",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:veniceai/skills"
+    },
+    {
+      "slug": "veniceai-venice-embeddings",
+      "displayName": "veniceai/venice-embeddings",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:veniceai/skills"
+    },
+    {
+      "slug": "veniceai-venice-image-generate",
+      "displayName": "veniceai/venice-image-generate",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:veniceai/skills"
+    },
+    {
+      "slug": "veniceai-venice-image-edit",
+      "displayName": "veniceai/venice-image-edit",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:veniceai/skills"
+    },
+    {
+      "slug": "veniceai-venice-audio-speech",
+      "displayName": "veniceai/venice-audio-speech",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:veniceai/skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-sao-paulo",
+    "label": "Global Skill Market / Sao Paulo / Skills by Typefully",
+    "lat": -23.5558,
+    "lon": -46.6396,
+    "source": "virtual_market"
+  }
+}

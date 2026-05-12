@@ -1,0 +1,89 @@
+{
+  "id": "skill:composiohq-awesome-codex-skills",
+  "slug": "composiohq-awesome-codex-skills",
+  "name": "awesome-codex-skills",
+  "displayName": "ComposioHQ/awesome-codex-skills",
+  "description": "A curated list of practical Codex skills for automating workflows across the Codex CLI and API.",
+  "stars": 7337,
+  "category": "Discovered",
+  "source": "discover:keyword",
+  "url": "https://github.com/ComposioHQ/awesome-codex-skills",
+  "githubRepo": "ComposioHQ/awesome-codex-skills",
+  "readme": "# ComposioHQ/awesome-codex-skills\n\nA curated list of practical Codex skills for automating workflows across the Codex CLI and API.",
+  "readmeHtml": "<h1>ComposioHQ/awesome-codex-skills</h1>\n<p>A curated list of practical Codex skills for automating workflows across the Codex CLI and API.</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.013Z",
+  "author": {
+    "login": "composiohq",
+    "name": "composiohq",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/composiohq",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "composiohq-awesome-claude-skills",
+      "displayName": "ComposioHQ/awesome-claude-skills",
+      "stars": 58467,
+      "relation": "source_overlap",
+      "evidence": "author:composiohq"
+    },
+    {
+      "slug": "composiohq-agent-orchestrator",
+      "displayName": "ComposioHQ/agent-orchestrator",
+      "stars": 6864,
+      "relation": "source_overlap",
+      "evidence": "author:composiohq"
+    },
+    {
+      "slug": "composiohq-open-claude-cowork",
+      "displayName": "ComposioHQ/open-claude-cowork",
+      "stars": 4090,
+      "relation": "source_overlap",
+      "evidence": "author:composiohq"
+    },
+    {
+      "slug": "composiohq-composio",
+      "displayName": "composiohq/composio",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:composiohq"
+    },
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 73174,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-sao-paulo",
+    "label": "Global Skill Market / Sao Paulo / Discovered",
+    "lat": -23.5558,
+    "lon": -46.6396,
+    "source": "virtual_market"
+  }
+}

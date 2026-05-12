@@ -1,0 +1,89 @@
+{
+  "id": "skill:huggingface-hugging-face-paper-pages",
+  "slug": "huggingface-hugging-face-paper-pages",
+  "name": "hugging-face-paper-pages",
+  "displayName": "huggingface/hugging-face-paper-pages",
+  "description": "Create and manage paper pages on HF Hub",
+  "stars": 0,
+  "category": "Skills by Typefully",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/huggingface/skills/hugging-face-paper-pages",
+  "githubRepo": "",
+  "readme": "# huggingface/hugging-face-paper-pages\n\nCreate and manage paper pages on HF Hub",
+  "readmeHtml": "<h1>huggingface/hugging-face-paper-pages</h1>\n<p>Create and manage paper pages on HF Hub</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.103Z",
+  "author": {
+    "login": "huggingface",
+    "name": "huggingface",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/huggingface",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "huggingface-upskill",
+      "displayName": "huggingface/upskill",
+      "stars": 517,
+      "relation": "source_overlap",
+      "evidence": "author:huggingface"
+    },
+    {
+      "slug": "huggingface-hf-cli",
+      "displayName": "huggingface/hf-cli",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:huggingface"
+    },
+    {
+      "slug": "huggingface-hugging-face-dataset-viewer",
+      "displayName": "huggingface/hugging-face-dataset-viewer",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:huggingface"
+    },
+    {
+      "slug": "huggingface-hugging-face-datasets",
+      "displayName": "huggingface/hugging-face-datasets",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:huggingface"
+    },
+    {
+      "slug": "huggingface-hugging-face-evaluation",
+      "displayName": "huggingface/hugging-face-evaluation",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:huggingface"
+    },
+    {
+      "slug": "huggingface-hugging-face-jobs",
+      "displayName": "huggingface/hugging-face-jobs",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:huggingface"
+    },
+    {
+      "slug": "huggingface-hugging-face-model-trainer",
+      "displayName": "huggingface/hugging-face-model-trainer",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:huggingface"
+    },
+    {
+      "slug": "huggingface-hugging-face-paper-publisher",
+      "displayName": "huggingface/hugging-face-paper-publisher",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:huggingface"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-bengaluru",
+    "label": "Global Skill Market / Bengaluru / Skills by Typefully",
+    "lat": 12.9716,
+    "lon": 77.5946,
+    "source": "virtual_market"
+  }
+}

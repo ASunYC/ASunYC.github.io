@@ -1,0 +1,89 @@
+{
+  "id": "skill:binance-query-token-audit",
+  "slug": "binance-query-token-audit",
+  "name": "query-token-audit",
+  "displayName": "binance/query-token-audit",
+  "description": "Audit token security to detect scams, honeypots, and malicious contracts across BSC, Base, Solana, and Ethereum",
+  "stars": 0,
+  "category": "TypeScript Skills",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/binance/skills/query-token-audit",
+  "githubRepo": "",
+  "readme": "# binance/query-token-audit\n\nAudit token security to detect scams, honeypots, and malicious contracts across BSC, Base, Solana, and Ethereum",
+  "readmeHtml": "<h1>binance/query-token-audit</h1>\n<p>Audit token security to detect scams, honeypots, and malicious contracts across BSC, Base, Solana, and Ethereum</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.130Z",
+  "author": {
+    "login": "binance",
+    "name": "binance",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/binance",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "binance-crypto-market-rank",
+      "displayName": "binance/crypto-market-rank",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:binance"
+    },
+    {
+      "slug": "binance-meme-rush",
+      "displayName": "binance/meme-rush",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:binance"
+    },
+    {
+      "slug": "binance-query-address-info",
+      "displayName": "binance/query-address-info",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:binance"
+    },
+    {
+      "slug": "binance-query-token-info",
+      "displayName": "binance/query-token-info",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:binance"
+    },
+    {
+      "slug": "binance-trading-signal",
+      "displayName": "binance/trading-signal",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:binance"
+    },
+    {
+      "slug": "binance-spot",
+      "displayName": "binance/spot",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:binance"
+    },
+    {
+      "slug": "deanpeters-acquisition-channel-advisor",
+      "displayName": "deanpeters/acquisition-channel-advisor",
+      "stars": 4159,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    },
+    {
+      "slug": "deanpeters-ai-shaped-readiness-advisor",
+      "displayName": "deanpeters/ai-shaped-readiness-advisor",
+      "stars": 4159,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-shanghai",
+    "label": "Global Skill Market / Shanghai / TypeScript Skills",
+    "lat": 31.2304,
+    "lon": 121.4737,
+    "source": "virtual_market"
+  }
+}

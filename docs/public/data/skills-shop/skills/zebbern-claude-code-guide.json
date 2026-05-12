@@ -1,0 +1,89 @@
+{
+  "id": "skill:zebbern-claude-code-guide",
+  "slug": "zebbern-claude-code-guide",
+  "name": "claude-code-guide",
+  "displayName": "zebbern/claude-code-guide",
+  "description": "Claude Code Guide - Setup, Commands, workflows, agents, skills & tips-n-tricks go from beginner to power user!",
+  "stars": 4089,
+  "category": "Discovered",
+  "source": "discover:topic",
+  "url": "https://github.com/zebbern/claude-code-guide",
+  "githubRepo": "zebbern/claude-code-guide",
+  "readme": "# zebbern/claude-code-guide\n\nClaude Code Guide - Setup, Commands, workflows, agents, skills & tips-n-tricks go from beginner to power user!",
+  "readmeHtml": "<h1>zebbern/claude-code-guide</h1>\n<p>Claude Code Guide - Setup, Commands, workflows, agents, skills &amp; tips-n-tricks go from beginner to power user!</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.019Z",
+  "author": {
+    "login": "zebbern",
+    "name": "zebbern",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/zebbern",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "zebbern-agent-skills-authoring",
+      "displayName": "zebbern/agent-skills-authoring",
+      "stars": 21,
+      "relation": "source_overlap",
+      "evidence": "author:zebbern"
+    },
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 73174,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "bytedance-deer-flow",
+      "displayName": "bytedance/deer-flow",
+      "stars": 65827,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "farion1231-cc-switch",
+      "displayName": "farion1231/cc-switch",
+      "stars": 62022,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "gsd-build-get-shit-done",
+      "displayName": "gsd-build/get-shit-done",
+      "stars": 60616,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-sydney",
+    "label": "Global Skill Market / Sydney / Discovered",
+    "lat": -33.8688,
+    "lon": 151.2093,
+    "source": "virtual_market"
+  }
+}

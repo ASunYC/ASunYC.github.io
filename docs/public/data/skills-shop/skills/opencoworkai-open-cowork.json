@@ -1,0 +1,89 @@
+{
+  "id": "skill:opencoworkai-open-cowork",
+  "slug": "opencoworkai-open-cowork",
+  "name": "open-cowork",
+  "displayName": "OpenCoworkAI/open-cowork",
+  "description": "Open-source AI agent desktop app for Windows & macOS. One-click install Claude Code, MCP tools, and Skills — with sandbox isolation, multi-model support, and Feishu/Slack integration.",
+  "stars": 1204,
+  "category": "Discovered",
+  "source": "discover:keyword",
+  "url": "https://github.com/OpenCoworkAI/open-cowork",
+  "githubRepo": "OpenCoworkAI/open-cowork",
+  "readme": "# OpenCoworkAI/open-cowork\n\nOpen-source AI agent desktop app for Windows & macOS. One-click install Claude Code, MCP tools, and Skills — with sandbox isolation, multi-model support, and Feishu/Slack integration.",
+  "readmeHtml": "<h1>OpenCoworkAI/open-cowork</h1>\n<p>Open-source AI agent desktop app for Windows &amp; macOS. One-click install Claude Code, MCP tools, and Skills — with sandbox isolation, multi-model support, and Feishu/Slack integration.</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.031Z",
+  "author": {
+    "login": "opencoworkai",
+    "name": "opencoworkai",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/opencoworkai",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "opencoworkai-open-codesign",
+      "displayName": "OpenCoworkAI/open-codesign",
+      "stars": 5125,
+      "relation": "source_overlap",
+      "evidence": "author:opencoworkai"
+    },
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 73174,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "bytedance-deer-flow",
+      "displayName": "bytedance/deer-flow",
+      "stars": 65827,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "farion1231-cc-switch",
+      "displayName": "farion1231/cc-switch",
+      "stars": 62022,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "gsd-build-get-shit-done",
+      "displayName": "gsd-build/get-shit-done",
+      "stars": 60616,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-shanghai",
+    "label": "Global Skill Market / Shanghai / Discovered",
+    "lat": 31.2304,
+    "lon": 121.4737,
+    "source": "virtual_market"
+  }
+}

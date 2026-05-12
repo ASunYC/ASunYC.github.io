@@ -1,0 +1,89 @@
+{
+  "id": "skill:metyatech-agent-runner",
+  "slug": "metyatech-agent-runner",
+  "name": "agent-runner",
+  "displayName": "metyatech/agent-runner",
+  "description": "Local agent runner that queues and executes GitHub Agent requests using Codex",
+  "stars": 0,
+  "category": "Discovered",
+  "source": "discover:topic",
+  "url": "https://github.com/metyatech/agent-runner",
+  "githubRepo": "metyatech/agent-runner",
+  "readme": "# metyatech/agent-runner\n\nLocal agent runner that queues and executes GitHub Agent requests using Codex",
+  "readmeHtml": "<h1>metyatech/agent-runner</h1>\n<p>Local agent runner that queues and executes GitHub Agent requests using Codex</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.158Z",
+  "author": {
+    "login": "metyatech",
+    "name": "metyatech",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/metyatech",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "metyatech-markdown-to-qti",
+      "displayName": "metyatech/markdown-to-qti",
+      "stars": 2,
+      "relation": "source_overlap",
+      "evidence": "author:metyatech"
+    },
+    {
+      "slug": "metyatech-workspace-template-generator",
+      "displayName": "metyatech/workspace-template-generator",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:metyatech"
+    },
+    {
+      "slug": "metyatech-managed-worktree-system",
+      "displayName": "metyatech/managed-worktree-system",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:metyatech"
+    },
+    {
+      "slug": "metyatech-ai-quota",
+      "displayName": "metyatech/ai-quota",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:metyatech"
+    },
+    {
+      "slug": "metyatech-roster-to-qti-results",
+      "displayName": "metyatech/roster-to-qti-results",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:metyatech"
+    },
+    {
+      "slug": "metyatech-agents-mcp",
+      "displayName": "metyatech/agents-mcp",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:metyatech"
+    },
+    {
+      "slug": "metyatech-task-tracker",
+      "displayName": "metyatech/task-tracker",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:metyatech"
+    },
+    {
+      "slug": "metyatech-robotframework-unity-editor",
+      "displayName": "metyatech/robotframework-unity-editor",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:metyatech"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-sydney",
+    "label": "Global Skill Market / Sydney / Discovered",
+    "lat": -33.8688,
+    "lon": 151.2093,
+    "source": "virtual_market"
+  }
+}

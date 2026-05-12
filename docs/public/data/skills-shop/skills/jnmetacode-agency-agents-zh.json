@@ -1,0 +1,89 @@
+{
+  "id": "skill:jnmetacode-agency-agents-zh",
+  "slug": "jnmetacode-agency-agents-zh",
+  "name": "agency-agents-zh",
+  "displayName": "jnMetaCode/agency-agents-zh",
+  "description": "🎭 211 个即插即用的 AI 专家角色 — 支持 Hermes Agent/Claude Code/Cursor/Copilot 等 16 种工具，覆盖工程/设计/营销/金融等 18 个部门。含 46 个中国市场原创智能体（小红书/抖音/微信/飞书/钉钉等）",
+  "stars": 10066,
+  "category": "Discovered",
+  "source": "discover:topic",
+  "url": "https://github.com/jnMetaCode/agency-agents-zh",
+  "githubRepo": "jnMetaCode/agency-agents-zh",
+  "readme": "# jnMetaCode/agency-agents-zh\n\n🎭 211 个即插即用的 AI 专家角色 — 支持 Hermes Agent/Claude Code/Cursor/Copilot 等 16 种工具，覆盖工程/设计/营销/金融等 18 个部门。含 46 个中国市场原创智能体（小红书/抖音/微信/飞书/钉钉等）",
+  "readmeHtml": "<h1>jnMetaCode/agency-agents-zh</h1>\n<p>🎭 211 个即插即用的 AI 专家角色 — 支持 Hermes Agent/Claude Code/Cursor/Copilot 等 16 种工具，覆盖工程/设计/营销/金融等 18 个部门。含 46 个中国市场原创智能体（小红书/抖音/微信/飞书/钉钉等）</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.005Z",
+  "author": {
+    "login": "jnmetacode",
+    "name": "jnmetacode",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/jnmetacode",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "jnmetacode-superpowers-zh",
+      "displayName": "jnMetaCode/superpowers-zh",
+      "stars": 2192,
+      "relation": "source_overlap",
+      "evidence": "author:jnmetacode"
+    },
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 73174,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "bytedance-deer-flow",
+      "displayName": "bytedance/deer-flow",
+      "stars": 65827,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "farion1231-cc-switch",
+      "displayName": "farion1231/cc-switch",
+      "stars": 62022,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "gsd-build-get-shit-done",
+      "displayName": "gsd-build/get-shit-done",
+      "stars": 60616,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-san-francisco",
+    "label": "Global Skill Market / San Francisco / Discovered",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "virtual_market"
+  }
+}

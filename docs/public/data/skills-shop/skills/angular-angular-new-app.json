@@ -1,0 +1,54 @@
+{
+  "id": "skill:angular-angular-new-app",
+  "slug": "angular-angular-new-app",
+  "name": "angular-new-app",
+  "displayName": "angular/angular-new-app",
+  "description": "Create new Angular apps using CLI with modern best practices",
+  "stars": 337,
+  "category": "Skills by Angular",
+  "source": "voltagent",
+  "url": "https://github.com/angular/skills",
+  "githubRepo": "angular/skills",
+  "readme": "# angular/angular-new-app\n\nCreate new Angular apps using CLI with modern best practices",
+  "readmeHtml": "<h1>angular/angular-new-app</h1>\n<p>Create new Angular apps using CLI with modern best practices</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.048Z",
+  "author": {
+    "login": "angular",
+    "name": "angular",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/angular",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "angular-angular-developer",
+      "displayName": "angular/angular-developer",
+      "stars": 337,
+      "relation": "source_overlap",
+      "evidence": "repo:angular/skills"
+    },
+    {
+      "slug": "angular-angular-developer",
+      "displayName": "angular/angular-developer",
+      "stars": 337,
+      "relation": "source_overlap",
+      "evidence": "author:angular"
+    },
+    {
+      "slug": "angular-angular-developer",
+      "displayName": "angular/angular-developer",
+      "stars": 337,
+      "relation": "shared_tag",
+      "evidence": "Skills by Angular"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-paris",
+    "label": "Global Skill Market / Paris / Skills by Angular",
+    "lat": 48.8566,
+    "lon": 2.3522,
+    "source": "virtual_market"
+  }
+}

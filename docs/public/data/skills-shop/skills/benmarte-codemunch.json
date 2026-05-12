@@ -1,0 +1,89 @@
+{
+  "id": "skill:benmarte-codemunch",
+  "slug": "benmarte-codemunch",
+  "name": "codemunch",
+  "displayName": "benmarte/codemunch",
+  "description": "Zero-config, token-efficient code exploration for Claude Code — no MCP server, no Python, no database",
+  "stars": 4,
+  "category": "Discovered",
+  "source": "discover:topic",
+  "url": "https://github.com/benmarte/codemunch",
+  "githubRepo": "benmarte/codemunch",
+  "readme": "# benmarte/codemunch\n\nZero-config, token-efficient code exploration for Claude Code — no MCP server, no Python, no database",
+  "readmeHtml": "<h1>benmarte/codemunch</h1>\n<p>Zero-config, token-efficient code exploration for Claude Code — no MCP server, no Python, no database</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.077Z",
+  "author": {
+    "login": "benmarte",
+    "name": "benmarte",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/benmarte",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "benmarte-autoimprove",
+      "displayName": "benmarte/autoimprove",
+      "stars": 5,
+      "relation": "source_overlap",
+      "evidence": "author:benmarte"
+    },
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 73174,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "bytedance-deer-flow",
+      "displayName": "bytedance/deer-flow",
+      "stars": 65827,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "farion1231-cc-switch",
+      "displayName": "farion1231/cc-switch",
+      "stars": 62022,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "gsd-build-get-shit-done",
+      "displayName": "gsd-build/get-shit-done",
+      "stars": 60616,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-san-francisco",
+    "label": "Global Skill Market / San Francisco / Discovered",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "virtual_market"
+  }
+}

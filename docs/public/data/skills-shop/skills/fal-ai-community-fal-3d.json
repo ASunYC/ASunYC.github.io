@@ -1,0 +1,89 @@
+{
+  "id": "skill:fal-ai-community-fal-3d",
+  "slug": "fal-ai-community-fal-3d",
+  "name": "fal-3d",
+  "displayName": "fal-ai-community/fal-3d",
+  "description": "Generate 3D models from text or images",
+  "stars": 0,
+  "category": "TypeScript Skills",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/fal-ai-community/skills/fal-3d",
+  "githubRepo": "",
+  "readme": "# fal-ai-community/fal-3d\n\nGenerate 3D models from text or images",
+  "readmeHtml": "<h1>fal-ai-community/fal-3d</h1>\n<p>Generate 3D models from text or images</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.118Z",
+  "author": {
+    "login": "fal-ai-community",
+    "name": "fal-ai-community",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/fal-ai-community",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "fal-ai-community-fal-audio",
+      "displayName": "fal-ai-community/fal-audio",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:fal-ai-community"
+    },
+    {
+      "slug": "fal-ai-community-fal-generate",
+      "displayName": "fal-ai-community/fal-generate",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:fal-ai-community"
+    },
+    {
+      "slug": "fal-ai-community-fal-image-edit",
+      "displayName": "fal-ai-community/fal-image-edit",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:fal-ai-community"
+    },
+    {
+      "slug": "fal-ai-community-fal-kling-o3",
+      "displayName": "fal-ai-community/fal-kling-o3",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:fal-ai-community"
+    },
+    {
+      "slug": "fal-ai-community-fal-lip-sync",
+      "displayName": "fal-ai-community/fal-lip-sync",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:fal-ai-community"
+    },
+    {
+      "slug": "fal-ai-community-fal-platform",
+      "displayName": "fal-ai-community/fal-platform",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:fal-ai-community"
+    },
+    {
+      "slug": "fal-ai-community-fal-realtime",
+      "displayName": "fal-ai-community/fal-realtime",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:fal-ai-community"
+    },
+    {
+      "slug": "fal-ai-community-fal-restore",
+      "displayName": "fal-ai-community/fal-restore",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:fal-ai-community"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-new-york",
+    "label": "Global Skill Market / New York / TypeScript Skills",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "source": "virtual_market"
+  }
+}

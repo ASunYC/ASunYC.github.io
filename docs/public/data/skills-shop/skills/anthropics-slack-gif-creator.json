@@ -1,0 +1,89 @@
+{
+  "id": "skill:anthropics-slack-gif-creator",
+  "slug": "anthropics-slack-gif-creator",
+  "name": "slack-gif-creator",
+  "displayName": "anthropics/slack-gif-creator",
+  "description": "Create animated GIFs optimized for Slack size constraints",
+  "stars": 0,
+  "category": "Official Skills by",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/anthropics/skills/slack-gif-creator",
+  "githubRepo": "",
+  "readme": "# anthropics/slack-gif-creator\n\nCreate animated GIFs optimized for Slack size constraints",
+  "readmeHtml": "<h1>anthropics/slack-gif-creator</h1>\n<p>Create animated GIFs optimized for Slack size constraints</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.089Z",
+  "author": {
+    "login": "anthropics",
+    "name": "anthropics",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/anthropics",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "anthropics-claude-plugins-official",
+      "displayName": "anthropics/claude-plugins-official",
+      "stars": 18758,
+      "relation": "source_overlap",
+      "evidence": "author:anthropics"
+    },
+    {
+      "slug": "anthropics-docx",
+      "displayName": "anthropics/docx",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:anthropics"
+    },
+    {
+      "slug": "anthropics-doc-coauthoring",
+      "displayName": "anthropics/doc-coauthoring",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:anthropics"
+    },
+    {
+      "slug": "anthropics-pptx",
+      "displayName": "anthropics/pptx",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:anthropics"
+    },
+    {
+      "slug": "anthropics-xlsx",
+      "displayName": "anthropics/xlsx",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:anthropics"
+    },
+    {
+      "slug": "anthropics-pdf",
+      "displayName": "anthropics/pdf",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:anthropics"
+    },
+    {
+      "slug": "anthropics-algorithmic-art",
+      "displayName": "anthropics/algorithmic-art",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:anthropics"
+    },
+    {
+      "slug": "anthropics-canvas-design",
+      "displayName": "anthropics/canvas-design",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:anthropics"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-san-francisco",
+    "label": "Global Skill Market / San Francisco / Official Skills by",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "virtual_market"
+  }
+}

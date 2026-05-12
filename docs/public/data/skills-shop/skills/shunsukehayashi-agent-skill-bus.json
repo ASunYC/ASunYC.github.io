@@ -1,0 +1,89 @@
+{
+  "id": "skill:shunsukehayashi-agent-skill-bus",
+  "slug": "shunsukehayashi-agent-skill-bus",
+  "name": "agent-skill-bus",
+  "displayName": "ShunsukeHayashi/agent-skill-bus",
+  "description": "Self-improving task orchestration for AI agent systems",
+  "stars": 0,
+  "category": "Community Skills",
+  "source": "voltagent",
+  "url": "https://github.com/ShunsukeHayashi/agent-skill-bus",
+  "githubRepo": "ShunsukeHayashi/agent-skill-bus",
+  "readme": "# ShunsukeHayashi/agent-skill-bus\n\nSelf-improving task orchestration for AI agent systems",
+  "readmeHtml": "<h1>ShunsukeHayashi/agent-skill-bus</h1>\n<p>Self-improving task orchestration for AI agent systems</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.155Z",
+  "author": {
+    "login": "shunsukehayashi",
+    "name": "shunsukehayashi",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/shunsukehayashi",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "obra-defense-in-depth",
+      "displayName": "obra/defense-in-depth",
+      "stars": 186953,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
+      "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "stars": 77115,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mvanhorn-last30days-skill",
+      "displayName": "mvanhorn/last30days-skill",
+      "stars": 25573,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "k-dense-ai-claude-scientific-skills",
+      "displayName": "K-Dense-AI/claude-scientific-skills",
+      "stars": 20299,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "muratcankoylan-context-fundamentals",
+      "displayName": "muratcankoylan/context-fundamentals",
+      "stars": 15494,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "muratcankoylan-context-degradation",
+      "displayName": "muratcankoylan/context-degradation",
+      "stars": 15494,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "muratcankoylan-context-compression",
+      "displayName": "muratcankoylan/context-compression",
+      "stars": 15494,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "muratcankoylan-context-optimization",
+      "displayName": "muratcankoylan/context-optimization",
+      "stars": 15494,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-shanghai",
+    "label": "Global Skill Market / Shanghai / Community Skills",
+    "lat": 31.2304,
+    "lon": 121.4737,
+    "source": "virtual_market"
+  }
+}

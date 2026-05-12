@@ -1,0 +1,89 @@
+{
+  "id": "skill:alirezarezvani-claude-code-skill-factory",
+  "slug": "alirezarezvani-claude-code-skill-factory",
+  "name": "claude-code-skill-factory",
+  "displayName": "alirezarezvani/claude-code-skill-factory",
+  "description": "Claude Code Skill Factory — A powerful open-source toolkit for building and deploying production-ready Claude Skills, Code Agents, custom Slash Commands, and LLM Prompts at scale. Easily generate structured skill templates, automate workflow integration, and accelerate AI agent development with a clean, developer-friendly setup.",
+  "stars": 757,
+  "category": "Discovered",
+  "source": "discover:keyword",
+  "url": "https://github.com/alirezarezvani/claude-code-skill-factory",
+  "githubRepo": "alirezarezvani/claude-code-skill-factory",
+  "readme": "# alirezarezvani/claude-code-skill-factory\n\nClaude Code Skill Factory — A powerful open-source toolkit for building and deploying production-ready Claude Skills, Code Agents, custom Slash Commands, and LLM Prompts at scale. Easily generate structured skill templates, automate workflow integration, and accelerate AI agent development with a clean, developer-friendly setup.",
+  "readmeHtml": "<h1>alirezarezvani/claude-code-skill-factory</h1>\n<p>Claude Code Skill Factory — A powerful open-source toolkit for building and deploying production-ready Claude Skills, Code Agents, custom Slash Commands, and LLM Prompts at scale. Easily generate structured skill templates, automate workflow integration, and accelerate AI agent development with a clean, developer-friendly setup.</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.039Z",
+  "author": {
+    "login": "alirezarezvani",
+    "name": "alirezarezvani",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/alirezarezvani",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "alirezarezvani-claude-skills",
+      "displayName": "alirezarezvani/claude-skills",
+      "stars": 13986,
+      "relation": "source_overlap",
+      "evidence": "author:alirezarezvani"
+    },
+    {
+      "slug": "alirezarezvani-claude-code-tresor",
+      "displayName": "alirezarezvani/claude-code-tresor",
+      "stars": 705,
+      "relation": "source_overlap",
+      "evidence": "author:alirezarezvani"
+    },
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 73174,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "bytedance-deer-flow",
+      "displayName": "bytedance/deer-flow",
+      "stars": 65827,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "farion1231-cc-switch",
+      "displayName": "farion1231/cc-switch",
+      "stars": 62022,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-tokyo",
+    "label": "Global Skill Market / Tokyo / Discovered",
+    "lat": 35.6762,
+    "lon": 139.6503,
+    "source": "virtual_market"
+  }
+}

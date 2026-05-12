@@ -1,0 +1,61 @@
+{
+  "id": "skill:sanity-io-agent-toolkit",
+  "slug": "sanity-io-agent-toolkit",
+  "name": "agent-toolkit",
+  "displayName": "sanity-io/agent-toolkit",
+  "description": "Best practices for Sanity Studio, GROQ queries, and content workflows",
+  "stars": 131,
+  "category": "Skills by Sanity",
+  "source": "heilcheng",
+  "url": "https://github.com/sanity-io/agent-toolkit/tree/main/sanity-best-practices",
+  "githubRepo": "sanity-io/agent-toolkit",
+  "readme": "# sanity-io/agent-toolkit\n\nBest practices for Sanity Studio, GROQ queries, and content workflows",
+  "readmeHtml": "<h1>sanity-io/agent-toolkit</h1>\n<p>Best practices for Sanity Studio, GROQ queries, and content workflows</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.050Z",
+  "author": {
+    "login": "sanity-io",
+    "name": "sanity-io",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/sanity-io",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "sanity-io-sanity-best-practices",
+      "displayName": "sanity-io/sanity-best-practices",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:sanity-io"
+    },
+    {
+      "slug": "sanity-io-content-modeling-best-practices",
+      "displayName": "sanity-io/content-modeling-best-practices",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:sanity-io"
+    },
+    {
+      "slug": "sanity-io-seo-aeo-best-practices",
+      "displayName": "sanity-io/seo-aeo-best-practices",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:sanity-io"
+    },
+    {
+      "slug": "sanity-io-content-experimentation-best-practices",
+      "displayName": "sanity-io/content-experimentation-best-practices",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:sanity-io"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-paris",
+    "label": "Global Skill Market / Paris / Skills by Sanity",
+    "lat": 48.8566,
+    "lon": 2.3522,
+    "source": "virtual_market"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "skill:hamelsmu-generate-synthetic-data",
+  "slug": "hamelsmu-generate-synthetic-data",
+  "name": "generate-synthetic-data",
+  "displayName": "hamelsmu/generate-synthetic-data",
+  "description": "Create diverse synthetic test inputs for LLM evals",
+  "stars": 0,
+  "category": "Community Skills",
+  "source": "voltagent",
+  "url": "https://github.com/hamelsmu/prompts/tree/main/evals-skills/skills/generate-synthetic-data",
+  "githubRepo": "hamelsmu/prompts",
+  "readme": "# hamelsmu/generate-synthetic-data\n\nCreate diverse synthetic test inputs for LLM evals",
+  "readmeHtml": "<h1>hamelsmu/generate-synthetic-data</h1>\n<p>Create diverse synthetic test inputs for LLM evals</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.155Z",
+  "author": {
+    "login": "hamelsmu",
+    "name": "hamelsmu",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/hamelsmu",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "hamelsmu-eval-audit",
+      "displayName": "hamelsmu/eval-audit",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:hamelsmu/prompts"
+    },
+    {
+      "slug": "hamelsmu-error-analysis",
+      "displayName": "hamelsmu/error-analysis",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:hamelsmu/prompts"
+    },
+    {
+      "slug": "hamelsmu-write-judge-prompt",
+      "displayName": "hamelsmu/write-judge-prompt",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:hamelsmu/prompts"
+    },
+    {
+      "slug": "hamelsmu-validate-evaluator",
+      "displayName": "hamelsmu/validate-evaluator",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:hamelsmu/prompts"
+    },
+    {
+      "slug": "hamelsmu-evaluate-rag",
+      "displayName": "hamelsmu/evaluate-rag",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:hamelsmu/prompts"
+    },
+    {
+      "slug": "hamelsmu-build-review-interface",
+      "displayName": "hamelsmu/build-review-interface",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:hamelsmu/prompts"
+    },
+    {
+      "slug": "hamelsmu-eval-audit",
+      "displayName": "hamelsmu/eval-audit",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:hamelsmu"
+    },
+    {
+      "slug": "hamelsmu-error-analysis",
+      "displayName": "hamelsmu/error-analysis",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:hamelsmu"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-berlin",
+    "label": "Global Skill Market / Berlin / Community Skills",
+    "lat": 52.52,
+    "lon": 13.405,
+    "source": "virtual_market"
+  }
+}

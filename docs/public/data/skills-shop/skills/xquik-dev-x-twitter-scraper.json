@@ -1,0 +1,89 @@
+{
+  "id": "skill:xquik-dev-x-twitter-scraper",
+  "slug": "xquik-dev-x-twitter-scraper",
+  "name": "x-twitter-scraper",
+  "displayName": "Xquik-dev/x-twitter-scraper",
+  "description": "Tweet search, profile tweets, follower export, media, posting, replies, MCP",
+  "stars": 0,
+  "category": "Community Skills",
+  "source": "voltagent",
+  "url": "https://github.com/Xquik-dev/x-twitter-scraper",
+  "githubRepo": "Xquik-dev/x-twitter-scraper",
+  "readme": "# Xquik-dev/x-twitter-scraper\n\nTweet search, profile tweets, follower export, media, posting, replies, MCP",
+  "readmeHtml": "<h1>Xquik-dev/x-twitter-scraper</h1>\n<p>Tweet search, profile tweets, follower export, media, posting, replies, MCP</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.153Z",
+  "author": {
+    "login": "xquik-dev",
+    "name": "xquik-dev",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/xquik-dev",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "xquik-dev-tweetclaw",
+      "displayName": "Xquik-dev/tweetclaw",
+      "stars": 37,
+      "relation": "source_overlap",
+      "evidence": "author:xquik-dev"
+    },
+    {
+      "slug": "obra-defense-in-depth",
+      "displayName": "obra/defense-in-depth",
+      "stars": 186953,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
+      "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "stars": 77115,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mvanhorn-last30days-skill",
+      "displayName": "mvanhorn/last30days-skill",
+      "stars": 25573,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "k-dense-ai-claude-scientific-skills",
+      "displayName": "K-Dense-AI/claude-scientific-skills",
+      "stars": 20299,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "muratcankoylan-context-fundamentals",
+      "displayName": "muratcankoylan/context-fundamentals",
+      "stars": 15494,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "muratcankoylan-context-degradation",
+      "displayName": "muratcankoylan/context-degradation",
+      "stars": 15494,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "muratcankoylan-context-compression",
+      "displayName": "muratcankoylan/context-compression",
+      "stars": 15494,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-sydney",
+    "label": "Global Skill Market / Sydney / Community Skills",
+    "lat": -33.8688,
+    "lon": 151.2093,
+    "source": "virtual_market"
+  }
+}

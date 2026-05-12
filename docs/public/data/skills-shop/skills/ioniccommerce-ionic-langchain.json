@@ -1,0 +1,89 @@
+{
+  "id": "skill:ioniccommerce-ionic-langchain",
+  "slug": "ioniccommerce-ionic-langchain",
+  "name": "ionic_langchain",
+  "displayName": "ioniccommerce/ionic_langchain",
+  "description": "Langchain Tool wrapped around Ionic SDK & OpenAPI Spec",
+  "stars": 4,
+  "category": "Discovered",
+  "source": "discover:topic",
+  "url": "https://github.com/ioniccommerce/ionic_langchain",
+  "githubRepo": "ioniccommerce/ionic_langchain",
+  "readme": "# ioniccommerce/ionic_langchain\n\nLangchain Tool wrapped around Ionic SDK & OpenAPI Spec",
+  "readmeHtml": "<h1>ioniccommerce/ionic_langchain</h1>\n<p>Langchain Tool wrapped around Ionic SDK &amp; OpenAPI Spec</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.078Z",
+  "author": {
+    "login": "ioniccommerce",
+    "name": "ioniccommerce",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/ioniccommerce",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "ioniccommerce-ionic-sdk-python",
+      "displayName": "ioniccommerce/ionic_sdk_python",
+      "stars": 1,
+      "relation": "source_overlap",
+      "evidence": "author:ioniccommerce"
+    },
+    {
+      "slug": "ioniccommerce-ionic-haystack",
+      "displayName": "ioniccommerce/ionic_haystack",
+      "stars": 1,
+      "relation": "source_overlap",
+      "evidence": "author:ioniccommerce"
+    },
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 73174,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "bytedance-deer-flow",
+      "displayName": "bytedance/deer-flow",
+      "stars": 65827,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "farion1231-cc-switch",
+      "displayName": "farion1231/cc-switch",
+      "stars": 62022,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-sydney",
+    "label": "Global Skill Market / Sydney / Discovered",
+    "lat": -33.8688,
+    "lon": 151.2093,
+    "source": "virtual_market"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "skill:grittygrease-safe-encryption-skill",
+  "slug": "grittygrease-safe-encryption-skill",
+  "name": "safe-encryption-skill",
+  "displayName": "grittygrease/safe-encryption-skill",
+  "description": "Modern encryption alternative to GPG/PGP with post-quantum support",
+  "stars": 3,
+  "category": "Skills by Trail of Bits",
+  "source": "heilcheng",
+  "url": "https://github.com/grittygrease/safe-encryption-skill",
+  "githubRepo": "grittygrease/safe-encryption-skill",
+  "readme": "# grittygrease/safe-encryption-skill\n\nModern encryption alternative to GPG/PGP with post-quantum support",
+  "readmeHtml": "<h1>grittygrease/safe-encryption-skill</h1>\n<p>Modern encryption alternative to GPG/PGP with post-quantum support</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.078Z",
+  "author": {
+    "login": "grittygrease",
+    "name": "grittygrease",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/grittygrease",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "jthack-threat-hunting-with-sigma-rules-skill",
+      "displayName": "jthack/threat-hunting-with-sigma-rules-skill",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Skills by Trail of Bits"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-london",
+    "label": "Global Skill Market / London / Skills by Trail of Bits",
+    "lat": 51.5072,
+    "lon": -0.1276,
+    "source": "virtual_market"
+  }
+}

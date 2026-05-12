@@ -1,0 +1,89 @@
+{
+  "id": "skill:datadog-labs-dd-pup",
+  "slug": "datadog-labs-dd-pup",
+  "name": "dd-pup",
+  "displayName": "datadog-labs/dd-pup",
+  "description": "Rust-based CLI (pup) for talking to the Datadog API",
+  "stars": 0,
+  "category": "TypeScript Skills",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/datadog-labs/skills/dd-pup",
+  "githubRepo": "",
+  "readme": "# datadog-labs/dd-pup\n\nRust-based CLI (pup) for talking to the Datadog API",
+  "readmeHtml": "<h1>datadog-labs/dd-pup</h1>\n<p>Rust-based CLI (pup) for talking to the Datadog API</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.133Z",
+  "author": {
+    "login": "datadog-labs",
+    "name": "datadog-labs",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/datadog-labs",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "datadog-labs-dd-apm",
+      "displayName": "datadog-labs/dd-apm",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:datadog-labs"
+    },
+    {
+      "slug": "datadog-labs-dd-docs",
+      "displayName": "datadog-labs/dd-docs",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:datadog-labs"
+    },
+    {
+      "slug": "datadog-labs-dd-llmo-eval-bootstrap",
+      "displayName": "datadog-labs/dd-llmo-eval-bootstrap",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:datadog-labs"
+    },
+    {
+      "slug": "datadog-labs-dd-llmo-eval-trace-rca",
+      "displayName": "datadog-labs/dd-llmo-eval-trace-rca",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:datadog-labs"
+    },
+    {
+      "slug": "datadog-labs-dd-llmo-experiment-analyzer",
+      "displayName": "datadog-labs/dd-llmo-experiment-analyzer",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:datadog-labs"
+    },
+    {
+      "slug": "datadog-labs-dd-logs",
+      "displayName": "datadog-labs/dd-logs",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:datadog-labs"
+    },
+    {
+      "slug": "datadog-labs-dd-monitors",
+      "displayName": "datadog-labs/dd-monitors",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:datadog-labs"
+    },
+    {
+      "slug": "deanpeters-acquisition-channel-advisor",
+      "displayName": "deanpeters/acquisition-channel-advisor",
+      "stars": 4159,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-sydney",
+    "label": "Global Skill Market / Sydney / TypeScript Skills",
+    "lat": -33.8688,
+    "lon": 151.2093,
+    "source": "virtual_market"
+  }
+}

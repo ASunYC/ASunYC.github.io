@@ -1,0 +1,89 @@
+{
+  "id": "skill:getsentry-skills",
+  "slug": "getsentry-skills",
+  "name": "skills",
+  "displayName": "getsentry/skills",
+  "description": "Debug errors, performance issues, and traces directly with Sentry integration",
+  "stars": 674,
+  "category": "Skills by Sentry",
+  "source": "heilcheng",
+  "url": "https://github.com/getsentry/skills",
+  "githubRepo": "getsentry/skills",
+  "readme": "# getsentry/skills\n\nDebug errors, performance issues, and traces directly with Sentry integration",
+  "readmeHtml": "<h1>getsentry/skills</h1>\n<p>Debug errors, performance issues, and traces directly with Sentry integration</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.040Z",
+  "author": {
+    "login": "getsentry",
+    "name": "getsentry",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/getsentry",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "getsentry-sentry-sdk-setup",
+      "displayName": "getsentry/sentry-sdk-setup",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:getsentry"
+    },
+    {
+      "slug": "getsentry-sentry-workflow",
+      "displayName": "getsentry/sentry-workflow",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:getsentry"
+    },
+    {
+      "slug": "getsentry-sentry-fix-issues",
+      "displayName": "getsentry/sentry-fix-issues",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:getsentry"
+    },
+    {
+      "slug": "getsentry-sentry-code-review",
+      "displayName": "getsentry/sentry-code-review",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:getsentry"
+    },
+    {
+      "slug": "getsentry-sentry-pr-code-review",
+      "displayName": "getsentry/sentry-pr-code-review",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:getsentry"
+    },
+    {
+      "slug": "getsentry-sentry-create-alert",
+      "displayName": "getsentry/sentry-create-alert",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:getsentry"
+    },
+    {
+      "slug": "getsentry-sentry-feature-setup",
+      "displayName": "getsentry/sentry-feature-setup",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:getsentry"
+    },
+    {
+      "slug": "getsentry-sentry-otel-exporter-setup",
+      "displayName": "getsentry/sentry-otel-exporter-setup",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:getsentry"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-paris",
+    "label": "Global Skill Market / Paris / Skills by Sentry",
+    "lat": 48.8566,
+    "lon": 2.3522,
+    "source": "virtual_market"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "skill:phuryn-privacy-policy",
+  "slug": "phuryn-privacy-policy",
+  "name": "privacy-policy",
+  "displayName": "phuryn/privacy-policy",
+  "description": "Draft privacy policies with GDPR compliance considerations",
+  "stars": 0,
+  "category": "TypeScript Skills",
+  "source": "voltagent",
+  "url": "https://github.com/phuryn/pm-skills/tree/main/pm-toolkit/skills/privacy-policy",
+  "githubRepo": "phuryn/pm-skills",
+  "readme": "# phuryn/privacy-policy\n\nDraft privacy policies with GDPR compliance considerations",
+  "readmeHtml": "<h1>phuryn/privacy-policy</h1>\n<p>Draft privacy policies with GDPR compliance considerations</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.143Z",
+  "author": {
+    "login": "phuryn",
+    "name": "phuryn",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/phuryn",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "phuryn-ab-test-analysis",
+      "displayName": "phuryn/ab-test-analysis",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:phuryn/pm-skills"
+    },
+    {
+      "slug": "phuryn-cohort-analysis",
+      "displayName": "phuryn/cohort-analysis",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:phuryn/pm-skills"
+    },
+    {
+      "slug": "phuryn-sql-queries",
+      "displayName": "phuryn/sql-queries",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:phuryn/pm-skills"
+    },
+    {
+      "slug": "phuryn-brainstorm-okrs",
+      "displayName": "phuryn/brainstorm-okrs",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:phuryn/pm-skills"
+    },
+    {
+      "slug": "phuryn-create-prd",
+      "displayName": "phuryn/create-prd",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:phuryn/pm-skills"
+    },
+    {
+      "slug": "phuryn-dummy-dataset",
+      "displayName": "phuryn/dummy-dataset",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:phuryn/pm-skills"
+    },
+    {
+      "slug": "phuryn-job-stories",
+      "displayName": "phuryn/job-stories",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:phuryn/pm-skills"
+    },
+    {
+      "slug": "phuryn-outcome-roadmap",
+      "displayName": "phuryn/outcome-roadmap",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "repo:phuryn/pm-skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-new-york",
+    "label": "Global Skill Market / New York / TypeScript Skills",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "source": "virtual_market"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "skill:firebase-firebase-auth-basics",
+  "slug": "firebase-firebase-auth-basics",
+  "name": "firebase-auth-basics",
+  "displayName": "firebase/firebase-auth-basics",
+  "description": "Set up Firebase Authentication with sign-in providers",
+  "stars": 0,
+  "category": "TypeScript Skills",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/firebase/skills/firebase-auth-basics",
+  "githubRepo": "",
+  "readme": "# firebase/firebase-auth-basics\n\nSet up Firebase Authentication with sign-in providers",
+  "readmeHtml": "<h1>firebase/firebase-auth-basics</h1>\n<p>Set up Firebase Authentication with sign-in providers</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.138Z",
+  "author": {
+    "login": "firebase",
+    "name": "firebase",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/firebase",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "firebase-developing-genkit-dart",
+      "displayName": "firebase/developing-genkit-dart",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:firebase"
+    },
+    {
+      "slug": "firebase-developing-genkit-go",
+      "displayName": "firebase/developing-genkit-go",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:firebase"
+    },
+    {
+      "slug": "firebase-developing-genkit-js",
+      "displayName": "firebase/developing-genkit-js",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:firebase"
+    },
+    {
+      "slug": "firebase-firebase-ai-logic-basics",
+      "displayName": "firebase/firebase-ai-logic-basics",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:firebase"
+    },
+    {
+      "slug": "firebase-firebase-app-hosting-basics",
+      "displayName": "firebase/firebase-app-hosting-basics",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:firebase"
+    },
+    {
+      "slug": "firebase-firebase-basics",
+      "displayName": "firebase/firebase-basics",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:firebase"
+    },
+    {
+      "slug": "firebase-firebase-data-connect-basics",
+      "displayName": "firebase/firebase-data-connect-basics",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:firebase"
+    },
+    {
+      "slug": "firebase-firebase-firestore-enterprise-native-mode",
+      "displayName": "firebase/firebase-firestore-enterprise-native-mode",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:firebase"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-new-york",
+    "label": "Global Skill Market / New York / TypeScript Skills",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "source": "virtual_market"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "skill:expo-expo-dev-client",
+  "slug": "expo-expo-dev-client",
+  "name": "expo-dev-client",
+  "displayName": "expo/expo-dev-client",
+  "description": "Build and distribute Expo dev clients locally or via TestFlight",
+  "stars": 0,
+  "category": "Skills by Typefully",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/expo/skills/expo-dev-client",
+  "githubRepo": "",
+  "readme": "# expo/expo-dev-client\n\nBuild and distribute Expo dev clients locally or via TestFlight",
+  "readmeHtml": "<h1>expo/expo-dev-client</h1>\n<p>Build and distribute Expo dev clients locally or via TestFlight</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.102Z",
+  "author": {
+    "login": "expo",
+    "name": "expo",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/expo",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "expo-skills",
+      "displayName": "expo/skills",
+      "stars": 1862,
+      "relation": "source_overlap",
+      "evidence": "author:expo"
+    },
+    {
+      "slug": "expo-building-native-ui",
+      "displayName": "expo/building-native-ui",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:expo"
+    },
+    {
+      "slug": "expo-expo-api-routes",
+      "displayName": "expo/expo-api-routes",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:expo"
+    },
+    {
+      "slug": "expo-expo-cicd-workflows",
+      "displayName": "expo/expo-cicd-workflows",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:expo"
+    },
+    {
+      "slug": "expo-expo-deployment",
+      "displayName": "expo/expo-deployment",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:expo"
+    },
+    {
+      "slug": "expo-expo-tailwind-setup",
+      "displayName": "expo/expo-tailwind-setup",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:expo"
+    },
+    {
+      "slug": "expo-expo-ui-jetpack-compose",
+      "displayName": "expo/expo-ui-jetpack-compose",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:expo"
+    },
+    {
+      "slug": "expo-expo-ui-swift-ui",
+      "displayName": "expo/expo-ui-swift-ui",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:expo"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-sao-paulo",
+    "label": "Global Skill Market / Sao Paulo / Skills by Typefully",
+    "lat": -23.5558,
+    "lon": -46.6396,
+    "source": "virtual_market"
+  }
+}

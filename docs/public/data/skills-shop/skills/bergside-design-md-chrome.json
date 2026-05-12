@@ -1,0 +1,89 @@
+{
+  "id": "skill:bergside-design-md-chrome",
+  "slug": "bergside-design-md-chrome",
+  "name": "design-md-chrome",
+  "displayName": "bergside/design-md-chrome",
+  "description": "Chrome extension to extract styles from any website and generate DESIGN.md files and design skills for AI based on TypeUI",
+  "stars": 1810,
+  "category": "Discovered",
+  "source": "discover:keyword",
+  "url": "https://github.com/bergside/design-md-chrome",
+  "githubRepo": "bergside/design-md-chrome",
+  "readme": "# bergside/design-md-chrome\n\nChrome extension to extract styles from any website and generate DESIGN.md files and design skills for AI based on TypeUI",
+  "readmeHtml": "<h1>bergside/design-md-chrome</h1>\n<p>Chrome extension to extract styles from any website and generate DESIGN.md files and design skills for AI based on TypeUI</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.028Z",
+  "author": {
+    "login": "bergside",
+    "name": "bergside",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/bergside",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "bergside-typeui",
+      "displayName": "bergside/typeui",
+      "stars": 813,
+      "relation": "source_overlap",
+      "evidence": "author:bergside"
+    },
+    {
+      "slug": "bergside-awesome-design-skills",
+      "displayName": "bergside/awesome-design-skills",
+      "stars": 395,
+      "relation": "source_overlap",
+      "evidence": "author:bergside"
+    },
+    {
+      "slug": "affaan-m-everything-claude-code",
+      "displayName": "affaan-m/everything-claude-code",
+      "stars": 175105,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "snailclimb-javaguide",
+      "displayName": "Snailclimb/JavaGuide",
+      "stars": 155456,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "nousresearch-hermes-agent",
+      "displayName": "NousResearch/hermes-agent",
+      "stars": 136906,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 73174,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "bytedance-deer-flow",
+      "displayName": "bytedance/deer-flow",
+      "stars": 65827,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    },
+    {
+      "slug": "farion1231-cc-switch",
+      "displayName": "farion1231/cc-switch",
+      "stars": 62022,
+      "relation": "shared_tag",
+      "evidence": "Discovered"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-toronto",
+    "label": "Global Skill Market / Toronto / Discovered",
+    "lat": 43.6532,
+    "lon": -79.3832,
+    "source": "virtual_market"
+  }
+}

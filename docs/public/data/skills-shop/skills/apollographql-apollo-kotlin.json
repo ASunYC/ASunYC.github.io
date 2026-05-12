@@ -1,0 +1,89 @@
+{
+  "id": "skill:apollographql-apollo-kotlin",
+  "slug": "apollographql-apollo-kotlin",
+  "name": "apollo-kotlin",
+  "displayName": "apollographql/apollo-kotlin",
+  "description": "A GraphQL client for Android, JVM, and Kotlin Multiplatform projects",
+  "stars": 0,
+  "category": "TypeScript Skills",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/apollographql/skills/apollo-kotlin",
+  "githubRepo": "",
+  "readme": "# apollographql/apollo-kotlin\n\nA GraphQL client for Android, JVM, and Kotlin Multiplatform projects",
+  "readmeHtml": "<h1>apollographql/apollo-kotlin</h1>\n<p>A GraphQL client for Android, JVM, and Kotlin Multiplatform projects</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.130Z",
+  "author": {
+    "login": "apollographql",
+    "name": "apollographql",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/apollographql",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "apollographql-apollo-client",
+      "displayName": "apollographql/apollo-client",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:apollographql"
+    },
+    {
+      "slug": "apollographql-apollo-connectors",
+      "displayName": "apollographql/apollo-connectors",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:apollographql"
+    },
+    {
+      "slug": "apollographql-apollo-federation",
+      "displayName": "apollographql/apollo-federation",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:apollographql"
+    },
+    {
+      "slug": "apollographql-apollo-mcp-server",
+      "displayName": "apollographql/apollo-mcp-server",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:apollographql"
+    },
+    {
+      "slug": "apollographql-apollo-router",
+      "displayName": "apollographql/apollo-router",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:apollographql"
+    },
+    {
+      "slug": "apollographql-apollo-router-plugin-creator",
+      "displayName": "apollographql/apollo-router-plugin-creator",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:apollographql"
+    },
+    {
+      "slug": "apollographql-apollo-server",
+      "displayName": "apollographql/apollo-server",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:apollographql"
+    },
+    {
+      "slug": "apollographql-graphql-operations",
+      "displayName": "apollographql/graphql-operations",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:apollographql"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-paris",
+    "label": "Global Skill Market / Paris / TypeScript Skills",
+    "lat": 48.8566,
+    "lon": 2.3522,
+    "source": "virtual_market"
+  }
+}

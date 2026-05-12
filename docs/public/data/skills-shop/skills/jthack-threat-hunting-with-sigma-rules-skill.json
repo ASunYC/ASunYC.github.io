@@ -1,0 +1,47 @@
+{
+  "id": "skill:jthack-threat-hunting-with-sigma-rules-skill",
+  "slug": "jthack-threat-hunting-with-sigma-rules-skill",
+  "name": "threat-hunting-with-sigma-rules-skill",
+  "displayName": "jthack/threat-hunting-with-sigma-rules-skill",
+  "description": "Hunt for threats using Sigma detection rules",
+  "stars": 0,
+  "category": "Skills by Trail of Bits",
+  "source": "heilcheng",
+  "url": "https://github.com/jthack/threat-hunting-with-sigma-rules-skill",
+  "githubRepo": "jthack/threat-hunting-with-sigma-rules-skill",
+  "readme": "# jthack/threat-hunting-with-sigma-rules-skill\n\nHunt for threats using Sigma detection rules",
+  "readmeHtml": "<h1>jthack/threat-hunting-with-sigma-rules-skill</h1>\n<p>Hunt for threats using Sigma detection rules</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.156Z",
+  "author": {
+    "login": "jthack",
+    "name": "jthack",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/jthack",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "jthack-ffuf-claude-skill",
+      "displayName": "jthack/ffuf-claude-skill",
+      "stars": 170,
+      "relation": "source_overlap",
+      "evidence": "author:jthack"
+    },
+    {
+      "slug": "grittygrease-safe-encryption-skill",
+      "displayName": "grittygrease/safe-encryption-skill",
+      "stars": 3,
+      "relation": "shared_tag",
+      "evidence": "Skills by Trail of Bits"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-singapore",
+    "label": "Global Skill Market / Singapore / Skills by Trail of Bits",
+    "lat": 1.3521,
+    "lon": 103.8198,
+    "source": "virtual_market"
+  }
+}

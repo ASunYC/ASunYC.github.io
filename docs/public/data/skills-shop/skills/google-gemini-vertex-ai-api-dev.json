@@ -1,0 +1,75 @@
+{
+  "id": "skill:google-gemini-vertex-ai-api-dev",
+  "slug": "google-gemini-vertex-ai-api-dev",
+  "name": "vertex-ai-api-dev",
+  "displayName": "google-gemini/vertex-ai-api-dev",
+  "description": "Developing Gemini-powered apps on Google Cloud Vertex AI using the Gen AI SDK",
+  "stars": 0,
+  "category": "Skills by Google Gemini",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/google-gemini/skills/vertex-ai-api-dev",
+  "githubRepo": "",
+  "readme": "# google-gemini/vertex-ai-api-dev\n\nDeveloping Gemini-powered apps on Google Cloud Vertex AI using the Gen AI SDK",
+  "readmeHtml": "<h1>google-gemini/vertex-ai-api-dev</h1>\n<p>Developing Gemini-powered apps on Google Cloud Vertex AI using the Gen AI SDK</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T12:38:07.090Z",
+  "author": {
+    "login": "google-gemini",
+    "name": "google-gemini",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/google-gemini",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "google-gemini-gemini-api-dev",
+      "displayName": "google-gemini/gemini-api-dev",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:google-gemini"
+    },
+    {
+      "slug": "google-gemini-gemini-live-api-dev",
+      "displayName": "google-gemini/gemini-live-api-dev",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:google-gemini"
+    },
+    {
+      "slug": "google-gemini-gemini-interactions-api",
+      "displayName": "google-gemini/gemini-interactions-api",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:google-gemini"
+    },
+    {
+      "slug": "google-gemini-gemini-api-dev",
+      "displayName": "google-gemini/gemini-api-dev",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Skills by Google Gemini"
+    },
+    {
+      "slug": "google-gemini-gemini-live-api-dev",
+      "displayName": "google-gemini/gemini-live-api-dev",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Skills by Google Gemini"
+    },
+    {
+      "slug": "google-gemini-gemini-interactions-api",
+      "displayName": "google-gemini/gemini-interactions-api",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Skills by Google Gemini"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-sao-paulo",
+    "label": "Global Skill Market / Sao Paulo / Skills by Google Gemini",
+    "lat": -23.5558,
+    "lon": -46.6396,
+    "source": "virtual_market"
+  }
+}
