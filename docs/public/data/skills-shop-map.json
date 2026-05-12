@@ -1,0 +1,80 @@
+{
+  "generatedAt": "2026-05-12T02:53:57.999Z",
+  "totalSkills": 20,
+  "mappedSkills": 8,
+  "locations": [
+    {
+      "id": "berkeley",
+      "label": "Berkeley, CA 94703",
+      "lat": 37.8715,
+      "lon": -122.273,
+      "key": "37.8715,-122.2730",
+      "skills": [
+        {
+          "slug": "obra-brainstorming",
+          "displayName": "obra/brainstorming",
+          "stars": 181449,
+          "category": "Community Skills",
+          "description": "Generate and explore ideas"
+        },
+        {
+          "slug": "obra-writing-plans",
+          "displayName": "obra/writing-plans",
+          "stars": 181449,
+          "category": "Community Skills",
+          "description": "Create strategic documentation"
+        },
+        {
+          "slug": "obra-executing-plans",
+          "displayName": "obra/executing-plans",
+          "stars": 181449,
+          "category": "Community Skills",
+          "description": "Implement and run strategic plans"
+        },
+        {
+          "slug": "obra-dispatching-parallel-agents",
+          "displayName": "obra/dispatching-parallel-agents",
+          "stars": 181449,
+          "category": "Community Skills",
+          "description": "Coordinate multiple simultaneous agents"
+        },
+        {
+          "slug": "obra-sharing-skills",
+          "displayName": "obra/sharing-skills",
+          "stars": 181449,
+          "category": "Community Skills",
+          "description": "Distribute and communicate capabilities"
+        },
+        {
+          "slug": "obra-using-superpowers",
+          "displayName": "obra/using-superpowers",
+          "stars": 181449,
+          "category": "Community Skills",
+          "description": "Leverage core platform capabilities"
+        },
+        {
+          "slug": "obra-test-driven-development",
+          "displayName": "obra/test-driven-development",
+          "stars": 181449,
+          "category": "Community Skills",
+          "description": "Write tests before implementing code"
+        },
+        {
+          "slug": "obra-subagent-driven-development",
+          "displayName": "obra/subagent-driven-development",
+          "stars": 181449,
+          "category": "Community Skills",
+          "description": "Development using multiple sub-agents"
+        }
+      ],
+      "topSkill": {
+        "slug": "obra-brainstorming",
+        "displayName": "obra/brainstorming",
+        "stars": 181449,
+        "category": "Community Skills",
+        "description": "Generate and explore ideas"
+      },
+      "skillCount": 8
+    }
+  ]
+}

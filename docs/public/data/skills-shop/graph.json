@@ -1,0 +1,4444 @@
+{
+  "nodes": [
+    {
+      "id": "skill:obra-brainstorming",
+      "slug": "obra-brainstorming",
+      "name": "obra/brainstorming",
+      "type": "skill",
+      "stars": 181449,
+      "category": "Community Skills",
+      "author": "obra",
+      "location": "berkeley",
+      "degree": 64
+    },
+    {
+      "id": "skill:obra-writing-plans",
+      "slug": "obra-writing-plans",
+      "name": "obra/writing-plans",
+      "type": "skill",
+      "stars": 181449,
+      "category": "Community Skills",
+      "author": "obra",
+      "location": "berkeley",
+      "degree": 64
+    },
+    {
+      "id": "skill:obra-executing-plans",
+      "slug": "obra-executing-plans",
+      "name": "obra/executing-plans",
+      "type": "skill",
+      "stars": 181449,
+      "category": "Community Skills",
+      "author": "obra",
+      "location": "berkeley",
+      "degree": 64
+    },
+    {
+      "id": "skill:obra-dispatching-parallel-agents",
+      "slug": "obra-dispatching-parallel-agents",
+      "name": "obra/dispatching-parallel-agents",
+      "type": "skill",
+      "stars": 181449,
+      "category": "Community Skills",
+      "author": "obra",
+      "location": "berkeley",
+      "degree": 64
+    },
+    {
+      "id": "skill:obra-sharing-skills",
+      "slug": "obra-sharing-skills",
+      "name": "obra/sharing-skills",
+      "type": "skill",
+      "stars": 181449,
+      "category": "Community Skills",
+      "author": "obra",
+      "location": "berkeley",
+      "degree": 64
+    },
+    {
+      "id": "skill:obra-using-superpowers",
+      "slug": "obra-using-superpowers",
+      "name": "obra/using-superpowers",
+      "type": "skill",
+      "stars": 181449,
+      "category": "Community Skills",
+      "author": "obra",
+      "location": "berkeley",
+      "degree": 64
+    },
+    {
+      "id": "skill:obra-test-driven-development",
+      "slug": "obra-test-driven-development",
+      "name": "obra/test-driven-development",
+      "type": "skill",
+      "stars": 181449,
+      "category": "Community Skills",
+      "author": "obra",
+      "location": "berkeley",
+      "degree": 64
+    },
+    {
+      "id": "skill:obra-subagent-driven-development",
+      "slug": "obra-subagent-driven-development",
+      "name": "obra/subagent-driven-development",
+      "type": "skill",
+      "stars": 181449,
+      "category": "Community Skills",
+      "author": "obra",
+      "location": "berkeley",
+      "degree": 64
+    },
+    {
+      "id": "skill:obra-systematic-debugging",
+      "slug": "obra-systematic-debugging",
+      "name": "obra/systematic-debugging",
+      "type": "skill",
+      "stars": 181449,
+      "category": "Community Skills",
+      "author": "obra",
+      "location": null,
+      "degree": 57
+    },
+    {
+      "id": "skill:obra-root-cause-tracing",
+      "slug": "obra-root-cause-tracing",
+      "name": "obra/root-cause-tracing",
+      "type": "skill",
+      "stars": 181449,
+      "category": "Community Skills",
+      "author": "obra",
+      "location": null,
+      "degree": 57
+    },
+    {
+      "id": "skill:obra-testing-skills-with-subagents",
+      "slug": "obra-testing-skills-with-subagents",
+      "name": "obra/testing-skills-with-subagents",
+      "type": "skill",
+      "stars": 181449,
+      "category": "Community Skills",
+      "author": "obra",
+      "location": null,
+      "degree": 57
+    },
+    {
+      "id": "skill:obra-testing-anti-patterns",
+      "slug": "obra-testing-anti-patterns",
+      "name": "obra/testing-anti-patterns",
+      "type": "skill",
+      "stars": 181449,
+      "category": "Community Skills",
+      "author": "obra",
+      "location": null,
+      "degree": 57
+    },
+    {
+      "id": "skill:obra-finishing-a-development-branch",
+      "slug": "obra-finishing-a-development-branch",
+      "name": "obra/finishing-a-development-branch",
+      "type": "skill",
+      "stars": 181449,
+      "category": "Community Skills",
+      "author": "obra",
+      "location": null,
+      "degree": 57
+    },
+    {
+      "id": "skill:obra-requesting-code-review",
+      "slug": "obra-requesting-code-review",
+      "name": "obra/requesting-code-review",
+      "type": "skill",
+      "stars": 181449,
+      "category": "Community Skills",
+      "author": "obra",
+      "location": null,
+      "degree": 57
+    },
+    {
+      "id": "skill:obra-receiving-code-review",
+      "slug": "obra-receiving-code-review",
+      "name": "obra/receiving-code-review",
+      "type": "skill",
+      "stars": 181449,
+      "category": "Community Skills",
+      "author": "obra",
+      "location": null,
+      "degree": 57
+    },
+    {
+      "id": "skill:obra-using-git-worktrees",
+      "slug": "obra-using-git-worktrees",
+      "name": "obra/using-git-worktrees",
+      "type": "skill",
+      "stars": 181449,
+      "category": "Community Skills",
+      "author": "obra",
+      "location": null,
+      "degree": 57
+    },
+    {
+      "id": "skill:obra-verification-before-completion",
+      "slug": "obra-verification-before-completion",
+      "name": "obra/verification-before-completion",
+      "type": "skill",
+      "stars": 181449,
+      "category": "Community Skills",
+      "author": "obra",
+      "location": null,
+      "degree": 57
+    },
+    {
+      "id": "skill:obra-condition-based-waiting",
+      "slug": "obra-condition-based-waiting",
+      "name": "obra/condition-based-waiting",
+      "type": "skill",
+      "stars": 181449,
+      "category": "Community Skills",
+      "author": "obra",
+      "location": null,
+      "degree": 57
+    },
+    {
+      "id": "skill:obra-commands",
+      "slug": "obra-commands",
+      "name": "obra/commands",
+      "type": "skill",
+      "stars": 181449,
+      "category": "Community Skills",
+      "author": "obra",
+      "location": null,
+      "degree": 57
+    },
+    {
+      "id": "skill:obra-writing-skills",
+      "slug": "obra-writing-skills",
+      "name": "obra/writing-skills",
+      "type": "skill",
+      "stars": 181449,
+      "category": "Community Skills",
+      "author": "obra",
+      "location": null,
+      "degree": 57
+    }
+  ],
+  "edges": [
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-writing-plans",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-writing-plans",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-writing-plans",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-writing-plans",
+      "relation": "shared_tag",
+      "weight": 0.45,
+      "evidence": "location:berkeley"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-executing-plans",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-executing-plans",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-executing-plans",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-executing-plans",
+      "relation": "shared_tag",
+      "weight": 0.45,
+      "evidence": "location:berkeley"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-dispatching-parallel-agents",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-dispatching-parallel-agents",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-dispatching-parallel-agents",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-dispatching-parallel-agents",
+      "relation": "shared_tag",
+      "weight": 0.45,
+      "evidence": "location:berkeley"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-sharing-skills",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-sharing-skills",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-sharing-skills",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-sharing-skills",
+      "relation": "shared_tag",
+      "weight": 0.45,
+      "evidence": "location:berkeley"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-using-superpowers",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-using-superpowers",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-using-superpowers",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-using-superpowers",
+      "relation": "shared_tag",
+      "weight": 0.45,
+      "evidence": "location:berkeley"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-test-driven-development",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-test-driven-development",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-test-driven-development",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-test-driven-development",
+      "relation": "shared_tag",
+      "weight": 0.45,
+      "evidence": "location:berkeley"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-subagent-driven-development",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-subagent-driven-development",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-subagent-driven-development",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-subagent-driven-development",
+      "relation": "shared_tag",
+      "weight": 0.45,
+      "evidence": "location:berkeley"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-systematic-debugging",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-systematic-debugging",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-systematic-debugging",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-root-cause-tracing",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-root-cause-tracing",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-root-cause-tracing",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-testing-skills-with-subagents",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-testing-skills-with-subagents",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-testing-skills-with-subagents",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-testing-anti-patterns",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-testing-anti-patterns",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-testing-anti-patterns",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-finishing-a-development-branch",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-finishing-a-development-branch",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-finishing-a-development-branch",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-requesting-code-review",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-requesting-code-review",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-requesting-code-review",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-receiving-code-review",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-receiving-code-review",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-receiving-code-review",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-using-git-worktrees",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-using-git-worktrees",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-using-git-worktrees",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-verification-before-completion",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-verification-before-completion",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-verification-before-completion",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-condition-based-waiting",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-condition-based-waiting",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-condition-based-waiting",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-commands",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-commands",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-commands",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-writing-skills",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-writing-skills",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-brainstorming",
+      "target": "skill:obra-writing-skills",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-writing-plans",
+      "target": "skill:obra-executing-plans",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-writing-plans",
+      "target": "skill:obra-executing-plans",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-writing-plans",
+      "target": "skill:obra-executing-plans",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-writing-plans",
+      "target": "skill:obra-executing-plans",
+      "relation": "shared_tag",
+      "weight": 0.45,
+      "evidence": "location:berkeley"
+    },
+    {
+      "source": "skill:obra-writing-plans",
+      "target": "skill:obra-dispatching-parallel-agents",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-writing-plans",
+      "target": "skill:obra-dispatching-parallel-agents",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-writing-plans",
+      "target": "skill:obra-dispatching-parallel-agents",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-writing-plans",
+      "target": "skill:obra-dispatching-parallel-agents",
+      "relation": "shared_tag",
+      "weight": 0.45,
+      "evidence": "location:berkeley"
+    },
+    {
+      "source": "skill:obra-writing-plans",
+      "target": "skill:obra-sharing-skills",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-writing-plans",
+      "target": "skill:obra-sharing-skills",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-writing-plans",
+      "target": "skill:obra-sharing-skills",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-writing-plans",
+      "target": "skill:obra-sharing-skills",
+      "relation": "shared_tag",
+      "weight": 0.45,
+      "evidence": "location:berkeley"
+    },
+    {
+      "source": "skill:obra-writing-plans",
+      "target": "skill:obra-using-superpowers",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-writing-plans",
+      "target": "skill:obra-using-superpowers",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-writing-plans",
+      "target": "skill:obra-using-superpowers",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-writing-plans",
+      "target": "skill:obra-using-superpowers",
+      "relation": "shared_tag",
+      "weight": 0.45,
+      "evidence": "location:berkeley"
+    },
+    {
+      "source": "skill:obra-writing-plans",
+      "target": "skill:obra-test-driven-development",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-writing-plans",
+      "target": "skill:obra-test-driven-development",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-writing-plans",
+      "target": "skill:obra-test-driven-development",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-writing-plans",
+      "target": "skill:obra-test-driven-development",
+      "relation": "shared_tag",
+      "weight": 0.45,
+      "evidence": "location:berkeley"
+    },
+    {
+      "source": "skill:obra-writing-plans",
+      "target": "skill:obra-subagent-driven-development",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-writing-plans",
+      "target": "skill:obra-subagent-driven-development",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-writing-plans",
+      "target": "skill:obra-subagent-driven-development",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-writing-plans",
+      "target": "skill:obra-subagent-driven-development",
+      "relation": "shared_tag",
+      "weight": 0.45,
+      "evidence": "location:berkeley"
+    },
+    {
+      "source": "skill:obra-writing-plans",
+      "target": "skill:obra-systematic-debugging",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-writing-plans",
+      "target": "skill:obra-systematic-debugging",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-writing-plans",
+      "target": "skill:obra-systematic-debugging",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-writing-plans",
+      "target": "skill:obra-root-cause-tracing",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-writing-plans",
+      "target": "skill:obra-root-cause-tracing",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-writing-plans",
+      "target": "skill:obra-root-cause-tracing",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-writing-plans",
+      "target": "skill:obra-testing-skills-with-subagents",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-writing-plans",
+      "target": "skill:obra-testing-skills-with-subagents",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-writing-plans",
+      "target": "skill:obra-testing-skills-with-subagents",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-writing-plans",
+      "target": "skill:obra-testing-anti-patterns",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-writing-plans",
+      "target": "skill:obra-testing-anti-patterns",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-writing-plans",
+      "target": "skill:obra-testing-anti-patterns",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-writing-plans",
+      "target": "skill:obra-finishing-a-development-branch",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-writing-plans",
+      "target": "skill:obra-finishing-a-development-branch",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-writing-plans",
+      "target": "skill:obra-finishing-a-development-branch",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-writing-plans",
+      "target": "skill:obra-requesting-code-review",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-writing-plans",
+      "target": "skill:obra-requesting-code-review",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-writing-plans",
+      "target": "skill:obra-requesting-code-review",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-writing-plans",
+      "target": "skill:obra-receiving-code-review",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-writing-plans",
+      "target": "skill:obra-receiving-code-review",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-writing-plans",
+      "target": "skill:obra-receiving-code-review",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-writing-plans",
+      "target": "skill:obra-using-git-worktrees",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-writing-plans",
+      "target": "skill:obra-using-git-worktrees",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-writing-plans",
+      "target": "skill:obra-using-git-worktrees",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-writing-plans",
+      "target": "skill:obra-verification-before-completion",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-writing-plans",
+      "target": "skill:obra-verification-before-completion",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-writing-plans",
+      "target": "skill:obra-verification-before-completion",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-writing-plans",
+      "target": "skill:obra-condition-based-waiting",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-writing-plans",
+      "target": "skill:obra-condition-based-waiting",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-writing-plans",
+      "target": "skill:obra-condition-based-waiting",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-writing-plans",
+      "target": "skill:obra-commands",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-writing-plans",
+      "target": "skill:obra-commands",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-writing-plans",
+      "target": "skill:obra-commands",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-writing-plans",
+      "target": "skill:obra-writing-skills",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-writing-plans",
+      "target": "skill:obra-writing-skills",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-writing-plans",
+      "target": "skill:obra-writing-skills",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-executing-plans",
+      "target": "skill:obra-dispatching-parallel-agents",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-executing-plans",
+      "target": "skill:obra-dispatching-parallel-agents",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-executing-plans",
+      "target": "skill:obra-dispatching-parallel-agents",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-executing-plans",
+      "target": "skill:obra-dispatching-parallel-agents",
+      "relation": "shared_tag",
+      "weight": 0.45,
+      "evidence": "location:berkeley"
+    },
+    {
+      "source": "skill:obra-executing-plans",
+      "target": "skill:obra-sharing-skills",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-executing-plans",
+      "target": "skill:obra-sharing-skills",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-executing-plans",
+      "target": "skill:obra-sharing-skills",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-executing-plans",
+      "target": "skill:obra-sharing-skills",
+      "relation": "shared_tag",
+      "weight": 0.45,
+      "evidence": "location:berkeley"
+    },
+    {
+      "source": "skill:obra-executing-plans",
+      "target": "skill:obra-using-superpowers",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-executing-plans",
+      "target": "skill:obra-using-superpowers",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-executing-plans",
+      "target": "skill:obra-using-superpowers",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-executing-plans",
+      "target": "skill:obra-using-superpowers",
+      "relation": "shared_tag",
+      "weight": 0.45,
+      "evidence": "location:berkeley"
+    },
+    {
+      "source": "skill:obra-executing-plans",
+      "target": "skill:obra-test-driven-development",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-executing-plans",
+      "target": "skill:obra-test-driven-development",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-executing-plans",
+      "target": "skill:obra-test-driven-development",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-executing-plans",
+      "target": "skill:obra-test-driven-development",
+      "relation": "shared_tag",
+      "weight": 0.45,
+      "evidence": "location:berkeley"
+    },
+    {
+      "source": "skill:obra-executing-plans",
+      "target": "skill:obra-subagent-driven-development",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-executing-plans",
+      "target": "skill:obra-subagent-driven-development",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-executing-plans",
+      "target": "skill:obra-subagent-driven-development",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-executing-plans",
+      "target": "skill:obra-subagent-driven-development",
+      "relation": "shared_tag",
+      "weight": 0.45,
+      "evidence": "location:berkeley"
+    },
+    {
+      "source": "skill:obra-executing-plans",
+      "target": "skill:obra-systematic-debugging",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-executing-plans",
+      "target": "skill:obra-systematic-debugging",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-executing-plans",
+      "target": "skill:obra-systematic-debugging",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-executing-plans",
+      "target": "skill:obra-root-cause-tracing",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-executing-plans",
+      "target": "skill:obra-root-cause-tracing",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-executing-plans",
+      "target": "skill:obra-root-cause-tracing",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-executing-plans",
+      "target": "skill:obra-testing-skills-with-subagents",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-executing-plans",
+      "target": "skill:obra-testing-skills-with-subagents",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-executing-plans",
+      "target": "skill:obra-testing-skills-with-subagents",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-executing-plans",
+      "target": "skill:obra-testing-anti-patterns",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-executing-plans",
+      "target": "skill:obra-testing-anti-patterns",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-executing-plans",
+      "target": "skill:obra-testing-anti-patterns",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-executing-plans",
+      "target": "skill:obra-finishing-a-development-branch",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-executing-plans",
+      "target": "skill:obra-finishing-a-development-branch",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-executing-plans",
+      "target": "skill:obra-finishing-a-development-branch",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-executing-plans",
+      "target": "skill:obra-requesting-code-review",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-executing-plans",
+      "target": "skill:obra-requesting-code-review",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-executing-plans",
+      "target": "skill:obra-requesting-code-review",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-executing-plans",
+      "target": "skill:obra-receiving-code-review",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-executing-plans",
+      "target": "skill:obra-receiving-code-review",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-executing-plans",
+      "target": "skill:obra-receiving-code-review",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-executing-plans",
+      "target": "skill:obra-using-git-worktrees",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-executing-plans",
+      "target": "skill:obra-using-git-worktrees",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-executing-plans",
+      "target": "skill:obra-using-git-worktrees",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-executing-plans",
+      "target": "skill:obra-verification-before-completion",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-executing-plans",
+      "target": "skill:obra-verification-before-completion",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-executing-plans",
+      "target": "skill:obra-verification-before-completion",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-executing-plans",
+      "target": "skill:obra-condition-based-waiting",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-executing-plans",
+      "target": "skill:obra-condition-based-waiting",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-executing-plans",
+      "target": "skill:obra-condition-based-waiting",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-executing-plans",
+      "target": "skill:obra-commands",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-executing-plans",
+      "target": "skill:obra-commands",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-executing-plans",
+      "target": "skill:obra-commands",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-executing-plans",
+      "target": "skill:obra-writing-skills",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-executing-plans",
+      "target": "skill:obra-writing-skills",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-executing-plans",
+      "target": "skill:obra-writing-skills",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-dispatching-parallel-agents",
+      "target": "skill:obra-sharing-skills",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-dispatching-parallel-agents",
+      "target": "skill:obra-sharing-skills",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-dispatching-parallel-agents",
+      "target": "skill:obra-sharing-skills",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-dispatching-parallel-agents",
+      "target": "skill:obra-sharing-skills",
+      "relation": "shared_tag",
+      "weight": 0.45,
+      "evidence": "location:berkeley"
+    },
+    {
+      "source": "skill:obra-dispatching-parallel-agents",
+      "target": "skill:obra-using-superpowers",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-dispatching-parallel-agents",
+      "target": "skill:obra-using-superpowers",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-dispatching-parallel-agents",
+      "target": "skill:obra-using-superpowers",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-dispatching-parallel-agents",
+      "target": "skill:obra-using-superpowers",
+      "relation": "shared_tag",
+      "weight": 0.45,
+      "evidence": "location:berkeley"
+    },
+    {
+      "source": "skill:obra-dispatching-parallel-agents",
+      "target": "skill:obra-test-driven-development",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-dispatching-parallel-agents",
+      "target": "skill:obra-test-driven-development",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-dispatching-parallel-agents",
+      "target": "skill:obra-test-driven-development",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-dispatching-parallel-agents",
+      "target": "skill:obra-test-driven-development",
+      "relation": "shared_tag",
+      "weight": 0.45,
+      "evidence": "location:berkeley"
+    },
+    {
+      "source": "skill:obra-dispatching-parallel-agents",
+      "target": "skill:obra-subagent-driven-development",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-dispatching-parallel-agents",
+      "target": "skill:obra-subagent-driven-development",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-dispatching-parallel-agents",
+      "target": "skill:obra-subagent-driven-development",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-dispatching-parallel-agents",
+      "target": "skill:obra-subagent-driven-development",
+      "relation": "shared_tag",
+      "weight": 0.45,
+      "evidence": "location:berkeley"
+    },
+    {
+      "source": "skill:obra-dispatching-parallel-agents",
+      "target": "skill:obra-systematic-debugging",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-dispatching-parallel-agents",
+      "target": "skill:obra-systematic-debugging",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-dispatching-parallel-agents",
+      "target": "skill:obra-systematic-debugging",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-dispatching-parallel-agents",
+      "target": "skill:obra-root-cause-tracing",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-dispatching-parallel-agents",
+      "target": "skill:obra-root-cause-tracing",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-dispatching-parallel-agents",
+      "target": "skill:obra-root-cause-tracing",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-dispatching-parallel-agents",
+      "target": "skill:obra-testing-skills-with-subagents",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-dispatching-parallel-agents",
+      "target": "skill:obra-testing-skills-with-subagents",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-dispatching-parallel-agents",
+      "target": "skill:obra-testing-skills-with-subagents",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-dispatching-parallel-agents",
+      "target": "skill:obra-testing-anti-patterns",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-dispatching-parallel-agents",
+      "target": "skill:obra-testing-anti-patterns",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-dispatching-parallel-agents",
+      "target": "skill:obra-testing-anti-patterns",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-dispatching-parallel-agents",
+      "target": "skill:obra-finishing-a-development-branch",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-dispatching-parallel-agents",
+      "target": "skill:obra-finishing-a-development-branch",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-dispatching-parallel-agents",
+      "target": "skill:obra-finishing-a-development-branch",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-dispatching-parallel-agents",
+      "target": "skill:obra-requesting-code-review",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-dispatching-parallel-agents",
+      "target": "skill:obra-requesting-code-review",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-dispatching-parallel-agents",
+      "target": "skill:obra-requesting-code-review",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-dispatching-parallel-agents",
+      "target": "skill:obra-receiving-code-review",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-dispatching-parallel-agents",
+      "target": "skill:obra-receiving-code-review",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-dispatching-parallel-agents",
+      "target": "skill:obra-receiving-code-review",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-dispatching-parallel-agents",
+      "target": "skill:obra-using-git-worktrees",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-dispatching-parallel-agents",
+      "target": "skill:obra-using-git-worktrees",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-dispatching-parallel-agents",
+      "target": "skill:obra-using-git-worktrees",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-dispatching-parallel-agents",
+      "target": "skill:obra-verification-before-completion",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-dispatching-parallel-agents",
+      "target": "skill:obra-verification-before-completion",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-dispatching-parallel-agents",
+      "target": "skill:obra-verification-before-completion",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-dispatching-parallel-agents",
+      "target": "skill:obra-condition-based-waiting",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-dispatching-parallel-agents",
+      "target": "skill:obra-condition-based-waiting",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-dispatching-parallel-agents",
+      "target": "skill:obra-condition-based-waiting",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-dispatching-parallel-agents",
+      "target": "skill:obra-commands",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-dispatching-parallel-agents",
+      "target": "skill:obra-commands",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-dispatching-parallel-agents",
+      "target": "skill:obra-commands",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-dispatching-parallel-agents",
+      "target": "skill:obra-writing-skills",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-dispatching-parallel-agents",
+      "target": "skill:obra-writing-skills",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-dispatching-parallel-agents",
+      "target": "skill:obra-writing-skills",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-sharing-skills",
+      "target": "skill:obra-using-superpowers",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-sharing-skills",
+      "target": "skill:obra-using-superpowers",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-sharing-skills",
+      "target": "skill:obra-using-superpowers",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-sharing-skills",
+      "target": "skill:obra-using-superpowers",
+      "relation": "shared_tag",
+      "weight": 0.45,
+      "evidence": "location:berkeley"
+    },
+    {
+      "source": "skill:obra-sharing-skills",
+      "target": "skill:obra-test-driven-development",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-sharing-skills",
+      "target": "skill:obra-test-driven-development",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-sharing-skills",
+      "target": "skill:obra-test-driven-development",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-sharing-skills",
+      "target": "skill:obra-test-driven-development",
+      "relation": "shared_tag",
+      "weight": 0.45,
+      "evidence": "location:berkeley"
+    },
+    {
+      "source": "skill:obra-sharing-skills",
+      "target": "skill:obra-subagent-driven-development",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-sharing-skills",
+      "target": "skill:obra-subagent-driven-development",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-sharing-skills",
+      "target": "skill:obra-subagent-driven-development",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-sharing-skills",
+      "target": "skill:obra-subagent-driven-development",
+      "relation": "shared_tag",
+      "weight": 0.45,
+      "evidence": "location:berkeley"
+    },
+    {
+      "source": "skill:obra-sharing-skills",
+      "target": "skill:obra-systematic-debugging",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-sharing-skills",
+      "target": "skill:obra-systematic-debugging",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-sharing-skills",
+      "target": "skill:obra-systematic-debugging",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-sharing-skills",
+      "target": "skill:obra-root-cause-tracing",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-sharing-skills",
+      "target": "skill:obra-root-cause-tracing",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-sharing-skills",
+      "target": "skill:obra-root-cause-tracing",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-sharing-skills",
+      "target": "skill:obra-testing-skills-with-subagents",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-sharing-skills",
+      "target": "skill:obra-testing-skills-with-subagents",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-sharing-skills",
+      "target": "skill:obra-testing-skills-with-subagents",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-sharing-skills",
+      "target": "skill:obra-testing-anti-patterns",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-sharing-skills",
+      "target": "skill:obra-testing-anti-patterns",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-sharing-skills",
+      "target": "skill:obra-testing-anti-patterns",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-sharing-skills",
+      "target": "skill:obra-finishing-a-development-branch",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-sharing-skills",
+      "target": "skill:obra-finishing-a-development-branch",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-sharing-skills",
+      "target": "skill:obra-finishing-a-development-branch",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-sharing-skills",
+      "target": "skill:obra-requesting-code-review",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-sharing-skills",
+      "target": "skill:obra-requesting-code-review",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-sharing-skills",
+      "target": "skill:obra-requesting-code-review",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-sharing-skills",
+      "target": "skill:obra-receiving-code-review",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-sharing-skills",
+      "target": "skill:obra-receiving-code-review",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-sharing-skills",
+      "target": "skill:obra-receiving-code-review",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-sharing-skills",
+      "target": "skill:obra-using-git-worktrees",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-sharing-skills",
+      "target": "skill:obra-using-git-worktrees",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-sharing-skills",
+      "target": "skill:obra-using-git-worktrees",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-sharing-skills",
+      "target": "skill:obra-verification-before-completion",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-sharing-skills",
+      "target": "skill:obra-verification-before-completion",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-sharing-skills",
+      "target": "skill:obra-verification-before-completion",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-sharing-skills",
+      "target": "skill:obra-condition-based-waiting",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-sharing-skills",
+      "target": "skill:obra-condition-based-waiting",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-sharing-skills",
+      "target": "skill:obra-condition-based-waiting",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-sharing-skills",
+      "target": "skill:obra-commands",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-sharing-skills",
+      "target": "skill:obra-commands",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-sharing-skills",
+      "target": "skill:obra-commands",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-sharing-skills",
+      "target": "skill:obra-writing-skills",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-sharing-skills",
+      "target": "skill:obra-writing-skills",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-sharing-skills",
+      "target": "skill:obra-writing-skills",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-using-superpowers",
+      "target": "skill:obra-test-driven-development",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-using-superpowers",
+      "target": "skill:obra-test-driven-development",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-using-superpowers",
+      "target": "skill:obra-test-driven-development",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-using-superpowers",
+      "target": "skill:obra-test-driven-development",
+      "relation": "shared_tag",
+      "weight": 0.45,
+      "evidence": "location:berkeley"
+    },
+    {
+      "source": "skill:obra-using-superpowers",
+      "target": "skill:obra-subagent-driven-development",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-using-superpowers",
+      "target": "skill:obra-subagent-driven-development",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-using-superpowers",
+      "target": "skill:obra-subagent-driven-development",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-using-superpowers",
+      "target": "skill:obra-subagent-driven-development",
+      "relation": "shared_tag",
+      "weight": 0.45,
+      "evidence": "location:berkeley"
+    },
+    {
+      "source": "skill:obra-using-superpowers",
+      "target": "skill:obra-systematic-debugging",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-using-superpowers",
+      "target": "skill:obra-systematic-debugging",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-using-superpowers",
+      "target": "skill:obra-systematic-debugging",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-using-superpowers",
+      "target": "skill:obra-root-cause-tracing",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-using-superpowers",
+      "target": "skill:obra-root-cause-tracing",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-using-superpowers",
+      "target": "skill:obra-root-cause-tracing",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-using-superpowers",
+      "target": "skill:obra-testing-skills-with-subagents",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-using-superpowers",
+      "target": "skill:obra-testing-skills-with-subagents",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-using-superpowers",
+      "target": "skill:obra-testing-skills-with-subagents",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-using-superpowers",
+      "target": "skill:obra-testing-anti-patterns",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-using-superpowers",
+      "target": "skill:obra-testing-anti-patterns",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-using-superpowers",
+      "target": "skill:obra-testing-anti-patterns",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-using-superpowers",
+      "target": "skill:obra-finishing-a-development-branch",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-using-superpowers",
+      "target": "skill:obra-finishing-a-development-branch",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-using-superpowers",
+      "target": "skill:obra-finishing-a-development-branch",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-using-superpowers",
+      "target": "skill:obra-requesting-code-review",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-using-superpowers",
+      "target": "skill:obra-requesting-code-review",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-using-superpowers",
+      "target": "skill:obra-requesting-code-review",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-using-superpowers",
+      "target": "skill:obra-receiving-code-review",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-using-superpowers",
+      "target": "skill:obra-receiving-code-review",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-using-superpowers",
+      "target": "skill:obra-receiving-code-review",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-using-superpowers",
+      "target": "skill:obra-using-git-worktrees",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-using-superpowers",
+      "target": "skill:obra-using-git-worktrees",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-using-superpowers",
+      "target": "skill:obra-using-git-worktrees",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-using-superpowers",
+      "target": "skill:obra-verification-before-completion",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-using-superpowers",
+      "target": "skill:obra-verification-before-completion",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-using-superpowers",
+      "target": "skill:obra-verification-before-completion",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-using-superpowers",
+      "target": "skill:obra-condition-based-waiting",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-using-superpowers",
+      "target": "skill:obra-condition-based-waiting",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-using-superpowers",
+      "target": "skill:obra-condition-based-waiting",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-using-superpowers",
+      "target": "skill:obra-commands",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-using-superpowers",
+      "target": "skill:obra-commands",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-using-superpowers",
+      "target": "skill:obra-commands",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-using-superpowers",
+      "target": "skill:obra-writing-skills",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-using-superpowers",
+      "target": "skill:obra-writing-skills",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-using-superpowers",
+      "target": "skill:obra-writing-skills",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-test-driven-development",
+      "target": "skill:obra-subagent-driven-development",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-test-driven-development",
+      "target": "skill:obra-subagent-driven-development",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-test-driven-development",
+      "target": "skill:obra-subagent-driven-development",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-test-driven-development",
+      "target": "skill:obra-subagent-driven-development",
+      "relation": "shared_tag",
+      "weight": 0.45,
+      "evidence": "location:berkeley"
+    },
+    {
+      "source": "skill:obra-test-driven-development",
+      "target": "skill:obra-systematic-debugging",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-test-driven-development",
+      "target": "skill:obra-systematic-debugging",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-test-driven-development",
+      "target": "skill:obra-systematic-debugging",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-test-driven-development",
+      "target": "skill:obra-root-cause-tracing",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-test-driven-development",
+      "target": "skill:obra-root-cause-tracing",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-test-driven-development",
+      "target": "skill:obra-root-cause-tracing",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-test-driven-development",
+      "target": "skill:obra-testing-skills-with-subagents",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-test-driven-development",
+      "target": "skill:obra-testing-skills-with-subagents",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-test-driven-development",
+      "target": "skill:obra-testing-skills-with-subagents",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-test-driven-development",
+      "target": "skill:obra-testing-anti-patterns",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-test-driven-development",
+      "target": "skill:obra-testing-anti-patterns",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-test-driven-development",
+      "target": "skill:obra-testing-anti-patterns",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-test-driven-development",
+      "target": "skill:obra-finishing-a-development-branch",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-test-driven-development",
+      "target": "skill:obra-finishing-a-development-branch",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-test-driven-development",
+      "target": "skill:obra-finishing-a-development-branch",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-test-driven-development",
+      "target": "skill:obra-requesting-code-review",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-test-driven-development",
+      "target": "skill:obra-requesting-code-review",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-test-driven-development",
+      "target": "skill:obra-requesting-code-review",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-test-driven-development",
+      "target": "skill:obra-receiving-code-review",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-test-driven-development",
+      "target": "skill:obra-receiving-code-review",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-test-driven-development",
+      "target": "skill:obra-receiving-code-review",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-test-driven-development",
+      "target": "skill:obra-using-git-worktrees",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-test-driven-development",
+      "target": "skill:obra-using-git-worktrees",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-test-driven-development",
+      "target": "skill:obra-using-git-worktrees",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-test-driven-development",
+      "target": "skill:obra-verification-before-completion",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-test-driven-development",
+      "target": "skill:obra-verification-before-completion",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-test-driven-development",
+      "target": "skill:obra-verification-before-completion",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-test-driven-development",
+      "target": "skill:obra-condition-based-waiting",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-test-driven-development",
+      "target": "skill:obra-condition-based-waiting",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-test-driven-development",
+      "target": "skill:obra-condition-based-waiting",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-test-driven-development",
+      "target": "skill:obra-commands",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-test-driven-development",
+      "target": "skill:obra-commands",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-test-driven-development",
+      "target": "skill:obra-commands",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-test-driven-development",
+      "target": "skill:obra-writing-skills",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-test-driven-development",
+      "target": "skill:obra-writing-skills",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-test-driven-development",
+      "target": "skill:obra-writing-skills",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-subagent-driven-development",
+      "target": "skill:obra-systematic-debugging",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-subagent-driven-development",
+      "target": "skill:obra-systematic-debugging",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-subagent-driven-development",
+      "target": "skill:obra-systematic-debugging",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-subagent-driven-development",
+      "target": "skill:obra-root-cause-tracing",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-subagent-driven-development",
+      "target": "skill:obra-root-cause-tracing",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-subagent-driven-development",
+      "target": "skill:obra-root-cause-tracing",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-subagent-driven-development",
+      "target": "skill:obra-testing-skills-with-subagents",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-subagent-driven-development",
+      "target": "skill:obra-testing-skills-with-subagents",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-subagent-driven-development",
+      "target": "skill:obra-testing-skills-with-subagents",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-subagent-driven-development",
+      "target": "skill:obra-testing-anti-patterns",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-subagent-driven-development",
+      "target": "skill:obra-testing-anti-patterns",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-subagent-driven-development",
+      "target": "skill:obra-testing-anti-patterns",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-subagent-driven-development",
+      "target": "skill:obra-finishing-a-development-branch",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-subagent-driven-development",
+      "target": "skill:obra-finishing-a-development-branch",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-subagent-driven-development",
+      "target": "skill:obra-finishing-a-development-branch",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-subagent-driven-development",
+      "target": "skill:obra-requesting-code-review",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-subagent-driven-development",
+      "target": "skill:obra-requesting-code-review",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-subagent-driven-development",
+      "target": "skill:obra-requesting-code-review",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-subagent-driven-development",
+      "target": "skill:obra-receiving-code-review",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-subagent-driven-development",
+      "target": "skill:obra-receiving-code-review",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-subagent-driven-development",
+      "target": "skill:obra-receiving-code-review",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-subagent-driven-development",
+      "target": "skill:obra-using-git-worktrees",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-subagent-driven-development",
+      "target": "skill:obra-using-git-worktrees",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-subagent-driven-development",
+      "target": "skill:obra-using-git-worktrees",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-subagent-driven-development",
+      "target": "skill:obra-verification-before-completion",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-subagent-driven-development",
+      "target": "skill:obra-verification-before-completion",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-subagent-driven-development",
+      "target": "skill:obra-verification-before-completion",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-subagent-driven-development",
+      "target": "skill:obra-condition-based-waiting",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-subagent-driven-development",
+      "target": "skill:obra-condition-based-waiting",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-subagent-driven-development",
+      "target": "skill:obra-condition-based-waiting",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-subagent-driven-development",
+      "target": "skill:obra-commands",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-subagent-driven-development",
+      "target": "skill:obra-commands",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-subagent-driven-development",
+      "target": "skill:obra-commands",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-subagent-driven-development",
+      "target": "skill:obra-writing-skills",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-subagent-driven-development",
+      "target": "skill:obra-writing-skills",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-subagent-driven-development",
+      "target": "skill:obra-writing-skills",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-systematic-debugging",
+      "target": "skill:obra-root-cause-tracing",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-systematic-debugging",
+      "target": "skill:obra-root-cause-tracing",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-systematic-debugging",
+      "target": "skill:obra-root-cause-tracing",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-systematic-debugging",
+      "target": "skill:obra-testing-skills-with-subagents",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-systematic-debugging",
+      "target": "skill:obra-testing-skills-with-subagents",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-systematic-debugging",
+      "target": "skill:obra-testing-skills-with-subagents",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-systematic-debugging",
+      "target": "skill:obra-testing-anti-patterns",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-systematic-debugging",
+      "target": "skill:obra-testing-anti-patterns",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-systematic-debugging",
+      "target": "skill:obra-testing-anti-patterns",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-systematic-debugging",
+      "target": "skill:obra-finishing-a-development-branch",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-systematic-debugging",
+      "target": "skill:obra-finishing-a-development-branch",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-systematic-debugging",
+      "target": "skill:obra-finishing-a-development-branch",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-systematic-debugging",
+      "target": "skill:obra-requesting-code-review",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-systematic-debugging",
+      "target": "skill:obra-requesting-code-review",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-systematic-debugging",
+      "target": "skill:obra-requesting-code-review",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-systematic-debugging",
+      "target": "skill:obra-receiving-code-review",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-systematic-debugging",
+      "target": "skill:obra-receiving-code-review",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-systematic-debugging",
+      "target": "skill:obra-receiving-code-review",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-systematic-debugging",
+      "target": "skill:obra-using-git-worktrees",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-systematic-debugging",
+      "target": "skill:obra-using-git-worktrees",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-systematic-debugging",
+      "target": "skill:obra-using-git-worktrees",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-systematic-debugging",
+      "target": "skill:obra-verification-before-completion",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-systematic-debugging",
+      "target": "skill:obra-verification-before-completion",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-systematic-debugging",
+      "target": "skill:obra-verification-before-completion",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-systematic-debugging",
+      "target": "skill:obra-condition-based-waiting",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-systematic-debugging",
+      "target": "skill:obra-condition-based-waiting",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-systematic-debugging",
+      "target": "skill:obra-condition-based-waiting",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-systematic-debugging",
+      "target": "skill:obra-commands",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-systematic-debugging",
+      "target": "skill:obra-commands",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-systematic-debugging",
+      "target": "skill:obra-commands",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-systematic-debugging",
+      "target": "skill:obra-writing-skills",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-systematic-debugging",
+      "target": "skill:obra-writing-skills",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-systematic-debugging",
+      "target": "skill:obra-writing-skills",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-root-cause-tracing",
+      "target": "skill:obra-testing-skills-with-subagents",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-root-cause-tracing",
+      "target": "skill:obra-testing-skills-with-subagents",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-root-cause-tracing",
+      "target": "skill:obra-testing-skills-with-subagents",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-root-cause-tracing",
+      "target": "skill:obra-testing-anti-patterns",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-root-cause-tracing",
+      "target": "skill:obra-testing-anti-patterns",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-root-cause-tracing",
+      "target": "skill:obra-testing-anti-patterns",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-root-cause-tracing",
+      "target": "skill:obra-finishing-a-development-branch",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-root-cause-tracing",
+      "target": "skill:obra-finishing-a-development-branch",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-root-cause-tracing",
+      "target": "skill:obra-finishing-a-development-branch",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-root-cause-tracing",
+      "target": "skill:obra-requesting-code-review",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-root-cause-tracing",
+      "target": "skill:obra-requesting-code-review",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-root-cause-tracing",
+      "target": "skill:obra-requesting-code-review",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-root-cause-tracing",
+      "target": "skill:obra-receiving-code-review",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-root-cause-tracing",
+      "target": "skill:obra-receiving-code-review",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-root-cause-tracing",
+      "target": "skill:obra-receiving-code-review",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-root-cause-tracing",
+      "target": "skill:obra-using-git-worktrees",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-root-cause-tracing",
+      "target": "skill:obra-using-git-worktrees",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-root-cause-tracing",
+      "target": "skill:obra-using-git-worktrees",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-root-cause-tracing",
+      "target": "skill:obra-verification-before-completion",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-root-cause-tracing",
+      "target": "skill:obra-verification-before-completion",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-root-cause-tracing",
+      "target": "skill:obra-verification-before-completion",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-root-cause-tracing",
+      "target": "skill:obra-condition-based-waiting",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-root-cause-tracing",
+      "target": "skill:obra-condition-based-waiting",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-root-cause-tracing",
+      "target": "skill:obra-condition-based-waiting",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-root-cause-tracing",
+      "target": "skill:obra-commands",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-root-cause-tracing",
+      "target": "skill:obra-commands",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-root-cause-tracing",
+      "target": "skill:obra-commands",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-root-cause-tracing",
+      "target": "skill:obra-writing-skills",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-root-cause-tracing",
+      "target": "skill:obra-writing-skills",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-root-cause-tracing",
+      "target": "skill:obra-writing-skills",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-testing-skills-with-subagents",
+      "target": "skill:obra-testing-anti-patterns",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-testing-skills-with-subagents",
+      "target": "skill:obra-testing-anti-patterns",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-testing-skills-with-subagents",
+      "target": "skill:obra-testing-anti-patterns",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-testing-skills-with-subagents",
+      "target": "skill:obra-finishing-a-development-branch",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-testing-skills-with-subagents",
+      "target": "skill:obra-finishing-a-development-branch",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-testing-skills-with-subagents",
+      "target": "skill:obra-finishing-a-development-branch",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-testing-skills-with-subagents",
+      "target": "skill:obra-requesting-code-review",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-testing-skills-with-subagents",
+      "target": "skill:obra-requesting-code-review",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-testing-skills-with-subagents",
+      "target": "skill:obra-requesting-code-review",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-testing-skills-with-subagents",
+      "target": "skill:obra-receiving-code-review",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-testing-skills-with-subagents",
+      "target": "skill:obra-receiving-code-review",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-testing-skills-with-subagents",
+      "target": "skill:obra-receiving-code-review",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-testing-skills-with-subagents",
+      "target": "skill:obra-using-git-worktrees",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-testing-skills-with-subagents",
+      "target": "skill:obra-using-git-worktrees",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-testing-skills-with-subagents",
+      "target": "skill:obra-using-git-worktrees",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-testing-skills-with-subagents",
+      "target": "skill:obra-verification-before-completion",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-testing-skills-with-subagents",
+      "target": "skill:obra-verification-before-completion",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-testing-skills-with-subagents",
+      "target": "skill:obra-verification-before-completion",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-testing-skills-with-subagents",
+      "target": "skill:obra-condition-based-waiting",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-testing-skills-with-subagents",
+      "target": "skill:obra-condition-based-waiting",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-testing-skills-with-subagents",
+      "target": "skill:obra-condition-based-waiting",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-testing-skills-with-subagents",
+      "target": "skill:obra-commands",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-testing-skills-with-subagents",
+      "target": "skill:obra-commands",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-testing-skills-with-subagents",
+      "target": "skill:obra-commands",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-testing-skills-with-subagents",
+      "target": "skill:obra-writing-skills",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-testing-skills-with-subagents",
+      "target": "skill:obra-writing-skills",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-testing-skills-with-subagents",
+      "target": "skill:obra-writing-skills",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-testing-anti-patterns",
+      "target": "skill:obra-finishing-a-development-branch",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-testing-anti-patterns",
+      "target": "skill:obra-finishing-a-development-branch",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-testing-anti-patterns",
+      "target": "skill:obra-finishing-a-development-branch",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-testing-anti-patterns",
+      "target": "skill:obra-requesting-code-review",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-testing-anti-patterns",
+      "target": "skill:obra-requesting-code-review",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-testing-anti-patterns",
+      "target": "skill:obra-requesting-code-review",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-testing-anti-patterns",
+      "target": "skill:obra-receiving-code-review",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-testing-anti-patterns",
+      "target": "skill:obra-receiving-code-review",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-testing-anti-patterns",
+      "target": "skill:obra-receiving-code-review",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-testing-anti-patterns",
+      "target": "skill:obra-using-git-worktrees",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-testing-anti-patterns",
+      "target": "skill:obra-using-git-worktrees",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-testing-anti-patterns",
+      "target": "skill:obra-using-git-worktrees",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-testing-anti-patterns",
+      "target": "skill:obra-verification-before-completion",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-testing-anti-patterns",
+      "target": "skill:obra-verification-before-completion",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-testing-anti-patterns",
+      "target": "skill:obra-verification-before-completion",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-testing-anti-patterns",
+      "target": "skill:obra-condition-based-waiting",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-testing-anti-patterns",
+      "target": "skill:obra-condition-based-waiting",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-testing-anti-patterns",
+      "target": "skill:obra-condition-based-waiting",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-testing-anti-patterns",
+      "target": "skill:obra-commands",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-testing-anti-patterns",
+      "target": "skill:obra-commands",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-testing-anti-patterns",
+      "target": "skill:obra-commands",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-testing-anti-patterns",
+      "target": "skill:obra-writing-skills",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-testing-anti-patterns",
+      "target": "skill:obra-writing-skills",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-testing-anti-patterns",
+      "target": "skill:obra-writing-skills",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-finishing-a-development-branch",
+      "target": "skill:obra-requesting-code-review",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-finishing-a-development-branch",
+      "target": "skill:obra-requesting-code-review",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-finishing-a-development-branch",
+      "target": "skill:obra-requesting-code-review",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-finishing-a-development-branch",
+      "target": "skill:obra-receiving-code-review",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-finishing-a-development-branch",
+      "target": "skill:obra-receiving-code-review",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-finishing-a-development-branch",
+      "target": "skill:obra-receiving-code-review",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-finishing-a-development-branch",
+      "target": "skill:obra-using-git-worktrees",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-finishing-a-development-branch",
+      "target": "skill:obra-using-git-worktrees",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-finishing-a-development-branch",
+      "target": "skill:obra-using-git-worktrees",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-finishing-a-development-branch",
+      "target": "skill:obra-verification-before-completion",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-finishing-a-development-branch",
+      "target": "skill:obra-verification-before-completion",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-finishing-a-development-branch",
+      "target": "skill:obra-verification-before-completion",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-finishing-a-development-branch",
+      "target": "skill:obra-condition-based-waiting",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-finishing-a-development-branch",
+      "target": "skill:obra-condition-based-waiting",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-finishing-a-development-branch",
+      "target": "skill:obra-condition-based-waiting",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-finishing-a-development-branch",
+      "target": "skill:obra-commands",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-finishing-a-development-branch",
+      "target": "skill:obra-commands",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-finishing-a-development-branch",
+      "target": "skill:obra-commands",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-finishing-a-development-branch",
+      "target": "skill:obra-writing-skills",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-finishing-a-development-branch",
+      "target": "skill:obra-writing-skills",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-finishing-a-development-branch",
+      "target": "skill:obra-writing-skills",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-requesting-code-review",
+      "target": "skill:obra-receiving-code-review",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-requesting-code-review",
+      "target": "skill:obra-receiving-code-review",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-requesting-code-review",
+      "target": "skill:obra-receiving-code-review",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-requesting-code-review",
+      "target": "skill:obra-using-git-worktrees",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-requesting-code-review",
+      "target": "skill:obra-using-git-worktrees",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-requesting-code-review",
+      "target": "skill:obra-using-git-worktrees",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-requesting-code-review",
+      "target": "skill:obra-verification-before-completion",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-requesting-code-review",
+      "target": "skill:obra-verification-before-completion",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-requesting-code-review",
+      "target": "skill:obra-verification-before-completion",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-requesting-code-review",
+      "target": "skill:obra-condition-based-waiting",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-requesting-code-review",
+      "target": "skill:obra-condition-based-waiting",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-requesting-code-review",
+      "target": "skill:obra-condition-based-waiting",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-requesting-code-review",
+      "target": "skill:obra-commands",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-requesting-code-review",
+      "target": "skill:obra-commands",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-requesting-code-review",
+      "target": "skill:obra-commands",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-requesting-code-review",
+      "target": "skill:obra-writing-skills",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-requesting-code-review",
+      "target": "skill:obra-writing-skills",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-requesting-code-review",
+      "target": "skill:obra-writing-skills",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-receiving-code-review",
+      "target": "skill:obra-using-git-worktrees",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-receiving-code-review",
+      "target": "skill:obra-using-git-worktrees",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-receiving-code-review",
+      "target": "skill:obra-using-git-worktrees",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-receiving-code-review",
+      "target": "skill:obra-verification-before-completion",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-receiving-code-review",
+      "target": "skill:obra-verification-before-completion",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-receiving-code-review",
+      "target": "skill:obra-verification-before-completion",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-receiving-code-review",
+      "target": "skill:obra-condition-based-waiting",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-receiving-code-review",
+      "target": "skill:obra-condition-based-waiting",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-receiving-code-review",
+      "target": "skill:obra-condition-based-waiting",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-receiving-code-review",
+      "target": "skill:obra-commands",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-receiving-code-review",
+      "target": "skill:obra-commands",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-receiving-code-review",
+      "target": "skill:obra-commands",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-receiving-code-review",
+      "target": "skill:obra-writing-skills",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-receiving-code-review",
+      "target": "skill:obra-writing-skills",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-receiving-code-review",
+      "target": "skill:obra-writing-skills",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-using-git-worktrees",
+      "target": "skill:obra-verification-before-completion",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-using-git-worktrees",
+      "target": "skill:obra-verification-before-completion",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-using-git-worktrees",
+      "target": "skill:obra-verification-before-completion",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-using-git-worktrees",
+      "target": "skill:obra-condition-based-waiting",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-using-git-worktrees",
+      "target": "skill:obra-condition-based-waiting",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-using-git-worktrees",
+      "target": "skill:obra-condition-based-waiting",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-using-git-worktrees",
+      "target": "skill:obra-commands",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-using-git-worktrees",
+      "target": "skill:obra-commands",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-using-git-worktrees",
+      "target": "skill:obra-commands",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-using-git-worktrees",
+      "target": "skill:obra-writing-skills",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-using-git-worktrees",
+      "target": "skill:obra-writing-skills",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-using-git-worktrees",
+      "target": "skill:obra-writing-skills",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-verification-before-completion",
+      "target": "skill:obra-condition-based-waiting",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-verification-before-completion",
+      "target": "skill:obra-condition-based-waiting",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-verification-before-completion",
+      "target": "skill:obra-condition-based-waiting",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-verification-before-completion",
+      "target": "skill:obra-commands",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-verification-before-completion",
+      "target": "skill:obra-commands",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-verification-before-completion",
+      "target": "skill:obra-commands",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-verification-before-completion",
+      "target": "skill:obra-writing-skills",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-verification-before-completion",
+      "target": "skill:obra-writing-skills",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-verification-before-completion",
+      "target": "skill:obra-writing-skills",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-condition-based-waiting",
+      "target": "skill:obra-commands",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-condition-based-waiting",
+      "target": "skill:obra-commands",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-condition-based-waiting",
+      "target": "skill:obra-commands",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-condition-based-waiting",
+      "target": "skill:obra-writing-skills",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-condition-based-waiting",
+      "target": "skill:obra-writing-skills",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-condition-based-waiting",
+      "target": "skill:obra-writing-skills",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "source": "skill:obra-commands",
+      "target": "skill:obra-writing-skills",
+      "relation": "shared_tag",
+      "weight": 0.55,
+      "evidence": "Community Skills"
+    },
+    {
+      "source": "skill:obra-commands",
+      "target": "skill:obra-writing-skills",
+      "relation": "source_overlap",
+      "weight": 0.75,
+      "evidence": "author:obra"
+    },
+    {
+      "source": "skill:obra-commands",
+      "target": "skill:obra-writing-skills",
+      "relation": "source_overlap",
+      "weight": 0.8,
+      "evidence": "repo:obra/superpowers"
+    }
+  ],
+  "communities": [
+    {
+      "id": "community-skills",
+      "label": "Community Skills",
+      "nodeIds": [
+        "skill:obra-brainstorming",
+        "skill:obra-writing-plans",
+        "skill:obra-executing-plans",
+        "skill:obra-dispatching-parallel-agents",
+        "skill:obra-sharing-skills",
+        "skill:obra-using-superpowers",
+        "skill:obra-test-driven-development",
+        "skill:obra-subagent-driven-development",
+        "skill:obra-systematic-debugging",
+        "skill:obra-root-cause-tracing",
+        "skill:obra-testing-skills-with-subagents",
+        "skill:obra-testing-anti-patterns",
+        "skill:obra-finishing-a-development-branch",
+        "skill:obra-requesting-code-review",
+        "skill:obra-receiving-code-review",
+        "skill:obra-using-git-worktrees",
+        "skill:obra-verification-before-completion",
+        "skill:obra-condition-based-waiting",
+        "skill:obra-commands",
+        "skill:obra-writing-skills"
+      ]
+    }
+  ],
+  "statistics": {
+    "totalNodes": 20,
+    "totalEdges": 598
+  }
+}

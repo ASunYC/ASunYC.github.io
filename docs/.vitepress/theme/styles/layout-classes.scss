@@ -125,6 +125,57 @@
   }
 }
 
+/* Skills Shop globe and storefront layout */
+.m-skills-shop-layout {
+  --vp-layout-max-width: 1240px;
+
+  overflow-x: clip;
+
+  .container {
+    max-width: var(--vp-layout-max-width) !important;
+  }
+
+  .content-container,
+  .content {
+    max-width: 100% !important;
+    min-width: 0;
+  }
+
+  .content {
+    padding-bottom: 32px;
+
+    .VPDocFooter {
+      display: none;
+    }
+  }
+
+  .vp-doc {
+    min-width: 0;
+  }
+
+  .vp-doc a {
+    text-decoration: none;
+  }
+
+  @media (max-width: 640px) {
+    .VPDoc {
+      padding-left: 16px !important;
+      padding-right: 16px !important;
+    }
+
+    .container,
+    .VPDoc,
+    .vp-doc,
+    .content-container,
+    .content {
+      width: 100% !important;
+      max-width: 100% !important;
+      min-width: 0 !important;
+      overflow-x: clip;
+    }
+  }
+}
+
 /* Spotlight card effect */
 .spotlight-card {
   position: relative;

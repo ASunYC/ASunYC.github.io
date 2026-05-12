@@ -1,0 +1,82 @@
+{
+  "id": "skill:obra-systematic-debugging",
+  "slug": "obra-systematic-debugging",
+  "name": "systematic-debugging",
+  "displayName": "obra/systematic-debugging",
+  "description": "Methodical problem-solving in code",
+  "stars": 181449,
+  "category": "Community Skills",
+  "source": "voltagent",
+  "url": "https://github.com/obra/superpowers/blob/main/skills/systematic-debugging/SKILL.md",
+  "githubRepo": "obra/superpowers",
+  "readme": "# obra/systematic-debugging\n\nMethodical problem-solving in code",
+  "readmeHtml": "<h1>obra/systematic-debugging</h1>\n<p>Methodical problem-solving in code</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-12T02:46:43.848Z",
+  "author": {
+    "login": "obra",
+    "name": "Jesse Vincent",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/45416?v=4",
+    "profileUrl": "https://github.com/obra",
+    "location": "Berkeley, CA 94703"
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "obra-brainstorming",
+      "displayName": "obra/brainstorming",
+      "stars": 181449,
+      "relation": "source_overlap",
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "slug": "obra-writing-plans",
+      "displayName": "obra/writing-plans",
+      "stars": 181449,
+      "relation": "source_overlap",
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "slug": "obra-executing-plans",
+      "displayName": "obra/executing-plans",
+      "stars": 181449,
+      "relation": "source_overlap",
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "slug": "obra-dispatching-parallel-agents",
+      "displayName": "obra/dispatching-parallel-agents",
+      "stars": 181449,
+      "relation": "source_overlap",
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "slug": "obra-sharing-skills",
+      "displayName": "obra/sharing-skills",
+      "stars": 181449,
+      "relation": "source_overlap",
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "slug": "obra-using-superpowers",
+      "displayName": "obra/using-superpowers",
+      "stars": 181449,
+      "relation": "source_overlap",
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "slug": "obra-test-driven-development",
+      "displayName": "obra/test-driven-development",
+      "stars": 181449,
+      "relation": "source_overlap",
+      "evidence": "repo:obra/superpowers"
+    },
+    {
+      "slug": "obra-subagent-driven-development",
+      "displayName": "obra/subagent-driven-development",
+      "stars": 181449,
+      "relation": "source_overlap",
+      "evidence": "repo:obra/superpowers"
+    }
+  ]
+}
