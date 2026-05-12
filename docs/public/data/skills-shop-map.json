@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-05-12T08:59:53.227Z",
+  "generatedAt": "2026-05-12T09:49:18.189Z",
   "totalSkills": 21,
-  "mappedSkills": 8,
+  "mappedSkills": 7,
   "locations": [
     {
       "id": "berkeley",
@@ -10,13 +10,6 @@
       "lon": -122.273,
       "key": "37.8715,-122.2730",
       "skills": [
-        {
-          "slug": "obra-brainstorming",
-          "displayName": "obra/brainstorming",
-          "stars": 186953,
-          "category": "Community Skills",
-          "description": "Generate and explore ideas"
-        },
         {
           "slug": "obra-writing-plans",
           "displayName": "obra/writing-plans",
@@ -68,13 +61,13 @@
         }
       ],
       "topSkill": {
-        "slug": "obra-brainstorming",
-        "displayName": "obra/brainstorming",
-        "stars": 186953,
+        "slug": "obra-writing-plans",
+        "displayName": "obra/writing-plans",
+        "stars": 181449,
         "category": "Community Skills",
-        "description": "Generate and explore ideas"
+        "description": "Create strategic documentation"
       },
-      "skillCount": 8
+      "skillCount": 7
     }
   ]
 }

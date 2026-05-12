@@ -164,7 +164,7 @@ export const RECOMMENDED_COMBOS: RecommendedCombo[] = [
       {
         name: 'UI UX Pro Max',
         type: 'Skill',
-        install: 'uipro init',
+        install: 'npm install -g uipro-cli\nuipro init --ai codex # Codex CLI',
         description: 'Upgrade frontend output with stronger visual hierarchy and interaction quality.',
         why: 'Useful when a working page needs to feel like a real product surface.',
       },
