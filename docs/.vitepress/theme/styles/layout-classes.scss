@@ -127,12 +127,17 @@
 
 /* Skills Shop globe and storefront layout */
 .m-skills-shop-layout {
-  --vp-layout-max-width: 1240px;
+  --vp-layout-max-width: min(1720px, calc(100vw - 56px));
 
   overflow-x: clip;
 
   .container {
     max-width: var(--vp-layout-max-width) !important;
+  }
+
+  .aside,
+  .VPDocAsideOutline {
+    display: none !important;
   }
 
   .content-container,

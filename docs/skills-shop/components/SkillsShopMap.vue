@@ -500,17 +500,18 @@ onBeforeUnmount(() => {
 
 <style scoped>
 .shop-page {
-  max-width: 1180px;
+  width: min(1720px, calc(100vw - 56px));
+  max-width: none;
   margin: 0 auto;
-  padding: 28px 20px 64px;
+  padding: 24px 0 56px;
 }
 
 .shop-hero {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
   gap: 24px;
   align-items: end;
-  margin-bottom: 22px;
+  margin-bottom: 18px;
 }
 
 .shop-kicker {
@@ -523,19 +524,19 @@ onBeforeUnmount(() => {
 }
 
 .shop-hero h1 {
-  max-width: 760px;
+  max-width: 820px;
   margin: 0;
-  font-size: clamp(2.2rem, 6vw, 4.9rem);
-  line-height: 0.95;
+  font-size: clamp(1.75rem, 3vw, 3.15rem);
+  line-height: 1.08;
   letter-spacing: 0;
 }
 
 .shop-lede {
-  max-width: 760px;
-  margin: 18px 0 0;
+  max-width: 780px;
+  margin: 12px 0 0;
   color: var(--vp-c-text-2);
-  font-size: 1.05rem;
-  line-height: 1.7;
+  font-size: 0.98rem;
+  line-height: 1.6;
 }
 
 .shop-stats {
@@ -562,7 +563,7 @@ onBeforeUnmount(() => {
 .shop-tabs {
   display: inline-flex;
   gap: 6px;
-  margin-bottom: 22px;
+  margin-bottom: 18px;
   border: 1px solid var(--vp-c-divider);
   border-radius: 8px;
   padding: 5px;
@@ -590,8 +591,9 @@ onBeforeUnmount(() => {
 
 .shop-stage {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 360px;
-  min-height: 640px;
+  grid-template-columns: minmax(0, 1fr) minmax(360px, 430px);
+  height: clamp(600px, calc(100vh - 260px), 760px);
+  min-height: 0;
   overflow: hidden;
   border: 1px solid var(--vp-c-divider);
   border-radius: 8px;
@@ -600,7 +602,8 @@ onBeforeUnmount(() => {
 
 .earth-panel {
   position: relative;
-  min-height: 640px;
+  min-height: 0;
+  height: 100%;
 }
 
 .earth-canvas {
@@ -611,6 +614,8 @@ onBeforeUnmount(() => {
 .shop-drawer {
   display: flex;
   min-height: 0;
+  max-height: 100%;
+  overflow: hidden;
   flex-direction: column;
   border-left: 1px solid rgba(255, 255, 255, 0.12);
   background: rgba(18, 20, 27, 0.96);
@@ -654,12 +659,14 @@ onBeforeUnmount(() => {
 }
 
 .drawer-desc {
+  flex: 0 0 auto;
   margin: 18px 0;
   color: #cbd2dc;
   line-height: 1.65;
 }
 
 .drawer-actions {
+  flex: 0 0 auto;
   display: flex;
   gap: 10px;
   margin-bottom: 18px;
@@ -688,9 +695,11 @@ onBeforeUnmount(() => {
 .skill-list {
   display: grid;
   gap: 10px;
+  flex: 1 1 auto;
   min-height: 0;
   overflow-y: auto;
   padding-right: 4px;
+  scrollbar-color: #f4c95d rgba(255, 255, 255, 0.08);
 }
 
 .skill-row {
@@ -1018,6 +1027,10 @@ onBeforeUnmount(() => {
 }
 
 @media (max-width: 980px) {
+  .shop-page {
+    width: min(100%, calc(100vw - 32px));
+  }
+
   .shop-hero,
   .shop-stage,
   .wiki-tools,
@@ -1025,12 +1038,16 @@ onBeforeUnmount(() => {
     grid-template-columns: 1fr;
   }
 
-  .shop-stage,
+  .shop-stage {
+    height: auto;
+  }
+
   .earth-panel {
-    min-height: 520px;
+    height: 520px;
   }
 
   .shop-drawer {
+    max-height: 420px;
     border-left: 0;
     border-top: 1px solid rgba(255, 255, 255, 0.12);
   }
@@ -1044,11 +1061,12 @@ onBeforeUnmount(() => {
 
 @media (max-width: 620px) {
   .shop-page {
-    padding-inline: 14px;
+    width: min(100%, calc(100vw - 24px));
+    padding-inline: 0;
   }
 
   .shop-hero h1 {
-    font-size: 2.45rem;
+    font-size: 1.95rem;
   }
 
   .shop-tabs,
@@ -1065,9 +1083,12 @@ onBeforeUnmount(() => {
     padding-inline: 8px;
   }
 
-  .shop-stage,
   .earth-panel {
-    min-height: 460px;
+    height: 460px;
+  }
+
+  .shop-drawer {
+    max-height: 390px;
   }
 
   .skill-row,
