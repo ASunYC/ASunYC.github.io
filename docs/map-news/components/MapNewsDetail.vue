@@ -40,7 +40,10 @@ onMounted(async () => {
     <div v-if="loading" class="state">Loading news...</div>
     <div v-else-if="error" class="state">{{ error }}</div>
     <template v-else-if="story">
-      <a class="back-link" href="/map-news/">Back to MapNews</a>
+      <a class="back-link" href="/map-news/" aria-label="Back to MapNews">
+        <span aria-hidden="true">&larr;</span>
+        Back to MapNews
+      </a>
 
       <header class="story-hero">
         <div>
@@ -92,10 +95,26 @@ onMounted(async () => {
 
 .back-link {
   display: inline-flex;
+  align-items: center;
+  gap: 8px;
   margin-bottom: 22px;
-  color: #0ea5e9;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  padding: 9px 13px;
+  background: var(--vp-c-bg-soft);
+  color: var(--vp-c-text-1);
   font-weight: 900;
   text-decoration: none;
+}
+
+.back-link:hover {
+  border-color: #0ea5e9;
+  color: #0ea5e9;
+}
+
+.back-link span {
+  font-size: 1.05rem;
+  line-height: 1;
 }
 
 .story-hero {

@@ -39,6 +39,11 @@ onMounted(async () => {
     <div v-if="loading" class="state">Loading skill shop...</div>
     <div v-else-if="error" class="state">{{ error }}</div>
     <template v-else-if="skill">
+      <a class="back-link" href="/skills-shop/" aria-label="Back to Skills Shop">
+        <span aria-hidden="true">&larr;</span>
+        Back to Skills Shop
+      </a>
+
       <header class="storefront">
         <div class="store-sign">
           <span class="store-icon">🏬</span>
@@ -111,6 +116,30 @@ onMounted(async () => {
   max-width: 1040px;
   margin: 0 auto;
   padding: 30px 20px 68px;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 22px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  padding: 9px 13px;
+  background: var(--vp-c-bg-soft);
+  color: var(--vp-c-text-1);
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  border-color: #d39f3f;
+  color: #d39f3f;
+}
+
+.back-link span {
+  font-size: 1.05rem;
+  line-height: 1;
 }
 
 .storefront {
