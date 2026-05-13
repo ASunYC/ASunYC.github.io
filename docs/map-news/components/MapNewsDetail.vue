@@ -1,5 +1,7 @@
 <script setup>
 import { computed, onMounted, ref } from 'vue'
+import CommentsPanel from '../../platform/CommentsPanel.vue'
+import { loadApprovedNewsStories, newsSourceLabel } from '../../platform/content'
 
 const props = defineProps({
   slug: {
@@ -25,7 +27,11 @@ onMounted(async () => {
   try {
     const response = await fetch('/data/map-news/news.json')
     if (!response.ok) throw new Error(`MapNews data not found (${response.status})`)
-    payload.value = await response.json()
+    const fallbackPayload = await response.json()
+    const dynamicStories = await loadApprovedNewsStories().catch(() => [])
+    payload.value = dynamicStories.length
+      ? { generatedAt: new Date().toISOString(), items: dynamicStories }
+      : fallbackPayload
     if (!story.value) throw new Error('News story not found.')
   } catch (loadError) {
     error.value = loadError.message || 'Unable to load this MapNews story.'
@@ -59,8 +65,13 @@ onMounted(async () => {
           <div>
             <dt>Source</dt>
             <dd>
-              <a :href="story.sourceUrl" target="_blank" rel="noreferrer">{{ story.sourceName }}</a>
+              <a v-if="story.sourceUrl" :href="story.sourceUrl" target="_blank" rel="noreferrer">{{ newsSourceLabel(story) }}</a>
+              <span v-else>{{ newsSourceLabel(story) }}</span>
             </dd>
+          </div>
+          <div>
+            <dt>Source Type</dt>
+            <dd>{{ story.sourceType || 'crawler' }}</dd>
           </div>
           <div>
             <dt>Coordinates</dt>
@@ -70,6 +81,7 @@ onMounted(async () => {
       </header>
 
       <section class="story-body">
+        <p v-if="story.aiSummary" class="ai-summary">{{ story.aiSummary }}</p>
         <p v-for="paragraph in story.content" :key="paragraph">{{ paragraph }}</p>
       </section>
 
@@ -82,6 +94,8 @@ onMounted(async () => {
           </a>
         </div>
       </section>
+
+      <CommentsPanel target-type="news" :target-id="story.slug" title="News discussion" />
     </template>
   </article>
 </template>
@@ -187,6 +201,13 @@ onMounted(async () => {
   color: var(--vp-c-text-1);
   font-size: 1.05rem;
   line-height: 1.8;
+}
+
+.story-body .ai-summary {
+  border-left: 3px solid #0ea5e9;
+  padding-left: 14px;
+  color: var(--vp-c-text-2);
+  font-weight: 700;
 }
 
 .related-news {

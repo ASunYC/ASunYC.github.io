@@ -1,5 +1,7 @@
 <script setup>
 import { computed, onMounted, ref } from 'vue'
+import SkillOwnerPanel from '../../platform/SkillOwnerPanel.vue'
+import CommentsPanel from '../../platform/CommentsPanel.vue'
 
 const props = defineProps({
   slug: {
@@ -88,6 +90,8 @@ onMounted(async () => {
         </dl>
       </section>
 
+      <SkillOwnerPanel :skill="skill" />
+
       <section class="readme-section">
         <h2>README</h2>
         <div class="readme-body" v-html="skill.readmeHtml"></div>
@@ -103,10 +107,12 @@ onMounted(async () => {
             class="related-card"
           >
             <strong>{{ item.displayName }}</strong>
-            <span>★{{ formatStars(item.stars) }} · {{ item.evidence || item.relation }}</span>
+            <span>★{{ formatStars(item.stars) }} / {{ item.evidence || item.relation }}</span>
           </a>
         </div>
       </section>
+
+      <CommentsPanel target-type="skill" :target-id="skill.slug" title="Skill discussion" />
     </template>
   </article>
 </template>

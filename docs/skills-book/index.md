@@ -8,6 +8,7 @@ import FeatureSection from './components/FeatureSection.vue'
 import CliSupportStrip from './components/CliSupportStrip.vue'
 import QuicklyUse from './components/QuicklyUse.vue'
 import RecommendedCombos from './components/RecommendedCombos.vue'
+import PlatformBridge from './components/PlatformBridge.vue'
 import { CLI_SUPPORT, FEATURE_DATA, QUICK_USE_STEPS, RECOMMENDED_COMBOS } from './data'
 </script>
 
@@ -15,7 +16,7 @@ import { CLI_SUPPORT, FEATURE_DATA, QUICK_USE_STEPS, RECOMMENDED_COMBOS } from '
 
 # Skills Book
 
-<p class="subtitle">A cross-agent skill marketplace CLI — browse, search, rank, and install 1500+ community skills from one local tool.</p>
+<p class="subtitle">Agent Skill Marketplace + Combo Recommendations for Claude Code, Codex, OpenCode, and other agent CLIs.</p>
 
 <div class="badge-group">
 <span class="badge">v0.1.0</span>
@@ -31,6 +32,8 @@ import { CLI_SUPPORT, FEATURE_DATA, QUICK_USE_STEPS, RECOMMENDED_COMBOS } from '
 <QuicklyUse :steps="QUICK_USE_STEPS" />
 
 <RecommendedCombos :fallback="RECOMMENDED_COMBOS" />
+
+<PlatformBridge />
 
 <FeatureSection
   v-for="{ title, items } in FEATURE_DATA"

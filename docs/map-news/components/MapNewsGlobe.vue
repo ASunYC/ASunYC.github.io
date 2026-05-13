@@ -1,6 +1,8 @@
 <script setup>
 import { computed, nextTick, onBeforeUnmount, onMounted, ref } from 'vue'
 import 'cesium/Build/Cesium/Widgets/widgets.css'
+import MapNewsSubmitPanel from '../../platform/MapNewsSubmitPanel.vue'
+import { loadApprovedNewsStories, newsSourceLabel } from '../../platform/content'
 
 const categoryColors = {
   World: '#7dd3fc',
@@ -45,13 +47,20 @@ function truncate(value, length) {
 }
 
 function markerText(item) {
-  return `${truncate(item.title, 58)}\n${truncate(item.dek, 78)}`
+  return `${truncate(item.title, 58)}\n${truncate(item.dek, 78)}\n${truncate(newsSourceLabel(item), 58)}`
 }
 
 async function loadNews() {
   const response = await fetch('/data/map-news/news.json')
   if (!response.ok) throw new Error(`Unable to load MapNews data (${response.status})`)
-  payload.value = await response.json()
+  const fallbackPayload = await response.json()
+  const dynamicStories = await loadApprovedNewsStories().catch((loadError) => {
+    console.warn('MapNews Supabase stories unavailable, using static fallback:', loadError)
+    return []
+  })
+  payload.value = dynamicStories.length
+    ? { generatedAt: new Date().toISOString(), sourceNote: 'Supabase approved MapNews stories.', items: dynamicStories }
+    : fallbackPayload
   activeSlug.value = payload.value.items?.[0]?.slug || ''
 }
 
@@ -233,7 +242,7 @@ onBeforeUnmount(() => {
           {{ activeNews.category }} / {{ activeNews.impact }} impact
         </div>
         <h2>{{ activeNews.title }}</h2>
-        <p class="drawer-meta">{{ activeNews.locationName }} / {{ activeNews.publishedAt }} / {{ activeNews.sourceName }}</p>
+        <p class="drawer-meta">{{ activeNews.locationName }} / {{ activeNews.publishedAt }} / {{ newsSourceLabel(activeNews) }}</p>
         <p class="drawer-summary">{{ activeNews.dek }}</p>
         <a class="read-link" :href="detailHref(activeNews.slug)">Read full story</a>
 
@@ -253,6 +262,8 @@ onBeforeUnmount(() => {
         </div>
       </aside>
     </section>
+
+    <MapNewsSubmitPanel />
   </section>
 </template>
 

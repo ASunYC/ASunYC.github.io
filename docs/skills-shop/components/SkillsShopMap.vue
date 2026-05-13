@@ -1,6 +1,7 @@
 <script setup>
 import { computed, nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import 'cesium/Build/Cesium/Widgets/widgets.css'
+import AuthPanel from '../../platform/AuthPanel.vue'
 
 const modes = [
   { id: 'view', label: 'View' },
@@ -318,7 +319,7 @@ onBeforeUnmount(() => {
         <p class="shop-kicker">Skills Shop</p>
         <h1>Explore agent skills as a living marketplace.</h1>
         <p class="shop-lede">
-          Skills Book turns public skill repositories into a SQLite LLM Wiki, then projects the highest-signal skills onto a global shop map.
+          Skills Book turns public skill repositories into a SQLite LLM Wiki, then projects skills onto a global shop map where authors can claim storefronts and share updates.
         </p>
       </div>
       <div class="shop-stats" v-if="payload">
@@ -339,6 +340,8 @@ onBeforeUnmount(() => {
         {{ mode.label }}
       </button>
     </nav>
+
+    <AuthPanel class="shop-auth" />
 
     <div v-if="loading" class="shop-empty">Loading Skills Shop...</div>
     <div v-else-if="error" class="shop-empty">{{ error }}</div>
@@ -583,6 +586,10 @@ onBeforeUnmount(() => {
 .shop-tabs button.active {
   background: #f4c95d;
   color: #171717;
+}
+
+.shop-auth {
+  margin-bottom: 18px;
 }
 
 .mode-panel {
