@@ -8927,7 +8927,7 @@
     },
     {
       "id": "virtual-sao-paulo",
-      "label": "Global Skill Market / Sao Paulo / Community Skills",
+      "label": "Global Skill Market / Sao Paulo / Combo Skills / Coding",
       "lat": -23.5558,
       "lon": -46.6396,
       "source": "virtual_market",
@@ -9407,10 +9407,10 @@
         },
         {
           "slug": "combo-coding-research-docs-ui",
-          "displayName": "编码增强组合",
+          "displayName": "Coding Research Stack",
           "stars": 0,
-          "category": "组合技能 / 编码",
-          "description": "适合需要先检索最新信息、再读取官方文档、最后交付高质量前端体验的编码任务。",
+          "category": "Combo Skills / Coding",
+          "description": "A practical stack for coding tasks that need fresh web research, current official docs, and polished frontend delivery.",
           "locationSource": "virtual_market"
         },
         {

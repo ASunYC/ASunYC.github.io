@@ -8594,13 +8594,14 @@
     {
       "id": "skill:combo-coding-research-docs-ui",
       "slug": "combo-coding-research-docs-ui",
-      "name": "编码增强组合",
+      "name": "Coding Research Stack",
       "type": "skill",
       "stars": 0,
-      "category": "组合技能 / 编码",
+      "category": "Combo Skills / Coding",
       "author": "skills-book",
       "location": null,
-      "degree": 2
+      "degree": 2,
+      "label": "Coding Research Stack"
     },
     {
       "id": "skill:anthropics-docx",
@@ -17453,14 +17454,14 @@
       "target": "skill:firecrawl-cli",
       "relation": "combo_component",
       "weight": 0.9,
-      "evidence": "编码增强组合 includes Firecrawl"
+      "evidence": "Coding Research Stack includes Firecrawl"
     },
     {
       "source": "skill:combo-coding-research-docs-ui",
       "target": "skill:netresearch-context7-skill",
       "relation": "combo_component",
       "weight": 0.9,
-      "evidence": "编码增强组合 includes Context7"
+      "evidence": "Coding Research Stack includes Context7"
     },
     {
       "source": "skill:obra-brainstorming",
@@ -53798,8 +53799,8 @@
       ]
     },
     {
-      "id": "组合技能-编码",
-      "label": "组合技能 / 编码",
+      "id": "combo-skills-coding",
+      "label": "Combo Skills / Coding",
       "nodeIds": [
         "skill:combo-coding-research-docs-ui"
       ]
