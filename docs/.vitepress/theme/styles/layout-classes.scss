@@ -7,6 +7,7 @@
   --sb-accent: #3eaf7c;
   --sb-accent-rgb: 62, 175, 124;
   --sb-card-radius: 16px;
+  --platform-page-max-width: min(1440px, calc(100vw - 48px));
 }
 
 /* Hub homepage layout */
@@ -127,7 +128,7 @@
 
 /* Skills Shop globe and storefront layout */
 .m-skills-shop-layout {
-  --skills-shop-layout-max-width: min(1720px, calc(100vw - 56px));
+  --skills-shop-layout-max-width: var(--platform-page-max-width);
 
   overflow-x: clip;
 
@@ -183,7 +184,7 @@
 
 /* MapNews globe layout */
 .m-map-news-layout {
-  --map-news-layout-max-width: min(1720px, calc(100vw - 56px));
+  --map-news-layout-max-width: var(--platform-page-max-width);
 
   overflow-x: clip;
 

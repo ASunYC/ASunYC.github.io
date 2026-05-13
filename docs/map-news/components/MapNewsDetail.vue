@@ -102,9 +102,10 @@ onMounted(async () => {
 
 <style scoped>
 .news-detail {
-  max-width: 1120px;
+  width: var(--platform-page-max-width);
+  max-width: none;
   margin: 0 auto;
-  padding: 30px 20px 68px;
+  padding: 30px 0 68px;
 }
 
 .back-link {

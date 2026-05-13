@@ -503,7 +503,7 @@ onBeforeUnmount(() => {
 
 <style scoped>
 .shop-page {
-  width: min(1720px, calc(100vw - 56px));
+  width: var(--platform-page-max-width);
   max-width: none;
   margin: 0 auto;
   padding: 24px 0 56px;
