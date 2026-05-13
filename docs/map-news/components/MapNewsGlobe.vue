@@ -2,117 +2,17 @@
 import { computed, nextTick, onBeforeUnmount, onMounted, ref } from 'vue'
 import 'cesium/Build/Cesium/Widgets/widgets.css'
 
-const newsItems = [
-  {
-    id: 'sf-ai-infra',
-    title: 'AI infrastructure teams expand edge inference rollouts',
-    region: 'San Francisco',
-    category: 'AI',
-    time: 'Today',
-    impact: 'High',
-    lat: 37.7749,
-    lon: -122.4194,
-    summary: 'Engineering teams are moving more model-serving workloads closer to users to reduce latency and control operating cost.',
-    sourceLabel: 'Technology desk'
-  },
-  {
-    id: 'london-fintech-policy',
-    title: 'Fintech policy groups push for clearer agent payment rules',
-    region: 'London',
-    category: 'Finance',
-    time: 'Today',
-    impact: 'Medium',
-    lat: 51.5072,
-    lon: -0.1276,
-    summary: 'Regulators and builders are discussing operational standards for machine-to-machine payments and audit trails.',
-    sourceLabel: 'Markets brief'
-  },
-  {
-    id: 'singapore-agent-ops',
-    title: 'Agent operations platforms add stronger deployment controls',
-    region: 'Singapore',
-    category: 'Ops',
-    time: 'Today',
-    impact: 'High',
-    lat: 1.3521,
-    lon: 103.8198,
-    summary: 'Enterprise teams are asking for approval gates, session replay, and stronger policy controls before scaling autonomous workflows.',
-    sourceLabel: 'Enterprise watch'
-  },
-  {
-    id: 'tokyo-robotics',
-    title: 'Robotics labs test multimodal planning agents',
-    region: 'Tokyo',
-    category: 'Robotics',
-    time: 'This week',
-    impact: 'Medium',
-    lat: 35.6762,
-    lon: 139.6503,
-    summary: 'New prototypes combine visual perception, route planning, and task memory for warehouse and inspection workflows.',
-    sourceLabel: 'Research signal'
-  },
-  {
-    id: 'berlin-open-source',
-    title: 'Open-source maintainers standardize skill packaging',
-    region: 'Berlin',
-    category: 'Open Source',
-    time: 'This week',
-    impact: 'Medium',
-    lat: 52.52,
-    lon: 13.405,
-    summary: 'Maintainers are converging on portable skill formats so agent instructions can move between mainstream CLIs.',
-    sourceLabel: 'Builder community'
-  },
-  {
-    id: 'bengaluru-devtools',
-    title: 'Developer tool teams ship larger context indexing flows',
-    region: 'Bengaluru',
-    category: 'Developer Tools',
-    time: 'Today',
-    impact: 'High',
-    lat: 12.9716,
-    lon: 77.5946,
-    summary: 'Code search, local knowledge graphs, and repository memory are becoming default parts of AI-assisted engineering stacks.',
-    sourceLabel: 'Devtools brief'
-  },
-  {
-    id: 'sao-paulo-climate-data',
-    title: 'Climate data groups publish higher-resolution monitoring feeds',
-    region: 'Sao Paulo',
-    category: 'Climate',
-    time: 'This week',
-    impact: 'Medium',
-    lat: -23.5558,
-    lon: -46.6396,
-    summary: 'Public datasets are improving regional observability for weather risk, agriculture, and urban planning dashboards.',
-    sourceLabel: 'Climate desk'
-  },
-  {
-    id: 'sydney-security',
-    title: 'Security teams map software supply-chain exposure',
-    region: 'Sydney',
-    category: 'Security',
-    time: 'Today',
-    impact: 'High',
-    lat: -33.8688,
-    lon: 151.2093,
-    summary: 'Organizations are prioritizing dependency inventory, provenance checks, and automated risk triage across internal systems.',
-    sourceLabel: 'Security brief'
-  }
-]
-
 const categoryColors = {
-  AI: '#6ee7b7',
-  Finance: '#f4c95d',
-  Ops: '#8ab4ff',
-  Robotics: '#f59e9e',
-  'Open Source': '#c084fc',
-  'Developer Tools': '#7dd3fc',
-  Climate: '#a7f3d0',
-  Security: '#fb7185'
+  World: '#7dd3fc',
+  Health: '#6ee7b7',
+  Economy: '#f4c95d',
+  Markets: '#c084fc',
+  Politics: '#fb7185',
+  Security: '#f59e9e'
 }
 
-const activeId = ref(newsItems[0].id)
+const payload = ref(null)
+const activeSlug = ref('')
 const activeCategory = ref('All')
 const earthEl = ref(null)
 const loading = ref(true)
@@ -121,21 +21,42 @@ const error = ref('')
 let viewer = null
 let clickHandler = null
 
-const categories = computed(() => ['All', ...new Set(newsItems.map((item) => item.category))])
+const newsItems = computed(() => payload.value?.items || [])
+const categories = computed(() => ['All', ...new Set(newsItems.value.map((item) => item.category))])
 
 const filteredNews = computed(() => {
-  if (activeCategory.value === 'All') return newsItems
-  return newsItems.filter((item) => item.category === activeCategory.value)
+  if (activeCategory.value === 'All') return newsItems.value
+  return newsItems.value.filter((item) => item.category === activeCategory.value)
 })
 
-const activeNews = computed(() => newsItems.find((item) => item.id === activeId.value) || newsItems[0])
+const activeNews = computed(() => newsItems.value.find((item) => item.slug === activeSlug.value) || newsItems.value[0])
 
 function colorFor(category) {
   return categoryColors[category] || '#f4c95d'
 }
 
+function detailHref(slug) {
+  return `/map-news/${slug}/`
+}
+
+function truncate(value, length) {
+  const text = String(value || '')
+  return text.length > length ? `${text.slice(0, length - 1)}...` : text
+}
+
+function markerText(item) {
+  return `${truncate(item.title, 58)}\n${truncate(item.dek, 78)}`
+}
+
+async function loadNews() {
+  const response = await fetch('/data/map-news/news.json')
+  if (!response.ok) throw new Error(`Unable to load MapNews data (${response.status})`)
+  payload.value = await response.json()
+  activeSlug.value = payload.value.items?.[0]?.slug || ''
+}
+
 async function initEarth() {
-  if (viewer || !earthEl.value) return
+  if (viewer || !earthEl.value || !newsItems.value.length) return
   try {
     const Cesium = await import('cesium')
     window.Cesium = window.Cesium || Cesium
@@ -190,27 +111,30 @@ async function initEarth() {
       console.warn('Metagl SDK initialization fell back to Cesium only:', sdkError)
     }
 
-    newsItems.forEach((item) => {
+    newsItems.value.forEach((item) => {
       viewer.entities.add({
-        id: item.id,
+        id: item.slug,
         position: Cesium.Cartesian3.fromDegrees(item.lon, item.lat, 95000),
         point: {
-          pixelSize: 13,
+          pixelSize: 11,
           color: Cesium.Color.fromCssColorString(colorFor(item.category)),
           outlineColor: Cesium.Color.fromCssColorString('#111722'),
           outlineWidth: 3
         },
         label: {
-          text: `${item.category} / ${item.region}`,
-          font: '700 14px Inter, system-ui, sans-serif',
+          text: markerText(item),
+          font: '700 13px Inter, system-ui, sans-serif',
           fillColor: Cesium.Color.WHITE,
-          outlineColor: Cesium.Color.fromCssColorString('#0b0f17'),
-          outlineWidth: 4,
+          outlineColor: Cesium.Color.fromCssColorString('#050912'),
+          outlineWidth: 3,
           style: Cesium.LabelStyle.FILL_AND_OUTLINE,
-          pixelOffset: new Cesium.Cartesian2(0, -30),
+          showBackground: true,
+          backgroundColor: Cesium.Color.fromCssColorString('rgba(7, 13, 18, 0.82)'),
+          backgroundPadding: new Cesium.Cartesian2(12, 9),
+          pixelOffset: new Cesium.Cartesian2(0, -34),
           verticalOrigin: Cesium.VerticalOrigin.BOTTOM,
           disableDepthTestDistance: Number.POSITIVE_INFINITY,
-          scaleByDistance: new Cesium.NearFarScalar(1800000, 1, 16000000, 0.62)
+          scaleByDistance: new Cesium.NearFarScalar(1800000, 1, 16000000, 0.6)
         }
       })
     })
@@ -219,7 +143,7 @@ async function initEarth() {
     clickHandler.setInputAction((movement) => {
       const picked = viewer.scene.pick(movement.position)
       if (picked?.id?.id) {
-        focusNews(picked.id.id)
+        window.location.href = detailHref(picked.id.id)
       }
     }, Cesium.ScreenSpaceEventType.LEFT_CLICK)
 
@@ -229,15 +153,13 @@ async function initEarth() {
     })
   } catch (earthError) {
     error.value = earthError.message || 'MapNews globe failed to initialize.'
-  } finally {
-    loading.value = false
   }
 }
 
-function focusNews(id) {
-  const item = newsItems.find((candidate) => candidate.id === id)
+function focusNews(slug) {
+  const item = newsItems.value.find((candidate) => candidate.slug === slug)
   if (!item) return
-  activeId.value = id
+  activeSlug.value = slug
   if (!viewer || !window.Cesium) return
   viewer.camera.flyTo({
     destination: window.Cesium.Cartesian3.fromDegrees(item.lon, item.lat, 3600000),
@@ -248,12 +170,19 @@ function focusNews(id) {
 function selectCategory(category) {
   activeCategory.value = category
   const first = filteredNews.value[0]
-  if (first) focusNews(first.id)
+  if (first) focusNews(first.slug)
 }
 
 onMounted(async () => {
-  await nextTick()
-  await initEarth()
+  try {
+    await loadNews()
+    loading.value = false
+    await nextTick()
+    await initEarth()
+  } catch (loadError) {
+    error.value = loadError.message || 'MapNews data is not ready yet.'
+    loading.value = false
+  }
 })
 
 onBeforeUnmount(() => {
@@ -267,19 +196,19 @@ onBeforeUnmount(() => {
     <header class="news-hero">
       <div>
         <p class="news-kicker">MapNews</p>
-        <h1>Global news signals on a live earth canvas.</h1>
+        <h1>Hot news pinned to where it happens.</h1>
         <p class="news-lede">
-          A map-first newsroom view for scanning regional technology, security, climate, and market signals.
+          MapNews collects high-signal headlines, extracts the event location, and turns each story into a two-line globe placard.
         </p>
       </div>
-      <div class="news-stats">
-        <span><strong>{{ newsItems.length }}</strong> signals</span>
+      <div class="news-stats" v-if="payload">
+        <span><strong>{{ newsItems.length }}</strong> hot stories</span>
         <span><strong>{{ categories.length - 1 }}</strong> categories</span>
         <span><strong>{{ filteredNews.length }}</strong> visible</span>
       </div>
     </header>
 
-    <nav class="news-filters" aria-label="MapNews categories">
+    <nav class="news-filters" aria-label="MapNews categories" v-if="payload">
       <button
         v-for="category in categories"
         :key="category"
@@ -291,34 +220,36 @@ onBeforeUnmount(() => {
       </button>
     </nav>
 
-    <div v-if="error" class="news-empty">{{ error }}</div>
+    <div v-if="loading" class="news-empty">Loading hot news...</div>
+    <div v-else-if="error" class="news-empty">{{ error }}</div>
     <section v-else class="news-stage">
       <div class="earth-panel">
         <div ref="earthEl" class="earth-canvas" />
-        <div v-if="loading" class="earth-loading">Loading globe...</div>
       </div>
 
-      <aside class="news-drawer">
+      <aside class="news-drawer" v-if="activeNews">
         <div class="drawer-label">
           <span :style="{ backgroundColor: colorFor(activeNews.category) }"></span>
           {{ activeNews.category }} / {{ activeNews.impact }} impact
         </div>
         <h2>{{ activeNews.title }}</h2>
-        <p class="drawer-meta">{{ activeNews.region }} / {{ activeNews.time }} / {{ activeNews.sourceLabel }}</p>
-        <p class="drawer-summary">{{ activeNews.summary }}</p>
+        <p class="drawer-meta">{{ activeNews.locationName }} / {{ activeNews.publishedAt }} / {{ activeNews.sourceName }}</p>
+        <p class="drawer-summary">{{ activeNews.dek }}</p>
+        <a class="read-link" :href="detailHref(activeNews.slug)">Read full story</a>
 
         <div class="news-feed" aria-label="MapNews feed">
-          <button
+          <article
             v-for="item in filteredNews"
-            :key="item.id"
-            type="button"
-            :class="{ active: item.id === activeId }"
-            @click="focusNews(item.id)"
+            :key="item.slug"
+            :class="{ active: item.slug === activeSlug }"
           >
-            <span :style="{ backgroundColor: colorFor(item.category) }"></span>
-            <strong>{{ item.title }}</strong>
-            <small>{{ item.region }} / {{ item.category }} / {{ item.time }}</small>
-          </button>
+            <button type="button" @click="focusNews(item.slug)">
+              <span :style="{ backgroundColor: colorFor(item.category) }"></span>
+              <strong>{{ item.title }}</strong>
+              <small>{{ item.locationName }} / {{ item.category }}</small>
+            </button>
+            <a :href="detailHref(item.slug)">Open</a>
+          </article>
         </div>
       </aside>
     </section>
@@ -359,7 +290,7 @@ onBeforeUnmount(() => {
 }
 
 .news-lede {
-  max-width: 760px;
+  max-width: 780px;
   margin: 12px 0 0;
   color: var(--vp-c-text-2);
   font-size: 0.98rem;
@@ -411,8 +342,8 @@ onBeforeUnmount(() => {
 
 .news-stage {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(360px, 430px);
-  height: clamp(600px, calc(100vh - 260px), 760px);
+  grid-template-columns: minmax(0, 1fr) minmax(380px, 460px);
+  height: clamp(620px, calc(100vh - 260px), 780px);
   min-height: 0;
   overflow: hidden;
   border: 1px solid var(--vp-c-divider);
@@ -429,18 +360,6 @@ onBeforeUnmount(() => {
 .earth-canvas {
   position: absolute;
   inset: 0;
-}
-
-.earth-loading {
-  position: absolute;
-  left: 18px;
-  top: 18px;
-  border: 1px solid rgba(255, 255, 255, 0.16);
-  border-radius: 8px;
-  padding: 10px 12px;
-  background: rgba(7, 13, 18, 0.76);
-  color: #f6f7fb;
-  font-weight: 800;
 }
 
 .news-drawer {
@@ -476,7 +395,7 @@ onBeforeUnmount(() => {
 .news-drawer h2 {
   margin: 12px 0 8px;
   overflow-wrap: anywhere;
-  font-size: 1.5rem;
+  font-size: 1.45rem;
   line-height: 1.18;
 }
 
@@ -488,9 +407,27 @@ onBeforeUnmount(() => {
 
 .drawer-summary {
   flex: 0 0 auto;
-  margin: 18px 0;
+  margin: 18px 0 12px;
   color: #cbd2dc;
   line-height: 1.65;
+}
+
+.read-link,
+.news-feed a {
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 8px;
+  padding: 8px 12px;
+  background: #7dd3fc;
+  color: #071018;
+  font-weight: 900;
+  text-align: center;
+  text-decoration: none;
+}
+
+.read-link {
+  flex: 0 0 auto;
+  align-self: flex-start;
+  margin-bottom: 18px;
 }
 
 .news-feed {
@@ -503,23 +440,34 @@ onBeforeUnmount(() => {
   scrollbar-color: #7dd3fc rgba(255, 255, 255, 0.08);
 }
 
+.news-feed article {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 10px;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.news-feed article.active {
+  border-color: #7dd3fc;
+  background: rgba(125, 211, 252, 0.12);
+}
+
 .news-feed button {
   display: grid;
   grid-template-columns: auto minmax(0, 1fr);
   gap: 4px 10px;
   align-items: start;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
-  padding: 12px;
-  background: rgba(255, 255, 255, 0.04);
+  min-width: 0;
+  border: 0;
+  padding: 0;
+  background: transparent;
   color: #f6f7fb;
   text-align: left;
   cursor: pointer;
-}
-
-.news-feed button.active {
-  border-color: #7dd3fc;
-  background: rgba(125, 211, 252, 0.12);
 }
 
 .news-feed strong,
@@ -530,6 +478,11 @@ onBeforeUnmount(() => {
 .news-feed small {
   grid-column: 2;
   color: #aeb6c3;
+}
+
+.news-feed a {
+  padding: 7px 10px;
+  font-size: 0.82rem;
 }
 
 .news-empty {
@@ -559,7 +512,7 @@ onBeforeUnmount(() => {
   }
 
   .news-drawer {
-    max-height: 420px;
+    max-height: 440px;
     border-left: 0;
     border-top: 1px solid rgba(255, 255, 255, 0.12);
   }
@@ -580,7 +533,11 @@ onBeforeUnmount(() => {
   }
 
   .news-drawer {
-    max-height: 390px;
+    max-height: 410px;
+  }
+
+  .news-feed article {
+    grid-template-columns: 1fr;
   }
 }
 </style>

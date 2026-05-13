@@ -1,0 +1,158 @@
+{
+  "generatedAt": "2026-05-13T00:00:00.000Z",
+  "sourceNote": "Static MapNews seed data compiled from a top-news summary. Replace with an automated collector when the news ingestion pipeline is ready.",
+  "items": [
+    {
+      "slug": "trump-xi-iran-talks-beijing",
+      "rank": 1,
+      "title": "Trump and Xi expected to meet as pressure builds over Iran war",
+      "dek": "Diplomatic focus shifts to Beijing as global leaders look for a path to contain the widening conflict.",
+      "locationName": "Beijing, China",
+      "lat": 39.9042,
+      "lon": 116.4074,
+      "category": "World",
+      "impact": "High",
+      "publishedAt": "2026-05-13",
+      "sourceName": "AP News summary via WDRB",
+      "sourceUrl": "https://www.wdrb.com/news/national/ap-news-summary-at-7-57-a-m-edt/article_3be561d3-f6e0-5bc5-8b7a-a650e44f57f4.html",
+      "content": [
+        "The lead item in the global news cycle is a planned Trump-Xi meeting in China, framed around the accelerating Iran war and the search for diplomatic leverage.",
+        "The location matters because Beijing is positioned as both a diplomatic stage and a strategic actor. Any public signal from the meeting could affect energy markets, defense posture, and allied coordination.",
+        "MapNews marks Beijing as the story origin so readers can understand where the key diplomatic action is expected to unfold."
+      ]
+    },
+    {
+      "slug": "kuwait-iran-bubiyan-attack",
+      "rank": 2,
+      "title": "Kuwait alleges Iranian attack on Bubiyan Island",
+      "dek": "The report raises regional security concerns around a strategically sensitive Gulf location.",
+      "locationName": "Bubiyan Island, Kuwait",
+      "lat": 29.7833,
+      "lon": 48.1833,
+      "category": "World",
+      "impact": "High",
+      "publishedAt": "2026-05-13",
+      "sourceName": "AP News summary via WDRB",
+      "sourceUrl": "https://www.wdrb.com/news/national/ap-news-summary-at-7-57-a-m-edt/article_3be561d3-f6e0-5bc5-8b7a-a650e44f57f4.html",
+      "content": [
+        "Kuwait's allegation that Iran struck Bubiyan Island puts a Gulf flashpoint on the map and adds pressure to an already unstable regional picture.",
+        "Bubiyan Island sits near sensitive maritime routes, making the story important for security analysts, energy watchers, and governments tracking escalation risk.",
+        "The detail page keeps the focus on the geography of the incident and why a small island can become a large geopolitical signal."
+      ]
+    },
+    {
+      "slug": "cruise-passengers-quarantine-omaha",
+      "rank": 3,
+      "title": "Cruise passengers return to quarantine after fast-spreading illness",
+      "dek": "Thousands of passengers are routed through Omaha as health officials monitor a shipboard outbreak.",
+      "locationName": "Omaha, United States",
+      "lat": 41.2565,
+      "lon": -95.9345,
+      "category": "Health",
+      "impact": "Medium",
+      "publishedAt": "2026-05-13",
+      "sourceName": "AP News summary via WDRB",
+      "sourceUrl": "https://www.wdrb.com/news/national/ap-news-summary-at-7-57-a-m-edt/article_3be561d3-f6e0-5bc5-8b7a-a650e44f57f4.html",
+      "content": [
+        "A shipboard illness story becomes a land-based public health story as passengers return through Omaha for quarantine procedures.",
+        "The map marker highlights the operational endpoint where health monitoring, travel logistics, and public communication converge.",
+        "The event is less about one route and more about how quickly travel-linked outbreaks can become multi-agency response problems."
+      ]
+    },
+    {
+      "slug": "us-prices-energy-washington",
+      "rank": 4,
+      "title": "US consumer prices jump as energy costs surge",
+      "dek": "War-driven oil price pressure shows up in Washington's latest inflation debate.",
+      "locationName": "Washington, DC",
+      "lat": 38.9072,
+      "lon": -77.0369,
+      "category": "Economy",
+      "impact": "High",
+      "publishedAt": "2026-05-13",
+      "sourceName": "AP News summary via WDRB",
+      "sourceUrl": "https://www.wdrb.com/news/national/ap-news-summary-at-7-57-a-m-edt/article_3be561d3-f6e0-5bc5-8b7a-a650e44f57f4.html",
+      "content": [
+        "The inflation story is tied to conflict-driven oil prices, with Washington becoming the policy center for the consumer price shock.",
+        "A rise in energy costs can feed transportation, food, manufacturing, and household budgets, which makes the headline broadly relevant beyond financial markets.",
+        "MapNews places the story at Washington because the next phase is likely to be shaped by official data, policy reactions, and political pressure."
+      ]
+    },
+    {
+      "slug": "wall-street-ai-oil-new-york",
+      "rank": 5,
+      "title": "Wall Street slows as AI stocks pause and oil prices climb",
+      "dek": "Market attention splits between cooling AI momentum and conflict-linked energy volatility.",
+      "locationName": "New York, United States",
+      "lat": 40.7128,
+      "lon": -74.006,
+      "category": "Markets",
+      "impact": "Medium",
+      "publishedAt": "2026-05-13",
+      "sourceName": "AP News summary via WDRB",
+      "sourceUrl": "https://www.wdrb.com/news/national/ap-news-summary-at-7-57-a-m-edt/article_3be561d3-f6e0-5bc5-8b7a-a650e44f57f4.html",
+      "content": [
+        "Wall Street's latest move combines two forces that have shaped recent market behavior: AI enthusiasm and oil price risk.",
+        "A slowdown in major AI-linked names can change risk appetite, while higher oil prices can alter inflation expectations and sector rotation.",
+        "The New York marker anchors the story at the market venue where those global signals are converted into pricing decisions."
+      ]
+    },
+    {
+      "slug": "starmer-ministers-resign-london",
+      "rank": 6,
+      "title": "Starmer faces pressure after cabinet resignations",
+      "dek": "Political turbulence in London grows as ministers step down and questions mount.",
+      "locationName": "London, United Kingdom",
+      "lat": 51.5072,
+      "lon": -0.1276,
+      "category": "Politics",
+      "impact": "Medium",
+      "publishedAt": "2026-05-13",
+      "sourceName": "AP News summary via WDRB",
+      "sourceUrl": "https://www.wdrb.com/news/national/ap-news-summary-at-7-57-a-m-edt/article_3be561d3-f6e0-5bc5-8b7a-a650e44f57f4.html",
+      "content": [
+        "London is the center of a developing political story as Prime Minister Keir Starmer faces questions following ministerial resignations.",
+        "The event matters because personnel exits can become signals of policy conflict, internal party pressure, or public confidence problems.",
+        "The map view helps separate the Westminster political story from broader international headlines competing for attention."
+      ]
+    },
+    {
+      "slug": "hegseth-congress-questions-washington",
+      "rank": 7,
+      "title": "Hegseth heads to Congress under renewed scrutiny",
+      "dek": "Lawmakers prepare questions over military and war planning as oversight pressure increases.",
+      "locationName": "Washington, DC",
+      "lat": 38.9072,
+      "lon": -77.0369,
+      "category": "Security",
+      "impact": "Medium",
+      "publishedAt": "2026-05-13",
+      "sourceName": "AP News summary via WDRB",
+      "sourceUrl": "https://www.wdrb.com/news/national/ap-news-summary-at-7-57-a-m-edt/article_3be561d3-f6e0-5bc5-8b7a-a650e44f57f4.html",
+      "content": [
+        "Congressional questioning turns Washington into the focal point for oversight of military planning and conflict management.",
+        "The story is important because defense testimony can reveal policy constraints, operational assumptions, and partisan pressure points.",
+        "MapNews groups it separately from the inflation story even though both occur in Washington, because the underlying topic and reader intent are different."
+      ]
+    },
+    {
+      "slug": "yermak-money-laundering-kyiv",
+      "rank": 8,
+      "title": "Ukrainian presidential adviser faces money-laundering investigation",
+      "dek": "Kyiv watches a high-profile probe involving a close adviser to President Zelenskyy.",
+      "locationName": "Kyiv, Ukraine",
+      "lat": 50.4501,
+      "lon": 30.5234,
+      "category": "Politics",
+      "impact": "Medium",
+      "publishedAt": "2026-05-13",
+      "sourceName": "AP News summary via WDRB",
+      "sourceUrl": "https://www.wdrb.com/news/national/ap-news-summary-at-7-57-a-m-edt/article_3be561d3-f6e0-5bc5-8b7a-a650e44f57f4.html",
+      "content": [
+        "A corruption-related investigation involving a senior Ukrainian presidential adviser puts Kyiv back into political focus.",
+        "The story matters because high-level investigations can affect wartime governance, reform credibility, and international confidence.",
+        "The map marker keeps the story grounded in Kyiv, where domestic political accountability intersects with global scrutiny."
+      ]
+    }
+  ]
+}
