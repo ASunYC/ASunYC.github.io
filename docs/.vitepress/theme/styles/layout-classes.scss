@@ -56,12 +56,12 @@
 
 /* Skills Book page layout */
 .m-skills-book-layout {
-  --vp-layout-max-width: 1200px;
+  --skills-book-layout-max-width: 1200px;
 
   overflow-x: clip;
 
-  .container {
-    max-width: var(--vp-layout-max-width) !important;
+  .VPDoc .container {
+    max-width: var(--skills-book-layout-max-width) !important;
   }
   .content-container,
   .content {
@@ -87,7 +87,7 @@
       padding-right: 24px !important;
     }
 
-    .container {
+    .VPDoc .container {
       width: 100% !important;
       max-width: 100% !important;
       min-width: 0 !important;
@@ -127,12 +127,12 @@
 
 /* Skills Shop globe and storefront layout */
 .m-skills-shop-layout {
-  --vp-layout-max-width: min(1720px, calc(100vw - 56px));
+  --skills-shop-layout-max-width: min(1720px, calc(100vw - 56px));
 
   overflow-x: clip;
 
-  .container {
-    max-width: var(--vp-layout-max-width) !important;
+  .VPDoc .container {
+    max-width: var(--skills-shop-layout-max-width) !important;
   }
 
   .aside,
@@ -168,7 +168,7 @@
       padding-right: 16px !important;
     }
 
-    .container,
+    .VPDoc .container,
     .VPDoc,
     .vp-doc,
     .content-container,
