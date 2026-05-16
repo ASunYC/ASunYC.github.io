@@ -29,7 +29,7 @@ const stats = [
 <template>
   <main class="hub-page">
     <section class="hub-hero">
-      <img class="hero-art" src="/logo.jpg" alt="ASunYC avatar" />
+      <img class="hero-art" src="/logo-hero.jpg" alt="ASunYC avatar" />
       <div class="hero-content">
         <p class="eyebrow">ASunYC / Project Hub</p>
         <h1>AI engineering tools for modern developer workflows.</h1>
@@ -108,7 +108,7 @@ const stats = [
   overflow: hidden;
   background:
     linear-gradient(90deg, rgba(8, 12, 18, 0.92) 0%, rgba(8, 12, 18, 0.78) 46%, rgba(8, 12, 18, 0.34) 100%),
-    url('/logo.jpg') right center / auto 100% no-repeat,
+    url('/logo-hero.jpg') right center / auto 100% no-repeat,
     #080c12;
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
@@ -387,7 +387,7 @@ const stats = [
     min-height: auto;
     background:
       linear-gradient(180deg, rgba(8, 12, 18, 0.84) 0%, rgba(8, 12, 18, 0.94) 100%),
-      url('/logo.jpg') center top / 100% auto no-repeat,
+      url('/logo-hero.jpg') center top / 100% auto no-repeat,
       #080c12;
   }
 
