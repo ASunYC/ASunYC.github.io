@@ -8,7 +8,13 @@ outline: [2, 3]
 
 <div align="center">
 
-<img alt="Version" src="https://img.shields.io/badge/version-0.0.0-blue.svg"> <img alt="React" src="https://img.shields.io/badge/react-19.2-61dafb.svg"> <img alt="Vite" src="https://img.shields.io/badge/vite-8.0-646cff.svg"> <img alt="TypeScript" src="https://img.shields.io/badge/typescript-6.0-3178c6.svg"> <img alt="GitHub Pages" src="https://img.shields.io/badge/deploy-GitHub%20Pages-222.svg">
+<div class="kanban-badge-row">
+  <img alt="Version" src="https://img.shields.io/badge/version-0.0.0-blue.svg">
+  <img alt="React" src="https://img.shields.io/badge/react-19.2-61dafb.svg">
+  <img alt="Vite" src="https://img.shields.io/badge/vite-8.0-646cff.svg">
+  <img alt="TypeScript" src="https://img.shields.io/badge/typescript-6.0-3178c6.svg">
+  <img alt="GitHub Pages" src="https://img.shields.io/badge/deploy-GitHub%20Pages-222.svg">
+</div>
 
 **创作者**: [ASunYC](https://github.com/ASunYC)
 
@@ -261,3 +267,21 @@ npm run dev -- --host 0.0.0.0
 Made with ❤️ by ASunYC | Powered by React, Vite & Hermes
 
 </div>
+
+<style>
+.kanban-badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin: 16px 0 18px;
+}
+
+.vp-doc .kanban-badge-row img {
+  display: inline-block;
+  width: auto;
+  height: 20px;
+  margin: 0;
+}
+</style>
