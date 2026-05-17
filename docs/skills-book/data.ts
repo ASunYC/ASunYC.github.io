@@ -30,6 +30,7 @@ export interface ComboComponent {
   install: string
   description: string
   why?: string
+  notes?: string[]
 }
 
 export interface RecommendedCombo {
@@ -38,8 +39,13 @@ export interface RecommendedCombo {
   category: string
   categoryName: string
   summary: string
+  audience?: string
+  slug?: string
+  tags?: string[]
+  useCases?: string[]
   components: ComboComponent[]
   workflow?: string[]
+  prompt?: string
 }
 
 // SVG icon helpers
@@ -142,38 +148,46 @@ cp -r . ~/.claude/skills/skills-book`,
 export const RECOMMENDED_COMBOS: RecommendedCombo[] = [
   {
     id: 'coding-research-docs-ui',
-    title: 'Coding Power Combo',
+    title: 'Coding Research Stack',
     category: 'coding',
     categoryName: 'Coding',
-    summary: 'Search the latest web context, verify official docs, then polish the UI experience before delivery.',
+    summary: 'A practical stack for coding tasks that need fresh web research, current official docs, and polished frontend delivery.',
+    audience: 'Claude Code, Codex, OpenCode, and other agent CLI users',
+    tags: ['research', 'docs', 'frontend', 'implementation', 'current APIs'],
+    useCases: [
+      'Fast-moving libraries or SDKs where stale API syntax is risky.',
+      'Feature work that includes a visible UI and needs a final polish pass.',
+      'Technical research before implementation.',
+    ],
     components: [
       {
         name: 'Firecrawl',
         type: 'Tool',
         install: 'npx -y firecrawl-cli@latest init --all --browser',
-        description: 'Search and crawl current web pages before implementation.',
-        why: 'Best for fast-moving APIs, release notes, and product documentation.',
+        description: 'Web search and crawling for collecting the latest technical context, product notes, and API changes before implementation.',
+        why: 'Useful for fast-moving APIs, product announcements, migration guides, and third-party references.',
       },
       {
         name: 'Context7',
         type: 'Tool',
         install: 'npx ctx7@latest setup',
-        description: 'Fetch current official docs for frameworks, SDKs, and libraries.',
-        why: 'Keeps the agent away from stale API syntax.',
+        description: 'Documentation lookup for current official framework, SDK, and library guidance.',
+        why: 'Helps confirm modern usage for React, Next.js, Tailwind, Prisma, OpenAI SDK, and other dependencies before coding.',
       },
       {
         name: 'UI UX Pro Max',
         type: 'Skill',
         install: 'npm install -g uipro-cli\nuipro init --ai codex # Codex CLI',
-        description: 'Upgrade frontend output with stronger visual hierarchy and interaction quality.',
-        why: 'Useful when a working page needs to feel like a real product surface.',
+        description: 'Frontend experience and visual quality skill pack for turning working screens into stronger product interfaces.',
+        why: 'Helps reduce template-like layouts, random card piles, overused emoji, and flat color systems.',
       },
     ],
     workflow: [
-      'Use Firecrawl for fresh background research.',
-      'Use Context7 to confirm official API usage.',
-      'Use UI UX Pro Max to refine the final interface.',
+      'Use Firecrawl to gather fresh background, announcements, and unstructured web context.',
+      'Use Context7 to confirm official API, configuration, and version-specific guidance.',
+      'Use UI UX Pro Max to improve interaction quality, visual hierarchy, and responsive polish.',
     ],
+    prompt: 'I am working on a coding task. Please use Firecrawl for fresh research, Context7 for official documentation, and UI UX Pro Max to refine the frontend experience.',
   },
 ]
 

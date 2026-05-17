@@ -7,8 +7,26 @@ const props = defineProps<{
 }>()
 
 const remoteCombos = ref<RecommendedCombo[]>([])
+const query = ref('')
 
 const combos = computed(() => remoteCombos.value.length ? remoteCombos.value : props.fallback)
+const filteredCombos = computed(() => {
+  const q = query.value.trim().toLowerCase()
+  if (!q) return combos.value
+  return combos.value.filter((combo) => [
+    combo.id,
+    combo.title,
+    combo.category,
+    combo.categoryName,
+    combo.summary,
+    combo.audience,
+    combo.prompt,
+    ...(combo.tags || []),
+    ...(combo.useCases || []),
+    ...(combo.workflow || []),
+    ...(combo.components || []).map((item) => `${item.name} ${item.type} ${item.description} ${item.why || ''}`),
+  ].some((value) => String(value || '').toLowerCase().includes(q)))
+})
 
 onMounted(async () => {
   try {
@@ -33,8 +51,14 @@ onMounted(async () => {
       </p>
     </div>
 
+    <label class="combo-search">
+      <span>Search combos</span>
+      <input v-model="query" type="search" placeholder="frontend, security, docs, product, postgres..." />
+      <small>{{ filteredCombos.length }} of {{ combos.length }} combos</small>
+    </label>
+
     <div class="combo-grid">
-      <article v-for="combo in combos" :key="combo.id" class="combo-card">
+      <article v-for="combo in filteredCombos" :key="combo.id" class="combo-card">
         <div class="combo-card-head">
           <span class="combo-category">{{ combo.categoryName || combo.category }}</span>
           <h3>{{ combo.title }}</h3>
@@ -48,6 +72,10 @@ onMounted(async () => {
           </span>
         </div>
 
+        <ul v-if="combo.useCases?.length" class="combo-use-cases">
+          <li v-for="useCase in combo.useCases.slice(0, 2)" :key="useCase">{{ useCase }}</li>
+        </ul>
+
         <ol class="combo-commands">
           <li v-for="item in combo.components" :key="`${combo.id}-${item.name}`">
             <span>{{ item.name }}</span>
@@ -55,9 +83,11 @@ onMounted(async () => {
           </li>
         </ol>
 
-        <a class="combo-link" :href="`/skills-shop/combo-${combo.id}/`">Open combo shop page</a>
+        <a class="combo-link" :href="`/skills-shop/${combo.slug || 'combo-' + combo.id}/`">Open combo shop page</a>
       </article>
     </div>
+
+    <p v-if="!filteredCombos.length" class="combo-empty">No combo matches this query yet.</p>
   </section>
 </template>
 
@@ -101,6 +131,44 @@ onMounted(async () => {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 18px;
   margin-top: 22px;
+}
+
+.combo-search {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 8px 12px;
+  align-items: center;
+  max-width: 720px;
+  margin-top: 22px;
+}
+
+.combo-search span {
+  color: var(--vp-c-text-2);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.combo-search input {
+  grid-column: 1 / -1;
+  width: 100%;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  background: var(--vp-c-bg);
+  padding: 11px 12px;
+  color: var(--vp-c-text-1);
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.combo-search input:focus {
+  border-color: var(--vp-c-brand);
+  outline: none;
+}
+
+.combo-search small {
+  justify-self: end;
+  color: var(--vp-c-text-3);
+  font-size: 12px;
 }
 
 .combo-card {
@@ -160,6 +228,16 @@ onMounted(async () => {
   font-size: 11px;
 }
 
+.combo-use-cases {
+  display: grid;
+  gap: 7px;
+  margin: 16px 0 0;
+  padding-left: 18px;
+  color: var(--vp-c-text-2);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
 .combo-commands {
   display: grid;
   gap: 10px;
@@ -205,6 +283,12 @@ onMounted(async () => {
 
 .combo-link:hover {
   text-decoration: underline;
+}
+
+.combo-empty {
+  margin: 20px 0 0;
+  color: var(--vp-c-text-2);
+  font-size: 14px;
 }
 
 @media (max-width: 640px) {
