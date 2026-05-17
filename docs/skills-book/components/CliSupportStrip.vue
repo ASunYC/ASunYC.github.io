@@ -141,15 +141,13 @@ function logoClass(name: string) {
 }
 
 .marquee-left {
-  animation: marquee-left 34s linear infinite;
+  animation: marquee-left 30s linear infinite;
+  animation-delay: -8s;
 }
 
 .marquee-right {
-  animation: marquee-right 38s linear infinite;
-}
-
-.logo-marquee:hover .marquee-track {
-  animation-play-state: paused;
+  animation: marquee-right 34s linear infinite;
+  animation-delay: -12s;
 }
 
 .logo-tile {
@@ -232,25 +230,29 @@ function logoClass(name: string) {
 
 @keyframes marquee-left {
   from {
-    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
   }
   to {
-    transform: translateX(calc(-50% - 7px));
+    transform: translate3d(calc(-50% - 7px), 0, 0);
   }
 }
 
 @keyframes marquee-right {
   from {
-    transform: translateX(calc(-50% - 7px));
+    transform: translate3d(calc(-50% - 7px), 0, 0);
   }
   to {
-    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .marquee-track {
-    animation: none;
+  .marquee-left {
+    animation-duration: 72s;
+  }
+
+  .marquee-right {
+    animation-duration: 80s;
   }
 }
 
