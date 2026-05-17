@@ -248,11 +248,13 @@ function logoClass(name: string) {
 
 @media (prefers-reduced-motion: reduce) {
   .marquee-left {
-    animation-duration: 72s;
+    animation-duration: 72s !important;
+    animation-delay: -18s !important;
   }
 
   .marquee-right {
-    animation-duration: 80s;
+    animation-duration: 80s !important;
+    animation-delay: -28s !important;
   }
 }
 
