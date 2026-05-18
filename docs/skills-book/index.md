@@ -25,6 +25,11 @@ import { CLI_SUPPORT, FEATURE_DATA, QUICK_USE_STEPS, RECOMMENDED_COMBOS } from '
 <span class="badge">1500+ Skills</span>
 </div>
 
+<div class="shop-entry">
+<a class="shop-entry-button" href="/skills-shop/">Skills Shop</a>
+<p>Browse the Shop for richer skill pages, combo breakdowns, and detailed discovery data.</p>
+</div>
+
 </div>
 
 <CliSupportStrip :items="CLI_SUPPORT" />
