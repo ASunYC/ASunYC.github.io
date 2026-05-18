@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, onMounted, ref } from 'vue'
+import { computed, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import type { RecommendedCombo } from '../data'
 
 const props = defineProps<{
@@ -8,6 +8,9 @@ const props = defineProps<{
 
 const remoteCombos = ref<RecommendedCombo[]>([])
 const query = ref('')
+const activePage = ref(0)
+const copiedComboId = ref('')
+let rotationTimer: number | undefined
 
 const combos = computed(() => remoteCombos.value.length ? remoteCombos.value : props.fallback)
 const filteredCombos = computed(() => {
@@ -27,6 +30,90 @@ const filteredCombos = computed(() => {
     ...(combo.components || []).map((item) => `${item.name} ${item.type} ${item.description} ${item.why || ''}`),
   ].some((value) => String(value || '').toLowerCase().includes(q)))
 })
+const pageCount = computed(() => Math.max(1, Math.ceil(filteredCombos.value.length / 3)))
+const visibleCombos = computed(() => {
+  const start = activePage.value * 3
+  return filteredCombos.value.slice(start, start + 3)
+})
+
+function comboShopHref(combo: RecommendedCombo) {
+  return `/skills-shop/${combo.slug || 'combo-' + combo.id}/`
+}
+
+function componentNames(combo: RecommendedCombo) {
+  return (combo.components || []).map((item) => item.name).slice(0, 3)
+}
+
+function hiddenComponentCount(combo: RecommendedCombo) {
+  return Math.max(0, (combo.components || []).length - 3)
+}
+
+function agentPrompt(combo: RecommendedCombo) {
+  const installs = (combo.components || [])
+    .map((item, index) => `${index + 1}. ${item.name}: ${item.install}`)
+    .join('\n')
+  const workflow = (combo.workflow || [])
+    .map((step, index) => `${index + 1}. ${step}`)
+    .join('\n')
+
+  return [
+    `Please install and use the "${combo.title}" Skills Book combo for my current task.`,
+    '',
+    `Goal: ${combo.summary}`,
+    '',
+    'Install or enable these components:',
+    installs,
+    '',
+    workflow ? 'Use this workflow:' : '',
+    workflow,
+    '',
+    combo.prompt ? `After setup, follow this operating prompt: ${combo.prompt}` : '',
+  ].filter(Boolean).join('\n')
+}
+
+async function copyAgentPrompt(combo: RecommendedCombo) {
+  const text = agentPrompt(combo)
+  try {
+    try {
+      if (!navigator.clipboard?.writeText) throw new Error('clipboard unavailable')
+      await navigator.clipboard.writeText(text)
+    } catch {
+      const textarea = document.createElement('textarea')
+      textarea.value = text
+      textarea.setAttribute('readonly', '')
+      textarea.style.position = 'fixed'
+      textarea.style.left = '-9999px'
+      document.body.appendChild(textarea)
+      textarea.select()
+      document.execCommand('copy')
+      document.body.removeChild(textarea)
+    }
+    copiedComboId.value = combo.id
+    window.setTimeout(() => {
+      if (copiedComboId.value === combo.id) copiedComboId.value = ''
+    }, 1800)
+  } catch {
+    copiedComboId.value = ''
+  }
+}
+
+function setPage(index: number) {
+  activePage.value = Math.max(0, Math.min(index, pageCount.value - 1))
+}
+
+function startRotation() {
+  window.clearInterval(rotationTimer)
+  rotationTimer = undefined
+  if (pageCount.value <= 1 || query.value.trim()) return
+  rotationTimer = window.setInterval(() => {
+    activePage.value = (activePage.value + 1) % pageCount.value
+  }, 5000)
+}
+
+watch([filteredCombos, query], () => {
+  activePage.value = 0
+  startRotation()
+})
 
 onMounted(async () => {
   try {
@@ -37,6 +124,11 @@ onMounted(async () => {
   } catch {
     remoteCombos.value = []
   }
+  startRotation()
+})
+
+onBeforeUnmount(() => {
+  window.clearInterval(rotationTimer)
 })
 </script>
 
@@ -57,8 +149,19 @@ onMounted(async () => {
       <small>{{ filteredCombos.length }} of {{ combos.length }} combos</small>
     </label>
 
+    <div class="combo-toolbar" v-if="pageCount > 1">
+      <button
+        v-for="(_, index) in pageCount"
+        :key="index"
+        type="button"
+        :class="{ active: index === activePage }"
+        :aria-label="`Show combo group ${index + 1}`"
+        @click="setPage(index)"
+      />
+    </div>
+
     <div class="combo-grid">
-      <article v-for="combo in filteredCombos" :key="combo.id" class="combo-card">
+      <article v-for="combo in visibleCombos" :key="combo.id" class="combo-card">
         <div class="combo-card-head">
           <span class="combo-category">{{ combo.categoryName || combo.category }}</span>
           <h3>{{ combo.title }}</h3>
@@ -66,24 +169,25 @@ onMounted(async () => {
         </div>
 
         <div class="combo-stack" aria-label="Combo components">
-          <span v-for="item in combo.components" :key="item.name" class="combo-chip">
-            <strong>{{ item.name }}</strong>
-            <small>{{ item.type }}</small>
+          <span v-for="name in componentNames(combo)" :key="name" class="combo-chip">
+            {{ name }}
+          </span>
+          <span v-if="hiddenComponentCount(combo)" class="combo-chip combo-chip-muted">
+            +{{ hiddenComponentCount(combo) }}
           </span>
         </div>
 
-        <ul v-if="combo.useCases?.length" class="combo-use-cases">
-          <li v-for="useCase in combo.useCases.slice(0, 2)" :key="useCase">{{ useCase }}</li>
-        </ul>
+        <div class="agent-prompt">
+          <span>Agent prompt</span>
+          <p>Copies install steps, workflow, and the operating prompt for this combo.</p>
+        </div>
 
-        <ol class="combo-commands">
-          <li v-for="item in combo.components" :key="`${combo.id}-${item.name}`">
-            <span>{{ item.name }}</span>
-            <code>{{ item.install }}</code>
-          </li>
-        </ol>
-
-        <a class="combo-link" :href="`/skills-shop/${combo.slug || 'combo-' + combo.id}/`">Open combo shop page</a>
+        <div class="combo-actions">
+          <button type="button" class="copy-button" @click="copyAgentPrompt(combo)">
+            {{ copiedComboId === combo.id ? 'Copied' : 'Copy prompt' }}
+          </button>
+          <a class="combo-link" :href="comboShopHref(combo)">Open combo shop page</a>
+        </div>
       </article>
     </div>
 
@@ -130,7 +234,7 @@ onMounted(async () => {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 18px;
-  margin-top: 22px;
+  margin-top: 14px;
 }
 
 .combo-search {
@@ -171,12 +275,36 @@ onMounted(async () => {
   font-size: 12px;
 }
 
+.combo-toolbar {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  max-width: 100%;
+  margin-top: 12px;
+}
+
+.combo-toolbar button {
+  width: 22px;
+  height: 6px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--vp-c-divider);
+  cursor: pointer;
+}
+
+.combo-toolbar button.active {
+  background: var(--vp-c-brand);
+}
+
 .combo-card {
+  display: flex;
+  flex-direction: column;
   border: 1px solid var(--vp-c-divider);
   border-radius: 8px;
   background: var(--vp-c-bg-soft);
-  padding: 22px;
+  padding: 18px;
   min-width: 0;
+  min-height: 320px;
 }
 
 .combo-card-head h3 {
@@ -191,7 +319,7 @@ onMounted(async () => {
   margin: 10px 0 0;
   color: var(--vp-c-text-2);
   font-size: 14px;
-  line-height: 1.65;
+  line-height: 1.55;
 }
 
 .combo-category {
@@ -214,67 +342,61 @@ onMounted(async () => {
 .combo-chip {
   display: inline-flex;
   align-items: center;
-  gap: 7px;
   border: 1px solid var(--vp-c-divider);
   border-radius: 8px;
   background: var(--vp-c-bg);
-  padding: 8px 10px;
+  padding: 7px 9px;
   color: var(--vp-c-text-1);
-  font-size: 13px;
+  font-size: 12px;
+  font-weight: 700;
 }
 
-.combo-chip small {
+.combo-chip-muted {
   color: var(--vp-c-text-3);
-  font-size: 11px;
 }
 
-.combo-use-cases {
+.agent-prompt {
   display: grid;
-  gap: 7px;
+  gap: 5px;
   margin: 16px 0 0;
-  padding-left: 18px;
-  color: var(--vp-c-text-2);
-  font-size: 13px;
-  line-height: 1.5;
-}
-
-.combo-commands {
-  display: grid;
-  gap: 10px;
-  margin: 18px 0 0;
-  padding: 0;
-  list-style: none;
-}
-
-.combo-commands li {
-  display: grid;
-  gap: 6px;
   min-width: 0;
 }
 
-.combo-commands span {
+.agent-prompt span {
   color: var(--vp-c-text-2);
   font-size: 12px;
   font-weight: 700;
 }
 
-.combo-commands code {
-  display: block;
-  max-width: 100%;
-  border: 1px solid var(--vp-c-divider);
-  border-radius: 8px;
-  background: var(--vp-c-bg-mute);
-  padding: 10px 11px;
-  color: var(--vp-c-text-1);
+.agent-prompt p {
+  margin: 0;
+  color: var(--vp-c-text-3);
   font-size: 12px;
-  line-height: 1.55;
-  overflow-x: auto;
-  white-space: pre;
+  line-height: 1.5;
+}
+
+.combo-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: 18px;
+}
+
+.copy-button {
+  border: 1px solid rgba(var(--sb-accent-rgb), 0.4);
+  border-radius: 8px;
+  background: rgba(var(--sb-accent-rgb), 0.12);
+  padding: 9px 12px;
+  color: var(--vp-c-brand);
+  font-size: 13px;
+  font-weight: 750;
+  cursor: pointer;
 }
 
 .combo-link {
   display: inline-flex;
-  margin-top: 18px;
   color: var(--vp-c-brand);
   font-size: 13px;
   font-weight: 700;
@@ -298,6 +420,12 @@ onMounted(async () => {
 
   .combo-card {
     padding: 18px;
+    min-height: 0;
+  }
+
+  .combo-actions {
+    align-items: flex-start;
+    flex-direction: column;
   }
 }
 </style>
