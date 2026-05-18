@@ -7,7 +7,8 @@
     "dev": "vitepress dev docs",
     "build": "vitepress build docs",
     "preview": "vitepress preview docs",
-    "mapnews:import-submissions": "node scripts/import-mapnews-submissions.mjs"
+    "mapnews:import-submissions": "node scripts/import-mapnews-submissions.mjs",
+    "skills-book:hot-top": "node scripts/generate-skills-book-hot-top.mjs"
   },
   "devDependencies": {
     "@mdit-vue/shared": "^0.12.0",

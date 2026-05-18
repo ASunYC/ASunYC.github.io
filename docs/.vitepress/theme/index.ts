@@ -1,6 +1,7 @@
 import { h } from 'vue'
 import { useData } from 'vitepress'
 import Theme from 'vitepress/theme'
+import SkillsBookHotTop from './components/SkillsBookHotTop.vue'
 import './styles/index.scss'
 
 export default Object.assign({}, Theme, {
@@ -10,7 +11,13 @@ export default Object.assign({}, Theme, {
     if (frontmatter.value?.layoutClass) {
       props.class = frontmatter.value.layoutClass
     }
-    return h(Theme.Layout, props)
+    return h(Theme.Layout, props, {
+      'aside-outline-after': () => (
+        frontmatter.value?.layoutClass === 'm-skills-book-layout'
+          ? h(SkillsBookHotTop)
+          : null
+      ),
+    })
   },
   enhanceApp({ app, router }) {
     router.onAfterPageChanged = () => {

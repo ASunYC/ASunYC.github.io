@@ -57,7 +57,7 @@
 
 /* Skills Book page layout */
 .m-skills-book-layout {
-  --skills-book-layout-max-width: 1200px;
+  --skills-book-layout-max-width: 1370px;
 
   overflow-x: clip;
 
@@ -80,6 +80,19 @@
 
   .vp-doc h2 {
     margin-top: 24px;
+  }
+
+  @media (min-width: 1280px) {
+    .VPDoc .aside {
+      flex-grow: 0;
+      width: 392px;
+      max-width: 392px;
+    }
+
+    .VPDoc .aside-container,
+    .VPDoc .aside-curtain {
+      width: 360px;
+    }
   }
 
   @media (max-width: 640px) {
