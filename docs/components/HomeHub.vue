@@ -29,7 +29,15 @@ const stats = [
 <template>
   <main class="hub-page">
     <section class="hub-hero">
-      <img class="hero-art" src="/logo-hero.jpg" alt="ASunYC avatar" />
+      <div class="hero-dynamics" aria-hidden="true">
+        <span class="scan scan-a"></span>
+        <span class="scan scan-b"></span>
+        <span class="data-line line-a"></span>
+        <span class="data-line line-b"></span>
+        <span class="node node-a"></span>
+        <span class="node node-b"></span>
+        <span class="node node-c"></span>
+      </div>
       <div class="hero-content">
         <p class="eyebrow">ASunYC / Project Hub</p>
         <h1>AI engineering tools for modern developer workflows.</h1>
@@ -107,25 +115,57 @@ const stats = [
   align-items: end;
   overflow: hidden;
   background:
-    linear-gradient(90deg, rgba(8, 12, 18, 0.92) 0%, rgba(8, 12, 18, 0.78) 46%, rgba(8, 12, 18, 0.34) 100%),
-    url('/logo-hero.jpg') right center / auto 100% no-repeat,
-    #080c12;
+    linear-gradient(90deg, rgba(5, 8, 13, 0.97) 0%, rgba(5, 8, 13, 0.86) 43%, rgba(5, 8, 13, 0.22) 100%),
+    url('/ai-future-hero.png') right center / auto 100% no-repeat,
+    #050910;
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 
-.hero-art {
+.hub-hero::before,
+.hub-hero::after {
   position: absolute;
-  right: clamp(24px, 8vw, 132px);
-  bottom: clamp(64px, 12vw, 132px);
-  width: clamp(148px, 20vw, 260px);
-  height: clamp(148px, 20vw, 260px);
-  object-fit: cover;
-  border: 1px solid rgba(255, 255, 255, 0.32);
-  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.38);
+  inset: 0;
+  pointer-events: none;
+  content: '';
+}
+
+.hub-hero::before {
+  background:
+    repeating-linear-gradient(
+      90deg,
+      transparent 0,
+      transparent 82px,
+      rgba(97, 255, 223, 0.09) 83px,
+      transparent 84px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      transparent 0,
+      transparent 68px,
+      rgba(126, 185, 255, 0.07) 69px,
+      transparent 70px
+    );
+  mask-image: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, 0.38) 50%, rgba(0, 0, 0, 0.95) 100%);
+  opacity: 0.55;
+}
+
+.hub-hero::after {
+  background:
+    radial-gradient(circle at 72% 42%, rgba(82, 255, 224, 0.16), transparent 28%),
+    linear-gradient(180deg, transparent 0%, rgba(5, 8, 13, 0.32) 100%);
+}
+
+.hero-dynamics {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  overflow: hidden;
+  pointer-events: none;
 }
 
 .hero-content {
   position: relative;
+  z-index: 2;
   width: min(1120px, calc(100vw - 48px));
   margin: 0 auto;
   padding: 112px 0 148px;
@@ -208,6 +248,7 @@ const stats = [
   position: absolute;
   left: 50%;
   bottom: 32px;
+  z-index: 2;
   display: grid;
   grid-template-columns: repeat(3, minmax(120px, 1fr));
   width: min(620px, calc(100vw - 48px));
@@ -215,6 +256,121 @@ const stats = [
   border: 1px solid rgba(255, 255, 255, 0.16);
   background: rgba(8, 12, 18, 0.62);
   backdrop-filter: blur(16px);
+}
+
+.scan,
+.data-line,
+.node {
+  position: absolute;
+  display: block;
+}
+
+.scan {
+  right: 0;
+  width: min(54vw, 880px);
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(116, 255, 226, 0.78), transparent);
+  box-shadow: 0 0 18px rgba(116, 255, 226, 0.42);
+  opacity: 0.72;
+  animation: scanSlide 7.5s linear infinite;
+}
+
+.scan-a {
+  top: 24%;
+}
+
+.scan-b {
+  top: 67%;
+  animation-delay: -3.4s;
+  animation-duration: 9s;
+}
+
+.data-line {
+  right: clamp(120px, 16vw, 300px);
+  width: clamp(180px, 24vw, 430px);
+  height: 72px;
+  border-top: 1px solid rgba(115, 255, 229, 0.28);
+  border-right: 1px solid rgba(115, 255, 229, 0.28);
+  transform: skewX(-16deg);
+  opacity: 0.72;
+  animation: circuitPulse 4.8s ease-in-out infinite;
+}
+
+.line-a {
+  top: 18%;
+}
+
+.line-b {
+  top: 76%;
+  right: clamp(48px, 10vw, 180px);
+  width: clamp(220px, 30vw, 520px);
+  transform: skewX(14deg);
+  animation-delay: -2.1s;
+}
+
+.node {
+  width: 8px;
+  height: 8px;
+  border: 1px solid rgba(242, 255, 252, 0.78);
+  background: #66ffe1;
+  box-shadow: 0 0 18px rgba(102, 255, 225, 0.72);
+  animation: nodeBlink 3.6s ease-in-out infinite;
+}
+
+.node-a {
+  top: 22%;
+  right: 30%;
+}
+
+.node-b {
+  top: 58%;
+  right: 17%;
+  animation-delay: -1.4s;
+}
+
+.node-c {
+  top: 81%;
+  right: 38%;
+  animation-delay: -2.6s;
+}
+
+@keyframes scanSlide {
+  0% {
+    transform: translateX(12%) translateY(-42px);
+    opacity: 0;
+  }
+  14%,
+  76% {
+    opacity: 0.72;
+  }
+  100% {
+    transform: translateX(-22%) translateY(54px);
+    opacity: 0;
+  }
+}
+
+@keyframes circuitPulse {
+  0%,
+  100% {
+    opacity: 0.24;
+    filter: drop-shadow(0 0 0 rgba(115, 255, 229, 0));
+  }
+  45% {
+    opacity: 0.88;
+    filter: drop-shadow(0 0 12px rgba(115, 255, 229, 0.42));
+  }
+}
+
+@keyframes nodeBlink {
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: scale(0.82);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.18);
+  }
 }
 
 .meta-item {
@@ -386,13 +542,9 @@ const stats = [
     display: block;
     min-height: auto;
     background:
-      linear-gradient(180deg, rgba(8, 12, 18, 0.84) 0%, rgba(8, 12, 18, 0.94) 100%),
-      url('/logo-hero.jpg') center top / 100% auto no-repeat,
-      #080c12;
-  }
-
-  .hero-art {
-    display: none;
+      linear-gradient(180deg, rgba(5, 8, 13, 0.42) 0%, rgba(5, 8, 13, 0.96) 62%, rgba(5, 8, 13, 0.98) 100%),
+      url('/ai-future-hero.png') center top / auto 420px no-repeat,
+      #050910;
   }
 
   .hero-content {
@@ -409,6 +561,14 @@ const stats = [
     width: calc(100vw - 32px);
     margin: 0 auto 28px;
     transform: none;
+  }
+
+  .hero-dynamics {
+    opacity: 0.58;
+  }
+
+  .data-line {
+    display: none;
   }
 
   .meta-item {
@@ -437,8 +597,8 @@ const stats = [
 
 @media (max-width: 520px) {
   .hero-content h1 {
-    font-size: 40px;
-    line-height: 1.05;
+    font-size: 34px;
+    line-height: 1.08;
   }
 
   .hero-copy {
@@ -474,6 +634,14 @@ const stats = [
 
   .project-arrow {
     grid-column: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scan,
+  .data-line,
+  .node {
+    animation: none;
   }
 }
 </style>
