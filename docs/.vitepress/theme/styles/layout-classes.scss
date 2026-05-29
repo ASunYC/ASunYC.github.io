@@ -259,6 +259,62 @@
   }
 }
 
+/* Skills Hot ranking layout */
+.m-skills-hot-layout {
+  --skills-hot-layout-max-width: var(--platform-page-max-width);
+
+  overflow-x: clip;
+
+  .VPDoc .container {
+    max-width: var(--skills-hot-layout-max-width) !important;
+  }
+
+  .aside,
+  .VPDocAsideOutline {
+    display: none !important;
+  }
+
+  .content-container,
+  .content {
+    max-width: 100% !important;
+    min-width: 0;
+  }
+
+  .content {
+    padding-bottom: 32px;
+
+    .VPDocFooter {
+      display: none;
+    }
+  }
+
+  .vp-doc {
+    min-width: 0;
+  }
+
+  .vp-doc a {
+    text-decoration: none;
+  }
+
+  @media (max-width: 640px) {
+    .VPDoc {
+      padding-left: 16px !important;
+      padding-right: 16px !important;
+    }
+
+    .VPDoc .container,
+    .VPDoc,
+    .vp-doc,
+    .content-container,
+    .content {
+      width: 100% !important;
+      max-width: 100% !important;
+      min-width: 0 !important;
+      overflow-x: clip;
+    }
+  }
+}
+
 /* Spotlight card effect */
 .spotlight-card {
   position: relative;
