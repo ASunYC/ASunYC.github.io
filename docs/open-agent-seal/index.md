@@ -8,8 +8,8 @@ import ReadmeViewer from '../components/ReadmeViewer.vue'
 </script>
 
 <ReadmeViewer
-  title="Open Agent Seal"
-  subtitle="A local-first Python agent framework with tools, memory, multi-LLM support, Web UI, desktop shell, ACP, MCP, and skills."
+  title="OpenAgentSeal"
+  subtitle="Base on Python. A personal AI assistant. Any OS. Any Platform."
   repo-url="https://github.com/ASunYC/OpenAgentSeal"
-  raw-url="https://raw.githubusercontent.com/ASunYC/OpenAgentSeal/main/README.en.md"
+  raw-url="https://raw.githubusercontent.com/ASunYC/OpenAgentSeal/main/README.md"
 />
