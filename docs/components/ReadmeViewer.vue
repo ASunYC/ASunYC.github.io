@@ -23,6 +23,10 @@ const props = defineProps({
     type: String,
     default: '',
   },
+  showHero: {
+    type: Boolean,
+    default: true,
+  },
 })
 
 const markdown = ref('')
@@ -91,8 +95,8 @@ onMounted(loadReadme)
 </script>
 
 <template>
-  <section class="readme-shell">
-    <header class="readme-hero">
+  <section class="readme-shell" :class="{ compact: !showHero }">
+    <header v-if="showHero" class="readme-hero">
       <p class="readme-kicker">Project README</p>
       <div>
         <h1>{{ title }}</h1>
@@ -114,6 +118,11 @@ onMounted(loadReadme)
   width: min(1180px, calc(100vw - 48px));
   margin: 0 auto;
   padding: 34px 0 64px;
+}
+
+.readme-shell.compact {
+  width: 100%;
+  padding: 0 0 32px;
 }
 
 .readme-hero {
