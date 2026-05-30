@@ -139,7 +139,7 @@ onMounted(loadHotData)
     <header class="hot-hero">
       <div>
         <p class="hot-kicker">Skills Hot</p>
-        <h1>Track the most demanded agent skills.</h1>
+        <h1>Track the most popular skills</h1>
         <p class="hot-lede">
           Powered by Skills Book rankings, GitHub stars, repository freshness, and the expanded EverythingSkill-compatible source index.
         </p>
