@@ -199,6 +199,25 @@ onMounted(loadReadme)
   height: auto;
 }
 
+.readme-content :deep(div[align='center'] img),
+.readme-content :deep(p[align='center'] img),
+.readme-content :deep(div[align='center'] a),
+.readme-content :deep(p[align='center'] a) {
+  display: inline-block;
+  margin: 2px 3px;
+  vertical-align: middle;
+}
+
+.readme-content :deep(div[align='center'] img),
+.readme-content :deep(p[align='center'] img) {
+  width: auto;
+}
+
+.readme-content :deep(div[align='center']),
+.readme-content :deep(p[align='center']) {
+  text-align: center;
+}
+
 .readme-content :deep(table) {
   display: block;
   width: 100%;
