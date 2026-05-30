@@ -1,5 +1,4 @@
 ---
-layout: page
 outline: [2, 3]
 ---
 
