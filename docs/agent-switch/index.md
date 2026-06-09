@@ -2,13 +2,9 @@
 outline: [2, 3]
 ---
 
-<script setup>
-import ReadmeViewer from '../components/ReadmeViewer.vue'
-</script>
-
 # Agent Switch
 
-> A skill-first CLI for switching between coding agents, capturing model conversations, inspecting requests, and returning clean handoff summaries.
+> A skill-first CLI for switching between coding agents, capturing model conversations, isolating CLI accounts, and returning clean handoff summaries.
 
 <div align="center">
 
@@ -21,7 +17,7 @@ import ReadmeViewer from '../components/ReadmeViewer.vue'
 
 **Author**: [ASunYC](https://github.com/ASunYC)
 
-[GitHub](https://github.com/ASunYC/agent-switch-skill) | [Quick Start](#quick-start) | [Commands](#commands) | [Full README](#full-readme)
+[GitHub](https://github.com/ASunYC/agent-switch-skill) | [Quick Start](#quick-start) | [Profiles](#multiple-cli-accounts) | [Commands](#commands)
 
 </div>
 
@@ -31,9 +27,10 @@ import ReadmeViewer from '../components/ReadmeViewer.vue'
 
 Agent Switch packages the `agent-switch` command as an installable agent skill. It is designed for people who use more than one coding CLI and want a controlled way to delegate work while keeping a readable capture trail.
 
-- **Switch agents**: run Claude Code, Codex, OpenCode, DeepSeek, Kimi, or a custom compatible CLI through one wrapper.
+- **Switch agents**: run Claude Code, Codex, CodeWhale, OpenCode, DeepSeek legacy shims, Kimi, or a custom compatible CLI through one wrapper.
 - **Capture conversations**: record prompts, tool calls, model responses, status codes, and request metadata.
 - **Inspect sessions**: open a local dashboard only when needed, or export individual requests as Markdown, raw HTTP, JSON, or HAR.
+- **Isolate accounts**: run Claude Code, Codex, and OpenCode with named profiles under `~/.agent-switch/profiles`.
 - **Return handoffs**: after the delegated CLI exits, Agent Switch prints a concise summary for the current Codex session.
 
 ### Design Goals
@@ -42,6 +39,7 @@ Agent Switch packages the `agent-switch` command as an installable agent skill. 
 - Local-only capture storage with auth-header redaction by default.
 - One command for agent switching, dashboard viewing, and exports.
 - Provider recipes for common coding CLIs and OpenAI/Anthropic-compatible gateways.
+- Optional compact mode for Claude-based providers when a Headroom proxy is available.
 
 ---
 
@@ -53,7 +51,9 @@ Agent Switch packages the `agent-switch` command as an installable agent skill. 
 - **Conversation capture**: inspect request and response traffic sent through the local proxy.
 - **Dashboard**: browse saved sessions in a local web UI.
 - **Exports**: generate `md`, `raw`, `json`, or `har` output for captured requests.
-- **Provider wrappers**: use built-in recipes for Claude Code, Codex, OpenCode, Kimi, DeepSeek, Ollama, LM Studio, OpenRouter, Bedrock, Vertex, and more.
+- **Provider wrappers**: use built-in recipes for Claude Code, Codex, CodeWhale, OpenCode, Kimi, DeepSeek legacy shims, Ollama, LM Studio, OpenRouter, Bedrock, Vertex, and more.
+- **CLI profiles**: isolate account/config homes for Codex, Claude Code, and OpenCode without changing the current project directory.
+- **Compact mode**: optionally compress Claude-based requests through Headroom while keeping both original and forwarded views in the dashboard.
 
 ### Privacy Notes
 
@@ -82,6 +82,7 @@ agent-switch --help
 ```bash
 agent-switch claude
 agent-switch codex
+agent-switch codewhale
 agent-switch opencode
 agent-switch deepseek
 agent-switch kimi
@@ -97,28 +98,69 @@ agent-switch export <session>/<seq> --format raw
 
 ---
 
+## Multiple CLI Accounts
+
+Profiles let you keep separate accounts/configs for a target CLI while staying in the same workspace.
+
+```bash
+agent-switch profile new codex/work
+agent-switch profile new claude/work
+agent-switch profile new opencode/work
+```
+
+Use a profile:
+
+```bash
+agent-switch codex --profile work
+agent-switch claude --profile work
+agent-switch opencode --profile work
+```
+
+Create a profile that shares non-secret defaults:
+
+```bash
+agent-switch profile new codex/work --shared
+```
+
+Agent Switch never shares known auth/session files such as Codex `auth.json`, Claude credentials, session folders, or history files.
+
+---
+
+## Compact Mode
+
+Compact mode is off by default. Enable it only when you want Claude-based providers to route through a separate Headroom proxy.
+
+```bash
+agent-switch claude --compact
+agent-switch kimi --compact
+agent-switch bedrock --compact
+agent-switch vertex --compact
+```
+
+Check compact readiness:
+
+```bash
+agent-switch compact doctor
+```
+
+By default compact mode is fail-open, so Agent Switch forwards the original request if Headroom is unavailable.
+
+---
+
 ## Commands
 
 | Command | Example | Description |
 |---|---|---|
 | `claude` | `agent-switch claude` | Start Claude Code with capture enabled |
 | `codex` | `agent-switch codex` | Start Codex with capture enabled |
+| `codewhale` | `agent-switch codewhale` | Start CodeWhale with capture enabled |
+| `codewhale-tui` | `agent-switch codewhale-tui` | Start the CodeWhale TUI binary directly |
 | `opencode` | `agent-switch opencode` | Start OpenCode with capture enabled |
 | `run` | `agent-switch run --provider openai -- my-cli` | Wrap a custom compatible CLI |
 | `dashboard` | `agent-switch dashboard` | Open the saved-session dashboard |
 | `export` | `agent-switch export <id> --format md` | Export one captured request |
+| `profile` | `agent-switch profile new codex/work` | Manage isolated CLI account/config profiles |
 | `proxy` | `agent-switch proxy --provider openai` | Run only the capture proxy and dashboard |
-
----
-
-## Full README
-
-<ReadmeViewer
-  title="Agent Switch"
-  repo-url="https://github.com/ASunYC/agent-switch-skill"
-  raw-url="https://raw.githubusercontent.com/ASunYC/agent-switch-skill/main/README.md"
-  :show-hero="false"
-/>
 
 <style>
 .project-badge-row {

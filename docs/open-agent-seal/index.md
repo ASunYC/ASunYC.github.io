@@ -2,10 +2,6 @@
 outline: [2, 3]
 ---
 
-<script setup>
-import ReadmeViewer from '../components/ReadmeViewer.vue'
-</script>
-
 # OpenAgentSeal
 
 > A Python-based personal AI assistant for any OS and platform.
@@ -16,12 +12,13 @@ import ReadmeViewer from '../components/ReadmeViewer.vue'
   <img alt="Python" src="https://img.shields.io/badge/python-3.10+-blue.svg">
   <img alt="Vue" src="https://img.shields.io/badge/vue-3-green.svg">
   <img alt="Tauri" src="https://img.shields.io/badge/tauri-2-24C8DB.svg">
+  <img alt="Android" src="https://img.shields.io/badge/android-APK-3DDC84.svg">
   <img alt="License" src="https://img.shields.io/github/license/ASunYC/OpenAgentSeal.svg">
 </div>
 
 **Author**: [ASunYC](https://github.com/ASunYC)
 
-[GitHub](https://github.com/ASunYC/OpenAgentSeal) | [Screenshots](#screenshots) | [Features](#features) | [Quick Start](#quick-start) | [Full README](#full-readme)
+[GitHub](https://github.com/ASunYC/OpenAgentSeal) | [Screenshots](#screenshots) | [Features](#features) | [Quick Start](#quick-start) | [Mobile Shell](#mobile-shell)
 
 </div>
 
@@ -36,6 +33,7 @@ It is designed for local-first agent applications that can run as:
 - an interactive CLI assistant
 - a FastAPI + Vue Web UI
 - a Windows desktop shell with tray integration
+- an Android APK / mobile shell connected to the same local-first agent runtime
 - an ACP-compatible agent service
 - a tool-using runtime with MCP and Skills support
 
@@ -44,6 +42,7 @@ It is designed for local-first agent applications that can run as:
 - **Core runtime**: Python agent loop, tool calling, memory, task queue, and LLM adapters.
 - **Web interface**: Vue 3 workspace for chat, model switching, settings, and agent status.
 - **Desktop shell**: Tauri 2 wrapper for a native Windows-style local assistant.
+- **Mobile shell**: Android APK build and mobile connection workflow documented in the project docs.
 - **Integration layer**: MCP, ACP, Claude Skills, and multi-provider model configuration.
 
 ---
@@ -109,6 +108,13 @@ Start Web UI only:
 open-agent --web-only --port 9998
 ```
 
+Linux Web-only setup:
+
+```bash
+bash scripts/linux/install.sh
+bash scripts/linux/start-web.sh
+```
+
 Start ACP service:
 
 ```bash
@@ -125,6 +131,17 @@ npm run dev
 
 ---
 
+## Mobile Shell
+
+OpenAgentSeal now includes mobile connection and Android APK build documentation.
+
+- Mobile shell guide: [docs/mobile_shell.md](https://github.com/ASunYC/OpenAgentSeal/blob/main/docs/mobile_shell.md)
+- Linux setup guide: [README_LINUX.md](https://github.com/ASunYC/OpenAgentSeal/blob/main/README_LINUX.md)
+
+Use this when you want the same local-first assistant runtime to be reachable from a mobile shell instead of only the desktop or browser UI.
+
+---
+
 ## Commands
 
 | Command | Description |
@@ -135,17 +152,8 @@ npm run dev
 | `open-agent --cli-only` | Start in CLI-only mode |
 | `open-agent --web-only --port 9998` | Start only the Web UI service |
 | `open-agent-acp --port 8080` | Start the ACP-compatible service |
-
----
-
-## Full README
-
-<ReadmeViewer
-  title="OpenAgentSeal"
-  repo-url="https://github.com/ASunYC/OpenAgentSeal"
-  raw-url="https://raw.githubusercontent.com/ASunYC/OpenAgentSeal/main/README.md"
-  :show-hero="false"
-/>
+| `bash scripts/linux/install.sh` | Install Linux Web-only prerequisites |
+| `bash scripts/linux/start-web.sh` | Start the Linux Web-only service |
 
 <style>
 .project-badge-row {
