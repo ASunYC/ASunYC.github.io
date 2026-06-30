@@ -29,7 +29,7 @@ Agent Switch packages the `agent-switch` command as an installable agent skill. 
 
 - **Switch agents**: run Claude Code, Codex, CodeWhale, OpenCode, DeepSeek legacy shims, Kimi, or a custom compatible CLI through one wrapper.
 - **Capture conversations**: record prompts, tool calls, model responses, status codes, and request metadata.
-- **Inspect sessions**: open a local dashboard only when needed, or export individual requests as Markdown, raw HTTP, JSON, or HAR.
+- **Dashboard with segments**: open a local web UI with configurable segments showing session totals for tokens, cost, status rate, and compact savings.
 - **Isolate accounts**: run Claude Code, Codex, and OpenCode with named profiles under `~/.agent-switch/profiles`.
 - **Return handoffs**: after the delegated CLI exits, Agent Switch prints a concise summary for the current Codex session.
 
@@ -49,7 +49,8 @@ Agent Switch packages the `agent-switch` command as an installable agent skill. 
 
 - **Agent handoff**: delegate a task to another coding CLI and return to the current session.
 - **Conversation capture**: inspect request and response traffic sent through the local proxy.
-- **Dashboard**: browse saved sessions in a local web UI.
+- **Dashboard with segments**: browse saved sessions in a local web UI with configurable info segments.
+- **Session-wide stats**: live totals for tokens (input/output/cache), cost, status rate, and compact savings.
 - **Exports**: generate `md`, `raw`, `json`, or `har` output for captured requests.
 - **Provider wrappers**: use built-in recipes for Claude Code, Codex, CodeWhale, OpenCode, Kimi, DeepSeek legacy shims, Ollama, LM Studio, OpenRouter, Bedrock, Vertex, and more.
 - **CLI profiles**: isolate account/config homes for Codex, Claude Code, and OpenCode without changing the current project directory.
@@ -80,6 +81,10 @@ agent-switch --help
 ### 2. Run Another Agent CLI
 
 ```bash
+# Claude Code with auto-opened dashboard
+agent-switch claude --open
+
+# Headless capture; dashboard URL is printed on startup
 agent-switch claude
 agent-switch codex
 agent-switch codewhale
@@ -88,6 +93,8 @@ agent-switch deepseek
 agent-switch kimi
 ```
 
+The dashboard runs in the background during a captured CLI run. Its URL is printed on startup, so you can open it in another browser tab without exiting the CLI. Use `agent-switch dashboard` (or `webui`) later to browse previously captured sessions without starting a new capture.
+
 ### 3. Inspect Captured Conversations
 
 ```bash
@@ -95,6 +102,31 @@ agent-switch dashboard
 agent-switch export <session>/<seq> --format md
 agent-switch export <session>/<seq> --format raw
 ```
+
+---
+
+## Dashboard Segments
+
+The dashboard overview bar is built from independent, configurable segments inspired by terminal statuslines like Powerlevel10k / Coralline.
+
+Default segments:
+
+| Segment | Shows |
+|---|---|
+| 📦 Sessions | Active capture session count and live status |
+| 📊 Status | Request success rate with a colored bar and status code breakdown |
+| 👤 Profile | The current CLI profile name (e.g. `claude/work`) |
+| 🗜 Compact | Headroom compression ratio and cumulative tokens saved |
+| 📝 Tokens | Session-wide totals: input, output, cache-read, and combined token count |
+
+Optional segments (off by default):
+
+| Segment | Shows |
+|---|---|
+| ⏱ Latency | Average and p95 request latency |
+| 💰 Cost | Estimated API cost from priced requests |
+
+Click **⚙ segments** in the overview bar to toggle segments and pick a **Grid** or **Bar** layout. Your choices are saved to `localStorage` and persist across dashboard sessions.
 
 ---
 
