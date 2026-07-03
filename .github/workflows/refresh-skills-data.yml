@@ -1,0 +1,65 @@
+name: Refresh Skills Data
+
+on:
+  schedule:
+    # 每天 UTC 18:17（北京时间 02:17）刷新一次，避开整点
+    - cron: '17 18 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout ASunYC.github.io
+        uses: actions/checkout@v4
+        with:
+          path: site
+
+      - name: Checkout skills-book
+        uses: actions/checkout@v4
+        with:
+          repository: ASunYC/skills-book
+          path: skills-book
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install skills-book dependencies
+        run: |
+          cd skills-book
+          if [ -f package-lock.json ]; then npm ci; else npm install; fi
+
+      - name: Fetch skills from GitHub
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cd skills-book
+          node scripts/skills-book.mjs fetch --force
+
+      - name: Export static data to site
+        run: |
+          cd skills-book
+          node scripts/skills-book.mjs shop-export ../site/docs/public/data
+
+      - name: Generate hot-top ranking
+        run: |
+          cd site
+          node scripts/generate-skills-book-hot-top.mjs
+
+      - name: Commit and push if changed
+        run: |
+          cd site
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/public/data
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "data: refresh skills hot (automated $(date -u +%Y-%m-%d))"
+            git push
+          fi
