@@ -4,77 +4,77 @@
   "name": "resumeskills",
   "displayName": "Paramchoudhary/ResumeSkills",
   "description": "20 specialized skills for resume optimization, ATS analysis, interview prep, and career transitions",
-  "stars": 462,
+  "stars": 986,
   "category": "Community Skills",
   "source": "voltagent",
   "url": "https://github.com/Paramchoudhary/ResumeSkills",
   "githubRepo": "Paramchoudhary/ResumeSkills",
-  "readme": "# Paramchoudhary/ResumeSkills\n\n20 specialized skills for resume optimization, ATS analysis, interview prep, and career transitions",
-  "readmeHtml": "<h1>Paramchoudhary/ResumeSkills</h1>\n<p>20 specialized skills for resume optimization, ATS analysis, interview prep, and career transitions</p>",
+  "readme": "# Resume Skills for Claude Code\n\nA collection of AI agent skills focused on resume optimization, job applications, and career development. Built for job seekers, career changers, and professionals who want Claude Code to help with resume writing, ATS optimization, interview prep, and strategic job search.\n\n## What are Skills?\n\nSkills are markdown files that give AI agents specialized knowledge and workflows for specific tasks. When you add these to your project, Claude Code can recognize when you're working on resume and job search tasks and apply the right frameworks and best practices.\n\n## Available Skills\n\n| Skill | Description |\n|-------|-------------|\n| [resume-ats-optimizer](/skills/resume-ats-optimizer) | Optimize resumes for Applicant Tracking Systems, check ATS compatibility, analyze keyword match |\n| [resume-bullet-writer](/skills/resume-bullet-writer) | Transform weak bullets into achievement-focused statements with metrics and impact |\n| [job-description-analyzer](/skills/job-description-analyzer) | Analyze job postings, calculate match scores, identify gaps, create application strategy |\n| [resume-tailor](/skills/resume-tailor) | Customize resume for specific job postings while maintaining truthfulness |\n| [cover-letter-generator](/skills/cover-letter-generator) | Create personalized, compelling cover letters from resume + job description |\n| [linkedin-profile-optimizer](/skills/linkedin-profile-optimizer) | Sync resume with LinkedIn, optimize for searchability and engagement |\n| [interview-prep-generator](/skills/interview-prep-generator) | Generate STAR stories, practice questions, talking points from resume |\n| [salary-negotiation-prep](/skills/salary-negotiation-prep) | Research market rates, build negotiation strategy, create counter-offer scripts |\n| [tech-resume-optimizer](/skills/tech-resume-optimizer) | Optimize resumes for software engineering, PM, and technical roles |\n| [executive-resume-writer](/skills/executive-resume-writer) | Create C-suite and VP level resumes emphasizing strategic leadership |\n| [career-changer-translator](/skills/career-changer-translator) | Translate skills from one industry to another, identify transferable skills |\n| [resume-quantifier](/skills/resume-quantifier) | Find opportunities to add metrics, estimate when numbers unknown |\n| [resume-formatter](/skills/resume-formatter) | Ensure ATS-friendly formatting, create clean scannable layouts |\n| [portfolio-case-study-writer](/skills/portfolio-case-study-writer) | Transform resume bullets into detailed portfolio case studies |\n| [academic-cv-builder](/skills/academic-cv-builder) | Format CVs for academic positions with publications, grants, teaching |\n| [reference-list-builder](/skills/reference-list-builder) | Format professional references properly and prepare reference materials |\n| [offer-comparison-analyzer](/skills/offer-comparison-analyzer) | Compare multiple job offers side-by-side with total compensation analysis |\n| [resume-version-manager](/skills/resume-version-manager) | Track different resume versions, maintain master resume, manage tailored versions |\n| [creative-portfolio-resume](/skills/creative-portfolio-resume) | Balance visual design with ATS compatibility for creative roles |\n| [resume-section-builder](/skills/resume-section-builder) | Create targeted sections optimized for different experience levels and roles |\n\n## Installation\n\n### Option 1: CLI Install (Recommended)\n\n```bash\n# Install all 20 skills globally (works across all projects)\nnpx skills add Paramchoudhary/ResumeSkills -g -y\n\n# Install to current project only\nnpx skills add Paramchoudhary/ResumeSkills -y\n\n# List installed skills\nnpx skills list\n\n# List global skills\nnpx skills list --global\n```\n\n### Option 2: Manual Install\n\n```bash\n# Clone and copy to skills folder\ngit clone https://github.com/Paramchoudhary/ResumeSkills.git\nmkdir -p ~/.cursor/skills\ncp -r ResumeSkills/skills/* ~/.cursor/skills/\n```\n\n### Option 3: Direct Download\n\nDownload individual skill files from the `/skills` directory and add them to your AI agent's skills folder.\n\n### Uninstall\n\n```bash\n# Remove individual skills by name\nnpx skills remove resume-ats-optimizer\nnpx skills remove resume-bullet-writer\n\n# Or remove all skills from a directory\nrm -rf ~/.agents/skills/resume-*\nrm -rf ~/.cursor/skills/resume-*\n```\n\n## Supported AI Agents\n\nThese skills work with multiple AI coding assistants:\n\n- **Cursor** (IDE)\n- **Claude Code** (CLI)\n- **Windsurf**\n- **Codex**\n- **Gemini CLI**\n- **Amp, Antigravity, Augment** and 30+ more\n\n## Usage\n\nOnce installed, just ask your AI assistant to help with resume tasks:\n\n```\n\"Optimize my resume for ATS\"\n→ Uses resume-ats-optimizer skill\n\n\"Improve my resume bullets\"\n→ Uses resume-bullet-writer skill\n\n\"Should I apply to this job?\" + paste job description\n→ Uses job-description-analyzer skill\n\n\"Write me a cover letter for this role\"\n→ Uses cover-letter-generator skill\n\n\"Prep me for an interview at Google\"\n→ Uses interview-prep-generator skill\n```\n\n## Skill Categories\n\n### Resume Optimization\n- `resume-ats-optimizer` - Pass ATS systems\n- `resume-bullet-writer` - Write achievement-focused bullets\n- `resume-quantifier` - Add metrics and numbers\n- `resume-formatter` - Clean, scannable formatting\n- `resume-section-builder` - Targeted section creation\n\n### Job Search Strategy\n- `job-description-analyzer` - Match analysis and strategy\n- `resume-tailor` - Customize for specific jobs\n- `resume-version-manager` - Track multiple versions\n- `offer-comparison-analyzer` - Compare job offers\n\n### Supporting Documents\n- `cover-letter-generator` - Personalized cover letters\n- `linkedin-profile-optimizer` - LinkedIn optimization\n- `portfolio-case-study-writer` - Portfolio content\n- `reference-list-builder` - Professional references\n\n### Interview & Negotiation\n- `interview-prep-generator` - STAR stories and practice\n- `salary-negotiation-prep` - Negotiation strategy\n\n### Specialized Roles\n- `tech-resume-optimizer` - Engineering/PM/technical\n- `executive-resume-writer` - C-suite/VP\n- `academic-cv-builder` - Academic positions\n- `creative-portfolio-resume` - Design/creative roles\n- `career-changer-translator` - Career transitions\n\n## Why These Skills Matter\n\n**The Problem:**\n- 75% of resumes rejected by ATS before humans see them\n- Average job gets 250 applications\n- Most resumes have weak bullets with no metrics\n- Job seekers apply to wrong jobs, waste time\n\n**The Solution:**\n- Pass ATS with optimized formatting and keywords\n- Stand out with achievement-focused bullets\n- Apply strategically to right-fit roles\n- Get interviews faster with tailored applications\n\n**The Results:**\n- 2-3x more interviews per application\n- Higher quality responses\n- Faster job search (2 months saved on average)\n- Better salary negotiations ($10K+ higher offers)\n\n## Quick Start Examples\n\n### Example 1: Full Resume Optimization\n\n```\nUser: Here's my resume [paste]. I'm applying to data scientist roles. Help me optimize it.\n\nClaude will:\n1. Run ATS compatibility check\n2. Analyze against common data scientist job requirements\n3. Improve bullet points with metrics\n4. Suggest keyword additions\n5. Format for ATS compatibility\n```\n\n### Example 2: Job-Specific Tailoring\n\n```\nUser: Here's a job description [paste] and my resume [paste]. Should I apply?\n\nClaude will:\n1. Calculate match score\n2. Identify gaps and strengths\n3. Flag any red flags in posting\n4. Provide resume customization strategy\n5. Generate cover letter talking points\n```\n\n### Example 3: Interview Preparation\n\n```\nUser: I have an interview at [Company] for [Role]. Here's my resume. Help me prepare.\n\nClaude will:\n1. Generate STAR stories from your experience\n2. Predict likely interview questions\n3. Create talking points for each bullet\n4. Research company-specific prep\n5. Prepare questions to ask\n```\n\n## Contributing\n\nFound a way to improve a skill? Have a new skill to suggest? PRs and issues welcome!\n\nSee [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.\n\n### Ways to Contribute\n- Improve existing skill instructions\n- Add industry-specific examples\n- Create new skills for specialized use cases\n- Fix typos or clarify language\n- Add translations\n\n## License\n\nMIT License - Use these skills however you want.\n\nSee [LICENSE](LICENSE) for details.\n\n## About\n\nResume skills for Claude Code. ATS optimization, bullet writing, job matching, interview prep, and career development.\n\n**Keywords:** resume, CV, ATS, job search, career, interview, cover letter, LinkedIn, salary negotiation, job application\n\n---\n\n*Built with care for job seekers everywhere. Good luck with your search!*\n",
+  "readmeHtml": "<h1>Resume Skills for Claude Code</h1>\n<p>A collection of AI agent skills focused on resume optimization, job applications, and career development. Built for job seekers, career changers, and professionals who want Claude Code to help with resume writing, ATS optimization, interview prep, and strategic job search.</p>\n<h2>What are Skills?</h2>\n<p>Skills are markdown files that give AI agents specialized knowledge and workflows for specific tasks. When you add these to your project, Claude Code can recognize when you're working on resume and job search tasks and apply the right frameworks and best practices.</p>\n<h2>Available Skills</h2>\n<p>| Skill | Description |</p>\n<p>|-------|-------------|</p>\n<p>| [resume-ats-optimizer](/skills/resume-ats-optimizer) | Optimize resumes for Applicant Tracking Systems, check ATS compatibility, analyze keyword match |</p>\n<p>| [resume-bullet-writer](/skills/resume-bullet-writer) | Transform weak bullets into achievement-focused statements with metrics and impact |</p>\n<p>| [job-description-analyzer](/skills/job-description-analyzer) | Analyze job postings, calculate match scores, identify gaps, create application strategy |</p>\n<p>| [resume-tailor](/skills/resume-tailor) | Customize resume for specific job postings while maintaining truthfulness |</p>\n<p>| [cover-letter-generator](/skills/cover-letter-generator) | Create personalized, compelling cover letters from resume + job description |</p>\n<p>| [linkedin-profile-optimizer](/skills/linkedin-profile-optimizer) | Sync resume with LinkedIn, optimize for searchability and engagement |</p>\n<p>| [interview-prep-generator](/skills/interview-prep-generator) | Generate STAR stories, practice questions, talking points from resume |</p>\n<p>| [salary-negotiation-prep](/skills/salary-negotiation-prep) | Research market rates, build negotiation strategy, create counter-offer scripts |</p>\n<p>| [tech-resume-optimizer](/skills/tech-resume-optimizer) | Optimize resumes for software engineering, PM, and technical roles |</p>\n<p>| [executive-resume-writer](/skills/executive-resume-writer) | Create C-suite and VP level resumes emphasizing strategic leadership |</p>\n<p>| [career-changer-translator](/skills/career-changer-translator) | Translate skills from one industry to another, identify transferable skills |</p>\n<p>| [resume-quantifier](/skills/resume-quantifier) | Find opportunities to add metrics, estimate when numbers unknown |</p>\n<p>| [resume-formatter](/skills/resume-formatter) | Ensure ATS-friendly formatting, create clean scannable layouts |</p>\n<p>| [portfolio-case-study-writer](/skills/portfolio-case-study-writer) | Transform resume bullets into detailed portfolio case studies |</p>\n<p>| [academic-cv-builder](/skills/academic-cv-builder) | Format CVs for academic positions with publications, grants, teaching |</p>\n<p>| [reference-list-builder](/skills/reference-list-builder) | Format professional references properly and prepare reference materials |</p>\n<p>| [offer-comparison-analyzer](/skills/offer-comparison-analyzer) | Compare multiple job offers side-by-side with total compensation analysis |</p>\n<p>| [resume-version-manager](/skills/resume-version-manager) | Track different resume versions, maintain master resume, manage tailored versions |</p>\n<p>| [creative-portfolio-resume](/skills/creative-portfolio-resume) | Balance visual design with ATS compatibility for creative roles |</p>\n<p>| [resume-section-builder](/skills/resume-section-builder) | Create targeted sections optimized for different experience levels and roles |</p>\n<h2>Installation</h2>\n<h3>Option 1: CLI Install (Recommended)</h3>\n<pre><code>\n# Install all 20 skills globally (works across all projects)\n\nnpx skills add Paramchoudhary/ResumeSkills -g -y\n\n\n\n# Install to current project only\n\nnpx skills add Paramchoudhary/ResumeSkills -y\n\n\n\n# List installed skills\n\nnpx skills list\n\n\n\n# List global skills\n\nnpx skills list --global\n\n</code></pre>\n<h3>Option 2: Manual Install</h3>\n<pre><code>\n# Clone and copy to skills folder\n\ngit clone https://github.com/Paramchoudhary/ResumeSkills.git\n\nmkdir -p ~/.cursor/skills\n\ncp -r ResumeSkills/skills/* ~/.cursor/skills/\n\n</code></pre>\n<h3>Option 3: Direct Download</h3>\n<p>Download individual skill files from the <code>/skills</code> directory and add them to your AI agent's skills folder.</p>\n<h3>Uninstall</h3>\n<pre><code>\n# Remove individual skills by name\n\nnpx skills remove resume-ats-optimizer\n\nnpx skills remove resume-bullet-writer\n\n\n\n# Or remove all skills from a directory\n\nrm -rf ~/.agents/skills/resume-*\n\nrm -rf ~/.cursor/skills/resume-*\n\n</code></pre>\n<h2>Supported AI Agents</h2>\n<p>These skills work with multiple AI coding assistants:</p>\n<ul>\n<li><strong>Cursor</strong> (IDE)</li>\n<li><strong>Claude Code</strong> (CLI)</li>\n<li><strong>Windsurf</strong></li>\n<li><strong>Codex</strong></li>\n<li><strong>Gemini CLI</strong></li>\n<li><strong>Amp, Antigravity, Augment</strong> and 30+ more</li>\n</ul>\n<h2>Usage</h2>\n<p>Once installed, just ask your AI assistant to help with resume tasks:</p>\n<pre><code>\n\"Optimize my resume for ATS\"\n\n→ Uses resume-ats-optimizer skill\n\n\n\n\"Improve my resume bullets\"\n\n→ Uses resume-bullet-writer skill\n\n\n\n\"Should I apply to this job?\" + paste job description\n\n→ Uses job-description-analyzer skill\n\n\n\n\"Write me a cover letter for this role\"\n\n→ Uses cover-letter-generator skill\n\n\n\n\"Prep me for an interview at Google\"\n\n→ Uses interview-prep-generator skill\n\n</code></pre>\n<h2>Skill Categories</h2>\n<h3>Resume Optimization</h3>\n<ul>\n<li><code>resume-ats-optimizer</code> - Pass ATS systems</li>\n<li><code>resume-bullet-writer</code> - Write achievement-focused bullets</li>\n<li><code>resume-quantifier</code> - Add metrics and numbers</li>\n<li><code>resume-formatter</code> - Clean, scannable formatting</li>\n<li><code>resume-section-builder</code> - Targeted section creation</li>\n</ul>\n<h3>Job Search Strategy</h3>\n<ul>\n<li><code>job-description-analyzer</code> - Match analysis and strategy</li>\n<li><code>resume-tailor</code> - Customize for specific jobs</li>\n<li><code>resume-version-manager</code> - Track multiple versions</li>\n<li><code>offer-comparison-analyzer</code> - Compare job offers</li>\n</ul>\n<h3>Supporting Documents</h3>\n<ul>\n<li><code>cover-letter-generator</code> - Personalized cover letters</li>\n<li><code>linkedin-profile-optimizer</code> - LinkedIn optimization</li>\n<li><code>portfolio-case-study-writer</code> - Portfolio content</li>\n<li><code>reference-list-builder</code> - Professional references</li>\n</ul>\n<h3>Interview &amp; Negotiation</h3>\n<ul>\n<li><code>interview-prep-generator</code> - STAR stories and practice</li>\n<li><code>salary-negotiation-prep</code> - Negotiation strategy</li>\n</ul>\n<h3>Specialized Roles</h3>\n<ul>\n<li><code>tech-resume-optimizer</code> - Engineering/PM/technical</li>\n<li><code>executive-resume-writer</code> - C-suite/VP</li>\n<li><code>academic-cv-builder</code> - Academic positions</li>\n<li><code>creative-portfolio-resume</code> - Design/creative roles</li>\n<li><code>career-changer-translator</code> - Career transitions</li>\n</ul>\n<h2>Why These Skills Matter</h2>\n<p><strong>The Problem:</strong></p>\n<ul>\n<li>75% of resumes rejected by ATS before humans see them</li>\n<li>Average job gets 250 applications</li>\n<li>Most resumes have weak bullets with no metrics</li>\n<li>Job seekers apply to wrong jobs, waste time</li>\n</ul>\n<p><strong>The Solution:</strong></p>\n<ul>\n<li>Pass ATS with optimized formatting and keywords</li>\n<li>Stand out with achievement-focused bullets</li>\n<li>Apply strategically to right-fit roles</li>\n<li>Get interviews faster with tailored applications</li>\n</ul>\n<p><strong>The Results:</strong></p>\n<ul>\n<li>2-3x more interviews per application</li>\n<li>Higher quality responses</li>\n<li>Faster job search (2 months saved on average)</li>\n<li>Better salary negotiations ($10K+ higher offers)</li>\n</ul>\n<h2>Quick Start Examples</h2>\n<h3>Example 1: Full Resume Optimization</h3>\n<pre><code>\nUser: Here's my resume [paste]. I'm applying to data scientist roles. Help me optimize it.\n\n\n\nClaude will:\n\n1. Run ATS compatibility check\n\n2. Analyze against common data scientist job requirements\n\n3. Improve bullet points with metrics\n\n4. Suggest keyword additions\n\n5. Format for ATS compatibility\n\n</code></pre>\n<h3>Example 2: Job-Specific Tailoring</h3>\n<pre><code>\nUser: Here's a job description [paste] and my resume [paste]. Should I apply?\n\n\n\nClaude will:\n\n1. Calculate match score\n\n2. Identify gaps and strengths\n\n3. Flag any red flags in posting\n\n4. Provide resume customization strategy\n\n5. Generate cover letter talking points\n\n</code></pre>\n<h3>Example 3: Interview Preparation</h3>\n<pre><code>\nUser: I have an interview at [Company] for [Role]. Here's my resume. Help me prepare.\n\n\n\nClaude will:\n\n1. Generate STAR stories from your experience\n\n2. Predict likely interview questions\n\n3. Create talking points for each bullet\n\n4. Research company-specific prep\n\n5. Prepare questions to ask\n\n</code></pre>\n<h2>Contributing</h2>\n<p>Found a way to improve a skill? Have a new skill to suggest? PRs and issues welcome!</p>\n<p>See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.</p>\n<h3>Ways to Contribute</h3>\n<ul>\n<li>Improve existing skill instructions</li>\n<li>Add industry-specific examples</li>\n<li>Create new skills for specialized use cases</li>\n<li>Fix typos or clarify language</li>\n<li>Add translations</li>\n</ul>\n<h2>License</h2>\n<p>MIT License - Use these skills however you want.</p>\n<p>See [LICENSE](LICENSE) for details.</p>\n<h2>About</h2>\n<p>Resume skills for Claude Code. ATS optimization, bullet writing, job matching, interview prep, and career development.</p>\n<p><strong>Keywords:</strong> resume, CV, ATS, job search, career, interview, cover letter, LinkedIn, salary negotiation, job application</p>\n<p>---</p>\n<p>*Built with care for job seekers everywhere. Good luck with your search!*</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.042Z",
+  "updatedAt": "2026-06-19T07:20:29Z",
   "author": {
-    "login": "paramchoudhary",
-    "name": "paramchoudhary",
-    "avatarUrl": "",
-    "profileUrl": "https://github.com/paramchoudhary",
+    "login": "Paramchoudhary",
+    "name": "Param Choudhary",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/69947192?v=4",
+    "profileUrl": "https://github.com/Paramchoudhary",
     "location": ""
   },
   "location": null,
   "related": [
     {
-      "slug": "obra-defense-in-depth",
-      "displayName": "obra/defense-in-depth",
-      "stars": 186953,
+      "slug": "obra-brainstorming",
+      "displayName": "obra/brainstorming",
+      "stars": 245089,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mattpocock-skills",
+      "displayName": "mattpocock/skills",
+      "stars": 155097,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
       "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
-      "stars": 77115,
+      "stars": 100227,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "lum1104-understand-anything",
+      "displayName": "Lum1104/understand-anything",
+      "stars": 70574,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "santifer-career-ops",
+      "displayName": "santifer/career-ops",
+      "stars": 58303,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "leonxlnx-taste-skill",
+      "displayName": "Leonxlnx/taste-skill",
+      "stars": 55314,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "panniantong-agent-reach",
+      "displayName": "Panniantong/Agent-Reach",
+      "stars": 49547,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "mvanhorn-last30days-skill",
       "displayName": "mvanhorn/last30days-skill",
-      "stars": 25573,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "k-dense-ai-claude-scientific-skills",
-      "displayName": "K-Dense-AI/claude-scientific-skills",
-      "stars": 20299,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-fundamentals",
-      "displayName": "muratcankoylan/context-fundamentals",
-      "stars": 15494,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-degradation",
-      "displayName": "muratcankoylan/context-degradation",
-      "stars": 15494,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-compression",
-      "displayName": "muratcankoylan/context-compression",
-      "stars": 15494,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-optimization",
-      "displayName": "muratcankoylan/context-optimization",
-      "stars": 15494,
+      "stars": 48607,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     }

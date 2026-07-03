@@ -12,15 +12,21 @@
   "readme": "# brave/suggest\n\nQuery autocomplete suggestions via the Brave Search API",
   "readmeHtml": "<h1>brave/suggest</h1>\n<p>Query autocomplete suggestions via the Brave Search API</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.132Z",
+  "updatedAt": "2026-07-03T11:33:56.373Z",
   "author": {
     "login": "brave",
-    "name": "brave",
-    "avatarUrl": "",
+    "name": "Brave Software",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/12301619?v=4",
     "profileUrl": "https://github.com/brave",
-    "location": ""
+    "location": "San Francisco"
   },
-  "location": null,
+  "location": {
+    "id": "san-francisco",
+    "label": "San Francisco, London, Austin, Lisbon, Singapore",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "github_profile"
+  },
   "related": [
     {
       "slug": "brave-answers",
@@ -80,10 +86,10 @@
     }
   ],
   "mapLocation": {
-    "id": "virtual-bengaluru",
-    "label": "Global Skill Market / Bengaluru / TypeScript Skills",
-    "lat": 12.9716,
-    "lon": 77.5946,
-    "source": "virtual_market"
+    "id": "san-francisco",
+    "label": "San Francisco, London, Austin, Lisbon, Singapore",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "github_profile"
   }
 }

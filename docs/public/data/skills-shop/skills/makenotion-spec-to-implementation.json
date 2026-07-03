@@ -12,15 +12,21 @@
   "readme": "# makenotion/spec-to-implementation\n\nTurn product/tech specs into concrete Notion tasks with acceptance criteria and progress tracking",
   "readmeHtml": "<h1>makenotion/spec-to-implementation</h1>\n<p>Turn product/tech specs into concrete Notion tasks with acceptance criteria and progress tracking</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.151Z",
+  "updatedAt": "2026-07-03T11:33:56.388Z",
   "author": {
     "login": "makenotion",
-    "name": "makenotion",
-    "avatarUrl": "",
+    "name": "Notion",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/4792552?v=4",
     "profileUrl": "https://github.com/makenotion",
-    "location": ""
+    "location": "United States of America"
   },
-  "location": null,
+  "location": {
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
+  },
   "related": [
     {
       "slug": "makenotion-knowledge-capture",
@@ -44,46 +50,46 @@
       "evidence": "author:makenotion"
     },
     {
+      "slug": "coreyhaines31-ab-test-setup",
+      "displayName": "coreyhaines31/ab-test-setup",
+      "stars": 35923,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    },
+    {
+      "slug": "phuryn-ab-test-analysis",
+      "displayName": "phuryn/ab-test-analysis",
+      "stars": 22293,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    },
+    {
       "slug": "deanpeters-acquisition-channel-advisor",
       "displayName": "deanpeters/acquisition-channel-advisor",
-      "stars": 4159,
+      "stars": 5553,
       "relation": "shared_tag",
       "evidence": "TypeScript Skills"
     },
     {
-      "slug": "deanpeters-ai-shaped-readiness-advisor",
-      "displayName": "deanpeters/ai-shaped-readiness-advisor",
-      "stars": 4159,
+      "slug": "realkimbarrett-avatar-extraction",
+      "displayName": "realkimbarrett/avatar-extraction",
+      "stars": 679,
       "relation": "shared_tag",
       "evidence": "TypeScript Skills"
     },
     {
-      "slug": "deanpeters-altitude-horizon-framework",
-      "displayName": "deanpeters/altitude-horizon-framework",
-      "stars": 4159,
-      "relation": "shared_tag",
-      "evidence": "TypeScript Skills"
-    },
-    {
-      "slug": "deanpeters-business-health-diagnostic",
-      "displayName": "deanpeters/business-health-diagnostic",
-      "stars": 4159,
-      "relation": "shared_tag",
-      "evidence": "TypeScript Skills"
-    },
-    {
-      "slug": "deanpeters-company-research",
-      "displayName": "deanpeters/company-research",
-      "stars": 4159,
+      "slug": "resend-resend",
+      "displayName": "resend/resend",
+      "stars": 143,
       "relation": "shared_tag",
       "evidence": "TypeScript Skills"
     }
   ],
   "mapLocation": {
-    "id": "virtual-san-francisco",
-    "label": "Global Skill Market / San Francisco / TypeScript Skills",
-    "lat": 37.7749,
-    "lon": -122.4194,
-    "source": "virtual_market"
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
   }
 }

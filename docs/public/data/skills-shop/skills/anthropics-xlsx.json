@@ -12,23 +12,22 @@
   "readme": "# anthropics/xlsx\n\nCreate, edit, and analyze Excel spreadsheets",
   "readmeHtml": "<h1>anthropics/xlsx</h1>\n<p>Create, edit, and analyze Excel spreadsheets</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.089Z",
+  "updatedAt": "2026-07-03T11:33:56.320Z",
   "author": {
     "login": "anthropics",
-    "name": "anthropics",
-    "avatarUrl": "",
+    "name": "Anthropic",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/76263028?v=4",
     "profileUrl": "https://github.com/anthropics",
-    "location": ""
+    "location": "United States of America"
   },
-  "location": null,
+  "location": {
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
+  },
   "related": [
-    {
-      "slug": "anthropics-claude-plugins-official",
-      "displayName": "anthropics/claude-plugins-official",
-      "stars": 18758,
-      "relation": "source_overlap",
-      "evidence": "author:anthropics"
-    },
     {
       "slug": "anthropics-docx",
       "displayName": "anthropics/docx",
@@ -77,13 +76,20 @@
       "stars": 0,
       "relation": "source_overlap",
       "evidence": "author:anthropics"
+    },
+    {
+      "slug": "anthropics-slack-gif-creator",
+      "displayName": "anthropics/slack-gif-creator",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:anthropics"
     }
   ],
   "mapLocation": {
-    "id": "virtual-singapore",
-    "label": "Global Skill Market / Singapore / Official Skills by",
-    "lat": 1.3521,
-    "lon": 103.8198,
-    "source": "virtual_market"
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
   }
 }

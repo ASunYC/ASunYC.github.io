@@ -5,18 +5,18 @@
   "displayName": "neondatabase/neon-postgres",
   "description": "Best practices for Neon Serverless Postgres",
   "stars": 0,
-  "category": "Skills by Neon",
+  "category": "Official Skills by",
   "source": "voltagent",
   "url": "https://officialskills.sh/neondatabase/skills/neon-postgres",
   "githubRepo": "",
   "readme": "# neondatabase/neon-postgres\n\nBest practices for Neon Serverless Postgres",
   "readmeHtml": "<h1>neondatabase/neon-postgres</h1>\n<p>Best practices for Neon Serverless Postgres</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.092Z",
+  "updatedAt": "2026-07-03T11:33:56.326Z",
   "author": {
     "login": "neondatabase",
     "name": "neondatabase",
-    "avatarUrl": "",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/77690634?v=4",
     "profileUrl": "https://github.com/neondatabase",
     "location": ""
   },
@@ -37,25 +37,53 @@
       "evidence": "author:neondatabase"
     },
     {
-      "slug": "neondatabase-claimable-postgres",
-      "displayName": "neondatabase/claimable-postgres",
-      "stars": 0,
+      "slug": "angular-angular-developer",
+      "displayName": "angular/angular-developer",
+      "stars": 544,
       "relation": "shared_tag",
-      "evidence": "Skills by Neon"
+      "evidence": "Official Skills by"
     },
     {
-      "slug": "neondatabase-neon-postgres-egress-optimizer",
-      "displayName": "neondatabase/neon-postgres-egress-optimizer",
+      "slug": "testmu-ai-api-skill",
+      "displayName": "testmu-ai/api-skill",
+      "stars": 318,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "veniceai-venice-api-overview",
+      "displayName": "veniceai/venice-api-overview",
+      "stars": 105,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "zero-zero",
+      "displayName": "zero/zero",
+      "stars": 14,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "trycourier-courier-skills",
+      "displayName": "trycourier/courier-skills",
+      "stars": 11,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "anthropics-docx",
+      "displayName": "anthropics/docx",
       "stars": 0,
       "relation": "shared_tag",
-      "evidence": "Skills by Neon"
+      "evidence": "Official Skills by"
     }
   ],
   "mapLocation": {
-    "id": "virtual-tokyo",
-    "label": "Global Skill Market / Tokyo / Skills by Neon",
-    "lat": 35.6762,
-    "lon": 139.6503,
+    "id": "virtual-bengaluru",
+    "label": "Global Skill Market / Bengaluru / Official Skills by",
+    "lat": 12.9716,
+    "lon": 77.5946,
     "source": "virtual_market"
   }
 }

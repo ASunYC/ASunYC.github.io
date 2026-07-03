@@ -5,30 +5,23 @@
   "displayName": "googleworkspace/gws-modelarmor",
   "description": "Filter user-generated content for safety",
   "stars": 0,
-  "category": "Skills by Typefully",
+  "category": "Official Skills by",
   "source": "voltagent",
   "url": "https://officialskills.sh/googleworkspace/skills/gws-modelarmor",
   "githubRepo": "",
   "readme": "# googleworkspace/gws-modelarmor\n\nFilter user-generated content for safety",
   "readmeHtml": "<h1>googleworkspace/gws-modelarmor</h1>\n<p>Filter user-generated content for safety</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.102Z",
+  "updatedAt": "2026-07-03T11:33:56.337Z",
   "author": {
     "login": "googleworkspace",
-    "name": "googleworkspace",
-    "avatarUrl": "",
+    "name": "Google Workspace",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/3708359?v=4",
     "profileUrl": "https://github.com/googleworkspace",
-    "location": ""
+    "location": "☁️"
   },
   "location": null,
   "related": [
-    {
-      "slug": "googleworkspace-cli",
-      "displayName": "googleworkspace/cli",
-      "stars": 25868,
-      "relation": "source_overlap",
-      "evidence": "author:googleworkspace"
-    },
     {
       "slug": "googleworkspace-gws-shared",
       "displayName": "googleworkspace/gws-shared",
@@ -77,13 +70,20 @@
       "stars": 0,
       "relation": "source_overlap",
       "evidence": "author:googleworkspace"
+    },
+    {
+      "slug": "googleworkspace-gws-slides",
+      "displayName": "googleworkspace/gws-slides",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:googleworkspace"
     }
   ],
   "mapLocation": {
-    "id": "virtual-san-francisco",
-    "label": "Global Skill Market / San Francisco / Skills by Typefully",
-    "lat": 37.7749,
-    "lon": -122.4194,
+    "id": "virtual-singapore",
+    "label": "Global Skill Market / Singapore / Official Skills by",
+    "lat": 1.3521,
+    "lon": 103.8198,
     "source": "virtual_market"
   }
 }

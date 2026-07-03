@@ -4,77 +4,77 @@
   "name": "platform-design-skills",
   "displayName": "ehmo/platform-design-skills",
   "description": "300+ design rules from Apple HIG, Material Design 3, and WCAG 2.2 for cross-platform apps",
-  "stars": 361,
+  "stars": 411,
   "category": "Community Skills",
   "source": "voltagent",
   "url": "https://github.com/ehmo/platform-design-skills",
   "githubRepo": "ehmo/platform-design-skills",
-  "readme": "# ehmo/platform-design-skills\n\n300+ design rules from Apple HIG, Material Design 3, and WCAG 2.2 for cross-platform apps",
-  "readmeHtml": "<h1>ehmo/platform-design-skills</h1>\n<p>300+ design rules from Apple HIG, Material Design 3, and WCAG 2.2 for cross-platform apps</p>",
+  "readme": "# Platform Design Skills\n\nPlatform design skill pack: 450+ rules for Apple HIG, Material Design 3, and WCAG 2.2 across iOS, iPadOS, macOS, watchOS, visionOS, tvOS, Android, and Web.\n\nBuilt by scraping the [Apple Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines) (a compiled [PDF version](Apple_HIG.pdf) is included in this repo) and distilling it — along with Material Design 3 and WCAG 2.2 — into succinct but exhaustive skill files. Use them to evaluate, improve, or create your designs.\n\n## Available Skills\n\n### ios\n\nApple Human Interface Guidelines for iPhone. 67+ rules covering navigation, layout, accessibility, gestures, and iOS-specific components like tab bars, sheets, and Dynamic Island.\n\n**Use when:**\n- Building SwiftUI or UIKit interfaces for iPhone\n- Reviewing iOS app code for HIG compliance\n- Choosing between iOS navigation patterns\n- Implementing accessibility, Dark Mode, Dynamic Type\n\n### ipados\n\nApple HIG for iPad, covering multitasking, pointer support, sidebar navigation, keyboard shortcuts, and Stage Manager. Extends the iOS skill with iPad-specific patterns.\n\n**Use when:**\n- Building iPad-optimized interfaces\n- Implementing Split View, Slide Over, Stage Manager support\n- Adding pointer/trackpad and keyboard shortcut support\n- Designing responsive layouts for iPad screen sizes\n\n### macos\n\nApple HIG for Mac apps. Covers menu bars, window management, toolbars, keyboard-driven interaction, and the expectations of desktop power users.\n\n**Use when:**\n- Building macOS apps with SwiftUI or AppKit\n- Implementing menu bars, toolbars, and sidebars\n- Adding keyboard shortcuts and window management\n- Designing for Catalyst or native macOS\n\n### watchos\n\nApple HIG for Apple Watch. Covers glanceable interfaces, Digital Crown, complications, Always On display, and wrist-optimized interactions.\n\n**Use when:**\n- Building watchOS apps or complications\n- Designing for small screens and short interactions\n- Implementing health/fitness features on Watch\n\n### visionos\n\nApple HIG for Apple Vision Pro. Covers spatial UI, eye and hand input, windows, volumes, immersive spaces, and ornaments.\n\n**Use when:**\n- Building visionOS apps with RealityKit or SwiftUI\n- Designing for spatial computing and indirect gestures\n- Implementing immersive experiences\n\n### tvos\n\nApple HIG for Apple TV. Covers focus-based navigation, Siri Remote, Top Shelf, and living room viewing distances.\n\n**Use when:**\n- Building tvOS apps\n- Implementing focus-based navigation with Siri Remote\n- Designing for 10-foot viewing experiences\n\n### android\n\nGoogle Material Design 3 guidelines for Android. Covers Material You, dynamic color, navigation patterns, components, and Android-specific patterns.\n\n**Use when:**\n- Building Android apps with Jetpack Compose or XML layouts\n- Reviewing Android code for Material Design compliance\n- Implementing Material You and dynamic color\n- Choosing between Android navigation patterns\n\n### web\n\nWeb platform best practices covering responsive design, accessibility (WCAG), performance, progressive enhancement, and modern CSS/HTML patterns.\n\n**Use when:**\n- Building web interfaces with any framework\n- Auditing sites for accessibility compliance\n- Implementing responsive, performant web layouts\n- Reviewing web UI code for best practices\n\n## Installation\n\n```bash\nnpx skills add ehmo/platform-design-skills\n```\n\n## Contributing (Pull Requests)\n\n- Fork the repository and create a feature branch from the default branch.\n- Keep PRs focused to one theme (one platform, one major design area, or one format rule set).\n- Update affected skill docs in `skills/<platform>/SKILL.md` and keep `metadata.json` entries aligned when behavior changes.\n- If adding or changing rule coverage, ensure:\n  - platform skill descriptions remain accurate,\n  - source signals in the skill files are still correct,\n  - and examples still reflect current platform behavior.\n- In the PR description include:\n  - what changed,\n  - why this matters for AI output quality,\n  - and a short before/after usage sample.\n- Suggested PR title format: `feat: ...`, `fix: ...`, `docs: ...`.\n\nExample PR checklist:\n\n- [ ] Scope matches the PR title\n- [ ] One platform or one rule family per PR\n- [ ] No broken relative links in touched files\n- [ ] AGENTS/skill assumptions still stated clearly\n- [ ] README and skill metadata remain consistent\n\n## Usage\n\nSkills activate automatically when agents detect platform-relevant tasks.\n\n```\nReview this SwiftUI view for iOS HIG compliance\n```\n```\nCheck this Android Compose screen against Material Design\n```\n```\nAudit this web page for accessibility\n```\n\n## Skill Structure\n\nEach skill contains:\n- `SKILL.md` — Agent instructions with frontmatter metadata\n- `metadata.json` — Version, references, and abstract\n- `rules/` — Individual rule files with examples\n- `AGENTS.md` — Quick context for agent consumption\n\n## Sources\n\n### Platform-normative sources\n\n- Apple Human Interface Guidelines (2025) — developer.apple.com/design/human-interface-guidelines\n- Material Design 3 — m3.material.io\n- Web Content Accessibility Guidelines (WCAG) 2.2 — w3.org/WAI/WCAG22/quickref\n- MDN Web Docs — developer.mozilla.org\n\n### Supporting HCI references\n\nThese are secondary references used to sharpen guidance around recognition over recall, visible waiting states, and input effort. They do not override Apple HIG, Material, or WCAG.\n\n- Stuart K. Card, Thomas P. Moran, and Allen Newell, *The Psychology of Human-Computer Interaction* (1983) — https://archive.org/details/psychologyofhuma0000card\n- Allen Newell and Stuart K. Card, *Prospects for Psychological Science in Human-Computer Interaction* (includes Model Human Processor summary and operating principles) — https://iiif.library.cmu.edu/file/Newell_box00042_fld03533_doc0001/Newell_box00042_fld03533_doc0001.pdf\n- Tiffany Jastrzembski and Neil Charness, *The Model Human Processor and the Older Adult: Parameter Estimation and Validation Within a Mobile Phone Task* (2007 / PMC) — https://pmc.ncbi.nlm.nih.gov/articles/PMC4591021/\n- Human Processor Model overview (discovery/reference pointer) — https://en.wikipedia.org/wiki/Human_processor_model\n\n## License\n\nMIT\n",
+  "readmeHtml": "<h1>Platform Design Skills</h1>\n<p>Platform design skill pack: 450+ rules for Apple HIG, Material Design 3, and WCAG 2.2 across iOS, iPadOS, macOS, watchOS, visionOS, tvOS, Android, and Web.</p>\n<p>Built by scraping the <a href=\"https://developer.apple.com/design/human-interface-guidelines\" target=\"_blank\" rel=\"noreferrer\">Apple Human Interface Guidelines</a> (a compiled [PDF version](Apple_HIG.pdf) is included in this repo) and distilling it — along with Material Design 3 and WCAG 2.2 — into succinct but exhaustive skill files. Use them to evaluate, improve, or create your designs.</p>\n<h2>Available Skills</h2>\n<h3>ios</h3>\n<p>Apple Human Interface Guidelines for iPhone. 67+ rules covering navigation, layout, accessibility, gestures, and iOS-specific components like tab bars, sheets, and Dynamic Island.</p>\n<p><strong>Use when:</strong></p>\n<ul>\n<li>Building SwiftUI or UIKit interfaces for iPhone</li>\n<li>Reviewing iOS app code for HIG compliance</li>\n<li>Choosing between iOS navigation patterns</li>\n<li>Implementing accessibility, Dark Mode, Dynamic Type</li>\n</ul>\n<h3>ipados</h3>\n<p>Apple HIG for iPad, covering multitasking, pointer support, sidebar navigation, keyboard shortcuts, and Stage Manager. Extends the iOS skill with iPad-specific patterns.</p>\n<p><strong>Use when:</strong></p>\n<ul>\n<li>Building iPad-optimized interfaces</li>\n<li>Implementing Split View, Slide Over, Stage Manager support</li>\n<li>Adding pointer/trackpad and keyboard shortcut support</li>\n<li>Designing responsive layouts for iPad screen sizes</li>\n</ul>\n<h3>macos</h3>\n<p>Apple HIG for Mac apps. Covers menu bars, window management, toolbars, keyboard-driven interaction, and the expectations of desktop power users.</p>\n<p><strong>Use when:</strong></p>\n<ul>\n<li>Building macOS apps with SwiftUI or AppKit</li>\n<li>Implementing menu bars, toolbars, and sidebars</li>\n<li>Adding keyboard shortcuts and window management</li>\n<li>Designing for Catalyst or native macOS</li>\n</ul>\n<h3>watchos</h3>\n<p>Apple HIG for Apple Watch. Covers glanceable interfaces, Digital Crown, complications, Always On display, and wrist-optimized interactions.</p>\n<p><strong>Use when:</strong></p>\n<ul>\n<li>Building watchOS apps or complications</li>\n<li>Designing for small screens and short interactions</li>\n<li>Implementing health/fitness features on Watch</li>\n</ul>\n<h3>visionos</h3>\n<p>Apple HIG for Apple Vision Pro. Covers spatial UI, eye and hand input, windows, volumes, immersive spaces, and ornaments.</p>\n<p><strong>Use when:</strong></p>\n<ul>\n<li>Building visionOS apps with RealityKit or SwiftUI</li>\n<li>Designing for spatial computing and indirect gestures</li>\n<li>Implementing immersive experiences</li>\n</ul>\n<h3>tvos</h3>\n<p>Apple HIG for Apple TV. Covers focus-based navigation, Siri Remote, Top Shelf, and living room viewing distances.</p>\n<p><strong>Use when:</strong></p>\n<ul>\n<li>Building tvOS apps</li>\n<li>Implementing focus-based navigation with Siri Remote</li>\n<li>Designing for 10-foot viewing experiences</li>\n</ul>\n<h3>android</h3>\n<p>Google Material Design 3 guidelines for Android. Covers Material You, dynamic color, navigation patterns, components, and Android-specific patterns.</p>\n<p><strong>Use when:</strong></p>\n<ul>\n<li>Building Android apps with Jetpack Compose or XML layouts</li>\n<li>Reviewing Android code for Material Design compliance</li>\n<li>Implementing Material You and dynamic color</li>\n<li>Choosing between Android navigation patterns</li>\n</ul>\n<h3>web</h3>\n<p>Web platform best practices covering responsive design, accessibility (WCAG), performance, progressive enhancement, and modern CSS/HTML patterns.</p>\n<p><strong>Use when:</strong></p>\n<ul>\n<li>Building web interfaces with any framework</li>\n<li>Auditing sites for accessibility compliance</li>\n<li>Implementing responsive, performant web layouts</li>\n<li>Reviewing web UI code for best practices</li>\n</ul>\n<h2>Installation</h2>\n<pre><code>\nnpx skills add ehmo/platform-design-skills\n\n</code></pre>\n<h2>Contributing (Pull Requests)</h2>\n<ul>\n<li>Fork the repository and create a feature branch from the default branch.</li>\n<li>Keep PRs focused to one theme (one platform, one major design area, or one format rule set).</li>\n<li>Update affected skill docs in <code>skills/&lt;platform&gt;/SKILL.md</code> and keep <code>metadata.json</code> entries aligned when behavior changes.</li>\n<li>If adding or changing rule coverage, ensure:</li>\n</ul>\n<p>  - platform skill descriptions remain accurate,</p>\n<p>  - source signals in the skill files are still correct,</p>\n<p>  - and examples still reflect current platform behavior.</p>\n<ul>\n<li>In the PR description include:</li>\n</ul>\n<p>  - what changed,</p>\n<p>  - why this matters for AI output quality,</p>\n<p>  - and a short before/after usage sample.</p>\n<ul>\n<li>Suggested PR title format: <code>feat: ...</code>, <code>fix: ...</code>, <code>docs: ...</code>.</li>\n</ul>\n<p>Example PR checklist:</p>\n<ul>\n<li>[ ] Scope matches the PR title</li>\n<li>[ ] One platform or one rule family per PR</li>\n<li>[ ] No broken relative links in touched files</li>\n<li>[ ] AGENTS/skill assumptions still stated clearly</li>\n<li>[ ] README and skill metadata remain consistent</li>\n</ul>\n<h2>Usage</h2>\n<p>Skills activate automatically when agents detect platform-relevant tasks.</p>\n<pre><code>\nReview this SwiftUI view for iOS HIG compliance\n\n</code></pre>\n<pre><code>\nCheck this Android Compose screen against Material Design\n\n</code></pre>\n<pre><code>\nAudit this web page for accessibility\n\n</code></pre>\n<h2>Skill Structure</h2>\n<p>Each skill contains:</p>\n<ul>\n<li><code>SKILL.md</code> — Agent instructions with frontmatter metadata</li>\n<li><code>metadata.json</code> — Version, references, and abstract</li>\n<li><code>rules/</code> — Individual rule files with examples</li>\n<li><code>AGENTS.md</code> — Quick context for agent consumption</li>\n</ul>\n<h2>Sources</h2>\n<h3>Platform-normative sources</h3>\n<ul>\n<li>Apple Human Interface Guidelines (2025) — developer.apple.com/design/human-interface-guidelines</li>\n<li>Material Design 3 — m3.material.io</li>\n<li>Web Content Accessibility Guidelines (WCAG) 2.2 — w3.org/WAI/WCAG22/quickref</li>\n<li>MDN Web Docs — developer.mozilla.org</li>\n</ul>\n<h3>Supporting HCI references</h3>\n<p>These are secondary references used to sharpen guidance around recognition over recall, visible waiting states, and input effort. They do not override Apple HIG, Material, or WCAG.</p>\n<ul>\n<li>Stuart K. Card, Thomas P. Moran, and Allen Newell, *The Psychology of Human-Computer Interaction* (1983) — https://archive.org/details/psychologyofhuma0000card</li>\n<li>Allen Newell and Stuart K. Card, *Prospects for Psychological Science in Human-Computer Interaction* (includes Model Human Processor summary and operating principles) — https://iiif.library.cmu.edu/file/Newell_box00042_fld03533_doc0001/Newell_box00042_fld03533_doc0001.pdf</li>\n<li>Tiffany Jastrzembski and Neil Charness, *The Model Human Processor and the Older Adult: Parameter Estimation and Validation Within a Mobile Phone Task* (2007 / PMC) — https://pmc.ncbi.nlm.nih.gov/articles/PMC4591021/</li>\n<li>Human Processor Model overview (discovery/reference pointer) — https://en.wikipedia.org/wiki/Human_processor_model</li>\n</ul>\n<h2>License</h2>\n<p>MIT</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.048Z",
+  "updatedAt": "2026-03-19T05:13:32Z",
   "author": {
     "login": "ehmo",
-    "name": "ehmo",
-    "avatarUrl": "",
+    "name": "Rasty Turek",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/558128?v=4",
     "profileUrl": "https://github.com/ehmo",
-    "location": ""
+    "location": "San Diego"
   },
   "location": null,
   "related": [
     {
-      "slug": "obra-defense-in-depth",
-      "displayName": "obra/defense-in-depth",
-      "stars": 186953,
+      "slug": "obra-brainstorming",
+      "displayName": "obra/brainstorming",
+      "stars": 245089,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mattpocock-skills",
+      "displayName": "mattpocock/skills",
+      "stars": 155097,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
       "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
-      "stars": 77115,
+      "stars": 100227,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "lum1104-understand-anything",
+      "displayName": "Lum1104/understand-anything",
+      "stars": 70574,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "santifer-career-ops",
+      "displayName": "santifer/career-ops",
+      "stars": 58303,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "leonxlnx-taste-skill",
+      "displayName": "Leonxlnx/taste-skill",
+      "stars": 55314,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "panniantong-agent-reach",
+      "displayName": "Panniantong/Agent-Reach",
+      "stars": 49547,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "mvanhorn-last30days-skill",
       "displayName": "mvanhorn/last30days-skill",
-      "stars": 25573,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "k-dense-ai-claude-scientific-skills",
-      "displayName": "K-Dense-AI/claude-scientific-skills",
-      "stars": 20299,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-fundamentals",
-      "displayName": "muratcankoylan/context-fundamentals",
-      "stars": 15494,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-degradation",
-      "displayName": "muratcankoylan/context-degradation",
-      "stars": 15494,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-compression",
-      "displayName": "muratcankoylan/context-compression",
-      "stars": 15494,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-optimization",
-      "displayName": "muratcankoylan/context-optimization",
-      "stars": 15494,
+      "stars": 48607,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     }

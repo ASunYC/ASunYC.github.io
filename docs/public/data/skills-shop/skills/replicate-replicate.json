@@ -5,28 +5,85 @@
   "displayName": "replicate/replicate",
   "description": "Discover, compare, and run AI models using Replicate's API",
   "stars": 0,
-  "category": "Skills by Replicate",
+  "category": "Official Skills by",
   "source": "voltagent",
   "url": "https://officialskills.sh/replicate/skills/replicate",
   "githubRepo": "",
   "readme": "# replicate/replicate\n\nDiscover, compare, and run AI models using Replicate's API",
   "readmeHtml": "<h1>replicate/replicate</h1>\n<p>Discover, compare, and run AI models using Replicate's API</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.092Z",
+  "updatedAt": "2026-07-03T11:33:56.328Z",
   "author": {
     "login": "replicate",
-    "name": "replicate",
-    "avatarUrl": "",
+    "name": "Replicate",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/60410876?v=4",
     "profileUrl": "https://github.com/replicate",
     "location": ""
   },
   "location": null,
-  "related": [],
+  "related": [
+    {
+      "slug": "angular-angular-developer",
+      "displayName": "angular/angular-developer",
+      "stars": 544,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "testmu-ai-api-skill",
+      "displayName": "testmu-ai/api-skill",
+      "stars": 318,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "veniceai-venice-api-overview",
+      "displayName": "veniceai/venice-api-overview",
+      "stars": 105,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "zero-zero",
+      "displayName": "zero/zero",
+      "stars": 14,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "trycourier-courier-skills",
+      "displayName": "trycourier/courier-skills",
+      "stars": 11,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "anthropics-docx",
+      "displayName": "anthropics/docx",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "anthropics-doc-coauthoring",
+      "displayName": "anthropics/doc-coauthoring",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "anthropics-pptx",
+      "displayName": "anthropics/pptx",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    }
+  ],
   "mapLocation": {
-    "id": "virtual-singapore",
-    "label": "Global Skill Market / Singapore / Skills by Replicate",
-    "lat": 1.3521,
-    "lon": 103.8198,
+    "id": "virtual-berlin",
+    "label": "Global Skill Market / Berlin / Official Skills by",
+    "lat": 52.52,
+    "lon": 13.405,
     "source": "virtual_market"
   }
 }

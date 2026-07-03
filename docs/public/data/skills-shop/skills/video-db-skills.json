@@ -4,86 +4,92 @@
   "name": "skills",
   "displayName": "video-db/skills",
   "description": "Realtime and batch video workflows: capture screen/audio, ingest URLs/YouTube/RTSP, transcribe, index, search, generate subtitles, edit timelines, and stream HLS output",
-  "stars": 79,
+  "stars": 101,
   "category": "Community Skills",
   "source": "voltagent",
   "url": "https://github.com/video-db/skills",
   "githubRepo": "video-db/skills",
-  "readme": "# video-db/skills\n\nRealtime and batch video workflows: capture screen/audio, ingest URLs/YouTube/RTSP, transcribe, index, search, generate subtitles, edit timelines, and stream HLS output",
-  "readmeHtml": "<h1>video-db/skills</h1>\n<p>Realtime and batch video workflows: capture screen/audio, ingest URLs/YouTube/RTSP, transcribe, index, search, generate subtitles, edit timelines, and stream HLS output</p>",
+  "readme": "\n[![License][license-shield]][license-url]\n[![GitHub stars](https://img.shields.io/github/stars/video-db/skills.svg?style=for-the-badge)](https://github.com/video-db/skills/stargazers)\n[![Issues](https://img.shields.io/github/issues/video-db/videodb-python.svg?style=for-the-badge)](https://github.com/video-db/videodb-python/issues)\n[![Website](https://img.shields.io/website?url=https%3A%2F%2Fvideodb.io%2F&style=for-the-badge&label=videodb.io)](https://videodb.io)\n\n<div align=\"center\">\n\n<img width=\"1200\" height=\"372\" alt=\"banner\" src=\"https://github.com/user-attachments/assets/fdbf3879-dcd6-443c-93e0-9a7e1bfdfa90\" />\n\n\n**The only perception skill your agent needs.**\n\nWorks with **Claude Code**, **Cursor**, **Copilot**, and other AI agents\n\n**[📚 Explore the Docs](https://docs.videodb.io)** &emsp; **[ Watch Demos ](https://www.youtube.com/playlist?list=PLhxAMFLSSK01IONxpqtEqj0UUQyFswiaR)**\n\n</div>\n\n\n\n## Why add this Skill\n\nThis skill gives your agent one consistent interface to:\n\n- **See**: Realtime desktop screen, mic and system audio, RTSP streams, ingest files, URLs, YouTube.\n\n- **Understand**: Visual understanding, transcribe, index and search moments with playble clips\n\n- **Act**: Stream results, trigger alerts on live feeds, edit timelines, generate subtitles and overlays, export clips.\n\n\n\n## What it does\n\nVideoDB Skills lets your AI coding agent run end to end, server-side video workflows in real time and batch:\n\n- Capture desktop screen, mic, and system audio for real time processing.\n- Upload and process RTSP streams, videos from YouTube, URLs, and local files.\n- Create realtime context of visual and spoken information. \n- Index and search spoken words and visual scenes anytime.\n- Generate transcripts, subtitles, and AI media.\n- Edit clips, overlays, and exports server side.\n\nReturn playable HLS links for anything you build.\n\n\n## Get Started\n\nGet started in two quick steps. Open your AI coding agent (Requires **Python 3.9+**) and follow along.\n\n\n### Step 1: Install the skill\n\n```bash\nnpx skills add video-db/skills\n```\n\nOr install with Claude Code plugin:\n\n```bash\n/plugin marketplace add video-db/skills\n/plugin install videodb@videodb-skills\n```\n\n### Step 2: Setup\n\n```\n/videodb setup\n```\n\nThe agent will guide setup for your [VideoDB API key](https://console.videodb.io) ($20 free credits, no credit card required), install the SDK, and verify the connection.\n\n\n> For Cursor, Copilot, and other agents, ask your agent to **\"setup videodb\"**\n\nSet your API key using either method:\n\n```bash\n# Recommended: Export in terminal\nexport VIDEO_DB_API_KEY=sk-xxx\n\n# Or add to your project's .env file\nVIDEO_DB_API_KEY=sk-xxx\n```\n\n---\n## Give your agent instructions\n\nAsk your agent to run instructions like these. The skill loads automatically.\n\n- \"Upload https://www.youtube.com/watch?v=MnrJzXM7a6o and give me a sharable stream link\"\n- \"Take clips from 10s-30s and 45s-60s and compile them\"\n- \"Generate a background music, and add to this Clip\"\n- \"Add subtitles to original video with white text on black background\"\n- \"Find every scene showing 'phone close-up' or 'product on screen'\"\n- \"Capture my screen for the next two minutes and write a report of what i'm doing along with any insights or suggestions\"*\n- \"Here is the rtsp link for my IP Camera <rtsp url>, monitor and log the alert to text file along with timestamp whenever a person enters into the room\"\n\n\n---\n\n## Capability\nVideoDB is the server side video stack for agents and apps.\nRun reliable, scalable, cost efficient workflows across realtime streams and batch video, with built in AI understanding, without wiring up ffmpeg glue.\nKeep your client and agent stack light: send video in, get back structured context, searchable moments, and playable streams.\n\n### When to use VideoDB\n- Your app needs video workflows, but you do not want ffmpeg running everywhere\n- You want realtime perception from RTSP feeds or desktop capture\n- You need search by what was said or shown, then turn results into clips\n- You want server side editing, reframing, subtitles, dubbing, and streaming links\n\n| Capability              | What it unlocks                                                               |\n| ----------------------- | ----------------------------------------------------------------------------- |\n| **Capture**             | Capture desktop screen, mic, and system audio for realtime processing         |\n| **Upload**              | Ingest video from YouTube, URLs, or local files                               |\n| **Context**             | Generate realtime structured context for any RTSP feed or desktop stream      |\n| **Search**              | Find exact moments by speech, scenes, or metadata, return playable evidence   |\n| **Transcripts**         | Generate clean, timestamped transcripts from any video                        |\n| **Subtitles**           | Auto generate subtitles, then style and burn in or export                     |\n| **Edit**                | Trim, merge, clip, overlay text, images, audio, plus dubbing and translation  |\n| **AI Generate**         | Create images, video, music, sound effects, and voiceovers from text          |\n| **Transcode / Reframe** | Change resolution, quality, aspect ratio, and social crops, all on the server |\n| **Stream**              | Get instant playable HLS links (built in CDN) for anything you ingest or generate.             |\n\n\n### The idea in one line\nSee → Understand → Act, as an API, for video and audio.\n\n**Supported Platforms:** macOS, Linux, Windows (PowerShell)\n\n---\n\n## Community & Support\n\n- **Documentation:** [docs.videodb.io](https://docs.videodb.io)\n- **Discord:** [Join our community](https://discord.com/invite/py9P639jGz)\n\n<div align=\"center\">\n\nMade with ❤️ by the VideoDB team\n\n</div>\n\n[license-shield]: https://img.shields.io/github/license/video-db/skills.svg?style=for-the-badge\n[license-url]: https://github.com/video-db/skills/blob/main/LICENSE\n",
+  "readmeHtml": "<p>[![License][license-shield]][license-url]</p>\n<p><a href=\"https://img.shields.io/github/stars/video-db/skills.svg?style=for-the-badge\" target=\"_blank\" rel=\"noreferrer\">![GitHub stars</a>](https://github.com/video-db/skills/stargazers)</p>\n<p><a href=\"https://img.shields.io/github/issues/video-db/videodb-python.svg?style=for-the-badge\" target=\"_blank\" rel=\"noreferrer\">![Issues</a>](https://github.com/video-db/videodb-python/issues)</p>\n<p><a href=\"https://img.shields.io/website?url=https%3A%2F%2Fvideodb.io%2F&amp;style=for-the-badge&amp;label=videodb.io\" target=\"_blank\" rel=\"noreferrer\">![Website</a>](https://videodb.io)</p>\n<p>&lt;div align=\"center\"&gt;</p>\n<p>&lt;img width=\"1200\" height=\"372\" alt=\"banner\" src=\"https://github.com/user-attachments/assets/fdbf3879-dcd6-443c-93e0-9a7e1bfdfa90\" /&gt;</p>\n<p><strong>The only perception skill your agent needs.</strong></p>\n<p>Works with <strong>Claude Code</strong>, <strong>Cursor</strong>, <strong>Copilot</strong>, and other AI agents</p>\n<p><strong><a href=\"https://docs.videodb.io\" target=\"_blank\" rel=\"noreferrer\">📚 Explore the Docs</a></strong> &amp;emsp; <strong><a href=\"https://www.youtube.com/playlist?list=PLhxAMFLSSK01IONxpqtEqj0UUQyFswiaR\" target=\"_blank\" rel=\"noreferrer\"> Watch Demos </a></strong></p>\n<p>&lt;/div&gt;</p>\n<h2>Why add this Skill</h2>\n<p>This skill gives your agent one consistent interface to:</p>\n<ul>\n<li><strong>See</strong>: Realtime desktop screen, mic and system audio, RTSP streams, ingest files, URLs, YouTube.</li>\n</ul>\n<ul>\n<li><strong>Understand</strong>: Visual understanding, transcribe, index and search moments with playble clips</li>\n</ul>\n<ul>\n<li><strong>Act</strong>: Stream results, trigger alerts on live feeds, edit timelines, generate subtitles and overlays, export clips.</li>\n</ul>\n<h2>What it does</h2>\n<p>VideoDB Skills lets your AI coding agent run end to end, server-side video workflows in real time and batch:</p>\n<ul>\n<li>Capture desktop screen, mic, and system audio for real time processing.</li>\n<li>Upload and process RTSP streams, videos from YouTube, URLs, and local files.</li>\n<li>Create realtime context of visual and spoken information. </li>\n<li>Index and search spoken words and visual scenes anytime.</li>\n<li>Generate transcripts, subtitles, and AI media.</li>\n<li>Edit clips, overlays, and exports server side.</li>\n</ul>\n<p>Return playable HLS links for anything you build.</p>\n<h2>Get Started</h2>\n<p>Get started in two quick steps. Open your AI coding agent (Requires <strong>Python 3.9+</strong>) and follow along.</p>\n<h3>Step 1: Install the skill</h3>\n<pre><code>\nnpx skills add video-db/skills\n\n</code></pre>\n<p>Or install with Claude Code plugin:</p>\n<pre><code>\n/plugin marketplace add video-db/skills\n\n/plugin install videodb@videodb-skills\n\n</code></pre>\n<h3>Step 2: Setup</h3>\n<pre><code>\n/videodb setup\n\n</code></pre>\n<p>The agent will guide setup for your <a href=\"https://console.videodb.io\" target=\"_blank\" rel=\"noreferrer\">VideoDB API key</a> ($20 free credits, no credit card required), install the SDK, and verify the connection.</p>\n<p>&gt; For Cursor, Copilot, and other agents, ask your agent to <strong>\"setup videodb\"</strong></p>\n<p>Set your API key using either method:</p>\n<pre><code>\n# Recommended: Export in terminal\n\nexport VIDEO_DB_API_KEY=sk-xxx\n\n\n\n# Or add to your project's .env file\n\nVIDEO_DB_API_KEY=sk-xxx\n\n</code></pre>\n<p>---</p>\n<h2>Give your agent instructions</h2>\n<p>Ask your agent to run instructions like these. The skill loads automatically.</p>\n<ul>\n<li>\"Upload https://www.youtube.com/watch?v=MnrJzXM7a6o and give me a sharable stream link\"</li>\n<li>\"Take clips from 10s-30s and 45s-60s and compile them\"</li>\n<li>\"Generate a background music, and add to this Clip\"</li>\n<li>\"Add subtitles to original video with white text on black background\"</li>\n<li>\"Find every scene showing 'phone close-up' or 'product on screen'\"</li>\n<li>\"Capture my screen for the next two minutes and write a report of what i'm doing along with any insights or suggestions\"*</li>\n<li>\"Here is the rtsp link for my IP Camera &lt;rtsp url&gt;, monitor and log the alert to text file along with timestamp whenever a person enters into the room\"</li>\n</ul>\n<p>---</p>\n<h2>Capability</h2>\n<p>VideoDB is the server side video stack for agents and apps.</p>\n<p>Run reliable, scalable, cost efficient workflows across realtime streams and batch video, with built in AI understanding, without wiring up ffmpeg glue.</p>\n<p>Keep your client and agent stack light: send video in, get back structured context, searchable moments, and playable streams.</p>\n<h3>When to use VideoDB</h3>\n<ul>\n<li>Your app needs video workflows, but you do not want ffmpeg running everywhere</li>\n<li>You want realtime perception from RTSP feeds or desktop capture</li>\n<li>You need search by what was said or shown, then turn results into clips</li>\n<li>You want server side editing, reframing, subtitles, dubbing, and streaming links</li>\n</ul>\n<p>| Capability              | What it unlocks                                                               |</p>\n<p>| ----------------------- | ----------------------------------------------------------------------------- |</p>\n<p>| <strong>Capture</strong>             | Capture desktop screen, mic, and system audio for realtime processing         |</p>\n<p>| <strong>Upload</strong>              | Ingest video from YouTube, URLs, or local files                               |</p>\n<p>| <strong>Context</strong>             | Generate realtime structured context for any RTSP feed or desktop stream      |</p>\n<p>| <strong>Search</strong>              | Find exact moments by speech, scenes, or metadata, return playable evidence   |</p>\n<p>| <strong>Transcripts</strong>         | Generate clean, timestamped transcripts from any video                        |</p>\n<p>| <strong>Subtitles</strong>           | Auto generate subtitles, then style and burn in or export                     |</p>\n<p>| <strong>Edit</strong>                | Trim, merge, clip, overlay text, images, audio, plus dubbing and translation  |</p>\n<p>| <strong>AI Generate</strong>         | Create images, video, music, sound effects, and voiceovers from text          |</p>\n<p>| <strong>Transcode / Reframe</strong> | Change resolution, quality, aspect ratio, and social crops, all on the server |</p>\n<p>| <strong>Stream</strong>              | Get instant playable HLS links (built in CDN) for anything you ingest or generate.             |</p>\n<h3>The idea in one line</h3>\n<p>See → Understand → Act, as an API, for video and audio.</p>\n<p><strong>Supported Platforms:</strong> macOS, Linux, Windows (PowerShell)</p>\n<p>---</p>\n<h2>Community &amp; Support</h2>\n<ul>\n<li><strong>Documentation:</strong> <a href=\"https://docs.videodb.io\" target=\"_blank\" rel=\"noreferrer\">docs.videodb.io</a></li>\n<li><strong>Discord:</strong> <a href=\"https://discord.com/invite/py9P639jGz\" target=\"_blank\" rel=\"noreferrer\">Join our community</a></li>\n</ul>\n<p>&lt;div align=\"center\"&gt;</p>\n<p>Made with ❤️ by the VideoDB team</p>\n<p>&lt;/div&gt;</p>\n<p>[license-shield]: https://img.shields.io/github/license/video-db/skills.svg?style=for-the-badge</p>\n<p>[license-url]: https://github.com/video-db/skills/blob/main/LICENSE</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.051Z",
+  "updatedAt": "2026-05-12T07:46:43Z",
   "author": {
     "login": "video-db",
-    "name": "video-db",
-    "avatarUrl": "",
+    "name": "VideoDB",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/153916972?v=4",
     "profileUrl": "https://github.com/video-db",
-    "location": ""
+    "location": "United States of America"
   },
-  "location": null,
+  "location": {
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
+  },
   "related": [
     {
-      "slug": "obra-defense-in-depth",
-      "displayName": "obra/defense-in-depth",
-      "stars": 186953,
+      "slug": "obra-brainstorming",
+      "displayName": "obra/brainstorming",
+      "stars": 245089,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mattpocock-skills",
+      "displayName": "mattpocock/skills",
+      "stars": 155097,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
       "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
-      "stars": 77115,
+      "stars": 100227,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "lum1104-understand-anything",
+      "displayName": "Lum1104/understand-anything",
+      "stars": 70574,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "santifer-career-ops",
+      "displayName": "santifer/career-ops",
+      "stars": 58303,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "leonxlnx-taste-skill",
+      "displayName": "Leonxlnx/taste-skill",
+      "stars": 55314,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "panniantong-agent-reach",
+      "displayName": "Panniantong/Agent-Reach",
+      "stars": 49547,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "mvanhorn-last30days-skill",
       "displayName": "mvanhorn/last30days-skill",
-      "stars": 25573,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "k-dense-ai-claude-scientific-skills",
-      "displayName": "K-Dense-AI/claude-scientific-skills",
-      "stars": 20299,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-fundamentals",
-      "displayName": "muratcankoylan/context-fundamentals",
-      "stars": 15494,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-degradation",
-      "displayName": "muratcankoylan/context-degradation",
-      "stars": 15494,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-compression",
-      "displayName": "muratcankoylan/context-compression",
-      "stars": 15494,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-optimization",
-      "displayName": "muratcankoylan/context-optimization",
-      "stars": 15494,
+      "stars": 48607,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     }
   ],
   "mapLocation": {
-    "id": "virtual-sao-paulo",
-    "label": "Global Skill Market / Sao Paulo / Community Skills",
-    "lat": -23.5558,
-    "lon": -46.6396,
-    "source": "virtual_market"
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
   }
 }

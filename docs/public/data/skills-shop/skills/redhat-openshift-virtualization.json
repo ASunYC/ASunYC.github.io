@@ -1,0 +1,89 @@
+{
+  "id": "skill:redhat-openshift-virtualization",
+  "slug": "redhat-openshift-virtualization",
+  "name": "openshift-virtualization",
+  "displayName": "redhat/openshift-virtualization",
+  "description": "Manage the full VM lifecycle on OpenShift Virtualization — create, clone, snapshot, restore, rebalance, and report — through a single conversational workflow.",
+  "stars": 0,
+  "category": "video-search-and-summarization",
+  "source": "voltagent",
+  "url": "https://catalog.redhat.com/en/ai/skills/detail/agentic-skill-pack-for-red-hat-openshift-virtualization",
+  "githubRepo": "",
+  "readme": "# redhat/openshift-virtualization\n\nManage the full VM lifecycle on OpenShift Virtualization — create, clone, snapshot, restore, rebalance, and report — through a single conversational workflow.",
+  "readmeHtml": "<h1>redhat/openshift-virtualization</h1>\n<p>Manage the full VM lifecycle on OpenShift Virtualization — create, clone, snapshot, restore, rebalance, and report — through a single conversational workflow.</p>",
+  "skillMd": "",
+  "updatedAt": "2026-07-03T11:33:56.389Z",
+  "author": {
+    "login": "redhat",
+    "name": "redhat",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/391346?v=4",
+    "profileUrl": "https://github.com/redhat",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "redhat-cve-skillpack",
+      "displayName": "redhat/cve-skillpack",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:redhat"
+    },
+    {
+      "slug": "redhat-sre-skillpack",
+      "displayName": "redhat/sre-skillpack",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:redhat"
+    },
+    {
+      "slug": "redhat-openshift-skillpack",
+      "displayName": "redhat/openshift-skillpack",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:redhat"
+    },
+    {
+      "slug": "google-cloud-agent-platform-skill-registry",
+      "displayName": "google/cloud/agent-platform-skill-registry",
+      "stars": 14368,
+      "relation": "shared_tag",
+      "evidence": "video-search-and-summarization"
+    },
+    {
+      "slug": "cypress-io-cypress-author",
+      "displayName": "cypress-io/cypress-author",
+      "stars": 34,
+      "relation": "shared_tag",
+      "evidence": "video-search-and-summarization"
+    },
+    {
+      "slug": "redhat-cve-skillpack",
+      "displayName": "redhat/cve-skillpack",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "video-search-and-summarization"
+    },
+    {
+      "slug": "redhat-sre-skillpack",
+      "displayName": "redhat/sre-skillpack",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "video-search-and-summarization"
+    },
+    {
+      "slug": "redhat-openshift-skillpack",
+      "displayName": "redhat/openshift-skillpack",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "video-search-and-summarization"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-bengaluru",
+    "label": "Global Skill Market / Bengaluru / video-search-and-summarization",
+    "lat": 12.9716,
+    "lon": 77.5946,
+    "source": "virtual_market"
+  }
+}

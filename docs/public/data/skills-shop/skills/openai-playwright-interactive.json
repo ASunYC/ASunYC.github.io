@@ -12,22 +12,22 @@
   "readme": "# openai/playwright-interactive\n\nPersistent browser and Electron interaction via js_repl for iterative UI debugging",
   "readmeHtml": "<h1>openai/playwright-interactive</h1>\n<p>Persistent browser and Electron interaction via js_repl for iterative UI debugging</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.126Z",
+  "updatedAt": "2026-07-03T11:33:56.364Z",
   "author": {
     "login": "openai",
-    "name": "openai",
-    "avatarUrl": "",
+    "name": "OpenAI",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/14957082?v=4",
     "profileUrl": "https://github.com/openai",
     "location": ""
   },
   "location": null,
   "related": [
     {
-      "slug": "openai-skills",
-      "displayName": "openai/skills",
-      "stars": 18508,
-      "relation": "source_overlap",
-      "evidence": "author:openai"
+      "slug": "combo-frontend-production-review",
+      "displayName": "Frontend Production Review",
+      "stars": 0,
+      "relation": "combo_component",
+      "evidence": "Frontend Production Review includes openai/playwright-interactive"
     },
     {
       "slug": "openai-cloudflare-deploy",

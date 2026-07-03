@@ -12,23 +12,22 @@
   "readme": "# browserbase/fetch\n\nFetch HTML, JSON, headers, and status codes through the Browserbase API",
   "readmeHtml": "<h1>browserbase/fetch</h1>\n<p>Fetch HTML, JSON, headers, and status codes through the Browserbase API</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.132Z",
+  "updatedAt": "2026-07-03T11:33:56.373Z",
   "author": {
     "login": "browserbase",
     "name": "browserbase",
-    "avatarUrl": "",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/158221360?v=4",
     "profileUrl": "https://github.com/browserbase",
-    "location": ""
+    "location": "United States of America"
   },
-  "location": null,
+  "location": {
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
+  },
   "related": [
-    {
-      "slug": "browserbase-skills",
-      "displayName": "browserbase/skills",
-      "stars": 2581,
-      "relation": "source_overlap",
-      "evidence": "author:browserbase"
-    },
     {
       "slug": "browserbase-browser",
       "displayName": "browserbase/browser",
@@ -72,18 +71,25 @@
       "evidence": "author:browserbase"
     },
     {
-      "slug": "deanpeters-acquisition-channel-advisor",
-      "displayName": "deanpeters/acquisition-channel-advisor",
-      "stars": 4159,
+      "slug": "coreyhaines31-ab-test-setup",
+      "displayName": "coreyhaines31/ab-test-setup",
+      "stars": 35923,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    },
+    {
+      "slug": "phuryn-ab-test-analysis",
+      "displayName": "phuryn/ab-test-analysis",
+      "stars": 22293,
       "relation": "shared_tag",
       "evidence": "TypeScript Skills"
     }
   ],
   "mapLocation": {
-    "id": "virtual-paris",
-    "label": "Global Skill Market / Paris / TypeScript Skills",
-    "lat": 48.8566,
-    "lon": 2.3522,
-    "source": "virtual_market"
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
   }
 }

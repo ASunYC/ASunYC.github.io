@@ -12,15 +12,21 @@
   "readme": "# auth0/auth0-angular\n\nAdd authentication to Angular apps using @auth0/auth0-angular",
   "readmeHtml": "<h1>auth0/auth0-angular</h1>\n<p>Add authentication to Angular apps using @auth0/auth0-angular</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.131Z",
+  "updatedAt": "2026-07-03T11:33:56.371Z",
   "author": {
     "login": "auth0",
-    "name": "auth0",
-    "avatarUrl": "",
+    "name": "Auth0",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/2824157?v=4",
     "profileUrl": "https://github.com/auth0",
-    "location": ""
+    "location": "Seattle"
   },
-  "location": null,
+  "location": {
+    "id": "seattle",
+    "label": "Seattle",
+    "lat": 47.6062,
+    "lon": -122.3321,
+    "source": "github_profile"
+  },
   "related": [
     {
       "slug": "auth0-auth0-android",
@@ -80,10 +86,10 @@
     }
   ],
   "mapLocation": {
-    "id": "virtual-sao-paulo",
-    "label": "Global Skill Market / Sao Paulo / TypeScript Skills",
-    "lat": -23.5558,
-    "lon": -46.6396,
-    "source": "virtual_market"
+    "id": "seattle",
+    "label": "Seattle",
+    "lat": 47.6062,
+    "lon": -122.3321,
+    "source": "github_profile"
   }
 }

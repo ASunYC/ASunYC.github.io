@@ -5,30 +5,29 @@
   "displayName": "trailofbits/claude-in-chrome-troubleshooting",
   "description": "Diagnose and fix Claude in Chrome MCP extension connectivity issues",
   "stars": 0,
-  "category": "Skills by Typefully",
+  "category": "Official Skills by",
   "source": "voltagent",
   "url": "https://officialskills.sh/trailofbits/skills/claude-in-chrome-troubleshooting",
   "githubRepo": "",
   "readme": "# trailofbits/claude-in-chrome-troubleshooting\n\nDiagnose and fix Claude in Chrome MCP extension connectivity issues",
   "readmeHtml": "<h1>trailofbits/claude-in-chrome-troubleshooting</h1>\n<p>Diagnose and fix Claude in Chrome MCP extension connectivity issues</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.104Z",
+  "updatedAt": "2026-07-03T11:33:56.340Z",
   "author": {
     "login": "trailofbits",
-    "name": "trailofbits",
-    "avatarUrl": "",
+    "name": "Trail of Bits",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/2314423?v=4",
     "profileUrl": "https://github.com/trailofbits",
-    "location": ""
+    "location": "New York, New York"
   },
-  "location": null,
+  "location": {
+    "id": "new-york",
+    "label": "New York",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "source": "github_profile"
+  },
   "related": [
-    {
-      "slug": "trailofbits-skills",
-      "displayName": "trailofbits/skills",
-      "stars": 5043,
-      "relation": "source_overlap",
-      "evidence": "author:trailofbits"
-    },
     {
       "slug": "trailofbits-ask-questions-if-underspecified",
       "displayName": "trailofbits/ask-questions-if-underspecified",
@@ -77,13 +76,20 @@
       "stars": 0,
       "relation": "source_overlap",
       "evidence": "author:trailofbits"
+    },
+    {
+      "slug": "trailofbits-dwarf-expert",
+      "displayName": "trailofbits/dwarf-expert",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:trailofbits"
     }
   ],
   "mapLocation": {
-    "id": "virtual-san-francisco",
-    "label": "Global Skill Market / San Francisco / Skills by Typefully",
-    "lat": 37.7749,
-    "lon": -122.4194,
-    "source": "virtual_market"
+    "id": "new-york",
+    "label": "New York",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "source": "github_profile"
   }
 }

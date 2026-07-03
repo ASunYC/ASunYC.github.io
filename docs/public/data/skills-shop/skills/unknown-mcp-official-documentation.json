@@ -12,15 +12,21 @@
   "readme": "# unknown/mcp-official-documentation\n\nThe open standard",
   "readmeHtml": "<h1>unknown/mcp-official-documentation</h1>\n<p>The open standard</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.157Z",
+  "updatedAt": "2026-07-03T11:33:56.392Z",
   "author": {
     "login": "unknown",
-    "name": "unknown",
-    "avatarUrl": "",
+    "name": "David Mo",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/44306450?v=4",
     "profileUrl": "https://github.com/unknown",
-    "location": ""
+    "location": "New York"
   },
-  "location": null,
+  "location": {
+    "id": "new-york",
+    "label": "New York",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "source": "github_profile"
+  },
   "related": [
     {
       "slug": "unknown-using-skills-in-claude",
@@ -60,7 +66,7 @@
     {
       "slug": "modelcontextprotocol-servers",
       "displayName": "modelcontextprotocol/servers",
-      "stars": 85195,
+      "stars": 88015,
       "relation": "shared_tag",
       "evidence": "Model Context Protocol (MCP)"
     },
@@ -70,13 +76,20 @@
       "stars": 0,
       "relation": "shared_tag",
       "evidence": "Model Context Protocol (MCP)"
+    },
+    {
+      "slug": "takechanman1228-claude-ecom",
+      "displayName": "takechanman1228/claude-ecom",
+      "stars": 39,
+      "relation": "shared_tag",
+      "evidence": "location:new-york"
     }
   ],
   "mapLocation": {
-    "id": "virtual-shanghai",
-    "label": "Global Skill Market / Shanghai / Model Context Protocol (MCP)",
-    "lat": 31.2304,
-    "lon": 121.4737,
-    "source": "virtual_market"
+    "id": "new-york",
+    "label": "New York",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "source": "github_profile"
   }
 }

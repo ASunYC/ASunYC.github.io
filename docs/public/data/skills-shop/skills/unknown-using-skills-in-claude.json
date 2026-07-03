@@ -12,15 +12,21 @@
   "readme": "# unknown/using-skills-in-claude\n\nOfficial quick start guide",
   "readmeHtml": "<h1>unknown/using-skills-in-claude</h1>\n<p>Official quick start guide</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.156Z",
+  "updatedAt": "2026-07-03T11:33:56.392Z",
   "author": {
     "login": "unknown",
-    "name": "unknown",
-    "avatarUrl": "",
+    "name": "David Mo",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/44306450?v=4",
     "profileUrl": "https://github.com/unknown",
-    "location": ""
+    "location": "New York"
   },
-  "location": null,
+  "location": {
+    "id": "new-york",
+    "label": "New York",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "source": "github_profile"
+  },
   "related": [
     {
       "slug": "unknown-how-to-create-custom-skills",
@@ -70,13 +76,20 @@
       "stars": 0,
       "relation": "shared_tag",
       "evidence": "Claude and Anthropic"
+    },
+    {
+      "slug": "takechanman1228-claude-ecom",
+      "displayName": "takechanman1228/claude-ecom",
+      "stars": 39,
+      "relation": "shared_tag",
+      "evidence": "location:new-york"
     }
   ],
   "mapLocation": {
-    "id": "virtual-sydney",
-    "label": "Global Skill Market / Sydney / Claude and Anthropic",
-    "lat": -33.8688,
-    "lon": 151.2093,
-    "source": "virtual_market"
+    "id": "new-york",
+    "label": "New York",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "source": "github_profile"
   }
 }

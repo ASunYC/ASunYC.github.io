@@ -5,28 +5,85 @@
   "displayName": "remotion-dev/remotion",
   "description": "Programmatic video creation with React",
   "stars": 0,
-  "category": "Skills by Remotion",
+  "category": "Official Skills by",
   "source": "voltagent",
   "url": "https://officialskills.sh/remotion-dev/skills/remotion",
   "githubRepo": "",
   "readme": "# remotion-dev/remotion\n\nProgrammatic video creation with React",
   "readmeHtml": "<h1>remotion-dev/remotion</h1>\n<p>Programmatic video creation with React</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.092Z",
+  "updatedAt": "2026-07-03T11:33:56.327Z",
   "author": {
     "login": "remotion-dev",
-    "name": "remotion-dev",
-    "avatarUrl": "",
+    "name": "Remotion",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/85344006?v=4",
     "profileUrl": "https://github.com/remotion-dev",
     "location": ""
   },
   "location": null,
-  "related": [],
+  "related": [
+    {
+      "slug": "angular-angular-developer",
+      "displayName": "angular/angular-developer",
+      "stars": 544,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "testmu-ai-api-skill",
+      "displayName": "testmu-ai/api-skill",
+      "stars": 318,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "veniceai-venice-api-overview",
+      "displayName": "veniceai/venice-api-overview",
+      "stars": 105,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "zero-zero",
+      "displayName": "zero/zero",
+      "stars": 14,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "trycourier-courier-skills",
+      "displayName": "trycourier/courier-skills",
+      "stars": 11,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "anthropics-docx",
+      "displayName": "anthropics/docx",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "anthropics-doc-coauthoring",
+      "displayName": "anthropics/doc-coauthoring",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "anthropics-pptx",
+      "displayName": "anthropics/pptx",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    }
+  ],
   "mapLocation": {
-    "id": "virtual-london",
-    "label": "Global Skill Market / London / Skills by Remotion",
-    "lat": 51.5072,
-    "lon": -0.1276,
+    "id": "virtual-singapore",
+    "label": "Global Skill Market / Singapore / Official Skills by",
+    "lat": 1.3521,
+    "lon": 103.8198,
     "source": "virtual_market"
   }
 }

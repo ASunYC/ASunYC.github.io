@@ -1,0 +1,68 @@
+{
+  "id": "skill:prog-le-penetration-team",
+  "slug": "prog-le-penetration-team",
+  "name": "penetration-team",
+  "displayName": "prog-le/penetration-team",
+  "description": "The Four Wanderers' Secret Penetration Manual. For authorized security testing only — four virtual specialists covering different attack surfaces, working together within sanctioned scope.",
+  "stars": 3,
+  "category": "EverythingSkill / Tool",
+  "source": "everythingskill",
+  "url": "https://github.com/prog-le/penetration-team",
+  "githubRepo": "prog-le/penetration-team",
+  "readme": "# The-Arcane-Scroll-Odyssey-of-the-Four-Peerless-Rogues\n# 江湖渗透密卷・四绝客行 (penetration-team agent)\n## 江湖规令 / 法纪昭告 本密卷所载之术，仅适用于已获目标宗门明确手谕授权的勘防试炼。未得授权擅闯他宗山门、探窥机密者，皆属江湖禁律所不容，轻则废功逐流，重则按律论罪。行事前务必核验授权手谕，恪守江湖规矩与当朝律法。\n",
+  "readmeHtml": "<h1>The-Arcane-Scroll-Odyssey-of-the-Four-Peerless-Rogues</h1>\n<h1>江湖渗透密卷・四绝客行 (penetration-team agent)</h1>\n<h2>江湖规令 / 法纪昭告 本密卷所载之术，仅适用于已获目标宗门明确手谕授权的勘防试炼。未得授权擅闯他宗山门、探窥机密者，皆属江湖禁律所不容，轻则废功逐流，重则按律论罪。行事前务必核验授权手谕，恪守江湖规矩与当朝律法。</h2>",
+  "skillMd": "",
+  "updatedAt": "2026-04-08",
+  "author": {
+    "login": "prog-le",
+    "name": "Prog-le",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/201166943?v=4",
+    "profileUrl": "https://github.com/prog-le",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "alchaincyf-nuwa-skill",
+      "displayName": "alchaincyf/nuwa-skill",
+      "stars": 26697,
+      "relation": "shared_tag",
+      "evidence": "EverythingSkill / Tool"
+    },
+    {
+      "slug": "hughyau-qiushi-skill",
+      "displayName": "HughYau/qiushi-skill",
+      "stars": 3317,
+      "relation": "shared_tag",
+      "evidence": "EverythingSkill / Tool"
+    },
+    {
+      "slug": "yikuaibanzi-forge-skill",
+      "displayName": "YIKUAIBANZI/forge-skill",
+      "stars": 97,
+      "relation": "shared_tag",
+      "evidence": "EverythingSkill / Tool"
+    },
+    {
+      "slug": "binggandata-bggg-skill-taotie",
+      "displayName": "binggandata/bggg-skill-taotie",
+      "stars": 79,
+      "relation": "shared_tag",
+      "evidence": "EverythingSkill / Tool"
+    },
+    {
+      "slug": "schlaflied-roast-cold-email-skill",
+      "displayName": "Schlaflied/roast-cold-email-skill",
+      "stars": 4,
+      "relation": "shared_tag",
+      "evidence": "EverythingSkill / Tool"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-san-francisco",
+    "label": "Global Skill Market / San Francisco / EverythingSkill / Tool",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "virtual_market"
+  }
+}

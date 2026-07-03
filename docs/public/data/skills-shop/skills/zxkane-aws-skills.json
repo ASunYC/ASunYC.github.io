@@ -4,77 +4,77 @@
   "name": "aws-skills",
   "displayName": "zxkane/aws-skills",
   "description": "AWS development with infrastructure automation and cloud architecture patterns",
-  "stars": 277,
+  "stars": 326,
   "category": "Community Skills",
   "source": "voltagent",
   "url": "https://github.com/zxkane/aws-skills",
   "githubRepo": "zxkane/aws-skills",
-  "readme": "# zxkane/aws-skills\n\nAWS development with infrastructure automation and cloud architecture patterns",
-  "readmeHtml": "<h1>zxkane/aws-skills</h1>\n<p>AWS development with infrastructure automation and cloud architecture patterns</p>",
+  "readme": "# AWS Skills for Claude Code\n\nClaude Code plugins for AWS development with specialized knowledge and MCP server integrations, including CDK, serverless architecture, cost optimization, and Bedrock AgentCore for AI agent deployment.\n\n## Plugins\n\n### 0. AWS Common Plugin (Dependency)\n\nShared AWS agent skills including AWS Documentation MCP configuration for querying up-to-date AWS knowledge.\n\n**Features**:\n- AWS MCP server configuration guide\n- Documentation MCP setup for querying AWS knowledge\n- Shared by all other AWS plugins as a dependency\n\n**Note**: This plugin is automatically loaded as a dependency by other plugins. Install it first if installing plugins individually.\n\n### 1. AWS CDK Plugin\n\nAWS CDK development skill with integrated MCP server for infrastructure as code.\n\n**Features**:\n- AWS CDK best practices and patterns\n- Pre-deployment validation script\n- Comprehensive CDK patterns reference\n\n**Integrated MCP Server**:\n- AWS CDK MCP (stdio)\n\n### 2. AWS Cost & Operations Plugin\n\nCost optimization, monitoring, and operational excellence with 3 integrated MCP servers.\n\n**Features**:\n- Cost estimation and optimization\n- Monitoring and observability patterns\n- Operational best practices\n\n**Integrated MCP Servers**:\n- AWS Pricing\n- AWS Cost Explorer\n- Amazon CloudWatch\n\n### 3. AWS Serverless & Event-Driven Architecture Plugin\n\nServerless and event-driven architecture patterns based on Well-Architected Framework.\n\n**Features**:\n- Well-Architected serverless design principles\n- Event-driven architecture patterns\n- Orchestration with Step Functions\n- Saga patterns for distributed transactions\n- Event sourcing patterns\n\n### 4. AWS Agentic AI Plugin\n\nAWS Bedrock AgentCore comprehensive expert for deploying and managing AI agents.\n\n**Features**:\n- Gateway service for converting REST APIs to MCP tools\n- Runtime service for deploying and scaling agents\n- Memory service for managing conversation state\n- Identity service for credential and access management\n- Code Interpreter for secure code execution\n- Browser service for web automation\n- Observability for tracing and monitoring\n\n## Installation\n\n### Option 1: Claude Code Plugin Marketplace\n\nAdd the marketplace to Claude Code:\n\n```bash\n/plugin marketplace add zxkane/aws-skills\n```\n\nInstall plugins individually:\n\n```bash\n# Install the common dependency first\n/plugin install aws-common@aws-skills\n\n# Then install the plugins you need\n/plugin install aws-iac@aws-skills\n/plugin install aws-cost-ops@aws-skills\n/plugin install serverless-eda@aws-skills\n/plugin install aws-agentic-ai@aws-skills\n```\n\n### Option 2: Install Individual Skills via npx\n\nInstall a single skill directly from the repository using [skills.sh](https://skills.sh):\n\n```bash\n# AWS CDK development skill\nnpx skills add https://github.com/zxkane/aws-skills --skill aws-cdk-development\n\n# AWS SST (Ion) infrastructure-as-code skill\nnpx skills add https://github.com/zxkane/aws-skills --skill aws-sst-development\n\n# AWS cost & operations skill\nnpx skills add https://github.com/zxkane/aws-skills --skill aws-cost-operations\n\n# AWS serverless & event-driven architecture skill\nnpx skills add https://github.com/zxkane/aws-skills --skill aws-serverless-eda\n\n# AWS Bedrock AgentCore skill\nnpx skills add https://github.com/zxkane/aws-skills --skill aws-agentic-ai\n\n# AWS MCP setup (shared dependency)\nnpx skills add https://github.com/zxkane/aws-skills --skill aws-mcp-setup\n```\n\nBrowse all skills at [skills.sh/zxkane/aws-skills](https://skills.sh/zxkane/aws-skills).\n\n## Core CDK Principles\n\n### Resource Naming\n\n**Do NOT explicitly specify resource names** when they are optional in CDK constructs.\n\n```typescript\n// ✅ GOOD - Let CDK generate unique names\nnew lambda.Function(this, 'MyFunction', {\n  // No functionName specified\n});\n\n// ❌ BAD - Prevents multiple deployments\nnew lambda.Function(this, 'MyFunction', {\n  functionName: 'my-lambda',\n});\n```\n\n### Lambda Functions\n\nUse appropriate constructs for automatic bundling:\n\n- **TypeScript/JavaScript**: `NodejsFunction` from `aws-cdk-lib/aws-lambda-nodejs`\n- **Python**: `PythonFunction` from `@aws-cdk/aws-lambda-python-alpha`\n\n### Pre-Deployment Validation\n\nBefore committing CDK code:\n\n```bash\nnpm run build\nnpm test\nnpm run lint\ncdk synth\n./scripts/validate-stack.sh\n```\n\n## Usage Examples\n\n### CDK Development\n\nAsk Claude to help with CDK:\n\n```\nCreate a CDK stack with a Lambda function that processes S3 events\n```\n\nClaude will:\n- Follow CDK best practices\n- Use NodejsFunction for automatic bundling\n- Avoid explicit resource naming\n- Grant proper IAM permissions\n- Use MCP servers for latest AWS information\n\n### Cost Optimization\n\nEstimate costs before deployment:\n\n```\nEstimate the monthly cost of running 10 Lambda functions with 1M invocations each\n```\n\nAnalyze current spending:\n\n```\nShow me my AWS costs for the last 30 days broken down by service\n```\n\n### Monitoring and Observability\n\nSet up monitoring:\n\n```\nCreate CloudWatch alarms for my Lambda functions to alert on errors and high duration\n```\n\nInvestigate issues:\n\n```\nShow me CloudWatch logs for my API Gateway errors in the last hour\n```\n\n### Security and Audit\n\nAudit activity:\n\n```\nShow me all IAM changes made in the last 7 days\n```\n\nAssess security:\n\n```\nRun a Well-Architected security assessment on my infrastructure\n```\n\n### Serverless Development\n\nBuild serverless applications:\n\n```\nCreate a serverless API with Lambda and API Gateway for user management\n```\n\nImplement event-driven workflow:\n\n```\nCreate an event-driven order processing system with EventBridge and Step Functions\n```\n\nOrchestrate complex workflows:\n\n```\nImplement a saga pattern for booking flights, hotels, and car rentals with compensation logic\n```\n\n### AI Agent Development\n\nDeploy AI agents with Bedrock AgentCore:\n\n```\nDeploy a REST API as an MCP tool using AgentCore Gateway\n```\n\nManage agent memory:\n\n```\nSet up conversation memory for my AI agent with DynamoDB backend\n```\n\nMonitor agent performance:\n\n```\nConfigure observability for my AgentCore runtime with CloudWatch dashboards\n```\n\n## Structure\n\n```\n.\n├── .claude-plugin/\n│   └── marketplace.json              # Plugin marketplace configuration\n├── plugins/                          # Each plugin has isolated skills\n│   ├── aws-common/\n│   │   └── skills/\n│   │       └── aws-mcp-setup/        # Shared MCP configuration skill\n│   │           └── SKILL.md\n│   ├── aws-iac/                      # Infrastructure as code (CDK + SST)\n│   │   └── skills/\n│   │       ├── aws-cdk-development/  # CDK development skill\n│   │       │   ├── SKILL.md\n│   │       │   ├── references/\n│   │       │   │   └── cdk-patterns.md\n│   │       │   └── scripts/\n│   │       │       └── validate-stack.sh\n│   │       └── aws-sst-development/  # SST v4 (Ion) IaC skill\n│   │           ├── SKILL.md\n│   │           └── references/\n│   │               ├── authoring.md\n│   │               ├── deploy-and-troubleshoot.md\n│   │               └── testing.md\n│   ├── aws-cost-ops/\n│   │   └── skills/\n│   │       └── aws-cost-operations/  # Cost & operations skill\n│   │           ├── SKILL.md\n│   │           └── references/\n│   │               ├── operations-patterns.md\n│   │               └── cloudwatch-alarms.md\n│   ├── serverless-eda/\n│   │   └── skills/\n│   │       └── aws-serverless-eda/   # Serverless & EDA skill\n│   │           ├── SKILL.md\n│   │           └── references/\n│   │               ├── serverless-patterns.md\n│   │               └── eda-patterns.md\n│   └── aws-agentic-ai/\n│       └── skills/\n│           └── aws-agentic-ai/       # Bedrock AgentCore skill\n│               ├── SKILL.md\n│               ├── services/         # Service-specific docs\n│               └── cross-service/    # Cross-service patterns\n└── README.md\n```\n\n## MCP Server Names\n\nMCP server names use short identifiers to comply with Bedrock's 64-character tool name limit. The naming pattern is: `mcp__plugin_{plugin}_{server}__{tool}`\n\nExamples: `awsdocs` (AWS docs), `cdk` (CDK), `cw` (CloudWatch), `sfn` (Step Functions), `sam` (Serverless), etc.\n\n## Resources\n\n- [Claude Agent Skills](https://docs.claude.com/en/docs/claude-code/skills)\n- [AWS MCP Servers](https://awslabs.github.io/mcp/)\n- [AWS CDK](https://aws.amazon.com/cdk/)\n- [Amazon Bedrock AgentCore](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/what-is-bedrock-agentcore.html)\n- [MCP Protocol](https://modelcontextprotocol.io/)\n\n## License\n\nMIT License - see [LICENSE](LICENSE)\n",
+  "readmeHtml": "<h1>AWS Skills for Claude Code</h1>\n<p>Claude Code plugins for AWS development with specialized knowledge and MCP server integrations, including CDK, serverless architecture, cost optimization, and Bedrock AgentCore for AI agent deployment.</p>\n<h2>Plugins</h2>\n<h3>0. AWS Common Plugin (Dependency)</h3>\n<p>Shared AWS agent skills including AWS Documentation MCP configuration for querying up-to-date AWS knowledge.</p>\n<p><strong>Features</strong>:</p>\n<ul>\n<li>AWS MCP server configuration guide</li>\n<li>Documentation MCP setup for querying AWS knowledge</li>\n<li>Shared by all other AWS plugins as a dependency</li>\n</ul>\n<p><strong>Note</strong>: This plugin is automatically loaded as a dependency by other plugins. Install it first if installing plugins individually.</p>\n<h3>1. AWS CDK Plugin</h3>\n<p>AWS CDK development skill with integrated MCP server for infrastructure as code.</p>\n<p><strong>Features</strong>:</p>\n<ul>\n<li>AWS CDK best practices and patterns</li>\n<li>Pre-deployment validation script</li>\n<li>Comprehensive CDK patterns reference</li>\n</ul>\n<p><strong>Integrated MCP Server</strong>:</p>\n<ul>\n<li>AWS CDK MCP (stdio)</li>\n</ul>\n<h3>2. AWS Cost &amp; Operations Plugin</h3>\n<p>Cost optimization, monitoring, and operational excellence with 3 integrated MCP servers.</p>\n<p><strong>Features</strong>:</p>\n<ul>\n<li>Cost estimation and optimization</li>\n<li>Monitoring and observability patterns</li>\n<li>Operational best practices</li>\n</ul>\n<p><strong>Integrated MCP Servers</strong>:</p>\n<ul>\n<li>AWS Pricing</li>\n<li>AWS Cost Explorer</li>\n<li>Amazon CloudWatch</li>\n</ul>\n<h3>3. AWS Serverless &amp; Event-Driven Architecture Plugin</h3>\n<p>Serverless and event-driven architecture patterns based on Well-Architected Framework.</p>\n<p><strong>Features</strong>:</p>\n<ul>\n<li>Well-Architected serverless design principles</li>\n<li>Event-driven architecture patterns</li>\n<li>Orchestration with Step Functions</li>\n<li>Saga patterns for distributed transactions</li>\n<li>Event sourcing patterns</li>\n</ul>\n<h3>4. AWS Agentic AI Plugin</h3>\n<p>AWS Bedrock AgentCore comprehensive expert for deploying and managing AI agents.</p>\n<p><strong>Features</strong>:</p>\n<ul>\n<li>Gateway service for converting REST APIs to MCP tools</li>\n<li>Runtime service for deploying and scaling agents</li>\n<li>Memory service for managing conversation state</li>\n<li>Identity service for credential and access management</li>\n<li>Code Interpreter for secure code execution</li>\n<li>Browser service for web automation</li>\n<li>Observability for tracing and monitoring</li>\n</ul>\n<h2>Installation</h2>\n<h3>Option 1: Claude Code Plugin Marketplace</h3>\n<p>Add the marketplace to Claude Code:</p>\n<pre><code>\n/plugin marketplace add zxkane/aws-skills\n\n</code></pre>\n<p>Install plugins individually:</p>\n<pre><code>\n# Install the common dependency first\n\n/plugin install aws-common@aws-skills\n\n\n\n# Then install the plugins you need\n\n/plugin install aws-iac@aws-skills\n\n/plugin install aws-cost-ops@aws-skills\n\n/plugin install serverless-eda@aws-skills\n\n/plugin install aws-agentic-ai@aws-skills\n\n</code></pre>\n<h3>Option 2: Install Individual Skills via npx</h3>\n<p>Install a single skill directly from the repository using <a href=\"https://skills.sh\" target=\"_blank\" rel=\"noreferrer\">skills.sh</a>:</p>\n<pre><code>\n# AWS CDK development skill\n\nnpx skills add https://github.com/zxkane/aws-skills --skill aws-cdk-development\n\n\n\n# AWS SST (Ion) infrastructure-as-code skill\n\nnpx skills add https://github.com/zxkane/aws-skills --skill aws-sst-development\n\n\n\n# AWS cost &amp; operations skill\n\nnpx skills add https://github.com/zxkane/aws-skills --skill aws-cost-operations\n\n\n\n# AWS serverless &amp; event-driven architecture skill\n\nnpx skills add https://github.com/zxkane/aws-skills --skill aws-serverless-eda\n\n\n\n# AWS Bedrock AgentCore skill\n\nnpx skills add https://github.com/zxkane/aws-skills --skill aws-agentic-ai\n\n\n\n# AWS MCP setup (shared dependency)\n\nnpx skills add https://github.com/zxkane/aws-skills --skill aws-mcp-setup\n\n</code></pre>\n<p>Browse all skills at <a href=\"https://skills.sh/zxkane/aws-skills\" target=\"_blank\" rel=\"noreferrer\">skills.sh/zxkane/aws-skills</a>.</p>\n<h2>Core CDK Principles</h2>\n<h3>Resource Naming</h3>\n<p><strong>Do NOT explicitly specify resource names</strong> when they are optional in CDK constructs.</p>\n<pre><code>\n// ✅ GOOD - Let CDK generate unique names\n\nnew lambda.Function(this, 'MyFunction', {\n\n  // No functionName specified\n\n});\n\n\n\n// ❌ BAD - Prevents multiple deployments\n\nnew lambda.Function(this, 'MyFunction', {\n\n  functionName: 'my-lambda',\n\n});\n\n</code></pre>\n<h3>Lambda Functions</h3>\n<p>Use appropriate constructs for automatic bundling:</p>\n<ul>\n<li><strong>TypeScript/JavaScript</strong>: <code>NodejsFunction</code> from <code>aws-cdk-lib/aws-lambda-nodejs</code></li>\n<li><strong>Python</strong>: <code>PythonFunction</code> from <code>@aws-cdk/aws-lambda-python-alpha</code></li>\n</ul>\n<h3>Pre-Deployment Validation</h3>\n<p>Before committing CDK code:</p>\n<pre><code>\nnpm run build\n\nnpm test\n\nnpm run lint\n\ncdk synth\n\n./scripts/validate-stack.sh\n\n</code></pre>\n<h2>Usage Examples</h2>\n<h3>CDK Development</h3>\n<p>Ask Claude to help with CDK:</p>\n<pre><code>\nCreate a CDK stack with a Lambda function that processes S3 events\n\n</code></pre>\n<p>Claude will:</p>\n<ul>\n<li>Follow CDK best practices</li>\n<li>Use NodejsFunction for automatic bundling</li>\n<li>Avoid explicit resource naming</li>\n<li>Grant proper IAM permissions</li>\n<li>Use MCP servers for latest AWS information</li>\n</ul>\n<h3>Cost Optimization</h3>\n<p>Estimate costs before deployment:</p>\n<pre><code>\nEstimate the monthly cost of running 10 Lambda functions with 1M invocations each\n\n</code></pre>\n<p>Analyze current spending:</p>\n<pre><code>\nShow me my AWS costs for the last 30 days broken down by service\n\n</code></pre>\n<h3>Monitoring and Observability</h3>\n<p>Set up monitoring:</p>\n<pre><code>\nCreate CloudWatch alarms for my Lambda functions to alert on errors and high duration\n\n</code></pre>\n<p>Investigate issues:</p>\n<pre><code>\nShow me CloudWatch logs for my API Gateway errors in the last hour\n\n</code></pre>\n<h3>Security and Audit</h3>\n<p>Audit activity:</p>\n<pre><code>\nShow me all IAM changes made in the last 7 days\n\n</code></pre>\n<p>Assess security:</p>\n<pre><code>\nRun a Well-Architected security assessment on my infrastructure\n\n</code></pre>\n<h3>Serverless Development</h3>\n<p>Build serverless applications:</p>\n<pre><code>\nCreate a serverless API with Lambda and API Gateway for user management\n\n</code></pre>\n<p>Implement event-driven workflow:</p>\n<pre><code>\nCreate an event-driven order processing system with EventBridge and Step Functions\n\n</code></pre>\n<p>Orchestrate complex workflows:</p>\n<pre><code>\nImplement a saga pattern for booking flights, hotels, and car rentals with compensation logic\n\n</code></pre>\n<h3>AI Agent Development</h3>\n<p>Deploy AI agents with Bedrock AgentCore:</p>\n<pre><code>\nDeploy a REST API as an MCP tool using AgentCore Gateway\n\n</code></pre>\n<p>Manage agent memory:</p>\n<pre><code>\nSet up conversation memory for my AI agent with DynamoDB backend\n\n</code></pre>\n<p>Monitor agent performance:</p>\n<pre><code>\nConfigure observability for my AgentCore runtime with CloudWatch dashboards\n\n</code></pre>\n<h2>Structure</h2>\n<pre><code>\n.\n\n├── .claude-plugin/\n\n│   └── marketplace.json              # Plugin marketplace configuration\n\n├── plugins/                          # Each plugin has isolated skills\n\n│   ├── aws-common/\n\n│   │   └── skills/\n\n│   │       └── aws-mcp-setup/        # Shared MCP configuration skill\n\n│   │           └── SKILL.md\n\n│   ├── aws-iac/                      # Infrastructure as code (CDK + SST)\n\n│   │   └── skills/\n\n│   │       ├── aws-cdk-development/  # CDK development skill\n\n│   │       │   ├── SKILL.md\n\n│   │       │   ├── references/\n\n│   │       │   │   └── cdk-patterns.md\n\n│   │       │   └── scripts/\n\n│   │       │       └── validate-stack.sh\n\n│   │       └── aws-sst-development/  # SST v4 (Ion) IaC skill\n\n│   │           ├── SKILL.md\n\n│   │           └── references/\n\n│   │               ├── authoring.md\n\n│   │               ├── deploy-and-troubleshoot.md\n\n│   │               └── testing.md\n\n│   ├── aws-cost-ops/\n\n│   │   └── skills/\n\n│   │       └── aws-cost-operations/  # Cost &amp; operations skill\n\n│   │           ├── SKILL.md\n\n│   │           └── references/\n\n│   │               ├── operations-patterns.md\n\n│   │               └── cloudwatch-alarms.md\n\n│   ├── serverless-eda/\n\n│   │   └── skills/\n\n│   │       └── aws-serverless-eda/   # Serverless &amp; EDA skill\n\n│   │           ├── SKILL.md\n\n│   │           └── references/\n\n│   │               ├── serverless-patterns.md\n\n│   │               └── eda-patterns.md\n\n│   └── aws-agentic-ai/\n\n│       └── skills/\n\n│           └── aws-agentic-ai/       # Bedrock AgentCore skill\n\n│               ├── SKILL.md\n\n│               ├── services/         # Service-specific docs\n\n│               └── cross-service/    # Cross-service patterns\n\n└── README.md\n\n</code></pre>\n<h2>MCP Server Names</h2>\n<p>MCP server names use short identifiers to comply with Bedrock's 64-character tool name limit. The naming pattern is: <code>mcp__plugin_{plugin}_{server}__{tool}</code></p>\n<p>Examples: <code>awsdocs</code> (AWS docs), <code>cdk</code> (CDK), <code>cw</code> (CloudWatch), <code>sfn</code> (Step Functions), <code>sam</code> (Serverless), etc.</p>\n<h2>Resources</h2>\n<ul>\n<li><a href=\"https://docs.claude.com/en/docs/claude-code/skills\" target=\"_blank\" rel=\"noreferrer\">Claude Agent Skills</a></li>\n<li><a href=\"https://awslabs.github.io/mcp/\" target=\"_blank\" rel=\"noreferrer\">AWS MCP Servers</a></li>\n<li><a href=\"https://aws.amazon.com/cdk/\" target=\"_blank\" rel=\"noreferrer\">AWS CDK</a></li>\n<li><a href=\"https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/what-is-bedrock-agentcore.html\" target=\"_blank\" rel=\"noreferrer\">Amazon Bedrock AgentCore</a></li>\n<li><a href=\"https://modelcontextprotocol.io/\" target=\"_blank\" rel=\"noreferrer\">MCP Protocol</a></li>\n</ul>\n<h2>License</h2>\n<p>MIT License - see [LICENSE](LICENSE)</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.049Z",
+  "updatedAt": "2026-06-15T14:37:32Z",
   "author": {
     "login": "zxkane",
-    "name": "zxkane",
-    "avatarUrl": "",
+    "name": "Mengxin Zhu",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/843303?v=4",
     "profileUrl": "https://github.com/zxkane",
-    "location": ""
+    "location": "Wonderland"
   },
   "location": null,
   "related": [
     {
-      "slug": "obra-defense-in-depth",
-      "displayName": "obra/defense-in-depth",
-      "stars": 186953,
+      "slug": "obra-brainstorming",
+      "displayName": "obra/brainstorming",
+      "stars": 245089,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mattpocock-skills",
+      "displayName": "mattpocock/skills",
+      "stars": 155097,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
       "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
-      "stars": 77115,
+      "stars": 100227,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "lum1104-understand-anything",
+      "displayName": "Lum1104/understand-anything",
+      "stars": 70574,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "santifer-career-ops",
+      "displayName": "santifer/career-ops",
+      "stars": 58303,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "leonxlnx-taste-skill",
+      "displayName": "Leonxlnx/taste-skill",
+      "stars": 55314,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "panniantong-agent-reach",
+      "displayName": "Panniantong/Agent-Reach",
+      "stars": 49547,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "mvanhorn-last30days-skill",
       "displayName": "mvanhorn/last30days-skill",
-      "stars": 25573,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "k-dense-ai-claude-scientific-skills",
-      "displayName": "K-Dense-AI/claude-scientific-skills",
-      "stars": 20299,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-fundamentals",
-      "displayName": "muratcankoylan/context-fundamentals",
-      "stars": 15494,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-degradation",
-      "displayName": "muratcankoylan/context-degradation",
-      "stars": 15494,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-compression",
-      "displayName": "muratcankoylan/context-compression",
-      "stars": 15494,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-optimization",
-      "displayName": "muratcankoylan/context-optimization",
-      "stars": 15494,
+      "stars": 48607,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     }

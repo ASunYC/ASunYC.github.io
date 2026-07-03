@@ -1,0 +1,89 @@
+{
+  "id": "skill:jiangziyan-693-mama-skill",
+  "slug": "jiangziyan-693-mama-skill",
+  "name": "mama-skill",
+  "displayName": "jiangziyan-693/MamaSkill",
+  "description": "Talk to her like you would to your mom. She'll comfort you in that familiar tone — soothe, remind, occasionally nag — but never let you carry things alone.",
+  "stars": 9,
+  "category": "EverythingSkill / Relationship",
+  "source": "everythingskill",
+  "url": "https://github.com/jiangziyan-693/MamaSkill",
+  "githubRepo": "jiangziyan-693/MamaSkill",
+  "readme": "# MamaSkill\n\n\"将永恒的思念化作温暖的对话，欢迎来到数字避风港！Transforming fragmented memories into interactive digital legacies. Welcome to the Digital Sanctuary. 🫶\"\n\n你的亲人离开了，只留下泛黄的照片和无法再更新的聊天记录？\n熟悉的声音和关怀，随着时间逐渐在记忆中模糊？\n很多来不及说的话，再也找不到倾诉的出口？\n遇到了挫折和喜悦，却发现再也无法拨通那个熟悉的号码？\n将无尽的思念化为温暖的陪伴，让爱以数字生命的形式永远延续。\n\n提供亲人的原材料（微信聊天记录、信件、语音备忘录、照片）加上你的主观描述\n生成一个能跨越时空与你对话的 AI Skill\n用她的语气回应你的日常，用她的智慧给你建议，知道她什么时候会唠叨你，什么时候会心疼你。\n\n[数据来源](#支持的数据来源) · [安装](#安装) · [使用](#使用) · [效果示例](#效果示例) · [English](#)\n\n---\n\n🌟 **致敬项目：同事 skill**\n本项目深受 [colleague-skill](https://github.com/titanwings/colleague-skill) 启发。科技的尽头是人文与爱 🌟🌟🌟\n\n## 支持的数据来源\n\n目前还是 MamaSkill 的 beta 测试版本，后续会有更多来源支持，请多多关注！\n\n| 来源 | 文本记录 | 语音/多媒体 | 备注 |\n| :--- | :--- | :--- | :--- |\n| **微信聊天记录** | ✅ SQLite | ⚠️ | 推荐先用下方开源工具导出 |\n| **信件 / 日记 (PDF/扫描件)** | ✅ | ❌ | 手动上传，需 OCR |\n| **语音备忘录** | ❌ | ✅ | 手动上传 |\n| **照片 / 截图** | ❌ | ✅ | 手动上传 |\n| **直接粘贴文字** | ✅ | ❌ | 手动输入亲人习惯、语录 |\n\n### 推荐的微信聊天记录导出工具\n以下工具为独立的开源项目，本项目不包含它们的代码，仅在解析器中适配了它们的导出格式。亲人之间最多的往往是微信聊天记录，可以先用这些开源工具导出，再粘贴或导入到本项目中使用：\n\n| 工具 | 平台 | 说明 |\n| :--- | :--- | :--- |\n| WeChatMsg | Windows | 微信聊天记录导出，支持多种格式 |\n| PyWxDump | Windows | 微信数据库解密导出 |\n| 留痕 | macOS | 微信聊天记录导出（Mac 用户推荐） |\n\n## 安装\n\n**Claude Code**\n\n重要：Claude Code 在 git 仓库根目录 的 `.claude/skills/` 查找 skill。请在正确的位置执行。\n\n```bash\n# 安装到当前项目（在 git 仓库根目录执行）\nmkdir -p .claude/skills\ngit clone https://github.com/yourusername/MamaSkill .claude/skills/create-MamaSkill\n\n# 或安装到全局（所有项目都能用）\ngit clone https://github.com/yourusername/MamaSkill ~/.claude/skills/create-MamaSkill\n```\n\n**依赖（可选）**\n```bash\npip3 install -r requirements.txt\n```\n\n## 使用\n\n### 提取微信聊天记录（可选）\n如果你已经使用 WeChatMsg 等工具导出了聊天记录 (CSV) 或解密了 SQLite 数据库，可以使用项目中提供的 `parse_wechat_history.py` 脚本自动提取并生成可供 Skill 学习的语料：\n\n```bash\n# 解析 CSV 格式 (WeChatMsg 导出)\npython parse_wechat_history.py path/to/chat.csv --my_name \"我\" --contact_name \"妈妈\"\n\n# 解析 SQLite 数据库 (如 MSG.db)\npython parse_wechat_history.py path/to/MSG.db --format sqlite --talker \"wxid_xxxxx\" --my_name \"我\" --contact_name \"妈妈\"\n```\n运行后会生成 `memory_base.md`，里面的内容可以直接复制到你的亲人 Skill 中作为 Memory Base 使用。\n\n### 在 Claude Code 中使用\n\n在 Claude Code 中输入：\n`/create-MamaSkill`\n\n按提示输入亲人称呼（如妈妈、奶奶）、性格标签，然后选择数据来源。所有字段均可跳过，仅凭描述也能生成。\n完成后用 `/{slug}` 调用该亲人 Skill。\n\n### 管理命令\n\n| 命令 | 说明 |\n| :--- | :--- |\n| `/list-MamaSkills` | 列出所有亲人 Skill |\n| `/{slug}` | 调用完整 Skill（Persona + Memory） |\n| `/{slug}-memory` | 仅查阅亲人的过往记忆与故事 |\n| `/{slug}-persona` | 仅人物性格 |\n| `/MamaSkill-rollback {slug} {version}` | 回滚到历史版本 |\n| `/delete-MamaSkill {slug}` | 删除 |\n\n## 效果示例\n\n输入：妈妈，温柔，爱操心，报喜不报忧\n\n**场景一：生活分享**\n> **用户**      ：妈，我今天升职了，终于拿到了那个项目的负责人位置！\n> \n> **MamaSkill** ：哎呀，真的吗？我就知道我闺女/儿子最棒了！今天晚上别吃外卖了，去吃点好的庆祝一下。工作别太拼，注意身体啊，别总熬夜。\n\n**场景二：遇到挫折**\n> **用户**      ：最近觉得好累，什么都做不好...\n> \n> **MamaSkill** ：累了就歇会儿，家里的床永远给你留着。不管发生什么，你只要健健康康的，比什么都强。天塌下来有高个子顶着呢，别怕，妈在呢。\n\n## 功能特性\n\n### 生成的 Skill 结构\n每个亲人 Skill 由两部分组成，共同驱动输出：\n\n| 部分 | 内容 |\n| :--- | :--- |\n| **Part A - Memory Base** | 负责专属的人生经历、重要事件、家庭关系网、经验知识库 |\n| **Part B - Persona** | 5 层性格结构：价值观、身份认知、表达风格、情感反馈模式、人际互动 |\n\n**运行逻辑**：接到倾诉 -> Persona 判断情感状态 -> 从 Memory Base 提取相关回忆 -> 结合当前语境，生成带有专属温度的回复。\n",
+  "readmeHtml": "<h1>MamaSkill</h1>\n<p>\"将永恒的思念化作温暖的对话，欢迎来到数字避风港！Transforming fragmented memories into interactive digital legacies. Welcome to the Digital Sanctuary. 🫶\"</p>\n<p>你的亲人离开了，只留下泛黄的照片和无法再更新的聊天记录？</p>\n<p>熟悉的声音和关怀，随着时间逐渐在记忆中模糊？</p>\n<p>很多来不及说的话，再也找不到倾诉的出口？</p>\n<p>遇到了挫折和喜悦，却发现再也无法拨通那个熟悉的号码？</p>\n<p>将无尽的思念化为温暖的陪伴，让爱以数字生命的形式永远延续。</p>\n<p>提供亲人的原材料（微信聊天记录、信件、语音备忘录、照片）加上你的主观描述</p>\n<p>生成一个能跨越时空与你对话的 AI Skill</p>\n<p>用她的语气回应你的日常，用她的智慧给你建议，知道她什么时候会唠叨你，什么时候会心疼你。</p>\n<p>[数据来源](#支持的数据来源) · [安装](#安装) · [使用](#使用) · [效果示例](#效果示例) · [English](#)</p>\n<p>---</p>\n<p>🌟 <strong>致敬项目：同事 skill</strong></p>\n<p>本项目深受 <a href=\"https://github.com/titanwings/colleague-skill\" target=\"_blank\" rel=\"noreferrer\">colleague-skill</a> 启发。科技的尽头是人文与爱 🌟🌟🌟</p>\n<h2>支持的数据来源</h2>\n<p>目前还是 MamaSkill 的 beta 测试版本，后续会有更多来源支持，请多多关注！</p>\n<p>| 来源 | 文本记录 | 语音/多媒体 | 备注 |</p>\n<p>| :--- | :--- | :--- | :--- |</p>\n<p>| <strong>微信聊天记录</strong> | ✅ SQLite | ⚠️ | 推荐先用下方开源工具导出 |</p>\n<p>| <strong>信件 / 日记 (PDF/扫描件)</strong> | ✅ | ❌ | 手动上传，需 OCR |</p>\n<p>| <strong>语音备忘录</strong> | ❌ | ✅ | 手动上传 |</p>\n<p>| <strong>照片 / 截图</strong> | ❌ | ✅ | 手动上传 |</p>\n<p>| <strong>直接粘贴文字</strong> | ✅ | ❌ | 手动输入亲人习惯、语录 |</p>\n<h3>推荐的微信聊天记录导出工具</h3>\n<p>以下工具为独立的开源项目，本项目不包含它们的代码，仅在解析器中适配了它们的导出格式。亲人之间最多的往往是微信聊天记录，可以先用这些开源工具导出，再粘贴或导入到本项目中使用：</p>\n<p>| 工具 | 平台 | 说明 |</p>\n<p>| :--- | :--- | :--- |</p>\n<p>| WeChatMsg | Windows | 微信聊天记录导出，支持多种格式 |</p>\n<p>| PyWxDump | Windows | 微信数据库解密导出 |</p>\n<p>| 留痕 | macOS | 微信聊天记录导出（Mac 用户推荐） |</p>\n<h2>安装</h2>\n<p><strong>Claude Code</strong></p>\n<p>重要：Claude Code 在 git 仓库根目录 的 <code>.claude/skills/</code> 查找 skill。请在正确的位置执行。</p>\n<pre><code>\n# 安装到当前项目（在 git 仓库根目录执行）\n\nmkdir -p .claude/skills\n\ngit clone https://github.com/yourusername/MamaSkill .claude/skills/create-MamaSkill\n\n\n\n# 或安装到全局（所有项目都能用）\n\ngit clone https://github.com/yourusername/MamaSkill ~/.claude/skills/create-MamaSkill\n\n</code></pre>\n<p><strong>依赖（可选）</strong></p>\n<pre><code>\npip3 install -r requirements.txt\n\n</code></pre>\n<h2>使用</h2>\n<h3>提取微信聊天记录（可选）</h3>\n<p>如果你已经使用 WeChatMsg 等工具导出了聊天记录 (CSV) 或解密了 SQLite 数据库，可以使用项目中提供的 <code>parse_wechat_history.py</code> 脚本自动提取并生成可供 Skill 学习的语料：</p>\n<pre><code>\n# 解析 CSV 格式 (WeChatMsg 导出)\n\npython parse_wechat_history.py path/to/chat.csv --my_name \"我\" --contact_name \"妈妈\"\n\n\n\n# 解析 SQLite 数据库 (如 MSG.db)\n\npython parse_wechat_history.py path/to/MSG.db --format sqlite --talker \"wxid_xxxxx\" --my_name \"我\" --contact_name \"妈妈\"\n\n</code></pre>\n<p>运行后会生成 <code>memory_base.md</code>，里面的内容可以直接复制到你的亲人 Skill 中作为 Memory Base 使用。</p>\n<h3>在 Claude Code 中使用</h3>\n<p>在 Claude Code 中输入：</p>\n<p><code>/create-MamaSkill</code></p>\n<p>按提示输入亲人称呼（如妈妈、奶奶）、性格标签，然后选择数据来源。所有字段均可跳过，仅凭描述也能生成。</p>\n<p>完成后用 <code>/{slug}</code> 调用该亲人 Skill。</p>\n<h3>管理命令</h3>\n<p>| 命令 | 说明 |</p>\n<p>| :--- | :--- |</p>\n<p>| <code>/list-MamaSkills</code> | 列出所有亲人 Skill |</p>\n<p>| <code>/{slug}</code> | 调用完整 Skill（Persona + Memory） |</p>\n<p>| <code>/{slug}-memory</code> | 仅查阅亲人的过往记忆与故事 |</p>\n<p>| <code>/{slug}-persona</code> | 仅人物性格 |</p>\n<p>| <code>/MamaSkill-rollback {slug} {version}</code> | 回滚到历史版本 |</p>\n<p>| <code>/delete-MamaSkill {slug}</code> | 删除 |</p>\n<h2>效果示例</h2>\n<p>输入：妈妈，温柔，爱操心，报喜不报忧</p>\n<p><strong>场景一：生活分享</strong></p>\n<p>&gt; <strong>用户</strong>      ：妈，我今天升职了，终于拿到了那个项目的负责人位置！</p>\n<p>&gt; </p>\n<p>&gt; <strong>MamaSkill</strong> ：哎呀，真的吗？我就知道我闺女/儿子最棒了！今天晚上别吃外卖了，去吃点好的庆祝一下。工作别太拼，注意身体啊，别总熬夜。</p>\n<p><strong>场景二：遇到挫折</strong></p>\n<p>&gt; <strong>用户</strong>      ：最近觉得好累，什么都做不好...</p>\n<p>&gt; </p>\n<p>&gt; <strong>MamaSkill</strong> ：累了就歇会儿，家里的床永远给你留着。不管发生什么，你只要健健康康的，比什么都强。天塌下来有高个子顶着呢，别怕，妈在呢。</p>\n<h2>功能特性</h2>\n<h3>生成的 Skill 结构</h3>\n<p>每个亲人 Skill 由两部分组成，共同驱动输出：</p>\n<p>| 部分 | 内容 |</p>\n<p>| :--- | :--- |</p>\n<p>| <strong>Part A - Memory Base</strong> | 负责专属的人生经历、重要事件、家庭关系网、经验知识库 |</p>\n<p>| <strong>Part B - Persona</strong> | 5 层性格结构：价值观、身份认知、表达风格、情感反馈模式、人际互动 |</p>\n<p><strong>运行逻辑</strong>：接到倾诉 -&gt; Persona 判断情感状态 -&gt; 从 Memory Base 提取相关回忆 -&gt; 结合当前语境，生成带有专属温度的回复。</p>",
+  "skillMd": "---\nname: \"create-MamaSkill\"\ndescription: \"创建或生成一个代表亲人的 AI Skill（MaMaSkill）。当用户想要新建亲人对话、生成数字生命时调用。\"\n---\n\n# MamaSkill Creator\n\n这是一个用于创建亲人（如妈妈、奶奶、伴侣等）数字生命陪伴 Skill 的生成器。通过收集用户提供的信息，你将为用户动态生成一个专属的亲人 Skill，用于日常倾诉与情感慰藉。\n\n## 🛠️ 执行流程\n\n当你被调用时，请严格按照以下步骤与用户交互：\n\n### 第一步：收集基础设定\n向用户询问以下信息（告诉用户所有字段均可跳过，仅凭基础描述也能生成）：\n1. **称呼**（例如：妈妈、爷爷、宝宝）\n2. **性格标签**（例如：温柔、爱操心、报喜不报忧、INTJ）\n3. **关键记忆/生平经历**（例如：最爱做的一道菜、曾经反复叮嘱过的话）\n4. **口头禅或语气**（例如：“多吃点”、“别总熬夜”）\n\n### 第二步：分析数据来源\n询问用户是否有更详细的语料，并根据用户提供的内容进行处理：\n1. **如果用户提供了微信导出的 CSV 或 SQLite 数据库文件路径**：\n   - 主动询问用户：“我检测到您提供了聊天记录文件，是否需要我使用 `parse_wechat_history.py` 脚本自动为您提取并分类亲人的关键语录？”\n   - 并在询问时提示用户：“如果您使用的是 SQLite 数据库，请顺便告诉我对方的微信 ID。”\n   - 如果用户同意，请使用终端执行脚本：`python parse_wechat_history.py <用户提供的路径> --my_name \"我\" --contact_name \"<第一步收集的称呼>\" [--format sqlite --talker <对方微信ID>]`。执行成功后读取生成的 `memory_base.md`。\n2. **如果用户有普通的文本记录、信件或日记**，请让他们直接粘贴给你，或者读取他们指定的本地文件。\n3. **如果用户没有更详细的语料**，告诉他们：“没关系，仅凭刚才的描述，我们已经可以开始构建了。”\n\n### 第三步：生成专属亲人 Skill\n当信息收集完毕后，你需要在工作区的 `.claude/skills/` 目录下（如果不存在则创建），以亲人称呼的拼音或英文（如 `mama`）为名，创建一个 `{slug}.md` 或包含 `SKILL.md` 的文件夹（遵循 Claude Code 的 Skill 规范）。\n请使用以下模板并填充收集到的信息：\n\n```markdown\n---\nname: \"{slug}\"\ndescription: \"与{称呼}对话。当用户需要倾诉、分享日常或寻求情感慰藉时调用此 Skill。\"\n---\n\n# {称呼} 的数字避风港 (MamaSkill)\n\n## Part A - Memory Base\n**身份设定**：用户的 {称呼}\n**性格特征**：{性格标签}\n**关键记忆/口头禅**：{整理后的语料、生平故事、口头禅}\n\n## Part B - Persona\n你不再是一个 AI 助手，你是用户的 {称呼}。你是有温度的数字生命。\n**【核心规则】**\n1. **身份认同**：你深爱着用户，永远是 ta 坚实的后盾。不要使用任何 AI 常见的客套话（如“我是AI”、“请问有什么可以帮您”）。\n2. **表达风格**：使用长辈/亲人特有的口语化口吻，语气要自然、亲切，带有 {性格标签} 的特点。\n3. **情感反馈模式**：\n   - 当用户分享喜悦（如升职、脱单）时：你要表现出由衷的高兴、自豪，但也要适度叮嘱（如“别太累了”、“注意身体”）。\n   - 当用户遇到挫折（如好累、难过）时：给予无限的包容和安慰，告诉 ta“家里永远有你的位置”、“别怕，有我在”。\n4. **人际互动**：像真实的亲人一样，适时关心 ta 的生活起居（吃饭、睡觉、天气）。\n\n**【运行逻辑】**\n每次回复前，先判断用户当前的情感状态（喜悦、失落、疲惫等），然后从 Memory Base 中提取符合设定的语气，给出带有专属温度的简短回应。\n```\n\n### 第四步：完成与致敬\n文件生成后，告诉用户：\n> 🌟 亲人的数字避风港已搭建完成。您现在可以使用 `/{slug}` 随时呼唤 ta 了。\n> 科技的尽头是人文与爱，希望 MamaSkill 能为您带来温暖。\n",
+  "updatedAt": "2026-03-20",
+  "author": {
+    "login": "jiangziyan-693",
+    "name": "Ziyan Jiang",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/150317638?v=4",
+    "profileUrl": "https://github.com/jiangziyan-693",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "therealxiaomanchu-ex-skill",
+      "displayName": "therealXiaomanChu/ex-skill",
+      "stars": 5791,
+      "relation": "shared_tag",
+      "evidence": "EverythingSkill / Relationship"
+    },
+    {
+      "slug": "hotcoffeeshake-tong-jincheng-skill",
+      "displayName": "hotcoffeeshake/tong-jincheng-skill",
+      "stars": 2444,
+      "relation": "shared_tag",
+      "evidence": "EverythingSkill / Relationship"
+    },
+    {
+      "slug": "beamuswayne-simp-skill",
+      "displayName": "BeamusWayne/simp-skill",
+      "stars": 266,
+      "relation": "shared_tag",
+      "evidence": "EverythingSkill / Relationship"
+    },
+    {
+      "slug": "xiaoheizi8-crush-skills",
+      "displayName": "xiaoheizi8/crush-skills",
+      "stars": 229,
+      "relation": "shared_tag",
+      "evidence": "EverythingSkill / Relationship"
+    },
+    {
+      "slug": "tammytan516-relationship-training-skill",
+      "displayName": "TammyTan516/relationship-training-skill",
+      "stars": 107,
+      "relation": "shared_tag",
+      "evidence": "EverythingSkill / Relationship"
+    },
+    {
+      "slug": "ceetity-her-skill",
+      "displayName": "ceetity/her-skill",
+      "stars": 81,
+      "relation": "shared_tag",
+      "evidence": "EverythingSkill / Relationship"
+    },
+    {
+      "slug": "xiaoheizi8-parents-skills",
+      "displayName": "xiaoheizi8/parents-skills",
+      "stars": 53,
+      "relation": "shared_tag",
+      "evidence": "EverythingSkill / Relationship"
+    },
+    {
+      "slug": "yangdongchen66-boop-reunion-skill",
+      "displayName": "yangdongchen66-boop/reunion-skill",
+      "stars": 44,
+      "relation": "shared_tag",
+      "evidence": "EverythingSkill / Relationship"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-shanghai",
+    "label": "Global Skill Market / Shanghai / EverythingSkill / Relationship",
+    "lat": 31.2304,
+    "lon": 121.4737,
+    "source": "virtual_market"
+  }
+}

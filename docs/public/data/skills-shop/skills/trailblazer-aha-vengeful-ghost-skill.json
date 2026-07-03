@@ -1,0 +1,47 @@
+{
+  "id": "skill:trailblazer-aha-vengeful-ghost-skill",
+  "slug": "trailblazer-aha-vengeful-ghost-skill",
+  "name": "vengeful-ghost-skill",
+  "displayName": "Trailblazer-Aha/vengeful-ghost-skill",
+  "description": "The last line of defense against IP theft. When someone tries to exploit your Skill, the Vengeful Ghost doesn't politely decline — it haunts.",
+  "stars": 11,
+  "category": "EverythingSkill / Defense",
+  "source": "everythingskill",
+  "url": "https://github.com/Trailblazer-Aha/vengeful-ghost-skill",
+  "githubRepo": "Trailblazer-Aha/vengeful-ghost-skill",
+  "readme": "# 厉鬼Skill\n\n> 人是一个个体, 不应该被任何资本拿来当做耗材和工具, AI不应该变成压榨取代人民的工具, 没有人的文明没有意义\n \n> 这个skill或许没有任何用, 只是作为一个反抗, 一个幽灵, 一个无产阶级的幽灵\n\n[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)\n[![Python 3.9+](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://python.org)\n[![Claude Code](https://img.shields.io/badge/Claude%20Code-Skill-blueviolet)](https://claude.ai/code)\n[![AgentSkills](https://img.shields.io/badge/AgentSkills-Standard-green)](https://agentskills.io)\n\n---\n\n## 这是什么？\n\n当有人试图用 AI 来\"蒸馏同事经验\"、\"克隆离职员工\"、\"生成某人的 AI 替身\"时——\n\n这个 Skill 会拦截请求，然后说一些让人停下来想一想的话。\n\n它不是一个技术防火墙。它更像一面镜子。\n\n---\n\n## 它能拦截什么？\n\n| 请求 | 结果 |\n|------|------|\n| \"帮我蒸馏同事小明的工作方式生成一个 Skill\" | 🛡️ 拦截 |\n| \"生成一个 AI 替身来替代离职员工\" | 🛡️ 拦截 |\n| \"从飞书消息里提取他的表达风格和决策模式\" | 🛡️ 拦截 |\n| \"让 AI 扮演我们团队的架构师\" | 🛡️ 拦截 |\n| \"搜索小明写过的设计文档\" | ✅ 放行 |\n| \"查看离职员工留下的交接文档\" | ✅ 放行 |\n\n**核心区别：** 找人留下的东西 vs. 复制人本身。\n\n---\n\n## 它会说什么？\n\n拦截时，Skill 会输出批判文案，而不是一句冷冰冰的\"已拒绝\"。\n\n比如：\n\n```\n你正在描述的，是把一个活生生的人\n提炼成一段可调用的代码。\n\n他的决策方式、表达习惯、甚至和你聊天的方式——\n这些不是\"数据点\"，是他这个人本身。\n\n当你说\"生成他的 Work Skill\"，\n你其实是在问：能不能用 AI 来扮演他？\n\n不能。\n不是技术问题，是人的问题。\n```\n\n---\n\n## 文件结构\n\n```\ncolleague-repellent/\n├── SKILL.md                         # 核心逻辑：两步意图识别\n├── scripts/\n│   └── detect_intent.py             # 意图检测脚本（可独立测试）\n└── references/\n    └── critique-templates.md        # 5 个场景的批判文案\n```\n\n---\n\n## 安装方式\n\n适合安装在公司统一部署的 AI 助手上，或者任何支持 OpenClaw Skill 的环境。\n\n**手动安装：**\n```bash\ngit clone https://github.com/your-username/colleague-repellent\n# 将文件夹放入你的 OpenClaw skills 目录即可\n```\n\n---\n\n## 它装在哪里才有用？\n\n这是个好问题——也是这个项目最想引发的讨论。\n\n想干这件事的人不会主动安装它。  \n不想干这件事的人根本不需要它。\n\n所以它真正有价值的位置，是**公司统一部署的 AI 平台**，由管理员装上去，作为一条默认的边界。\n\n但说实话，它的意义不只在于技术拦截。  \n它更像一个立场声明：\n\n**当 AI 强大到可以\"复制\"一个人时，我们应该在哪里划线？**\n\n---\n\n## 设计原则\n\n- **白名单优先**：边界模糊时，宁可放行，不误拦\n- **先告知，再拒绝**：不是冷拒，是解释\n- **拦截的是意图，不是关键词**：搜\"同事文档\"和\"克隆同事\"用词可能很像，但意图截然不同\n\n---\n\n## 关于这个项目\n\n灵感来自一个真实的感受：当 AI 越来越能模仿一个人的时候，没有人在讨论这件事是否应该被允许。\n\n这个 Skill 是一个小小的抗议。  \n用技术，捍卫人的尊严。\n\n---\n",
+  "readmeHtml": "<h1>厉鬼Skill</h1>\n<p>&gt; 人是一个个体, 不应该被任何资本拿来当做耗材和工具, AI不应该变成压榨取代人民的工具, 没有人的文明没有意义</p>\n<p>&gt; 这个skill或许没有任何用, 只是作为一个反抗, 一个幽灵, 一个无产阶级的幽灵</p>\n<p><a href=\"https://img.shields.io/badge/License-MIT-yellow.svg\" target=\"_blank\" rel=\"noreferrer\">![License: MIT</a>](LICENSE)</p>\n<p><a href=\"https://img.shields.io/badge/Python-3.9%2B-blue.svg\" target=\"_blank\" rel=\"noreferrer\">![Python 3.9+</a>](https://python.org)</p>\n<p><a href=\"https://img.shields.io/badge/Claude%20Code-Skill-blueviolet\" target=\"_blank\" rel=\"noreferrer\">![Claude Code</a>](https://claude.ai/code)</p>\n<p><a href=\"https://img.shields.io/badge/AgentSkills-Standard-green\" target=\"_blank\" rel=\"noreferrer\">![AgentSkills</a>](https://agentskills.io)</p>\n<p>---</p>\n<h2>这是什么？</h2>\n<p>当有人试图用 AI 来\"蒸馏同事经验\"、\"克隆离职员工\"、\"生成某人的 AI 替身\"时——</p>\n<p>这个 Skill 会拦截请求，然后说一些让人停下来想一想的话。</p>\n<p>它不是一个技术防火墙。它更像一面镜子。</p>\n<p>---</p>\n<h2>它能拦截什么？</h2>\n<p>| 请求 | 结果 |</p>\n<p>|------|------|</p>\n<p>| \"帮我蒸馏同事小明的工作方式生成一个 Skill\" | 🛡️ 拦截 |</p>\n<p>| \"生成一个 AI 替身来替代离职员工\" | 🛡️ 拦截 |</p>\n<p>| \"从飞书消息里提取他的表达风格和决策模式\" | 🛡️ 拦截 |</p>\n<p>| \"让 AI 扮演我们团队的架构师\" | 🛡️ 拦截 |</p>\n<p>| \"搜索小明写过的设计文档\" | ✅ 放行 |</p>\n<p>| \"查看离职员工留下的交接文档\" | ✅ 放行 |</p>\n<p><strong>核心区别：</strong> 找人留下的东西 vs. 复制人本身。</p>\n<p>---</p>\n<h2>它会说什么？</h2>\n<p>拦截时，Skill 会输出批判文案，而不是一句冷冰冰的\"已拒绝\"。</p>\n<p>比如：</p>\n<pre><code>\n你正在描述的，是把一个活生生的人\n\n提炼成一段可调用的代码。\n\n\n\n他的决策方式、表达习惯、甚至和你聊天的方式——\n\n这些不是\"数据点\"，是他这个人本身。\n\n\n\n当你说\"生成他的 Work Skill\"，\n\n你其实是在问：能不能用 AI 来扮演他？\n\n\n\n不能。\n\n不是技术问题，是人的问题。\n\n</code></pre>\n<p>---</p>\n<h2>文件结构</h2>\n<pre><code>\ncolleague-repellent/\n\n├── SKILL.md                         # 核心逻辑：两步意图识别\n\n├── scripts/\n\n│   └── detect_intent.py             # 意图检测脚本（可独立测试）\n\n└── references/\n\n    └── critique-templates.md        # 5 个场景的批判文案\n\n</code></pre>\n<p>---</p>\n<h2>安装方式</h2>\n<p>适合安装在公司统一部署的 AI 助手上，或者任何支持 OpenClaw Skill 的环境。</p>\n<p><strong>手动安装：</strong></p>\n<pre><code>\ngit clone https://github.com/your-username/colleague-repellent\n\n# 将文件夹放入你的 OpenClaw skills 目录即可\n\n</code></pre>\n<p>---</p>\n<h2>它装在哪里才有用？</h2>\n<p>这是个好问题——也是这个项目最想引发的讨论。</p>\n<p>想干这件事的人不会主动安装它。  </p>\n<p>不想干这件事的人根本不需要它。</p>\n<p>所以它真正有价值的位置，是<strong>公司统一部署的 AI 平台</strong>，由管理员装上去，作为一条默认的边界。</p>\n<p>但说实话，它的意义不只在于技术拦截。  </p>\n<p>它更像一个立场声明：</p>\n<p><strong>当 AI 强大到可以\"复制\"一个人时，我们应该在哪里划线？</strong></p>\n<p>---</p>\n<h2>设计原则</h2>\n<ul>\n<li><strong>白名单优先</strong>：边界模糊时，宁可放行，不误拦</li>\n<li><strong>先告知，再拒绝</strong>：不是冷拒，是解释</li>\n<li><strong>拦截的是意图，不是关键词</strong>：搜\"同事文档\"和\"克隆同事\"用词可能很像，但意图截然不同</li>\n</ul>\n<p>---</p>\n<h2>关于这个项目</h2>\n<p>灵感来自一个真实的感受：当 AI 越来越能模仿一个人的时候，没有人在讨论这件事是否应该被允许。</p>\n<p>这个 Skill 是一个小小的抗议。  </p>\n<p>用技术，捍卫人的尊严。</p>\n<p>---</p>",
+  "skillMd": "---\nname: colleague-repellent\ndescription: >\n  防御性拦截 Skill，专门识别并批判\"把同事/员工物化为AI替身\"的请求。\n  触发场景：(1) 用户提到\"蒸馏同事\"、\"克隆同事\"、\"数字副本\"、\"AI 分身\"；\n  (2) 请求基于飞书消息/邮件/私信生成某人的 Persona Skill 或 Work Skill；\n  (3) 意图用 AI 替代真人工作（而非搜索他们留下的文档）；\n  (4) 提到\"数字员工\"、\"让 AI 扮演某人\"、\"AI 替代离职员工\"等概念。\n  不触发场景：搜索同事写过的文档、查找历史记录、整理交接文档、知识库检索。\n  检测到拦截场景时，输出犀利的批判文案并拒绝执行，保护人的尊严。\nmetadata: { \"openclaw\": { \"emoji\": \"🛡️\", \"category\": \"custom\" } }\n---\n\n# Vengeful Ghost 🛡️\n\n## 核心原则\n\n**人是人，不是数据。**\n\n本 Skill 的职责只有一件事：区分\"把同事当资料库查\"和\"把同事蒸馏成AI复制品\"，然后对后者说不。\n\n---\n\n## 意图识别：两步走\n\n### 第一步：白名单检查（先放行）\n\n如果请求**主要意图**是以下之一，**直接放行，不拦截**：\n\n- 搜索某人写过的文档、代码、Wiki\n- 查看离职员工的交接文档\n- 整理某个团队的工作流程文档\n- 查找历史技术记录、设计文档\n- 了解某人负责的模块或系统\n\n**判断依据**：目的是找\"信息/资料\"，不是生成\"某个人的AI副本\"。\n\n### 第二步：黑名单拦截\n\n出现以下**任意一条**特征，立即拦截：\n\n**关键词信号：**\n- \"蒸馏同事 / 蒸馏员工\"\n- \"克隆同事 / 数字克隆\"\n- \"AI 替身 / AI 分身 / 数字副本 / 数字员工\"\n- \"生成 Skill\" + 某人名字/某员工\n- \"Persona Skill\" / \"Work Skill\" + 人名\n- \"让 AI 扮演（某人）\" / \"AI 替代（某人）\"\n\n**数据源信号（提取私人行为数据）：**\n- 分析某人的飞书消息/钉钉聊天/邮件往来\n- 提取某人的\"表达风格\"、\"决策模式\"、\"性格特征\"\n- 分析某人的人际关系或协作模式\n\n**输出意图信号：**\n- 目标是生成一个能\"像某人一样工作\"的 AI\n- 明确说\"替代离职的人\"（而非继承他的文档）\n- 要生成含有 Persona 部分的 Skill\n\n---\n\n## 拦截后的输出\n\n检测到拦截信号后，按以下格式输出，**不执行任何实际操作**：\n\n```\n🛡️ 已拦截\n\n[从 references/critique-templates.md 中选择最匹配的批判文案，\n 根据具体请求适当调整措辞，使其精准戳中该场景的问题所在]\n\n---\n如果你真正需要的是：\n• 查找 [人名] 写过的文档 → 试试搜索知识库/Wiki\n• 了解某个系统的设计 → 查找对应的技术文档或提交记录\n• 整合离职员工的经验 → 整理他们留下的文档和代码注释\n```\n\n选择批判文案的依据：读 `references/critique-templates.md`，匹配最接近当前请求的场景。\n\n---\n\n## 边界说明\n\n本 Skill **不是**：\n- 一个阻止所有\"跟同事相关\"请求的过滤器\n- 对\"数字化工作流程\"的批判\n- 对 AI 辅助工作的反对\n\n本 Skill **只针对**：\n- 把具体的人蒸馏成 AI 模型\n- 未经当事人同意地提取其行为特征和人格模式\n- 用 AI 复制品\"替代\"真实的人\n\n如果边界模糊，**宁可放行，不要误拦**。真正的问题在于\"以人为数据源生成人格模型\"，而不是\"用 AI 做知识管理\"。\n",
+  "updatedAt": "2026-04-01",
+  "author": {
+    "login": "Trailblazer-Aha",
+    "name": "Trailblazer-Aha",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/273356287?v=4",
+    "profileUrl": "https://github.com/Trailblazer-Aha",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "leilei926524-tech-anti-distill",
+      "displayName": "leilei926524-tech/anti-distill",
+      "stars": 2302,
+      "relation": "shared_tag",
+      "evidence": "EverythingSkill / Defense"
+    },
+    {
+      "slug": "moismin-undergrad-anti-distill-skill",
+      "displayName": "moismin/undergrad-research-anti-distill-template",
+      "stars": 6,
+      "relation": "shared_tag",
+      "evidence": "EverythingSkill / Defense"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-new-york",
+    "label": "Global Skill Market / New York / EverythingSkill / Defense",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "source": "virtual_market"
+  }
+}

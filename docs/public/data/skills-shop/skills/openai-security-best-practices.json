@@ -12,22 +12,22 @@
   "readme": "# openai/security-best-practices\n\nReview code for language-specific security vulnerabilities",
   "readmeHtml": "<h1>openai/security-best-practices</h1>\n<p>Review code for language-specific security vulnerabilities</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.125Z",
+  "updatedAt": "2026-07-03T11:33:56.362Z",
   "author": {
     "login": "openai",
-    "name": "openai",
-    "avatarUrl": "",
+    "name": "OpenAI",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/14957082?v=4",
     "profileUrl": "https://github.com/openai",
     "location": ""
   },
   "location": null,
   "related": [
     {
-      "slug": "openai-skills",
-      "displayName": "openai/skills",
-      "stars": 18508,
-      "relation": "source_overlap",
-      "evidence": "author:openai"
+      "slug": "combo-security-audit-stack",
+      "displayName": "Security Audit Stack",
+      "stars": 0,
+      "relation": "combo_component",
+      "evidence": "Security Audit Stack includes openai/security-best-practices"
     },
     {
       "slug": "openai-cloudflare-deploy",

@@ -4,77 +4,77 @@
   "name": "claude-win11-speckit-update-skill",
   "displayName": "NotMyself/claude-win11-speckit-update-skill",
   "description": "Windows 11 system management",
-  "stars": 32,
+  "stars": 31,
   "category": "Community Skills",
   "source": "voltagent",
   "url": "https://github.com/NotMyself/claude-win11-speckit-update-skill",
   "githubRepo": "NotMyself/claude-win11-speckit-update-skill",
-  "readme": "# NotMyself/claude-win11-speckit-update-skill\n\nWindows 11 system management",
-  "readmeHtml": "<h1>NotMyself/claude-win11-speckit-update-skill</h1>\n<p>Windows 11 system management</p>",
+  "readme": "# SpecKit Safe Update - Claude Code Skill\n\nSafe updates for GitHub SpecKit installations, preserving your customizations.\n\n## Overview\n\nThis Claude Code skill provides a safe, automated way to update SpecKit templates, commands, and scripts while preserving user customizations, eliminating the need for destructive `specify init --force` updates.\n\n## Features\n\n- **Smart Merge with Frictionless Onboarding** (New in v0.6.0): Automatic version detection and intelligent 3-way merge\n  - **Zero conflicts** for first-time users with unmodified SpecKit installations (was ~15)\n  - **Fingerprint-based version detection**: Fast signature check (<100ms) identifies installed SpecKit version automatically\n  - **Intelligent 3-way merge**: Section-level semantic understanding reduces conflicts from ~15 to 0-2\n  - **No user configuration**: Fully automatic operation, works out of the box\n- **Automatic SpecKit Installation** (v0.4.0): Offers to install SpecKit in non-SpecKit projects with one command\n- **Customization Preservation**: Automatically detects and preserves your customized files\n- **Smart Conflict Resolution**: Intelligent two-tier conflict handling\n  - Small files (â‰¤100 lines): Git conflict markers with VSCode CodeLens integration\n  - Large files (>100 lines): Side-by-side Markdown diff files for easier review\n- **False Positive Detection**: Auto-resolves conflicts where files are identical to upstream\n- **Conversational Approval**: Two-step workflow designed for Claude Code\n- **Version Tracking**: Maintains manifest with file hashes and version information\n- **Automatic Backups**: Creates timestamped backups with retention management\n- **Fail-Fast with Rollback**: Automatic rollback on failure, preserves diff files for debugging\n- **Dry-Run Mode**: Check what would change before applying updates\n- **Constitution Integration**: Seamless integration with `/speckit.constitution` command\n- **Welcome Experience**: First-time installs show helpful next steps\n\n## Prerequisites\n\n**Supported Environment**:\n- **OS**: Windows 11 (macOS/Linux support welcome - see [#15](https://github.com/NotMyself/claude-win11-speckit-update-skill/issues/15))\n- **Shell**: PowerShell 7+\n- **AI**: Claude Code (CLI or VSCode extension)\n- **Git**: In PATH\n- **Internet**: For GitHub API access\n\n**Note**: This skill is designed specifically for Windows + PowerShell + Claude Code. Community contributions for other platforms/models are welcome but not maintained by the project owner.\n\n## Configuration\n\n**GitHub Token** (Optional):\n\nThe updater works without authentication (60 requests/hour). For higher rate limits (5,000 requests/hour), set the `GITHUB_PAT` environment variable:\n\n```powershell\n$env:GITHUB_PAT = \"ghp_YOUR_TOKEN_HERE\"\n```\n\nSee [CLAUDE.md](CLAUDE.md#using-github-tokens) for complete token setup, team collaboration, CI/CD integration, and troubleshooting.\n\n## Installation\n\n### Plugin Installation (Recommended)\n\nInstall via the NotMyself plugin marketplace:\n\n```bash\n# Add the marketplace\n/plugin marketplace add NotMyself/claude-plugins\n\n# Install the skill\n/plugin install speckit-updater\n```\n\nThe skill will be automatically available - no restart required!\n\n### Manual Installation (Alternative)\n\nFor advanced users or development:\n\n```powershell\n# Navigate to Claude Code skills directory\ncd $env:USERPROFILE\\.claude\\skills\n\n# Clone this repository\ngit clone https://github.com/NotMyself/claude-win11-speckit-update-skill speckit-updater\n\n# Restart VSCode to load the skill\n```\n\n**Verify installation**: The `/speckit-update` command should be available in Claude Code.\n\n**Migration**: Already using manual installation? See [Migration Guide](docs/migration-guide-plugin.md) for upgrading to plugin-based installation (optional).\n\n## Usage\n\n### First-Time Installation (New in v0.4.0!)\n\nIf you run `/speckit-updater` in a project **without SpecKit installed**, the updater will automatically offer to install it for you:\n\n```\n/speckit-updater\n```\n\n**Interactive Mode (Terminal):**\n```\nSpecKit is not installed in this project.\n\nThis skill can install the latest SpecKit templates and create a manifest to track future updates.\n\nWould you like to install SpecKit now? (Y/n) Y\n```\n\n**Non-Interactive Mode (Claude Code):**\nClaude will ask naturally: \"SpecKit is not currently installed in this project. Would you like me to install it?\"\n\nSimply reply \"yes\" or \"install it\" and Claude will handle the rest automatically.\n\n**What Gets Installed:**\n- `.specify/` directory structure (`memory/`, `backups/`)\n- Latest SpecKit templates from GitHub\n- All official SpecKit slash commands in `.claude/commands/`\n- Manifest file to track future updates\n- Welcome message with next steps\n\n**Graceful Decline:** If you decline installation, you'll see a helpful error message explaining what SpecKit is and how to install it manually.\n\n### Check for Updates (Dry-Run)\n\n```\n/speckit-updater --check-only\n```\n\nShows what would change without applying any updates.\n\n### Update to Latest Version\n\n```\n/speckit-updater\n```\n\nTwo-step conversational workflow:\n1. Shows summary with `[PROMPT_FOR_APPROVAL]` marker\n2. You approve via chat â†’ Claude re-invokes with `-Proceed`\n\n### Update to Specific Version\n\n```\n/speckit-updater --version v0.0.72\n```\n\nUpdate to a specific SpecKit release tag.\n\n### Rollback to Previous Version\n\n```\n/speckit-updater --rollback\n```\n\nRestore from a previous backup.\n\n### Force Update\n\n```\n/speckit-updater --force\n```\n\nOverwrite SpecKit files even if customized (preserves custom commands).\n\n### Skip Backup (Not Recommended)\n\n```\n/speckit-updater --no-backup\n```\n\nSkip backup creation. Use only if you're absolutely sure.\n\n## How It Works\n\n### Customization Detection\n\nThe updater automatically detects which files you've customized by comparing file hashes:\n\n- **Customized files** are preserved and never overwritten\n- **Unchanged files** are safely updated to the latest version\n- **Your custom commands** are always protected, even with `--force`\n\n### Smart Update Process\n\nWhen you run `/speckit-updater`:\n\n1. **Safety First**: Creates a timestamped backup before making any changes\n2. **Intelligent Analysis**: Compares your files with the latest SpecKit templates\n3. **Conflict Detection**: Identifies files that need your attention\n4. **Conversational Approval**: Shows you exactly what will change and waits for your approval\n5. **Safe Application**: Updates only what's safe, preserving your customizations\n6. **Automatic Rollback**: If anything goes wrong, automatically restores from backup\n\n### Backup & Recovery\n\n- **Automatic backups** created before every update in `.specify/backups/`\n- **Timestamped folders** make it easy to find the right backup\n- **Quick rollback** with `/speckit-updater --rollback`\n- **Automatic cleanup** keeps your 5 most recent backups\n\n## Error Handling\n\n### Exit Codes\n\n| Code | Meaning |\n|------|---------|\n| 0 | Success |\n| 1 | General error |\n| 2 | Prerequisites not met |\n| 3 | Network/API error |\n| 4 | Git error |\n| 5 | User cancelled |\n| 6 | Rollback required (automatic) |\n\n### Automatic Rollback\n\nIf an error occurs during update:\n1. Error message is displayed\n2. Automatic rollback is attempted (if backup exists)\n3. Files are restored to pre-update state\n4. Exit code 6 is returned\n\n## License\n\nMIT License - see [LICENSE](./LICENSE)\n",
+  "readmeHtml": "<h1>SpecKit Safe Update - Claude Code Skill</h1>\n<p>Safe updates for GitHub SpecKit installations, preserving your customizations.</p>\n<h2>Overview</h2>\n<p>This Claude Code skill provides a safe, automated way to update SpecKit templates, commands, and scripts while preserving user customizations, eliminating the need for destructive <code>specify init --force</code> updates.</p>\n<h2>Features</h2>\n<ul>\n<li><strong>Smart Merge with Frictionless Onboarding</strong> (New in v0.6.0): Automatic version detection and intelligent 3-way merge</li>\n</ul>\n<p>  - <strong>Zero conflicts</strong> for first-time users with unmodified SpecKit installations (was ~15)</p>\n<p>  - <strong>Fingerprint-based version detection</strong>: Fast signature check (&lt;100ms) identifies installed SpecKit version automatically</p>\n<p>  - <strong>Intelligent 3-way merge</strong>: Section-level semantic understanding reduces conflicts from ~15 to 0-2</p>\n<p>  - <strong>No user configuration</strong>: Fully automatic operation, works out of the box</p>\n<ul>\n<li><strong>Automatic SpecKit Installation</strong> (v0.4.0): Offers to install SpecKit in non-SpecKit projects with one command</li>\n<li><strong>Customization Preservation</strong>: Automatically detects and preserves your customized files</li>\n<li><strong>Smart Conflict Resolution</strong>: Intelligent two-tier conflict handling</li>\n</ul>\n<p>  - Small files (â‰¤100 lines): Git conflict markers with VSCode CodeLens integration</p>\n<p>  - Large files (&gt;100 lines): Side-by-side Markdown diff files for easier review</p>\n<ul>\n<li><strong>False Positive Detection</strong>: Auto-resolves conflicts where files are identical to upstream</li>\n<li><strong>Conversational Approval</strong>: Two-step workflow designed for Claude Code</li>\n<li><strong>Version Tracking</strong>: Maintains manifest with file hashes and version information</li>\n<li><strong>Automatic Backups</strong>: Creates timestamped backups with retention management</li>\n<li><strong>Fail-Fast with Rollback</strong>: Automatic rollback on failure, preserves diff files for debugging</li>\n<li><strong>Dry-Run Mode</strong>: Check what would change before applying updates</li>\n<li><strong>Constitution Integration</strong>: Seamless integration with <code>/speckit.constitution</code> command</li>\n<li><strong>Welcome Experience</strong>: First-time installs show helpful next steps</li>\n</ul>\n<h2>Prerequisites</h2>\n<p><strong>Supported Environment</strong>:</p>\n<ul>\n<li><strong>OS</strong>: Windows 11 (macOS/Linux support welcome - see <a href=\"https://github.com/NotMyself/claude-win11-speckit-update-skill/issues/15\" target=\"_blank\" rel=\"noreferrer\">#15</a>)</li>\n<li><strong>Shell</strong>: PowerShell 7+</li>\n<li><strong>AI</strong>: Claude Code (CLI or VSCode extension)</li>\n<li><strong>Git</strong>: In PATH</li>\n<li><strong>Internet</strong>: For GitHub API access</li>\n</ul>\n<p><strong>Note</strong>: This skill is designed specifically for Windows + PowerShell + Claude Code. Community contributions for other platforms/models are welcome but not maintained by the project owner.</p>\n<h2>Configuration</h2>\n<p><strong>GitHub Token</strong> (Optional):</p>\n<p>The updater works without authentication (60 requests/hour). For higher rate limits (5,000 requests/hour), set the <code>GITHUB_PAT</code> environment variable:</p>\n<pre><code>\n$env:GITHUB_PAT = \"ghp_YOUR_TOKEN_HERE\"\n\n</code></pre>\n<p>See [CLAUDE.md](CLAUDE.md#using-github-tokens) for complete token setup, team collaboration, CI/CD integration, and troubleshooting.</p>\n<h2>Installation</h2>\n<h3>Plugin Installation (Recommended)</h3>\n<p>Install via the NotMyself plugin marketplace:</p>\n<pre><code>\n# Add the marketplace\n\n/plugin marketplace add NotMyself/claude-plugins\n\n\n\n# Install the skill\n\n/plugin install speckit-updater\n\n</code></pre>\n<p>The skill will be automatically available - no restart required!</p>\n<h3>Manual Installation (Alternative)</h3>\n<p>For advanced users or development:</p>\n<pre><code>\n# Navigate to Claude Code skills directory\n\ncd $env:USERPROFILE\\.claude\\skills\n\n\n\n# Clone this repository\n\ngit clone https://github.com/NotMyself/claude-win11-speckit-update-skill speckit-updater\n\n\n\n# Restart VSCode to load the skill\n\n</code></pre>\n<p><strong>Verify installation</strong>: The <code>/speckit-update</code> command should be available in Claude Code.</p>\n<p><strong>Migration</strong>: Already using manual installation? See [Migration Guide](docs/migration-guide-plugin.md) for upgrading to plugin-based installation (optional).</p>\n<h2>Usage</h2>\n<h3>First-Time Installation (New in v0.4.0!)</h3>\n<p>If you run <code>/speckit-updater</code> in a project <strong>without SpecKit installed</strong>, the updater will automatically offer to install it for you:</p>\n<pre><code>\n/speckit-updater\n\n</code></pre>\n<p><strong>Interactive Mode (Terminal):</strong></p>\n<pre><code>\nSpecKit is not installed in this project.\n\n\n\nThis skill can install the latest SpecKit templates and create a manifest to track future updates.\n\n\n\nWould you like to install SpecKit now? (Y/n) Y\n\n</code></pre>\n<p><strong>Non-Interactive Mode (Claude Code):</strong></p>\n<p>Claude will ask naturally: \"SpecKit is not currently installed in this project. Would you like me to install it?\"</p>\n<p>Simply reply \"yes\" or \"install it\" and Claude will handle the rest automatically.</p>\n<p><strong>What Gets Installed:</strong></p>\n<ul>\n<li><code>.specify/</code> directory structure (<code>memory/</code>, <code>backups/</code>)</li>\n<li>Latest SpecKit templates from GitHub</li>\n<li>All official SpecKit slash commands in <code>.claude/commands/</code></li>\n<li>Manifest file to track future updates</li>\n<li>Welcome message with next steps</li>\n</ul>\n<p><strong>Graceful Decline:</strong> If you decline installation, you'll see a helpful error message explaining what SpecKit is and how to install it manually.</p>\n<h3>Check for Updates (Dry-Run)</h3>\n<pre><code>\n/speckit-updater --check-only\n\n</code></pre>\n<p>Shows what would change without applying any updates.</p>\n<h3>Update to Latest Version</h3>\n<pre><code>\n/speckit-updater\n\n</code></pre>\n<p>Two-step conversational workflow:</p>\n<p>1. Shows summary with <code>[PROMPT_FOR_APPROVAL]</code> marker</p>\n<p>2. You approve via chat â†’ Claude re-invokes with <code>-Proceed</code></p>\n<h3>Update to Specific Version</h3>\n<pre><code>\n/speckit-updater --version v0.0.72\n\n</code></pre>\n<p>Update to a specific SpecKit release tag.</p>\n<h3>Rollback to Previous Version</h3>\n<pre><code>\n/speckit-updater --rollback\n\n</code></pre>\n<p>Restore from a previous backup.</p>\n<h3>Force Update</h3>\n<pre><code>\n/speckit-updater --force\n\n</code></pre>\n<p>Overwrite SpecKit files even if customized (preserves custom commands).</p>\n<h3>Skip Backup (Not Recommended)</h3>\n<pre><code>\n/speckit-updater --no-backup\n\n</code></pre>\n<p>Skip backup creation. Use only if you're absolutely sure.</p>\n<h2>How It Works</h2>\n<h3>Customization Detection</h3>\n<p>The updater automatically detects which files you've customized by comparing file hashes:</p>\n<ul>\n<li><strong>Customized files</strong> are preserved and never overwritten</li>\n<li><strong>Unchanged files</strong> are safely updated to the latest version</li>\n<li><strong>Your custom commands</strong> are always protected, even with <code>--force</code></li>\n</ul>\n<h3>Smart Update Process</h3>\n<p>When you run <code>/speckit-updater</code>:</p>\n<p>1. <strong>Safety First</strong>: Creates a timestamped backup before making any changes</p>\n<p>2. <strong>Intelligent Analysis</strong>: Compares your files with the latest SpecKit templates</p>\n<p>3. <strong>Conflict Detection</strong>: Identifies files that need your attention</p>\n<p>4. <strong>Conversational Approval</strong>: Shows you exactly what will change and waits for your approval</p>\n<p>5. <strong>Safe Application</strong>: Updates only what's safe, preserving your customizations</p>\n<p>6. <strong>Automatic Rollback</strong>: If anything goes wrong, automatically restores from backup</p>\n<h3>Backup &amp; Recovery</h3>\n<ul>\n<li><strong>Automatic backups</strong> created before every update in <code>.specify/backups/</code></li>\n<li><strong>Timestamped folders</strong> make it easy to find the right backup</li>\n<li><strong>Quick rollback</strong> with <code>/speckit-updater --rollback</code></li>\n<li><strong>Automatic cleanup</strong> keeps your 5 most recent backups</li>\n</ul>\n<h2>Error Handling</h2>\n<h3>Exit Codes</h3>\n<p>| Code | Meaning |</p>\n<p>|------|---------|</p>\n<p>| 0 | Success |</p>\n<p>| 1 | General error |</p>\n<p>| 2 | Prerequisites not met |</p>\n<p>| 3 | Network/API error |</p>\n<p>| 4 | Git error |</p>\n<p>| 5 | User cancelled |</p>\n<p>| 6 | Rollback required (automatic) |</p>\n<h3>Automatic Rollback</h3>\n<p>If an error occurs during update:</p>\n<p>1. Error message is displayed</p>\n<p>2. Automatic rollback is attempted (if backup exists)</p>\n<p>3. Files are restored to pre-update state</p>\n<p>4. Exit code 6 is returned</p>\n<h2>License</h2>\n<p>MIT License - see [LICENSE](./LICENSE)</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.059Z",
+  "updatedAt": "2025-10-26T02:12:53Z",
   "author": {
-    "login": "notmyself",
-    "name": "notmyself",
-    "avatarUrl": "",
-    "profileUrl": "https://github.com/notmyself",
-    "location": ""
+    "login": "NotMyself",
+    "name": "Bobby Johnson",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/73120?v=4",
+    "profileUrl": "https://github.com/NotMyself",
+    "location": "Olympia, WA"
   },
   "location": null,
   "related": [
     {
-      "slug": "obra-defense-in-depth",
-      "displayName": "obra/defense-in-depth",
-      "stars": 186953,
+      "slug": "obra-brainstorming",
+      "displayName": "obra/brainstorming",
+      "stars": 245089,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mattpocock-skills",
+      "displayName": "mattpocock/skills",
+      "stars": 155097,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
       "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
-      "stars": 77115,
+      "stars": 100227,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "lum1104-understand-anything",
+      "displayName": "Lum1104/understand-anything",
+      "stars": 70574,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "santifer-career-ops",
+      "displayName": "santifer/career-ops",
+      "stars": 58303,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "leonxlnx-taste-skill",
+      "displayName": "Leonxlnx/taste-skill",
+      "stars": 55314,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "panniantong-agent-reach",
+      "displayName": "Panniantong/Agent-Reach",
+      "stars": 49547,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "mvanhorn-last30days-skill",
       "displayName": "mvanhorn/last30days-skill",
-      "stars": 25573,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "k-dense-ai-claude-scientific-skills",
-      "displayName": "K-Dense-AI/claude-scientific-skills",
-      "stars": 20299,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-fundamentals",
-      "displayName": "muratcankoylan/context-fundamentals",
-      "stars": 15494,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-degradation",
-      "displayName": "muratcankoylan/context-degradation",
-      "stars": 15494,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-compression",
-      "displayName": "muratcankoylan/context-compression",
-      "stars": 15494,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-optimization",
-      "displayName": "muratcankoylan/context-optimization",
-      "stars": 15494,
+      "stars": 48607,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     }

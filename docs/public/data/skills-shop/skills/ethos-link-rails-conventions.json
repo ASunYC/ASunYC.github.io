@@ -4,86 +4,92 @@
   "name": "rails-conventions",
   "displayName": "ethos-link/rails-conventions",
   "description": "Rails 8 conventions for consistent production code changes",
-  "stars": 0,
+  "stars": 16,
   "category": "Community Skills",
   "source": "voltagent",
   "url": "https://github.com/ethos-link/rails-conventions",
   "githubRepo": "ethos-link/rails-conventions",
-  "readme": "# ethos-link/rails-conventions\n\nRails 8 conventions for consistent production code changes",
-  "readmeHtml": "<h1>ethos-link/rails-conventions</h1>\n<p>Rails 8 conventions for consistent production code changes</p>",
-  "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.155Z",
+  "readme": "<p align=\"center\">\n  <strong>rails-conventions</strong>\n</p>\n\n<h1 align=\"center\">A practical Rails skill for teams that value consistency</h1>\n\n<p align=\"center\">\n  Build and review Rails 8 code by matching the codebase you already have,\n  not by forcing generic patterns that don’t fit your app.\n</p>\n\n<p align=\"center\">\n  <a href=\"./SKILL.md\">SKILL.md</a> ·\n  <a href=\"./references\">References</a>\n</p>\n\n---\n\n## What this skill helps with\n\n`rails-conventions` is for real production work in Rails codebases where consistency matters.\n\nIt guides agents to:\n\n- inspect local patterns first (models, controllers, routes, tests, deploy setup)\n- keep naming and architecture aligned with existing conventions\n- write backend-aware job code (`good_job` or `solid_queue`) without assumptions\n- catch risks early in security, performance, and test coverage\n\n## Coverage\n\n- Rails 8 baseline and compatibility constraints\n- Naming, layering, and code organization\n- Active Record modeling, PostgreSQL features, and migration discipline\n- Controllers, params, and response semantics\n- REST/resource-focused routing\n- Hotwire/Turbo/Stimulus patterns\n- Background jobs (adapter detection + backend-specific guidance)\n- Performance and caching strategy\n- Security checklist\n- Testing strategy (Minitest and Minitest::Mock)\n- API and serialization conventions\n- Optional 37signals-inspired profile\n\n## Validate, install, and update\n\nRun the bundled validation script before publishing changes:\n\n```bash\nruby scripts/validate_skill.rb\n```\n\nInstall or update the skill with [`skills`](https://www.npmjs.com/package/skills):\n\n```bash\n# install from source\nnpx skills add git@github.com:ethos-link/rails-conventions.git --skill rails-conventions\n\n# update an existing install\nnpx skills update rails-conventions\n```\n\n## Forward-test prompts\n\nUse these prompts to check that the skill triggers correctly and loads only the\nreferences needed for the task:\n\n```text\nImplement a new billing webhook endpoint in this Rails app, matching existing conventions and tests.\n```\n\n```text\nReview this Rails 8 pull request for production readiness, focusing on naming, data integrity, security, and missing tests.\n```\n\n```text\nThis Rails app uses GoodJob. Add a background job for exporting account reports without changing the queue backend.\n```\n\n## References\n\n- Agent Skills spec: <https://agentskills.io>\n- Heavily inspired by: <https://github.com/marckohlbrugge/unofficial-37signals-coding-style-guide>\n\n## License\n\nMIT.\n\n## About\n\nMade by the team at [Ethos Link](https://www.ethos-link.com) — practical software for growing businesses. We build tools for hospitality operators who need clear workflows, fast onboarding, and real human support.\n\nWe also build [Reviato](https://www.reviato.com), “Capture. Interpret. Act.”.\nTurn guest feedback into clear next steps for your team. Collect private appraisals, spot patterns across reviews, and act before small issues turn into public ones.\n",
+  "readmeHtml": "<p>&lt;p align=\"center\"&gt;</p>\n<p>  &lt;strong&gt;rails-conventions&lt;/strong&gt;</p>\n<p>&lt;/p&gt;</p>\n<p>&lt;h1 align=\"center\"&gt;A practical Rails skill for teams that value consistency&lt;/h1&gt;</p>\n<p>&lt;p align=\"center\"&gt;</p>\n<p>  Build and review Rails 8 code by matching the codebase you already have,</p>\n<p>  not by forcing generic patterns that don’t fit your app.</p>\n<p>&lt;/p&gt;</p>\n<p>&lt;p align=\"center\"&gt;</p>\n<p>  &lt;a href=\"./SKILL.md\"&gt;SKILL.md&lt;/a&gt; ·</p>\n<p>  &lt;a href=\"./references\"&gt;References&lt;/a&gt;</p>\n<p>&lt;/p&gt;</p>\n<p>---</p>\n<h2>What this skill helps with</h2>\n<p><code>rails-conventions</code> is for real production work in Rails codebases where consistency matters.</p>\n<p>It guides agents to:</p>\n<ul>\n<li>inspect local patterns first (models, controllers, routes, tests, deploy setup)</li>\n<li>keep naming and architecture aligned with existing conventions</li>\n<li>write backend-aware job code (<code>good_job</code> or <code>solid_queue</code>) without assumptions</li>\n<li>catch risks early in security, performance, and test coverage</li>\n</ul>\n<h2>Coverage</h2>\n<ul>\n<li>Rails 8 baseline and compatibility constraints</li>\n<li>Naming, layering, and code organization</li>\n<li>Active Record modeling, PostgreSQL features, and migration discipline</li>\n<li>Controllers, params, and response semantics</li>\n<li>REST/resource-focused routing</li>\n<li>Hotwire/Turbo/Stimulus patterns</li>\n<li>Background jobs (adapter detection + backend-specific guidance)</li>\n<li>Performance and caching strategy</li>\n<li>Security checklist</li>\n<li>Testing strategy (Minitest and Minitest::Mock)</li>\n<li>API and serialization conventions</li>\n<li>Optional 37signals-inspired profile</li>\n</ul>\n<h2>Validate, install, and update</h2>\n<p>Run the bundled validation script before publishing changes:</p>\n<pre><code>\nruby scripts/validate_skill.rb\n\n</code></pre>\n<p>Install or update the skill with <a href=\"https://www.npmjs.com/package/skills\" target=\"_blank\" rel=\"noreferrer\"><code>skills</code></a>:</p>\n<pre><code>\n# install from source\n\nnpx skills add git@github.com:ethos-link/rails-conventions.git --skill rails-conventions\n\n\n\n# update an existing install\n\nnpx skills update rails-conventions\n\n</code></pre>\n<h2>Forward-test prompts</h2>\n<p>Use these prompts to check that the skill triggers correctly and loads only the</p>\n<p>references needed for the task:</p>\n<pre><code>\nImplement a new billing webhook endpoint in this Rails app, matching existing conventions and tests.\n\n</code></pre>\n<pre><code>\nReview this Rails 8 pull request for production readiness, focusing on naming, data integrity, security, and missing tests.\n\n</code></pre>\n<pre><code>\nThis Rails app uses GoodJob. Add a background job for exporting account reports without changing the queue backend.\n\n</code></pre>\n<h2>References</h2>\n<ul>\n<li>Agent Skills spec: &lt;https://agentskills.io&gt;</li>\n<li>Heavily inspired by: &lt;https://github.com/marckohlbrugge/unofficial-37signals-coding-style-guide&gt;</li>\n</ul>\n<h2>License</h2>\n<p>MIT.</p>\n<h2>About</h2>\n<p>Made by the team at <a href=\"https://www.ethos-link.com\" target=\"_blank\" rel=\"noreferrer\">Ethos Link</a> — practical software for growing businesses. We build tools for hospitality operators who need clear workflows, fast onboarding, and real human support.</p>\n<p>We also build <a href=\"https://www.reviato.com\" target=\"_blank\" rel=\"noreferrer\">Reviato</a>, “Capture. Interpret. Act.”.</p>\n<p>Turn guest feedback into clear next steps for your team. Collect private appraisals, spot patterns across reviews, and act before small issues turn into public ones.</p>",
+  "skillMd": "---\nname: rails-conventions\ndescription: Rails 8.x application architecture, implementation, and review guidance for production codebases. Use when building or reviewing Ruby on Rails 8 features across models, controllers, routes, Hotwire, jobs, APIs, performance, security, and testing. Trigger for requests mentioning Rails 8, Active Record, Active Job, GoodJob, Solid Queue, Turbo/Stimulus, REST resources, migrations, code quality, naming, and production readiness.\nlicense: MIT\ncompatibility: Compatible with any agent runtime that supports the Agent Skills SKILL.md convention and optional references directory loading.\nmetadata:\n  version: 1.0.0\n  ethos_link.company: Ethos Link\n  ethos_link.company_url: https://www.ethos-link.com\n  ethos_link.product: Reviato\n  ethos_link.product_url: https://www.reviato.com\n  ethos_link.maintainer: ethos-link\n  ethos_link.contact_url: https://www.ethos-link.com/contact/\n---\n\n# Rails Convention Engineer\n\nFollow this workflow and load only the references needed for the task.\n\n## Execution Workflow\n\n1. Inspect the codebase before proposing changes.\n2. Match existing conventions unless the user requests a migration.\n3. Use Rails conventions and plain Ruby first.\n4. Prefer small, reversible changes with tests.\n5. Report tradeoffs explicitly when choosing architecture.\n6. Verify version-sensitive APIs against official Rails or gem docs before\n   changing guidance or introducing new APIs.\n\n## Non-Negotiable Rails Defaults\n\nRails applications should look like Rails applications. Prefer the framework's\nnative resource, model, controller, job, mailer, and view boundaries before\nintroducing extra architectural layers. Avoid architecture borrowed from other\necosystems when Rails already has a direct convention for the problem.\n\nOfficial Rails guides, official gem documentation, and established local app\nconventions outrank style profiles. Use 37signals-inspired guidance as taste\nguidance, not as authority over the current app or current Rails APIs.\n\nClasses and modules must earn their place. Choose the fewest concepts, files,\nand lines of code that keep the behavior clear. Do not add wrappers, aliases,\nfacades, or parallel abstractions whose main purpose is naming, indirection, or\nmaking tests easier.\n\nKeep one owner per behavior and one owner per definition. Prompts, schemas,\nenums, constants, validation rules, normalization logic, and domain terminology\nmust each have a canonical home.\n\nEvery Rails project should maintain a domain terminology document, usually\n`docs/domain-terms.md`, and link it from the README or equivalent contributor\nentrypoint. The document should define canonical domain terms, deprecated terms,\nand naming rules for code, routes, params, APIs, persisted fields, and docs.\n\n## Mandatory Codebase Scan\n\nAlways read these files first when available:\n\n- `Gemfile`\n- `config/application.rb`\n- `config/routes.rb`\n- `config/environments/*.rb` (at least current target env)\n- `app/models/` (2-5 representative models)\n- `app/controllers/` (2-5 representative controllers)\n- `test/` or `spec/`\n- process/deploy entrypoints (`Procfile*`, `bin/jobs`, `config/deploy*.yml`, CI config)\n\nRecord and follow observed patterns:\n\n- test framework\n- authentication/authorization style\n- frontend stack (Hotwire, React, hybrid)\n- queue backend and runtime topology\n- API conventions and serialization style\n\n## Background Job Backend Policy\n\nNever assume Solid Queue just because the app is Rails 8.\n\nDetect backend in this order:\n\n1. `config.active_job.queue_adapter`\n2. `Gemfile` gems (`good_job`, `solid_queue`, others)\n3. worker runtime commands and deployment wiring\n\nApply these rules:\n\n- If `good_job` is active, keep `good_job` conventions.\n- If `solid_queue` is active, keep `solid_queue` conventions.\n- If both gems exist, treat the configured adapter as authoritative.\n- Do not migrate queue backend implicitly as part of unrelated tasks.\n- Write backend-agnostic `ApplicationJob` code unless backend features are explicitly requested.\n\n## Reference Routing\n\nLoad references based on the task:\n\n- Code style, formatting, naming conventions, and fail-fast policy: `STYLE.md`\n- Baseline Rails 8 defaults and upgrade constraints: `references/01-baseline-rails-8.md`\n- Naming, layering, and code organization: `references/02-naming-and-structure.md`\n- Active Record, migrations, and data modeling: `references/03-models-and-data.md`\n- PostgreSQL-specific Active Record features: `references/03a-active-record-postgresql.md`\n- Controllers, params, and request flow: `references/04-controllers-and-params.md`\n- REST resources and routes: `references/05-routes-rest-and-resources.md`\n- Hotwire, Turbo, and Stimulus patterns: `references/06-hotwire-turbo-stimulus.md`\n- Job architecture and adapter detection: `references/07-background-jobs-overview.md`\n- GoodJob-specific patterns: `references/07a-background-jobs-good_job.md`\n- Solid Queue-specific patterns: `references/07b-background-jobs-solid_queue.md`\n- Performance and caching strategy: `references/08-performance-caching-and-db.md`\n- Security review checklist: `references/09-security-checklist.md`\n- Test strategy and quality gates: `references/10-testing-strategy.md`\n- API-only and mixed-mode API patterns: `references/11-api-mode-and-serialization.md`\n- 37signals-inspired style profile: `references/12-37signals-inspired-profile.md`\n- Code quality thresholds and detection patterns: `references/13-code-quality-gates.md`\n\n## Task Routing\n\n| Task | Load |\n|------|------|\n| Ruby style, naming, method order, fail-fast | `STYLE.md`, `references/13-code-quality-gates.md` |\n| New model, migration, data invariant, parser | `references/03-models-and-data.md`, `references/03a-active-record-postgresql.md`, `references/10-testing-strategy.md` |\n| Controller params, authz, sessions, responses | `references/04-controllers-and-params.md`, `references/09-security-checklist.md`, `references/10-testing-strategy.md` |\n| Routes or custom actions | `references/05-routes-rest-and-resources.md`, `references/04-controllers-and-params.md` |\n| Hotwire, Turbo, Stimulus | `references/06-hotwire-turbo-stimulus.md`, `references/10-testing-strategy.md` |\n| Background jobs | `references/07-background-jobs-overview.md`, adapter-specific `07a` or `07b`, `references/10-testing-strategy.md` |\n| API endpoint or serializer | `references/11-api-mode-and-serialization.md`, `references/04-controllers-and-params.md`, `references/09-security-checklist.md` |\n| Performance, cache, query work | `references/08-performance-caching-and-db.md`, `references/03-models-and-data.md` |\n| Architecture or object boundary | `references/02-naming-and-structure.md`, `references/12-37signals-inspired-profile.md` |\n\n## Authentication Patterns\n\nExisting authentication and local naming are authoritative. For greenfield Rails\n8.1 applications, prefer the built-in authentication generator. Do not rename an\nexisting auth domain for style alone.\n\nWhen implementing custom auth:\n\n- Use password-based authentication with bcrypt via `has_secure_password`.\n- Use magic link codes (not full magic link URLs) for account confirmation and email verification.\n- For greenfield account-based apps, consider `Identity` (global email-based),\n  `User` (per-account membership), and `Session`.\n- Rate limit authentication endpoints aggressively.\n- Store sessions via signed cookies with `httponly` and `same_site: :lax`.\n\n## Output Contract\n\nFor implementation tasks, produce:\n\n1. Required schema changes with migrations.\n2. Model/controller/view/job code following local conventions.\n3. Tests matching local framework.\n4. Brief risk notes (security, performance, rollout concerns).\n5. Source notes for version-sensitive APIs when current docs were checked.\n\nFor review tasks, prioritize:\n\n1. Correctness and behavioral regressions.\n2. Security and data integrity.\n3. Performance and operability.\n4. Test gaps.\n",
+  "updatedAt": "2026-06-19T08:11:41Z",
   "author": {
     "login": "ethos-link",
-    "name": "ethos-link",
-    "avatarUrl": "",
+    "name": "Ethos Link",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/214983541?v=4",
     "profileUrl": "https://github.com/ethos-link",
-    "location": ""
+    "location": "United States of America"
   },
-  "location": null,
+  "location": {
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
+  },
   "related": [
     {
-      "slug": "obra-defense-in-depth",
-      "displayName": "obra/defense-in-depth",
-      "stars": 186953,
+      "slug": "obra-brainstorming",
+      "displayName": "obra/brainstorming",
+      "stars": 245089,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mattpocock-skills",
+      "displayName": "mattpocock/skills",
+      "stars": 155097,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
       "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
-      "stars": 77115,
+      "stars": 100227,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "lum1104-understand-anything",
+      "displayName": "Lum1104/understand-anything",
+      "stars": 70574,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "santifer-career-ops",
+      "displayName": "santifer/career-ops",
+      "stars": 58303,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "leonxlnx-taste-skill",
+      "displayName": "Leonxlnx/taste-skill",
+      "stars": 55314,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "panniantong-agent-reach",
+      "displayName": "Panniantong/Agent-Reach",
+      "stars": 49547,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "mvanhorn-last30days-skill",
       "displayName": "mvanhorn/last30days-skill",
-      "stars": 25573,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "k-dense-ai-claude-scientific-skills",
-      "displayName": "K-Dense-AI/claude-scientific-skills",
-      "stars": 20299,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-fundamentals",
-      "displayName": "muratcankoylan/context-fundamentals",
-      "stars": 15494,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-degradation",
-      "displayName": "muratcankoylan/context-degradation",
-      "stars": 15494,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-compression",
-      "displayName": "muratcankoylan/context-compression",
-      "stars": 15494,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-optimization",
-      "displayName": "muratcankoylan/context-optimization",
-      "stars": 15494,
+      "stars": 48607,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     }
   ],
   "mapLocation": {
-    "id": "virtual-bengaluru",
-    "label": "Global Skill Market / Bengaluru / Community Skills",
-    "lat": 12.9716,
-    "lon": 77.5946,
-    "source": "virtual_market"
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
   }
 }

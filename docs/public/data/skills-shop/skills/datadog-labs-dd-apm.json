@@ -12,15 +12,21 @@
   "readme": "# datadog-labs/dd-apm\n\nQuery Datadog APM data directly from your editor",
   "readmeHtml": "<h1>datadog-labs/dd-apm</h1>\n<p>Query Datadog APM data directly from your editor</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.133Z",
+  "updatedAt": "2026-07-03T11:33:56.375Z",
   "author": {
     "login": "datadog-labs",
-    "name": "datadog-labs",
-    "avatarUrl": "",
+    "name": "Datadog Labs",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/259158689?v=4",
     "profileUrl": "https://github.com/datadog-labs",
-    "location": ""
+    "location": "United States of America"
   },
-  "location": null,
+  "location": {
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
+  },
   "related": [
     {
       "slug": "datadog-labs-dd-docs",
@@ -72,18 +78,18 @@
       "evidence": "author:datadog-labs"
     },
     {
-      "slug": "deanpeters-acquisition-channel-advisor",
-      "displayName": "deanpeters/acquisition-channel-advisor",
-      "stars": 4159,
+      "slug": "coreyhaines31-ab-test-setup",
+      "displayName": "coreyhaines31/ab-test-setup",
+      "stars": 35923,
       "relation": "shared_tag",
       "evidence": "TypeScript Skills"
     }
   ],
   "mapLocation": {
-    "id": "virtual-berlin",
-    "label": "Global Skill Market / Berlin / TypeScript Skills",
-    "lat": 52.52,
-    "lon": 13.405,
-    "source": "virtual_market"
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
   }
 }

@@ -12,15 +12,21 @@
   "readme": "# unknown/build-your-first-mcp-server\n\nPython/TypeScript guide",
   "readmeHtml": "<h1>unknown/build-your-first-mcp-server</h1>\n<p>Python/TypeScript guide</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.157Z",
+  "updatedAt": "2026-07-03T11:33:56.392Z",
   "author": {
     "login": "unknown",
-    "name": "unknown",
-    "avatarUrl": "",
+    "name": "David Mo",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/44306450?v=4",
     "profileUrl": "https://github.com/unknown",
-    "location": ""
+    "location": "New York"
   },
-  "location": null,
+  "location": {
+    "id": "new-york",
+    "label": "New York",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "source": "github_profile"
+  },
   "related": [
     {
       "slug": "unknown-using-skills-in-claude",
@@ -60,7 +66,7 @@
     {
       "slug": "modelcontextprotocol-servers",
       "displayName": "modelcontextprotocol/servers",
-      "stars": 85195,
+      "stars": 88015,
       "relation": "shared_tag",
       "evidence": "Model Context Protocol (MCP)"
     },
@@ -70,13 +76,20 @@
       "stars": 0,
       "relation": "shared_tag",
       "evidence": "Model Context Protocol (MCP)"
+    },
+    {
+      "slug": "takechanman1228-claude-ecom",
+      "displayName": "takechanman1228/claude-ecom",
+      "stars": 39,
+      "relation": "shared_tag",
+      "evidence": "location:new-york"
     }
   ],
   "mapLocation": {
-    "id": "virtual-new-york",
-    "label": "Global Skill Market / New York / Model Context Protocol (MCP)",
+    "id": "new-york",
+    "label": "New York",
     "lat": 40.7128,
     "lon": -74.006,
-    "source": "virtual_market"
+    "source": "github_profile"
   }
 }

@@ -5,22 +5,28 @@
   "displayName": "cloudflare/agents-sdk",
   "description": "Build stateful AI agents with scheduling, RPC, and MCP servers",
   "stars": 0,
-  "category": "Skills by Typefully",
+  "category": "Official Skills by",
   "source": "voltagent",
   "url": "https://officialskills.sh/cloudflare/skills/agents-sdk",
   "githubRepo": "",
   "readme": "# cloudflare/agents-sdk\n\nBuild stateful AI agents with scheduling, RPC, and MCP servers",
   "readmeHtml": "<h1>cloudflare/agents-sdk</h1>\n<p>Build stateful AI agents with scheduling, RPC, and MCP servers</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.100Z",
+  "updatedAt": "2026-07-03T11:33:56.328Z",
   "author": {
     "login": "cloudflare",
-    "name": "cloudflare",
-    "avatarUrl": "",
+    "name": "Cloudflare",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/314135?v=4",
     "profileUrl": "https://github.com/cloudflare",
-    "location": ""
+    "location": "San Francisco, London, Austin, Lisbon, Singapore"
   },
-  "location": null,
+  "location": {
+    "id": "san-francisco",
+    "label": "San Francisco, London, Austin, Lisbon, Singapore",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "github_profile"
+  },
   "related": [
     {
       "slug": "cloudflare-cloudflare",
@@ -80,10 +86,10 @@
     }
   ],
   "mapLocation": {
-    "id": "virtual-sydney",
-    "label": "Global Skill Market / Sydney / Skills by Typefully",
-    "lat": -33.8688,
-    "lon": 151.2093,
-    "source": "virtual_market"
+    "id": "san-francisco",
+    "label": "San Francisco, London, Austin, Lisbon, Singapore",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "github_profile"
   }
 }

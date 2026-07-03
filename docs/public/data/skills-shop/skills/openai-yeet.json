@@ -12,22 +12,22 @@
   "readme": "# openai/yeet\n\nStage, commit, push code, and open a GitHub pull request via CLI",
   "readmeHtml": "<h1>openai/yeet</h1>\n<p>Stage, commit, push code, and open a GitHub pull request via CLI</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.125Z",
+  "updatedAt": "2026-07-03T11:33:56.363Z",
   "author": {
     "login": "openai",
-    "name": "openai",
-    "avatarUrl": "",
+    "name": "OpenAI",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/14957082?v=4",
     "profileUrl": "https://github.com/openai",
     "location": ""
   },
   "location": null,
   "related": [
     {
-      "slug": "openai-skills",
-      "displayName": "openai/skills",
-      "stars": 18508,
-      "relation": "source_overlap",
-      "evidence": "author:openai"
+      "slug": "combo-quality-release-loop",
+      "displayName": "Quality Release Loop",
+      "stars": 0,
+      "relation": "combo_component",
+      "evidence": "Quality Release Loop includes openai/yeet"
     },
     {
       "slug": "openai-cloudflare-deploy",

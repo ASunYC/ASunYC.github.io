@@ -4,86 +4,92 @@
   "name": "ui-skills",
   "displayName": "ibelick/ui-skills",
   "description": "Opinionated, evolving constraints to guide agents when building interfaces",
-  "stars": 1654,
+  "stars": 3491,
   "category": "Community Skills",
   "source": "voltagent",
   "url": "https://github.com/ibelick/ui-skills",
   "githubRepo": "ibelick/ui-skills",
-  "readme": "# ibelick/ui-skills\n\nOpinionated, evolving constraints to guide agents when building interfaces",
-  "readmeHtml": "<h1>ibelick/ui-skills</h1>\n<p>Opinionated, evolving constraints to guide agents when building interfaces</p>",
+  "readme": "# UI Skills\n\n![UI Skills](./public/UI-OG.webp)\n\nSkills for Design Engineers\n\nMore on [ui-skills.com](http://ui-skills.com/)\n\nRun `npx ui-skills start` to route your agent through the right UI skill set for the task.\n\n## CLI\n\n```bash\nnpx ui-skills\nnpx ui-skills start\nnpx ui-skills categories\nnpx ui-skills list --category motion\nnpx ui-skills get baseline-ui\n```\n\n## License\n\nLicensed under the [MIT license](https://github.com/ibelick/ui-skills/blob/main/LICENSE).\n",
+  "readmeHtml": "<h1>UI Skills</h1>\n<p>![UI Skills](./public/UI-OG.webp)</p>\n<p>Skills for Design Engineers</p>\n<p>More on <a href=\"http://ui-skills.com/\" target=\"_blank\" rel=\"noreferrer\">ui-skills.com</a></p>\n<p>Run <code>npx ui-skills start</code> to route your agent through the right UI skill set for the task.</p>\n<h2>CLI</h2>\n<pre><code>\nnpx ui-skills\n\nnpx ui-skills start\n\nnpx ui-skills categories\n\nnpx ui-skills list --category motion\n\nnpx ui-skills get baseline-ui\n\n</code></pre>\n<h2>License</h2>\n<p>Licensed under the <a href=\"https://github.com/ibelick/ui-skills/blob/main/LICENSE\" target=\"_blank\" rel=\"noreferrer\">MIT license</a>.</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.029Z",
+  "updatedAt": "2026-07-02T08:32:39Z",
   "author": {
     "login": "ibelick",
-    "name": "ibelick",
-    "avatarUrl": "",
+    "name": "Julien Thibeaut",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/14288396?v=4",
     "profileUrl": "https://github.com/ibelick",
-    "location": ""
+    "location": "Paris"
   },
-  "location": null,
+  "location": {
+    "id": "paris",
+    "label": "Paris",
+    "lat": 48.8566,
+    "lon": 2.3522,
+    "source": "github_profile"
+  },
   "related": [
     {
-      "slug": "obra-defense-in-depth",
-      "displayName": "obra/defense-in-depth",
-      "stars": 186953,
+      "slug": "obra-brainstorming",
+      "displayName": "obra/brainstorming",
+      "stars": 245089,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mattpocock-skills",
+      "displayName": "mattpocock/skills",
+      "stars": 155097,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
       "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
-      "stars": 77115,
+      "stars": 100227,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "lum1104-understand-anything",
+      "displayName": "Lum1104/understand-anything",
+      "stars": 70574,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "santifer-career-ops",
+      "displayName": "santifer/career-ops",
+      "stars": 58303,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "leonxlnx-taste-skill",
+      "displayName": "Leonxlnx/taste-skill",
+      "stars": 55314,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "panniantong-agent-reach",
+      "displayName": "Panniantong/Agent-Reach",
+      "stars": 49547,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "mvanhorn-last30days-skill",
       "displayName": "mvanhorn/last30days-skill",
-      "stars": 25573,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "k-dense-ai-claude-scientific-skills",
-      "displayName": "K-Dense-AI/claude-scientific-skills",
-      "stars": 20299,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-fundamentals",
-      "displayName": "muratcankoylan/context-fundamentals",
-      "stars": 15494,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-degradation",
-      "displayName": "muratcankoylan/context-degradation",
-      "stars": 15494,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-compression",
-      "displayName": "muratcankoylan/context-compression",
-      "stars": 15494,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-optimization",
-      "displayName": "muratcankoylan/context-optimization",
-      "stars": 15494,
+      "stars": 48607,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     }
   ],
   "mapLocation": {
-    "id": "virtual-tokyo",
-    "label": "Global Skill Market / Tokyo / Community Skills",
-    "lat": 35.6762,
-    "lon": 139.6503,
-    "source": "virtual_market"
+    "id": "paris",
+    "label": "Paris",
+    "lat": 48.8566,
+    "lon": 2.3522,
+    "source": "github_profile"
   }
 }

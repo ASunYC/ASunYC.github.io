@@ -5,22 +5,28 @@
   "displayName": "netlify/netlify-caching",
   "description": "Configure CDN caching and cache purging",
   "stars": 0,
-  "category": "Skills by Typefully",
+  "category": "Official Skills by",
   "source": "voltagent",
   "url": "https://officialskills.sh/netlify/skills/netlify-caching",
   "githubRepo": "",
   "readme": "# netlify/netlify-caching\n\nConfigure CDN caching and cache purging",
   "readmeHtml": "<h1>netlify/netlify-caching</h1>\n<p>Configure CDN caching and cache purging</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.101Z",
+  "updatedAt": "2026-07-03T11:33:56.330Z",
   "author": {
     "login": "netlify",
-    "name": "netlify",
-    "avatarUrl": "",
+    "name": "Netlify",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/7892489?v=4",
     "profileUrl": "https://github.com/netlify",
-    "location": ""
+    "location": "San Francisco"
   },
-  "location": null,
+  "location": {
+    "id": "san-francisco",
+    "label": "San Francisco, London, Austin, Lisbon, Singapore",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "github_profile"
+  },
   "related": [
     {
       "slug": "netlify-netlify-functions",
@@ -80,10 +86,10 @@
     }
   ],
   "mapLocation": {
-    "id": "virtual-singapore",
-    "label": "Global Skill Market / Singapore / Skills by Typefully",
-    "lat": 1.3521,
-    "lon": 103.8198,
-    "source": "virtual_market"
+    "id": "san-francisco",
+    "label": "San Francisco, London, Austin, Lisbon, Singapore",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "github_profile"
   }
 }

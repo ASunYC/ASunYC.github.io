@@ -4,86 +4,92 @@
   "name": "skill-optimizer",
   "displayName": "hqhq1025/skill-optimizer",
   "description": "Diagnose and optimize Agent Skills (SKILL.md) with real session data and research-backed static analysis. Works with Claude Code, Codex, and any Agent Skills-compatible agent",
-  "stars": 74,
+  "stars": 120,
   "category": "Community Skills",
   "source": "voltagent",
   "url": "https://github.com/hqhq1025/skill-optimizer",
   "githubRepo": "hqhq1025/skill-optimizer",
-  "readme": "# hqhq1025/skill-optimizer\n\nDiagnose and optimize Agent Skills (SKILL.md) with real session data and research-backed static analysis. Works with Claude Code, Codex, and any Agent Skills-compatible agent",
-  "readmeHtml": "<h1>hqhq1025/skill-optimizer</h1>\n<p>Diagnose and optimize Agent Skills (SKILL.md) with real session data and research-backed static analysis. Works with Claude Code, Codex, and any Agent Skills-compatible agent</p>",
+  "readme": "# Skill Optimizer\n\n[中文版](./README.zh-CN.md)\n\nThree Agent Skills for turning coding-agent work into better `SKILL.md` files:\n\n- **skill-miner** — mine coding-agent history, archives, memories, and repeated work to surface skill-worthy workflows with evidence.\n- **skill-personalizer** — audit and adapt newly created, downloaded, forked, or community skills to one user's own tools, habits, directories, and session history.\n- **skill-generalizer** — turn local, private, personal skills into publishable skills for GitHub, marketplaces, teams, or public sharing.\n\nCurrent release: **v2.0.0**. This is a major redesign from the original single-skill optimizer.\n\nProject site: https://hqhq1025.github.io/skill-optimizer/\n\nThe split is intentional. Generating, personalizing, and publishing skills are different jobs:\n\n| Goal | Skill | Optimization Direction |\n| --- | --- | --- |\n| Mine repeated workflows | `skill-miner` | Scan real agent usage, cluster repeated workflows, and draft evidence-backed candidate skills. |\n| Fit inward | `skill-personalizer` | Preserve the original optimizer's audit checks, then add local defaults, user phrasing, preferred tools, verification habits, and workflow shortcuts. |\n| Publish outward | `skill-generalizer` | Remove private context, generalize examples, make install and README claims portable. |\n\nSee [Research Background](./docs/research-background.md) for related agent-skill ecosystems, comparable projects, and papers that motivate session mining, skill libraries, trigger auditing, progressive disclosure, and lifecycle governance.\n\n## Installation\n\nCopy the command below into your agent's chat:\n\n### Claude Code\n\n```text\nInstall the skills from https://github.com/hqhq1025/skill-optimizer\n```\n\n### Codex\n\n```text\nInstall the skills from https://github.com/hqhq1025/skill-optimizer into ~/.codex/skills/\n```\n\n### Other Agent Skills-compatible agents\n\n```text\nInstall the skills from https://github.com/hqhq1025/skill-optimizer into ~/.agents/skills/\n```\n\nManual install:\n\n```bash\ngit clone https://github.com/hqhq1025/skill-optimizer.git /tmp/skill-optimizer\nmkdir -p ~/.agents/skills\ncp -r /tmp/skill-optimizer/skills/skill-miner ~/.agents/skills/\ncp -r /tmp/skill-optimizer/skills/skill-personalizer ~/.agents/skills/\ncp -r /tmp/skill-optimizer/skills/skill-generalizer ~/.agents/skills/\nrm -rf /tmp/skill-optimizer\n```\n\nFor Codex-only installs, use `~/.codex/skills/`:\n\n```bash\ngit clone https://github.com/hqhq1025/skill-optimizer.git /tmp/skill-optimizer\nmkdir -p ~/.codex/skills\ncp -r /tmp/skill-optimizer/skills/skill-generalizer ~/.codex/skills/\ncp -r /tmp/skill-optimizer/skills/skill-miner ~/.codex/skills/\ncp -r /tmp/skill-optimizer/skills/skill-personalizer ~/.codex/skills/\nrm -rf /tmp/skill-optimizer\n```\n\nFor Claude Code-only installs, use `~/.claude/skills/`.\n\n## Platform Support\n\n| Agent | Support level | Recommended path |\n| --- | --- | --- |\n| Codex | Native Agent Skills, plus optional plugin metadata. | `~/.codex/skills/` or `.agents/skills/` |\n| Claude Code | Native skills in personal, project, and plugin scopes. | `~/.claude/skills/` or `.claude/skills/` |\n| Cursor | Native Agent Skills and rules/commands; skills are discoverable by Agent. | `.agents/skills/`, `.cursor/skills/`, or global skills |\n| OpenCode | Native `skill` tool and repo/home skill discovery. | `.agents/skills/`, `.opencode/skills/`, or `~/.config/opencode/skills/` |\n| Gemini CLI / Google agents | Agent Skills open format is documented by Google; `GEMINI.md` remains the always-on context mechanism. | `.agents/skills/` or installer-managed skills |\n\nThe safest public layout is `skills/<name>/SKILL.md` in the repo plus install instructions that copy into `.agents/skills/` or the target agent's native skill directory.\n\n## Usage\n\nAsk for the direction you want:\n\n```text\nMine my coding-agent history and find repeated workflows that should become skills.\n```\n\n```text\nAudit and tune my installed skills; tell me which ones are undertriggering, too noisy, or too generic.\n```\n\n```text\nTurn this local skill into a public GitHub-ready skill.\n```\n\n```text\nI downloaded this skill. Tune it to my local workflow and usage habits.\n```\n\n```text\nThis skill does not trigger when I say things naturally. Personalize it for me.\n```\n\n## What Each Skill Does\n\n### skill-miner\n\n- coding-agent session history, memory summaries, repo notes, repeated scripts, and project folders\n- recurring user intents, shorthand, tool chains, artifacts, and verification patterns\n- candidates that are repeated and non-obvious enough to become skills\n- whether a candidate should stay personal, be generalized for publication, or be skipped\n- includes `scripts/scan_sessions.py` for a deterministic first-pass scan of Codex, Claude Code, Gemini/Antigravity task files, and exported transcripts from other agents\n- includes archived Codex sessions and rollout summaries by default, with flags to disable archive/summary sources\n\nExample:\n\n```bash\npython3 skills/skill-miner/scripts/scan_sessions.py --days 30 --limit 300 --min-count 3\npython3 skills/skill-miner/scripts/scan_sessions.py --export ~/Downloads/cursor-chat-export.json\npython3 skills/skill-miner/scripts/scan_sessions.py --patterns ./my-patterns.json\npython3 skills/skill-miner/scripts/scan_sessions.py --no-include-archives --no-include-summaries\n```\n\n### skill-generalizer\n\n- private paths, hosts, credentials, account names, transcript quotes, and internal repo facts\n- public portability of commands, examples, README claims, and install instructions\n- frontmatter that describes when to use the skill rather than the workflow\n- packaging structure for public distribution\n\n### skill-personalizer\n\n- local installed copies and nearby project instructions\n- real user phrasing and recurring task patterns\n- preferred CLIs, MCP tools, paths, aliases, and verification commands\n- undertrigger, overtrigger, and unnecessary-question friction\n- original optimizer-style audit checks: trigger fit, user reaction, workflow completion, static quality, conflicts, environment consistency, token economics, and P0/P1/P2 fixes\n\n## Compatibility\n\nWorks with agents that support the Agent Skills folder convention:\n\n- Claude Code\n- Codex\n- Cursor\n- OpenCode\n- Gemini CLI\n\n## Research Background\n\nThis project is informed by Agent Skills ecosystem work and LLM-agent research on externalized memory, skill libraries, retrieval/routing, and long-context behavior. See [docs/research-background.md](./docs/research-background.md).\n\n## AI And Search Visibility\n\n- Project site: https://hqhq1025.github.io/skill-optimizer/\n- LLM summary: [llms.txt](./llms.txt)\n- Full LLM context: [llms-full.txt](./llms-full.txt)\n- Structured metadata: [repo-metadata.json](./repo-metadata.json)\n\n## License\n\nMIT\n",
+  "readmeHtml": "<h1>Skill Optimizer</h1>\n<p>[中文版](./README.zh-CN.md)</p>\n<p>Three Agent Skills for turning coding-agent work into better <code>SKILL.md</code> files:</p>\n<ul>\n<li><strong>skill-miner</strong> — mine coding-agent history, archives, memories, and repeated work to surface skill-worthy workflows with evidence.</li>\n<li><strong>skill-personalizer</strong> — audit and adapt newly created, downloaded, forked, or community skills to one user's own tools, habits, directories, and session history.</li>\n<li><strong>skill-generalizer</strong> — turn local, private, personal skills into publishable skills for GitHub, marketplaces, teams, or public sharing.</li>\n</ul>\n<p>Current release: <strong>v2.0.0</strong>. This is a major redesign from the original single-skill optimizer.</p>\n<p>Project site: https://hqhq1025.github.io/skill-optimizer/</p>\n<p>The split is intentional. Generating, personalizing, and publishing skills are different jobs:</p>\n<p>| Goal | Skill | Optimization Direction |</p>\n<p>| --- | --- | --- |</p>\n<p>| Mine repeated workflows | <code>skill-miner</code> | Scan real agent usage, cluster repeated workflows, and draft evidence-backed candidate skills. |</p>\n<p>| Fit inward | <code>skill-personalizer</code> | Preserve the original optimizer's audit checks, then add local defaults, user phrasing, preferred tools, verification habits, and workflow shortcuts. |</p>\n<p>| Publish outward | <code>skill-generalizer</code> | Remove private context, generalize examples, make install and README claims portable. |</p>\n<p>See [Research Background](./docs/research-background.md) for related agent-skill ecosystems, comparable projects, and papers that motivate session mining, skill libraries, trigger auditing, progressive disclosure, and lifecycle governance.</p>\n<h2>Installation</h2>\n<p>Copy the command below into your agent's chat:</p>\n<h3>Claude Code</h3>\n<pre><code>\nInstall the skills from https://github.com/hqhq1025/skill-optimizer\n\n</code></pre>\n<h3>Codex</h3>\n<pre><code>\nInstall the skills from https://github.com/hqhq1025/skill-optimizer into ~/.codex/skills/\n\n</code></pre>\n<h3>Other Agent Skills-compatible agents</h3>\n<pre><code>\nInstall the skills from https://github.com/hqhq1025/skill-optimizer into ~/.agents/skills/\n\n</code></pre>\n<p>Manual install:</p>\n<pre><code>\ngit clone https://github.com/hqhq1025/skill-optimizer.git /tmp/skill-optimizer\n\nmkdir -p ~/.agents/skills\n\ncp -r /tmp/skill-optimizer/skills/skill-miner ~/.agents/skills/\n\ncp -r /tmp/skill-optimizer/skills/skill-personalizer ~/.agents/skills/\n\ncp -r /tmp/skill-optimizer/skills/skill-generalizer ~/.agents/skills/\n\nrm -rf /tmp/skill-optimizer\n\n</code></pre>\n<p>For Codex-only installs, use <code>~/.codex/skills/</code>:</p>\n<pre><code>\ngit clone https://github.com/hqhq1025/skill-optimizer.git /tmp/skill-optimizer\n\nmkdir -p ~/.codex/skills\n\ncp -r /tmp/skill-optimizer/skills/skill-generalizer ~/.codex/skills/\n\ncp -r /tmp/skill-optimizer/skills/skill-miner ~/.codex/skills/\n\ncp -r /tmp/skill-optimizer/skills/skill-personalizer ~/.codex/skills/\n\nrm -rf /tmp/skill-optimizer\n\n</code></pre>\n<p>For Claude Code-only installs, use <code>~/.claude/skills/</code>.</p>\n<h2>Platform Support</h2>\n<p>| Agent | Support level | Recommended path |</p>\n<p>| --- | --- | --- |</p>\n<p>| Codex | Native Agent Skills, plus optional plugin metadata. | <code>~/.codex/skills/</code> or <code>.agents/skills/</code> |</p>\n<p>| Claude Code | Native skills in personal, project, and plugin scopes. | <code>~/.claude/skills/</code> or <code>.claude/skills/</code> |</p>\n<p>| Cursor | Native Agent Skills and rules/commands; skills are discoverable by Agent. | <code>.agents/skills/</code>, <code>.cursor/skills/</code>, or global skills |</p>\n<p>| OpenCode | Native <code>skill</code> tool and repo/home skill discovery. | <code>.agents/skills/</code>, <code>.opencode/skills/</code>, or <code>~/.config/opencode/skills/</code> |</p>\n<p>| Gemini CLI / Google agents | Agent Skills open format is documented by Google; <code>GEMINI.md</code> remains the always-on context mechanism. | <code>.agents/skills/</code> or installer-managed skills |</p>\n<p>The safest public layout is <code>skills/&lt;name&gt;/SKILL.md</code> in the repo plus install instructions that copy into <code>.agents/skills/</code> or the target agent's native skill directory.</p>\n<h2>Usage</h2>\n<p>Ask for the direction you want:</p>\n<pre><code>\nMine my coding-agent history and find repeated workflows that should become skills.\n\n</code></pre>\n<pre><code>\nAudit and tune my installed skills; tell me which ones are undertriggering, too noisy, or too generic.\n\n</code></pre>\n<pre><code>\nTurn this local skill into a public GitHub-ready skill.\n\n</code></pre>\n<pre><code>\nI downloaded this skill. Tune it to my local workflow and usage habits.\n\n</code></pre>\n<pre><code>\nThis skill does not trigger when I say things naturally. Personalize it for me.\n\n</code></pre>\n<h2>What Each Skill Does</h2>\n<h3>skill-miner</h3>\n<ul>\n<li>coding-agent session history, memory summaries, repo notes, repeated scripts, and project folders</li>\n<li>recurring user intents, shorthand, tool chains, artifacts, and verification patterns</li>\n<li>candidates that are repeated and non-obvious enough to become skills</li>\n<li>whether a candidate should stay personal, be generalized for publication, or be skipped</li>\n<li>includes <code>scripts/scan_sessions.py</code> for a deterministic first-pass scan of Codex, Claude Code, Gemini/Antigravity task files, and exported transcripts from other agents</li>\n<li>includes archived Codex sessions and rollout summaries by default, with flags to disable archive/summary sources</li>\n</ul>\n<p>Example:</p>\n<pre><code>\npython3 skills/skill-miner/scripts/scan_sessions.py --days 30 --limit 300 --min-count 3\n\npython3 skills/skill-miner/scripts/scan_sessions.py --export ~/Downloads/cursor-chat-export.json\n\npython3 skills/skill-miner/scripts/scan_sessions.py --patterns ./my-patterns.json\n\npython3 skills/skill-miner/scripts/scan_sessions.py --no-include-archives --no-include-summaries\n\n</code></pre>\n<h3>skill-generalizer</h3>\n<ul>\n<li>private paths, hosts, credentials, account names, transcript quotes, and internal repo facts</li>\n<li>public portability of commands, examples, README claims, and install instructions</li>\n<li>frontmatter that describes when to use the skill rather than the workflow</li>\n<li>packaging structure for public distribution</li>\n</ul>\n<h3>skill-personalizer</h3>\n<ul>\n<li>local installed copies and nearby project instructions</li>\n<li>real user phrasing and recurring task patterns</li>\n<li>preferred CLIs, MCP tools, paths, aliases, and verification commands</li>\n<li>undertrigger, overtrigger, and unnecessary-question friction</li>\n<li>original optimizer-style audit checks: trigger fit, user reaction, workflow completion, static quality, conflicts, environment consistency, token economics, and P0/P1/P2 fixes</li>\n</ul>\n<h2>Compatibility</h2>\n<p>Works with agents that support the Agent Skills folder convention:</p>\n<ul>\n<li>Claude Code</li>\n<li>Codex</li>\n<li>Cursor</li>\n<li>OpenCode</li>\n<li>Gemini CLI</li>\n</ul>\n<h2>Research Background</h2>\n<p>This project is informed by Agent Skills ecosystem work and LLM-agent research on externalized memory, skill libraries, retrieval/routing, and long-context behavior. See [docs/research-background.md](./docs/research-background.md).</p>\n<h2>AI And Search Visibility</h2>\n<ul>\n<li>Project site: https://hqhq1025.github.io/skill-optimizer/</li>\n<li>LLM summary: [llms.txt](./llms.txt)</li>\n<li>Full LLM context: [llms-full.txt](./llms-full.txt)</li>\n<li>Structured metadata: [repo-metadata.json](./repo-metadata.json)</li>\n</ul>\n<h2>License</h2>\n<p>MIT</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.052Z",
+  "updatedAt": "2026-05-14T07:25:31Z",
   "author": {
     "login": "hqhq1025",
-    "name": "hqhq1025",
-    "avatarUrl": "",
+    "name": "Haoqing Wang",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/78337154?v=4",
     "profileUrl": "https://github.com/hqhq1025",
-    "location": ""
+    "location": "Beijing, China"
   },
-  "location": null,
+  "location": {
+    "id": "beijing",
+    "label": "Beijing,China",
+    "lat": 39.9042,
+    "lon": 116.4074,
+    "source": "github_profile"
+  },
   "related": [
     {
-      "slug": "obra-defense-in-depth",
-      "displayName": "obra/defense-in-depth",
-      "stars": 186953,
+      "slug": "obra-brainstorming",
+      "displayName": "obra/brainstorming",
+      "stars": 245089,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mattpocock-skills",
+      "displayName": "mattpocock/skills",
+      "stars": 155097,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
       "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
-      "stars": 77115,
+      "stars": 100227,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "lum1104-understand-anything",
+      "displayName": "Lum1104/understand-anything",
+      "stars": 70574,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "santifer-career-ops",
+      "displayName": "santifer/career-ops",
+      "stars": 58303,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "leonxlnx-taste-skill",
+      "displayName": "Leonxlnx/taste-skill",
+      "stars": 55314,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "panniantong-agent-reach",
+      "displayName": "Panniantong/Agent-Reach",
+      "stars": 49547,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "mvanhorn-last30days-skill",
       "displayName": "mvanhorn/last30days-skill",
-      "stars": 25573,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "k-dense-ai-claude-scientific-skills",
-      "displayName": "K-Dense-AI/claude-scientific-skills",
-      "stars": 20299,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-fundamentals",
-      "displayName": "muratcankoylan/context-fundamentals",
-      "stars": 15494,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-degradation",
-      "displayName": "muratcankoylan/context-degradation",
-      "stars": 15494,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-compression",
-      "displayName": "muratcankoylan/context-compression",
-      "stars": 15494,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-optimization",
-      "displayName": "muratcankoylan/context-optimization",
-      "stars": 15494,
+      "stars": 48607,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     }
   ],
   "mapLocation": {
-    "id": "virtual-sao-paulo",
-    "label": "Global Skill Market / Sao Paulo / Community Skills",
-    "lat": -23.5558,
-    "lon": -46.6396,
-    "source": "virtual_market"
+    "id": "beijing",
+    "label": "Beijing,China",
+    "lat": 39.9042,
+    "lon": 116.4074,
+    "source": "github_profile"
   }
 }

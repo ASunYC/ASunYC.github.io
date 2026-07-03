@@ -12,20 +12,26 @@
   "readme": "# firecrawl/firecrawl-agent\n\nAI agent for autonomous web scraping",
   "readmeHtml": "<h1>firecrawl/firecrawl-agent</h1>\n<p>AI agent for autonomous web scraping</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.156Z",
+  "updatedAt": "2026-07-03T11:33:56.391Z",
   "author": {
     "login": "firecrawl",
-    "name": "firecrawl",
-    "avatarUrl": "",
+    "name": "Firecrawl",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/135057108?v=4",
     "profileUrl": "https://github.com/firecrawl",
-    "location": ""
+    "location": "United States of America"
   },
-  "location": null,
+  "location": {
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
+  },
   "related": [
     {
       "slug": "firecrawl-cli",
       "displayName": "firecrawl/cli",
-      "stars": 369,
+      "stars": 505,
       "relation": "source_overlap",
       "evidence": "author:firecrawl"
     },
@@ -80,10 +86,10 @@
     }
   ],
   "mapLocation": {
-    "id": "virtual-shanghai",
-    "label": "Global Skill Market / Shanghai / Skills by Firecrawl",
-    "lat": 31.2304,
-    "lon": 121.4737,
-    "source": "virtual_market"
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
   }
 }

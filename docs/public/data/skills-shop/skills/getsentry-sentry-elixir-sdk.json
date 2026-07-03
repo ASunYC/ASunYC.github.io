@@ -5,27 +5,33 @@
   "displayName": "getsentry/sentry-elixir-sdk",
   "description": "Full Sentry SDK setup for Elixir, Phoenix, Plug, LiveView, Oban, and Quantum",
   "stars": 0,
-  "category": "Skills by Typefully",
+  "category": "Official Skills by",
   "source": "voltagent",
   "url": "https://officialskills.sh/getsentry/skills/sentry-elixir-sdk",
   "githubRepo": "",
   "readme": "# getsentry/sentry-elixir-sdk\n\nFull Sentry SDK setup for Elixir, Phoenix, Plug, LiveView, Oban, and Quantum",
   "readmeHtml": "<h1>getsentry/sentry-elixir-sdk</h1>\n<p>Full Sentry SDK setup for Elixir, Phoenix, Plug, LiveView, Oban, and Quantum</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.106Z",
+  "updatedAt": "2026-07-03T11:33:56.344Z",
   "author": {
     "login": "getsentry",
-    "name": "getsentry",
-    "avatarUrl": "",
+    "name": "Sentry",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/1396951?v=4",
     "profileUrl": "https://github.com/getsentry",
-    "location": ""
+    "location": "United States of America"
   },
-  "location": null,
+  "location": {
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
+  },
   "related": [
     {
       "slug": "getsentry-skills",
       "displayName": "getsentry/skills",
-      "stars": 674,
+      "stars": 842,
       "relation": "source_overlap",
       "evidence": "author:getsentry"
     },
@@ -80,10 +86,10 @@
     }
   ],
   "mapLocation": {
-    "id": "virtual-tokyo",
-    "label": "Global Skill Market / Tokyo / Skills by Typefully",
-    "lat": 35.6762,
-    "lon": 139.6503,
-    "source": "virtual_market"
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
   }
 }

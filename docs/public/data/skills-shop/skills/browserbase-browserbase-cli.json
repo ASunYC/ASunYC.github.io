@@ -12,23 +12,22 @@
   "readme": "# browserbase/browserbase-cli\n\nCLI wrapper around the Browserbase platform",
   "readmeHtml": "<h1>browserbase/browserbase-cli</h1>\n<p>CLI wrapper around the Browserbase platform</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.132Z",
+  "updatedAt": "2026-07-03T11:33:56.373Z",
   "author": {
     "login": "browserbase",
     "name": "browserbase",
-    "avatarUrl": "",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/158221360?v=4",
     "profileUrl": "https://github.com/browserbase",
-    "location": ""
+    "location": "United States of America"
   },
-  "location": null,
+  "location": {
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
+  },
   "related": [
-    {
-      "slug": "browserbase-skills",
-      "displayName": "browserbase/skills",
-      "stars": 2581,
-      "relation": "source_overlap",
-      "evidence": "author:browserbase"
-    },
     {
       "slug": "browserbase-browser",
       "displayName": "browserbase/browser",
@@ -72,18 +71,25 @@
       "evidence": "author:browserbase"
     },
     {
-      "slug": "deanpeters-acquisition-channel-advisor",
-      "displayName": "deanpeters/acquisition-channel-advisor",
-      "stars": 4159,
+      "slug": "coreyhaines31-ab-test-setup",
+      "displayName": "coreyhaines31/ab-test-setup",
+      "stars": 35923,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    },
+    {
+      "slug": "phuryn-ab-test-analysis",
+      "displayName": "phuryn/ab-test-analysis",
+      "stars": 22293,
       "relation": "shared_tag",
       "evidence": "TypeScript Skills"
     }
   ],
   "mapLocation": {
-    "id": "virtual-new-york",
-    "label": "Global Skill Market / New York / TypeScript Skills",
-    "lat": 40.7128,
-    "lon": -74.006,
-    "source": "virtual_market"
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
   }
 }

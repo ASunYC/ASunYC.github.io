@@ -5,30 +5,23 @@
   "displayName": "google-labs-code/enhance-prompt",
   "description": "Improve prompts with design specs and UI/UX vocabulary",
   "stars": 0,
-  "category": "Skills by Typefully",
+  "category": "Official Skills by",
   "source": "voltagent",
   "url": "https://officialskills.sh/google-labs-code/skills/enhance-prompt",
   "githubRepo": "",
   "readme": "# google-labs-code/enhance-prompt\n\nImprove prompts with design specs and UI/UX vocabulary",
   "readmeHtml": "<h1>google-labs-code/enhance-prompt</h1>\n<p>Improve prompts with design specs and UI/UX vocabulary</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.101Z",
+  "updatedAt": "2026-07-03T11:33:56.330Z",
   "author": {
     "login": "google-labs-code",
-    "name": "google-labs-code",
-    "avatarUrl": "",
+    "name": "Google Labs Code",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/161364575?v=4",
     "profileUrl": "https://github.com/google-labs-code",
     "location": ""
   },
   "location": null,
   "related": [
-    {
-      "slug": "google-labs-code-stitch-skills",
-      "displayName": "google-labs-code/stitch-skills",
-      "stars": 5259,
-      "relation": "source_overlap",
-      "evidence": "author:google-labs-code"
-    },
     {
       "slug": "google-labs-code-design-md",
       "displayName": "google-labs-code/design-md",
@@ -65,25 +58,32 @@
       "evidence": "author:google-labs-code"
     },
     {
-      "slug": "typefully-typefully",
-      "displayName": "typefully/typefully",
-      "stars": 0,
+      "slug": "angular-angular-developer",
+      "displayName": "angular/angular-developer",
+      "stars": 544,
       "relation": "shared_tag",
-      "evidence": "Skills by Typefully"
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "testmu-ai-api-skill",
+      "displayName": "testmu-ai/api-skill",
+      "stars": 318,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
     },
     {
       "slug": "veniceai-venice-api-overview",
       "displayName": "veniceai/venice-api-overview",
-      "stars": 0,
+      "stars": 105,
       "relation": "shared_tag",
-      "evidence": "Skills by Typefully"
+      "evidence": "Official Skills by"
     }
   ],
   "mapLocation": {
-    "id": "virtual-singapore",
-    "label": "Global Skill Market / Singapore / Skills by Typefully",
-    "lat": 1.3521,
-    "lon": 103.8198,
+    "id": "virtual-toronto",
+    "label": "Global Skill Market / Toronto / Official Skills by",
+    "lat": 43.6532,
+    "lon": -79.3832,
     "source": "virtual_market"
   }
 }

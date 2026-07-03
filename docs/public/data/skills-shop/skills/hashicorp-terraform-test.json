@@ -5,30 +5,29 @@
   "displayName": "hashicorp/terraform-test",
   "description": "Built-in testing framework for Terraform configurations with .tftest.hcl files",
   "stars": 0,
-  "category": "Skills by HashiCorp Team for Terraform",
+  "category": "Official Skills by",
   "source": "voltagent",
   "url": "https://officialskills.sh/hashicorp/skills/terraform-test",
   "githubRepo": "",
   "readme": "# hashicorp/terraform-test\n\nBuilt-in testing framework for Terraform configurations with .tftest.hcl files",
   "readmeHtml": "<h1>hashicorp/terraform-test</h1>\n<p>Built-in testing framework for Terraform configurations with .tftest.hcl files</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.091Z",
+  "updatedAt": "2026-07-03T11:33:56.325Z",
   "author": {
     "login": "hashicorp",
-    "name": "hashicorp",
-    "avatarUrl": "",
+    "name": "HashiCorp",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/761456?v=4",
     "profileUrl": "https://github.com/hashicorp",
-    "location": ""
+    "location": "San Francisco, CA"
   },
-  "location": null,
+  "location": {
+    "id": "san-francisco",
+    "label": "San Francisco, London, Austin, Lisbon, Singapore",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "github_profile"
+  },
   "related": [
-    {
-      "slug": "hashicorp-agent-skills",
-      "displayName": "hashicorp/agent-skills",
-      "stars": 604,
-      "relation": "source_overlap",
-      "evidence": "author:hashicorp"
-    },
     {
       "slug": "hashicorp-azure-verified-modules",
       "displayName": "hashicorp/azure-verified-modules",
@@ -77,13 +76,20 @@
       "stars": 0,
       "relation": "source_overlap",
       "evidence": "author:hashicorp"
+    },
+    {
+      "slug": "hashicorp-terraform-search-import",
+      "displayName": "hashicorp/terraform-search-import",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:hashicorp"
     }
   ],
   "mapLocation": {
-    "id": "virtual-new-york",
-    "label": "Global Skill Market / New York / Skills by HashiCorp Team for Terraform",
-    "lat": 40.7128,
-    "lon": -74.006,
-    "source": "virtual_market"
+    "id": "san-francisco",
+    "label": "San Francisco, London, Austin, Lisbon, Singapore",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "github_profile"
   }
 }

@@ -12,23 +12,22 @@
   "readme": "# anthropics/canvas-design\n\nDesign visual art in PNG and PDF formats",
   "readmeHtml": "<h1>anthropics/canvas-design</h1>\n<p>Design visual art in PNG and PDF formats</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.089Z",
+  "updatedAt": "2026-07-03T11:33:56.321Z",
   "author": {
     "login": "anthropics",
-    "name": "anthropics",
-    "avatarUrl": "",
+    "name": "Anthropic",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/76263028?v=4",
     "profileUrl": "https://github.com/anthropics",
-    "location": ""
+    "location": "United States of America"
   },
-  "location": null,
+  "location": {
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
+  },
   "related": [
-    {
-      "slug": "anthropics-claude-plugins-official",
-      "displayName": "anthropics/claude-plugins-official",
-      "stars": 18758,
-      "relation": "source_overlap",
-      "evidence": "author:anthropics"
-    },
     {
       "slug": "anthropics-docx",
       "displayName": "anthropics/docx",
@@ -77,13 +76,20 @@
       "stars": 0,
       "relation": "source_overlap",
       "evidence": "author:anthropics"
+    },
+    {
+      "slug": "anthropics-slack-gif-creator",
+      "displayName": "anthropics/slack-gif-creator",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:anthropics"
     }
   ],
   "mapLocation": {
-    "id": "virtual-paris",
-    "label": "Global Skill Market / Paris / Official Skills by",
-    "lat": 48.8566,
-    "lon": 2.3522,
-    "source": "virtual_market"
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
   }
 }

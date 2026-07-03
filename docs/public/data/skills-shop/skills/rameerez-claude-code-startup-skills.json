@@ -4,77 +4,77 @@
   "name": "claude-code-startup-skills",
   "displayName": "rameerez/claude-code-startup-skills",
   "description": "Skills for building and running software startups, apps, and SaaS",
-  "stars": 23,
+  "stars": 28,
   "category": "Community Skills",
   "source": "voltagent",
   "url": "https://github.com/rameerez/claude-code-startup-skills",
   "githubRepo": "rameerez/claude-code-startup-skills",
-  "readme": "# rameerez/claude-code-startup-skills\n\nSkills for building and running software startups, apps, and SaaS",
-  "readmeHtml": "<h1>rameerez/claude-code-startup-skills</h1>\n<p>Skills for building and running software startups, apps, and SaaS</p>",
+  "readme": "# Startup Skills for Claude Code\n\nEssential [Claude Code](https://claude.ai/code) skills for building startups, SaaS, and software businesses.\n\n## Install\n\n```bash\n/plugin marketplace add rameerez/claude-code-startup-skills\n/plugin install startup@rameerez-claude-code-startup-skills\n```\n\nDone. Now you have access to all skills below.\n\n## Skills\n\n| Skill | What it does |\n|-------|--------------|\n| `/startup:compress-images` | Compress images to WebP for blazing fast page loads |\n| `/startup:customer-empathy` | Deep-dive into customer empathy and user journey thinking |\n| `/startup:download-video` | Download videos from X, YouTube, TikTok, Instagram, etc. |\n| `/startup:transcribe-video` | Generate subtitles and transcripts from video/audio |\n| `/startup:x-post` | Post to X (Twitter) — text, images, and video |\n\n## Usage\n\n```\n/startup:compress-images ./images/\n/startup:download-video https://x.com/user/status/123\n/startup:transcribe-video ./video.mp4\n/startup:x-post \"Just shipped a new feature!\"\n/startup:customer-empathy\n```\n\n## Contributing\n\nPRs welcome! Add your skill to `skills/<skill-name>/SKILL.md`.\n\n## License\n\nMIT\n",
+  "readmeHtml": "<h1>Startup Skills for Claude Code</h1>\n<p>Essential <a href=\"https://claude.ai/code\" target=\"_blank\" rel=\"noreferrer\">Claude Code</a> skills for building startups, SaaS, and software businesses.</p>\n<h2>Install</h2>\n<pre><code>\n/plugin marketplace add rameerez/claude-code-startup-skills\n\n/plugin install startup@rameerez-claude-code-startup-skills\n\n</code></pre>\n<p>Done. Now you have access to all skills below.</p>\n<h2>Skills</h2>\n<p>| Skill | What it does |</p>\n<p>|-------|--------------|</p>\n<p>| <code>/startup:compress-images</code> | Compress images to WebP for blazing fast page loads |</p>\n<p>| <code>/startup:customer-empathy</code> | Deep-dive into customer empathy and user journey thinking |</p>\n<p>| <code>/startup:download-video</code> | Download videos from X, YouTube, TikTok, Instagram, etc. |</p>\n<p>| <code>/startup:transcribe-video</code> | Generate subtitles and transcripts from video/audio |</p>\n<p>| <code>/startup:x-post</code> | Post to X (Twitter) — text, images, and video |</p>\n<h2>Usage</h2>\n<pre><code>\n/startup:compress-images ./images/\n\n/startup:download-video https://x.com/user/status/123\n\n/startup:transcribe-video ./video.mp4\n\n/startup:x-post \"Just shipped a new feature!\"\n\n/startup:customer-empathy\n\n</code></pre>\n<h2>Contributing</h2>\n<p>PRs welcome! Add your skill to <code>skills/&lt;skill-name&gt;/SKILL.md</code>.</p>\n<h2>License</h2>\n<p>MIT</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.062Z",
+  "updatedAt": "2026-02-23T17:18:34Z",
   "author": {
     "login": "rameerez",
-    "name": "rameerez",
-    "avatarUrl": "",
+    "name": "Javi",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/4920956?v=4",
     "profileUrl": "https://github.com/rameerez",
     "location": ""
   },
   "location": null,
   "related": [
     {
-      "slug": "obra-defense-in-depth",
-      "displayName": "obra/defense-in-depth",
-      "stars": 186953,
+      "slug": "obra-brainstorming",
+      "displayName": "obra/brainstorming",
+      "stars": 245089,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mattpocock-skills",
+      "displayName": "mattpocock/skills",
+      "stars": 155097,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
       "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
-      "stars": 77115,
+      "stars": 100227,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "lum1104-understand-anything",
+      "displayName": "Lum1104/understand-anything",
+      "stars": 70574,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "santifer-career-ops",
+      "displayName": "santifer/career-ops",
+      "stars": 58303,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "leonxlnx-taste-skill",
+      "displayName": "Leonxlnx/taste-skill",
+      "stars": 55314,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "panniantong-agent-reach",
+      "displayName": "Panniantong/Agent-Reach",
+      "stars": 49547,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "mvanhorn-last30days-skill",
       "displayName": "mvanhorn/last30days-skill",
-      "stars": 25573,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "k-dense-ai-claude-scientific-skills",
-      "displayName": "K-Dense-AI/claude-scientific-skills",
-      "stars": 20299,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-fundamentals",
-      "displayName": "muratcankoylan/context-fundamentals",
-      "stars": 15494,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-degradation",
-      "displayName": "muratcankoylan/context-degradation",
-      "stars": 15494,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-compression",
-      "displayName": "muratcankoylan/context-compression",
-      "stars": 15494,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-optimization",
-      "displayName": "muratcankoylan/context-optimization",
-      "stars": 15494,
+      "stars": 48607,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     }

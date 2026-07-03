@@ -12,15 +12,21 @@
   "readme": "# mongodb/mongodb-connection\n\nOptimize MongoDB client connection pools, timeouts, and serverless patterns",
   "readmeHtml": "<h1>mongodb/mongodb-connection</h1>\n<p>Optimize MongoDB client connection pools, timeouts, and serverless patterns</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.152Z",
+  "updatedAt": "2026-07-03T11:33:56.388Z",
   "author": {
     "login": "mongodb",
     "name": "mongodb",
-    "avatarUrl": "",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/45120?v=4",
     "profileUrl": "https://github.com/mongodb",
-    "location": ""
+    "location": "United States of America"
   },
-  "location": null,
+  "location": {
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
+  },
   "related": [
     {
       "slug": "mongodb-mongodb-mcp-setup",
@@ -65,25 +71,25 @@
       "evidence": "author:mongodb"
     },
     {
-      "slug": "deanpeters-acquisition-channel-advisor",
-      "displayName": "deanpeters/acquisition-channel-advisor",
-      "stars": 4159,
+      "slug": "coreyhaines31-ab-test-setup",
+      "displayName": "coreyhaines31/ab-test-setup",
+      "stars": 35923,
       "relation": "shared_tag",
       "evidence": "TypeScript Skills"
     },
     {
-      "slug": "deanpeters-ai-shaped-readiness-advisor",
-      "displayName": "deanpeters/ai-shaped-readiness-advisor",
-      "stars": 4159,
+      "slug": "phuryn-ab-test-analysis",
+      "displayName": "phuryn/ab-test-analysis",
+      "stars": 22293,
       "relation": "shared_tag",
       "evidence": "TypeScript Skills"
     }
   ],
   "mapLocation": {
-    "id": "virtual-toronto",
-    "label": "Global Skill Market / Toronto / TypeScript Skills",
-    "lat": 43.6532,
-    "lon": -79.3832,
-    "source": "virtual_market"
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
   }
 }

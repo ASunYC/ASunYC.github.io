@@ -5,85 +5,91 @@
   "displayName": "voltagent/voltagent-best-practices",
   "description": "Architecture and usage patterns for agents, workflows, memory, and servers",
   "stars": 0,
-  "category": "Skills by VoltAgent",
+  "category": "Official Skills by",
   "source": "voltagent",
   "url": "https://officialskills.sh/voltagent/skills/voltagent-best-practices",
   "githubRepo": "",
   "readme": "# voltagent/voltagent-best-practices\n\nArchitecture and usage patterns for agents, workflows, memory, and servers",
   "readmeHtml": "<h1>voltagent/voltagent-best-practices</h1>\n<p>Architecture and usage patterns for agents, workflows, memory, and servers</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.089Z",
+  "updatedAt": "2026-07-03T11:33:56.322Z",
   "author": {
-    "login": "voltagent",
-    "name": "voltagent",
-    "avatarUrl": "",
-    "profileUrl": "https://github.com/voltagent",
-    "location": ""
+    "login": "VoltAgent",
+    "name": "VoltAgent",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/201282378?v=4",
+    "profileUrl": "https://github.com/VoltAgent",
+    "location": "United States of America"
   },
-  "location": null,
+  "location": {
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
+  },
   "related": [
     {
       "slug": "voltagent-awesome-design-md",
       "displayName": "voltagent/awesome-design-md",
-      "stars": 72503,
+      "stars": 95410,
       "relation": "source_overlap",
-      "evidence": "author:voltagent"
+      "evidence": "author:VoltAgent"
     },
     {
       "slug": "voltagent-awesome-openclaw-skills",
       "displayName": "voltagent/awesome-openclaw-skills",
-      "stars": 48125,
+      "stars": 50892,
       "relation": "source_overlap",
-      "evidence": "author:voltagent"
-    },
-    {
-      "slug": "voltagent-awesome-agent-skills",
-      "displayName": "VoltAgent/awesome-agent-skills",
-      "stars": 20610,
-      "relation": "source_overlap",
-      "evidence": "author:voltagent"
+      "evidence": "author:VoltAgent"
     },
     {
       "slug": "voltagent-create-voltagent",
       "displayName": "voltagent/create-voltagent",
       "stars": 0,
       "relation": "source_overlap",
-      "evidence": "author:voltagent"
+      "evidence": "author:VoltAgent"
     },
     {
       "slug": "voltagent-voltagent-core-reference",
       "displayName": "voltagent/voltagent-core-reference",
       "stars": 0,
       "relation": "source_overlap",
-      "evidence": "author:voltagent"
+      "evidence": "author:VoltAgent"
     },
     {
       "slug": "voltagent-voltagent-docs-bundle",
       "displayName": "voltagent/voltagent-docs-bundle",
       "stars": 0,
       "relation": "source_overlap",
-      "evidence": "author:voltagent"
+      "evidence": "author:VoltAgent"
     },
     {
-      "slug": "voltagent-create-voltagent",
-      "displayName": "voltagent/create-voltagent",
-      "stars": 0,
+      "slug": "angular-angular-developer",
+      "displayName": "angular/angular-developer",
+      "stars": 544,
       "relation": "shared_tag",
-      "evidence": "Skills by VoltAgent"
+      "evidence": "Official Skills by"
     },
     {
-      "slug": "voltagent-voltagent-core-reference",
-      "displayName": "voltagent/voltagent-core-reference",
-      "stars": 0,
+      "slug": "testmu-ai-api-skill",
+      "displayName": "testmu-ai/api-skill",
+      "stars": 318,
       "relation": "shared_tag",
-      "evidence": "Skills by VoltAgent"
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "veniceai-venice-api-overview",
+      "displayName": "veniceai/venice-api-overview",
+      "stars": 105,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
     }
   ],
   "mapLocation": {
-    "id": "virtual-shanghai",
-    "label": "Global Skill Market / Shanghai / Skills by VoltAgent",
-    "lat": 31.2304,
-    "lon": 121.4737,
-    "source": "virtual_market"
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
   }
 }

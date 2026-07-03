@@ -5,30 +5,29 @@
   "displayName": "hashicorp/refactor-module",
   "description": "Transform monolithic Terraform configurations into reusable modules",
   "stars": 0,
-  "category": "Skills by HashiCorp Team for Terraform",
+  "category": "Official Skills by",
   "source": "voltagent",
   "url": "https://officialskills.sh/hashicorp/skills/refactor-module",
   "githubRepo": "",
   "readme": "# hashicorp/refactor-module\n\nTransform monolithic Terraform configurations into reusable modules",
   "readmeHtml": "<h1>hashicorp/refactor-module</h1>\n<p>Transform monolithic Terraform configurations into reusable modules</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.091Z",
+  "updatedAt": "2026-07-03T11:33:56.325Z",
   "author": {
     "login": "hashicorp",
-    "name": "hashicorp",
-    "avatarUrl": "",
+    "name": "HashiCorp",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/761456?v=4",
     "profileUrl": "https://github.com/hashicorp",
-    "location": ""
+    "location": "San Francisco, CA"
   },
-  "location": null,
+  "location": {
+    "id": "san-francisco",
+    "label": "San Francisco, London, Austin, Lisbon, Singapore",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "github_profile"
+  },
   "related": [
-    {
-      "slug": "hashicorp-agent-skills",
-      "displayName": "hashicorp/agent-skills",
-      "stars": 604,
-      "relation": "source_overlap",
-      "evidence": "author:hashicorp"
-    },
     {
       "slug": "hashicorp-azure-verified-modules",
       "displayName": "hashicorp/azure-verified-modules",
@@ -77,13 +76,20 @@
       "stars": 0,
       "relation": "source_overlap",
       "evidence": "author:hashicorp"
+    },
+    {
+      "slug": "hashicorp-terraform-style-guide",
+      "displayName": "hashicorp/terraform-style-guide",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:hashicorp"
     }
   ],
   "mapLocation": {
-    "id": "virtual-shanghai",
-    "label": "Global Skill Market / Shanghai / Skills by HashiCorp Team for Terraform",
-    "lat": 31.2304,
-    "lon": 121.4737,
-    "source": "virtual_market"
+    "id": "san-francisco",
+    "label": "San Francisco, London, Austin, Lisbon, Singapore",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "github_profile"
   }
 }

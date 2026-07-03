@@ -5,85 +5,91 @@
   "displayName": "clickhouse/chdb-datastore",
   "description": "Drop-in pandas replacement with ClickHouse performance across 16+ data sources",
   "stars": 0,
-  "category": "Skills by ClickHouse",
+  "category": "Official Skills by",
   "source": "voltagent",
   "url": "https://officialskills.sh/clickhouse/skills/chdb-datastore",
   "githubRepo": "",
   "readme": "# clickhouse/chdb-datastore\n\nDrop-in pandas replacement with ClickHouse performance across 16+ data sources",
   "readmeHtml": "<h1>clickhouse/chdb-datastore</h1>\n<p>Drop-in pandas replacement with ClickHouse performance across 16+ data sources</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.092Z",
+  "updatedAt": "2026-07-03T11:33:56.327Z",
   "author": {
-    "login": "clickhouse",
-    "name": "clickhouse",
-    "avatarUrl": "",
-    "profileUrl": "https://github.com/clickhouse",
-    "location": ""
+    "login": "ClickHouse",
+    "name": "ClickHouse",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/54801242?v=4",
+    "profileUrl": "https://github.com/ClickHouse",
+    "location": "United States of America"
   },
-  "location": null,
+  "location": {
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
+  },
   "related": [
     {
       "slug": "clickhouse-clickhouse-best-practices",
       "displayName": "clickhouse/clickhouse-best-practices",
       "stars": 0,
       "relation": "source_overlap",
-      "evidence": "author:clickhouse"
+      "evidence": "author:ClickHouse"
     },
     {
       "slug": "clickhouse-chdb-sql",
       "displayName": "clickhouse/chdb-sql",
       "stars": 0,
       "relation": "source_overlap",
-      "evidence": "author:clickhouse"
+      "evidence": "author:ClickHouse"
     },
     {
       "slug": "clickhouse-clickhouse-architecture-advisor",
       "displayName": "clickhouse/clickhouse-architecture-advisor",
       "stars": 0,
       "relation": "source_overlap",
-      "evidence": "author:clickhouse"
+      "evidence": "author:ClickHouse"
     },
     {
       "slug": "clickhouse-clickhousectl-cloud-deploy",
       "displayName": "clickhouse/clickhousectl-cloud-deploy",
       "stars": 0,
       "relation": "source_overlap",
-      "evidence": "author:clickhouse"
+      "evidence": "author:ClickHouse"
     },
     {
       "slug": "clickhouse-clickhousectl-local-dev",
       "displayName": "clickhouse/clickhousectl-local-dev",
       "stars": 0,
       "relation": "source_overlap",
-      "evidence": "author:clickhouse"
+      "evidence": "author:ClickHouse"
     },
     {
-      "slug": "clickhouse-clickhouse-best-practices",
-      "displayName": "clickhouse/clickhouse-best-practices",
-      "stars": 0,
+      "slug": "angular-angular-developer",
+      "displayName": "angular/angular-developer",
+      "stars": 544,
       "relation": "shared_tag",
-      "evidence": "Skills by ClickHouse"
+      "evidence": "Official Skills by"
     },
     {
-      "slug": "clickhouse-chdb-sql",
-      "displayName": "clickhouse/chdb-sql",
-      "stars": 0,
+      "slug": "testmu-ai-api-skill",
+      "displayName": "testmu-ai/api-skill",
+      "stars": 318,
       "relation": "shared_tag",
-      "evidence": "Skills by ClickHouse"
+      "evidence": "Official Skills by"
     },
     {
-      "slug": "clickhouse-clickhouse-architecture-advisor",
-      "displayName": "clickhouse/clickhouse-architecture-advisor",
-      "stars": 0,
+      "slug": "veniceai-venice-api-overview",
+      "displayName": "veniceai/venice-api-overview",
+      "stars": 105,
       "relation": "shared_tag",
-      "evidence": "Skills by ClickHouse"
+      "evidence": "Official Skills by"
     }
   ],
   "mapLocation": {
-    "id": "virtual-bengaluru",
-    "label": "Global Skill Market / Bengaluru / Skills by ClickHouse",
-    "lat": 12.9716,
-    "lon": 77.5946,
-    "source": "virtual_market"
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
   }
 }

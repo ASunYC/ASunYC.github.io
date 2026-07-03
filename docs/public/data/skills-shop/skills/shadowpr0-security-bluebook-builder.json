@@ -4,20 +4,20 @@
   "name": "security-bluebook-builder",
   "displayName": "SHADOWPR0/security-bluebook-builder",
   "description": "Build security Blue Books for sensitive apps",
-  "stars": 5,
+  "stars": 6,
   "category": "Community Skills",
   "source": "voltagent",
   "url": "https://github.com/SHADOWPR0/security-bluebook-builder",
   "githubRepo": "SHADOWPR0/security-bluebook-builder",
   "readme": "# SHADOWPR0/security-bluebook-builder\n\nBuild security Blue Books for sensitive apps",
   "readmeHtml": "<h1>SHADOWPR0/security-bluebook-builder</h1>\n<p>Build security Blue Books for sensitive apps</p>",
-  "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.075Z",
+  "skillMd": "---\nname: security-bluebook-builder\ndescription: Create or refine a concise, normative security policy (\"Blue Book\") for sensitive applications. Use when users need a threat model, data classification rules, auth/session policy, logging and audit requirements, retention/deletion expectations, incident response, or security gates for apps handling PII/PHI/financial data.\n---\n\n# Security Bluebook Builder\n\n## Overview\nBuild a minimal but real security policy for sensitive apps. The output is a single, coherent Blue Book document using MUST/SHOULD/CAN language, with explicit assumptions, scope, and security gates.\n\n## Workflow\n\n### 1) Gather inputs (ask only if missing)\nCollect just enough context to fill the template. If the user has not provided details, ask up to 6 short questions:\n- What data classes are handled (PII, PHI, financial, tokens, content)?\n- What are the trust boundaries (client/server/third parties)?\n- How do users authenticate (OAuth, email/password, SSO, device sessions)?\n- What storage is used (DB, object storage, logs, analytics)?\n- What connectors or third parties are used?\n- Retention and deletion expectations (default + user-initiated)?\n\nIf the user cannot answer, proceed with safe defaults and mark TODOs.\n\n### 2) Draft the Blue Book\nLoad `references/bluebook_template.md` and fill it with the provided details. Keep it concise, deterministic, and enforceable.\n\n### 3) Enforce guardrails\n- Do not include secrets, tokens, or internal credentials.\n- If something is unknown, write \"TODO\" plus a clear assumption.\n- Fail closed: if a capability is required but unavailable, call it out explicitly.\n- Keep scope minimal; do not add features or tools beyond what the user asked for.\n\n### 4) Quality checks\nConfirm the Blue Book includes:\n- Threat model (assumptions + out-of-scope)\n- Data classification + handling rules\n- Trust boundaries + controls\n- Auth/session policy\n- Token handling policy\n- Logging/audit policy\n- Retention/deletion\n- Incident response mini-runbook\n- Security gates + go/no-go checklist\n\n## Resources\n- `references/bluebook_template.md`\n",
+  "updatedAt": "2025-12-24T14:41:31Z",
   "author": {
-    "login": "shadowpr0",
-    "name": "shadowpr0",
-    "avatarUrl": "",
-    "profileUrl": "https://github.com/shadowpr0",
+    "login": "SHADOWPR0",
+    "name": "SHADOWPR0",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/141282786?v=4",
+    "profileUrl": "https://github.com/SHADOWPR0",
     "location": ""
   },
   "location": null,
@@ -25,56 +25,56 @@
     {
       "slug": "shadowpr0-beautiful-prose",
       "displayName": "SHADOWPR0/beautiful_prose",
-      "stars": 0,
+      "stars": 45,
       "relation": "source_overlap",
-      "evidence": "author:shadowpr0"
+      "evidence": "author:SHADOWPR0"
     },
     {
-      "slug": "obra-defense-in-depth",
-      "displayName": "obra/defense-in-depth",
-      "stars": 186953,
+      "slug": "obra-brainstorming",
+      "displayName": "obra/brainstorming",
+      "stars": 245089,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mattpocock-skills",
+      "displayName": "mattpocock/skills",
+      "stars": 155097,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
       "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
-      "stars": 77115,
+      "stars": 100227,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
-      "slug": "mvanhorn-last30days-skill",
-      "displayName": "mvanhorn/last30days-skill",
-      "stars": 25573,
+      "slug": "lum1104-understand-anything",
+      "displayName": "Lum1104/understand-anything",
+      "stars": 70574,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
-      "slug": "k-dense-ai-claude-scientific-skills",
-      "displayName": "K-Dense-AI/claude-scientific-skills",
-      "stars": 20299,
+      "slug": "santifer-career-ops",
+      "displayName": "santifer/career-ops",
+      "stars": 58303,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
-      "slug": "muratcankoylan-context-fundamentals",
-      "displayName": "muratcankoylan/context-fundamentals",
-      "stars": 15494,
+      "slug": "leonxlnx-taste-skill",
+      "displayName": "Leonxlnx/taste-skill",
+      "stars": 55314,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
-      "slug": "muratcankoylan-context-degradation",
-      "displayName": "muratcankoylan/context-degradation",
-      "stars": 15494,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-compression",
-      "displayName": "muratcankoylan/context-compression",
-      "stars": 15494,
+      "slug": "panniantong-agent-reach",
+      "displayName": "Panniantong/Agent-Reach",
+      "stars": 49547,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     }

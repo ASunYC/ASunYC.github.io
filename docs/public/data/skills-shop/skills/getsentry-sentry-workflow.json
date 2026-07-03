@@ -5,27 +5,33 @@
   "displayName": "getsentry/sentry-workflow",
   "description": "End-to-end Sentry workflow: fix production issues and review code with Sentry context",
   "stars": 0,
-  "category": "Skills by Typefully",
+  "category": "Official Skills by",
   "source": "voltagent",
   "url": "https://officialskills.sh/getsentry/skills/sentry-workflow",
   "githubRepo": "",
   "readme": "# getsentry/sentry-workflow\n\nEnd-to-end Sentry workflow: fix production issues and review code with Sentry context",
   "readmeHtml": "<h1>getsentry/sentry-workflow</h1>\n<p>End-to-end Sentry workflow: fix production issues and review code with Sentry context</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.105Z",
+  "updatedAt": "2026-07-03T11:33:56.343Z",
   "author": {
     "login": "getsentry",
-    "name": "getsentry",
-    "avatarUrl": "",
+    "name": "Sentry",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/1396951?v=4",
     "profileUrl": "https://github.com/getsentry",
-    "location": ""
+    "location": "United States of America"
   },
-  "location": null,
+  "location": {
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
+  },
   "related": [
     {
       "slug": "getsentry-skills",
       "displayName": "getsentry/skills",
-      "stars": 674,
+      "stars": 842,
       "relation": "source_overlap",
       "evidence": "author:getsentry"
     },
@@ -80,10 +86,10 @@
     }
   ],
   "mapLocation": {
-    "id": "virtual-san-francisco",
-    "label": "Global Skill Market / San Francisco / Skills by Typefully",
-    "lat": 37.7749,
-    "lon": -122.4194,
-    "source": "virtual_market"
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
   }
 }

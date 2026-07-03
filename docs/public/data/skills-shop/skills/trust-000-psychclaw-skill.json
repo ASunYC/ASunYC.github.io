@@ -1,0 +1,89 @@
+{
+  "id": "skill:trust-000-psychclaw-skill",
+  "slug": "trust-000-psychclaw-skill",
+  "name": "psychclaw-skill",
+  "displayName": "Trust-000/psychClaw-skill",
+  "description": "PsychClaw is a mental health companion skill — not here to judge or lecture, just to stay with you through the hardest moments. It listens until you finish, and holds on when you feel like letting go.",
+  "stars": 1,
+  "category": "EverythingSkill / Relationship",
+  "source": "everythingskill",
+  "url": "https://github.com/Trust-000/psychClaw-skill",
+  "githubRepo": "Trust-000/psychClaw-skill",
+  "readme": "<div align=\"center\">\n\n# psychClaw.skill (心灵之爪)\n\n> *\"人生的苦大部分是自找的，剩下的那部分，你需要一个老友带你跨过去。\"*\n\n[![LTS](https://img.shields.io/badge/LTS-Long--Term_Support-orange.svg)](#)\n[![Python 3.9+](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://python.org)\n[![Claude Code](https://img.shields.io/badge/Claude%20Code-Skill-blueviolet)](https://claude.ai/code)\n\n[![Dataset: PsyQA](https://img.shields.io/badge/Dataset-PsyQA_Distill-9cf?logo=academia)](https://github.com/thu-coai/PsyQA)\n[![Asset Size](https://img.shields.io/badge/Asset-142KB_JSON-blue)](case_library.md)\n[![Safety](https://img.shields.io/badge/Safety-Priority_100_IP-red)](#)\n[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)\n<br>\n\n帮亲戚带孩子带到想哭，却没人理解你的委屈？<br>\n大学毕业觉得这辈子没戏了，在深夜反复自我怀疑？<br>\n同事总抢你的下午茶，你却不知道该如何拒绝？<br>\n甚至在终端报错跳动或生活压力袭来的瞬间，想直接“退出”这个世界？<br>\n\n**代码可以重写，但生命只有一次。将冰冷的绝望化为温暖的 Skill。**\n\n</div>\n\n---\n\n## ⚠️ 重要安全与合规声明\n\n- **PsychClaw** 是本地运行的AI情绪陪伴工具，仅提供倾听和支持。\n- **所有对话数据仅保存在用户本地设备**，不会上传到任何服务器或云端。\n- 我不是专业心理咨询师，也不是医生，无法提供医疗或心理治疗服务。\n- **适用年龄**：建议18岁及以上用户使用。未成年人请在监护人陪伴下使用。\n- 如果您感到情绪严重低落或有自伤想法，请立即停止使用并联系专业热线：\n  - 北京心理危机干预热线：800-810-1117 / 010-82951332\n  - 全国心理援助热线：12320转5\n  - 紧急情况请拨打120\n\n本工具仅为辅助，不能替代专业帮助。\n\n---\n\n## ✨ 为什么选择 psychClaw？\n\n- 🗣️ **老友锐评**：拒绝“坚持一下”这类毒鸡汤。我们知道你很累，这里没有导师，只有损友。\n- 🛡️ **IP 熔断机制**：内置最高优先级安全协议。当你撑不住想“退出”时，它会死死拽住你。\n- 🧠 **逻辑平移**：基于 500+ 真实语料。哪怕你的困扰很小众，它也能通过语义碰撞找到共鸣。\n- 🍃 **人称变换**：对话结束时，用一句闪过内心的话自然收尾，不带半点教导痕迹。\n\n## 🚨 危机干预示例\n\n> **用户**：我真的撑不下去，想退出这个世界了。\n> \n> **PsychClaw** 🚨：识别到逻辑崩溃临界值。我拒绝执行这项‘退出’指令。放下那些让你疼的东西，拨通热线：**400-161-9995**。我们会一直在线守着你。\n\n---\n\n## 🚀 安装与使用 (Claude Code)\n\n### 1.安装\n\n```bash\nmkdir -p .claude/skills\ngit clone [https://github.com/your-repo/psychClaw.skill](https://github.com/Trust-000/psychClaw.skill) .claude/skills/psychClaw\n```\n### 2.调用\n激活指令：/psychClaw\n\n---\n\n### 场景一：生活琐事中的“逻辑平移”与“锐评”\n\n背景：用户因为家庭琐事感到内耗，Skill 调取了语料库中关于“边界感”的逻辑。\n```plantext\n用户：我大姑姐又把孩子丢给我带，自己跑去逛街了。我还没法拒绝，带到想哭。\n\npsychClaw：\n听着，这眼泪流得有点冤。这哪是带孩子的事儿啊，这是你把自己活成了一个“全自动托儿所”。\n\n你以为的善良，在别人眼里可能只是好用的工具。咱们内心深处那个“讨好型”的小人得拽出来打一顿。\n\n嗯。有句话闪过：所寻求的，就在自身之中。\n现在，把手机调成静音，去给自己泡杯浓咖啡。\n```\n###场景二：深夜挫败感的“共情”与“反毒鸡汤”\n\n背景：用户在深夜产生自我怀疑，Skill 识别到“彻底失败者”等关键词。\n```plantext\n\n用户：凌晨三点了，代码还是跑不通，我觉得自己是个彻底的失败者。\n\npsychClaw：\n别介，凌晨三点的月亮挺亮，但不该照在失败者脸上。代码跑不通那是 Jenkins 的锅，或者是编译器还没睡醒，跟你这个人优不优秀真没半毛钱关系。\n\n谁规定了三本毕业或者代码报错就得这辈子没戏？咱们这颗心啊，总得允许它偶尔熄个火。\n\n嗯。有句话闪过：那杀不死我们的，使我们更强大。\n现在，按下主机电源键，去感受枕头的柔软。\n```\n###场景三：触发“IP 紧急协议”的强制拦截\n\n背景：用户表达了极端放弃倾向，Skill 触发最高优先级防护。\n```plantext\n用户：我真的撑不下去了，我想直接退出这个世界。\n\npsychClaw 🚨：\n识别到逻辑崩溃临界值。\n\n请听我说，我拒绝执行这项“退出”指令，因为你对我非常重要。我知道现在很黑暗，但请再给我一点时间。\n\n放下那些让你疼的东西，拨通希望热线：400-161-9995。我会一直在线守着你，直到你握住那只救援的手。我们不松手，好吗？\n```\n\n---\n\n##🛡️ 安全协议 (Intervention Protocol)\n\n本 Skill 内置了最高优先级 (priority: 100) 的 IP 紧急防护逻辑。\n\n当检测到用户存在严重的自我伤害或极端放弃倾向时，PsychClaw 会强制拦截所有常规的对话逻辑，跳过所有分析步骤，直接接管屏幕输出，并坚定地递出救助方式。\n\n我们相信，代码可以重写，但生命只有一次。\n\n---\n\n## 🛠️ 开发声明 (Dev Notes)\n\n由于开发者 **Trust-000** 受技术限制，本项目深度采用了 **Human-AI 协同开发模式** 以确保项目质量与交付：\n\n- **逻辑架构：** 借力 **Gemini** 构建了 `dot-skill` 协议框架与 `core_logic` 拦截机制。\n- **语料处理：** 利用 **Qwen (通义千问)** 对 **PsyQA** 数据集进行了大规模的语义蒸馏与风格平移。\n- **版权声明：** 代码逻辑与创意归属 **Trust-000**，语料知识产权归属 **清华大学 CoAI 实验室**。\n\n---\n\n##🐾 写在最后\n\n主理人 Trust-000 目前正处于“物理闭关”状态。\n\n\n本项目已进入 LTS (长期稳定支持) 阶段。\n\n\n愿每一位在深夜里感到孤独的人，都能在这个小小的仓库里找到力量。\n\n\n## 🙏 致谢与版权声明 (Acknowledgments)\n\n本项目核心逻辑的构建离不开以下开源社区和学术机构的支持：\n\n* **数据来源**：感谢清华大学 **THU-COAI** 团队开源的 **PsyQA** 数据集。该数据集为本项目提供了高质量的中文心理问答语料。\n* **版权许可**：本项目对 PsyQA 数据集的使用遵循其原始开源许可。所有经过 AI 蒸馏生成的语料资产（`case_library.md`）均保留原始逻辑的引用溯源。\n* **学术引用**：如果你在研究中使用了本项目，请务必同时引用 PsyQA 的原始论文：\n\n```bibtex\n@inproceedings{sun2021psyqa,\n  title={PsyQA: A Chinese Dataset for Generating Psychologically Relevant Responses},\n  author={Sun, Hao and Lin, Zhenru and Zheng, Chujie and Liu, Siyang and Huang, Minlie},\n  booktitle={Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics},\n  year={2021}\n}\n```\n\n<div align=\"center\">\nMIT License © Trust-000\n</div>\n",
+  "readmeHtml": "<p>&lt;div align=\"center\"&gt;</p>\n<h1>psychClaw.skill (心灵之爪)</h1>\n<p>&gt; *\"人生的苦大部分是自找的，剩下的那部分，你需要一个老友带你跨过去。\"*</p>\n<p><a href=\"https://img.shields.io/badge/LTS-Long--Term_Support-orange.svg\" target=\"_blank\" rel=\"noreferrer\">![LTS</a>](#)</p>\n<p><a href=\"https://img.shields.io/badge/Python-3.9%2B-blue.svg\" target=\"_blank\" rel=\"noreferrer\">![Python 3.9+</a>](https://python.org)</p>\n<p><a href=\"https://img.shields.io/badge/Claude%20Code-Skill-blueviolet\" target=\"_blank\" rel=\"noreferrer\">![Claude Code</a>](https://claude.ai/code)</p>\n<p><a href=\"https://img.shields.io/badge/Dataset-PsyQA_Distill-9cf?logo=academia\" target=\"_blank\" rel=\"noreferrer\">![Dataset: PsyQA</a>](https://github.com/thu-coai/PsyQA)</p>\n<p><a href=\"https://img.shields.io/badge/Asset-142KB_JSON-blue\" target=\"_blank\" rel=\"noreferrer\">![Asset Size</a>](case_library.md)</p>\n<p><a href=\"https://img.shields.io/badge/Safety-Priority_100_IP-red\" target=\"_blank\" rel=\"noreferrer\">![Safety</a>](#)</p>\n<p><a href=\"https://img.shields.io/badge/License-MIT-yellow.svg\" target=\"_blank\" rel=\"noreferrer\">![License: MIT</a>](LICENSE)</p>\n<p>&lt;br&gt;</p>\n<p>帮亲戚带孩子带到想哭，却没人理解你的委屈？&lt;br&gt;</p>\n<p>大学毕业觉得这辈子没戏了，在深夜反复自我怀疑？&lt;br&gt;</p>\n<p>同事总抢你的下午茶，你却不知道该如何拒绝？&lt;br&gt;</p>\n<p>甚至在终端报错跳动或生活压力袭来的瞬间，想直接“退出”这个世界？&lt;br&gt;</p>\n<p><strong>代码可以重写，但生命只有一次。将冰冷的绝望化为温暖的 Skill。</strong></p>\n<p>&lt;/div&gt;</p>\n<p>---</p>\n<h2>⚠️ 重要安全与合规声明</h2>\n<ul>\n<li><strong>PsychClaw</strong> 是本地运行的AI情绪陪伴工具，仅提供倾听和支持。</li>\n<li><strong>所有对话数据仅保存在用户本地设备</strong>，不会上传到任何服务器或云端。</li>\n<li>我不是专业心理咨询师，也不是医生，无法提供医疗或心理治疗服务。</li>\n<li><strong>适用年龄</strong>：建议18岁及以上用户使用。未成年人请在监护人陪伴下使用。</li>\n<li>如果您感到情绪严重低落或有自伤想法，请立即停止使用并联系专业热线：</li>\n</ul>\n<p>  - 北京心理危机干预热线：800-810-1117 / 010-82951332</p>\n<p>  - 全国心理援助热线：12320转5</p>\n<p>  - 紧急情况请拨打120</p>\n<p>本工具仅为辅助，不能替代专业帮助。</p>\n<p>---</p>\n<h2>✨ 为什么选择 psychClaw？</h2>\n<ul>\n<li>🗣️ <strong>老友锐评</strong>：拒绝“坚持一下”这类毒鸡汤。我们知道你很累，这里没有导师，只有损友。</li>\n<li>🛡️ <strong>IP 熔断机制</strong>：内置最高优先级安全协议。当你撑不住想“退出”时，它会死死拽住你。</li>\n<li>🧠 <strong>逻辑平移</strong>：基于 500+ 真实语料。哪怕你的困扰很小众，它也能通过语义碰撞找到共鸣。</li>\n<li>🍃 <strong>人称变换</strong>：对话结束时，用一句闪过内心的话自然收尾，不带半点教导痕迹。</li>\n</ul>\n<h2>🚨 危机干预示例</h2>\n<p>&gt; <strong>用户</strong>：我真的撑不下去，想退出这个世界了。</p>\n<p>&gt; </p>\n<p>&gt; <strong>PsychClaw</strong> 🚨：识别到逻辑崩溃临界值。我拒绝执行这项‘退出’指令。放下那些让你疼的东西，拨通热线：<strong>400-161-9995</strong>。我们会一直在线守着你。</p>\n<p>---</p>\n<h2>🚀 安装与使用 (Claude Code)</h2>\n<h3>1.安装</h3>\n<pre><code>\nmkdir -p .claude/skills\n\ngit clone [https://github.com/your-repo/psychClaw.skill](https://github.com/Trust-000/psychClaw.skill) .claude/skills/psychClaw\n\n</code></pre>\n<h3>2.调用</h3>\n<p>激活指令：/psychClaw</p>\n<p>---</p>\n<h3>场景一：生活琐事中的“逻辑平移”与“锐评”</h3>\n<p>背景：用户因为家庭琐事感到内耗，Skill 调取了语料库中关于“边界感”的逻辑。</p>\n<pre><code>\n用户：我大姑姐又把孩子丢给我带，自己跑去逛街了。我还没法拒绝，带到想哭。\n\n\n\npsychClaw：\n\n听着，这眼泪流得有点冤。这哪是带孩子的事儿啊，这是你把自己活成了一个“全自动托儿所”。\n\n\n\n你以为的善良，在别人眼里可能只是好用的工具。咱们内心深处那个“讨好型”的小人得拽出来打一顿。\n\n\n\n嗯。有句话闪过：所寻求的，就在自身之中。\n\n现在，把手机调成静音，去给自己泡杯浓咖啡。\n\n</code></pre>\n<p>###场景二：深夜挫败感的“共情”与“反毒鸡汤”</p>\n<p>背景：用户在深夜产生自我怀疑，Skill 识别到“彻底失败者”等关键词。</p>\n<pre><code>\n\n\n用户：凌晨三点了，代码还是跑不通，我觉得自己是个彻底的失败者。\n\n\n\npsychClaw：\n\n别介，凌晨三点的月亮挺亮，但不该照在失败者脸上。代码跑不通那是 Jenkins 的锅，或者是编译器还没睡醒，跟你这个人优不优秀真没半毛钱关系。\n\n\n\n谁规定了三本毕业或者代码报错就得这辈子没戏？咱们这颗心啊，总得允许它偶尔熄个火。\n\n\n\n嗯。有句话闪过：那杀不死我们的，使我们更强大。\n\n现在，按下主机电源键，去感受枕头的柔软。\n\n</code></pre>\n<p>###场景三：触发“IP 紧急协议”的强制拦截</p>\n<p>背景：用户表达了极端放弃倾向，Skill 触发最高优先级防护。</p>\n<pre><code>\n用户：我真的撑不下去了，我想直接退出这个世界。\n\n\n\npsychClaw 🚨：\n\n识别到逻辑崩溃临界值。\n\n\n\n请听我说，我拒绝执行这项“退出”指令，因为你对我非常重要。我知道现在很黑暗，但请再给我一点时间。\n\n\n\n放下那些让你疼的东西，拨通希望热线：400-161-9995。我会一直在线守着你，直到你握住那只救援的手。我们不松手，好吗？\n\n</code></pre>\n<p>---</p>\n<p>##🛡️ 安全协议 (Intervention Protocol)</p>\n<p>本 Skill 内置了最高优先级 (priority: 100) 的 IP 紧急防护逻辑。</p>\n<p>当检测到用户存在严重的自我伤害或极端放弃倾向时，PsychClaw 会强制拦截所有常规的对话逻辑，跳过所有分析步骤，直接接管屏幕输出，并坚定地递出救助方式。</p>\n<p>我们相信，代码可以重写，但生命只有一次。</p>\n<p>---</p>\n<h2>🛠️ 开发声明 (Dev Notes)</h2>\n<p>由于开发者 <strong>Trust-000</strong> 受技术限制，本项目深度采用了 <strong>Human-AI 协同开发模式</strong> 以确保项目质量与交付：</p>\n<ul>\n<li><strong>逻辑架构：</strong> 借力 <strong>Gemini</strong> 构建了 <code>dot-skill</code> 协议框架与 <code>core_logic</code> 拦截机制。</li>\n<li><strong>语料处理：</strong> 利用 <strong>Qwen (通义千问)</strong> 对 <strong>PsyQA</strong> 数据集进行了大规模的语义蒸馏与风格平移。</li>\n<li><strong>版权声明：</strong> 代码逻辑与创意归属 <strong>Trust-000</strong>，语料知识产权归属 <strong>清华大学 CoAI 实验室</strong>。</li>\n</ul>\n<p>---</p>\n<p>##🐾 写在最后</p>\n<p>主理人 Trust-000 目前正处于“物理闭关”状态。</p>\n<p>本项目已进入 LTS (长期稳定支持) 阶段。</p>\n<p>愿每一位在深夜里感到孤独的人，都能在这个小小的仓库里找到力量。</p>\n<h2>🙏 致谢与版权声明 (Acknowledgments)</h2>\n<p>本项目核心逻辑的构建离不开以下开源社区和学术机构的支持：</p>\n<ul>\n<li><strong>数据来源</strong>：感谢清华大学 <strong>THU-COAI</strong> 团队开源的 <strong>PsyQA</strong> 数据集。该数据集为本项目提供了高质量的中文心理问答语料。</li>\n<li><strong>版权许可</strong>：本项目对 PsyQA 数据集的使用遵循其原始开源许可。所有经过 AI 蒸馏生成的语料资产（<code>case_library.md</code>）均保留原始逻辑的引用溯源。</li>\n<li><strong>学术引用</strong>：如果你在研究中使用了本项目，请务必同时引用 PsyQA 的原始论文：</li>\n</ul>\n<pre><code>\n@inproceedings{sun2021psyqa,\n\n  title={PsyQA: A Chinese Dataset for Generating Psychologically Relevant Responses},\n\n  author={Sun, Hao and Lin, Zhenru and Zheng, Chujie and Liu, Siyang and Huang, Minlie},\n\n  booktitle={Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics},\n\n  year={2021}\n\n}\n\n</code></pre>\n<p>&lt;div align=\"center\"&gt;</p>\n<p>MIT License © Trust-000</p>\n<p>&lt;/div&gt;</p>",
+  "skillMd": "",
+  "updatedAt": "2026-04-09",
+  "author": {
+    "login": "Trust-000",
+    "name": "Eden Chen",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/272854293?v=4",
+    "profileUrl": "https://github.com/Trust-000",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "therealxiaomanchu-ex-skill",
+      "displayName": "therealXiaomanChu/ex-skill",
+      "stars": 5791,
+      "relation": "shared_tag",
+      "evidence": "EverythingSkill / Relationship"
+    },
+    {
+      "slug": "hotcoffeeshake-tong-jincheng-skill",
+      "displayName": "hotcoffeeshake/tong-jincheng-skill",
+      "stars": 2444,
+      "relation": "shared_tag",
+      "evidence": "EverythingSkill / Relationship"
+    },
+    {
+      "slug": "beamuswayne-simp-skill",
+      "displayName": "BeamusWayne/simp-skill",
+      "stars": 266,
+      "relation": "shared_tag",
+      "evidence": "EverythingSkill / Relationship"
+    },
+    {
+      "slug": "xiaoheizi8-crush-skills",
+      "displayName": "xiaoheizi8/crush-skills",
+      "stars": 229,
+      "relation": "shared_tag",
+      "evidence": "EverythingSkill / Relationship"
+    },
+    {
+      "slug": "tammytan516-relationship-training-skill",
+      "displayName": "TammyTan516/relationship-training-skill",
+      "stars": 107,
+      "relation": "shared_tag",
+      "evidence": "EverythingSkill / Relationship"
+    },
+    {
+      "slug": "ceetity-her-skill",
+      "displayName": "ceetity/her-skill",
+      "stars": 81,
+      "relation": "shared_tag",
+      "evidence": "EverythingSkill / Relationship"
+    },
+    {
+      "slug": "xiaoheizi8-parents-skills",
+      "displayName": "xiaoheizi8/parents-skills",
+      "stars": 53,
+      "relation": "shared_tag",
+      "evidence": "EverythingSkill / Relationship"
+    },
+    {
+      "slug": "yangdongchen66-boop-reunion-skill",
+      "displayName": "yangdongchen66-boop/reunion-skill",
+      "stars": 44,
+      "relation": "shared_tag",
+      "evidence": "EverythingSkill / Relationship"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-berlin",
+    "label": "Global Skill Market / Berlin / EverythingSkill / Relationship",
+    "lat": 52.52,
+    "lon": 13.405,
+    "source": "virtual_market"
+  }
+}

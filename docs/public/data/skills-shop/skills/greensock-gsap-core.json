@@ -12,23 +12,16 @@
   "readme": "# greensock/gsap-core\n\nCore API with gsap.to(), from(), fromTo(), easing, duration, stagger, and defaults",
   "readmeHtml": "<h1>greensock/gsap-core</h1>\n<p>Core API with gsap.to(), from(), fromTo(), easing, duration, stagger, and defaults</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.145Z",
+  "updatedAt": "2026-07-03T11:33:56.380Z",
   "author": {
     "login": "greensock",
-    "name": "greensock",
-    "avatarUrl": "",
+    "name": "GreenSock",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/2386673?v=4",
     "profileUrl": "https://github.com/greensock",
-    "location": ""
+    "location": "Chicago"
   },
   "location": null,
   "related": [
-    {
-      "slug": "greensock-gsap-skills",
-      "displayName": "greensock/gsap-skills",
-      "stars": 3127,
-      "relation": "source_overlap",
-      "evidence": "author:greensock"
-    },
     {
       "slug": "greensock-gsap-timeline",
       "displayName": "greensock/gsap-timeline",
@@ -77,6 +70,13 @@
       "stars": 0,
       "relation": "source_overlap",
       "evidence": "author:greensock"
+    },
+    {
+      "slug": "coreyhaines31-ab-test-setup",
+      "displayName": "coreyhaines31/ab-test-setup",
+      "stars": 35923,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
     }
   ],
   "mapLocation": {

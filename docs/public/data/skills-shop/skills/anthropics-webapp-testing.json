@@ -12,22 +12,35 @@
   "readme": "# anthropics/webapp-testing\n\nTest local web applications using Playwright",
   "readmeHtml": "<h1>anthropics/webapp-testing</h1>\n<p>Test local web applications using Playwright</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.089Z",
+  "updatedAt": "2026-07-03T11:33:56.322Z",
   "author": {
     "login": "anthropics",
-    "name": "anthropics",
-    "avatarUrl": "",
+    "name": "Anthropic",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/76263028?v=4",
     "profileUrl": "https://github.com/anthropics",
-    "location": ""
+    "location": "United States of America"
   },
-  "location": null,
+  "location": {
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
+  },
   "related": [
     {
-      "slug": "anthropics-claude-plugins-official",
-      "displayName": "anthropics/claude-plugins-official",
-      "stars": 18758,
-      "relation": "source_overlap",
-      "evidence": "author:anthropics"
+      "slug": "combo-frontend-production-review",
+      "displayName": "Frontend Production Review",
+      "stars": 0,
+      "relation": "combo_component",
+      "evidence": "Frontend Production Review includes anthropics/webapp-testing"
+    },
+    {
+      "slug": "combo-quality-release-loop",
+      "displayName": "Quality Release Loop",
+      "stars": 0,
+      "relation": "combo_component",
+      "evidence": "Quality Release Loop includes anthropics/webapp-testing"
     },
     {
       "slug": "anthropics-docx",
@@ -70,20 +83,13 @@
       "stars": 0,
       "relation": "source_overlap",
       "evidence": "author:anthropics"
-    },
-    {
-      "slug": "anthropics-canvas-design",
-      "displayName": "anthropics/canvas-design",
-      "stars": 0,
-      "relation": "source_overlap",
-      "evidence": "author:anthropics"
     }
   ],
   "mapLocation": {
-    "id": "virtual-bengaluru",
-    "label": "Global Skill Market / Bengaluru / Official Skills by",
-    "lat": 12.9716,
-    "lon": 77.5946,
-    "source": "virtual_market"
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
   }
 }

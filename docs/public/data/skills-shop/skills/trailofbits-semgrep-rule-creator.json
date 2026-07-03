@@ -5,29 +5,35 @@
   "displayName": "trailofbits/semgrep-rule-creator",
   "description": "Create and refine Semgrep rules for vulnerability detection",
   "stars": 0,
-  "category": "Skills by Typefully",
+  "category": "Official Skills by",
   "source": "voltagent",
   "url": "https://officialskills.sh/trailofbits/skills/semgrep-rule-creator",
   "githubRepo": "",
   "readme": "# trailofbits/semgrep-rule-creator\n\nCreate and refine Semgrep rules for vulnerability detection",
   "readmeHtml": "<h1>trailofbits/semgrep-rule-creator</h1>\n<p>Create and refine Semgrep rules for vulnerability detection</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.104Z",
+  "updatedAt": "2026-07-03T11:33:56.341Z",
   "author": {
     "login": "trailofbits",
-    "name": "trailofbits",
-    "avatarUrl": "",
+    "name": "Trail of Bits",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/2314423?v=4",
     "profileUrl": "https://github.com/trailofbits",
-    "location": ""
+    "location": "New York, New York"
   },
-  "location": null,
+  "location": {
+    "id": "new-york",
+    "label": "New York",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "source": "github_profile"
+  },
   "related": [
     {
-      "slug": "trailofbits-skills",
-      "displayName": "trailofbits/skills",
-      "stars": 5043,
-      "relation": "source_overlap",
-      "evidence": "author:trailofbits"
+      "slug": "combo-security-audit-stack",
+      "displayName": "Security Audit Stack",
+      "stars": 0,
+      "relation": "combo_component",
+      "evidence": "Security Audit Stack includes trailofbits/semgrep-rule-creator"
     },
     {
       "slug": "trailofbits-ask-questions-if-underspecified",
@@ -80,10 +86,10 @@
     }
   ],
   "mapLocation": {
-    "id": "virtual-new-york",
-    "label": "Global Skill Market / New York / Skills by Typefully",
+    "id": "new-york",
+    "label": "New York",
     "lat": 40.7128,
     "lon": -74.006,
-    "source": "virtual_market"
+    "source": "github_profile"
   }
 }

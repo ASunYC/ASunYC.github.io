@@ -4,77 +4,77 @@
   "name": "skills",
   "displayName": "NoizAI/skills",
   "description": "Human-like TTS workflows with local/cloud APIs and app delivery",
-  "stars": 0,
+  "stars": 515,
   "category": "Community Skills",
   "source": "voltagent",
   "url": "https://github.com/NoizAI/skills",
   "githubRepo": "NoizAI/skills",
-  "readme": "# NoizAI/skills\n\nHuman-like TTS workflows with local/cloud APIs and app delivery",
-  "readmeHtml": "<h1>NoizAI/skills</h1>\n<p>Human-like TTS workflows with local/cloud APIs and app delivery</p>",
+  "readme": "# Unmute your intelligent bot\n<img width=\"1760\" height=\"608\" alt=\"banner\" src=\"https://github.com/user-attachments/assets/79efa5ae-e056-426c-ae67-362dd0f44963\" />\n\nEnglish | [简体中文](./README.zh-CN.md)\n\nCentral repository for managing Skills to \"human\" vibe-talking.\n\n## Install with `npx skills add`\n\n```bash\n# List skills from GitHub repository\nnpx skills add NoizAI/skills --list --full-depth\n\n# Install a specific skill from GitHub repository\nnpx skills add NoizAI/skills --full-depth --skill tts -y\n\n# Install from GitHub repository\nnpx skills add NoizAI/skills\n\n# Local development (run in this repo directory)\nnpx skills add . --list --full-depth\n```\n\n## Highlights\n\n- 🔒 Secure and local-first: run skills on your own machine to keep sensitive text and assets localized.\n- 🧠 Character-style controls: tune fillers, emotion, and speaking presets for companion-like output.\n- 🎙️ Production-ready voice: from quick TTS generation to timeline-aligned rendering.\n- 📤 One-command delivery to chat platforms: generate speech and send it as a native voice message to Feishu, Telegram, or Discord — zero extra code.\n\n## Available skills\n\n| Name | Description | Documentation | Run command |\n|------|-------------|---------------|-------------|\n| tts | Convert text into speech with Kokoro or Noiz: simple mode, timeline-aligned rendering, precise duration control, and reference-audio voice cloning. | [SKILL.md](./skills/tts/SKILL.md) | `npx skills add NoizAI/skills --full-depth --skill tts -y` |\n| chat-with-anyone | Chat with any real person or fictional character in their own voice by automatically finding their speech online, extracting a clean reference sample, and generating audio replies. | [SKILL.md](./skills/chat-with-anyone/SKILL.md) | `npx skills add NoizAI/skills --full-depth --skill chat-with-anyone -y` |\n| characteristic-voice | Make generated speech feel companion-like with fillers, emotional tuning, and preset speaking styles. | [SKILL.md](./skills/characteristic-voice/SKILL.md) | `npx skills add NoizAI/skills --full-depth --skill characteristic-voice -y` |\n| video-translation | Translate and dub videos from one language to another, replacing the original audio with TTS while keeping the video intact. | [SKILL.md](./skills/video-translation/SKILL.md) | `npx skills add NoizAI/skills --full-depth --skill video-translation -y` |\n| daily-news-caster | Fetch the latest real-time news and automatically generate a dual-host conversational podcast with audio. | [SKILL.md](./skills/daily-news-caster/SKILL.md) | `npx skills add NoizAI/skills --full-depth --skill daily-news-caster -y` |\n| sound-fx | Generate any sound effect from a text description — animals, ambience, cartoon sounds, sci-fi, and more. One command, 1–30 seconds, WAV/MP3/FLAC output. | [SKILL.md](./skills/sound-fx/SKILL.md) | `npx skills add NoizAI/skills --full-depth --skill sound-fx -y` |\n\n## Quick Verify\n\nFor example, characteristic-voice\n```bash\nbash skills/characteristic-voice/scripts/speak.sh \\\n  --preset comfort -t \"Hmm... I'm right here.\" -o comfort.wav\n```\n\n## English Audio Demos\n\nSample outputs for quick listening (MP4 for inline playback):\n\n- Breaking news style\n\n\nhttps://github.com/user-attachments/assets/e1e75371-49e2-4858-9993-428d999c3723\n\n\n\n\n- Mindful calm style  \n\n\nhttps://github.com/user-attachments/assets/d2e6472d-9edf-449d-a5ee-51ad7e19a861\n\n\n\n\n\n- Podcast intro style  \n\n\nhttps://github.com/user-attachments/assets/e8f78ffa-7f12-4475-b1af-09161b3ee01b\n\n\n\n- Startup hype style  \n\n\nhttps://github.com/user-attachments/assets/0d3b8af9-2288-4a63-9246-2748ed232b0e\n\n\n\n## Noiz API Key (recommended)\n\nFor the best experience (faster, emotion control, voice cloning), get your API key from [developers.noiz.ai/api-keys](https://developers.noiz.ai/api-keys):\n\n```bash\nbash skills/tts/scripts/tts.sh config --set-api-key YOUR_KEY\n```\n\nThe key is persisted to `~/.noiz_api_key` and loaded automatically. Alternatively, pass `--backend kokoro` to use the local Kokoro backend.\n\n## Contributing\n\nFor skill authoring rules, directory conventions, and PR guidance, see `CONTRIBUTING.md`.\n\n## Feedback & Discussion\n[Join discord](https://discord.gg/kKqKnmCCPq)\n\n## Project Trends\n\n### GitHub Star Trend\n\n[![Star History Chart](https://api.star-history.com/image?repos=NoizAI/skills&type=date&legend=top-left)](https://www.star-history.com/?repos=NoizAI%2Fskills&type=date&legend=top-left)\n\n### Git Clone Trend\n\n[![Git Clone Trend](./Clones.png)]()\n",
+  "readmeHtml": "<h1>Unmute your intelligent bot</h1>\n<p>&lt;img width=\"1760\" height=\"608\" alt=\"banner\" src=\"https://github.com/user-attachments/assets/79efa5ae-e056-426c-ae67-362dd0f44963\" /&gt;</p>\n<p>English | [简体中文](./README.zh-CN.md)</p>\n<p>Central repository for managing Skills to \"human\" vibe-talking.</p>\n<h2>Install with <code>npx skills add</code></h2>\n<pre><code>\n# List skills from GitHub repository\n\nnpx skills add NoizAI/skills --list --full-depth\n\n\n\n# Install a specific skill from GitHub repository\n\nnpx skills add NoizAI/skills --full-depth --skill tts -y\n\n\n\n# Install from GitHub repository\n\nnpx skills add NoizAI/skills\n\n\n\n# Local development (run in this repo directory)\n\nnpx skills add . --list --full-depth\n\n</code></pre>\n<h2>Highlights</h2>\n<ul>\n<li>🔒 Secure and local-first: run skills on your own machine to keep sensitive text and assets localized.</li>\n<li>🧠 Character-style controls: tune fillers, emotion, and speaking presets for companion-like output.</li>\n<li>🎙️ Production-ready voice: from quick TTS generation to timeline-aligned rendering.</li>\n<li>📤 One-command delivery to chat platforms: generate speech and send it as a native voice message to Feishu, Telegram, or Discord — zero extra code.</li>\n</ul>\n<h2>Available skills</h2>\n<p>| Name | Description | Documentation | Run command |</p>\n<p>|------|-------------|---------------|-------------|</p>\n<p>| tts | Convert text into speech with Kokoro or Noiz: simple mode, timeline-aligned rendering, precise duration control, and reference-audio voice cloning. | [SKILL.md](./skills/tts/SKILL.md) | <code>npx skills add NoizAI/skills --full-depth --skill tts -y</code> |</p>\n<p>| chat-with-anyone | Chat with any real person or fictional character in their own voice by automatically finding their speech online, extracting a clean reference sample, and generating audio replies. | [SKILL.md](./skills/chat-with-anyone/SKILL.md) | <code>npx skills add NoizAI/skills --full-depth --skill chat-with-anyone -y</code> |</p>\n<p>| characteristic-voice | Make generated speech feel companion-like with fillers, emotional tuning, and preset speaking styles. | [SKILL.md](./skills/characteristic-voice/SKILL.md) | <code>npx skills add NoizAI/skills --full-depth --skill characteristic-voice -y</code> |</p>\n<p>| video-translation | Translate and dub videos from one language to another, replacing the original audio with TTS while keeping the video intact. | [SKILL.md](./skills/video-translation/SKILL.md) | <code>npx skills add NoizAI/skills --full-depth --skill video-translation -y</code> |</p>\n<p>| daily-news-caster | Fetch the latest real-time news and automatically generate a dual-host conversational podcast with audio. | [SKILL.md](./skills/daily-news-caster/SKILL.md) | <code>npx skills add NoizAI/skills --full-depth --skill daily-news-caster -y</code> |</p>\n<p>| sound-fx | Generate any sound effect from a text description — animals, ambience, cartoon sounds, sci-fi, and more. One command, 1–30 seconds, WAV/MP3/FLAC output. | [SKILL.md](./skills/sound-fx/SKILL.md) | <code>npx skills add NoizAI/skills --full-depth --skill sound-fx -y</code> |</p>\n<h2>Quick Verify</h2>\n<p>For example, characteristic-voice</p>\n<pre><code>\nbash skills/characteristic-voice/scripts/speak.sh \\\n\n  --preset comfort -t \"Hmm... I'm right here.\" -o comfort.wav\n\n</code></pre>\n<h2>English Audio Demos</h2>\n<p>Sample outputs for quick listening (MP4 for inline playback):</p>\n<ul>\n<li>Breaking news style</li>\n</ul>\n<p>https://github.com/user-attachments/assets/e1e75371-49e2-4858-9993-428d999c3723</p>\n<ul>\n<li>Mindful calm style  </li>\n</ul>\n<p>https://github.com/user-attachments/assets/d2e6472d-9edf-449d-a5ee-51ad7e19a861</p>\n<ul>\n<li>Podcast intro style  </li>\n</ul>\n<p>https://github.com/user-attachments/assets/e8f78ffa-7f12-4475-b1af-09161b3ee01b</p>\n<ul>\n<li>Startup hype style  </li>\n</ul>\n<p>https://github.com/user-attachments/assets/0d3b8af9-2288-4a63-9246-2748ed232b0e</p>\n<h2>Noiz API Key (recommended)</h2>\n<p>For the best experience (faster, emotion control, voice cloning), get your API key from <a href=\"https://developers.noiz.ai/api-keys\" target=\"_blank\" rel=\"noreferrer\">developers.noiz.ai/api-keys</a>:</p>\n<pre><code>\nbash skills/tts/scripts/tts.sh config --set-api-key YOUR_KEY\n\n</code></pre>\n<p>The key is persisted to <code>~/.noiz_api_key</code> and loaded automatically. Alternatively, pass <code>--backend kokoro</code> to use the local Kokoro backend.</p>\n<h2>Contributing</h2>\n<p>For skill authoring rules, directory conventions, and PR guidance, see <code>CONTRIBUTING.md</code>.</p>\n<h2>Feedback &amp; Discussion</h2>\n<p><a href=\"https://discord.gg/kKqKnmCCPq\" target=\"_blank\" rel=\"noreferrer\">Join discord</a></p>\n<h2>Project Trends</h2>\n<h3>GitHub Star Trend</h3>\n<p><a href=\"https://api.star-history.com/image?repos=NoizAI/skills&amp;type=date&amp;legend=top-left\" target=\"_blank\" rel=\"noreferrer\">![Star History Chart</a>](https://www.star-history.com/?repos=NoizAI%2Fskills&amp;type=date&amp;legend=top-left)</p>\n<h3>Git Clone Trend</h3>\n<p>[![Git Clone Trend](./Clones.png)]()</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.155Z",
+  "updatedAt": "2026-05-07T08:41:50Z",
   "author": {
-    "login": "noizai",
-    "name": "noizai",
-    "avatarUrl": "",
-    "profileUrl": "https://github.com/noizai",
+    "login": "NoizAI",
+    "name": "NoizAI",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/136235085?v=4",
+    "profileUrl": "https://github.com/NoizAI",
     "location": ""
   },
   "location": null,
   "related": [
     {
-      "slug": "obra-defense-in-depth",
-      "displayName": "obra/defense-in-depth",
-      "stars": 186953,
+      "slug": "obra-brainstorming",
+      "displayName": "obra/brainstorming",
+      "stars": 245089,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mattpocock-skills",
+      "displayName": "mattpocock/skills",
+      "stars": 155097,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
       "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
-      "stars": 77115,
+      "stars": 100227,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "lum1104-understand-anything",
+      "displayName": "Lum1104/understand-anything",
+      "stars": 70574,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "santifer-career-ops",
+      "displayName": "santifer/career-ops",
+      "stars": 58303,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "leonxlnx-taste-skill",
+      "displayName": "Leonxlnx/taste-skill",
+      "stars": 55314,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "panniantong-agent-reach",
+      "displayName": "Panniantong/Agent-Reach",
+      "stars": 49547,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "mvanhorn-last30days-skill",
       "displayName": "mvanhorn/last30days-skill",
-      "stars": 25573,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "k-dense-ai-claude-scientific-skills",
-      "displayName": "K-Dense-AI/claude-scientific-skills",
-      "stars": 20299,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-fundamentals",
-      "displayName": "muratcankoylan/context-fundamentals",
-      "stars": 15494,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-degradation",
-      "displayName": "muratcankoylan/context-degradation",
-      "stars": 15494,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-compression",
-      "displayName": "muratcankoylan/context-compression",
-      "stars": 15494,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-optimization",
-      "displayName": "muratcankoylan/context-optimization",
-      "stars": 15494,
+      "stars": 48607,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     }

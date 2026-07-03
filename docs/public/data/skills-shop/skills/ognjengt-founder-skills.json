@@ -4,77 +4,77 @@
   "name": "founder-skills",
   "displayName": "ognjengt/founder-skills",
   "description": "Claude skills for founders with packaged startup workflows",
-  "stars": 160,
+  "stars": 210,
   "category": "Community Skills",
   "source": "voltagent",
   "url": "https://github.com/ognjengt/founder-skills",
   "githubRepo": "ognjengt/founder-skills",
-  "readme": "# ognjengt/founder-skills\n\nClaude skills for founders with packaged startup workflows",
-  "readmeHtml": "<h1>ognjengt/founder-skills</h1>\n<p>Claude skills for founders with packaged startup workflows</p>",
+  "readme": "# Claude Code skills pack for founders, marketers, content creators and business owners.\n\nThis repository contains 20+ Claude skills that will help you turn Claude into a Fortune 500 growth team.\n\nStop prompting from scratch and use 20+ proven marketing, copywriting, and product skills companies pay millions for.\n\nLearn more at: https://saasstrats.com/founder-skills\n\n<img src=\"./packaging.png\" alt=\"Cover package\" width=\"520\">\n\n## Installation\n\n### Via Terminal (npx)\n\n```bash\nnpx skills add https://github.com/ognjengt/founder-skills\n```\n\nInstall a specific skill:\n\n```bash\nnpx skills add https://github.com/ognjengt/founder-skills --skill prd-generator\n```\n\n### Manual Installation\n\nClone the repo and copy all skills to your project:\n\n```bash\ngit clone https://github.com/ognjengt/founder-skills\ncp -r founder-skills/skills/* .claude/skills/\n```\n\nOr copy a single skill:\n\n```bash\ncp -r founder-skills/skills/prd-generator .claude/skills/\n```\n\nTo install globally (available across all projects):\n\n```bash\ncp -r founder-skills/skills/* ~/.claude/skills/\n```\n\n## Available Skills\n\n| Skill | Description |\n|-------|-------------|\n| `sop-creator` | Creates detailed Standard Operating Procedures for business processes |\n| `cro-optimization` | Analyzes landing pages against 13 CRO principles and provides detailed optimization recommendations with before/after examples |\n| `viral-hook-creator` | Creates viral hooks for content and marketing |\n| `lead-magnet-generator` | Creates viral lead magnet posts with CTAs that drive comments and DMs — produces quick and detailed formats for Twitter/X and LinkedIn |\n| `strategic-planning` | Analyzes your business to deliver 3 specific, high-impact next moves for growth (marketing/sales) — asks diagnostic questions when needed to uncover bottlenecks and opportunities |\n| `go-to-market-plan` | Delivers 3 best go-to-market strategies tailored to your product, stage, and market — asks diagnostic questions about product readiness, ICP, competitive positioning, and distribution channels |\n| `x-writer` | Creates 3 viral X (Twitter) posts in different proven formats with creator voice matching (Hormozi, Naval, Gazdecki, Dakota, Machina, Ognjen) — uses 51+ post templates and 8 format structures |\n| `linkedin-writer` | Creates 2 viral LinkedIn posts in different proven formats with voice matching — uses 8+ post templates and 7 format structures (Lessons Learned, Blueprint, Story, Strategy, Case Study, Hot Take, Quick Hack) |\n| `outreach-specialist` | Crafts high-converting outreach sequences (cold email, LinkedIn DM, X DM) using 8 proven templates with follow-up strategy, platform-specific rules, and personalized messaging that books calls |\n| `competitor-intel` | Analyzes competitors with verified metrics, leverage strategies, and predicted next moves |\n| `brand-copywriter` | Writes marketing copy using proven frameworks (AIDA, PAS, BAB, etc.) for ads, landing pages, emails, and more |\n| `pricing-strategist` | Builds comprehensive pricing strategies with tiered plans, price justifications, and revenue optimization through interactive Q&A |\n| `prd-generator` | Generates professional PRD documents optimized for AI coding tools — asks clarifying questions and outputs PDF to `./prd_outputs/` |\n| `product-hunt-launch-plan` | Creates comprehensive, personalized Product Hunt launch plans to rank #1 — includes hour-by-hour battle plan, templates, and 20+ alternative launch platforms |\n| `marketing-ideas` | Produces the 5 best marketing ideas for your business from a curated database of 160+ proven strategies — tailored to your industry, audience, and goals |\n\n## Usage\n\nAfter installation, use skills in Claude Code by typing:\n\n```\n/sop-creator create an employee onboarding process\n```\n\n```\n/linkedin-writer write a post about our new product launch\n```\n\n## Customizing for Your Business\n\nAfter installation, create the `FOUNDER_CONTEXT.md` in your project root, and copy the contents from this repository.\n\nThen replace the fields with your own custom values so that the skills are tailored to you:\n\n- Company name and industry\n- Target audience and value proposition\n- Brand voice and tone\n- Business goals\n- Products/services\n\nSkills automatically check for this file and use it to personalize outputs.\nEach project can have its own context file for different businesses or clients.\n\n## Contributing\n\nWant to add a new skill? See [CLAUDE.md](CLAUDE.md) for development guidelines.\n\n### Skill Structure\n\n```\nskills/\n└── your-skill/\n    ├── SKILL.md        # Main skill definition\n    └── references/     # Additional reference materials\n```\n\n## License\n\nMIT\n",
+  "readmeHtml": "<h1>Claude Code skills pack for founders, marketers, content creators and business owners.</h1>\n<p>This repository contains 20+ Claude skills that will help you turn Claude into a Fortune 500 growth team.</p>\n<p>Stop prompting from scratch and use 20+ proven marketing, copywriting, and product skills companies pay millions for.</p>\n<p>Learn more at: https://saasstrats.com/founder-skills</p>\n<p>&lt;img src=\"./packaging.png\" alt=\"Cover package\" width=\"520\"&gt;</p>\n<h2>Installation</h2>\n<h3>Via Terminal (npx)</h3>\n<pre><code>\nnpx skills add https://github.com/ognjengt/founder-skills\n\n</code></pre>\n<p>Install a specific skill:</p>\n<pre><code>\nnpx skills add https://github.com/ognjengt/founder-skills --skill prd-generator\n\n</code></pre>\n<h3>Manual Installation</h3>\n<p>Clone the repo and copy all skills to your project:</p>\n<pre><code>\ngit clone https://github.com/ognjengt/founder-skills\n\ncp -r founder-skills/skills/* .claude/skills/\n\n</code></pre>\n<p>Or copy a single skill:</p>\n<pre><code>\ncp -r founder-skills/skills/prd-generator .claude/skills/\n\n</code></pre>\n<p>To install globally (available across all projects):</p>\n<pre><code>\ncp -r founder-skills/skills/* ~/.claude/skills/\n\n</code></pre>\n<h2>Available Skills</h2>\n<p>| Skill | Description |</p>\n<p>|-------|-------------|</p>\n<p>| <code>sop-creator</code> | Creates detailed Standard Operating Procedures for business processes |</p>\n<p>| <code>cro-optimization</code> | Analyzes landing pages against 13 CRO principles and provides detailed optimization recommendations with before/after examples |</p>\n<p>| <code>viral-hook-creator</code> | Creates viral hooks for content and marketing |</p>\n<p>| <code>lead-magnet-generator</code> | Creates viral lead magnet posts with CTAs that drive comments and DMs — produces quick and detailed formats for Twitter/X and LinkedIn |</p>\n<p>| <code>strategic-planning</code> | Analyzes your business to deliver 3 specific, high-impact next moves for growth (marketing/sales) — asks diagnostic questions when needed to uncover bottlenecks and opportunities |</p>\n<p>| <code>go-to-market-plan</code> | Delivers 3 best go-to-market strategies tailored to your product, stage, and market — asks diagnostic questions about product readiness, ICP, competitive positioning, and distribution channels |</p>\n<p>| <code>x-writer</code> | Creates 3 viral X (Twitter) posts in different proven formats with creator voice matching (Hormozi, Naval, Gazdecki, Dakota, Machina, Ognjen) — uses 51+ post templates and 8 format structures |</p>\n<p>| <code>linkedin-writer</code> | Creates 2 viral LinkedIn posts in different proven formats with voice matching — uses 8+ post templates and 7 format structures (Lessons Learned, Blueprint, Story, Strategy, Case Study, Hot Take, Quick Hack) |</p>\n<p>| <code>outreach-specialist</code> | Crafts high-converting outreach sequences (cold email, LinkedIn DM, X DM) using 8 proven templates with follow-up strategy, platform-specific rules, and personalized messaging that books calls |</p>\n<p>| <code>competitor-intel</code> | Analyzes competitors with verified metrics, leverage strategies, and predicted next moves |</p>\n<p>| <code>brand-copywriter</code> | Writes marketing copy using proven frameworks (AIDA, PAS, BAB, etc.) for ads, landing pages, emails, and more |</p>\n<p>| <code>pricing-strategist</code> | Builds comprehensive pricing strategies with tiered plans, price justifications, and revenue optimization through interactive Q&amp;A |</p>\n<p>| <code>prd-generator</code> | Generates professional PRD documents optimized for AI coding tools — asks clarifying questions and outputs PDF to <code>./prd_outputs/</code> |</p>\n<p>| <code>product-hunt-launch-plan</code> | Creates comprehensive, personalized Product Hunt launch plans to rank #1 — includes hour-by-hour battle plan, templates, and 20+ alternative launch platforms |</p>\n<p>| <code>marketing-ideas</code> | Produces the 5 best marketing ideas for your business from a curated database of 160+ proven strategies — tailored to your industry, audience, and goals |</p>\n<h2>Usage</h2>\n<p>After installation, use skills in Claude Code by typing:</p>\n<pre><code>\n/sop-creator create an employee onboarding process\n\n</code></pre>\n<pre><code>\n/linkedin-writer write a post about our new product launch\n\n</code></pre>\n<h2>Customizing for Your Business</h2>\n<p>After installation, create the <code>FOUNDER_CONTEXT.md</code> in your project root, and copy the contents from this repository.</p>\n<p>Then replace the fields with your own custom values so that the skills are tailored to you:</p>\n<ul>\n<li>Company name and industry</li>\n<li>Target audience and value proposition</li>\n<li>Brand voice and tone</li>\n<li>Business goals</li>\n<li>Products/services</li>\n</ul>\n<p>Skills automatically check for this file and use it to personalize outputs.</p>\n<p>Each project can have its own context file for different businesses or clients.</p>\n<h2>Contributing</h2>\n<p>Want to add a new skill? See [CLAUDE.md](CLAUDE.md) for development guidelines.</p>\n<h3>Skill Structure</h3>\n<pre><code>\nskills/\n\n└── your-skill/\n\n    ├── SKILL.md        # Main skill definition\n\n    └── references/     # Additional reference materials\n\n</code></pre>\n<h2>License</h2>\n<p>MIT</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.050Z",
+  "updatedAt": "2026-05-18T19:44:26Z",
   "author": {
     "login": "ognjengt",
-    "name": "ognjengt",
-    "avatarUrl": "",
+    "name": "Ognjen Gatalo",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/1406687?v=4",
     "profileUrl": "https://github.com/ognjengt",
-    "location": ""
+    "location": "Serbia"
   },
   "location": null,
   "related": [
     {
-      "slug": "obra-defense-in-depth",
-      "displayName": "obra/defense-in-depth",
-      "stars": 186953,
+      "slug": "obra-brainstorming",
+      "displayName": "obra/brainstorming",
+      "stars": 245089,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mattpocock-skills",
+      "displayName": "mattpocock/skills",
+      "stars": 155097,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
       "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
-      "stars": 77115,
+      "stars": 100227,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "lum1104-understand-anything",
+      "displayName": "Lum1104/understand-anything",
+      "stars": 70574,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "santifer-career-ops",
+      "displayName": "santifer/career-ops",
+      "stars": 58303,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "leonxlnx-taste-skill",
+      "displayName": "Leonxlnx/taste-skill",
+      "stars": 55314,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "panniantong-agent-reach",
+      "displayName": "Panniantong/Agent-Reach",
+      "stars": 49547,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "mvanhorn-last30days-skill",
       "displayName": "mvanhorn/last30days-skill",
-      "stars": 25573,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "k-dense-ai-claude-scientific-skills",
-      "displayName": "K-Dense-AI/claude-scientific-skills",
-      "stars": 20299,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-fundamentals",
-      "displayName": "muratcankoylan/context-fundamentals",
-      "stars": 15494,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-degradation",
-      "displayName": "muratcankoylan/context-degradation",
-      "stars": 15494,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-compression",
-      "displayName": "muratcankoylan/context-compression",
-      "stars": 15494,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-optimization",
-      "displayName": "muratcankoylan/context-optimization",
-      "stars": 15494,
+      "stars": 48607,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     }

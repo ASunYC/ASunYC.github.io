@@ -12,15 +12,21 @@
   "readme": "# cloudflare/building-mcp-server-on-cloudflare\n\nBuild remote MCP servers with tools and OAuth",
   "readmeHtml": "<h1>cloudflare/building-mcp-server-on-cloudflare</h1>\n<p>Build remote MCP servers with tools and OAuth</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.156Z",
+  "updatedAt": "2026-07-03T11:33:56.390Z",
   "author": {
     "login": "cloudflare",
-    "name": "cloudflare",
-    "avatarUrl": "",
+    "name": "Cloudflare",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/314135?v=4",
     "profileUrl": "https://github.com/cloudflare",
-    "location": ""
+    "location": "San Francisco, London, Austin, Lisbon, Singapore"
   },
-  "location": null,
+  "location": {
+    "id": "san-francisco",
+    "label": "San Francisco, London, Austin, Lisbon, Singapore",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "github_profile"
+  },
   "related": [
     {
       "slug": "cloudflare-agents-sdk",
@@ -80,10 +86,10 @@
     }
   ],
   "mapLocation": {
-    "id": "virtual-tokyo",
-    "label": "Global Skill Market / Tokyo / Skills by Cloudflare",
-    "lat": 35.6762,
-    "lon": 139.6503,
-    "source": "virtual_market"
+    "id": "san-francisco",
+    "label": "San Francisco, London, Austin, Lisbon, Singapore",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "github_profile"
   }
 }

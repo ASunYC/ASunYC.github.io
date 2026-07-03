@@ -5,57 +5,91 @@
   "displayName": "composiohq/composio",
   "description": "Connect AI agents to 1000+ external apps with managed authentication",
   "stars": 0,
-  "category": "Skills by Composio Team",
+  "category": "Official Skills by",
   "source": "voltagent",
   "url": "https://officialskills.sh/composiohq/skills/composio",
   "githubRepo": "",
   "readme": "# composiohq/composio\n\nConnect AI agents to 1000+ external apps with managed authentication",
   "readmeHtml": "<h1>composiohq/composio</h1>\n<p>Connect AI agents to 1000+ external apps with managed authentication</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.089Z",
+  "updatedAt": "2026-07-03T11:33:56.322Z",
   "author": {
-    "login": "composiohq",
-    "name": "composiohq",
-    "avatarUrl": "",
-    "profileUrl": "https://github.com/composiohq",
-    "location": ""
+    "login": "ComposioHQ",
+    "name": "Composio",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/128464815?v=4",
+    "profileUrl": "https://github.com/ComposioHQ",
+    "location": "United States of America"
   },
-  "location": null,
+  "location": {
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
+  },
   "related": [
     {
-      "slug": "composiohq-awesome-claude-skills",
-      "displayName": "ComposioHQ/awesome-claude-skills",
-      "stars": 58467,
-      "relation": "source_overlap",
-      "evidence": "author:composiohq"
+      "slug": "angular-angular-developer",
+      "displayName": "angular/angular-developer",
+      "stars": 544,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
     },
     {
-      "slug": "composiohq-awesome-codex-skills",
-      "displayName": "ComposioHQ/awesome-codex-skills",
-      "stars": 7337,
-      "relation": "source_overlap",
-      "evidence": "author:composiohq"
+      "slug": "testmu-ai-api-skill",
+      "displayName": "testmu-ai/api-skill",
+      "stars": 318,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
     },
     {
-      "slug": "composiohq-agent-orchestrator",
-      "displayName": "ComposioHQ/agent-orchestrator",
-      "stars": 6864,
-      "relation": "source_overlap",
-      "evidence": "author:composiohq"
+      "slug": "veniceai-venice-api-overview",
+      "displayName": "veniceai/venice-api-overview",
+      "stars": 105,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
     },
     {
-      "slug": "composiohq-open-claude-cowork",
-      "displayName": "ComposioHQ/open-claude-cowork",
-      "stars": 4090,
-      "relation": "source_overlap",
-      "evidence": "author:composiohq"
+      "slug": "zero-zero",
+      "displayName": "zero/zero",
+      "stars": 14,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "trycourier-courier-skills",
+      "displayName": "trycourier/courier-skills",
+      "stars": 11,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "anthropics-docx",
+      "displayName": "anthropics/docx",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "anthropics-doc-coauthoring",
+      "displayName": "anthropics/doc-coauthoring",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "anthropics-pptx",
+      "displayName": "anthropics/pptx",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
     }
   ],
   "mapLocation": {
-    "id": "virtual-san-francisco",
-    "label": "Global Skill Market / San Francisco / Skills by Composio Team",
-    "lat": 37.7749,
-    "lon": -122.4194,
-    "source": "virtual_market"
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
   }
 }

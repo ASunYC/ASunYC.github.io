@@ -5,27 +5,33 @@
   "displayName": "getsentry/sentry-dotnet-sdk",
   "description": "Full Sentry SDK setup for .NET (ASP.NET Core, MAUI, WPF, WinForms, Blazor, Azure Functions)",
   "stars": 0,
-  "category": "Skills by Typefully",
+  "category": "Official Skills by",
   "source": "voltagent",
   "url": "https://officialskills.sh/getsentry/skills/sentry-dotnet-sdk",
   "githubRepo": "",
   "readme": "# getsentry/sentry-dotnet-sdk\n\nFull Sentry SDK setup for .NET (ASP.NET Core, MAUI, WPF, WinForms, Blazor, Azure Functions)",
   "readmeHtml": "<h1>getsentry/sentry-dotnet-sdk</h1>\n<p>Full Sentry SDK setup for .NET (ASP.NET Core, MAUI, WPF, WinForms, Blazor, Azure Functions)</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.105Z",
+  "updatedAt": "2026-07-03T11:33:56.344Z",
   "author": {
     "login": "getsentry",
-    "name": "getsentry",
-    "avatarUrl": "",
+    "name": "Sentry",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/1396951?v=4",
     "profileUrl": "https://github.com/getsentry",
-    "location": ""
+    "location": "United States of America"
   },
-  "location": null,
+  "location": {
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
+  },
   "related": [
     {
       "slug": "getsentry-skills",
       "displayName": "getsentry/skills",
-      "stars": 674,
+      "stars": 842,
       "relation": "source_overlap",
       "evidence": "author:getsentry"
     },
@@ -80,10 +86,10 @@
     }
   ],
   "mapLocation": {
-    "id": "virtual-london",
-    "label": "Global Skill Market / London / Skills by Typefully",
-    "lat": 51.5072,
-    "lon": -0.1276,
-    "source": "virtual_market"
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
   }
 }

@@ -1,0 +1,95 @@
+{
+  "id": "skill:google-cloud-agent-platform-skill-registry",
+  "slug": "google-cloud-agent-platform-skill-registry",
+  "name": "cloud/agent-platform-skill-registry",
+  "displayName": "google/cloud/agent-platform-skill-registry",
+  "description": "Interact with the Gemini Enterprise Agent Platform Skill Registry to create and search for available skills.",
+  "stars": 14368,
+  "category": "video-search-and-summarization",
+  "source": "voltagent",
+  "url": "https://github.com/google/skills/tree/main/skills/cloud/agent-platform-skill-registry",
+  "githubRepo": "google/skills",
+  "readme": "# Agent Skills\n\n[![Install via skills.sh](https://img.shields.io/badge/skills.sh-install-green)](https://skills.sh/google/skills)\n\nThis repository contains [Agent Skills](https://agentskills.io/home) for Google\nproducts and technologies, including [Google Cloud](https://cloud.google.com).\n\n> [!NOTE]\n> This repository is under active development.\n\n## Installation\n\n```bash\nnpx skills add google/skills\n```\n\nFrom the `npx install` command, you can select the specific skills from this\nrepo to install.\n\n## Available Skills\n\n-   [**Gemini API on Agent Platform**](./skills/cloud/gemini-api)\n-   [**Gemini Interactions API on Agent Platform**](./skills/cloud/gemini-api)\n-   [**Managed Agents API on Agent Platform**](./skills/cloud/gemini-agents-api)\n-   [**Skill Registry API on Agent Platform**](./skills/cloud/agent-platform-skill-registry)\n-   [**AlloyDB Basics**](./skills/cloud/alloydb-basics)\n-   [**BigQuery Basics**](./skills/cloud/bigquery-basics)\n-   [**BigQuery AI & ML**](./skills/cloud/bigquery-ai-ml)\n-   [**BigQuery BigFrames**](./skills/cloud/bigquery-bigframes)\n-   [**Bigtable Basics**](./skills/cloud/bigtable-basics)\n-   [**Cloud Run Basics**](./skills/cloud/cloud-run-basics)\n-   [**Cloud SQL Basics**](./skills/cloud/cloud-sql-basics)\n-   [**Firebase Basics**](./skills/cloud/firebase-basics)\n-   **Kubernetes Engine (GKE)**:\n    -   [Basics](./skills/cloud/gke-basics)\n    -   [App Onboarding](./skills/cloud/gke-app-onboarding)\n    -   [Backup & DR](./skills/cloud/gke-backup-dr)\n    -   [Batch & HPC](./skills/cloud/gke-batch-hpc)\n    -   [Cluster Creation](./skills/cloud/gke-cluster-creation)\n    -   [Compute Classes](./skills/cloud/gke-compute-classes)\n    -   [Cost Optimization](./skills/cloud/gke-cost)\n    -   [Golden Path](./skills/cloud/gke-golden-path)\n    -   [AI/ML Inference](./skills/cloud/gke-inference)\n    -   [Multi-tenancy](./skills/cloud/gke-multitenancy)\n    -   [Networking](./skills/cloud/gke-networking)\n    -   [Observability](./skills/cloud/gke-observability)\n    -   [Reliability](./skills/cloud/gke-reliability)\n    -   [Scaling](./skills/cloud/gke-scaling)\n    -   [Security](./skills/cloud/gke-security)\n    -   [Storage](./skills/cloud/gke-storage)\n    -   [Upgrades](./skills/cloud/gke-upgrades)\n-   [**Workload Manager Basics**](./skills/cloud/workload-manager-basics)\n-   [**Recipe: Onboarding to Google Cloud**](./skills/cloud/google-cloud-recipe-onboarding)\n-   [**Recipe: Authenticating to Google Cloud**](./skills/cloud/google-cloud-recipe-auth)\n-   [**Recipe: Google Cloud Network Observability**](./skills/cloud/google-cloud-networking-observability)\n-   **Google Cloud Well-Architected Framework**:\n    - [Security](./skills/cloud/google-cloud-waf-security)\n    - [Reliability](./skills/cloud/google-cloud-waf-reliability)\n    - [Cost optimization](./skills/cloud/google-cloud-waf-cost-optimization)\n    - [Operational excellence](./skills/cloud/google-cloud-waf-operational-excellence)\n    - [Performance optimization](./skills/cloud/google-cloud-waf-performance-optimization)\n    - [Sustainability](./skills/cloud/google-cloud-waf-sustainability)\n-   **Google Advertising and Measurement**:\n    -   **Data Manager API**:\n        -   [Audience Ingestion](./skills/ads/data-manager-api/data-manager-api-audience-ingestion)\n        -   [Event Ingestion](./skills/ads/data-manager-api/data-manager-api-event-ingestion)\n    -   **Google Ads API**:\n        -   [MCP Setup](./skills/ads/google-ads-api/google-ads-api-mcp-setup)\n        -   [Quickstart](./skills/ads/google-ads-api/google-ads-api-quickstart)\n    -   **Google Mobile Ads**:\n        -   [Banner Ads](./skills/ads/google-mobile-ads/google-mobile-ads-banner)\n        -   [Get Started](./skills/ads/google-mobile-ads/google-mobile-ads-get-started)\n        -   [Interstitial Ads](./skills/ads/google-mobile-ads/google-mobile-ads-interstitial)\n        -   [Migrate to GMA Next-Gen SDK (Android)](./skills/ads/google-mobile-ads/google-mobile-ads-android-migrate-to-next-gen)\n        -   [Rewarded Ads](./skills/ads/google-mobile-ads/google-mobile-ads-rewarded)\n    -   **Interactive Media Ads (IMA)**:\n        -   [SDK Basics](./skills/ads/interactive-media-ads/ima-sdk-basics)\n\n## Additional Google skills\n\n-   [**Flutter Skills**](https://github.com/flutter/skills)\n-   [**Dart Skills**](https://github.com/dart-lang/skills)\n-   [**Advanced Google Cloud Storage Skills**](https://github.com/gemini-cli-extensions/google-cloud-storage)\n\n## Support\n\nIf you need help or encounter issues with these skills, search for existing\nissues or open a new one in the\n[GitHub Issue Tracker](https://github.com/google/skills/issues).\n\n## Contributing\n\nWe welcome contributions to improve our skills. You can help by:\n\n*   [Reporting bugs or inaccuracies](https://github.com/google/skills/issues) in\n    the skill Markdown files.\n*   Suggesting new skills to add to this repository (for example, Google\n    technologies or recipes) by filing a feature request.\n\n## License\n\nYou are free to copy, modify, and distribute these skills under the terms of the\nApache 2.0 license. See the `LICENSE` file for details.\n",
+  "readmeHtml": "<h1>Agent Skills</h1>\n<p><a href=\"https://img.shields.io/badge/skills.sh-install-green\" target=\"_blank\" rel=\"noreferrer\">![Install via skills.sh</a>](https://skills.sh/google/skills)</p>\n<p>This repository contains <a href=\"https://agentskills.io/home\" target=\"_blank\" rel=\"noreferrer\">Agent Skills</a> for Google</p>\n<p>products and technologies, including <a href=\"https://cloud.google.com\" target=\"_blank\" rel=\"noreferrer\">Google Cloud</a>.</p>\n<p>&gt; [!NOTE]</p>\n<p>&gt; This repository is under active development.</p>\n<h2>Installation</h2>\n<pre><code>\nnpx skills add google/skills\n\n</code></pre>\n<p>From the <code>npx install</code> command, you can select the specific skills from this</p>\n<p>repo to install.</p>\n<h2>Available Skills</h2>\n<ul>\n<li>[<strong>Gemini API on Agent Platform</strong>](./skills/cloud/gemini-api)</li>\n<li>[<strong>Gemini Interactions API on Agent Platform</strong>](./skills/cloud/gemini-api)</li>\n<li>[<strong>Managed Agents API on Agent Platform</strong>](./skills/cloud/gemini-agents-api)</li>\n<li>[<strong>Skill Registry API on Agent Platform</strong>](./skills/cloud/agent-platform-skill-registry)</li>\n<li>[<strong>AlloyDB Basics</strong>](./skills/cloud/alloydb-basics)</li>\n<li>[<strong>BigQuery Basics</strong>](./skills/cloud/bigquery-basics)</li>\n<li>[<strong>BigQuery AI &amp; ML</strong>](./skills/cloud/bigquery-ai-ml)</li>\n<li>[<strong>BigQuery BigFrames</strong>](./skills/cloud/bigquery-bigframes)</li>\n<li>[<strong>Bigtable Basics</strong>](./skills/cloud/bigtable-basics)</li>\n<li>[<strong>Cloud Run Basics</strong>](./skills/cloud/cloud-run-basics)</li>\n<li>[<strong>Cloud SQL Basics</strong>](./skills/cloud/cloud-sql-basics)</li>\n<li>[<strong>Firebase Basics</strong>](./skills/cloud/firebase-basics)</li>\n<li><strong>Kubernetes Engine (GKE)</strong>:</li>\n</ul>\n<p>    -   [Basics](./skills/cloud/gke-basics)</p>\n<p>    -   [App Onboarding](./skills/cloud/gke-app-onboarding)</p>\n<p>    -   [Backup &amp; DR](./skills/cloud/gke-backup-dr)</p>\n<p>    -   [Batch &amp; HPC](./skills/cloud/gke-batch-hpc)</p>\n<p>    -   [Cluster Creation](./skills/cloud/gke-cluster-creation)</p>\n<p>    -   [Compute Classes](./skills/cloud/gke-compute-classes)</p>\n<p>    -   [Cost Optimization](./skills/cloud/gke-cost)</p>\n<p>    -   [Golden Path](./skills/cloud/gke-golden-path)</p>\n<p>    -   [AI/ML Inference](./skills/cloud/gke-inference)</p>\n<p>    -   [Multi-tenancy](./skills/cloud/gke-multitenancy)</p>\n<p>    -   [Networking](./skills/cloud/gke-networking)</p>\n<p>    -   [Observability](./skills/cloud/gke-observability)</p>\n<p>    -   [Reliability](./skills/cloud/gke-reliability)</p>\n<p>    -   [Scaling](./skills/cloud/gke-scaling)</p>\n<p>    -   [Security](./skills/cloud/gke-security)</p>\n<p>    -   [Storage](./skills/cloud/gke-storage)</p>\n<p>    -   [Upgrades](./skills/cloud/gke-upgrades)</p>\n<ul>\n<li>[<strong>Workload Manager Basics</strong>](./skills/cloud/workload-manager-basics)</li>\n<li>[<strong>Recipe: Onboarding to Google Cloud</strong>](./skills/cloud/google-cloud-recipe-onboarding)</li>\n<li>[<strong>Recipe: Authenticating to Google Cloud</strong>](./skills/cloud/google-cloud-recipe-auth)</li>\n<li>[<strong>Recipe: Google Cloud Network Observability</strong>](./skills/cloud/google-cloud-networking-observability)</li>\n<li><strong>Google Cloud Well-Architected Framework</strong>:</li>\n</ul>\n<p>    - [Security](./skills/cloud/google-cloud-waf-security)</p>\n<p>    - [Reliability](./skills/cloud/google-cloud-waf-reliability)</p>\n<p>    - [Cost optimization](./skills/cloud/google-cloud-waf-cost-optimization)</p>\n<p>    - [Operational excellence](./skills/cloud/google-cloud-waf-operational-excellence)</p>\n<p>    - [Performance optimization](./skills/cloud/google-cloud-waf-performance-optimization)</p>\n<p>    - [Sustainability](./skills/cloud/google-cloud-waf-sustainability)</p>\n<ul>\n<li><strong>Google Advertising and Measurement</strong>:</li>\n</ul>\n<p>    -   <strong>Data Manager API</strong>:</p>\n<p>        -   [Audience Ingestion](./skills/ads/data-manager-api/data-manager-api-audience-ingestion)</p>\n<p>        -   [Event Ingestion](./skills/ads/data-manager-api/data-manager-api-event-ingestion)</p>\n<p>    -   <strong>Google Ads API</strong>:</p>\n<p>        -   [MCP Setup](./skills/ads/google-ads-api/google-ads-api-mcp-setup)</p>\n<p>        -   [Quickstart](./skills/ads/google-ads-api/google-ads-api-quickstart)</p>\n<p>    -   <strong>Google Mobile Ads</strong>:</p>\n<p>        -   [Banner Ads](./skills/ads/google-mobile-ads/google-mobile-ads-banner)</p>\n<p>        -   [Get Started](./skills/ads/google-mobile-ads/google-mobile-ads-get-started)</p>\n<p>        -   [Interstitial Ads](./skills/ads/google-mobile-ads/google-mobile-ads-interstitial)</p>\n<p>        -   [Migrate to GMA Next-Gen SDK (Android)](./skills/ads/google-mobile-ads/google-mobile-ads-android-migrate-to-next-gen)</p>\n<p>        -   [Rewarded Ads](./skills/ads/google-mobile-ads/google-mobile-ads-rewarded)</p>\n<p>    -   <strong>Interactive Media Ads (IMA)</strong>:</p>\n<p>        -   [SDK Basics](./skills/ads/interactive-media-ads/ima-sdk-basics)</p>\n<h2>Additional Google skills</h2>\n<ul>\n<li><a href=\"https://github.com/flutter/skills\" target=\"_blank\" rel=\"noreferrer\"><strong>Flutter Skills</strong></a></li>\n<li><a href=\"https://github.com/dart-lang/skills\" target=\"_blank\" rel=\"noreferrer\"><strong>Dart Skills</strong></a></li>\n<li><a href=\"https://github.com/gemini-cli-extensions/google-cloud-storage\" target=\"_blank\" rel=\"noreferrer\"><strong>Advanced Google Cloud Storage Skills</strong></a></li>\n</ul>\n<h2>Support</h2>\n<p>If you need help or encounter issues with these skills, search for existing</p>\n<p>issues or open a new one in the</p>\n<p><a href=\"https://github.com/google/skills/issues\" target=\"_blank\" rel=\"noreferrer\">GitHub Issue Tracker</a>.</p>\n<h2>Contributing</h2>\n<p>We welcome contributions to improve our skills. You can help by:</p>\n<ul>\n<li><a href=\"https://github.com/google/skills/issues\" target=\"_blank\" rel=\"noreferrer\">Reporting bugs or inaccuracies</a> in</li>\n</ul>\n<p>    the skill Markdown files.</p>\n<ul>\n<li>Suggesting new skills to add to this repository (for example, Google</li>\n</ul>\n<p>    technologies or recipes) by filing a feature request.</p>\n<h2>License</h2>\n<p>You are free to copy, modify, and distribute these skills under the terms of the</p>\n<p>Apache 2.0 license. See the <code>LICENSE</code> file for details.</p>",
+  "skillMd": "---\nname: agent-platform-skill-registry\nmetadata:\n  category: AiAndMachineLearning\ndescription: >\n  Interact with the Gemini Enterprise Agent Platform Skill Registry to create\n  and search for available skills. Use this skill to enable agents to register\n  functionality or discover new capabilities.\n---\n\n# Skill Registry\n\nThis skill provides instructions for interacting with the **Skill Registry** on\nthe Gemini Enterprise Agent Platform.\n\n## Core Capabilities\n\n-   **Skill Discovery** - Query the registry to easily search, list, get\n    specific skills, and inspect revision histories.\n-   **Skill Lifecycle Management** - Upload, update, or permanently delete\n    skills.\n-   **Operation Monitoring** - Utility to check the completion status of\n    long-running state changes (LROs).\n-   **Generate Skill** - Automate the initial scaffolding of new agent skills\n    locally.\n\n## Core Directives\n\n-   **Mandatory Validation**: ALWAYS execute the environment validation check\n    before performing any operations.\n\n    Before any operation, you **must** validate the core environment.\n\n    ```bash\n    # Execute the validation script\n    python3 scripts/validate_env.py\n    ```\n\n## Prerequisites & Authentication\n\n### Library & Authentication\n\nEnsure you have the latest Google Cloud credentials and libraries installed.\n\n```bash\n# Install required libraries\npip install google-auth requests\n\n# Authenticate with Google Cloud\ngcloud auth application-default login\n```\n\n### Environment Variables\n\nThe following variables are required for operations:\n\n-   `GCP_PROJECT_ID`: Your Google Cloud Project ID.\n-   `GCP_LOCATION`: The region (e.g., `us-central1`).\n\n--------------------------------------------------------------------------------\n\n## Quickstart\n\nQuickly search for available skills in the registry:\n\n```bash\npython3 scripts/skill_registry_ops.py search \\\n  --query \"test skill\" \\\n  --top-k 5\n```\n\n--------------------------------------------------------------------------------\n\n## Operations\n\n-   **Skill Discovery**: [query-skills.md](references/query-skills.md)\n-   **Skill Lifecycle**: [manage-skills.md](references/manage-skills.md)\n-   **Monitor Operations**:\n    [monitor-operations.md](references/monitor-operations.md)\n-   **Generate Skill**: [generate-skill.md](references/generate-skill.md)\n",
+  "updatedAt": "2026-07-03T06:24:21Z",
+  "author": {
+    "login": "google",
+    "name": "Google",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/1342004?v=4",
+    "profileUrl": "https://github.com/google",
+    "location": "United States of America"
+  },
+  "location": {
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
+  },
+  "related": [
+    {
+      "slug": "cypress-io-cypress-author",
+      "displayName": "cypress-io/cypress-author",
+      "stars": 34,
+      "relation": "shared_tag",
+      "evidence": "video-search-and-summarization"
+    },
+    {
+      "slug": "redhat-cve-skillpack",
+      "displayName": "redhat/cve-skillpack",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "video-search-and-summarization"
+    },
+    {
+      "slug": "redhat-sre-skillpack",
+      "displayName": "redhat/sre-skillpack",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "video-search-and-summarization"
+    },
+    {
+      "slug": "redhat-openshift-skillpack",
+      "displayName": "redhat/openshift-skillpack",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "video-search-and-summarization"
+    },
+    {
+      "slug": "redhat-openshift-virtualization",
+      "displayName": "redhat/openshift-virtualization",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "video-search-and-summarization"
+    },
+    {
+      "slug": "voltagent-awesome-design-md",
+      "displayName": "voltagent/awesome-design-md",
+      "stars": 95410,
+      "relation": "shared_tag",
+      "evidence": "location:united-states"
+    },
+    {
+      "slug": "voltagent-awesome-openclaw-skills",
+      "displayName": "voltagent/awesome-openclaw-skills",
+      "stars": 50892,
+      "relation": "shared_tag",
+      "evidence": "location:united-states"
+    },
+    {
+      "slug": "k-dense-ai-claude-scientific-skills",
+      "displayName": "K-Dense-AI/claude-scientific-skills",
+      "stars": 30029,
+      "relation": "shared_tag",
+      "evidence": "location:united-states"
+    }
+  ],
+  "mapLocation": {
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
+  }
+}

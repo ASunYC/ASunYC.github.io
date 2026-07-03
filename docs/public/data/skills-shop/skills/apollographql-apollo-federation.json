@@ -12,15 +12,21 @@
   "readme": "# apollographql/apollo-federation\n\nWrite Apollo Federation 2 subgraph schemas and compose them into a supergraph",
   "readmeHtml": "<h1>apollographql/apollo-federation</h1>\n<p>Write Apollo Federation 2 subgraph schemas and compose them into a supergraph</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.130Z",
+  "updatedAt": "2026-07-03T11:33:56.366Z",
   "author": {
     "login": "apollographql",
-    "name": "apollographql",
-    "avatarUrl": "",
+    "name": "Apollo GraphQL",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/17189275?v=4",
     "profileUrl": "https://github.com/apollographql",
-    "location": ""
+    "location": "San Francisco, CA"
   },
-  "location": null,
+  "location": {
+    "id": "san-francisco",
+    "label": "San Francisco, London, Austin, Lisbon, Singapore",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "github_profile"
+  },
   "related": [
     {
       "slug": "apollographql-apollo-client",
@@ -80,10 +86,10 @@
     }
   ],
   "mapLocation": {
-    "id": "virtual-bengaluru",
-    "label": "Global Skill Market / Bengaluru / TypeScript Skills",
-    "lat": 12.9716,
-    "lon": 77.5946,
-    "source": "virtual_market"
+    "id": "san-francisco",
+    "label": "San Francisco, London, Austin, Lisbon, Singapore",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "github_profile"
   }
 }

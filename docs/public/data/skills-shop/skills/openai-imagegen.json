@@ -12,23 +12,16 @@
   "readme": "# openai/imagegen\n\nGenerate and edit images using OpenAI's Image API for projects",
   "readmeHtml": "<h1>openai/imagegen</h1>\n<p>Generate and edit images using OpenAI's Image API for projects</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.120Z",
+  "updatedAt": "2026-07-03T11:33:56.361Z",
   "author": {
     "login": "openai",
-    "name": "openai",
-    "avatarUrl": "",
+    "name": "OpenAI",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/14957082?v=4",
     "profileUrl": "https://github.com/openai",
     "location": ""
   },
   "location": null,
   "related": [
-    {
-      "slug": "openai-skills",
-      "displayName": "openai/skills",
-      "stars": 18508,
-      "relation": "source_overlap",
-      "evidence": "author:openai"
-    },
     {
       "slug": "openai-cloudflare-deploy",
       "displayName": "openai/cloudflare-deploy",
@@ -74,6 +67,13 @@
     {
       "slug": "openai-linear",
       "displayName": "openai/linear",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:openai"
+    },
+    {
+      "slug": "openai-netlify-deploy",
+      "displayName": "openai/netlify-deploy",
       "stars": 0,
       "relation": "source_overlap",
       "evidence": "author:openai"

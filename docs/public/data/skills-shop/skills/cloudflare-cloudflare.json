@@ -5,22 +5,28 @@
   "displayName": "cloudflare/cloudflare",
   "description": "Comprehensive Cloudflare platform skill covering Workers, Pages, storage, AI, networking, security, and IaC",
   "stars": 0,
-  "category": "Skills by Typefully",
+  "category": "Official Skills by",
   "source": "voltagent",
   "url": "https://officialskills.sh/cloudflare/skills/cloudflare",
   "githubRepo": "",
   "readme": "# cloudflare/cloudflare\n\nComprehensive Cloudflare platform skill covering Workers, Pages, storage, AI, networking, security, and IaC",
   "readmeHtml": "<h1>cloudflare/cloudflare</h1>\n<p>Comprehensive Cloudflare platform skill covering Workers, Pages, storage, AI, networking, security, and IaC</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.100Z",
+  "updatedAt": "2026-07-03T11:33:56.328Z",
   "author": {
     "login": "cloudflare",
-    "name": "cloudflare",
-    "avatarUrl": "",
+    "name": "Cloudflare",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/314135?v=4",
     "profileUrl": "https://github.com/cloudflare",
-    "location": ""
+    "location": "San Francisco, London, Austin, Lisbon, Singapore"
   },
-  "location": null,
+  "location": {
+    "id": "san-francisco",
+    "label": "San Francisco, London, Austin, Lisbon, Singapore",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "github_profile"
+  },
   "related": [
     {
       "slug": "cloudflare-agents-sdk",
@@ -80,10 +86,10 @@
     }
   ],
   "mapLocation": {
-    "id": "virtual-toronto",
-    "label": "Global Skill Market / Toronto / Skills by Typefully",
-    "lat": 43.6532,
-    "lon": -79.3832,
-    "source": "virtual_market"
+    "id": "san-francisco",
+    "label": "San Francisco, London, Austin, Lisbon, Singapore",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "github_profile"
   }
 }

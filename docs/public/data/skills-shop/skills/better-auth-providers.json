@@ -5,18 +5,18 @@
   "displayName": "better-auth/providers",
   "description": "Better Auth authentication providers",
   "stars": 0,
-  "category": "Skills by Better Auth Team",
+  "category": "Official Skills by",
   "source": "voltagent",
   "url": "https://officialskills.sh/better-auth/skills/providers",
   "githubRepo": "",
   "readme": "# better-auth/providers\n\nBetter Auth authentication providers",
   "readmeHtml": "<h1>better-auth/providers</h1>\n<p>Better Auth authentication providers</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.090Z",
+  "updatedAt": "2026-07-03T11:33:56.324Z",
   "author": {
     "login": "better-auth",
-    "name": "better-auth",
-    "avatarUrl": "",
+    "name": "Better Auth",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/163827765?v=4",
     "profileUrl": "https://github.com/better-auth",
     "location": ""
   },
@@ -25,7 +25,7 @@
     {
       "slug": "better-auth-skills",
       "displayName": "better-auth/skills",
-      "stars": 187,
+      "stars": 199,
       "relation": "source_overlap",
       "evidence": "author:better-auth"
     },
@@ -72,18 +72,18 @@
       "evidence": "author:better-auth"
     },
     {
-      "slug": "better-auth-best-practices",
-      "displayName": "better-auth/best-practices",
-      "stars": 0,
+      "slug": "angular-angular-developer",
+      "displayName": "angular/angular-developer",
+      "stars": 544,
       "relation": "shared_tag",
-      "evidence": "Skills by Better Auth Team"
+      "evidence": "Official Skills by"
     }
   ],
   "mapLocation": {
-    "id": "virtual-new-york",
-    "label": "Global Skill Market / New York / Skills by Better Auth Team",
-    "lat": 40.7128,
-    "lon": -74.006,
+    "id": "virtual-bengaluru",
+    "label": "Global Skill Market / Bengaluru / Official Skills by",
+    "lat": 12.9716,
+    "lon": 77.5946,
     "source": "virtual_market"
   }
 }

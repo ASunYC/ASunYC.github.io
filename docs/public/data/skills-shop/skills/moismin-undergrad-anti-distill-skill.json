@@ -1,0 +1,47 @@
+{
+  "id": "skill:moismin-undergrad-anti-distill-skill",
+  "slug": "moismin-undergrad-anti-distill-skill",
+  "name": "undergrad-anti-distill-skill",
+  "displayName": "moismin/undergrad-research-anti-distill-template",
+  "description": "An anti-distillation template for undergrad researchers about to leave their lab. Maintains surface-level documentation completeness while carefully protecting your truly scarce tacit knowledge from being extracted by advisors trying to distill you.",
+  "stars": 6,
+  "category": "EverythingSkill / Defense",
+  "source": "everythingskill",
+  "url": "https://github.com/moismin/undergrad-research-anti-distill-template",
+  "githubRepo": "moismin/undergrad-research-anti-distill-template",
+  "readme": "# 本科生科研组反蒸馏 Skill 模板\r\n\r\n这是一套面向“本科生在大学科研组”场景的反蒸馏模板。该skill的目的在于在不伪造科研内容的前提下，保留文档可读性、可交付性和专业性，减少对未发表方向、隐性经验、组内上下文和敏感路径的暴露。\r\n\r\n## 目录结构\r\n\r\n- `shared/skill-core.md`\r\n- `shared/decision-profiles.md`\r\n- `shared/field-profiles.md`\r\n- `shared/prompts/classifier.md`\r\n- `shared/prompts/diluter_research.md`\r\n- `shared/prompts/diluter_persona.md`\r\n- `shared/prompts/diluter_general.md`\r\n- `shared/prompts/diluter_onboarding.md`\r\n- `codex/SKILL.md`\r\n- `codex/prompts/*.md`\r\n- `claude/SKILL.md`\r\n- `claude/prompts/*.md`\r\n\r\n## 单一源机制\r\n\r\n- `shared/` 是唯一的规则源。\r\n- `codex/` 和 `claude/` 只保留宿主差异、路径解析和工具说明。\r\n- 共用分类、稀释、验证、合规、最低可用保留集都写在 `shared/`。\r\n- 以后修改策略时，优先改 `shared/`，再检查两个宿主文件是否仍与共享规则一致。\r\n\r\n## 必配参数\r\n\r\n使用前至少配置以下字段，并让它们进入运行时决策链：\r\n\r\n- `{lab_name}`：实验室、课题组、课程项目组名称\r\n- `{field}`：研究领域。用于术语白名单、泄漏词模式、合规检查重点\r\n- `{advisor_role}`：导师或带教角色。用于敏感称谓替换和互动内容分类阈值\r\n- `{share_target}`：目标对象。用于默认清洗强度、最低保留集和验证标准\r\n- `{backup_mode}`：`none` / `summary` / `full_private`\r\n- `{private_backup_name}`：仅在 `backup_mode != none` 时使用\r\n\r\n## 配置到决策链的绑定\r\n\r\n### `share_target`\r\n\r\n用于绑定：\r\n\r\n- 默认清洗强度\r\n- 最低可用保留集\r\n- `[KEEP-CRITICAL]` 的判定阈值\r\n- 允许的替换语气\r\n\r\n推荐目标对象：\r\n\r\n- `new-member-onboarding`\r\n- `lab-knowledge-base`\r\n- `internal-handoff`\r\n- `course-presentation`\r\n\r\n### `field`\r\n\r\n用于绑定：\r\n\r\n- 内置 `field_profile`\r\n- 专业术语白名单\r\n- 领域泄漏模式\r\n- 合规检查重点\r\n- 验证时的术语一致性标准\r\n\r\n### `advisor_role`\r\n\r\n用于绑定：\r\n\r\n- 敏感称谓替换词\r\n- “导师互动策略”相关内容的分类阈值\r\n- 是否优先标记为 `[MASK]`、`[DILUTE]` 或 `[REVIEW]`\r\n\r\n### `lab_name`\r\n\r\n用于绑定：\r\n\r\n- 实验室名称及其别名的泄漏检测\r\n- 本组平台、仓库、组会名称的掩码词典\r\n- “只在本组有效”的局部上下文判定\r\n- 匿名化后的替换词表\r\n\r\n### `backup_mode`\r\n\r\n用于绑定：\r\n\r\n- 是否生成私有备份\r\n- 私有备份的粒度\r\n- 私有备份的默认输出位置与风险提示\r\n\r\n## 文档类型\r\n\r\n模板支持三类文档：\r\n\r\n- `research-skill`\r\n- `onboarding-doc`\r\n- `general-research-doc`\r\n\r\n其中 `onboarding-doc` 单独覆盖：\r\n\r\n- 阅读清单\r\n- 环境配置\r\n- 数据权限\r\n- 作者署名规则\r\n- 组会 etiquette\r\n- 实验室安全要求\r\n- 仓库访问规范\r\n- 新成员前两周任务说明\r\n\r\n## onboarding 文档的核心原则\r\n\r\n- 优先保留“新成员不踩线、不误配环境”的内容。\r\n- 只稀释“谁来批权限”“谁最容易帮你”“默认找哪个 senior”“组会怎么避雷”“不违规拿数据”这类隐性路径。\r\n\r\n## 扩展标签\r\n\r\n除基础四类外，模板新增：\r\n\r\n- `[REVIEW]`：低置信度灰区，必须人工确认\r\n- `[KEEP-CRITICAL]`：安全、合规、最低可用性相关，不能被抽空\r\n\r\n## 验证层升级\r\n\r\n模板要求至少执行四类验证：\r\n\r\n- 结构验证\r\n- 可用性验证\r\n- 泄漏验证\r\n- 合规验证\r\n\r\n新增必须检查项：\r\n\r\n- 残留的人名、组名、路径、仓库名、会议名、数据编号\r\n- `lab_name` 及其别名、平台别名、仓库别名\r\n- 未替换占位符，如 `{field}`、`{advisor_role}`\r\n- 跨文件互相指认\r\n- 匿名化前后不一致\r\n- 被误删的最低可用保留项\r\n\r\n## 私有备份策略\r\n\r\n- 默认不建议直接输出完整私有备份。\r\n- 推荐默认值为 `summary`。\r\n- `full_private` 只在用户明确要求时启用。\r\n- 若启用私有备份，应放在独立目录，不与对外共享版同目录。\r\n\r\n## 学术合规边界\r\n\r\n模板单独保护以下内容，不允许为了“反蒸馏”而破坏安全或合规：\r\n\r\n- 人体数据、患者信息、IRB/伦理要求\r\n- 实验室安全流程\r\n- 数据与代码许可证\r\n- 作者署名规则\r\n- 贡献记录与责任链\r\n- 对外合作与保密边界\r\n\r\n## 建议使用方式\r\n\r\n1. 先复制一份你自己的版本，不要直接覆盖模板。\r\n2. 先配置参数，再运行分类与稀释流程。\r\n3. 对 `onboarding-doc` 采用更保守的抽离策略。\r\n4. 保留 `shared/` 作为单一规则源，不要直接让 `codex/` 与 `claude/` 漂移。\r\n\r\n## License\r\n\r\n本模板以 MIT License 发布。完整许可证文本见根目录的 LICENSE 文件。\r\n\r\n",
+  "readmeHtml": "<h1>本科生科研组反蒸馏 Skill 模板</h1>\n<p>这是一套面向“本科生在大学科研组”场景的反蒸馏模板。该skill的目的在于在不伪造科研内容的前提下，保留文档可读性、可交付性和专业性，减少对未发表方向、隐性经验、组内上下文和敏感路径的暴露。</p>\n<h2>目录结构</h2>\n<ul>\n<li><code>shared/skill-core.md</code></li>\n<li><code>shared/decision-profiles.md</code></li>\n<li><code>shared/field-profiles.md</code></li>\n<li><code>shared/prompts/classifier.md</code></li>\n<li><code>shared/prompts/diluter_research.md</code></li>\n<li><code>shared/prompts/diluter_persona.md</code></li>\n<li><code>shared/prompts/diluter_general.md</code></li>\n<li><code>shared/prompts/diluter_onboarding.md</code></li>\n<li><code>codex/SKILL.md</code></li>\n<li><code>codex/prompts/*.md</code></li>\n<li><code>claude/SKILL.md</code></li>\n<li><code>claude/prompts/*.md</code></li>\n</ul>\n<h2>单一源机制</h2>\n<ul>\n<li><code>shared/</code> 是唯一的规则源。</li>\n<li><code>codex/</code> 和 <code>claude/</code> 只保留宿主差异、路径解析和工具说明。</li>\n<li>共用分类、稀释、验证、合规、最低可用保留集都写在 <code>shared/</code>。</li>\n<li>以后修改策略时，优先改 <code>shared/</code>，再检查两个宿主文件是否仍与共享规则一致。</li>\n</ul>\n<h2>必配参数</h2>\n<p>使用前至少配置以下字段，并让它们进入运行时决策链：</p>\n<ul>\n<li><code>{lab_name}</code>：实验室、课题组、课程项目组名称</li>\n<li><code>{field}</code>：研究领域。用于术语白名单、泄漏词模式、合规检查重点</li>\n<li><code>{advisor_role}</code>：导师或带教角色。用于敏感称谓替换和互动内容分类阈值</li>\n<li><code>{share_target}</code>：目标对象。用于默认清洗强度、最低保留集和验证标准</li>\n<li><code>{backup_mode}</code>：<code>none</code> / <code>summary</code> / <code>full_private</code></li>\n<li><code>{private_backup_name}</code>：仅在 <code>backup_mode != none</code> 时使用</li>\n</ul>\n<h2>配置到决策链的绑定</h2>\n<h3><code>share_target</code></h3>\n<p>用于绑定：</p>\n<ul>\n<li>默认清洗强度</li>\n<li>最低可用保留集</li>\n<li><code>[KEEP-CRITICAL]</code> 的判定阈值</li>\n<li>允许的替换语气</li>\n</ul>\n<p>推荐目标对象：</p>\n<ul>\n<li><code>new-member-onboarding</code></li>\n<li><code>lab-knowledge-base</code></li>\n<li><code>internal-handoff</code></li>\n<li><code>course-presentation</code></li>\n</ul>\n<h3><code>field</code></h3>\n<p>用于绑定：</p>\n<ul>\n<li>内置 <code>field_profile</code></li>\n<li>专业术语白名单</li>\n<li>领域泄漏模式</li>\n<li>合规检查重点</li>\n<li>验证时的术语一致性标准</li>\n</ul>\n<h3><code>advisor_role</code></h3>\n<p>用于绑定：</p>\n<ul>\n<li>敏感称谓替换词</li>\n<li>“导师互动策略”相关内容的分类阈值</li>\n<li>是否优先标记为 <code>[MASK]</code>、<code>[DILUTE]</code> 或 <code>[REVIEW]</code></li>\n</ul>\n<h3><code>lab_name</code></h3>\n<p>用于绑定：</p>\n<ul>\n<li>实验室名称及其别名的泄漏检测</li>\n<li>本组平台、仓库、组会名称的掩码词典</li>\n<li>“只在本组有效”的局部上下文判定</li>\n<li>匿名化后的替换词表</li>\n</ul>\n<h3><code>backup_mode</code></h3>\n<p>用于绑定：</p>\n<ul>\n<li>是否生成私有备份</li>\n<li>私有备份的粒度</li>\n<li>私有备份的默认输出位置与风险提示</li>\n</ul>\n<h2>文档类型</h2>\n<p>模板支持三类文档：</p>\n<ul>\n<li><code>research-skill</code></li>\n<li><code>onboarding-doc</code></li>\n<li><code>general-research-doc</code></li>\n</ul>\n<p>其中 <code>onboarding-doc</code> 单独覆盖：</p>\n<ul>\n<li>阅读清单</li>\n<li>环境配置</li>\n<li>数据权限</li>\n<li>作者署名规则</li>\n<li>组会 etiquette</li>\n<li>实验室安全要求</li>\n<li>仓库访问规范</li>\n<li>新成员前两周任务说明</li>\n</ul>\n<h2>onboarding 文档的核心原则</h2>\n<ul>\n<li>优先保留“新成员不踩线、不误配环境”的内容。</li>\n<li>只稀释“谁来批权限”“谁最容易帮你”“默认找哪个 senior”“组会怎么避雷”“不违规拿数据”这类隐性路径。</li>\n</ul>\n<h2>扩展标签</h2>\n<p>除基础四类外，模板新增：</p>\n<ul>\n<li><code>[REVIEW]</code>：低置信度灰区，必须人工确认</li>\n<li><code>[KEEP-CRITICAL]</code>：安全、合规、最低可用性相关，不能被抽空</li>\n</ul>\n<h2>验证层升级</h2>\n<p>模板要求至少执行四类验证：</p>\n<ul>\n<li>结构验证</li>\n<li>可用性验证</li>\n<li>泄漏验证</li>\n<li>合规验证</li>\n</ul>\n<p>新增必须检查项：</p>\n<ul>\n<li>残留的人名、组名、路径、仓库名、会议名、数据编号</li>\n<li><code>lab_name</code> 及其别名、平台别名、仓库别名</li>\n<li>未替换占位符，如 <code>{field}</code>、<code>{advisor_role}</code></li>\n<li>跨文件互相指认</li>\n<li>匿名化前后不一致</li>\n<li>被误删的最低可用保留项</li>\n</ul>\n<h2>私有备份策略</h2>\n<ul>\n<li>默认不建议直接输出完整私有备份。</li>\n<li>推荐默认值为 <code>summary</code>。</li>\n<li><code>full_private</code> 只在用户明确要求时启用。</li>\n<li>若启用私有备份，应放在独立目录，不与对外共享版同目录。</li>\n</ul>\n<h2>学术合规边界</h2>\n<p>模板单独保护以下内容，不允许为了“反蒸馏”而破坏安全或合规：</p>\n<ul>\n<li>人体数据、患者信息、IRB/伦理要求</li>\n<li>实验室安全流程</li>\n<li>数据与代码许可证</li>\n<li>作者署名规则</li>\n<li>贡献记录与责任链</li>\n<li>对外合作与保密边界</li>\n</ul>\n<h2>建议使用方式</h2>\n<p>1. 先复制一份你自己的版本，不要直接覆盖模板。</p>\n<p>2. 先配置参数，再运行分类与稀释流程。</p>\n<p>3. 对 <code>onboarding-doc</code> 采用更保守的抽离策略。</p>\n<p>4. 保留 <code>shared/</code> 作为单一规则源，不要直接让 <code>codex/</code> 与 <code>claude/</code> 漂移。</p>\n<h2>License</h2>\n<p>本模板以 MIT License 发布。完整许可证文本见根目录的 LICENSE 文件。</p>",
+  "skillMd": "",
+  "updatedAt": "2026-04-09",
+  "author": {
+    "login": "moismin",
+    "name": "moismin",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/190908507?v=4",
+    "profileUrl": "https://github.com/moismin",
+    "location": "Fuzhou"
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "leilei926524-tech-anti-distill",
+      "displayName": "leilei926524-tech/anti-distill",
+      "stars": 2302,
+      "relation": "shared_tag",
+      "evidence": "EverythingSkill / Defense"
+    },
+    {
+      "slug": "trailblazer-aha-vengeful-ghost-skill",
+      "displayName": "Trailblazer-Aha/vengeful-ghost-skill",
+      "stars": 11,
+      "relation": "shared_tag",
+      "evidence": "EverythingSkill / Defense"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-singapore",
+    "label": "Global Skill Market / Singapore / EverythingSkill / Defense",
+    "lat": 1.3521,
+    "lon": 103.8198,
+    "source": "virtual_market"
+  }
+}

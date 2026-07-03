@@ -5,30 +5,29 @@
   "displayName": "huggingface/hugging-face-vision-trainer",
   "description": "Train vision models on HF infrastructure",
   "stars": 0,
-  "category": "Skills by Typefully",
+  "category": "Official Skills by",
   "source": "voltagent",
   "url": "https://officialskills.sh/huggingface/skills/hugging-face-vision-trainer",
   "githubRepo": "",
   "readme": "# huggingface/hugging-face-vision-trainer\n\nTrain vision models on HF infrastructure",
   "readmeHtml": "<h1>huggingface/hugging-face-vision-trainer</h1>\n<p>Train vision models on HF infrastructure</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.103Z",
+  "updatedAt": "2026-07-03T11:33:56.339Z",
   "author": {
     "login": "huggingface",
-    "name": "huggingface",
-    "avatarUrl": "",
+    "name": "Hugging Face",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/25720743?v=4",
     "profileUrl": "https://github.com/huggingface",
-    "location": ""
+    "location": "NYC + Paris"
   },
-  "location": null,
+  "location": {
+    "id": "nyc",
+    "label": "NYC + Paris",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "source": "github_profile"
+  },
   "related": [
-    {
-      "slug": "huggingface-upskill",
-      "displayName": "huggingface/upskill",
-      "stars": 517,
-      "relation": "source_overlap",
-      "evidence": "author:huggingface"
-    },
     {
       "slug": "huggingface-hf-cli",
       "displayName": "huggingface/hf-cli",
@@ -77,13 +76,20 @@
       "stars": 0,
       "relation": "source_overlap",
       "evidence": "author:huggingface"
+    },
+    {
+      "slug": "huggingface-hugging-face-paper-publisher",
+      "displayName": "huggingface/hugging-face-paper-publisher",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:huggingface"
     }
   ],
   "mapLocation": {
-    "id": "virtual-shanghai",
-    "label": "Global Skill Market / Shanghai / Skills by Typefully",
-    "lat": 31.2304,
-    "lon": 121.4737,
-    "source": "virtual_market"
+    "id": "nyc",
+    "label": "NYC + Paris",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "source": "github_profile"
   }
 }

@@ -5,22 +5,28 @@
   "displayName": "cloudflare/cloudflare-email-service",
   "description": "Send transactional email and route inbound mail with Cloudflare Email Sending and Email Routing",
   "stars": 0,
-  "category": "Skills by Typefully",
+  "category": "Official Skills by",
   "source": "voltagent",
   "url": "https://officialskills.sh/cloudflare/skills/cloudflare-email-service",
   "githubRepo": "",
   "readme": "# cloudflare/cloudflare-email-service\n\nSend transactional email and route inbound mail with Cloudflare Email Sending and Email Routing",
   "readmeHtml": "<h1>cloudflare/cloudflare-email-service</h1>\n<p>Send transactional email and route inbound mail with Cloudflare Email Sending and Email Routing</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.100Z",
+  "updatedAt": "2026-07-03T11:33:56.328Z",
   "author": {
     "login": "cloudflare",
-    "name": "cloudflare",
-    "avatarUrl": "",
+    "name": "Cloudflare",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/314135?v=4",
     "profileUrl": "https://github.com/cloudflare",
-    "location": ""
+    "location": "San Francisco, London, Austin, Lisbon, Singapore"
   },
-  "location": null,
+  "location": {
+    "id": "san-francisco",
+    "label": "San Francisco, London, Austin, Lisbon, Singapore",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "github_profile"
+  },
   "related": [
     {
       "slug": "cloudflare-agents-sdk",
@@ -80,10 +86,10 @@
     }
   ],
   "mapLocation": {
-    "id": "virtual-sao-paulo",
-    "label": "Global Skill Market / Sao Paulo / Skills by Typefully",
-    "lat": -23.5558,
-    "lon": -46.6396,
-    "source": "virtual_market"
+    "id": "san-francisco",
+    "label": "San Francisco, London, Austin, Lisbon, Singapore",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "github_profile"
   }
 }

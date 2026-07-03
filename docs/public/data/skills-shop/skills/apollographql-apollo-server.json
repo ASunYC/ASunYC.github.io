@@ -12,16 +12,29 @@
   "readme": "# apollographql/apollo-server\n\nBuild GraphQL servers using Apollo Server 5",
   "readmeHtml": "<h1>apollographql/apollo-server</h1>\n<p>Build GraphQL servers using Apollo Server 5</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.130Z",
+  "updatedAt": "2026-07-03T11:33:56.366Z",
   "author": {
     "login": "apollographql",
-    "name": "apollographql",
-    "avatarUrl": "",
+    "name": "Apollo GraphQL",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/17189275?v=4",
     "profileUrl": "https://github.com/apollographql",
-    "location": ""
+    "location": "San Francisco, CA"
   },
-  "location": null,
+  "location": {
+    "id": "san-francisco",
+    "label": "San Francisco, London, Austin, Lisbon, Singapore",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "github_profile"
+  },
   "related": [
+    {
+      "slug": "combo-data-backend-api-stack",
+      "displayName": "Data Backend API Stack",
+      "stars": 0,
+      "relation": "combo_component",
+      "evidence": "Data Backend API Stack includes apollographql/apollo-server"
+    },
     {
       "slug": "apollographql-apollo-client",
       "displayName": "apollographql/apollo-client",
@@ -70,20 +83,13 @@
       "stars": 0,
       "relation": "source_overlap",
       "evidence": "author:apollographql"
-    },
-    {
-      "slug": "apollographql-graphql-operations",
-      "displayName": "apollographql/graphql-operations",
-      "stars": 0,
-      "relation": "source_overlap",
-      "evidence": "author:apollographql"
     }
   ],
   "mapLocation": {
-    "id": "virtual-sao-paulo",
-    "label": "Global Skill Market / Sao Paulo / TypeScript Skills",
-    "lat": -23.5558,
-    "lon": -46.6396,
-    "source": "virtual_market"
+    "id": "san-francisco",
+    "label": "San Francisco, London, Austin, Lisbon, Singapore",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "github_profile"
   }
 }

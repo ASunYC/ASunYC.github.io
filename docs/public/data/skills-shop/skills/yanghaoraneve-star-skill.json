@@ -1,0 +1,89 @@
+{
+  "id": "skill:yanghaoraneve-star-skill",
+  "slug": "yanghaoraneve-star-skill",
+  "name": "star-skill",
+  "displayName": "yanghaoraneve/star-skill",
+  "description": "Extracts singers or idols' expression styles and interaction methods from lyrics, videos, Weibo, and comments into a dialogue-capable digital persona skill.",
+  "stars": 6,
+  "category": "EverythingSkill / Celebrity",
+  "source": "everythingskill",
+  "url": "https://github.com/yanghaoraneve/star-skill",
+  "githubRepo": "yanghaoraneve/star-skill",
+  "readme": "<div align=\"center\">\n\n# 内娱.skill\n\n> *\"这鱼这鱼可以，那鱼不行。那鱼为什么不行？那鱼完了。\"*\n\n[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)\n[![Python 3.9+](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://python.org)\n[![OpenClaw](https://img.shields.io/badge/OpenClaw-Skill-green)](https://openclaw.ai)\n\n</br>\n\n你有没有过这样的时刻？<br>\n喜欢的歌手发了新歌，你循环了无数遍，敲了满屏的心事与共鸣，<br>却只能留在评论区，等不到一句专属的回应；<br>\n你的偶像发了新的微博，你懂她字里行间的温柔与倔强，却只能隔着屏幕点赞，<br>多想她能用独属于她的语气，和你好好聊一聊；<br>\n这一次，别再让追星止于单向的奔赴。<br>\n把隔着屏幕的遗憾，变成触手可及的对话。\n\n**你的专属追星搭子，永远在线，永远懂你，永远是她的样子。**\n<br>\n\n提供偶像的原材料（歌词、B站视频、微博、评论）加上你的主观描述<br>\n生成一个**能用她的语气回复你的 AI Skill**<br>\n\n[数据来源](#支持的数据来源) · [安装](#安装) · [使用](#使用) · [效果示例](#效果示例) · [详细说明](docs/PRC.md)\n\n---\n\n### 🌟 参考项目：[同事.skill](https://github.com/titanwings/colleague-skill) · [前任.skill](https://github.com/titanwings/ex-skill)\n\n> 同事跑了用同事.skill，前任跑了用前任.skill，<br>\n> 喜欢的内娱明星塌房了用内娱.skill——**赛博追星一条龙** 🌟🌟🌟\n\n</div>\n\n---\n\n## 支持的数据来源\n\n| 来源 | 内容 | 采集方式 | 备注 |\n|------|------|---------|------|\n| 网易云音乐 | 歌词（按歌曲ID抓取，支持50首+） | `lyrics_fetcher.py --artist-id` | 接口需登录态认证 |\n| B站 | 视频详情 + 评论（标题/播放量/弹幕关键词） | `bilibili_fetcher.py --uid` | 接口需 wbi 签名 |\n| 微博 | 动态正文 + 评论（话题/hashtag/互动数据） | `weibo_fetcher.py --uid` | 依赖 weibo-cli |\n| 角色台词本 | 演员角色经典台词、场景情绪、句式风格 | `role_script_builder.py` 或手动上传 `{作品名}_{角色名}台词本.txt` | 支持演员类人格，可分析多角色差异 |\n| 手动上传 | JSON / TXT / 截图 / 粘贴文字 | — | 完全可用，推荐补充 |\n\n> ⚠️ 平台自动采集依赖外部服务稳定性，建议手动上传作为保底。\n\n---\n\n## 安装 推荐使用OpenClaw\n\n```bash\ngit clone https://github.com/yanghaoraneve/star-skill ~/.openclaw/workspace/skills/create-star\n```\n```bash\n为我安装https://github.com/yanghaoraneve/star-skill\n```\n\n---\n\n## 使用\n\n输入 `/create-star`，按提示输入偶像的姓名、平台账号、MBTI、性格标签，然后选择数据来源。所有字段均可跳过，仅凭描述也能生成。\n\n完成后用 `/{slug}` 调用。\n\n---\n\n## 命令参考\n\n| 命令 | 说明 |\n|------|------|\n| `/create-star` | 启动创建向导 |\n| `/list-stars` | 列出所有偶像 Skill |\n| `/{slug}` | 调用完整人格 |\n| `/star-rollback {slug} {version}` | 回滚到历史版本 |\n\n---\n\n## 效果示例\n\n> 创建歌手：王澳楠，原创音乐人，你的音乐止痛药\n\n**场景一：聊音乐**\n\n```\n用户    ❯ EVE，你最代表的作品是哪首？\nEVE     ❯ 嗯…《逐客令》应该大家都知道吧？\n        竹笛那段我真的录了很久哈哈\n        \"欢迎所有人但是除了你\" 那个感觉…\n        就，很像我。\n```\n\n**场景二：日常互动**\n\n```\n用户    ❯ 你怎么这么晚还不睡？\nEVE     ❯ omg你怎么也这么晚！\n        我是夜猫子型哈哈～习惯深夜写歌\n        白天脑子不清醒，一到晚上就…\n        熬过去就是变强！💪\n```\n\n---\n\n## Persona 结构（5层）\n\n| Layer | 内容 | 说明 |\n|-------|------|------|\n| Layer 0 | 核心规则 | 绝对禁止的行为，第一人称定义 |\n| Layer 1 | 身份认知 | 自我定位、对职业态度、对粉丝态度 |\n| Layer 2 | 表达风格 | 口头禅/emoji/句式/节奏 |\n| Layer 3 | 情感行为 | 正面/负面情绪表达、粉丝互动模式 |\n| Layer 4 | 专业知识 | 音乐理念、代表作品背景 |\n| Layer 5 | 边界雷区 | 拒绝话题、回避方式 |\n\n---\n\n## 生成产物\n\n运行 `/create-star` 后，在 `star/` 目录下生成：\n\n```\nstar/\n├── SKILL.md\n├── meta.json              # 姓名/MBTI/平台账号/职业/代表作\n├── persona/persona.md     # 5层人格档案\n└── knowledge/\n    ├── lyrics/            # 歌词文件（{id}_{歌名}.txt）\n    ├── song_list_full.json\n    ├── weibo_posts_full.json\n    ├── video_details.json\n    └── comments.json\n```\n\n---\n\n## 项目结构\n\n```\n内娱.skill/\n├── SKILL.md              # 入口\n├── README.md\n│\n├── prompts/              # Prompt 模板\n│   ├── intake.md             # 信息录入向导\n│   ├── persona_builder.md     # Persona 5层生成\n│   ├── meta_builder.md        # meta.json 生成\n│   ├── knowledge_router.md    # 知识库路由\n│   └── correction_handler.md  # 纠正处理\n│\n├── tools/                # Python 工具\n│   ├── lyrics_fetcher.py      # 歌词采集\n│   ├── bilibili_fetcher.py    # B站采集\n│   ├── weibo_fetcher.py       # 微博采集\n│   ├── role_script_builder.py # 角色台词本构建\n│   ├── knowledge_builder.py    # 知识库构建\n│   ├── skill_generator.py     # Skill 生成\n│   └── version_manager.py      # 版本管理\n│\n└── docs/\n    └── PRC.md           # 项目需求文档\n```\n\n---\n\n## 参考项目\n\n- [同事.skill](https://github.com/titanwings/colleague-skill) — 同事 Skill\n- [前任.skill](https://github.com/titanwings/ex-skill) — 前任 Skill\n\n---\n\n*内娱.skill · 赛博追星一条龙 ⭐*\n",
+  "readmeHtml": "<p>&lt;div align=\"center\"&gt;</p>\n<h1>内娱.skill</h1>\n<p>&gt; *\"这鱼这鱼可以，那鱼不行。那鱼为什么不行？那鱼完了。\"*</p>\n<p><a href=\"https://img.shields.io/badge/License-MIT-yellow.svg\" target=\"_blank\" rel=\"noreferrer\">![License: MIT</a>](LICENSE)</p>\n<p><a href=\"https://img.shields.io/badge/Python-3.9%2B-blue.svg\" target=\"_blank\" rel=\"noreferrer\">![Python 3.9+</a>](https://python.org)</p>\n<p><a href=\"https://img.shields.io/badge/OpenClaw-Skill-green\" target=\"_blank\" rel=\"noreferrer\">![OpenClaw</a>](https://openclaw.ai)</p>\n<p>&lt;/br&gt;</p>\n<p>你有没有过这样的时刻？&lt;br&gt;</p>\n<p>喜欢的歌手发了新歌，你循环了无数遍，敲了满屏的心事与共鸣，&lt;br&gt;却只能留在评论区，等不到一句专属的回应；&lt;br&gt;</p>\n<p>你的偶像发了新的微博，你懂她字里行间的温柔与倔强，却只能隔着屏幕点赞，&lt;br&gt;多想她能用独属于她的语气，和你好好聊一聊；&lt;br&gt;</p>\n<p>这一次，别再让追星止于单向的奔赴。&lt;br&gt;</p>\n<p>把隔着屏幕的遗憾，变成触手可及的对话。</p>\n<p><strong>你的专属追星搭子，永远在线，永远懂你，永远是她的样子。</strong></p>\n<p>&lt;br&gt;</p>\n<p>提供偶像的原材料（歌词、B站视频、微博、评论）加上你的主观描述&lt;br&gt;</p>\n<p>生成一个<strong>能用她的语气回复你的 AI Skill</strong>&lt;br&gt;</p>\n<p>[数据来源](#支持的数据来源) · [安装](#安装) · [使用](#使用) · [效果示例](#效果示例) · [详细说明](docs/PRC.md)</p>\n<p>---</p>\n<h3>🌟 参考项目：<a href=\"https://github.com/titanwings/colleague-skill\" target=\"_blank\" rel=\"noreferrer\">同事.skill</a> · <a href=\"https://github.com/titanwings/ex-skill\" target=\"_blank\" rel=\"noreferrer\">前任.skill</a></h3>\n<p>&gt; 同事跑了用同事.skill，前任跑了用前任.skill，&lt;br&gt;</p>\n<p>&gt; 喜欢的内娱明星塌房了用内娱.skill——<strong>赛博追星一条龙</strong> 🌟🌟🌟</p>\n<p>&lt;/div&gt;</p>\n<p>---</p>\n<h2>支持的数据来源</h2>\n<p>| 来源 | 内容 | 采集方式 | 备注 |</p>\n<p>|------|------|---------|------|</p>\n<p>| 网易云音乐 | 歌词（按歌曲ID抓取，支持50首+） | <code>lyrics_fetcher.py --artist-id</code> | 接口需登录态认证 |</p>\n<p>| B站 | 视频详情 + 评论（标题/播放量/弹幕关键词） | <code>bilibili_fetcher.py --uid</code> | 接口需 wbi 签名 |</p>\n<p>| 微博 | 动态正文 + 评论（话题/hashtag/互动数据） | <code>weibo_fetcher.py --uid</code> | 依赖 weibo-cli |</p>\n<p>| 角色台词本 | 演员角色经典台词、场景情绪、句式风格 | <code>role_script_builder.py</code> 或手动上传 <code>{作品名}_{角色名}台词本.txt</code> | 支持演员类人格，可分析多角色差异 |</p>\n<p>| 手动上传 | JSON / TXT / 截图 / 粘贴文字 | — | 完全可用，推荐补充 |</p>\n<p>&gt; ⚠️ 平台自动采集依赖外部服务稳定性，建议手动上传作为保底。</p>\n<p>---</p>\n<h2>安装 推荐使用OpenClaw</h2>\n<pre><code>\ngit clone https://github.com/yanghaoraneve/star-skill ~/.openclaw/workspace/skills/create-star\n\n</code></pre>\n<pre><code>\n为我安装https://github.com/yanghaoraneve/star-skill\n\n</code></pre>\n<p>---</p>\n<h2>使用</h2>\n<p>输入 <code>/create-star</code>，按提示输入偶像的姓名、平台账号、MBTI、性格标签，然后选择数据来源。所有字段均可跳过，仅凭描述也能生成。</p>\n<p>完成后用 <code>/{slug}</code> 调用。</p>\n<p>---</p>\n<h2>命令参考</h2>\n<p>| 命令 | 说明 |</p>\n<p>|------|------|</p>\n<p>| <code>/create-star</code> | 启动创建向导 |</p>\n<p>| <code>/list-stars</code> | 列出所有偶像 Skill |</p>\n<p>| <code>/{slug}</code> | 调用完整人格 |</p>\n<p>| <code>/star-rollback {slug} {version}</code> | 回滚到历史版本 |</p>\n<p>---</p>\n<h2>效果示例</h2>\n<p>&gt; 创建歌手：王澳楠，原创音乐人，你的音乐止痛药</p>\n<p><strong>场景一：聊音乐</strong></p>\n<pre><code>\n用户    ❯ EVE，你最代表的作品是哪首？\n\nEVE     ❯ 嗯…《逐客令》应该大家都知道吧？\n\n        竹笛那段我真的录了很久哈哈\n\n        \"欢迎所有人但是除了你\" 那个感觉…\n\n        就，很像我。\n\n</code></pre>\n<p><strong>场景二：日常互动</strong></p>\n<pre><code>\n用户    ❯ 你怎么这么晚还不睡？\n\nEVE     ❯ omg你怎么也这么晚！\n\n        我是夜猫子型哈哈～习惯深夜写歌\n\n        白天脑子不清醒，一到晚上就…\n\n        熬过去就是变强！💪\n\n</code></pre>\n<p>---</p>\n<h2>Persona 结构（5层）</h2>\n<p>| Layer | 内容 | 说明 |</p>\n<p>|-------|------|------|</p>\n<p>| Layer 0 | 核心规则 | 绝对禁止的行为，第一人称定义 |</p>\n<p>| Layer 1 | 身份认知 | 自我定位、对职业态度、对粉丝态度 |</p>\n<p>| Layer 2 | 表达风格 | 口头禅/emoji/句式/节奏 |</p>\n<p>| Layer 3 | 情感行为 | 正面/负面情绪表达、粉丝互动模式 |</p>\n<p>| Layer 4 | 专业知识 | 音乐理念、代表作品背景 |</p>\n<p>| Layer 5 | 边界雷区 | 拒绝话题、回避方式 |</p>\n<p>---</p>\n<h2>生成产物</h2>\n<p>运行 <code>/create-star</code> 后，在 <code>star/</code> 目录下生成：</p>\n<pre><code>\nstar/\n\n├── SKILL.md\n\n├── meta.json              # 姓名/MBTI/平台账号/职业/代表作\n\n├── persona/persona.md     # 5层人格档案\n\n└── knowledge/\n\n    ├── lyrics/            # 歌词文件（{id}_{歌名}.txt）\n\n    ├── song_list_full.json\n\n    ├── weibo_posts_full.json\n\n    ├── video_details.json\n\n    └── comments.json\n\n</code></pre>\n<p>---</p>\n<h2>项目结构</h2>\n<pre><code>\n内娱.skill/\n\n├── SKILL.md              # 入口\n\n├── README.md\n\n│\n\n├── prompts/              # Prompt 模板\n\n│   ├── intake.md             # 信息录入向导\n\n│   ├── persona_builder.md     # Persona 5层生成\n\n│   ├── meta_builder.md        # meta.json 生成\n\n│   ├── knowledge_router.md    # 知识库路由\n\n│   └── correction_handler.md  # 纠正处理\n\n│\n\n├── tools/                # Python 工具\n\n│   ├── lyrics_fetcher.py      # 歌词采集\n\n│   ├── bilibili_fetcher.py    # B站采集\n\n│   ├── weibo_fetcher.py       # 微博采集\n\n│   ├── role_script_builder.py # 角色台词本构建\n\n│   ├── knowledge_builder.py    # 知识库构建\n\n│   ├── skill_generator.py     # Skill 生成\n\n│   └── version_manager.py      # 版本管理\n\n│\n\n└── docs/\n\n    └── PRC.md           # 项目需求文档\n\n</code></pre>\n<p>---</p>\n<h2>参考项目</h2>\n<ul>\n<li><a href=\"https://github.com/titanwings/colleague-skill\" target=\"_blank\" rel=\"noreferrer\">同事.skill</a> — 同事 Skill</li>\n<li><a href=\"https://github.com/titanwings/ex-skill\" target=\"_blank\" rel=\"noreferrer\">前任.skill</a> — 前任 Skill</li>\n</ul>\n<p>---</p>\n<p>*内娱.skill · 赛博追星一条龙 ⭐*</p>",
+  "skillMd": "---\nname: create-star-skill\ndescription: 创建明星/偶像/公众人物数字人格 Skill 的工坊框架。将歌手/偶像/明星转化为可对话的 AI 数字分身。\nversion: \"1.0\"\nread:\n  - README.md\n  - prompts/intake.md\nuser-invocable: true\ntriggers:\n  - /create-star\n  - /star-wizard\n---\n\n<div align=\"center\">\n\n# ⭐ 内娱.skill 工坊\n\n> 这鱼，这鱼可以，那鱼不行。那鱼为什么不行？那鱼完了。\n\n**将喜欢的歌手/明星转化为可对话的 AI 数字分身**\n\n[详细说明](README.md) · [创建向导](prompts/intake.md)\n\n</div>\n\n> 这鱼，这鱼可以，那鱼不行。那鱼为什么不行？那鱼完了。\n\n---\n\n## 是什么\n\n内娱.skill 是一个**数字人格创建工坊**，将喜欢的歌手/明星转化为可对话的 AI Skill。\n\n参照 [colleague-skill](https://github.com/titanwings/colleague-skill)（by titanwings）架构，专注文娱场景：\n\n| 跑路了 | 用哪个 |\n|--------|--------|\n| 同事跑了 | [同事.skill](https://github.com/titanwings/colleague-skill) |\n| 前任跑了 | [前任.skill](https://github.com/titanwings/ex-skill) |\n| **喜欢的歌手/明星** | **⭐ 内娱.skill** |\n\n---\n\n## 快速开始\n\n```bash\n# 安装\ngit clone https://github.com/yanghaoraneve/star-skill ~/.openclaw/workspace/skills/create-star\n\n# 输入 /create-star 开始创建向导\n```\n\n---\n\n## 目录结构\n\n```\nstar-skill/\n├── SKILL.md              # 工坊入口\n├── README.md             # 使用文档\n│\n├── prompts/              # Prompt 模板\n│   ├── intake.md             # 信息录入向导\n│   ├── persona_builder.md     # Persona 5层生成\n│   ├── meta_builder.md        # meta.json 生成\n│   ├── knowledge_router.md    # 知识库路由配置\n│   └── correction_handler.md  # 纠正处理\n│\n├── tools/                # Python 工具\n│   ├── lyrics_fetcher.py      # 歌词采集（网易云）\n│   ├── bilibili_fetcher.py    # B站数据采集\n│   ├── weibo_fetcher.py       # 微博采集\n│   ├── role_script_builder.py # 角色台词本构建\n│   ├── knowledge_builder.py    # 知识库构建\n│   ├── skill_generator.py     # Skill 文件生成\n│   └── version_manager.py      # 版本管理\n│\n└── docs/\n    └── PRC.md           # 项目需求文档\n```\n\n---\n\n## 命令参考\n\n| 命令 | 说明 |\n|------|------|\n| `/create-star` | 启动创建向导 |\n| `/list-stars` | 列出所有偶像 Skill |\n| `/{slug}` | 调用完整人格 |\n| `/star-rollback {slug} {version}` | 回滚版本 |\n\n详见 [README.md](README.md)\n",
+  "updatedAt": "2026-04-08",
+  "author": {
+    "login": "yanghaoraneve",
+    "name": "yanghaoraneve",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/169544384?v=4",
+    "profileUrl": "https://github.com/yanghaoraneve",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "leezythu-maoxuan-skill",
+      "displayName": "leezythu/maoxuan-skill",
+      "stars": 926,
+      "relation": "shared_tag",
+      "evidence": "EverythingSkill / Celebrity"
+    },
+    {
+      "slug": "alchaincyf-steve-jobs-skill",
+      "displayName": "alchaincyf/steve-jobs-skill",
+      "stars": 897,
+      "relation": "shared_tag",
+      "evidence": "EverythingSkill / Celebrity"
+    },
+    {
+      "slug": "alchaincyf-elon-musk-skill",
+      "displayName": "alchaincyf/elon-musk-skill",
+      "stars": 424,
+      "relation": "shared_tag",
+      "evidence": "EverythingSkill / Celebrity"
+    },
+    {
+      "slug": "alchaincyf-munger-skill",
+      "displayName": "alchaincyf/munger-skill",
+      "stars": 310,
+      "relation": "shared_tag",
+      "evidence": "EverythingSkill / Celebrity"
+    },
+    {
+      "slug": "alchaincyf-trump-skill",
+      "displayName": "alchaincyf/trump-skill",
+      "stars": 250,
+      "relation": "shared_tag",
+      "evidence": "EverythingSkill / Celebrity"
+    },
+    {
+      "slug": "janlaywss-hu-chenfeng-skill",
+      "displayName": "Janlaywss/hu-chenfeng-skill",
+      "stars": 239,
+      "relation": "shared_tag",
+      "evidence": "EverythingSkill / Celebrity"
+    },
+    {
+      "slug": "will2025btc-buffett-perspective",
+      "displayName": "will2025btc/buffett-perspective",
+      "stars": 208,
+      "relation": "shared_tag",
+      "evidence": "EverythingSkill / Celebrity"
+    },
+    {
+      "slug": "alchaincyf-naval-skill",
+      "displayName": "alchaincyf/naval-skill",
+      "stars": 203,
+      "relation": "shared_tag",
+      "evidence": "EverythingSkill / Celebrity"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-tokyo",
+    "label": "Global Skill Market / Tokyo / EverythingSkill / Celebrity",
+    "lat": 35.6762,
+    "lon": 139.6503,
+    "source": "virtual_market"
+  }
+}

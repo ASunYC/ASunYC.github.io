@@ -5,30 +5,29 @@
   "displayName": "expo/expo-deployment",
   "description": "Deploy Expo apps to production",
   "stars": 0,
-  "category": "Skills by Typefully",
+  "category": "Official Skills by",
   "source": "voltagent",
   "url": "https://officialskills.sh/expo/skills/expo-deployment",
   "githubRepo": "",
   "readme": "# expo/expo-deployment\n\nDeploy Expo apps to production",
   "readmeHtml": "<h1>expo/expo-deployment</h1>\n<p>Deploy Expo apps to production</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.102Z",
+  "updatedAt": "2026-07-03T11:33:56.337Z",
   "author": {
     "login": "expo",
-    "name": "expo",
-    "avatarUrl": "",
+    "name": "Expo",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/12504344?v=4",
     "profileUrl": "https://github.com/expo",
-    "location": ""
+    "location": "United States of America"
   },
-  "location": null,
+  "location": {
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
+  },
   "related": [
-    {
-      "slug": "expo-skills",
-      "displayName": "expo/skills",
-      "stars": 1862,
-      "relation": "source_overlap",
-      "evidence": "author:expo"
-    },
     {
       "slug": "expo-building-native-ui",
       "displayName": "expo/building-native-ui",
@@ -77,13 +76,20 @@
       "stars": 0,
       "relation": "source_overlap",
       "evidence": "author:expo"
+    },
+    {
+      "slug": "expo-native-data-fetching",
+      "displayName": "expo/native-data-fetching",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:expo"
     }
   ],
   "mapLocation": {
-    "id": "virtual-san-francisco",
-    "label": "Global Skill Market / San Francisco / Skills by Typefully",
-    "lat": 37.7749,
-    "lon": -122.4194,
-    "source": "virtual_market"
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
   }
 }

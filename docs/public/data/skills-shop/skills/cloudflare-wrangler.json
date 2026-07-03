@@ -5,22 +5,28 @@
   "displayName": "cloudflare/wrangler",
   "description": "Deploy and manage Workers, KV, R2, D1, Vectorize, Queues, Workflows",
   "stars": 0,
-  "category": "Skills by Typefully",
+  "category": "Official Skills by",
   "source": "voltagent",
   "url": "https://officialskills.sh/cloudflare/skills/wrangler",
   "githubRepo": "",
   "readme": "# cloudflare/wrangler\n\nDeploy and manage Workers, KV, R2, D1, Vectorize, Queues, Workflows",
   "readmeHtml": "<h1>cloudflare/wrangler</h1>\n<p>Deploy and manage Workers, KV, R2, D1, Vectorize, Queues, Workflows</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.101Z",
+  "updatedAt": "2026-07-03T11:33:56.329Z",
   "author": {
     "login": "cloudflare",
-    "name": "cloudflare",
-    "avatarUrl": "",
+    "name": "Cloudflare",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/314135?v=4",
     "profileUrl": "https://github.com/cloudflare",
-    "location": ""
+    "location": "San Francisco, London, Austin, Lisbon, Singapore"
   },
-  "location": null,
+  "location": {
+    "id": "san-francisco",
+    "label": "San Francisco, London, Austin, Lisbon, Singapore",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "github_profile"
+  },
   "related": [
     {
       "slug": "cloudflare-agents-sdk",
@@ -80,10 +86,10 @@
     }
   ],
   "mapLocation": {
-    "id": "virtual-paris",
-    "label": "Global Skill Market / Paris / Skills by Typefully",
-    "lat": 48.8566,
-    "lon": 2.3522,
-    "source": "virtual_market"
+    "id": "san-francisco",
+    "label": "San Francisco, London, Austin, Lisbon, Singapore",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "github_profile"
   }
 }

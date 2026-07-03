@@ -12,15 +12,21 @@
   "readme": "# auth0/auth0-vue\n\nAdd authentication to Vue.js apps",
   "readmeHtml": "<h1>auth0/auth0-vue</h1>\n<p>Add authentication to Vue.js apps</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.131Z",
+  "updatedAt": "2026-07-03T11:33:56.372Z",
   "author": {
     "login": "auth0",
-    "name": "auth0",
-    "avatarUrl": "",
+    "name": "Auth0",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/2824157?v=4",
     "profileUrl": "https://github.com/auth0",
-    "location": ""
+    "location": "Seattle"
   },
-  "location": null,
+  "location": {
+    "id": "seattle",
+    "label": "Seattle",
+    "lat": 47.6062,
+    "lon": -122.3321,
+    "source": "github_profile"
+  },
   "related": [
     {
       "slug": "auth0-auth0-android",
@@ -80,10 +86,10 @@
     }
   ],
   "mapLocation": {
-    "id": "virtual-new-york",
-    "label": "Global Skill Market / New York / TypeScript Skills",
-    "lat": 40.7128,
-    "lon": -74.006,
-    "source": "virtual_market"
+    "id": "seattle",
+    "label": "Seattle",
+    "lat": 47.6062,
+    "lon": -122.3321,
+    "source": "github_profile"
   }
 }

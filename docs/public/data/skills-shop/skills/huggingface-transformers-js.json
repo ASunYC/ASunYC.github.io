@@ -5,30 +5,29 @@
   "displayName": "huggingface/transformers.js",
   "description": "Run ML models in the browser with Transformers.js",
   "stars": 0,
-  "category": "Skills by Typefully",
+  "category": "Official Skills by",
   "source": "voltagent",
   "url": "https://officialskills.sh/huggingface/skills/transformers.js",
   "githubRepo": "",
   "readme": "# huggingface/transformers.js\n\nRun ML models in the browser with Transformers.js",
   "readmeHtml": "<h1>huggingface/transformers.js</h1>\n<p>Run ML models in the browser with Transformers.js</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.103Z",
+  "updatedAt": "2026-07-03T11:33:56.339Z",
   "author": {
     "login": "huggingface",
-    "name": "huggingface",
-    "avatarUrl": "",
+    "name": "Hugging Face",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/25720743?v=4",
     "profileUrl": "https://github.com/huggingface",
-    "location": ""
+    "location": "NYC + Paris"
   },
-  "location": null,
+  "location": {
+    "id": "nyc",
+    "label": "NYC + Paris",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "source": "github_profile"
+  },
   "related": [
-    {
-      "slug": "huggingface-upskill",
-      "displayName": "huggingface/upskill",
-      "stars": 517,
-      "relation": "source_overlap",
-      "evidence": "author:huggingface"
-    },
     {
       "slug": "huggingface-hf-cli",
       "displayName": "huggingface/hf-cli",
@@ -77,13 +76,20 @@
       "stars": 0,
       "relation": "source_overlap",
       "evidence": "author:huggingface"
+    },
+    {
+      "slug": "huggingface-hugging-face-paper-publisher",
+      "displayName": "huggingface/hugging-face-paper-publisher",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:huggingface"
     }
   ],
   "mapLocation": {
-    "id": "virtual-san-francisco",
-    "label": "Global Skill Market / San Francisco / Skills by Typefully",
-    "lat": 37.7749,
-    "lon": -122.4194,
-    "source": "virtual_market"
+    "id": "nyc",
+    "label": "NYC + Paris",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "source": "github_profile"
   }
 }

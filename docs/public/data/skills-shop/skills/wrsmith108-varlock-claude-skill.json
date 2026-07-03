@@ -4,77 +4,77 @@
   "name": "varlock-claude-skill",
   "displayName": "wrsmith108/varlock-claude-skill",
   "description": "Secure environment variable management ensuring secrets are never exposed in Claude sessions, terminals, logs, or git commits",
-  "stars": 21,
+  "stars": 27,
   "category": "Community Skills",
   "source": "voltagent",
   "url": "https://github.com/wrsmith108/varlock-claude-skill",
   "githubRepo": "wrsmith108/varlock-claude-skill",
-  "readme": "# wrsmith108/varlock-claude-skill\n\nSecure environment variable management ensuring secrets are never exposed in Claude sessions, terminals, logs, or git commits",
-  "readmeHtml": "<h1>wrsmith108/varlock-claude-skill</h1>\n<p>Secure environment variable management ensuring secrets are never exposed in Claude sessions, terminals, logs, or git commits</p>",
+  "readme": "# Varlock Skill for Claude Code\n\n> Secure-by-default environment variable management. Ensures secrets are **never exposed** in Claude sessions.\n\n## Why This Skill?\n\nWhen working with Claude Code, secrets can accidentally leak into:\n- Terminal output\n- Claude's input/output context\n- Log files or traces\n- Git commits or diffs\n\nThis skill wraps [Varlock](https://varlock.dev) to enforce secure patterns and prevent accidental exposure.\n\n## Installation\n\n### Option A: One-liner (Recommended)\n\n```bash\nmkdir -p ~/.claude/skills/varlock && curl -sSL https://raw.githubusercontent.com/wrsmith108/varlock-claude-skill/main/skills/varlock/SKILL.md -o ~/.claude/skills/varlock/SKILL.md\n```\n\n### Option B: Manual\n\n```bash\ngit clone https://github.com/wrsmith108/varlock-claude-skill /tmp/varlock-skill\ncp -r /tmp/varlock-skill/skills/varlock ~/.claude/skills/\nrm -rf /tmp/varlock-skill\n```\n\n## Prerequisites\n\nInstall the Varlock CLI:\n\n```bash\ncurl -sSfL https://varlock.dev/install.sh | sh -s -- --force-no-brew\nexport PATH=\"$HOME/.varlock/bin:$PATH\"\n```\n\n## Core Principle\n\n**Secrets must NEVER appear in Claude's context.**\n\n| Never Do | Safe Alternative |\n|----------|------------------|\n| `cat .env` | `cat .env.schema` |\n| `echo $SECRET` | `varlock load` |\n| `printenv \\| grep API` | `varlock load \\| grep API` |\n\n## Quick Reference\n\n```bash\n# Validate all secrets (shows masked values)\nvarlock load\n\n# Quiet validation (no output on success)\nvarlock load --quiet\n\n# Run command with secrets injected\nvarlock run -- npm start\n\n# View schema (safe - no values)\ncat .env.schema\n```\n\n## Schema File\n\nCreate `.env.schema` to define variable types and sensitivity:\n\n```bash\n# Global defaults\n# @defaultSensitive=true @defaultRequired=infer\n\n# Public config\n# @type=enum(development,staging,production) @sensitive=false\nNODE_ENV=development\n\n# Sensitive secrets\n# @type=string(startsWith=sk_) @required @sensitive\nSTRIPE_SECRET_KEY=\n\n# @type=url @required @sensitive\nDATABASE_URL=\n```\n\n### Annotations\n\n| Annotation | Effect |\n|------------|--------|\n| `@sensitive` | Value masked in all output |\n| `@sensitive=false` | Value shown (for public keys) |\n| `@required` | Must be present |\n| `@type=string(startsWith=X)` | Prefix validation |\n\n\n## Handling Secret Requests\n\nWhen users ask Claude to:\n\n- **\"Check if API key is set\"** → `varlock load | grep API_KEY`\n- **\"Debug authentication\"** → `varlock load` (validates all)\n- **\"Update a secret\"** → Decline; ask user to update manually\n- **\"Show me .env\"** → `cat .env.schema` instead\n\n## Credits\n\nThis skill wraps [Varlock](https://github.com/dmno-dev/varlock) by [DMNO](https://dmno.dev).\n\n## License\n\nMIT\n",
+  "readmeHtml": "<h1>Varlock Skill for Claude Code</h1>\n<p>&gt; Secure-by-default environment variable management. Ensures secrets are <strong>never exposed</strong> in Claude sessions.</p>\n<h2>Why This Skill?</h2>\n<p>When working with Claude Code, secrets can accidentally leak into:</p>\n<ul>\n<li>Terminal output</li>\n<li>Claude's input/output context</li>\n<li>Log files or traces</li>\n<li>Git commits or diffs</li>\n</ul>\n<p>This skill wraps <a href=\"https://varlock.dev\" target=\"_blank\" rel=\"noreferrer\">Varlock</a> to enforce secure patterns and prevent accidental exposure.</p>\n<h2>Installation</h2>\n<h3>Option A: One-liner (Recommended)</h3>\n<pre><code>\nmkdir -p ~/.claude/skills/varlock &amp;&amp; curl -sSL https://raw.githubusercontent.com/wrsmith108/varlock-claude-skill/main/skills/varlock/SKILL.md -o ~/.claude/skills/varlock/SKILL.md\n\n</code></pre>\n<h3>Option B: Manual</h3>\n<pre><code>\ngit clone https://github.com/wrsmith108/varlock-claude-skill /tmp/varlock-skill\n\ncp -r /tmp/varlock-skill/skills/varlock ~/.claude/skills/\n\nrm -rf /tmp/varlock-skill\n\n</code></pre>\n<h2>Prerequisites</h2>\n<p>Install the Varlock CLI:</p>\n<pre><code>\ncurl -sSfL https://varlock.dev/install.sh | sh -s -- --force-no-brew\n\nexport PATH=\"$HOME/.varlock/bin:$PATH\"\n\n</code></pre>\n<h2>Core Principle</h2>\n<p><strong>Secrets must NEVER appear in Claude's context.</strong></p>\n<p>| Never Do | Safe Alternative |</p>\n<p>|----------|------------------|</p>\n<p>| <code>cat .env</code> | <code>cat .env.schema</code> |</p>\n<p>| <code>echo $SECRET</code> | <code>varlock load</code> |</p>\n<p>| <code>printenv \\| grep API</code> | <code>varlock load \\| grep API</code> |</p>\n<h2>Quick Reference</h2>\n<pre><code>\n# Validate all secrets (shows masked values)\n\nvarlock load\n\n\n\n# Quiet validation (no output on success)\n\nvarlock load --quiet\n\n\n\n# Run command with secrets injected\n\nvarlock run -- npm start\n\n\n\n# View schema (safe - no values)\n\ncat .env.schema\n\n</code></pre>\n<h2>Schema File</h2>\n<p>Create <code>.env.schema</code> to define variable types and sensitivity:</p>\n<pre><code>\n# Global defaults\n\n# @defaultSensitive=true @defaultRequired=infer\n\n\n\n# Public config\n\n# @type=enum(development,staging,production) @sensitive=false\n\nNODE_ENV=development\n\n\n\n# Sensitive secrets\n\n# @type=string(startsWith=sk_) @required @sensitive\n\nSTRIPE_SECRET_KEY=\n\n\n\n# @type=url @required @sensitive\n\nDATABASE_URL=\n\n</code></pre>\n<h3>Annotations</h3>\n<p>| Annotation | Effect |</p>\n<p>|------------|--------|</p>\n<p>| <code>@sensitive</code> | Value masked in all output |</p>\n<p>| <code>@sensitive=false</code> | Value shown (for public keys) |</p>\n<p>| <code>@required</code> | Must be present |</p>\n<p>| <code>@type=string(startsWith=X)</code> | Prefix validation |</p>\n<h2>Handling Secret Requests</h2>\n<p>When users ask Claude to:</p>\n<ul>\n<li><strong>\"Check if API key is set\"</strong> → <code>varlock load | grep API_KEY</code></li>\n<li><strong>\"Debug authentication\"</strong> → <code>varlock load</code> (validates all)</li>\n<li><strong>\"Update a secret\"</strong> → Decline; ask user to update manually</li>\n<li><strong>\"Show me .env\"</strong> → <code>cat .env.schema</code> instead</li>\n</ul>\n<h2>Credits</h2>\n<p>This skill wraps <a href=\"https://github.com/dmno-dev/varlock\" target=\"_blank\" rel=\"noreferrer\">Varlock</a> by <a href=\"https://dmno.dev\" target=\"_blank\" rel=\"noreferrer\">DMNO</a>.</p>\n<h2>License</h2>\n<p>MIT</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.063Z",
+  "updatedAt": "2026-03-04T01:12:04Z",
   "author": {
     "login": "wrsmith108",
-    "name": "wrsmith108",
-    "avatarUrl": "",
+    "name": "Ryan Smith",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/62075823?v=4",
     "profileUrl": "https://github.com/wrsmith108",
-    "location": ""
+    "location": "Vancouver"
   },
   "location": null,
   "related": [
     {
       "slug": "wrsmith108-linear-claude-skill",
       "displayName": "wrsmith108/linear-claude-skill",
-      "stars": 97,
+      "stars": 114,
       "relation": "source_overlap",
       "evidence": "author:wrsmith108"
     },
     {
-      "slug": "obra-defense-in-depth",
-      "displayName": "obra/defense-in-depth",
-      "stars": 186953,
+      "slug": "obra-brainstorming",
+      "displayName": "obra/brainstorming",
+      "stars": 245089,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mattpocock-skills",
+      "displayName": "mattpocock/skills",
+      "stars": 155097,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
       "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
-      "stars": 77115,
+      "stars": 100227,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
-      "slug": "mvanhorn-last30days-skill",
-      "displayName": "mvanhorn/last30days-skill",
-      "stars": 25573,
+      "slug": "lum1104-understand-anything",
+      "displayName": "Lum1104/understand-anything",
+      "stars": 70574,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
-      "slug": "k-dense-ai-claude-scientific-skills",
-      "displayName": "K-Dense-AI/claude-scientific-skills",
-      "stars": 20299,
+      "slug": "santifer-career-ops",
+      "displayName": "santifer/career-ops",
+      "stars": 58303,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
-      "slug": "muratcankoylan-context-fundamentals",
-      "displayName": "muratcankoylan/context-fundamentals",
-      "stars": 15494,
+      "slug": "leonxlnx-taste-skill",
+      "displayName": "Leonxlnx/taste-skill",
+      "stars": 55314,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
-      "slug": "muratcankoylan-context-degradation",
-      "displayName": "muratcankoylan/context-degradation",
-      "stars": 15494,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-compression",
-      "displayName": "muratcankoylan/context-compression",
-      "stars": 15494,
+      "slug": "panniantong-agent-reach",
+      "displayName": "Panniantong/Agent-Reach",
+      "stars": 49547,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     }

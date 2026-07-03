@@ -4,77 +4,77 @@
   "name": "tutor-skills",
   "displayName": "RoundTable02/tutor-skills",
   "description": "Transform docs or codebases into Obsidian StudyVaults with interactive quizzes",
-  "stars": 865,
+  "stars": 1002,
   "category": "Community Skills",
   "source": "voltagent",
   "url": "https://github.com/RoundTable02/tutor-skills",
   "githubRepo": "RoundTable02/tutor-skills",
-  "readme": "# RoundTable02/tutor-skills\n\nTransform docs or codebases into Obsidian StudyVaults with interactive quizzes",
-  "readmeHtml": "<h1>RoundTable02/tutor-skills</h1>\n<p>Transform docs or codebases into Obsidian StudyVaults with interactive quizzes</p>",
+  "readme": "# tutor-skill\n\n[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)\n[![Claude Code](https://img.shields.io/badge/Claude_Code-skill-blue)](https://docs.anthropic.com/en/docs/claude-code)\n[![Install with npx skills](https://img.shields.io/badge/npx_skills-add-green)](https://github.com/vercel-labs/skills)\n\nTwo [Claude Code](https://docs.anthropic.com/en/docs/claude-code) skills that turn any knowledge source into an **Obsidian StudyVault** and then quiz you on it — closing the loop from content to comprehension.\n\n## How It Works\n\n```\n  Documents / Code                    Obsidian                    Quiz Session\n ┌──────────────────┐           ┌──────────────────┐          ┌──────────────────┐\n │  PDF, MD, HTML,  │  /tutor   │   StudyVault/    │  /tutor  │  4 questions per  │\n │  EPUB, source    │──setup──▶ │   structured     │────────▶ │  round, graded,   │\n │  code projects   │           │   interlinked    │          │  concept tracking  │\n └──────────────────┘           │   notes + MOC    │          └────────┬─────────┘\n                                └──────────────────┘                   │\n                                         ▲                             │\n                                         └─────── progress updates ────┘\n```\n\n## Skills Overview\n\n| Skill | Command | Purpose | Input | Output |\n|-------|---------|---------|-------|--------|\n| **tutor-setup** | `/tutor-setup` | Generate a StudyVault | Documents or source code | Obsidian vault with notes, dashboards, practice questions |\n| **tutor** | `/tutor` | Interactive quiz tutor | An existing StudyVault | Quiz sessions with concept-level progress tracking |\n\n## Quick Start\n\n### One-line install (recommended)\n\n```bash\nnpx skills add RoundTable02/tutor-skills\n```\n\n> Requires [npx skills](https://github.com/vercel-labs/skills) — works with Claude Code, Cursor, Windsurf, and more.\n\n### Manual install\n\n```bash\ngit clone https://github.com/RoundTable02/tutor-skills.git\ncd tutor-skills\n./install.sh\n```\n\n### Step 1: Generate a StudyVault\n\n```bash\ncd ~/study-materials/          # or any source code project\nclaude\n> /tutor-setup\n```\n\n### Step 2: Start Quizzing\n\n```bash\nclaude\n> /tutor\n```\n\n---\n\n## tutor-setup\n\nTransforms knowledge sources into a structured Obsidian StudyVault. Mode is auto-detected:\n\n| Marker Found | Mode |\n|---|---|\n| `package.json`, `pom.xml`, `build.gradle`, `Cargo.toml`, `go.mod`, etc. | Codebase Mode |\n| No project markers | Document Mode |\n\n### Document Mode\n\nTurns PDFs, text files, web pages, and other sources into comprehensive study notes.\n\n- Auto-scans working directory for source files (PDF, TXT, MD, HTML, EPUB)\n- Extracts and analyzes content with verified source mapping\n- Generates concept notes with comparison tables, ASCII diagrams, and exam patterns\n- Creates practice questions with hidden answers (active recall via fold callouts)\n- Builds a dashboard with Map of Content (MOC), Quick Reference, and Exam Traps\n- Full interlinking with `[[wiki-links]]` across all notes\n\n**Phases**\n\n| Phase | Name | Description |\n|-------|------|-------------|\n| D1 | Source Discovery | Scan, extract, and verify source content mapping |\n| D2 | Content Analysis | Build topic hierarchy and dependency map |\n| D3 | Tag Standard | Define English kebab-case tag registry |\n| D4 | Vault Structure | Create numbered folders per topic |\n| D5 | Dashboard | MOC, Quick Reference, Exam Traps |\n| D6 | Concept Notes | Structured notes with tables, diagrams, callouts |\n| D7 | Practice Questions | Active recall with fold callouts (8+ per topic) |\n| D8 | Interlinking | Cross-reference all notes with wiki-links |\n| D9 | Self-Review | Verify against quality checklist |\n\n**Generated structure**\n\n```\nStudyVault/\n  00-Dashboard/          # MOC + Quick Reference + Exam Traps\n  01-<Topic1>/           # Concept notes + practice questions\n  02-<Topic2>/\n  ...\n```\n\n### Codebase Mode\n\nGenerates a new-developer onboarding vault from a source code project.\n\n- Auto-detects tech stack, architecture patterns, and module boundaries\n- Traces request flows and data flows end-to-end\n- Creates per-module notes with key files, public interfaces, and dependency maps\n- Generates onboarding exercises (code reading, configuration, debugging, extension)\n- Builds a dashboard with architecture overview, module map, API surface, and getting started guide\n\n**Phases**\n\n| Phase | Name | Description |\n|-------|------|-------------|\n| C1 | Project Exploration | Scan files, detect tech stack, map layout |\n| C2 | Architecture Analysis | Identify patterns, trace flows, map modules |\n| C3 | Tag Standard | Define `#arch-*`, `#module-*`, `#pattern-*` registry |\n| C4 | Vault Structure | Create dashboard + per-module folders |\n| C5 | Dashboard | MOC with module map, API surface, getting started |\n| C6 | Module Notes | Purpose, key files, interface, flow, dependencies |\n| C7 | Exercises | Code reading, config, debugging, extension tasks |\n| C8 | Interlinking | Cross-link all modules and exercises |\n| C9 | Self-Review | Verify against quality checklist |\n\n**Generated structure**\n\n```\nStudyVault/\n  00-Dashboard/          # MOC + Quick Reference + Getting Started\n  01-Architecture/       # System overview, request flow, data flow\n  02-<Module1>/          # Per-module notes\n  03-<Module2>/\n  ...\n  NN-DevOps/             # Build, deploy, CI/CD\n  NN+1-Exercises/        # Onboarding exercises\n```\n\n---\n\n## tutor\n\nInteractive quiz tutor that tracks what you know and don't know at the **concept level**. Works with any StudyVault generated by `tutor-setup`.\n\n### Session Types\n\n| Type | When Available | Focus |\n|------|----------------|-------|\n| Diagnostic | Unmeasured areas (⬜) exist | Broad assessment of new areas |\n| Drill weak areas | Weak areas (🟥/🟨) exist | Targeted practice on struggles |\n| Choose a section | Always | Study any area on demand |\n| Hard-mode review | All areas 🟩/🟦 | Challenge mastered material |\n\n### Quiz Flow\n\n1. Detects your StudyVault and reads the learning dashboard\n2. Presents session options based on your current proficiency\n3. Delivers 4 questions per round (4 options each, zero hints)\n4. Grades answers and explains mistakes\n5. Updates concept files and dashboard automatically\n\n### Progress Tracking\n\nProficiency is tracked per area with emoji badges:\n\n| Badge | Level | Rate |\n|-------|-------|------|\n| 🟥 | Weak | 0–39% |\n| 🟨 | Fair | 40–69% |\n| 🟩 | Good | 70–89% |\n| 🟦 | Mastered | 90–100% |\n| ⬜ | Unmeasured | No data |\n\nConcept-level tracking stores attempts, correct count, last tested date, and error notes for wrong answers — so drill sessions rephrase missed concepts in new contexts.\n\n---\n\n## The Learning Cycle\n\n```\n           ┌────────────────────────────┐\n           │   /tutor-setup             │\n           │   Generate StudyVault      │\n           └──────────┬─────────────────┘\n                      │\n                      ▼\n           ┌────────────────────────────┐\n           │   Read & review notes      │\n           │   in Obsidian              │\n           └──────────┬─────────────────┘\n                      │\n                      ▼\n           ┌────────────────────────────┐\n           │   /tutor                   │\n           │   Take diagnostic quiz     │◀──────────┐\n           └──────────┬─────────────────┘           │\n                      │                              │\n                      ▼                              │\n           ┌────────────────────────────┐           │\n           │   Review weak areas        │           │\n           │   in Obsidian              │           │\n           └──────────┬─────────────────┘           │\n                      │                              │\n                      ▼                              │\n           ┌────────────────────────────┐           │\n           │   /tutor                   │           │\n           │   Drill weak concepts      │───────────┘\n           └────────────────────────────┘\n```\n\n## Requirements\n\n- [Claude Code CLI](https://docs.anthropic.com/en/docs/claude-code) installed and configured\n- [Obsidian](https://obsidian.md/) (recommended) to open and navigate the generated vault\n\n## Repository Structure\n\n```\ntutor-skill/\n├── skills/\n│   ├── tutor-setup/              # Vault generation skill\n│   │   ├── SKILL.md\n│   │   └── references/\n│   │       ├── templates.md\n│   │       ├── codebase-workflow.md\n│   │       ├── quality-checklist.md\n│   │       └── codebase-templates.md\n│   └── tutor/                    # Interactive quiz skill\n│       ├── SKILL.md\n│       └── references/\n│           └── quiz-rules.md\n├── examples/\n├── install.sh\n├── uninstall.sh\n├── README.md\n└── LICENSE\n```\n\n## Uninstall\n\n```bash\n./uninstall.sh\n```\n\nOr manually:\n\n```bash\nrm -rf ~/.claude/skills/tutor-setup\nrm -rf ~/.claude/skills/tutor\n```\n\n## License\n\n[MIT](LICENSE)\n",
+  "readmeHtml": "<h1>tutor-skill</h1>\n<p><a href=\"https://img.shields.io/badge/License-MIT-yellow.svg\" target=\"_blank\" rel=\"noreferrer\">![License: MIT</a>](LICENSE)</p>\n<p><a href=\"https://img.shields.io/badge/Claude_Code-skill-blue\" target=\"_blank\" rel=\"noreferrer\">![Claude Code</a>](https://docs.anthropic.com/en/docs/claude-code)</p>\n<p><a href=\"https://img.shields.io/badge/npx_skills-add-green\" target=\"_blank\" rel=\"noreferrer\">![Install with npx skills</a>](https://github.com/vercel-labs/skills)</p>\n<p>Two <a href=\"https://docs.anthropic.com/en/docs/claude-code\" target=\"_blank\" rel=\"noreferrer\">Claude Code</a> skills that turn any knowledge source into an <strong>Obsidian StudyVault</strong> and then quiz you on it — closing the loop from content to comprehension.</p>\n<h2>How It Works</h2>\n<pre><code>\n  Documents / Code                    Obsidian                    Quiz Session\n\n ┌──────────────────┐           ┌──────────────────┐          ┌──────────────────┐\n\n │  PDF, MD, HTML,  │  /tutor   │   StudyVault/    │  /tutor  │  4 questions per  │\n\n │  EPUB, source    │──setup──▶ │   structured     │────────▶ │  round, graded,   │\n\n │  code projects   │           │   interlinked    │          │  concept tracking  │\n\n └──────────────────┘           │   notes + MOC    │          └────────┬─────────┘\n\n                                └──────────────────┘                   │\n\n                                         ▲                             │\n\n                                         └─────── progress updates ────┘\n\n</code></pre>\n<h2>Skills Overview</h2>\n<p>| Skill | Command | Purpose | Input | Output |</p>\n<p>|-------|---------|---------|-------|--------|</p>\n<p>| <strong>tutor-setup</strong> | <code>/tutor-setup</code> | Generate a StudyVault | Documents or source code | Obsidian vault with notes, dashboards, practice questions |</p>\n<p>| <strong>tutor</strong> | <code>/tutor</code> | Interactive quiz tutor | An existing StudyVault | Quiz sessions with concept-level progress tracking |</p>\n<h2>Quick Start</h2>\n<h3>One-line install (recommended)</h3>\n<pre><code>\nnpx skills add RoundTable02/tutor-skills\n\n</code></pre>\n<p>&gt; Requires <a href=\"https://github.com/vercel-labs/skills\" target=\"_blank\" rel=\"noreferrer\">npx skills</a> — works with Claude Code, Cursor, Windsurf, and more.</p>\n<h3>Manual install</h3>\n<pre><code>\ngit clone https://github.com/RoundTable02/tutor-skills.git\n\ncd tutor-skills\n\n./install.sh\n\n</code></pre>\n<h3>Step 1: Generate a StudyVault</h3>\n<pre><code>\ncd ~/study-materials/          # or any source code project\n\nclaude\n\n&gt; /tutor-setup\n\n</code></pre>\n<h3>Step 2: Start Quizzing</h3>\n<pre><code>\nclaude\n\n&gt; /tutor\n\n</code></pre>\n<p>---</p>\n<h2>tutor-setup</h2>\n<p>Transforms knowledge sources into a structured Obsidian StudyVault. Mode is auto-detected:</p>\n<p>| Marker Found | Mode |</p>\n<p>|---|---|</p>\n<p>| <code>package.json</code>, <code>pom.xml</code>, <code>build.gradle</code>, <code>Cargo.toml</code>, <code>go.mod</code>, etc. | Codebase Mode |</p>\n<p>| No project markers | Document Mode |</p>\n<h3>Document Mode</h3>\n<p>Turns PDFs, text files, web pages, and other sources into comprehensive study notes.</p>\n<ul>\n<li>Auto-scans working directory for source files (PDF, TXT, MD, HTML, EPUB)</li>\n<li>Extracts and analyzes content with verified source mapping</li>\n<li>Generates concept notes with comparison tables, ASCII diagrams, and exam patterns</li>\n<li>Creates practice questions with hidden answers (active recall via fold callouts)</li>\n<li>Builds a dashboard with Map of Content (MOC), Quick Reference, and Exam Traps</li>\n<li>Full interlinking with <code>[[wiki-links]]</code> across all notes</li>\n</ul>\n<p><strong>Phases</strong></p>\n<p>| Phase | Name | Description |</p>\n<p>|-------|------|-------------|</p>\n<p>| D1 | Source Discovery | Scan, extract, and verify source content mapping |</p>\n<p>| D2 | Content Analysis | Build topic hierarchy and dependency map |</p>\n<p>| D3 | Tag Standard | Define English kebab-case tag registry |</p>\n<p>| D4 | Vault Structure | Create numbered folders per topic |</p>\n<p>| D5 | Dashboard | MOC, Quick Reference, Exam Traps |</p>\n<p>| D6 | Concept Notes | Structured notes with tables, diagrams, callouts |</p>\n<p>| D7 | Practice Questions | Active recall with fold callouts (8+ per topic) |</p>\n<p>| D8 | Interlinking | Cross-reference all notes with wiki-links |</p>\n<p>| D9 | Self-Review | Verify against quality checklist |</p>\n<p><strong>Generated structure</strong></p>\n<pre><code>\nStudyVault/\n\n  00-Dashboard/          # MOC + Quick Reference + Exam Traps\n\n  01-&lt;Topic1&gt;/           # Concept notes + practice questions\n\n  02-&lt;Topic2&gt;/\n\n  ...\n\n</code></pre>\n<h3>Codebase Mode</h3>\n<p>Generates a new-developer onboarding vault from a source code project.</p>\n<ul>\n<li>Auto-detects tech stack, architecture patterns, and module boundaries</li>\n<li>Traces request flows and data flows end-to-end</li>\n<li>Creates per-module notes with key files, public interfaces, and dependency maps</li>\n<li>Generates onboarding exercises (code reading, configuration, debugging, extension)</li>\n<li>Builds a dashboard with architecture overview, module map, API surface, and getting started guide</li>\n</ul>\n<p><strong>Phases</strong></p>\n<p>| Phase | Name | Description |</p>\n<p>|-------|------|-------------|</p>\n<p>| C1 | Project Exploration | Scan files, detect tech stack, map layout |</p>\n<p>| C2 | Architecture Analysis | Identify patterns, trace flows, map modules |</p>\n<p>| C3 | Tag Standard | Define <code>#arch-*</code>, <code>#module-*</code>, <code>#pattern-*</code> registry |</p>\n<p>| C4 | Vault Structure | Create dashboard + per-module folders |</p>\n<p>| C5 | Dashboard | MOC with module map, API surface, getting started |</p>\n<p>| C6 | Module Notes | Purpose, key files, interface, flow, dependencies |</p>\n<p>| C7 | Exercises | Code reading, config, debugging, extension tasks |</p>\n<p>| C8 | Interlinking | Cross-link all modules and exercises |</p>\n<p>| C9 | Self-Review | Verify against quality checklist |</p>\n<p><strong>Generated structure</strong></p>\n<pre><code>\nStudyVault/\n\n  00-Dashboard/          # MOC + Quick Reference + Getting Started\n\n  01-Architecture/       # System overview, request flow, data flow\n\n  02-&lt;Module1&gt;/          # Per-module notes\n\n  03-&lt;Module2&gt;/\n\n  ...\n\n  NN-DevOps/             # Build, deploy, CI/CD\n\n  NN+1-Exercises/        # Onboarding exercises\n\n</code></pre>\n<p>---</p>\n<h2>tutor</h2>\n<p>Interactive quiz tutor that tracks what you know and don't know at the <strong>concept level</strong>. Works with any StudyVault generated by <code>tutor-setup</code>.</p>\n<h3>Session Types</h3>\n<p>| Type | When Available | Focus |</p>\n<p>|------|----------------|-------|</p>\n<p>| Diagnostic | Unmeasured areas (⬜) exist | Broad assessment of new areas |</p>\n<p>| Drill weak areas | Weak areas (🟥/🟨) exist | Targeted practice on struggles |</p>\n<p>| Choose a section | Always | Study any area on demand |</p>\n<p>| Hard-mode review | All areas 🟩/🟦 | Challenge mastered material |</p>\n<h3>Quiz Flow</h3>\n<p>1. Detects your StudyVault and reads the learning dashboard</p>\n<p>2. Presents session options based on your current proficiency</p>\n<p>3. Delivers 4 questions per round (4 options each, zero hints)</p>\n<p>4. Grades answers and explains mistakes</p>\n<p>5. Updates concept files and dashboard automatically</p>\n<h3>Progress Tracking</h3>\n<p>Proficiency is tracked per area with emoji badges:</p>\n<p>| Badge | Level | Rate |</p>\n<p>|-------|-------|------|</p>\n<p>| 🟥 | Weak | 0–39% |</p>\n<p>| 🟨 | Fair | 40–69% |</p>\n<p>| 🟩 | Good | 70–89% |</p>\n<p>| 🟦 | Mastered | 90–100% |</p>\n<p>| ⬜ | Unmeasured | No data |</p>\n<p>Concept-level tracking stores attempts, correct count, last tested date, and error notes for wrong answers — so drill sessions rephrase missed concepts in new contexts.</p>\n<p>---</p>\n<h2>The Learning Cycle</h2>\n<pre><code>\n           ┌────────────────────────────┐\n\n           │   /tutor-setup             │\n\n           │   Generate StudyVault      │\n\n           └──────────┬─────────────────┘\n\n                      │\n\n                      ▼\n\n           ┌────────────────────────────┐\n\n           │   Read &amp; review notes      │\n\n           │   in Obsidian              │\n\n           └──────────┬─────────────────┘\n\n                      │\n\n                      ▼\n\n           ┌────────────────────────────┐\n\n           │   /tutor                   │\n\n           │   Take diagnostic quiz     │◀──────────┐\n\n           └──────────┬─────────────────┘           │\n\n                      │                              │\n\n                      ▼                              │\n\n           ┌────────────────────────────┐           │\n\n           │   Review weak areas        │           │\n\n           │   in Obsidian              │           │\n\n           └──────────┬─────────────────┘           │\n\n                      │                              │\n\n                      ▼                              │\n\n           ┌────────────────────────────┐           │\n\n           │   /tutor                   │           │\n\n           │   Drill weak concepts      │───────────┘\n\n           └────────────────────────────┘\n\n</code></pre>\n<h2>Requirements</h2>\n<ul>\n<li><a href=\"https://docs.anthropic.com/en/docs/claude-code\" target=\"_blank\" rel=\"noreferrer\">Claude Code CLI</a> installed and configured</li>\n<li><a href=\"https://obsidian.md/\" target=\"_blank\" rel=\"noreferrer\">Obsidian</a> (recommended) to open and navigate the generated vault</li>\n</ul>\n<h2>Repository Structure</h2>\n<pre><code>\ntutor-skill/\n\n├── skills/\n\n│   ├── tutor-setup/              # Vault generation skill\n\n│   │   ├── SKILL.md\n\n│   │   └── references/\n\n│   │       ├── templates.md\n\n│   │       ├── codebase-workflow.md\n\n│   │       ├── quality-checklist.md\n\n│   │       └── codebase-templates.md\n\n│   └── tutor/                    # Interactive quiz skill\n\n│       ├── SKILL.md\n\n│       └── references/\n\n│           └── quiz-rules.md\n\n├── examples/\n\n├── install.sh\n\n├── uninstall.sh\n\n├── README.md\n\n└── LICENSE\n\n</code></pre>\n<h2>Uninstall</h2>\n<pre><code>\n./uninstall.sh\n\n</code></pre>\n<p>Or manually:</p>\n<pre><code>\nrm -rf ~/.claude/skills/tutor-setup\n\nrm -rf ~/.claude/skills/tutor\n\n</code></pre>\n<h2>License</h2>\n<p>[MIT](LICENSE)</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.038Z",
+  "updatedAt": "2026-02-28T14:41:09Z",
   "author": {
-    "login": "roundtable02",
-    "name": "roundtable02",
-    "avatarUrl": "",
-    "profileUrl": "https://github.com/roundtable02",
-    "location": ""
+    "login": "RoundTable02",
+    "name": "Choi Wontak",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/76509639?v=4",
+    "profileUrl": "https://github.com/RoundTable02",
+    "location": "Seoul, Korea"
   },
   "location": null,
   "related": [
     {
-      "slug": "obra-defense-in-depth",
-      "displayName": "obra/defense-in-depth",
-      "stars": 186953,
+      "slug": "obra-brainstorming",
+      "displayName": "obra/brainstorming",
+      "stars": 245089,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mattpocock-skills",
+      "displayName": "mattpocock/skills",
+      "stars": 155097,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
       "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
-      "stars": 77115,
+      "stars": 100227,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "lum1104-understand-anything",
+      "displayName": "Lum1104/understand-anything",
+      "stars": 70574,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "santifer-career-ops",
+      "displayName": "santifer/career-ops",
+      "stars": 58303,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "leonxlnx-taste-skill",
+      "displayName": "Leonxlnx/taste-skill",
+      "stars": 55314,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "panniantong-agent-reach",
+      "displayName": "Panniantong/Agent-Reach",
+      "stars": 49547,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "mvanhorn-last30days-skill",
       "displayName": "mvanhorn/last30days-skill",
-      "stars": 25573,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "k-dense-ai-claude-scientific-skills",
-      "displayName": "K-Dense-AI/claude-scientific-skills",
-      "stars": 20299,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-fundamentals",
-      "displayName": "muratcankoylan/context-fundamentals",
-      "stars": 15494,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-degradation",
-      "displayName": "muratcankoylan/context-degradation",
-      "stars": 15494,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-compression",
-      "displayName": "muratcankoylan/context-compression",
-      "stars": 15494,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-optimization",
-      "displayName": "muratcankoylan/context-optimization",
-      "stars": 15494,
+      "stars": 48607,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     }

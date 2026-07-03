@@ -5,22 +5,28 @@
   "displayName": "netlify/netlify-db",
   "description": "Managed Postgres with deploy preview branching",
   "stars": 0,
-  "category": "Skills by Typefully",
+  "category": "Official Skills by",
   "source": "voltagent",
   "url": "https://officialskills.sh/netlify/skills/netlify-db",
   "githubRepo": "",
   "readme": "# netlify/netlify-db\n\nManaged Postgres with deploy preview branching",
   "readmeHtml": "<h1>netlify/netlify-db</h1>\n<p>Managed Postgres with deploy preview branching</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.101Z",
+  "updatedAt": "2026-07-03T11:33:56.329Z",
   "author": {
     "login": "netlify",
-    "name": "netlify",
-    "avatarUrl": "",
+    "name": "Netlify",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/7892489?v=4",
     "profileUrl": "https://github.com/netlify",
-    "location": ""
+    "location": "San Francisco"
   },
-  "location": null,
+  "location": {
+    "id": "san-francisco",
+    "label": "San Francisco, London, Austin, Lisbon, Singapore",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "github_profile"
+  },
   "related": [
     {
       "slug": "netlify-netlify-functions",
@@ -80,10 +86,10 @@
     }
   ],
   "mapLocation": {
-    "id": "virtual-shanghai",
-    "label": "Global Skill Market / Shanghai / Skills by Typefully",
-    "lat": 31.2304,
-    "lon": 121.4737,
-    "source": "virtual_market"
+    "id": "san-francisco",
+    "label": "San Francisco, London, Austin, Lisbon, Singapore",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "github_profile"
   }
 }

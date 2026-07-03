@@ -5,27 +5,34 @@
   "displayName": "vercel-labs/next-cache-components",
   "description": "Caching strategies and cache-aware components in Next.js",
   "stars": 0,
-  "category": "Skills by Typefully",
+  "category": "Official Skills by",
   "source": "voltagent",
   "url": "https://officialskills.sh/vercel-labs/skills/next-cache-components",
   "githubRepo": "",
   "readme": "# vercel-labs/next-cache-components\n\nCaching strategies and cache-aware components in Next.js",
   "readmeHtml": "<h1>vercel-labs/next-cache-components</h1>\n<p>Caching strategies and cache-aware components in Next.js</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.100Z",
+  "updatedAt": "2026-07-03T11:33:56.328Z",
   "author": {
     "login": "vercel-labs",
-    "name": "vercel-labs",
-    "avatarUrl": "",
+    "name": "Vercel Labs",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/108547162?v=4",
     "profileUrl": "https://github.com/vercel-labs",
     "location": ""
   },
   "location": null,
   "related": [
     {
-      "slug": "vercel-labs-react-view-transitions-demo",
-      "displayName": "vercel-labs/react-view-transitions-demo",
-      "stars": 19,
+      "slug": "vercel-labs-next-best-practices",
+      "displayName": "vercel-labs/next-best-practices",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:vercel-labs"
+    },
+    {
+      "slug": "vercel-labs-next-upgrade",
+      "displayName": "vercel-labs/next-upgrade",
+      "stars": 0,
       "relation": "source_overlap",
       "evidence": "author:vercel-labs"
     },
@@ -44,27 +51,6 @@
       "evidence": "author:vercel-labs"
     },
     {
-      "slug": "vercel-labs-composition-patterns",
-      "displayName": "vercel-labs/composition-patterns",
-      "stars": 0,
-      "relation": "source_overlap",
-      "evidence": "author:vercel-labs"
-    },
-    {
-      "slug": "vercel-labs-next-best-practices",
-      "displayName": "vercel-labs/next-best-practices",
-      "stars": 0,
-      "relation": "source_overlap",
-      "evidence": "author:vercel-labs"
-    },
-    {
-      "slug": "vercel-labs-next-upgrade",
-      "displayName": "vercel-labs/next-upgrade",
-      "stars": 0,
-      "relation": "source_overlap",
-      "evidence": "author:vercel-labs"
-    },
-    {
       "slug": "vercel-labs-react-native-skills",
       "displayName": "vercel-labs/react-native-skills",
       "stars": 0,
@@ -72,18 +58,32 @@
       "evidence": "author:vercel-labs"
     },
     {
-      "slug": "typefully-typefully",
-      "displayName": "typefully/typefully",
-      "stars": 0,
+      "slug": "angular-angular-developer",
+      "displayName": "angular/angular-developer",
+      "stars": 544,
       "relation": "shared_tag",
-      "evidence": "Skills by Typefully"
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "testmu-ai-api-skill",
+      "displayName": "testmu-ai/api-skill",
+      "stars": 318,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "veniceai-venice-api-overview",
+      "displayName": "veniceai/venice-api-overview",
+      "stars": 105,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
     }
   ],
   "mapLocation": {
-    "id": "virtual-shanghai",
-    "label": "Global Skill Market / Shanghai / Skills by Typefully",
-    "lat": 31.2304,
-    "lon": 121.4737,
+    "id": "virtual-sydney",
+    "label": "Global Skill Market / Sydney / Official Skills by",
+    "lat": -33.8688,
+    "lon": 151.2093,
     "source": "virtual_market"
   }
 }

@@ -4,77 +4,77 @@
   "name": "hand-drawn-diagrams",
   "displayName": "muthuishere/hand-drawn-diagrams",
   "description": "Generate hand-drawn Excalidraw diagrams from a prompt — animated SVG, hosted edit link, and PNG export. Works with Claude Code, Codex, Gemini CLI, and any agent supporting standard skill paths",
-  "stars": 27,
+  "stars": 47,
   "category": "Community Skills",
   "source": "voltagent",
   "url": "https://github.com/muthuishere/hand-drawn-diagrams",
   "githubRepo": "muthuishere/hand-drawn-diagrams",
-  "readme": "# muthuishere/hand-drawn-diagrams\n\nGenerate hand-drawn Excalidraw diagrams from a prompt — animated SVG, hosted edit link, and PNG export. Works with Claude Code, Codex, Gemini CLI, and any agent supporting standard skill paths",
-  "readmeHtml": "<h1>muthuishere/hand-drawn-diagrams</h1>\n<p>Generate hand-drawn Excalidraw diagrams from a prompt — animated SVG, hosted edit link, and PNG export. Works with Claude Code, Codex, Gemini CLI, and any agent supporting standard skill paths</p>",
-  "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.060Z",
+  "readme": "# hand-drawn-diagrams\n\nAI skill for turning ideas, notes, systems, and flows into hand-drawn diagrams — with a hosted edit URL, animated video, and PNG, all from a single prompt.\n\n**Jump to:** [What this is](#what-this-is) · [Output](#output) · [Quick start](#quick-start) · [Credits](#credits-and-acknowledgements)\n\n![Demo](assets/demo.gif)\n\n### Example output\n\nStatic PNG — exported on request:\n\n![Example diagram](assets/diagram.png)\n\nAnimated SVG — draws itself stroke by stroke ([view](assets/diagram.animated.svg)):\n\n![Exam revision diagram](assets/thermal-physics-exam-revision.animated.svg)\n\n## What this is\n\n**hand-drawn-diagrams** is an AI skill (for Claude Code, Codex CLI, and compatible agents) that takes a natural language prompt and produces a hand-drawn diagram you can edit, animate, and share — without opening any app.\n\nYou describe what you want. The AI picks the right diagram type, draws it in Excalidraw's sketch style, validates the layout, and hands you a live hosted URL. From there you can edit it in a browser, watch it animate, download the source, or export a PNG.\n\n\n## How it's different from using Excalidraw directly\n\n| | Excalidraw | hand-drawn-diagrams |\n|---|---|---|\n| Starting point | Blank canvas, you draw | Natural language prompt |\n| Diagram type | You decide | AI picks the right route (teaching, UX, architecture, funnel…) |\n| Layout | You position everything | AI assigns non-overlapping coordinates |\n| Animation | Manual or none | Auto-generated animation spec, renders in browser |\n| Output | File on disk | Hosted edit URL + animated SVG + PNG on request |\n| Workspace | You open the app | Files stay in `/tmp/` by default — workspace stays clean |\n\nThis skill is not a replacement for Excalidraw — it sits on top of it. Every diagram it produces is a standard `.excalidraw` file you can open, edit, and own.\n\n## Best for\n\n- students: study notes and exam revision maps\n- teachers: lesson explainers and concept breakdowns\n- architects: system and API flow diagrams\n- builders: sequence diagrams and integration maps\n- designers: UX flows and wireframes\n- product: idea maps and feature flows\n- sales: funnel and conversion visuals\n- doctors: process and patient-facing explainers\n\n## Output\n\nThe agent infers what you want from your prompt and routes to the right output automatically:\n\n| What you ask for | What you get |\n|---|---|\n| \"create a diagram\" / default | Browser opens to hosted Excalidraw editor — edit, tweak, download |\n| \"open the animation\" | Browser opens animated view — diagram draws itself stroke by stroke |\n| \"save as excalidraw\" | `.excalidraw` source file saved to your project |\n| \"save the animation\" | `.animated.svg` saved to your project — plays in any browser |\n| \"save image\" | `.png` saved to your project |\n| \"show image\" | `.png` rendered and opened with your system viewer |\n\nSource files go to `/tmp/hand-drawn-diagrams/` by default — your workspace stays clean.\n\n## Quick start\n\n```bash\nnpx skills add muthuishere/hand-drawn-diagrams\n```\n\nWorks for Claude Code, Codex, OpenCode, Windsurf, GitHub Copilot, Cursor, Gemini CLI, and 40+ more agents. Detects which agents you have installed automatically.\n\nFor all install options, global vs project scope, and uninstall — see [INSTALL.md](INSTALL.md).\n\n## Credits and acknowledgements\n\nThis skill stands on the shoulders of excellent open-source work:\n\n- **[Excalidraw](https://excalidraw.com/)** — the open-source virtual whiteboard that powers the hand-drawn visual style and the hosted editor. All diagrams produced by this skill are standard Excalidraw files.\n  GitHub: [excalidraw/excalidraw](https://github.com/excalidraw/excalidraw)\n\n- **[excalidraw-animate](https://github.com/dai-shi/excalidraw-animate)** by [@dai-shi](https://github.com/dai-shi) — the animation library that renders Excalidraw diagrams as SVGs that draw themselves stroke by stroke. The animated SVG output in this skill is powered by this library.\n\n## License\n\nMIT — see [LICENSE](LICENSE).\n",
+  "readmeHtml": "<h1>hand-drawn-diagrams</h1>\n<p>AI skill for turning ideas, notes, systems, and flows into hand-drawn diagrams — with a hosted edit URL, animated video, and PNG, all from a single prompt.</p>\n<p><strong>Jump to:</strong> [What this is](#what-this-is) · [Output](#output) · [Quick start](#quick-start) · [Credits](#credits-and-acknowledgements)</p>\n<p>![Demo](assets/demo.gif)</p>\n<h3>Example output</h3>\n<p>Static PNG — exported on request:</p>\n<p>![Example diagram](assets/diagram.png)</p>\n<p>Animated SVG — draws itself stroke by stroke ([view](assets/diagram.animated.svg)):</p>\n<p>![Exam revision diagram](assets/thermal-physics-exam-revision.animated.svg)</p>\n<h2>What this is</h2>\n<p><strong>hand-drawn-diagrams</strong> is an AI skill (for Claude Code, Codex CLI, and compatible agents) that takes a natural language prompt and produces a hand-drawn diagram you can edit, animate, and share — without opening any app.</p>\n<p>You describe what you want. The AI picks the right diagram type, draws it in Excalidraw's sketch style, validates the layout, and hands you a live hosted URL. From there you can edit it in a browser, watch it animate, download the source, or export a PNG.</p>\n<h2>How it's different from using Excalidraw directly</h2>\n<p>| | Excalidraw | hand-drawn-diagrams |</p>\n<p>|---|---|---|</p>\n<p>| Starting point | Blank canvas, you draw | Natural language prompt |</p>\n<p>| Diagram type | You decide | AI picks the right route (teaching, UX, architecture, funnel…) |</p>\n<p>| Layout | You position everything | AI assigns non-overlapping coordinates |</p>\n<p>| Animation | Manual or none | Auto-generated animation spec, renders in browser |</p>\n<p>| Output | File on disk | Hosted edit URL + animated SVG + PNG on request |</p>\n<p>| Workspace | You open the app | Files stay in <code>/tmp/</code> by default — workspace stays clean |</p>\n<p>This skill is not a replacement for Excalidraw — it sits on top of it. Every diagram it produces is a standard <code>.excalidraw</code> file you can open, edit, and own.</p>\n<h2>Best for</h2>\n<ul>\n<li>students: study notes and exam revision maps</li>\n<li>teachers: lesson explainers and concept breakdowns</li>\n<li>architects: system and API flow diagrams</li>\n<li>builders: sequence diagrams and integration maps</li>\n<li>designers: UX flows and wireframes</li>\n<li>product: idea maps and feature flows</li>\n<li>sales: funnel and conversion visuals</li>\n<li>doctors: process and patient-facing explainers</li>\n</ul>\n<h2>Output</h2>\n<p>The agent infers what you want from your prompt and routes to the right output automatically:</p>\n<p>| What you ask for | What you get |</p>\n<p>|---|---|</p>\n<p>| \"create a diagram\" / default | Browser opens to hosted Excalidraw editor — edit, tweak, download |</p>\n<p>| \"open the animation\" | Browser opens animated view — diagram draws itself stroke by stroke |</p>\n<p>| \"save as excalidraw\" | <code>.excalidraw</code> source file saved to your project |</p>\n<p>| \"save the animation\" | <code>.animated.svg</code> saved to your project — plays in any browser |</p>\n<p>| \"save image\" | <code>.png</code> saved to your project |</p>\n<p>| \"show image\" | <code>.png</code> rendered and opened with your system viewer |</p>\n<p>Source files go to <code>/tmp/hand-drawn-diagrams/</code> by default — your workspace stays clean.</p>\n<h2>Quick start</h2>\n<pre><code>\nnpx skills add muthuishere/hand-drawn-diagrams\n\n</code></pre>\n<p>Works for Claude Code, Codex, OpenCode, Windsurf, GitHub Copilot, Cursor, Gemini CLI, and 40+ more agents. Detects which agents you have installed automatically.</p>\n<p>For all install options, global vs project scope, and uninstall — see [INSTALL.md](INSTALL.md).</p>\n<h2>Credits and acknowledgements</h2>\n<p>This skill stands on the shoulders of excellent open-source work:</p>\n<ul>\n<li><strong><a href=\"https://excalidraw.com/\" target=\"_blank\" rel=\"noreferrer\">Excalidraw</a></strong> — the open-source virtual whiteboard that powers the hand-drawn visual style and the hosted editor. All diagrams produced by this skill are standard Excalidraw files.</li>\n</ul>\n<p>  GitHub: <a href=\"https://github.com/excalidraw/excalidraw\" target=\"_blank\" rel=\"noreferrer\">excalidraw/excalidraw</a></p>\n<ul>\n<li><strong><a href=\"https://github.com/dai-shi/excalidraw-animate\" target=\"_blank\" rel=\"noreferrer\">excalidraw-animate</a></strong> by <a href=\"https://github.com/dai-shi\" target=\"_blank\" rel=\"noreferrer\">@dai-shi</a> — the animation library that renders Excalidraw diagrams as SVGs that draw themselves stroke by stroke. The animated SVG output in this skill is powered by this library.</li>\n</ul>\n<h2>License</h2>\n<p>MIT — see [LICENSE](LICENSE).</p>",
+  "skillMd": "---\nname: hand-drawn-diagrams\ndescription: Create hand-drawn Excalidraw diagrams, flows, explainers, wireframes, and page mockups. Default to monochrome sketch output; allow restrained color only for page mockups when the user explicitly wants webpage-like fidelity.\n---\n\nFollow the instructions in `./workflow.md`.\n\nKey references:\n- `references/index.md`\n- `references/activation-routing.xml`\n- `references/fundamental-shapes.md`\n\n## Recommended: Chrome DevTools MCP\n\nInstall `chrome-devtools-mcp` for fast PNG and animated SVG rendering — uses a real browser, no Playwright install required.\n\n```\nnpm install -g chrome-devtools-mcp\n```\n\nThen add it to your Claude Code MCP config (`~/.claude/settings.json`):\n\n```json\n{\n  \"mcpServers\": {\n    \"chrome-devtools-mcp\": {\n      \"command\": \"npx\",\n      \"args\": [\"chrome-devtools-mcp\"]\n    }\n  }\n}\n```\n\nWithout it, PNG and video rendering falls back to Playwright (slower, requires browser install).\n",
+  "updatedAt": "2026-05-16T13:06:08Z",
   "author": {
     "login": "muthuishere",
-    "name": "muthuishere",
-    "avatarUrl": "",
+    "name": "Muthukumaran Navaneethakrishnan",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/132564?v=4",
     "profileUrl": "https://github.com/muthuishere",
-    "location": ""
+    "location": "Chennai"
   },
   "location": null,
   "related": [
     {
-      "slug": "obra-defense-in-depth",
-      "displayName": "obra/defense-in-depth",
-      "stars": 186953,
+      "slug": "obra-brainstorming",
+      "displayName": "obra/brainstorming",
+      "stars": 245089,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mattpocock-skills",
+      "displayName": "mattpocock/skills",
+      "stars": 155097,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
       "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
-      "stars": 77115,
+      "stars": 100227,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "lum1104-understand-anything",
+      "displayName": "Lum1104/understand-anything",
+      "stars": 70574,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "santifer-career-ops",
+      "displayName": "santifer/career-ops",
+      "stars": 58303,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "leonxlnx-taste-skill",
+      "displayName": "Leonxlnx/taste-skill",
+      "stars": 55314,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "panniantong-agent-reach",
+      "displayName": "Panniantong/Agent-Reach",
+      "stars": 49547,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "mvanhorn-last30days-skill",
       "displayName": "mvanhorn/last30days-skill",
-      "stars": 25573,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "k-dense-ai-claude-scientific-skills",
-      "displayName": "K-Dense-AI/claude-scientific-skills",
-      "stars": 20299,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-fundamentals",
-      "displayName": "muratcankoylan/context-fundamentals",
-      "stars": 15494,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-degradation",
-      "displayName": "muratcankoylan/context-degradation",
-      "stars": 15494,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-compression",
-      "displayName": "muratcankoylan/context-compression",
-      "stars": 15494,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-optimization",
-      "displayName": "muratcankoylan/context-optimization",
-      "stars": 15494,
+      "stars": 48607,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     }

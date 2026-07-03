@@ -1,0 +1,89 @@
+{
+  "id": "skill:redhat-sre-skillpack",
+  "slug": "redhat-sre-skillpack",
+  "name": "sre-skillpack",
+  "displayName": "redhat/sre-skillpack",
+  "description": "Discover, remediate, and verify CVEs across your RHEL fleet — orchestrating Red Hat Lightspeed and Ansible Automation Platform through a single workflow.",
+  "stars": 0,
+  "category": "video-search-and-summarization",
+  "source": "voltagent",
+  "url": "https://catalog.redhat.com/en/ai/skills/detail/agentic-skill-pack-for-site-reliability-engineers",
+  "githubRepo": "",
+  "readme": "# redhat/sre-skillpack\n\nDiscover, remediate, and verify CVEs across your RHEL fleet — orchestrating Red Hat Lightspeed and Ansible Automation Platform through a single workflow.",
+  "readmeHtml": "<h1>redhat/sre-skillpack</h1>\n<p>Discover, remediate, and verify CVEs across your RHEL fleet — orchestrating Red Hat Lightspeed and Ansible Automation Platform through a single workflow.</p>",
+  "skillMd": "",
+  "updatedAt": "2026-07-03T11:33:56.389Z",
+  "author": {
+    "login": "redhat",
+    "name": "redhat",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/391346?v=4",
+    "profileUrl": "https://github.com/redhat",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "redhat-cve-skillpack",
+      "displayName": "redhat/cve-skillpack",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:redhat"
+    },
+    {
+      "slug": "redhat-openshift-skillpack",
+      "displayName": "redhat/openshift-skillpack",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:redhat"
+    },
+    {
+      "slug": "redhat-openshift-virtualization",
+      "displayName": "redhat/openshift-virtualization",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:redhat"
+    },
+    {
+      "slug": "google-cloud-agent-platform-skill-registry",
+      "displayName": "google/cloud/agent-platform-skill-registry",
+      "stars": 14368,
+      "relation": "shared_tag",
+      "evidence": "video-search-and-summarization"
+    },
+    {
+      "slug": "cypress-io-cypress-author",
+      "displayName": "cypress-io/cypress-author",
+      "stars": 34,
+      "relation": "shared_tag",
+      "evidence": "video-search-and-summarization"
+    },
+    {
+      "slug": "redhat-cve-skillpack",
+      "displayName": "redhat/cve-skillpack",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "video-search-and-summarization"
+    },
+    {
+      "slug": "redhat-openshift-skillpack",
+      "displayName": "redhat/openshift-skillpack",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "video-search-and-summarization"
+    },
+    {
+      "slug": "redhat-openshift-virtualization",
+      "displayName": "redhat/openshift-virtualization",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "video-search-and-summarization"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-berlin",
+    "label": "Global Skill Market / Berlin / video-search-and-summarization",
+    "lat": 52.52,
+    "lon": 13.405,
+    "source": "virtual_market"
+  }
+}

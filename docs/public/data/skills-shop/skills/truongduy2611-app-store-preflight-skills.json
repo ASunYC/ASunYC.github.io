@@ -4,77 +4,77 @@
   "name": "app-store-preflight-skills",
   "displayName": "truongduy2611/app-store-preflight-skills",
   "description": "Scan iOS/macOS projects to catch common mistakes that lead to App Store rejection before submission",
-  "stars": 1162,
+  "stars": 1266,
   "category": "Community Skills",
   "source": "voltagent",
   "url": "https://github.com/truongduy2611/app-store-preflight-skills",
   "githubRepo": "truongduy2611/app-store-preflight-skills",
-  "readme": "# truongduy2611/app-store-preflight-skills\n\nScan iOS/macOS projects to catch common mistakes that lead to App Store rejection before submission",
-  "readmeHtml": "<h1>truongduy2611/app-store-preflight-skills</h1>\n<p>Scan iOS/macOS projects to catch common mistakes that lead to App Store rejection before submission</p>",
-  "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.031Z",
+  "readme": "# ✈️ App Store Preflight\n\nAn AI agent skill that runs pre-submission checks on your iOS/macOS project to catch common mistakes that lead to App Store rejection.\n\n## Overview\n\nPreflight helps developers catch potential App Store Review guideline violations **before** submitting their app. It scans your Xcode project, source code, metadata, and configuration files to flag issues that commonly result in rejections from Apple.\n\nThis skill integrates with the [`asc` CLI](https://github.com/rudrankriyam/App-Store-Connect-CLI) (`brew install asc`) and the [ASC CLI Skills](https://github.com/rudrankriyam/app-store-connect-cli-skills) to pull and inspect App Store metadata.\n\nMost metadata examples assume the canonical JSON layout written by\n`asc metadata pull`. If you are starting from fastlane metadata, adapt the path\nexamples or pull the canonical `asc` layout first.\n\n## Install\n\n```bash\nnpx skills add truongduy2611/app-store-preflight-skills\n```\n\n## Guideline Index (by App Type)\n\nThe `references/guidelines/` directory contains a **complete index of all 100+ Apple Review Guidelines** and **10 app-type specific checklists**:\n\n| Checklist | App Type |\n|-----------|----------|\n| [all_apps.md](./references/guidelines/by-app-type/all_apps.md) | Universal (every submission) |\n| [subscription_iap.md](./references/guidelines/by-app-type/subscription_iap.md) | Subscriptions / In-App Purchases |\n| [social_ugc.md](./references/guidelines/by-app-type/social_ugc.md) | Social / User-Generated Content |\n| [kids.md](./references/guidelines/by-app-type/kids.md) | Kids Category |\n| [health_fitness.md](./references/guidelines/by-app-type/health_fitness.md) | Health, Fitness & Medical |\n| [games.md](./references/guidelines/by-app-type/games.md) | Games |\n| [macos.md](./references/guidelines/by-app-type/macos.md) | macOS / Mac App Store |\n| [ai_apps.md](./references/guidelines/by-app-type/ai_apps.md) | AI / Generative AI |\n| [crypto_finance.md](./references/guidelines/by-app-type/crypto_finance.md) | Crypto, Finance & Trading |\n| [vpn.md](./references/guidelines/by-app-type/vpn.md) | VPN & Networking |\n\n📖 Full guideline reference: [references/guidelines/README.md](./references/guidelines/README.md)\n\n## How It Works\n\n1. **Identify app type** → load the matching checklist from `references/guidelines/by-app-type/`\n2. **Pull metadata** using `asc metadata pull --app \"<APP_ID>\" --version \"<VERSION>\" --dir ./metadata` (or the `asc-metadata-sync` skill)\n3. **Scan** against rejection rules in `references/rules/`\n4. **Report** findings with severity, affected files, and resolution steps\n5. **Autofix + Validate** — apply fixes, re-run affected checks\n\nSee [`SKILL.md`](./SKILL.md) for the full AI agent instructions.\n\n## Rejection Rules\n\nAll rules live in `references/rules/`, organized by category:\n\n### Metadata (`references/rules/metadata/`)\n\n| Rule | Guideline | What It Catches |\n|------|-----------|-----------------|\n| [review_notes_new_submission](./references/rules/metadata/review_notes_new_submission.md) | 2.1 | Incomplete review notes for new app submissions (missing screen recording, app purpose, test credentials, external services, regional info, or regulatory docs) |\n| [competitor_terms](./references/rules/metadata/competitor_terms.md) | 2.3.1 | Android, Google Play, and other competitor brands |\n| [apple_trademark](./references/rules/metadata/apple_trademark.md) | 5.2.5 | Apple device images in icon, Apple trademark misuse |\n| [china_storefront](./references/rules/metadata/china_storefront.md) | 5 | OpenAI/ChatGPT/Gemini references (China) |\n| [accurate_metadata](./references/rules/metadata/accurate_metadata.md) | 2.3.4 | Device frames in app preview videos |\n| [subscription_metadata](./references/rules/metadata/subscription_metadata.md) | 3.1.2 | Missing ToS/EULA and Privacy Policy links |\n\n### Subscriptions (`references/rules/subscription/`)\n\n| Rule | Guideline | What It Catches |\n|------|-----------|----------------|\n| [missing_tos_pp](./references/rules/subscription/missing_tos_pp.md) | 3.1.2 | No Terms or Privacy Policy in app/metadata |\n| [misleading_pricing](./references/rules/subscription/misleading_pricing.md) | 3.1.2 | Monthly price more prominent than billed amount |\n\n### Privacy (`references/rules/privacy/`)\n\n| Rule | Guideline | What It Catches |\n|------|-----------|----------------|\n| [unnecessary_data](./references/rules/privacy/unnecessary_data.md) | 5.1.1 | Requiring irrelevant personal data |\n| [privacy_manifest](./references/rules/privacy/privacy_manifest.md) | 5.1.1 | Missing `PrivacyInfo.xcprivacy` |\n\n### Design (`references/rules/design/`)\n\n| Rule | Guideline | What It Catches |\n|------|-----------|----------------|\n| [sign_in_with_apple](./references/rules/design/sign_in_with_apple.md) | 4.0 | Asking name/email after SIWA |\n| [minimum_functionality](./references/rules/design/minimum_functionality.md) | 4.2 | WebView wrappers, apps with < 3 screens, no unique value |\n\n### Entitlements (`references/rules/entitlements/`)\n\n| Rule | Guideline | What It Catches |\n|------|-----------|----------------|\n| [unused_entitlements](./references/rules/entitlements/unused_entitlements.md) | 2.4.5(i) | Unused entitlements in Xcode project |\n\n## Adding New Rules\n\nCreate a `.md` file in the appropriate `references/rules/` subdirectory:\n\n```markdown\n# Rule: [Short Title]\n- **Guideline**: [Apple Guideline Number]\n- **Severity**: REJECTION | WARNING\n- **Category**: metadata | subscription | privacy | design | entitlements\n\n## What to Check\n## How to Detect\n## Resolution\n## Example Rejection\n```\n\n## Related Skills\n\n- [app-store-connect-cli-skills](https://github.com/rudrankriyam/app-store-connect-cli-skills) — ASC CLI skills for metadata sync, ASO audit, release flow\n\n## License\n\nMIT\n",
+  "readmeHtml": "<h1>✈️ App Store Preflight</h1>\n<p>An AI agent skill that runs pre-submission checks on your iOS/macOS project to catch common mistakes that lead to App Store rejection.</p>\n<h2>Overview</h2>\n<p>Preflight helps developers catch potential App Store Review guideline violations <strong>before</strong> submitting their app. It scans your Xcode project, source code, metadata, and configuration files to flag issues that commonly result in rejections from Apple.</p>\n<p>This skill integrates with the <a href=\"https://github.com/rudrankriyam/App-Store-Connect-CLI\" target=\"_blank\" rel=\"noreferrer\"><code>asc</code> CLI</a> (<code>brew install asc</code>) and the <a href=\"https://github.com/rudrankriyam/app-store-connect-cli-skills\" target=\"_blank\" rel=\"noreferrer\">ASC CLI Skills</a> to pull and inspect App Store metadata.</p>\n<p>Most metadata examples assume the canonical JSON layout written by</p>\n<p><code>asc metadata pull</code>. If you are starting from fastlane metadata, adapt the path</p>\n<p>examples or pull the canonical <code>asc</code> layout first.</p>\n<h2>Install</h2>\n<pre><code>\nnpx skills add truongduy2611/app-store-preflight-skills\n\n</code></pre>\n<h2>Guideline Index (by App Type)</h2>\n<p>The <code>references/guidelines/</code> directory contains a <strong>complete index of all 100+ Apple Review Guidelines</strong> and <strong>10 app-type specific checklists</strong>:</p>\n<p>| Checklist | App Type |</p>\n<p>|-----------|----------|</p>\n<p>| [all_apps.md](./references/guidelines/by-app-type/all_apps.md) | Universal (every submission) |</p>\n<p>| [subscription_iap.md](./references/guidelines/by-app-type/subscription_iap.md) | Subscriptions / In-App Purchases |</p>\n<p>| [social_ugc.md](./references/guidelines/by-app-type/social_ugc.md) | Social / User-Generated Content |</p>\n<p>| [kids.md](./references/guidelines/by-app-type/kids.md) | Kids Category |</p>\n<p>| [health_fitness.md](./references/guidelines/by-app-type/health_fitness.md) | Health, Fitness &amp; Medical |</p>\n<p>| [games.md](./references/guidelines/by-app-type/games.md) | Games |</p>\n<p>| [macos.md](./references/guidelines/by-app-type/macos.md) | macOS / Mac App Store |</p>\n<p>| [ai_apps.md](./references/guidelines/by-app-type/ai_apps.md) | AI / Generative AI |</p>\n<p>| [crypto_finance.md](./references/guidelines/by-app-type/crypto_finance.md) | Crypto, Finance &amp; Trading |</p>\n<p>| [vpn.md](./references/guidelines/by-app-type/vpn.md) | VPN &amp; Networking |</p>\n<p>📖 Full guideline reference: [references/guidelines/README.md](./references/guidelines/README.md)</p>\n<h2>How It Works</h2>\n<p>1. <strong>Identify app type</strong> → load the matching checklist from <code>references/guidelines/by-app-type/</code></p>\n<p>2. <strong>Pull metadata</strong> using <code>asc metadata pull --app \"&lt;APP_ID&gt;\" --version \"&lt;VERSION&gt;\" --dir ./metadata</code> (or the <code>asc-metadata-sync</code> skill)</p>\n<p>3. <strong>Scan</strong> against rejection rules in <code>references/rules/</code></p>\n<p>4. <strong>Report</strong> findings with severity, affected files, and resolution steps</p>\n<p>5. <strong>Autofix + Validate</strong> — apply fixes, re-run affected checks</p>\n<p>See [<code>SKILL.md</code>](./SKILL.md) for the full AI agent instructions.</p>\n<h2>Rejection Rules</h2>\n<p>All rules live in <code>references/rules/</code>, organized by category:</p>\n<h3>Metadata (<code>references/rules/metadata/</code>)</h3>\n<p>| Rule | Guideline | What It Catches |</p>\n<p>|------|-----------|-----------------|</p>\n<p>| [review_notes_new_submission](./references/rules/metadata/review_notes_new_submission.md) | 2.1 | Incomplete review notes for new app submissions (missing screen recording, app purpose, test credentials, external services, regional info, or regulatory docs) |</p>\n<p>| [competitor_terms](./references/rules/metadata/competitor_terms.md) | 2.3.1 | Android, Google Play, and other competitor brands |</p>\n<p>| [apple_trademark](./references/rules/metadata/apple_trademark.md) | 5.2.5 | Apple device images in icon, Apple trademark misuse |</p>\n<p>| [china_storefront](./references/rules/metadata/china_storefront.md) | 5 | OpenAI/ChatGPT/Gemini references (China) |</p>\n<p>| [accurate_metadata](./references/rules/metadata/accurate_metadata.md) | 2.3.4 | Device frames in app preview videos |</p>\n<p>| [subscription_metadata](./references/rules/metadata/subscription_metadata.md) | 3.1.2 | Missing ToS/EULA and Privacy Policy links |</p>\n<h3>Subscriptions (<code>references/rules/subscription/</code>)</h3>\n<p>| Rule | Guideline | What It Catches |</p>\n<p>|------|-----------|----------------|</p>\n<p>| [missing_tos_pp](./references/rules/subscription/missing_tos_pp.md) | 3.1.2 | No Terms or Privacy Policy in app/metadata |</p>\n<p>| [misleading_pricing](./references/rules/subscription/misleading_pricing.md) | 3.1.2 | Monthly price more prominent than billed amount |</p>\n<h3>Privacy (<code>references/rules/privacy/</code>)</h3>\n<p>| Rule | Guideline | What It Catches |</p>\n<p>|------|-----------|----------------|</p>\n<p>| [unnecessary_data](./references/rules/privacy/unnecessary_data.md) | 5.1.1 | Requiring irrelevant personal data |</p>\n<p>| [privacy_manifest](./references/rules/privacy/privacy_manifest.md) | 5.1.1 | Missing <code>PrivacyInfo.xcprivacy</code> |</p>\n<h3>Design (<code>references/rules/design/</code>)</h3>\n<p>| Rule | Guideline | What It Catches |</p>\n<p>|------|-----------|----------------|</p>\n<p>| [sign_in_with_apple](./references/rules/design/sign_in_with_apple.md) | 4.0 | Asking name/email after SIWA |</p>\n<p>| [minimum_functionality](./references/rules/design/minimum_functionality.md) | 4.2 | WebView wrappers, apps with &lt; 3 screens, no unique value |</p>\n<h3>Entitlements (<code>references/rules/entitlements/</code>)</h3>\n<p>| Rule | Guideline | What It Catches |</p>\n<p>|------|-----------|----------------|</p>\n<p>| [unused_entitlements](./references/rules/entitlements/unused_entitlements.md) | 2.4.5(i) | Unused entitlements in Xcode project |</p>\n<h2>Adding New Rules</h2>\n<p>Create a <code>.md</code> file in the appropriate <code>references/rules/</code> subdirectory:</p>\n<pre><code>\n# Rule: [Short Title]\n\n- **Guideline**: [Apple Guideline Number]\n\n- **Severity**: REJECTION | WARNING\n\n- **Category**: metadata | subscription | privacy | design | entitlements\n\n\n\n## What to Check\n\n## How to Detect\n\n## Resolution\n\n## Example Rejection\n\n</code></pre>\n<h2>Related Skills</h2>\n<ul>\n<li><a href=\"https://github.com/rudrankriyam/app-store-connect-cli-skills\" target=\"_blank\" rel=\"noreferrer\">app-store-connect-cli-skills</a> — ASC CLI skills for metadata sync, ASO audit, release flow</li>\n</ul>\n<h2>License</h2>\n<p>MIT</p>",
+  "skillMd": "---\nname: app-store-preflight-skills\ndescription: >\n  Scan an iOS/macOS Xcode project for common App Store rejection patterns before\n  submission. Use when preparing an app for App Store review, after receiving a\n  rejection from Apple, or when auditing metadata, subscriptions, privacy manifests,\n  entitlements, or design compliance. Integrates with the asc CLI for metadata inspection.\nmetadata:\n  author: truongduy2611\n  version: \"1.0\"\n---\n\n# App Store Preflight Skill\n\nRun pre-submission checks on your iOS/macOS project to catch common App Store rejection patterns.\n\n## Prerequisites\n\n- **asc CLI** — Install via Homebrew: `brew install asc` ([App-Store-Connect-CLI](https://github.com/rudrankriyam/App-Store-Connect-CLI))\n- **ASC CLI Skills** — [app-store-connect-cli-skills](https://github.com/rudrankriyam/app-store-connect-cli-skills) for `asc` usage patterns\n- **jq** — Optional, but used by some JSON-inspection examples in the rule docs\n\n## Step 1: Identify App Type → Load Checklist\n\nDetermine which guidelines apply by loading the relevant checklist from `references/guidelines/by-app-type/`. Always start with `all_apps.md`, then add the app-type-specific one:\n\n| App Type | Checklist |\n|----------|-----------|\n| Every app | `references/guidelines/by-app-type/all_apps.md` |\n| Subscriptions / IAP | `references/guidelines/by-app-type/subscription_iap.md` |\n| Social / UGC | `references/guidelines/by-app-type/social_ugc.md` |\n| Kids Category | `references/guidelines/by-app-type/kids.md` |\n| Health & Fitness | `references/guidelines/by-app-type/health_fitness.md` |\n| Games | `references/guidelines/by-app-type/games.md` |\n| macOS | `references/guidelines/by-app-type/macos.md` |\n| AI / Generative AI | `references/guidelines/by-app-type/ai_apps.md` |\n| Crypto & Finance | `references/guidelines/by-app-type/crypto_finance.md` |\n| VPN | `references/guidelines/by-app-type/vpn.md` |\n\nFull guideline index: `references/guidelines/README.md`\n\n## Step 2: Pull Metadata for Inspection\n\nPull the latest App Store metadata using the `asc` CLI:\n\n```bash\n# Pull canonical metadata JSON for the version you want to review\nasc metadata pull --app \"<APP_ID>\" --version \"<VERSION>\" --dir ./metadata\n```\n\n`asc metadata pull` writes app info files to `./metadata/app-info/*.json` and\nversion-localization files to `./metadata/version/<VERSION>/*.json`.\n\nMost rule examples below assume the canonical JSON layout written by\n`asc metadata pull`.\n\nIf you already have metadata in another layout (for example fastlane\n`metadata/`), either adapt the file-path examples to that structure or pull the\ncanonical `asc` layout first.\n\n## Step 3: Run Rejection Rule Checks\n\nFor each category, load the relevant rule files from `references/rules/` and inspect. Each rule contains: **What to Check**, **How to Detect**, **Resolution**, and **Example Rejection**.\n\n| Category | Rule Files |\n|----------|------------|\n| Metadata | `references/rules/metadata/*.md` |\n| Subscription | `references/rules/subscription/*.md` |\n| Privacy | `references/rules/privacy/*.md` |\n| Design | `references/rules/design/*.md` |\n| Entitlements | `references/rules/entitlements/*.md` |\n\n## Step 4: Report Findings\n\nProduce a summary report using this template:\n\n```markdown\n## Preflight Report\n\n### ❌ Rejections Found (N)\n- [GUIDELINE X.X.X] Description of issue\n  - File: path/to/offending/file\n  - Fix: What to do\n\n### ⚠️ Warnings (N)\n- [GUIDELINE X.X.X] Potential issue\n\n### ✅ Passed (N)\n- [Category] All checks passed\n```\n\nOrder by severity: rejections first, then warnings, then passed.\n\n## Step 5: Autofix + Validate\n\nSome issues can be auto-fixed:\n- **Competitor terms** → Suggest replacement text with competitor names removed\n- **Metadata character limits** → Show current vs. max length\n- **Missing links** → Generate template ToS/PP URLs\n\nAfter applying any auto-fix, **re-run the affected checks** to confirm the fix resolved the violation. Only mark as resolved once the re-scan passes.\n\nFor issues requiring manual intervention (screenshots, UI redesign), provide clear instructions but do not auto-fix.\n\n## Gotchas\n\n- **China storefront** — Banned AI terms (ChatGPT, Gemini, etc.) are checked across ALL locales, not just `zh-Hans`. Apple checks every locale visible in the China storefront.\n- **Privacy manifests** — `PrivacyInfo.xcprivacy` is required even if your app doesn't call Required Reason APIs directly. Third-party SDKs (Firebase, Amplitude, etc.) that use `UserDefaults` or `NSFileManager` trigger this requirement transitively.\n- **asc auth** — `asc metadata pull` requires App Store Connect authentication. Run `asc auth login` first, or set `ASC_KEY_ID`, `ASC_ISSUER_ID`, and one of `ASC_PRIVATE_KEY_PATH` / `ASC_PRIVATE_KEY` / `ASC_PRIVATE_KEY_B64`. If you're unsure what `asc` is picking up, run `asc auth doctor`.\n- **Subscription metadata** — Apple requires ToS/PP links in BOTH the App Store description AND the in-app subscription purchase screen. Missing either one is a separate rejection.\n- **macOS entitlements** — Apple will ask you to justify every temporary exception entitlement (`com.apple.security.temporary-exception.*`). Remove entitlements you don't actively use.\n\n## Adding New Rules\n\nCreate a `.md` file in the appropriate `references/rules/` subdirectory:\n\n```markdown\n# Rule: [Short Title]\n- **Guideline**: [Apple Guideline Number]\n- **Severity**: REJECTION | WARNING\n- **Category**: metadata | subscription | privacy | design | entitlements\n\n## What to Check\n## How to Detect\n## Resolution\n## Example Rejection\n```\n",
+  "updatedAt": "2026-05-29T06:22:31Z",
   "author": {
     "login": "truongduy2611",
-    "name": "truongduy2611",
-    "avatarUrl": "",
+    "name": "Duy Nguyen",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/15882983?v=4",
     "profileUrl": "https://github.com/truongduy2611",
     "location": ""
   },
   "location": null,
   "related": [
     {
-      "slug": "obra-defense-in-depth",
-      "displayName": "obra/defense-in-depth",
-      "stars": 186953,
+      "slug": "obra-brainstorming",
+      "displayName": "obra/brainstorming",
+      "stars": 245089,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mattpocock-skills",
+      "displayName": "mattpocock/skills",
+      "stars": 155097,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
       "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
-      "stars": 77115,
+      "stars": 100227,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "lum1104-understand-anything",
+      "displayName": "Lum1104/understand-anything",
+      "stars": 70574,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "santifer-career-ops",
+      "displayName": "santifer/career-ops",
+      "stars": 58303,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "leonxlnx-taste-skill",
+      "displayName": "Leonxlnx/taste-skill",
+      "stars": 55314,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "panniantong-agent-reach",
+      "displayName": "Panniantong/Agent-Reach",
+      "stars": 49547,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "mvanhorn-last30days-skill",
       "displayName": "mvanhorn/last30days-skill",
-      "stars": 25573,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "k-dense-ai-claude-scientific-skills",
-      "displayName": "K-Dense-AI/claude-scientific-skills",
-      "stars": 20299,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-fundamentals",
-      "displayName": "muratcankoylan/context-fundamentals",
-      "stars": 15494,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-degradation",
-      "displayName": "muratcankoylan/context-degradation",
-      "stars": 15494,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-compression",
-      "displayName": "muratcankoylan/context-compression",
-      "stars": 15494,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-optimization",
-      "displayName": "muratcankoylan/context-optimization",
-      "stars": 15494,
+      "stars": 48607,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     }

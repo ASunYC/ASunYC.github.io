@@ -5,30 +5,23 @@
   "displayName": "googleworkspace/gws-classroom",
   "description": "Manage Google Classroom classes, rosters, and coursework",
   "stars": 0,
-  "category": "Skills by Typefully",
+  "category": "Official Skills by",
   "source": "voltagent",
   "url": "https://officialskills.sh/googleworkspace/skills/gws-classroom",
   "githubRepo": "",
   "readme": "# googleworkspace/gws-classroom\n\nManage Google Classroom classes, rosters, and coursework",
   "readmeHtml": "<h1>googleworkspace/gws-classroom</h1>\n<p>Manage Google Classroom classes, rosters, and coursework</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.102Z",
+  "updatedAt": "2026-07-03T11:33:56.336Z",
   "author": {
     "login": "googleworkspace",
-    "name": "googleworkspace",
-    "avatarUrl": "",
+    "name": "Google Workspace",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/3708359?v=4",
     "profileUrl": "https://github.com/googleworkspace",
-    "location": ""
+    "location": "☁️"
   },
   "location": null,
   "related": [
-    {
-      "slug": "googleworkspace-cli",
-      "displayName": "googleworkspace/cli",
-      "stars": 25868,
-      "relation": "source_overlap",
-      "evidence": "author:googleworkspace"
-    },
     {
       "slug": "googleworkspace-gws-shared",
       "displayName": "googleworkspace/gws-shared",
@@ -77,13 +70,20 @@
       "stars": 0,
       "relation": "source_overlap",
       "evidence": "author:googleworkspace"
+    },
+    {
+      "slug": "googleworkspace-gws-slides",
+      "displayName": "googleworkspace/gws-slides",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:googleworkspace"
     }
   ],
   "mapLocation": {
-    "id": "virtual-london",
-    "label": "Global Skill Market / London / Skills by Typefully",
-    "lat": 51.5072,
-    "lon": -0.1276,
+    "id": "virtual-bengaluru",
+    "label": "Global Skill Market / Bengaluru / Official Skills by",
+    "lat": 12.9716,
+    "lon": 77.5946,
     "source": "virtual_market"
   }
 }

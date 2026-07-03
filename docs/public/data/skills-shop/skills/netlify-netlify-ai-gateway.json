@@ -5,22 +5,28 @@
   "displayName": "netlify/netlify-ai-gateway",
   "description": "Access AI models via unified gateway endpoint",
   "stars": 0,
-  "category": "Skills by Typefully",
+  "category": "Official Skills by",
   "source": "voltagent",
   "url": "https://officialskills.sh/netlify/skills/netlify-ai-gateway",
   "githubRepo": "",
   "readme": "# netlify/netlify-ai-gateway\n\nAccess AI models via unified gateway endpoint",
   "readmeHtml": "<h1>netlify/netlify-ai-gateway</h1>\n<p>Access AI models via unified gateway endpoint</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.101Z",
+  "updatedAt": "2026-07-03T11:33:56.330Z",
   "author": {
     "login": "netlify",
-    "name": "netlify",
-    "avatarUrl": "",
+    "name": "Netlify",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/7892489?v=4",
     "profileUrl": "https://github.com/netlify",
-    "location": ""
+    "location": "San Francisco"
   },
-  "location": null,
+  "location": {
+    "id": "san-francisco",
+    "label": "San Francisco, London, Austin, Lisbon, Singapore",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "github_profile"
+  },
   "related": [
     {
       "slug": "netlify-netlify-functions",
@@ -80,10 +86,10 @@
     }
   ],
   "mapLocation": {
-    "id": "virtual-paris",
-    "label": "Global Skill Market / Paris / Skills by Typefully",
-    "lat": 48.8566,
-    "lon": 2.3522,
-    "source": "virtual_market"
+    "id": "san-francisco",
+    "label": "San Francisco, London, Austin, Lisbon, Singapore",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "github_profile"
   }
 }

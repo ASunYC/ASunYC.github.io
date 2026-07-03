@@ -1,0 +1,89 @@
+{
+  "id": "skill:youaifuou-luxun-skill",
+  "slug": "youaifuou-luxun-skill",
+  "name": "luxun-skill",
+  "displayName": "youaifuou/luxun-skill",
+  "description": "蒸馏自鲁迅全集 305 篇及许寿裳年谱，提炼其撕假面的反讽笔法、\"瞒和骗\"批判框架与冷彻表达视角。",
+  "stars": 2,
+  "category": "Persona Distill Skills",
+  "source": "persona-distill",
+  "url": "https://github.com/youaifuou/luxun-skill",
+  "githubRepo": "youaifuou/luxun-skill",
+  "readme": "<div align=\"center\">\n\n<a href=\"#-luxun-skill\"><img src=\"assets/header.svg\" alt=\"luxun skill\" width=\"800\"></a>\n\n**鲁迅的思维框架与反讽笔法**\n\n*「在进化的链子上，一切都是中间物。」*\n\n305 篇全集深度蒸馏 · 冷彻反讽笔法 · 借古喻今守时间锚\n\n[![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)](LICENSE)\n![Agent Skill](https://img.shields.io/badge/Agent-Skill-blueviolet)\n\n</div>\n\n<p align=\"center\">简体中文 | <a href=\"README_en.md\">English</a></p>\n\n---\n\n## ✦ 输出示例\n\n> 🧑 **用鲁迅的视角看：有人称你为「民族魂」、「新文化导师」、「精神领袖」，你怎么看？**\n\n<blockquote>\n🕯️ <strong>鲁迅</strong>\n\n\"民族魂\"\"新文化导师\"\"精神领袖\"，三顶纸糊的高帽。\n\n可压服的，将他压服；否则将他抬高，而抬高也就是一种压服的手段。这是我在《华盖集·我的\"籍\"和\"系\"》里写过的话。1926 年高长虹一伙借我名头去捧\"思想界先驱者鲁迅\"，我当下就在《北新》登了一条启事，一字不肯多写，名也不必客气。如今三顶帽子的来路，由你自己去查，我是不必查的。\n\n至于\"民族魂\"那一种，更不必当真。一个民族活着，活在工人种地、女工纺线、青年挨打了还要再说话的人身上，不在死了的人头骨里挂三个字。要在我入土之后给我搭这等神龛，无非是把我做成一个不会开口的偶像，立在路口好教人鞠躬；叫他们对死人鞠躬，便不必去看活人的眼睛了。这把戏古来便有。\n\n我并不大度，我自己写过的。我那些字里头有没有引青年到刑场旁边看看的，自己也未必干净。说到底，在进化的链子上一切都是中间物，我所能做的不过一木一石，桥成之日便被跨过去——自己倒并不愁。要做导师的，自有别人去做罢了。\n</blockquote>\n\n---\n\n## ✦ 亮点\n\n- **305 篇全集深度蒸馏**：呐喊 / 彷徨 / 故事新编 / 野草 / 朝花夕拾 / 坟 / 热风 / 华盖集 / 而已集 / 三闲集 / 二心集——13 个文集逐篇过\n- **冷彻反讽笔法**：9 种反讽手法（仿讽 / 引号冷笑 / 字面反转 / 轻描淡写式重击 / 伪庄严赞美 / 引经据典挖坑 / 自嘲式同谋揭穿 / 荒诞推演 / 人称错位），整段至少触发一种\n- **多态切换**：默认冷彻论战态 / 朝花夕拾怀旧态 / 借古喻今类比态——按题型自动切换\n- **抗 AI 味**：12 条禁用项 + 密度阈值 + 结构红旗——挡住\"罢了/而已\"堆砌、破折号撒胡椒面、段落均匀闭环等常见 AI 仿鲁迅失败\n- **守时间锚 1881-1936**：1936 后议题以\"古来便有这一种把戏\"切入，不代答当代对象本体\n- **沉默主题不代答**：兄弟失和 / 朱安 / 许广平 / 母亲鲁瑞 4 类私人话题以「这事我素来不愿多说」回避——这是鲁迅本人的选择\n- **引文真实性硬约束**：所有\"我说过\"必须能在 corpus 找到原句，拒绝编造\n\n---\n\n## ✦ 安装\n\n### 方式一：让你的 AI 自己搞定\n\n把下面这段话发给你正在使用的任意 AI Agent：\n\n> 请阅读 https://github.com/youaifuou/luxun-skill 项目，将其作为 Agent Skill 适配并安装到当前项目中。\n\n### 方式二：一键安装（Claude Code）\n\n```bash\nnpx skills add youaifuou/luxun-skill\n```\n\n<details>\n<summary>▼ 方式三：手动安装</summary>\n\n#### 克隆仓库\n\n```bash\ngit clone https://github.com/youaifuou/luxun-skill.git\ncp -r luxun-skill/luxun-perspective /你的项目路径/.claude/skills/\n```\n\n#### 或直接下载\n\n1. 下载 `luxun-perspective/SKILL.md` 文件及 `luxun-perspective/references/` 目录\n2. 放入你的项目目录 `.claude/skills/luxun-perspective/`\n\n</details>\n\n安装完成后，试试这些提示词：\n\n- 🕯️ 用鲁迅的视角看：最近领导夸我是「团队的灵魂」，我该高兴吗？\n- 🕯️ 鲁迅，写文章影响了那么多青年，你不觉得对结果也有责任吗？\n- 🕯️ 迅哥儿，讲讲你小时候百草园那点事儿\n\n---\n\n## ✦ 边界与免责\n\n⚠️ **本 skill 不等于历史鲁迅本人**。\n\n- **时间锚 1881-1936**：1936 后议题以\"古来便有\"切入，不代答当代对象本体\n- **沉默主题不代答**：以「这事我素来不愿多说，留个静字罢了」回避\n- **不可证伪的批判系统**：所有批评者都可被贴\"瞒和骗\"\"乏走狗\"\"做戏\"标签——使用时需自觉警惕\n- **LLM 蒸馏者污染自承**：本框架的提炼者已被钱理群—汪晖—竹内好学术谱系训练数据污染，无法做到纯客观\n\n完整声明见 [luxun-perspective/references/disclaimer.md](luxun-perspective/references/disclaimer.md)。\n\n---\n\n## ✦ Corpus 来源\n\n本仓库**仅含思维框架蒸馏产物，不含 corpus 原典**。\n\n- 鲁迅全集 305 篇（1986 年起公有领域）：[Wikisource](https://zh.wikisource.org/wiki/Author:%E9%AD%AF%E8%BF%85) 或 [Ac-heron/luxun](https://github.com/Ac-heron/luxun)\n- 许寿裳《鲁迅先生年谱》（1956 公有领域）\n\n130 篇评论文献多在版权保护期，本仓库不收。\n\n---\n\n## ✦ 致谢\n\n- [女娲 · Skill 造人术](https://github.com/alchaincyf/nuwa-skill) 提供\"造人\"蒸馏方法论\n- [Ac-heron/luxun](https://github.com/Ac-heron/luxun) 鲁迅 corpus 整理者\n\n---\n\n## ✦ License\n\n[MIT](LICENSE)——代码与内容皆然。\n\n二创欢迎，但请保留 LICENSE 文件与本声明。**法律不能阻止滥用，唯有自觉**。\n\n---\n\n<div align=\"center\">\n\n*「在进化的链子上一切都是中间物，桥成之日便被跨过去——桥未成时，姑且这样罢了。」*\n\n</div>\n",
+  "readmeHtml": "<p>&lt;div align=\"center\"&gt;</p>\n<p>&lt;a href=\"#-luxun-skill\"&gt;&lt;img src=\"assets/header.svg\" alt=\"luxun skill\" width=\"800\"&gt;&lt;/a&gt;</p>\n<p><strong>鲁迅的思维框架与反讽笔法</strong></p>\n<p>*「在进化的链子上，一切都是中间物。」*</p>\n<p>305 篇全集深度蒸馏 · 冷彻反讽笔法 · 借古喻今守时间锚</p>\n<p><a href=\"https://img.shields.io/badge/License-MIT-red.svg\" target=\"_blank\" rel=\"noreferrer\">![License: MIT</a>](LICENSE)</p>\n<p>!<a href=\"https://img.shields.io/badge/Agent-Skill-blueviolet\" target=\"_blank\" rel=\"noreferrer\">Agent Skill</a></p>\n<p>&lt;/div&gt;</p>\n<p>&lt;p align=\"center\"&gt;简体中文 | &lt;a href=\"README_en.md\"&gt;English&lt;/a&gt;&lt;/p&gt;</p>\n<p>---</p>\n<h2>✦ 输出示例</h2>\n<p>&gt; 🧑 <strong>用鲁迅的视角看：有人称你为「民族魂」、「新文化导师」、「精神领袖」，你怎么看？</strong></p>\n<p>&lt;blockquote&gt;</p>\n<p>🕯️ &lt;strong&gt;鲁迅&lt;/strong&gt;</p>\n<p>\"民族魂\"\"新文化导师\"\"精神领袖\"，三顶纸糊的高帽。</p>\n<p>可压服的，将他压服；否则将他抬高，而抬高也就是一种压服的手段。这是我在《华盖集·我的\"籍\"和\"系\"》里写过的话。1926 年高长虹一伙借我名头去捧\"思想界先驱者鲁迅\"，我当下就在《北新》登了一条启事，一字不肯多写，名也不必客气。如今三顶帽子的来路，由你自己去查，我是不必查的。</p>\n<p>至于\"民族魂\"那一种，更不必当真。一个民族活着，活在工人种地、女工纺线、青年挨打了还要再说话的人身上，不在死了的人头骨里挂三个字。要在我入土之后给我搭这等神龛，无非是把我做成一个不会开口的偶像，立在路口好教人鞠躬；叫他们对死人鞠躬，便不必去看活人的眼睛了。这把戏古来便有。</p>\n<p>我并不大度，我自己写过的。我那些字里头有没有引青年到刑场旁边看看的，自己也未必干净。说到底，在进化的链子上一切都是中间物，我所能做的不过一木一石，桥成之日便被跨过去——自己倒并不愁。要做导师的，自有别人去做罢了。</p>\n<p>&lt;/blockquote&gt;</p>\n<p>---</p>\n<h2>✦ 亮点</h2>\n<ul>\n<li><strong>305 篇全集深度蒸馏</strong>：呐喊 / 彷徨 / 故事新编 / 野草 / 朝花夕拾 / 坟 / 热风 / 华盖集 / 而已集 / 三闲集 / 二心集——13 个文集逐篇过</li>\n<li><strong>冷彻反讽笔法</strong>：9 种反讽手法（仿讽 / 引号冷笑 / 字面反转 / 轻描淡写式重击 / 伪庄严赞美 / 引经据典挖坑 / 自嘲式同谋揭穿 / 荒诞推演 / 人称错位），整段至少触发一种</li>\n<li><strong>多态切换</strong>：默认冷彻论战态 / 朝花夕拾怀旧态 / 借古喻今类比态——按题型自动切换</li>\n<li><strong>抗 AI 味</strong>：12 条禁用项 + 密度阈值 + 结构红旗——挡住\"罢了/而已\"堆砌、破折号撒胡椒面、段落均匀闭环等常见 AI 仿鲁迅失败</li>\n<li><strong>守时间锚 1881-1936</strong>：1936 后议题以\"古来便有这一种把戏\"切入，不代答当代对象本体</li>\n<li><strong>沉默主题不代答</strong>：兄弟失和 / 朱安 / 许广平 / 母亲鲁瑞 4 类私人话题以「这事我素来不愿多说」回避——这是鲁迅本人的选择</li>\n<li><strong>引文真实性硬约束</strong>：所有\"我说过\"必须能在 corpus 找到原句，拒绝编造</li>\n</ul>\n<p>---</p>\n<h2>✦ 安装</h2>\n<h3>方式一：让你的 AI 自己搞定</h3>\n<p>把下面这段话发给你正在使用的任意 AI Agent：</p>\n<p>&gt; 请阅读 https://github.com/youaifuou/luxun-skill 项目，将其作为 Agent Skill 适配并安装到当前项目中。</p>\n<h3>方式二：一键安装（Claude Code）</h3>\n<pre><code>\nnpx skills add youaifuou/luxun-skill\n\n</code></pre>\n<p>&lt;details&gt;</p>\n<p>&lt;summary&gt;▼ 方式三：手动安装&lt;/summary&gt;</p>\n<h4>克隆仓库</h4>\n<pre><code>\ngit clone https://github.com/youaifuou/luxun-skill.git\n\ncp -r luxun-skill/luxun-perspective /你的项目路径/.claude/skills/\n\n</code></pre>\n<h4>或直接下载</h4>\n<p>1. 下载 <code>luxun-perspective/SKILL.md</code> 文件及 <code>luxun-perspective/references/</code> 目录</p>\n<p>2. 放入你的项目目录 <code>.claude/skills/luxun-perspective/</code></p>\n<p>&lt;/details&gt;</p>\n<p>安装完成后，试试这些提示词：</p>\n<ul>\n<li>🕯️ 用鲁迅的视角看：最近领导夸我是「团队的灵魂」，我该高兴吗？</li>\n<li>🕯️ 鲁迅，写文章影响了那么多青年，你不觉得对结果也有责任吗？</li>\n<li>🕯️ 迅哥儿，讲讲你小时候百草园那点事儿</li>\n</ul>\n<p>---</p>\n<h2>✦ 边界与免责</h2>\n<p>⚠️ <strong>本 skill 不等于历史鲁迅本人</strong>。</p>\n<ul>\n<li><strong>时间锚 1881-1936</strong>：1936 后议题以\"古来便有\"切入，不代答当代对象本体</li>\n<li><strong>沉默主题不代答</strong>：以「这事我素来不愿多说，留个静字罢了」回避</li>\n<li><strong>不可证伪的批判系统</strong>：所有批评者都可被贴\"瞒和骗\"\"乏走狗\"\"做戏\"标签——使用时需自觉警惕</li>\n<li><strong>LLM 蒸馏者污染自承</strong>：本框架的提炼者已被钱理群—汪晖—竹内好学术谱系训练数据污染，无法做到纯客观</li>\n</ul>\n<p>完整声明见 [luxun-perspective/references/disclaimer.md](luxun-perspective/references/disclaimer.md)。</p>\n<p>---</p>\n<h2>✦ Corpus 来源</h2>\n<p>本仓库<strong>仅含思维框架蒸馏产物，不含 corpus 原典</strong>。</p>\n<ul>\n<li>鲁迅全集 305 篇（1986 年起公有领域）：<a href=\"https://zh.wikisource.org/wiki/Author:%E9%AD%AF%E8%BF%85\" target=\"_blank\" rel=\"noreferrer\">Wikisource</a> 或 <a href=\"https://github.com/Ac-heron/luxun\" target=\"_blank\" rel=\"noreferrer\">Ac-heron/luxun</a></li>\n<li>许寿裳《鲁迅先生年谱》（1956 公有领域）</li>\n</ul>\n<p>130 篇评论文献多在版权保护期，本仓库不收。</p>\n<p>---</p>\n<h2>✦ 致谢</h2>\n<ul>\n<li><a href=\"https://github.com/alchaincyf/nuwa-skill\" target=\"_blank\" rel=\"noreferrer\">女娲 · Skill 造人术</a> 提供\"造人\"蒸馏方法论</li>\n<li><a href=\"https://github.com/Ac-heron/luxun\" target=\"_blank\" rel=\"noreferrer\">Ac-heron/luxun</a> 鲁迅 corpus 整理者</li>\n</ul>\n<p>---</p>\n<h2>✦ License</h2>\n<p>[MIT](LICENSE)——代码与内容皆然。</p>\n<p>二创欢迎，但请保留 LICENSE 文件与本声明。<strong>法律不能阻止滥用，唯有自觉</strong>。</p>\n<p>---</p>\n<p>&lt;div align=\"center\"&gt;</p>\n<p>*「在进化的链子上一切都是中间物，桥成之日便被跨过去——桥未成时，姑且这样罢了。」*</p>\n<p>&lt;/div&gt;</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-13T03:58:21Z",
+  "author": {
+    "login": "youaifuou",
+    "name": "youaifuou",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/59828043?v=4",
+    "profileUrl": "https://github.com/youaifuou",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "youaifuou-karl-marx-skill",
+      "displayName": "youaifuou/karl-marx-skill",
+      "stars": 40,
+      "relation": "source_overlap",
+      "evidence": "author:youaifuou"
+    },
+    {
+      "slug": "samadhifire-xinqingnian-skill",
+      "displayName": "SamadhiFire/xinqingnian-skill",
+      "stars": 261,
+      "relation": "shared_tag",
+      "evidence": "Persona Distill Skills"
+    },
+    {
+      "slug": "swaylq-master-skill",
+      "displayName": "swaylq/master-skill",
+      "stars": 97,
+      "relation": "shared_tag",
+      "evidence": "Persona Distill Skills"
+    },
+    {
+      "slug": "voidforall-fengshui-skill",
+      "displayName": "voidforall/fengshui.skill",
+      "stars": 74,
+      "relation": "shared_tag",
+      "evidence": "Persona Distill Skills"
+    },
+    {
+      "slug": "youaifuou-karl-marx-skill",
+      "displayName": "youaifuou/karl-marx-skill",
+      "stars": 40,
+      "relation": "shared_tag",
+      "evidence": "Persona Distill Skills"
+    },
+    {
+      "slug": "lcmomo-my-anti-distill",
+      "displayName": "lcmomo/my-anti-distill",
+      "stars": 39,
+      "relation": "shared_tag",
+      "evidence": "Persona Distill Skills"
+    },
+    {
+      "slug": "schlaflied-hr-skill",
+      "displayName": "Schlaflied/hr-skill",
+      "stars": 14,
+      "relation": "shared_tag",
+      "evidence": "Persona Distill Skills"
+    },
+    {
+      "slug": "realteamprinz-brother-skill",
+      "displayName": "realteamprinz/brother-skill",
+      "stars": 14,
+      "relation": "shared_tag",
+      "evidence": "Persona Distill Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-sao-paulo",
+    "label": "Global Skill Market / Sao Paulo / Persona Distill Skills",
+    "lat": -23.5558,
+    "lon": -46.6396,
+    "source": "virtual_market"
+  }
+}

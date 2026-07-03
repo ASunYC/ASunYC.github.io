@@ -4,86 +4,92 @@
   "name": "claude-ecom",
   "displayName": "takechanman1228/claude-ecom",
   "description": "Ecommerce CSV to business review with KPI decomposition",
-  "stars": 31,
+  "stars": 39,
   "category": "Community Skills",
   "source": "voltagent",
   "url": "https://github.com/takechanman1228/claude-ecom",
   "githubRepo": "takechanman1228/claude-ecom",
-  "readme": "# takechanman1228/claude-ecom\n\nEcommerce CSV to business review with KPI decomposition",
-  "readmeHtml": "<h1>takechanman1228/claude-ecom</h1>\n<p>Ecommerce CSV to business review with KPI decomposition</p>",
+  "readme": "\n\n<p align=\"center\">\n  <img src=\"assets/banner.png\" alt=\"Claude Ecom\" width=\"100%\">\n</p>\n\n# claude-ecom\n\n[![PyPI Downloads](https://static.pepy.tech/personalized-badge/claude-ecom?period=total&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=GREEN&left_text=Downloads)](https://pepy.tech/projects/claude-ecom)\n\nTurn order/sales CSV into a business review — KPI decomposition, prioritized findings, and concrete next actions. One command.\n\n<p align=\"center\">\n  <img src=\"assets/claude_ecom_demo.gif\" alt=\"claude-ecom demo\" width=\"100%\">\n</p>\n\n---\n\n## Who This Is For\n\n- Data Analysts / Marketers who write monthly business reviews from scratch every time\n- D2C brand owners, retail managers, or ecommerce managers without an analyst on staff\n- Anyone who knows revenue dropped but can't explain why\n\n## Quick Start\n\nInstall as a Claude Code plugin:\n\n```\n/plugin marketplace add takechanman1228/claude-ecom\n/plugin install claude-ecom@claude-ecom\n```\n\nThen drop your orders CSV into the project and run:\n\n```\n/claude-ecom:ecom review\n```\n\nThe Python backend installs itself into a private venv\n(`~/.local/share/claude-ecom/`) on session start and survives plugin\nupdates. Requires: Claude Code, Python 3.10+\n\n### CLI only (no Claude Code)\n\nThe compute engine works standalone — it generates `review.json` and a\nbasic report, without the narrative layer:\n\n```bash\npip install claude-ecom\necom review orders.csv\n```\n\n### Migrating from v0.1.x (curl installer)\n\nVersions up to 0.1.3 installed via `install.sh` into `~/.claude/skills/ecom`.\nThat copy will conflict with the plugin (duplicate skills). Remove it:\n\n```bash\nrm -rf ~/.claude/skills/ecom\n```\n\n## What You Get\n\nA single `REVIEW.md` that reads like a consultant wrote it:\n\n\n```\n# Business Review\n> Revenue reached $9.37M for the year, essentially flat YoY (-1.7%), despite strong\n> short-term momentum — the last 90 days surged 84% and November posted +28.5%,\n> both driven by Q4 seasonal demand rather than structural growth. The flat annual...\n```\n\n```\n           30d Pulse       90d Momentum     365d Structure\nRevenue    $1.47M (+ 28%)  $3.73M (+ 84%)   $9.37M (= -2%)\nOrders     3,499 (+ 26%)   8,814 (+ 60%)    24,812 (- 11%)\nAOV        $419 (+ 2%)     $424 (+ 15%)     $378 (+ 10%)\nCustomers  1,676 (+ 11%)   2,918 (+ 51%)    4,296 (= flat)\n...\n```\n```\nRevenue $9.37M (YoY: -1.7%)\n├── 🔴 New Customer Revenue $1.45M (15.5%)\n│   ├── New Customers: 1,559 (-57.8%)\n│   └── New Customer AOV: $305\n└── 🟢 Existing Customer Revenue $7.92M (84.5%)\n    ├── Returning Customers: 2,737 (+345%)\n    ├── Returning AOV: $395\n    └── Repeat Purchase Rate: 75.4%\n```\nExecutive summary → Multi-horizon dashboard → KPI trees with 🔴/🟢 signals → Findings with \"what / why / what to do\" → Prioritized action plan with deadlines, success metrics, and guardrails.\n[See a full example output →](examples/online-retail-ii/REVIEW.md)\n\n\n## Commands\n\n| Command | Description |\n|---------|-------------|\n| `/claude-ecom:ecom review` | Full business review — auto-selects 30d / 90d / 365d |\n| `/claude-ecom:ecom review 30d` / `90d` / `365d` | Focus on a specific period |\n| `/claude-ecom:ecom review How's retention?` | Ask a question instead of a full report |\n\nYou can also just ask in plain language — \"review my store\", \"how was\nlast month?\" — and Claude invokes the skill automatically.\n\n## Input\n\nAny e-commerce/retail orders CSV works. \n\nRequired columns: order ID, order date, customer ID or email, revenue (after discounts, before tax/shipping).\nOptional (enables deeper analysis): quantity, SKU or product name, discount amount. In many cases, column names don't need to match exactly.\n\n\n## How It Works\n\n```\nOrders CSV → Python engine → review.json → Claude → REVIEW.md\n```\n\nPython computes every KPI and runs health checks. Claude reads the structured output and writes the business narrative. Numbers are precise because Python owns them. Interpretation is sharp because Claude owns that.\n\n\n\n## Example\n\nTested on [Online Retail II](https://archive.ics.uci.edu/dataset/502/online+retail+ii) (UCI, CC BY 4.0) — a real UK retailer with ~1M transactions over 2 years.\n\n[See the full report →](examples/online-retail-ii/REVIEW.md) | [Try it yourself →](examples/online-retail-ii/)\n\n## Roadmap\n\n- [ ] Shopify API integration (skip CSV export)\n- [ ] Weekly digest mode\n- [ ] Multi-store comparison\n\n## Acknowledgements\n\nInspired by [claude-ads](https://github.com/AgriciDaniel/claude-ads) by [@AgriciDaniel](https://github.com/AgriciDaniel).\n\n## License\n\nMIT\n",
+  "readmeHtml": "<p>&lt;p align=\"center\"&gt;</p>\n<p>  &lt;img src=\"assets/banner.png\" alt=\"Claude Ecom\" width=\"100%\"&gt;</p>\n<p>&lt;/p&gt;</p>\n<h1>claude-ecom</h1>\n<p><a href=\"https://static.pepy.tech/personalized-badge/claude-ecom?period=total&amp;units=INTERNATIONAL_SYSTEM&amp;left_color=BLACK&amp;right_color=GREEN&amp;left_text=Downloads\" target=\"_blank\" rel=\"noreferrer\">![PyPI Downloads</a>](https://pepy.tech/projects/claude-ecom)</p>\n<p>Turn order/sales CSV into a business review — KPI decomposition, prioritized findings, and concrete next actions. One command.</p>\n<p>&lt;p align=\"center\"&gt;</p>\n<p>  &lt;img src=\"assets/claude_ecom_demo.gif\" alt=\"claude-ecom demo\" width=\"100%\"&gt;</p>\n<p>&lt;/p&gt;</p>\n<p>---</p>\n<h2>Who This Is For</h2>\n<ul>\n<li>Data Analysts / Marketers who write monthly business reviews from scratch every time</li>\n<li>D2C brand owners, retail managers, or ecommerce managers without an analyst on staff</li>\n<li>Anyone who knows revenue dropped but can't explain why</li>\n</ul>\n<h2>Quick Start</h2>\n<p>Install as a Claude Code plugin:</p>\n<pre><code>\n/plugin marketplace add takechanman1228/claude-ecom\n\n/plugin install claude-ecom@claude-ecom\n\n</code></pre>\n<p>Then drop your orders CSV into the project and run:</p>\n<pre><code>\n/claude-ecom:ecom review\n\n</code></pre>\n<p>The Python backend installs itself into a private venv</p>\n<p>(<code>~/.local/share/claude-ecom/</code>) on session start and survives plugin</p>\n<p>updates. Requires: Claude Code, Python 3.10+</p>\n<h3>CLI only (no Claude Code)</h3>\n<p>The compute engine works standalone — it generates <code>review.json</code> and a</p>\n<p>basic report, without the narrative layer:</p>\n<pre><code>\npip install claude-ecom\n\necom review orders.csv\n\n</code></pre>\n<h3>Migrating from v0.1.x (curl installer)</h3>\n<p>Versions up to 0.1.3 installed via <code>install.sh</code> into <code>~/.claude/skills/ecom</code>.</p>\n<p>That copy will conflict with the plugin (duplicate skills). Remove it:</p>\n<pre><code>\nrm -rf ~/.claude/skills/ecom\n\n</code></pre>\n<h2>What You Get</h2>\n<p>A single <code>REVIEW.md</code> that reads like a consultant wrote it:</p>\n<pre><code>\n# Business Review\n\n&gt; Revenue reached $9.37M for the year, essentially flat YoY (-1.7%), despite strong\n\n&gt; short-term momentum — the last 90 days surged 84% and November posted +28.5%,\n\n&gt; both driven by Q4 seasonal demand rather than structural growth. The flat annual...\n\n</code></pre>\n<pre><code>\n           30d Pulse       90d Momentum     365d Structure\n\nRevenue    $1.47M (+ 28%)  $3.73M (+ 84%)   $9.37M (= -2%)\n\nOrders     3,499 (+ 26%)   8,814 (+ 60%)    24,812 (- 11%)\n\nAOV        $419 (+ 2%)     $424 (+ 15%)     $378 (+ 10%)\n\nCustomers  1,676 (+ 11%)   2,918 (+ 51%)    4,296 (= flat)\n\n...\n\n</code></pre>\n<pre><code>\nRevenue $9.37M (YoY: -1.7%)\n\n├── 🔴 New Customer Revenue $1.45M (15.5%)\n\n│   ├── New Customers: 1,559 (-57.8%)\n\n│   └── New Customer AOV: $305\n\n└── 🟢 Existing Customer Revenue $7.92M (84.5%)\n\n    ├── Returning Customers: 2,737 (+345%)\n\n    ├── Returning AOV: $395\n\n    └── Repeat Purchase Rate: 75.4%\n\n</code></pre>\n<p>Executive summary → Multi-horizon dashboard → KPI trees with 🔴/🟢 signals → Findings with \"what / why / what to do\" → Prioritized action plan with deadlines, success metrics, and guardrails.</p>\n<p>[See a full example output →](examples/online-retail-ii/REVIEW.md)</p>\n<h2>Commands</h2>\n<p>| Command | Description |</p>\n<p>|---------|-------------|</p>\n<p>| <code>/claude-ecom:ecom review</code> | Full business review — auto-selects 30d / 90d / 365d |</p>\n<p>| <code>/claude-ecom:ecom review 30d</code> / <code>90d</code> / <code>365d</code> | Focus on a specific period |</p>\n<p>| <code>/claude-ecom:ecom review How's retention?</code> | Ask a question instead of a full report |</p>\n<p>You can also just ask in plain language — \"review my store\", \"how was</p>\n<p>last month?\" — and Claude invokes the skill automatically.</p>\n<h2>Input</h2>\n<p>Any e-commerce/retail orders CSV works. </p>\n<p>Required columns: order ID, order date, customer ID or email, revenue (after discounts, before tax/shipping).</p>\n<p>Optional (enables deeper analysis): quantity, SKU or product name, discount amount. In many cases, column names don't need to match exactly.</p>\n<h2>How It Works</h2>\n<pre><code>\nOrders CSV → Python engine → review.json → Claude → REVIEW.md\n\n</code></pre>\n<p>Python computes every KPI and runs health checks. Claude reads the structured output and writes the business narrative. Numbers are precise because Python owns them. Interpretation is sharp because Claude owns that.</p>\n<h2>Example</h2>\n<p>Tested on <a href=\"https://archive.ics.uci.edu/dataset/502/online+retail+ii\" target=\"_blank\" rel=\"noreferrer\">Online Retail II</a> (UCI, CC BY 4.0) — a real UK retailer with ~1M transactions over 2 years.</p>\n<p>[See the full report →](examples/online-retail-ii/REVIEW.md) | [Try it yourself →](examples/online-retail-ii/)</p>\n<h2>Roadmap</h2>\n<ul>\n<li>[ ] Shopify API integration (skip CSV export)</li>\n<li>[ ] Weekly digest mode</li>\n<li>[ ] Multi-store comparison</li>\n</ul>\n<h2>Acknowledgements</h2>\n<p>Inspired by <a href=\"https://github.com/AgriciDaniel/claude-ads\" target=\"_blank\" rel=\"noreferrer\">claude-ads</a> by <a href=\"https://github.com/AgriciDaniel\" target=\"_blank\" rel=\"noreferrer\">@AgriciDaniel</a>.</p>\n<h2>License</h2>\n<p>MIT</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.060Z",
+  "updatedAt": "2026-06-11T18:50:46Z",
   "author": {
     "login": "takechanman1228",
-    "name": "takechanman1228",
-    "avatarUrl": "",
+    "name": "Hajime Takeda (Jimmy)",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/8223210?v=4",
     "profileUrl": "https://github.com/takechanman1228",
-    "location": ""
+    "location": "New York"
   },
-  "location": null,
+  "location": {
+    "id": "new-york",
+    "label": "New York",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "source": "github_profile"
+  },
   "related": [
     {
-      "slug": "obra-defense-in-depth",
-      "displayName": "obra/defense-in-depth",
-      "stars": 186953,
+      "slug": "obra-brainstorming",
+      "displayName": "obra/brainstorming",
+      "stars": 245089,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mattpocock-skills",
+      "displayName": "mattpocock/skills",
+      "stars": 155097,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
       "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
-      "stars": 77115,
+      "stars": 100227,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "lum1104-understand-anything",
+      "displayName": "Lum1104/understand-anything",
+      "stars": 70574,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "santifer-career-ops",
+      "displayName": "santifer/career-ops",
+      "stars": 58303,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "leonxlnx-taste-skill",
+      "displayName": "Leonxlnx/taste-skill",
+      "stars": 55314,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "panniantong-agent-reach",
+      "displayName": "Panniantong/Agent-Reach",
+      "stars": 49547,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "mvanhorn-last30days-skill",
       "displayName": "mvanhorn/last30days-skill",
-      "stars": 25573,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "k-dense-ai-claude-scientific-skills",
-      "displayName": "K-Dense-AI/claude-scientific-skills",
-      "stars": 20299,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-fundamentals",
-      "displayName": "muratcankoylan/context-fundamentals",
-      "stars": 15494,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-degradation",
-      "displayName": "muratcankoylan/context-degradation",
-      "stars": 15494,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-compression",
-      "displayName": "muratcankoylan/context-compression",
-      "stars": 15494,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-optimization",
-      "displayName": "muratcankoylan/context-optimization",
-      "stars": 15494,
+      "stars": 48607,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     }
   ],
   "mapLocation": {
-    "id": "virtual-shanghai",
-    "label": "Global Skill Market / Shanghai / Community Skills",
-    "lat": 31.2304,
-    "lon": 121.4737,
-    "source": "virtual_market"
+    "id": "new-york",
+    "label": "New York",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "source": "github_profile"
   }
 }

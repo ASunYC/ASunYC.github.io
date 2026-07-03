@@ -5,27 +5,33 @@
   "displayName": "sanity-io/content-modeling-best-practices",
   "description": "Guidelines for designing scalable content models in Sanity",
   "stars": 0,
-  "category": "Skills by Sanity Team",
+  "category": "Official Skills by",
   "source": "voltagent",
   "url": "https://officialskills.sh/sanity-io/skills/content-modeling-best-practices",
   "githubRepo": "",
   "readme": "# sanity-io/content-modeling-best-practices\n\nGuidelines for designing scalable content models in Sanity",
   "readmeHtml": "<h1>sanity-io/content-modeling-best-practices</h1>\n<p>Guidelines for designing scalable content models in Sanity</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.091Z",
+  "updatedAt": "2026-07-03T11:33:56.326Z",
   "author": {
     "login": "sanity-io",
-    "name": "sanity-io",
-    "avatarUrl": "",
+    "name": "Sanity",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/17177659?v=4",
     "profileUrl": "https://github.com/sanity-io",
-    "location": ""
+    "location": "San Francisco / Oslo"
   },
-  "location": null,
+  "location": {
+    "id": "san-francisco",
+    "label": "San Francisco, London, Austin, Lisbon, Singapore",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "github_profile"
+  },
   "related": [
     {
       "slug": "sanity-io-agent-toolkit",
       "displayName": "sanity-io/agent-toolkit",
-      "stars": 131,
+      "stars": 160,
       "relation": "source_overlap",
       "evidence": "author:sanity-io"
     },
@@ -51,32 +57,39 @@
       "evidence": "author:sanity-io"
     },
     {
-      "slug": "sanity-io-sanity-best-practices",
-      "displayName": "sanity-io/sanity-best-practices",
-      "stars": 0,
+      "slug": "angular-angular-developer",
+      "displayName": "angular/angular-developer",
+      "stars": 544,
       "relation": "shared_tag",
-      "evidence": "Skills by Sanity Team"
+      "evidence": "Official Skills by"
     },
     {
-      "slug": "sanity-io-seo-aeo-best-practices",
-      "displayName": "sanity-io/seo-aeo-best-practices",
-      "stars": 0,
+      "slug": "testmu-ai-api-skill",
+      "displayName": "testmu-ai/api-skill",
+      "stars": 318,
       "relation": "shared_tag",
-      "evidence": "Skills by Sanity Team"
+      "evidence": "Official Skills by"
     },
     {
-      "slug": "sanity-io-content-experimentation-best-practices",
-      "displayName": "sanity-io/content-experimentation-best-practices",
-      "stars": 0,
+      "slug": "veniceai-venice-api-overview",
+      "displayName": "veniceai/venice-api-overview",
+      "stars": 105,
       "relation": "shared_tag",
-      "evidence": "Skills by Sanity Team"
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "zero-zero",
+      "displayName": "zero/zero",
+      "stars": 14,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
     }
   ],
   "mapLocation": {
-    "id": "virtual-san-francisco",
-    "label": "Global Skill Market / San Francisco / Skills by Sanity Team",
+    "id": "san-francisco",
+    "label": "San Francisco, London, Austin, Lisbon, Singapore",
     "lat": 37.7749,
     "lon": -122.4194,
-    "source": "virtual_market"
+    "source": "github_profile"
   }
 }

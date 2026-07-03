@@ -12,15 +12,21 @@
   "readme": "# brave/llm-context\n\nReturn pre-extracted web content (text, tables, code) from Brave Search",
   "readmeHtml": "<h1>brave/llm-context</h1>\n<p>Return pre-extracted web content (text, tables, code) from Brave Search</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.131Z",
+  "updatedAt": "2026-07-03T11:33:56.372Z",
   "author": {
     "login": "brave",
-    "name": "brave",
-    "avatarUrl": "",
+    "name": "Brave Software",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/12301619?v=4",
     "profileUrl": "https://github.com/brave",
-    "location": ""
+    "location": "San Francisco"
   },
-  "location": null,
+  "location": {
+    "id": "san-francisco",
+    "label": "San Francisco, London, Austin, Lisbon, Singapore",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "github_profile"
+  },
   "related": [
     {
       "slug": "brave-answers",
@@ -80,10 +86,10 @@
     }
   ],
   "mapLocation": {
-    "id": "virtual-shanghai",
-    "label": "Global Skill Market / Shanghai / TypeScript Skills",
-    "lat": 31.2304,
-    "lon": 121.4737,
-    "source": "virtual_market"
+    "id": "san-francisco",
+    "label": "San Francisco, London, Austin, Lisbon, Singapore",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "github_profile"
   }
 }

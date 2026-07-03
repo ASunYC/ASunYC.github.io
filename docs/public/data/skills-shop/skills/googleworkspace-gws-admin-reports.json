@@ -5,30 +5,23 @@
   "displayName": "googleworkspace/gws-admin-reports",
   "description": "Audit logs and usage reports for Workspace",
   "stars": 0,
-  "category": "Skills by Typefully",
+  "category": "Official Skills by",
   "source": "voltagent",
   "url": "https://officialskills.sh/googleworkspace/skills/gws-admin-reports",
   "githubRepo": "",
   "readme": "# googleworkspace/gws-admin-reports\n\nAudit logs and usage reports for Workspace",
   "readmeHtml": "<h1>googleworkspace/gws-admin-reports</h1>\n<p>Audit logs and usage reports for Workspace</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.102Z",
+  "updatedAt": "2026-07-03T11:33:56.331Z",
   "author": {
     "login": "googleworkspace",
-    "name": "googleworkspace",
-    "avatarUrl": "",
+    "name": "Google Workspace",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/3708359?v=4",
     "profileUrl": "https://github.com/googleworkspace",
-    "location": ""
+    "location": "☁️"
   },
   "location": null,
   "related": [
-    {
-      "slug": "googleworkspace-cli",
-      "displayName": "googleworkspace/cli",
-      "stars": 25868,
-      "relation": "source_overlap",
-      "evidence": "author:googleworkspace"
-    },
     {
       "slug": "googleworkspace-gws-shared",
       "displayName": "googleworkspace/gws-shared",
@@ -77,13 +70,20 @@
       "stars": 0,
       "relation": "source_overlap",
       "evidence": "author:googleworkspace"
+    },
+    {
+      "slug": "googleworkspace-gws-tasks",
+      "displayName": "googleworkspace/gws-tasks",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:googleworkspace"
     }
   ],
   "mapLocation": {
-    "id": "virtual-bengaluru",
-    "label": "Global Skill Market / Bengaluru / Skills by Typefully",
-    "lat": 12.9716,
-    "lon": 77.5946,
+    "id": "virtual-singapore",
+    "label": "Global Skill Market / Singapore / Official Skills by",
+    "lat": 1.3521,
+    "lon": 103.8198,
     "source": "virtual_market"
   }
 }

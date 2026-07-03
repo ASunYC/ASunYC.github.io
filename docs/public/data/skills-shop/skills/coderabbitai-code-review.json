@@ -12,20 +12,26 @@
   "readme": "# coderabbitai/code-review\n\nRun AI-powered code reviews through the CodeRabbit CLI",
   "readmeHtml": "<h1>coderabbitai/code-review</h1>\n<p>Run AI-powered code reviews through the CodeRabbit CLI</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.132Z",
+  "updatedAt": "2026-07-03T11:33:56.374Z",
   "author": {
     "login": "coderabbitai",
-    "name": "coderabbitai",
-    "avatarUrl": "",
+    "name": "CodeRabbit",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/132028505?v=4",
     "profileUrl": "https://github.com/coderabbitai",
-    "location": ""
+    "location": "United States of America"
   },
-  "location": null,
+  "location": {
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
+  },
   "related": [
     {
       "slug": "coderabbitai-skills",
       "displayName": "coderabbitai/skills",
-      "stars": 91,
+      "stars": 121,
       "relation": "source_overlap",
       "evidence": "author:coderabbitai"
     },
@@ -37,53 +43,53 @@
       "evidence": "author:coderabbitai"
     },
     {
+      "slug": "coreyhaines31-ab-test-setup",
+      "displayName": "coreyhaines31/ab-test-setup",
+      "stars": 35923,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    },
+    {
+      "slug": "phuryn-ab-test-analysis",
+      "displayName": "phuryn/ab-test-analysis",
+      "stars": 22293,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    },
+    {
       "slug": "deanpeters-acquisition-channel-advisor",
       "displayName": "deanpeters/acquisition-channel-advisor",
-      "stars": 4159,
+      "stars": 5553,
       "relation": "shared_tag",
       "evidence": "TypeScript Skills"
     },
     {
-      "slug": "deanpeters-ai-shaped-readiness-advisor",
-      "displayName": "deanpeters/ai-shaped-readiness-advisor",
-      "stars": 4159,
+      "slug": "realkimbarrett-avatar-extraction",
+      "displayName": "realkimbarrett/avatar-extraction",
+      "stars": 679,
       "relation": "shared_tag",
       "evidence": "TypeScript Skills"
     },
     {
-      "slug": "deanpeters-altitude-horizon-framework",
-      "displayName": "deanpeters/altitude-horizon-framework",
-      "stars": 4159,
+      "slug": "resend-resend",
+      "displayName": "resend/resend",
+      "stars": 143,
       "relation": "shared_tag",
       "evidence": "TypeScript Skills"
     },
     {
-      "slug": "deanpeters-business-health-diagnostic",
-      "displayName": "deanpeters/business-health-diagnostic",
-      "stars": 4159,
-      "relation": "shared_tag",
-      "evidence": "TypeScript Skills"
-    },
-    {
-      "slug": "deanpeters-company-research",
-      "displayName": "deanpeters/company-research",
-      "stars": 4159,
-      "relation": "shared_tag",
-      "evidence": "TypeScript Skills"
-    },
-    {
-      "slug": "deanpeters-customer-journey-map",
-      "displayName": "deanpeters/customer-journey-map",
-      "stars": 4159,
+      "slug": "redis-redis-development",
+      "displayName": "redis/redis-development",
+      "stars": 82,
       "relation": "shared_tag",
       "evidence": "TypeScript Skills"
     }
   ],
   "mapLocation": {
-    "id": "virtual-tokyo",
-    "label": "Global Skill Market / Tokyo / TypeScript Skills",
-    "lat": 35.6762,
-    "lon": 139.6503,
-    "source": "virtual_market"
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
   }
 }

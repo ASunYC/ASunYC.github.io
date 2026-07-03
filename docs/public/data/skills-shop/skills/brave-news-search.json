@@ -12,15 +12,21 @@
   "readme": "# brave/news-search\n\nSearch Brave's news index with article metadata",
   "readmeHtml": "<h1>brave/news-search</h1>\n<p>Search Brave's news index with article metadata</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.132Z",
+  "updatedAt": "2026-07-03T11:33:56.373Z",
   "author": {
     "login": "brave",
-    "name": "brave",
-    "avatarUrl": "",
+    "name": "Brave Software",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/12301619?v=4",
     "profileUrl": "https://github.com/brave",
-    "location": ""
+    "location": "San Francisco"
   },
-  "location": null,
+  "location": {
+    "id": "san-francisco",
+    "label": "San Francisco, London, Austin, Lisbon, Singapore",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "github_profile"
+  },
   "related": [
     {
       "slug": "brave-answers",
@@ -80,10 +86,10 @@
     }
   ],
   "mapLocation": {
-    "id": "virtual-paris",
-    "label": "Global Skill Market / Paris / TypeScript Skills",
-    "lat": 48.8566,
-    "lon": 2.3522,
-    "source": "virtual_market"
+    "id": "san-francisco",
+    "label": "San Francisco, London, Austin, Lisbon, Singapore",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "github_profile"
   }
 }

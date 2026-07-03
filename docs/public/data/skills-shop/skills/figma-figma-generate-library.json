@@ -12,15 +12,21 @@
   "readme": "# figma/figma-generate-library\n\nBuild or update a design system library in Figma from a codebase",
   "readmeHtml": "<h1>figma/figma-generate-library</h1>\n<p>Build or update a design system library in Figma from a codebase</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.126Z",
+  "updatedAt": "2026-07-03T11:33:56.365Z",
   "author": {
     "login": "figma",
-    "name": "figma",
-    "avatarUrl": "",
+    "name": "Figma",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/5155369?v=4",
     "profileUrl": "https://github.com/figma",
-    "location": ""
+    "location": "San Francisco, CA"
   },
-  "location": null,
+  "location": {
+    "id": "san-francisco",
+    "label": "San Francisco, London, Austin, Lisbon, Singapore",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "github_profile"
+  },
   "related": [
     {
       "slug": "figma-figma-code-connect-components",
@@ -65,25 +71,25 @@
       "evidence": "author:figma"
     },
     {
-      "slug": "deanpeters-acquisition-channel-advisor",
-      "displayName": "deanpeters/acquisition-channel-advisor",
-      "stars": 4159,
+      "slug": "coreyhaines31-ab-test-setup",
+      "displayName": "coreyhaines31/ab-test-setup",
+      "stars": 35923,
       "relation": "shared_tag",
       "evidence": "TypeScript Skills"
     },
     {
-      "slug": "deanpeters-ai-shaped-readiness-advisor",
-      "displayName": "deanpeters/ai-shaped-readiness-advisor",
-      "stars": 4159,
+      "slug": "phuryn-ab-test-analysis",
+      "displayName": "phuryn/ab-test-analysis",
+      "stars": 22293,
       "relation": "shared_tag",
       "evidence": "TypeScript Skills"
     }
   ],
   "mapLocation": {
-    "id": "virtual-sydney",
-    "label": "Global Skill Market / Sydney / TypeScript Skills",
-    "lat": -33.8688,
-    "lon": 151.2093,
-    "source": "virtual_market"
+    "id": "san-francisco",
+    "label": "San Francisco, London, Austin, Lisbon, Singapore",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "github_profile"
   }
 }

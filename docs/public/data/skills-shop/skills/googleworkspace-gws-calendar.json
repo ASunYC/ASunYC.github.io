@@ -5,30 +5,23 @@
   "displayName": "googleworkspace/gws-calendar",
   "description": "Manage Google Calendar calendars and events",
   "stars": 0,
-  "category": "Skills by Typefully",
+  "category": "Official Skills by",
   "source": "voltagent",
   "url": "https://officialskills.sh/googleworkspace/skills/gws-calendar",
   "githubRepo": "",
   "readme": "# googleworkspace/gws-calendar\n\nManage Google Calendar calendars and events",
   "readmeHtml": "<h1>googleworkspace/gws-calendar</h1>\n<p>Manage Google Calendar calendars and events</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.102Z",
+  "updatedAt": "2026-07-03T11:33:56.331Z",
   "author": {
     "login": "googleworkspace",
-    "name": "googleworkspace",
-    "avatarUrl": "",
+    "name": "Google Workspace",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/3708359?v=4",
     "profileUrl": "https://github.com/googleworkspace",
-    "location": ""
+    "location": "☁️"
   },
   "location": null,
   "related": [
-    {
-      "slug": "googleworkspace-cli",
-      "displayName": "googleworkspace/cli",
-      "stars": 25868,
-      "relation": "source_overlap",
-      "evidence": "author:googleworkspace"
-    },
     {
       "slug": "googleworkspace-gws-shared",
       "displayName": "googleworkspace/gws-shared",
@@ -77,13 +70,20 @@
       "stars": 0,
       "relation": "source_overlap",
       "evidence": "author:googleworkspace"
+    },
+    {
+      "slug": "googleworkspace-gws-tasks",
+      "displayName": "googleworkspace/gws-tasks",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:googleworkspace"
     }
   ],
   "mapLocation": {
-    "id": "virtual-toronto",
-    "label": "Global Skill Market / Toronto / Skills by Typefully",
-    "lat": 43.6532,
-    "lon": -79.3832,
+    "id": "virtual-tokyo",
+    "label": "Global Skill Market / Tokyo / Official Skills by",
+    "lat": 35.6762,
+    "lon": 139.6503,
     "source": "virtual_market"
   }
 }

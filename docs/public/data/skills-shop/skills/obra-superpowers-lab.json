@@ -4,86 +4,92 @@
   "name": "superpowers-lab",
   "displayName": "obra/superpowers-lab",
   "description": "Lab environment for Claude superpowers",
-  "stars": 0,
+  "stars": 388,
   "category": "Community Skills",
   "source": "voltagent",
   "url": "https://github.com/obra/superpowers-lab",
   "githubRepo": "obra/superpowers-lab",
-  "readme": "# obra/superpowers-lab\n\nLab environment for Claude superpowers",
-  "readmeHtml": "<h1>obra/superpowers-lab</h1>\n<p>Lab environment for Claude superpowers</p>",
+  "readme": "# Superpowers Lab\n\nExperimental skills for [Claude Code Superpowers](https://github.com/obra/superpowers) - new techniques and tools under active development.\n\n## What is this?\n\nThis plugin contains experimental skills that extend Claude Code's capabilities with new techniques that are still being refined and tested. These skills are functional but may evolve based on real-world usage and feedback.\n\n## Current Skills\n\n### finding-duplicate-functions\n\nDetect semantic code duplication in LLM-generated codebases. Unlike traditional copy-paste detectors that find syntactic duplicates, this skill identifies functions with the same intent but different implementations.\n\n**Use cases:**\n- Audit codebases that have grown organically with multiple contributors\n- Identify utility functions that have been reimplemented multiple times\n- Find consolidation opportunities before major refactoring\n- Complement jscpd after syntactic duplicates are handled\n\n**How it works:** Two-phase approach using classical function extraction followed by LLM-powered intent clustering. Haiku categorizes functions by domain, then Opus analyzes each category to find semantic duplicates.\n\nSee [skills/finding-duplicate-functions/SKILL.md](skills/finding-duplicate-functions/SKILL.md) for full documentation.\n\n### mcp-cli\n\nUse MCP servers on-demand via the `mcp` CLI tool. Discover and invoke tools, resources, and prompts without polluting context with pre-loaded MCP integrations.\n\n**Use cases:**\n- Query MCP servers without permanent configuration\n- Explore available tools before deciding to integrate\n- One-off MCP tool invocations\n\nSee [skills/mcp-cli/SKILL.md](skills/mcp-cli/SKILL.md) for full documentation.\n\n### using-tmux-for-interactive-commands\n\nEnables Claude Code to control interactive CLI tools (vim, git rebase -i, menuconfig, REPLs, etc.) through tmux sessions.\n\n**Use cases:**\n- Interactive text editors (vim, nano)\n- Terminal UI tools (menuconfig, htop)\n- Interactive REPLs (Python, Node, etc.)\n- Interactive git operations (rebase -i, add -p)\n- Any tool requiring keyboard navigation and real-time interaction\n\n**How it works:** Creates detached tmux sessions, sends keystrokes programmatically, and captures terminal output to enable automation of traditionally manual workflows.\n\nSee [skills/using-tmux-for-interactive-commands/SKILL.md](skills/using-tmux-for-interactive-commands/SKILL.md) for full documentation.\n\n### windows-vm\n\nCreate, manage, or connect to a headless Windows 11 VM running in Docker with KVM acceleration and SSH access — no RDP or GUI required.\n\n**Use cases:**\n- Spin up a Windows environment for testing or development\n- Run Claude Code on Windows via SSH\n- Test cross-platform behavior without leaving the terminal\n\n**How it works:** Uses [dockur/windows](https://github.com/dockur/windows) to run Windows 11 in a Docker container with KVM acceleration. Manages the full lifecycle: create, start, stop, restart, SSH, and status checks. Includes automated setup of OpenSSH Server, Node.js, and Claude Code inside the VM.\n\nSee [skills/windows-vm/SKILL.md](skills/windows-vm/SKILL.md) for full documentation.\n\n## Installation\n\n```bash\n# Install the plugin\nclaude-code plugin install https://github.com/obra/superpowers-lab\n\n# Or add to your claude.json\n{\n  \"plugins\": [\n    \"https://github.com/obra/superpowers-lab\"\n  ]\n}\n```\n\n## Requirements\n\n- tmux must be installed on your system\n- Skills are tested on Linux/macOS (tmux required)\n\n## Experimental Status\n\nSkills in this plugin are:\n- ✅ Functional and tested\n- 🧪 Under active refinement\n- 📝 May evolve based on usage\n- 🔬 Open to feedback and improvements\n\n## Contributing\n\nFound a bug or have an improvement? Please open an issue or PR!\n\n## Related Projects\n\n- [superpowers](https://github.com/obra/superpowers) - Core skills library for Claude Code\n- [superpowers-chrome](https://github.com/obra/superpowers-chrome) - Browser automation skills\n\n## License\n\nMIT License - see [LICENSE](LICENSE) for details\n",
+  "readmeHtml": "<h1>Superpowers Lab</h1>\n<p>Experimental skills for <a href=\"https://github.com/obra/superpowers\" target=\"_blank\" rel=\"noreferrer\">Claude Code Superpowers</a> - new techniques and tools under active development.</p>\n<h2>What is this?</h2>\n<p>This plugin contains experimental skills that extend Claude Code's capabilities with new techniques that are still being refined and tested. These skills are functional but may evolve based on real-world usage and feedback.</p>\n<h2>Current Skills</h2>\n<h3>finding-duplicate-functions</h3>\n<p>Detect semantic code duplication in LLM-generated codebases. Unlike traditional copy-paste detectors that find syntactic duplicates, this skill identifies functions with the same intent but different implementations.</p>\n<p><strong>Use cases:</strong></p>\n<ul>\n<li>Audit codebases that have grown organically with multiple contributors</li>\n<li>Identify utility functions that have been reimplemented multiple times</li>\n<li>Find consolidation opportunities before major refactoring</li>\n<li>Complement jscpd after syntactic duplicates are handled</li>\n</ul>\n<p><strong>How it works:</strong> Two-phase approach using classical function extraction followed by LLM-powered intent clustering. Haiku categorizes functions by domain, then Opus analyzes each category to find semantic duplicates.</p>\n<p>See [skills/finding-duplicate-functions/SKILL.md](skills/finding-duplicate-functions/SKILL.md) for full documentation.</p>\n<h3>mcp-cli</h3>\n<p>Use MCP servers on-demand via the <code>mcp</code> CLI tool. Discover and invoke tools, resources, and prompts without polluting context with pre-loaded MCP integrations.</p>\n<p><strong>Use cases:</strong></p>\n<ul>\n<li>Query MCP servers without permanent configuration</li>\n<li>Explore available tools before deciding to integrate</li>\n<li>One-off MCP tool invocations</li>\n</ul>\n<p>See [skills/mcp-cli/SKILL.md](skills/mcp-cli/SKILL.md) for full documentation.</p>\n<h3>using-tmux-for-interactive-commands</h3>\n<p>Enables Claude Code to control interactive CLI tools (vim, git rebase -i, menuconfig, REPLs, etc.) through tmux sessions.</p>\n<p><strong>Use cases:</strong></p>\n<ul>\n<li>Interactive text editors (vim, nano)</li>\n<li>Terminal UI tools (menuconfig, htop)</li>\n<li>Interactive REPLs (Python, Node, etc.)</li>\n<li>Interactive git operations (rebase -i, add -p)</li>\n<li>Any tool requiring keyboard navigation and real-time interaction</li>\n</ul>\n<p><strong>How it works:</strong> Creates detached tmux sessions, sends keystrokes programmatically, and captures terminal output to enable automation of traditionally manual workflows.</p>\n<p>See [skills/using-tmux-for-interactive-commands/SKILL.md](skills/using-tmux-for-interactive-commands/SKILL.md) for full documentation.</p>\n<h3>windows-vm</h3>\n<p>Create, manage, or connect to a headless Windows 11 VM running in Docker with KVM acceleration and SSH access — no RDP or GUI required.</p>\n<p><strong>Use cases:</strong></p>\n<ul>\n<li>Spin up a Windows environment for testing or development</li>\n<li>Run Claude Code on Windows via SSH</li>\n<li>Test cross-platform behavior without leaving the terminal</li>\n</ul>\n<p><strong>How it works:</strong> Uses <a href=\"https://github.com/dockur/windows\" target=\"_blank\" rel=\"noreferrer\">dockur/windows</a> to run Windows 11 in a Docker container with KVM acceleration. Manages the full lifecycle: create, start, stop, restart, SSH, and status checks. Includes automated setup of OpenSSH Server, Node.js, and Claude Code inside the VM.</p>\n<p>See [skills/windows-vm/SKILL.md](skills/windows-vm/SKILL.md) for full documentation.</p>\n<h2>Installation</h2>\n<pre><code>\n# Install the plugin\n\nclaude-code plugin install https://github.com/obra/superpowers-lab\n\n\n\n# Or add to your claude.json\n\n{\n\n  \"plugins\": [\n\n    \"https://github.com/obra/superpowers-lab\"\n\n  ]\n\n}\n\n</code></pre>\n<h2>Requirements</h2>\n<ul>\n<li>tmux must be installed on your system</li>\n<li>Skills are tested on Linux/macOS (tmux required)</li>\n</ul>\n<h2>Experimental Status</h2>\n<p>Skills in this plugin are:</p>\n<ul>\n<li>✅ Functional and tested</li>\n<li>🧪 Under active refinement</li>\n<li>📝 May evolve based on usage</li>\n<li>🔬 Open to feedback and improvements</li>\n</ul>\n<h2>Contributing</h2>\n<p>Found a bug or have an improvement? Please open an issue or PR!</p>\n<h2>Related Projects</h2>\n<ul>\n<li><a href=\"https://github.com/obra/superpowers\" target=\"_blank\" rel=\"noreferrer\">superpowers</a> - Core skills library for Claude Code</li>\n<li><a href=\"https://github.com/obra/superpowers-chrome\" target=\"_blank\" rel=\"noreferrer\">superpowers-chrome</a> - Browser automation skills</li>\n</ul>\n<h2>License</h2>\n<p>MIT License - see [LICENSE](LICENSE) for details</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.154Z",
+  "updatedAt": "2026-06-01T21:42:58Z",
   "author": {
     "login": "obra",
-    "name": "obra",
-    "avatarUrl": "",
+    "name": "Jesse Vincent",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/45416?v=4",
     "profileUrl": "https://github.com/obra",
-    "location": ""
+    "location": "Berkeley, CA 94703"
   },
-  "location": null,
+  "location": {
+    "id": "berkeley",
+    "label": "Berkeley, CA 94703",
+    "lat": 37.8715,
+    "lon": -122.273,
+    "source": "github_profile"
+  },
   "related": [
     {
-      "slug": "obra-defense-in-depth",
-      "displayName": "obra/defense-in-depth",
-      "stars": 186953,
+      "slug": "obra-brainstorming",
+      "displayName": "obra/brainstorming",
+      "stars": 245089,
       "relation": "source_overlap",
       "evidence": "author:obra"
     },
     {
-      "slug": "obra-defense-in-depth",
-      "displayName": "obra/defense-in-depth",
-      "stars": 186953,
+      "slug": "obra-brainstorming",
+      "displayName": "obra/brainstorming",
+      "stars": 245089,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mattpocock-skills",
+      "displayName": "mattpocock/skills",
+      "stars": 155097,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
       "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
-      "stars": 77115,
+      "stars": 100227,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
-      "slug": "mvanhorn-last30days-skill",
-      "displayName": "mvanhorn/last30days-skill",
-      "stars": 25573,
+      "slug": "lum1104-understand-anything",
+      "displayName": "Lum1104/understand-anything",
+      "stars": 70574,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
-      "slug": "k-dense-ai-claude-scientific-skills",
-      "displayName": "K-Dense-AI/claude-scientific-skills",
-      "stars": 20299,
+      "slug": "santifer-career-ops",
+      "displayName": "santifer/career-ops",
+      "stars": 58303,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
-      "slug": "muratcankoylan-context-fundamentals",
-      "displayName": "muratcankoylan/context-fundamentals",
-      "stars": 15494,
+      "slug": "leonxlnx-taste-skill",
+      "displayName": "Leonxlnx/taste-skill",
+      "stars": 55314,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
-      "slug": "muratcankoylan-context-degradation",
-      "displayName": "muratcankoylan/context-degradation",
-      "stars": 15494,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "muratcankoylan-context-compression",
-      "displayName": "muratcankoylan/context-compression",
-      "stars": 15494,
+      "slug": "panniantong-agent-reach",
+      "displayName": "Panniantong/Agent-Reach",
+      "stars": 49547,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     }
   ],
   "mapLocation": {
-    "id": "virtual-sydney",
-    "label": "Global Skill Market / Sydney / Community Skills",
-    "lat": -33.8688,
-    "lon": 151.2093,
-    "source": "virtual_market"
+    "id": "berkeley",
+    "label": "Berkeley, CA 94703",
+    "lat": 37.8715,
+    "lon": -122.273,
+    "source": "github_profile"
   }
 }

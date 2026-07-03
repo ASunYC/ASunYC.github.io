@@ -5,27 +5,33 @@
   "displayName": "firecrawl/firecrawl-build-search",
   "description": "Integrate Firecrawl `/search` for query-first discovery with optional content hydration",
   "stars": 0,
-  "category": "Skills by Firecrawl Team",
+  "category": "Official Skills by",
   "source": "voltagent",
   "url": "https://officialskills.sh/firecrawl/skills/firecrawl-build-search",
   "githubRepo": "",
   "readme": "# firecrawl/firecrawl-build-search\n\nIntegrate Firecrawl `/search` for query-first discovery with optional content hydration",
   "readmeHtml": "<h1>firecrawl/firecrawl-build-search</h1>\n<p>Integrate Firecrawl <code>/search</code> for query-first discovery with optional content hydration</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.091Z",
+  "updatedAt": "2026-07-03T11:33:56.326Z",
   "author": {
     "login": "firecrawl",
-    "name": "firecrawl",
-    "avatarUrl": "",
+    "name": "Firecrawl",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/135057108?v=4",
     "profileUrl": "https://github.com/firecrawl",
-    "location": ""
+    "location": "United States of America"
   },
-  "location": null,
+  "location": {
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
+  },
   "related": [
     {
       "slug": "firecrawl-cli",
       "displayName": "firecrawl/cli",
-      "stars": 369,
+      "stars": 505,
       "relation": "source_overlap",
       "evidence": "author:firecrawl"
     },
@@ -80,10 +86,10 @@
     }
   ],
   "mapLocation": {
-    "id": "virtual-berlin",
-    "label": "Global Skill Market / Berlin / Skills by Firecrawl Team",
-    "lat": 52.52,
-    "lon": 13.405,
-    "source": "virtual_market"
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
   }
 }

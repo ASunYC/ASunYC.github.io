@@ -5,30 +5,29 @@
   "displayName": "trailofbits/testing-handbook-skills",
   "description": "Testing Handbook skills: fuzzers, static analysis, sanitizers",
   "stars": 0,
-  "category": "Skills by Typefully",
+  "category": "Official Skills by",
   "source": "voltagent",
   "url": "https://officialskills.sh/trailofbits/skills/testing-handbook-skills",
   "githubRepo": "",
   "readme": "# trailofbits/testing-handbook-skills\n\nTesting Handbook skills: fuzzers, static analysis, sanitizers",
   "readmeHtml": "<h1>trailofbits/testing-handbook-skills</h1>\n<p>Testing Handbook skills: fuzzers, static analysis, sanitizers</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.104Z",
+  "updatedAt": "2026-07-03T11:33:56.342Z",
   "author": {
     "login": "trailofbits",
-    "name": "trailofbits",
-    "avatarUrl": "",
+    "name": "Trail of Bits",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/2314423?v=4",
     "profileUrl": "https://github.com/trailofbits",
-    "location": ""
+    "location": "New York, New York"
   },
-  "location": null,
+  "location": {
+    "id": "new-york",
+    "label": "New York",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "source": "github_profile"
+  },
   "related": [
-    {
-      "slug": "trailofbits-skills",
-      "displayName": "trailofbits/skills",
-      "stars": 5043,
-      "relation": "source_overlap",
-      "evidence": "author:trailofbits"
-    },
     {
       "slug": "trailofbits-ask-questions-if-underspecified",
       "displayName": "trailofbits/ask-questions-if-underspecified",
@@ -77,13 +76,20 @@
       "stars": 0,
       "relation": "source_overlap",
       "evidence": "author:trailofbits"
+    },
+    {
+      "slug": "trailofbits-differential-review",
+      "displayName": "trailofbits/differential-review",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:trailofbits"
     }
   ],
   "mapLocation": {
-    "id": "virtual-singapore",
-    "label": "Global Skill Market / Singapore / Skills by Typefully",
-    "lat": 1.3521,
-    "lon": 103.8198,
-    "source": "virtual_market"
+    "id": "new-york",
+    "label": "New York",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "source": "github_profile"
   }
 }

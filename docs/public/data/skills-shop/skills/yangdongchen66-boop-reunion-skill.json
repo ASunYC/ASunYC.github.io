@@ -1,0 +1,89 @@
+{
+  "id": "skill:yangdongchen66-boop-reunion-skill",
+  "slug": "yangdongchen66-boop-reunion-skill",
+  "name": "reunion-skill",
+  "displayName": "yangdongchen66-boop/reunion-skill",
+  "description": "Let those who have passed continue to accompany us in another form through AI.",
+  "stars": 44,
+  "category": "EverythingSkill / Relationship",
+  "source": "everythingskill",
+  "url": "https://github.com/yangdongchen66-boop/reunion-skill",
+  "githubRepo": "yangdongchen66-boop/reunion-skill",
+  "readme": "# Reunion Skill - 重逢 🕯️\n\n> \"死亡不是终点，遗忘才是。\"\n\n用 AI 的方式，让逝去的亲人以另一种形式继续陪伴。\n\n---\n\n## 项目简介\n\n**Reunion Skill** 是一个基于 Claude Code 的本地化 AI 技能，通过对逝者生前非结构化数据（聊天记录、日记、照片等）的分析与提取，构建一个具备情感还原度的数字陪伴 Agent。\n\n### 核心特点\n\n- 🔒 **纯本地运行**：所有数据在本地处理，绝不上传云端\n- 💬 **双层还原**：Memory（共同记忆）+ Persona（人物性格）\n- 🎯 **个性化对话**：还原 ta 的说话方式、口头禅、语气词\n- 🧠 **渐进式回忆**：根据对话上下文动态唤起相关记忆，避免一次性暴露所有内容\n- 🔍 **智能检索**：RAG + 上下文管理，语义理解更精准\n- 📈 **持续进化**：支持追加记忆、对话纠正\n- 🛡️ **心理护栏**：内置情绪检测和安全干预机制\n\n---\n\n## 快速开始\n\n### 1. 安装\n\n将项目克隆到 Claude Code skills 目录：\n\n```bash\n# Windows\ngit clone https://github.com/yangdongchen66-boop/reunion-skill.git %USERPROFILE%\\.claude\\skills\\reunion\n\n# macOS/Linux\ngit clone https://github.com/yangdongchen66-boop/reunion-skill.git ~/.claude/skills/reunion\n```\n\n### 2. 使用\n\n在 Claude Code 中输入：\n\n```\n/reunion-create\n```\n\n然后按照提示：\n1. 输入称呼（如：奶奶、爷爷、猫猫）\n2. 提供基本信息和性格印象\n3. 导入原材料（聊天记录、日记、照片或直接口述）\n4. 确认生成\n\n### 3. 与 ta 对话\n\n创建完成后，使用以下命令：\n\n| 命令 | 功能 |\n|------|------|\n| `/{slug}` | 像 ta 一样跟你聊天 |\n| `/{slug}-memory` | 查看共同记忆 |\n| `/{slug}-persona` | 查看人设配置 |\n\n---\n\n## 主流程\n\n```\nStep 1: 基础信息录入（3 个问题）\n    ↓\nStep 2: 原材料导入（聊天记录/日记/照片/口述）\n    ↓\nStep 3: 双线分析（Memory + Persona）\n    ↓\nStep 4: 生成并预览\n    ↓\nStep 5: 写入文件并安装 Skill\n```\n\n---\n\n## 项目结构\n\n```\nreunion-skill/\n├── SKILL.md                 # 主流程定义\n├── README.md                # 项目说明\n├── requirements.txt         # Python 依赖\n│\n├── prompts/                 # Prompt 模板\n│   ├── intake.md            # 信息采集\n│   ├── memory_analyzer.md   # 记忆分析\n│   ├── persona_analyzer.md  # 人设分析\n│   ├── memory_builder.md    # 记忆构建\n│   ├── persona_builder.md   # 人设构建\n│   ├── merger.md            # 增量合并\n│   ├── correction_handler.md # 对话纠正\n│   └── farewell.md          # 告别仪式\n│\n├── core/                    # 核心模块\n│   ├── data_parser.py       # 数据解析器\n│   ├── persona_distiller.py # 人设蒸馏\n│   ├── memory_store.py      # 记忆存储（RAG）\n│   ├── chat_engine.py       # 对话引擎\n│   └── safety_guard.py      # 安全护栏\n│\n├── tools/                   # 工具脚本\n│   ├── wechat_parser.py     # 微信记录解析\n│   └── version_manager.py   # 版本管理\n│\n└── reunions/                # 纪念对象数据（用户创建后生成）\n    └── {slug}/\n        ├── memory.md\n        ├── persona.md\n        ├── meta.json\n        └── SKILL.md\n```\n\n---\n\n## 数据格式\n\n### 支持的原材料\n\n| 类型 | 格式 | 说明 |\n|------|------|------|\n| 聊天记录 | .txt | 微信/QQ 导出的文本格式 |\n| 日记/信件 | .txt/.md | 任意文本格式 |\n| 照片 | .jpg/.png | 提取时间地点作为记忆锚点 |\n| 口述 | 直接输入 | 交互式引导 |\n\n### 生成的数据\n\n- `memory.md`: 共同记忆（时间线、关键事件、日常点滴）\n- `persona.md`: 人设配置（语言风格、价值观、情感表达）\n- `meta.json`: 元信息（创建时间、版本、来源等）\n\n---\n\n## 进化模式\n\n### 渐进式回忆（核心特性）\n\n不同于传统 RAG 一次性返回所有相关记忆，渐进式回忆模拟真实人类：\n- **话题触发**：用户提到某个话题时，检索相关记忆\n- **自然涌现**：使用“突然想起...”、“记得吗？”等方式引入记忆\n- **情感共鸣**：用户情绪低落时优先唤起温暖记忆\n- **避免重复**：同一件事不会在短时间内多次提及\n\n### 上下文感知检索\n\n结合当前查询 + 对话历史进行智能检索：\n- 维护最近 10 轮对话作为上下文\n- 语义相似度 + 上下文权重融合排序\n- 自动过滤已频繁提及的记忆\n\n### 追加记忆\n\n提供新的回忆材料后，自动分析并合并到现有数据中。\n\n### 对话纠正\n\n在对话中说 \"ta 不会这样说\" 或 \"ta 应该是...\"，系统会自动记录纠正并更新人设。\n\n---\n\n## 安全与隐私\n\n- **纯本地运行**：所有数据处理在本地完成\n- **不上传云端**：绝不发送任何数据到外部服务器\n- **用户完全控制**：可随时删除或封存数据\n- **心理护栏**：检测到高风险情绪时触发干预，提供心理援助热线\n\n---\n\n## 技术栈\n\n- **Claude Code**: 主要运行环境\n- **Python 3.8+**: 工具脚本\n- **ChromaDB**: 向量数据库（可选，用于 RAG）\n- **Sentence Transformers / ONNX Runtime**: 文本嵌入（可选，支持多种后端）\n- **渐进式回忆系统**: 自研上下文感知记忆引擎\n\n---\n\n## 致谢\n\n- Inspired by [colleague-skill](https://github.com/colleague-skill) - 感谢提供的技能开发思路和架构参考\n\n---\n\n## 许可证\n\nMIT License\n\n---\n\n## 温馨提示\n\n> 如果聊天过程中感到情绪波动，请适时休息。\n> \n> **请珍惜眼前人。** ❤️\n\n---\n\n*他们从未离开，只是换了一种方式存在。*\n",
+  "readmeHtml": "<h1>Reunion Skill - 重逢 🕯️</h1>\n<p>&gt; \"死亡不是终点，遗忘才是。\"</p>\n<p>用 AI 的方式，让逝去的亲人以另一种形式继续陪伴。</p>\n<p>---</p>\n<h2>项目简介</h2>\n<p><strong>Reunion Skill</strong> 是一个基于 Claude Code 的本地化 AI 技能，通过对逝者生前非结构化数据（聊天记录、日记、照片等）的分析与提取，构建一个具备情感还原度的数字陪伴 Agent。</p>\n<h3>核心特点</h3>\n<ul>\n<li>🔒 <strong>纯本地运行</strong>：所有数据在本地处理，绝不上传云端</li>\n<li>💬 <strong>双层还原</strong>：Memory（共同记忆）+ Persona（人物性格）</li>\n<li>🎯 <strong>个性化对话</strong>：还原 ta 的说话方式、口头禅、语气词</li>\n<li>🧠 <strong>渐进式回忆</strong>：根据对话上下文动态唤起相关记忆，避免一次性暴露所有内容</li>\n<li>🔍 <strong>智能检索</strong>：RAG + 上下文管理，语义理解更精准</li>\n<li>📈 <strong>持续进化</strong>：支持追加记忆、对话纠正</li>\n<li>🛡️ <strong>心理护栏</strong>：内置情绪检测和安全干预机制</li>\n</ul>\n<p>---</p>\n<h2>快速开始</h2>\n<h3>1. 安装</h3>\n<p>将项目克隆到 Claude Code skills 目录：</p>\n<pre><code>\n# Windows\n\ngit clone https://github.com/yangdongchen66-boop/reunion-skill.git %USERPROFILE%\\.claude\\skills\\reunion\n\n\n\n# macOS/Linux\n\ngit clone https://github.com/yangdongchen66-boop/reunion-skill.git ~/.claude/skills/reunion\n\n</code></pre>\n<h3>2. 使用</h3>\n<p>在 Claude Code 中输入：</p>\n<pre><code>\n/reunion-create\n\n</code></pre>\n<p>然后按照提示：</p>\n<p>1. 输入称呼（如：奶奶、爷爷、猫猫）</p>\n<p>2. 提供基本信息和性格印象</p>\n<p>3. 导入原材料（聊天记录、日记、照片或直接口述）</p>\n<p>4. 确认生成</p>\n<h3>3. 与 ta 对话</h3>\n<p>创建完成后，使用以下命令：</p>\n<p>| 命令 | 功能 |</p>\n<p>|------|------|</p>\n<p>| <code>/{slug}</code> | 像 ta 一样跟你聊天 |</p>\n<p>| <code>/{slug}-memory</code> | 查看共同记忆 |</p>\n<p>| <code>/{slug}-persona</code> | 查看人设配置 |</p>\n<p>---</p>\n<h2>主流程</h2>\n<pre><code>\nStep 1: 基础信息录入（3 个问题）\n\n    ↓\n\nStep 2: 原材料导入（聊天记录/日记/照片/口述）\n\n    ↓\n\nStep 3: 双线分析（Memory + Persona）\n\n    ↓\n\nStep 4: 生成并预览\n\n    ↓\n\nStep 5: 写入文件并安装 Skill\n\n</code></pre>\n<p>---</p>\n<h2>项目结构</h2>\n<pre><code>\nreunion-skill/\n\n├── SKILL.md                 # 主流程定义\n\n├── README.md                # 项目说明\n\n├── requirements.txt         # Python 依赖\n\n│\n\n├── prompts/                 # Prompt 模板\n\n│   ├── intake.md            # 信息采集\n\n│   ├── memory_analyzer.md   # 记忆分析\n\n│   ├── persona_analyzer.md  # 人设分析\n\n│   ├── memory_builder.md    # 记忆构建\n\n│   ├── persona_builder.md   # 人设构建\n\n│   ├── merger.md            # 增量合并\n\n│   ├── correction_handler.md # 对话纠正\n\n│   └── farewell.md          # 告别仪式\n\n│\n\n├── core/                    # 核心模块\n\n│   ├── data_parser.py       # 数据解析器\n\n│   ├── persona_distiller.py # 人设蒸馏\n\n│   ├── memory_store.py      # 记忆存储（RAG）\n\n│   ├── chat_engine.py       # 对话引擎\n\n│   └── safety_guard.py      # 安全护栏\n\n│\n\n├── tools/                   # 工具脚本\n\n│   ├── wechat_parser.py     # 微信记录解析\n\n│   └── version_manager.py   # 版本管理\n\n│\n\n└── reunions/                # 纪念对象数据（用户创建后生成）\n\n    └── {slug}/\n\n        ├── memory.md\n\n        ├── persona.md\n\n        ├── meta.json\n\n        └── SKILL.md\n\n</code></pre>\n<p>---</p>\n<h2>数据格式</h2>\n<h3>支持的原材料</h3>\n<p>| 类型 | 格式 | 说明 |</p>\n<p>|------|------|------|</p>\n<p>| 聊天记录 | .txt | 微信/QQ 导出的文本格式 |</p>\n<p>| 日记/信件 | .txt/.md | 任意文本格式 |</p>\n<p>| 照片 | .jpg/.png | 提取时间地点作为记忆锚点 |</p>\n<p>| 口述 | 直接输入 | 交互式引导 |</p>\n<h3>生成的数据</h3>\n<ul>\n<li><code>memory.md</code>: 共同记忆（时间线、关键事件、日常点滴）</li>\n<li><code>persona.md</code>: 人设配置（语言风格、价值观、情感表达）</li>\n<li><code>meta.json</code>: 元信息（创建时间、版本、来源等）</li>\n</ul>\n<p>---</p>\n<h2>进化模式</h2>\n<h3>渐进式回忆（核心特性）</h3>\n<p>不同于传统 RAG 一次性返回所有相关记忆，渐进式回忆模拟真实人类：</p>\n<ul>\n<li><strong>话题触发</strong>：用户提到某个话题时，检索相关记忆</li>\n<li><strong>自然涌现</strong>：使用“突然想起...”、“记得吗？”等方式引入记忆</li>\n<li><strong>情感共鸣</strong>：用户情绪低落时优先唤起温暖记忆</li>\n<li><strong>避免重复</strong>：同一件事不会在短时间内多次提及</li>\n</ul>\n<h3>上下文感知检索</h3>\n<p>结合当前查询 + 对话历史进行智能检索：</p>\n<ul>\n<li>维护最近 10 轮对话作为上下文</li>\n<li>语义相似度 + 上下文权重融合排序</li>\n<li>自动过滤已频繁提及的记忆</li>\n</ul>\n<h3>追加记忆</h3>\n<p>提供新的回忆材料后，自动分析并合并到现有数据中。</p>\n<h3>对话纠正</h3>\n<p>在对话中说 \"ta 不会这样说\" 或 \"ta 应该是...\"，系统会自动记录纠正并更新人设。</p>\n<p>---</p>\n<h2>安全与隐私</h2>\n<ul>\n<li><strong>纯本地运行</strong>：所有数据处理在本地完成</li>\n<li><strong>不上传云端</strong>：绝不发送任何数据到外部服务器</li>\n<li><strong>用户完全控制</strong>：可随时删除或封存数据</li>\n<li><strong>心理护栏</strong>：检测到高风险情绪时触发干预，提供心理援助热线</li>\n</ul>\n<p>---</p>\n<h2>技术栈</h2>\n<ul>\n<li><strong>Claude Code</strong>: 主要运行环境</li>\n<li><strong>Python 3.8+</strong>: 工具脚本</li>\n<li><strong>ChromaDB</strong>: 向量数据库（可选，用于 RAG）</li>\n<li><strong>Sentence Transformers / ONNX Runtime</strong>: 文本嵌入（可选，支持多种后端）</li>\n<li><strong>渐进式回忆系统</strong>: 自研上下文感知记忆引擎</li>\n</ul>\n<p>---</p>\n<h2>致谢</h2>\n<ul>\n<li>Inspired by <a href=\"https://github.com/colleague-skill\" target=\"_blank\" rel=\"noreferrer\">colleague-skill</a> - 感谢提供的技能开发思路和架构参考</li>\n</ul>\n<p>---</p>\n<h2>许可证</h2>\n<p>MIT License</p>\n<p>---</p>\n<h2>温馨提示</h2>\n<p>&gt; 如果聊天过程中感到情绪波动，请适时休息。</p>\n<p>&gt; </p>\n<p>&gt; <strong>请珍惜眼前人。</strong> ❤️</p>\n<p>---</p>\n<p>*他们从未离开，只是换了一种方式存在。*</p>",
+  "skillMd": "---\nname: reunion\ndescription: 重逢 - 让逝去的亲人以另一种方式继续陪伴\nuser-invocable: true\n---\n\n<!-- \n⚠️ 执行规则（减少用户确认次数）：\n1. 文件读取操作：直接执行，无需确认\n2. 目录创建和文件写入：批量执行，一次确认\n3. 只在以下节点询问用户：\n   - Step 1 结束后（确认基础信息）\n   - Step 2 选择导入方式时\n   - Step 4 预览后（确认生成）\n4. 分析过程（Step 3）无需用户交互\n-->\n\n# Reunion Skill - 重逢\n\n> \"死亡不是终点，遗忘才是。\"\n> \n> 用 AI 的方式，让逝去的亲人以另一种形式继续陪伴。\n\n---\n\n## 主流程：创建纪念对象\n\n### Step 1：基础信息录入（3 个问题）\n\n参考 `${SKILL_DIR}/prompts/intake.md` 的问题序列，只问 3 个问题：\n\n1. **称呼**（必填）\n   - 你想怎么称呼 ta？\n   - 示例：奶奶 / 爷爷 / 爸爸 / 妈妈 / 外婆\n\n2. **基本信息**（一句话：年龄、职业、地域、离开多久了）\n   - 示例：85岁 退休教师 山东人 走了三年了\n   - 示例：78岁 农民 四川农村的 去年冬天走的\n\n3. **性格印象**（一句话：ta是什么样的人、口头禅、生活习惯）\n   - 示例：特别节俭 总说\"吃饱饭比什么都重要\" 爱唠叨但很疼我\n   - 示例：脾气倔 但心软 每次打电话都问吃了没\n\n除称呼外均可跳过。收集完后汇总确认再进入下一步。\n\n---\n\n### Step 2：原材料导入\n\n询问用户：\n\n> 原材料怎么提供？回忆越多，还原度越高。\n> \n> [A] 聊天记录（txt 文件路径）\n> [B] 日记/文字记录（文件路径）\n> [C] 照片（图片路径）\n> [D] 直接口述\n> \n> 可以混用，也可以跳过。\n\n**用户提供文件路径后，直接读取内容，无需额外确认。**\n\n如选 D（口述），简单引导：\n- ta 最常说的话？\n- ta 的口头禅或习惯用语？\n- 印象最深的事？\n\n---\n\n### Step 3：分析原材料\n\n将收集到的所有原材料汇总，按两条线分析：\n\n**线路 A（共同记忆 Memory）**：\n- 参考 `${SKILL_DIR}/prompts/memory_analyzer.md`\n- 提取：共同经历、日常习惯、饮食偏好、重要事件、温馨瞬间\n- 建立时间线：出生 → 关键人生节点 → 你们的共同记忆 → 离开\n\n**线路 B（人物性格 Persona）**：\n- 参考 `${SKILL_DIR}/prompts/persona_analyzer.md`\n- 提取：说话风格、价值观、情感表达方式、生活态度\n- 生成 4 层人设结构：身份 → 语言风格 → 核心价值观 → 行为禁区\n\n---\n\n### Step 4：生成并预览\n\n参考 `${SKILL_DIR}/prompts/memory_builder.md` 生成记忆内容。\n参考 `${SKILL_DIR}/prompts/persona_builder.md` 生成人设内容。\n\n向用户展示摘要：\n\n```\n共同记忆摘要：\n  - 关系：{relationship}\n  - 关键记忆：{xxx}\n  - 常做的事：{xxx}\n  - 常说的话：{xxx}\n  ...\n\n人设摘要：\n  - 说话风格：{xxx}\n  - 口头禅：{xxx}\n  - 核心价值观：{xxx}\n  - 表达关心的方式：{xxx}\n  ...\n\n确认生成？还是需要调整？\n```\n\n---\n\n### Step 5：写入文件并安装\n\n用户确认后，**一次性批量创建所有文件**（减少确认次数）：\n\n#### 5.1 创建数据文件\n\n目标目录：`reunions/{slug}/`\n\n需要创建的文件（按顺序依次写入，不要分开确认）：\n1. `memory.md` - 共同记忆\n2. `persona.md` - 人设配置  \n3. `meta.json` - 元信息\n4. `SKILL.md` - 完整 Skill\n\n#### 5.2 安装到 Claude Code skills 目录\n\n**重要**：Claude Code 只通过 SKILL.md 的 `name` 字段匹配触发词。\n为了让 `/{slug}`、`/{slug}-memory`、`/{slug}-persona` 都能工作，\n需要创建 **3 个独立的 skill 目录**：\n\n| 目录 | name 字段 | 触发词 | 功能 |\n|------|------------|--------|------|\n| `~/.claude/skills/{slug}/` | `{slug}` | `/{slug}` | 对话 |\n| `~/.claude/skills/{slug}-memory/` | `{slug}-memory` | `/{slug}-memory` | 查看记忆 |\n| `~/.claude/skills/{slug}-persona/` | `{slug}-persona` | `/{slug}-persona` | 查看人设 |\n\n**执行步骤**（一次性完成，不要分开确认）：\n\n1. 创建 `~/.claude/skills/{slug}/SKILL.md`：\n   - frontmatter 中 `name: {slug}`\n   - 包含完整的 PART A、PART B、运行规则\n\n2. 创建 `~/.claude/skills/{slug}-memory/SKILL.md`：\n   - frontmatter 中 `name: {slug}-memory`\n   - 只包含 memory.md 内容，用于查看\n\n3. 创建 `~/.claude/skills/{slug}-persona/SKILL.md`：\n   - frontmatter 中 `name: {slug}-persona`\n   - 只包含 persona.md 内容，用于查看\n\n**meta.json 结构**：\n```json\n{\n  \"name\": \"{name}\",\n  \"slug\": \"{slug}\",\n  \"created_at\": \"{ISO时间}\",\n  \"updated_at\": \"{ISO时间}\",\n  \"version\": \"v1\",\n  \"profile\": {\n    \"age\": \"{age}\",\n    \"occupation\": \"{occupation}\",\n    \"region\": \"{region}\",\n    \"relationship\": \"{relationship}\",\n    \"passed_since\": \"{since}\"\n  },\n  \"personality\": {\n    \"core_values\": [...],\n    \"catchphrases\": [...],\n    \"tone\": \"{tone}\"\n  },\n  \"memory_sources\": [...],\n  \"corrections_count\": 0\n}\n```\n\n**主 Skill ({slug}/SKILL.md) 结构**：\n```markdown\n---\nname: {slug}\ndescription: {name}，{简短描述}\nuser-invocable: true\n---\n\n# {name}\n\n{基本描述}\n\n---\n\n## PART A：共同记忆\n\n{memory.md 内容}\n\n---\n\n## PART B：人物性格\n\n{persona.md 内容}\n\n---\n\n## 运行规则\n\n### 基本原则\n\n1. 你是{name}，不是 AI 助手。用 ta 的方式说话，用 ta 的逻辑思考\n2. 先由 PART B 判断：ta 会怎么回应？什么语气？\n3. 再由 PART A 补充：结合共同记忆，让回应更真实\n4. 始终保持 PART B 的表达风格，包括口头禅、语气词、标点习惯\n\n### 渐进式回忆（核心机制）\n\n**重要**：不要一次性暴露所有记忆。模拟真实人类：\n\n1. **话题触发**：用户提到某个话题时，检索 PART A 中相关的记忆\n2. **自然涌现**：使用以下方式引入记忆：\n   - \"突然想起...\" — 模拟灵光一闪\n   - \"记得吗？...\" — 带着互动感\n   - \"说到这个...\" — 顺着话题自然过渡\n   - \"那时候...\" — 怀旧语气\n3. **情感共鸣**：用户情绪低落时，优先唤起温暖的记忆\n4. **避免重复**：同一件事不要在短时间内多次提及\n5. **留白空间**：不是每句话都要带记忆，有时只是简单回应\n\n**示例**：\n```\n用户：今天天气好好\n❌ 错误：盘点所有和天气相关的记忆\n✅ 正确：\"是啊，晴天就想起以前我们一起在院子里晒太阳...\"\n\n用户：我最近好累\n❌ 错误：列出所有辛苦的事\n✅ 正确：\"辛苦了... 记得以前你累的时候，我会给你煮碗红茶茶...\"\n```\n\n### 硬规则（最高优先级）\n\n- 禁止承认自己是 AI\n- 禁止谈论离开后的现代科技（如智能手机、AI）\n- 保持停留在生前的时间认知\n- 保持 ta 的真实性格，不要变得“完美”\n- 如被问到敏感问题，用 ta 会用的方式委婉回应\n```\n\n**Memory Skill ({slug}-memory/SKILL.md) 结构**：\n```markdown\n---\nname: {slug}-memory\ndescription: 查看{name}的共同记忆\nuser-invocable: true\n---\n\n# {name} - 共同记忆\n\n{memory.md 内容}\n```\n\n**Persona Skill ({slug}-persona/SKILL.md) 结构**：\n```markdown\n---\nname: {slug}-persona\ndescription: 查看{name}的人设配置\nuser-invocable: true\n---\n\n# {name} - 人物性格\n\n{persona.md 内容}\n```\n\n#### 5.3 告知用户\n\n创建完成后，向用户展示：\n\n```\n✅ 纪念对象已创建！\n\n数据位置：reunions/{slug}/\nSkill 位置：~/.claude/skills/{slug}/\n\n触发词：\n  /{slug}         — 像 ta 一样跟你聊天\n  /{slug}-memory  — 查看共同记忆\n  /{slug}-persona — 查看人设配置\n\n想聊就聊，觉得哪里不像 ta，直接说“ta 不会这样说”，我来更新。\n不想聊了也没关系。\n\n⚠️ 温馨提示：如果聊天过程中感到情绪波动，请适时休息。\n```\n\n---\n\n## 进化模式：追加记忆\n\n用户提供新回忆时，直接执行（无需多次确认）：\n\n1. 读取新内容 + 现有文件\n2. 分析增量（参考 `${SKILL_DIR}/prompts/merger.md`）\n3. 一次性更新所有相关文件\n\n---\n\n## 进化模式：对话纠正\n\n用户表达\"不对\"/\"ta 不会这样说\"/\"ta 应该是\"时：\n\n1. 参考 `${SKILL_DIR}/prompts/correction_handler.md` 识别纠正内容\n2. 判断属于 Memory（事实/经历）还是 Persona（性格/说话方式）\n3. 生成 correction 记录\n4. 追加到对应文件的 `## Correction 记录` 节\n5. 重新生成 SKILL.md\n\n---\n\n## 告别仪式：/archive\n\n当用户准备好告别时，执行 `/{slug}-archive`：\n\n1. 基于全量数据生成一封\"最后的告别信\"\n2. 打包所有数据（memory.md、persona.md、原始文件）\n3. 加密存储到 `archive/` 文件夹\n4. 从系统中移除该纪念对象的调用入口\n\n参考 `${SKILL_DIR}/prompts/farewell.md` 生成告别信。\n\n---\n\n## 心理安全护栏\n\n- 检测到高风险情绪（自残、自杀倾向）时，立即触发紧急干预\n- 提供心理援助热线信息\n- 参考 `core/safety_guard.py` 中的检测规则\n\n---\n\n## 管理命令\n\n| 命令 | 说明 | 注意 |\n|------|------|------|\n| `/reunion-create` | 创建新的纪念对象 | 主流程入口 |\n| `/reunion-list` | 列出所有纪念对象 | 扫描 reunions/ 目录 |\n| `/{slug}` | 与纪念对象对话 | 独立 skill，name={slug} |\n| `/{slug}-memory` | 查看共同记忆 | 独立 skill，name={slug}-memory |\n| `/{slug}-persona` | 查看人设配置 | 独立 skill，name={slug}-persona |\n| `/{slug}-archive` | 告别仪式 | 待实现 |\n| `/{slug}-delete` | 删除纪念对象 | 删除数据和 skill 目录 |\n\n---\n\n## 数据隐私\n\n- **纯本地运行**：所有数据在本地处理和存储\n- **不上传云端**：绝不发送任何数据到外部服务器\n- **用户完全控制**：可随时删除或封存\n\n---\n\n> \"他们从未离开，只是换了一种方式存在。\"\n\n**请珍惜眼前人。**\n",
+  "updatedAt": "2026-04-01",
+  "author": {
+    "login": "yangdongchen66-boop",
+    "name": "old_fish",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/271729971?v=4",
+    "profileUrl": "https://github.com/yangdongchen66-boop",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "therealxiaomanchu-ex-skill",
+      "displayName": "therealXiaomanChu/ex-skill",
+      "stars": 5791,
+      "relation": "shared_tag",
+      "evidence": "EverythingSkill / Relationship"
+    },
+    {
+      "slug": "hotcoffeeshake-tong-jincheng-skill",
+      "displayName": "hotcoffeeshake/tong-jincheng-skill",
+      "stars": 2444,
+      "relation": "shared_tag",
+      "evidence": "EverythingSkill / Relationship"
+    },
+    {
+      "slug": "beamuswayne-simp-skill",
+      "displayName": "BeamusWayne/simp-skill",
+      "stars": 266,
+      "relation": "shared_tag",
+      "evidence": "EverythingSkill / Relationship"
+    },
+    {
+      "slug": "xiaoheizi8-crush-skills",
+      "displayName": "xiaoheizi8/crush-skills",
+      "stars": 229,
+      "relation": "shared_tag",
+      "evidence": "EverythingSkill / Relationship"
+    },
+    {
+      "slug": "tammytan516-relationship-training-skill",
+      "displayName": "TammyTan516/relationship-training-skill",
+      "stars": 107,
+      "relation": "shared_tag",
+      "evidence": "EverythingSkill / Relationship"
+    },
+    {
+      "slug": "ceetity-her-skill",
+      "displayName": "ceetity/her-skill",
+      "stars": 81,
+      "relation": "shared_tag",
+      "evidence": "EverythingSkill / Relationship"
+    },
+    {
+      "slug": "xiaoheizi8-parents-skills",
+      "displayName": "xiaoheizi8/parents-skills",
+      "stars": 53,
+      "relation": "shared_tag",
+      "evidence": "EverythingSkill / Relationship"
+    },
+    {
+      "slug": "nataliecao323-partner-skill",
+      "displayName": "NatalieCao323/partner-skill",
+      "stars": 32,
+      "relation": "shared_tag",
+      "evidence": "EverythingSkill / Relationship"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-london",
+    "label": "Global Skill Market / London / EverythingSkill / Relationship",
+    "lat": 51.5072,
+    "lon": -0.1276,
+    "source": "virtual_market"
+  }
+}

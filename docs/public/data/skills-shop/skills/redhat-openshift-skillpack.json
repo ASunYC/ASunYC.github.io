@@ -1,0 +1,89 @@
+{
+  "id": "skill:redhat-openshift-skillpack",
+  "slug": "redhat-openshift-skillpack",
+  "name": "openshift-skillpack",
+  "displayName": "redhat/openshift-skillpack",
+  "description": "Provision, inventory, and report on OpenShift clusters — spanning Assisted Installer, OCM, ROSA, ARO, and kubeconfig fleets — through a single conversational workflow.",
+  "stars": 0,
+  "category": "video-search-and-summarization",
+  "source": "voltagent",
+  "url": "https://catalog.redhat.com/en/ai/skills/detail/agentic-skill-pack-for-red-hat-openshift",
+  "githubRepo": "",
+  "readme": "# redhat/openshift-skillpack\n\nProvision, inventory, and report on OpenShift clusters — spanning Assisted Installer, OCM, ROSA, ARO, and kubeconfig fleets — through a single conversational workflow.",
+  "readmeHtml": "<h1>redhat/openshift-skillpack</h1>\n<p>Provision, inventory, and report on OpenShift clusters — spanning Assisted Installer, OCM, ROSA, ARO, and kubeconfig fleets — through a single conversational workflow.</p>",
+  "skillMd": "",
+  "updatedAt": "2026-07-03T11:33:56.389Z",
+  "author": {
+    "login": "redhat",
+    "name": "redhat",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/391346?v=4",
+    "profileUrl": "https://github.com/redhat",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "redhat-cve-skillpack",
+      "displayName": "redhat/cve-skillpack",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:redhat"
+    },
+    {
+      "slug": "redhat-sre-skillpack",
+      "displayName": "redhat/sre-skillpack",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:redhat"
+    },
+    {
+      "slug": "redhat-openshift-virtualization",
+      "displayName": "redhat/openshift-virtualization",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:redhat"
+    },
+    {
+      "slug": "google-cloud-agent-platform-skill-registry",
+      "displayName": "google/cloud/agent-platform-skill-registry",
+      "stars": 14368,
+      "relation": "shared_tag",
+      "evidence": "video-search-and-summarization"
+    },
+    {
+      "slug": "cypress-io-cypress-author",
+      "displayName": "cypress-io/cypress-author",
+      "stars": 34,
+      "relation": "shared_tag",
+      "evidence": "video-search-and-summarization"
+    },
+    {
+      "slug": "redhat-cve-skillpack",
+      "displayName": "redhat/cve-skillpack",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "video-search-and-summarization"
+    },
+    {
+      "slug": "redhat-sre-skillpack",
+      "displayName": "redhat/sre-skillpack",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "video-search-and-summarization"
+    },
+    {
+      "slug": "redhat-openshift-virtualization",
+      "displayName": "redhat/openshift-virtualization",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "video-search-and-summarization"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-san-francisco",
+    "label": "Global Skill Market / San Francisco / video-search-and-summarization",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "virtual_market"
+  }
+}

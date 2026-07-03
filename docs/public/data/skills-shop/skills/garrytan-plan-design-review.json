@@ -12,20 +12,26 @@
   "readme": "# garrytan/plan-design-review\n\nSenior Designer review: rates each design dimension 0-10, explains what a 10 looks like, AI Slop detection",
   "readmeHtml": "<h1>garrytan/plan-design-review</h1>\n<p>Senior Designer review: rates each design dimension 0-10, explains what a 10 looks like, AI Slop detection</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.146Z",
+  "updatedAt": "2026-07-03T11:33:56.381Z",
   "author": {
     "login": "garrytan",
-    "name": "garrytan",
-    "avatarUrl": "",
+    "name": "Garry Tan",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/19957?v=4",
     "profileUrl": "https://github.com/garrytan",
-    "location": ""
+    "location": "San Francisco, CA"
   },
-  "location": null,
+  "location": {
+    "id": "san-francisco",
+    "label": "San Francisco, London, Austin, Lisbon, Singapore",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "github_profile"
+  },
   "related": [
     {
       "slug": "garrytan-gstack",
       "displayName": "garrytan/gstack",
-      "stars": 90855,
+      "stars": 119113,
       "relation": "source_overlap",
       "evidence": "author:garrytan"
     },
@@ -80,10 +86,10 @@
     }
   ],
   "mapLocation": {
-    "id": "virtual-sydney",
-    "label": "Global Skill Market / Sydney / TypeScript Skills",
-    "lat": -33.8688,
-    "lon": 151.2093,
-    "source": "virtual_market"
+    "id": "san-francisco",
+    "label": "San Francisco, London, Austin, Lisbon, Singapore",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "github_profile"
   }
 }

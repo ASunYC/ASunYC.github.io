@@ -5,31 +5,24 @@
   "displayName": "callstackincubator/github",
   "description": "GitHub workflow patterns for PRs, code review, branching",
   "stars": 0,
-  "category": "Skills by CallStack",
+  "category": "Official Skills by",
   "source": "voltagent",
   "url": "https://officialskills.sh/callstackincubator/skills/github",
   "githubRepo": "",
   "readme": "# callstackincubator/github\n\nGitHub workflow patterns for PRs, code review, branching",
   "readmeHtml": "<h1>callstackincubator/github</h1>\n<p>GitHub workflow patterns for PRs, code review, branching</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.090Z",
+  "updatedAt": "2026-07-03T11:33:56.323Z",
   "author": {
     "login": "callstackincubator",
-    "name": "callstackincubator",
-    "avatarUrl": "",
+    "name": "Callstack Incubator",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/40356278?v=4",
     "profileUrl": "https://github.com/callstackincubator",
-    "location": ""
+    "location": "Worldwide"
   },
   "location": null,
   "related": [
     {
-      "slug": "callstackincubator-agent-skills",
-      "displayName": "callstackincubator/agent-skills",
-      "stars": 1307,
-      "relation": "source_overlap",
-      "evidence": "author:callstackincubator"
-    },
-    {
       "slug": "callstackincubator-react-native-best-practices",
       "displayName": "callstackincubator/react-native-best-practices",
       "stars": 0,
@@ -44,23 +37,51 @@
       "evidence": "author:callstackincubator"
     },
     {
-      "slug": "callstackincubator-react-native-best-practices",
-      "displayName": "callstackincubator/react-native-best-practices",
-      "stars": 0,
+      "slug": "angular-angular-developer",
+      "displayName": "angular/angular-developer",
+      "stars": 544,
       "relation": "shared_tag",
-      "evidence": "Skills by CallStack"
+      "evidence": "Official Skills by"
     },
     {
-      "slug": "callstackincubator-upgrading-react-native",
-      "displayName": "callstackincubator/upgrading-react-native",
+      "slug": "testmu-ai-api-skill",
+      "displayName": "testmu-ai/api-skill",
+      "stars": 318,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "veniceai-venice-api-overview",
+      "displayName": "veniceai/venice-api-overview",
+      "stars": 105,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "zero-zero",
+      "displayName": "zero/zero",
+      "stars": 14,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "trycourier-courier-skills",
+      "displayName": "trycourier/courier-skills",
+      "stars": 11,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "anthropics-docx",
+      "displayName": "anthropics/docx",
       "stars": 0,
       "relation": "shared_tag",
-      "evidence": "Skills by CallStack"
+      "evidence": "Official Skills by"
     }
   ],
   "mapLocation": {
     "id": "virtual-tokyo",
-    "label": "Global Skill Market / Tokyo / Skills by CallStack",
+    "label": "Global Skill Market / Tokyo / Official Skills by",
     "lat": 35.6762,
     "lon": 139.6503,
     "source": "virtual_market"

@@ -4,77 +4,77 @@
   "name": "redis-development",
   "displayName": "redis/redis-development",
   "description": "Redis development best practices — data structures, query engine, vector search, caching, and performance optimization.",
-  "stars": 0,
+  "stars": 82,
   "category": "TypeScript Skills",
   "source": "voltagent",
   "url": "https://github.com/redis/agent-skills/tree/main/skills/redis-development",
   "githubRepo": "redis/agent-skills",
-  "readme": "# redis/redis-development\n\nRedis development best practices — data structures, query engine, vector search, caching, and performance optimization.",
-  "readmeHtml": "<h1>redis/redis-development</h1>\n<p>Redis development best practices — data structures, query engine, vector search, caching, and performance optimization.</p>",
+  "readme": "# Redis Agent Skills\n\nA collection of skills for AI coding agents working with Redis. Skills are packaged instructions and resources that extend agent capabilities.\n\nSkills follow the [Agent Skills](https://agentskills.io/) format.\n\n## Available Skills\n\n| Skill | Description |\n|-------|-------------|\n| [redis-core](skills/redis-core/) | Data structures, key naming, memory and TTL, atomic primitives, JSON vs Hash, Streams vs Pub/Sub. |\n| [redis-connections](skills/redis-connections/) | Pooling, multiplexing, pipelining, client-side caching, timeouts, slow commands. |\n| [redis-search](skills/redis-search/) | FT.CREATE schema, FT.SEARCH / FT.AGGREGATE / FT.HYBRID, DIALECT 2, vector similarity (HNSW / FLAT), hybrid retrieval, RAG pipelines, zero-downtime index updates. |\n| [redis-semantic-cache](skills/redis-semantic-cache/) | LangCache — cache-aside flow for LLM responses, similarity threshold tuning, per-task cache separation. |\n| [redis-clustering](skills/redis-clustering/) | Hash tags for multi-key operations, avoiding CROSSSLOT, reading from replicas. |\n| [redis-security](skills/redis-security/) | Authentication and TLS, ACL-based least privilege, network bind, firewall, command renaming. |\n| [redis-observability](skills/redis-observability/) | Key metrics (INFO), debugging commands (SLOWLOG, MEMORY DOCTOR, FT.PROFILE), Redis Insight. |\n| [iris-development](skills/iris-development/) | Iris: Redis Agent Memory — provisioning, SDK auth, session events, long-term memory search, async promotion. |\n\n## Installation\n\n### Agent Skills CLI\n\n```bash\nnpx skills add redis/agent-skills\n```\n\n### Claude Code Plugin\n\nYou can also install the skills as a Claude Code plugin:\n\n```\n/plugin marketplace add redis/agent-skills\n/plugin install redis-development@redis\n```\n\n### Cursor Plugin\n\nThis repository also includes Cursor plugin packaging. Run this command in chat:\n\n```text\n/add-plugin redis\n```\n\nThe top-level `skills/` directory remains the source of truth. Plugin folders symlink only the skill directories they expose.\n\n## Usage\n\nSkills are automatically available once installed. The agent will use them when relevant tasks are detected.\n\n**Examples:**\n```\nHelp me optimize this Redis query\n```\n```\nWhat data structure should I use for a leaderboard?\n```\n```\nReview my Redis connection handling\n```\n\n## Skill Structure\n\nEach skill follows the [agentskills.io specification](https://agentskills.io/specification):\n\n- `SKILL.md` - Instructions for the agent (required)\n- `references/` - Long-form content loaded on demand (optional)\n- `scripts/` - Helper scripts (optional)\n- `assets/` - Static resources (optional)\n\nSee [AGENTS.md](AGENTS.md) for the full layout, conventions, and the \"Adding a New Skill\" walkthrough.\n\n## License\n\nMIT\n",
+  "readmeHtml": "<h1>Redis Agent Skills</h1>\n<p>A collection of skills for AI coding agents working with Redis. Skills are packaged instructions and resources that extend agent capabilities.</p>\n<p>Skills follow the <a href=\"https://agentskills.io/\" target=\"_blank\" rel=\"noreferrer\">Agent Skills</a> format.</p>\n<h2>Available Skills</h2>\n<p>| Skill | Description |</p>\n<p>|-------|-------------|</p>\n<p>| [redis-core](skills/redis-core/) | Data structures, key naming, memory and TTL, atomic primitives, JSON vs Hash, Streams vs Pub/Sub. |</p>\n<p>| [redis-connections](skills/redis-connections/) | Pooling, multiplexing, pipelining, client-side caching, timeouts, slow commands. |</p>\n<p>| [redis-search](skills/redis-search/) | FT.CREATE schema, FT.SEARCH / FT.AGGREGATE / FT.HYBRID, DIALECT 2, vector similarity (HNSW / FLAT), hybrid retrieval, RAG pipelines, zero-downtime index updates. |</p>\n<p>| [redis-semantic-cache](skills/redis-semantic-cache/) | LangCache — cache-aside flow for LLM responses, similarity threshold tuning, per-task cache separation. |</p>\n<p>| [redis-clustering](skills/redis-clustering/) | Hash tags for multi-key operations, avoiding CROSSSLOT, reading from replicas. |</p>\n<p>| [redis-security](skills/redis-security/) | Authentication and TLS, ACL-based least privilege, network bind, firewall, command renaming. |</p>\n<p>| [redis-observability](skills/redis-observability/) | Key metrics (INFO), debugging commands (SLOWLOG, MEMORY DOCTOR, FT.PROFILE), Redis Insight. |</p>\n<p>| [iris-development](skills/iris-development/) | Iris: Redis Agent Memory — provisioning, SDK auth, session events, long-term memory search, async promotion. |</p>\n<h2>Installation</h2>\n<h3>Agent Skills CLI</h3>\n<pre><code>\nnpx skills add redis/agent-skills\n\n</code></pre>\n<h3>Claude Code Plugin</h3>\n<p>You can also install the skills as a Claude Code plugin:</p>\n<pre><code>\n/plugin marketplace add redis/agent-skills\n\n/plugin install redis-development@redis\n\n</code></pre>\n<h3>Cursor Plugin</h3>\n<p>This repository also includes Cursor plugin packaging. Run this command in chat:</p>\n<pre><code>\n/add-plugin redis\n\n</code></pre>\n<p>The top-level <code>skills/</code> directory remains the source of truth. Plugin folders symlink only the skill directories they expose.</p>\n<h2>Usage</h2>\n<p>Skills are automatically available once installed. The agent will use them when relevant tasks are detected.</p>\n<p><strong>Examples:</strong></p>\n<pre><code>\nHelp me optimize this Redis query\n\n</code></pre>\n<pre><code>\nWhat data structure should I use for a leaderboard?\n\n</code></pre>\n<pre><code>\nReview my Redis connection handling\n\n</code></pre>\n<h2>Skill Structure</h2>\n<p>Each skill follows the <a href=\"https://agentskills.io/specification\" target=\"_blank\" rel=\"noreferrer\">agentskills.io specification</a>:</p>\n<ul>\n<li><code>SKILL.md</code> - Instructions for the agent (required)</li>\n<li><code>references/</code> - Long-form content loaded on demand (optional)</li>\n<li><code>scripts/</code> - Helper scripts (optional)</li>\n<li><code>assets/</code> - Static resources (optional)</li>\n</ul>\n<p>See [AGENTS.md](AGENTS.md) for the full layout, conventions, and the \"Adding a New Skill\" walkthrough.</p>\n<h2>License</h2>\n<p>MIT</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.152Z",
+  "updatedAt": "2026-06-23T19:54:40Z",
   "author": {
     "login": "redis",
-    "name": "redis",
-    "avatarUrl": "",
+    "name": "Redis",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/1529926?v=4",
     "profileUrl": "https://github.com/redis",
     "location": ""
   },
   "location": null,
   "related": [
     {
+      "slug": "coreyhaines31-ab-test-setup",
+      "displayName": "coreyhaines31/ab-test-setup",
+      "stars": 35923,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    },
+    {
+      "slug": "phuryn-ab-test-analysis",
+      "displayName": "phuryn/ab-test-analysis",
+      "stars": 22293,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    },
+    {
       "slug": "deanpeters-acquisition-channel-advisor",
       "displayName": "deanpeters/acquisition-channel-advisor",
-      "stars": 4159,
+      "stars": 5553,
       "relation": "shared_tag",
       "evidence": "TypeScript Skills"
     },
     {
-      "slug": "deanpeters-ai-shaped-readiness-advisor",
-      "displayName": "deanpeters/ai-shaped-readiness-advisor",
-      "stars": 4159,
+      "slug": "realkimbarrett-avatar-extraction",
+      "displayName": "realkimbarrett/avatar-extraction",
+      "stars": 679,
       "relation": "shared_tag",
       "evidence": "TypeScript Skills"
     },
     {
-      "slug": "deanpeters-altitude-horizon-framework",
-      "displayName": "deanpeters/altitude-horizon-framework",
-      "stars": 4159,
+      "slug": "resend-resend",
+      "displayName": "resend/resend",
+      "stars": 143,
       "relation": "shared_tag",
       "evidence": "TypeScript Skills"
     },
     {
-      "slug": "deanpeters-business-health-diagnostic",
-      "displayName": "deanpeters/business-health-diagnostic",
-      "stars": 4159,
+      "slug": "microsoft-azure-ai-contentsafety-ts",
+      "displayName": "microsoft/azure-ai-contentsafety-ts",
+      "stars": 0,
       "relation": "shared_tag",
       "evidence": "TypeScript Skills"
     },
     {
-      "slug": "deanpeters-company-research",
-      "displayName": "deanpeters/company-research",
-      "stars": 4159,
+      "slug": "microsoft-azure-ai-document-intelligence-ts",
+      "displayName": "microsoft/azure-ai-document-intelligence-ts",
+      "stars": 0,
       "relation": "shared_tag",
       "evidence": "TypeScript Skills"
     },
     {
-      "slug": "deanpeters-customer-journey-map",
-      "displayName": "deanpeters/customer-journey-map",
-      "stars": 4159,
-      "relation": "shared_tag",
-      "evidence": "TypeScript Skills"
-    },
-    {
-      "slug": "deanpeters-eol-message",
-      "displayName": "deanpeters/eol-message",
-      "stars": 4159,
-      "relation": "shared_tag",
-      "evidence": "TypeScript Skills"
-    },
-    {
-      "slug": "deanpeters-epic-hypothesis",
-      "displayName": "deanpeters/epic-hypothesis",
-      "stars": 4159,
+      "slug": "microsoft-azure-ai-projects-ts",
+      "displayName": "microsoft/azure-ai-projects-ts",
+      "stars": 0,
       "relation": "shared_tag",
       "evidence": "TypeScript Skills"
     }

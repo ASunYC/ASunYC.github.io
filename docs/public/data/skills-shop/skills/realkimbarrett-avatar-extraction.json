@@ -4,79 +4,79 @@
   "name": "avatar-extraction",
   "displayName": "realkimbarrett/avatar-extraction",
   "description": "Define exactly who the buyer is, what they want, what they've tried, and what's driving their decisions",
-  "stars": 0,
+  "stars": 679,
   "category": "TypeScript Skills",
   "source": "voltagent",
   "url": "https://github.com/realkimbarrett/advertising-skills/tree/main/skills/foundations/avatar-extraction",
   "githubRepo": "realkimbarrett/advertising-skills",
-  "readme": "# realkimbarrett/avatar-extraction\n\nDefine exactly who the buyer is, what they want, what they've tried, and what's driving their decisions",
-  "readmeHtml": "<h1>realkimbarrett/avatar-extraction</h1>\n<p>Define exactly who the buyer is, what they want, what they've tried, and what's driving their decisions</p>",
-  "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.129Z",
+  "readme": "# Advertising Skills for AI Agents\n\n**The direct-response, paid media, and copywriting system for serious operators.**\n\n---\n\n## Before vs After\n\n**Before:**\n“Scale your business with proven strategies”\n\n**After:**\n“You’re not bad at ads.  \nYou’ve just never been shown how to structure them properly.”\n\nSame business.  \nCompletely different outcome.\n\n---\n\nMost AI marketing outputs sound the same.\n\nGeneric.  \nPolished.  \nForgettable.  \n\nThis repository fixes that.\n\nIt encodes the thinking behind:\n\n* high-performing ads  \n* high-converting funnels  \n* sharp positioning  \n* and direct-response copy that actually sells  \n\nNot as prompts.\n\nAs **skills**.\n\n---\n\n## What This Is\n\nA best-in-class skill library for AI agents built around:\n\n* Paid acquisition (Meta, TikTok, YouTube)  \n* Eugene Schwartz-style copywriting  \n* Offer design and positioning  \n* Funnel architecture and conversion logic  \n* Creative testing and scaling  \n* Campaign diagnosis and optimisation  \n\nEach skill is:\n\n* focused  \n* opinionated  \n* reusable  \n* and designed to work together  \n\n---\n\n## Why This Is Different\n\nMost “AI marketing libraries” optimise for output.\n\nThis optimises for **thinking**.\n\nThat means:\n\n* It doesn’t guess the audience — it defines it  \n* It doesn’t write copy first — it builds the strategy first  \n* It doesn’t try to sound smart — it tries to convert  \n* It doesn’t just create — it filters, qualifies, and diagnoses  \n\nIt combines two worlds that are usually separate:\n\n### The Copy Chief Brain\n\n* Awareness levels (Eugene Schwartz)  \n* Market sophistication  \n* Mechanisms and big ideas  \n* Headlines, leads, proof, objections, close  \n\n### The Operator Brain\n\n* Ad creative and angles  \n* Funnel paths and conversion logic  \n* Qualification and filtering  \n* Testing and performance diagnosis  \n\nMost systems have one.\n\nThis has both.\n\n---\n\n## How It Works\n\nEach skill lives in its own folder:\nskills/<category>/<skill-name>/SKILL.md\n\nEach skill defines:\n\n* when to use it  \n* what inputs it needs  \n* how it thinks  \n* what it outputs  \n* what it should not do  \n\nThey are designed to be chained.\n\n---\n\n## Example Flow\n\nBuilding a booked-call campaign:\navatar-extraction\n→ offer-extraction\n→ schwartz-awareness-mapper\n→ mechanism-builder\n→ ad-angle-multiplier\n→ scroll-stopping-creative\n→ conversion-path-builder\n→ objection-crusher\n→ generic-language-killer\n\nThis produces:\n\n* clear positioning  \n* strong angles  \n* high-performing ads  \n* a clean funnel  \n* and conversion-ready messaging  \n\n---\n\n## Example Output\n\nSee:\n/examples/booked-call-campaign-ai-ads.md\n\n---\n\n## Core Skill Categories\n\n### Foundations\n\nDefine reality before writing anything.\n\n* avatar-extraction  \n* voice-of-customer-miner  \n* offer-extraction  \n* proof-harvester  \n* positioning-core  \n\n---\n\n### Copy Chief\n\nThe Eugene Schwartz layer.\n\n* schwartz-awareness-mapper  \n* market-sophistication-analyzer  \n* dominant-desire-extractor  \n* mechanism-builder  \n* headline-matrix  \n* objection-crusher  \n* close-architect  \n\n---\n\n### Operator OS\n\nExecution and scale.\n\n* scroll-stopping-creative  \n* ad-angle-multiplier  \n* conversion-path-builder  \n* landing-page-architect  \n* email-sequence-architect  \n* performance-diagnosis  \n* testing-roadmap  \n\n---\n\n### QA\n\nWhat makes the output actually good.\n\n* generic-language-killer  \n* claim-checker  \n* consistency-auditor  \n* final-polish  \n\n---\n\n### Orchestrators\n\nPre-built multi-skill flows.\n\n* full-funnel-campaign-orchestrator  \n* booked-call-campaign-orchestrator  \n* campaign-diagnosis-orchestrator  \n\n---\n\n## Who This Is For\n\n* Media buyers who want better creative and messaging  \n* Founders running paid ads who are tired of guesswork  \n* Agencies who want consistency across teams  \n* Operators building AI-driven marketing systems  \n\n---\n\n## What This Is Not\n\n* Not generic content marketing templates  \n* Not “write me 10 captions” prompts  \n* Not surface-level frameworks  \n\nThis is built for:\n\n* direct response  \n* paid traffic  \n* real budgets  \n* real consequences  \n\n---\n\n## Installation\n\nCompatible with any agent using the Agent Skills pattern.\n\nInstall into:\n.agents/skills/\n\nWorks with:\n\n* Claude Code  \n* Cursor  \n* Windsurf  \n* Codex  \n* custom agent frameworks\n* Open Claw\n\n---\n\n## Philosophy\n\nThe future isn’t better prompts.\n\nIt’s **better encoded thinking**.\n\n---\n\n## Roadmap\n\n* Expanded Copy Chief library (mechanisms, big ideas, proof systems)  \n* Advanced funnel orchestration  \n* Creative testing systems  \n* Platform-specific skill layers (Meta, TikTok, YouTube)  \n\n---\n\n## License\n\nMIT\n\n---\n\n## Author\n\nKim Barrett  \nAdvertising systems, AI-driven marketing, and direct-response strategy  \n\n---\n\nIf you use this properly, it won’t just improve your ads.\n\nIt will change how you think about them.",
+  "readmeHtml": "<h1>Advertising Skills for AI Agents</h1>\n<p><strong>The direct-response, paid media, and copywriting system for serious operators.</strong></p>\n<p>---</p>\n<h2>Before vs After</h2>\n<p><strong>Before:</strong></p>\n<p>“Scale your business with proven strategies”</p>\n<p><strong>After:</strong></p>\n<p>“You’re not bad at ads.  </p>\n<p>You’ve just never been shown how to structure them properly.”</p>\n<p>Same business.  </p>\n<p>Completely different outcome.</p>\n<p>---</p>\n<p>Most AI marketing outputs sound the same.</p>\n<p>Generic.  </p>\n<p>Polished.  </p>\n<p>Forgettable.  </p>\n<p>This repository fixes that.</p>\n<p>It encodes the thinking behind:</p>\n<ul>\n<li>high-performing ads  </li>\n<li>high-converting funnels  </li>\n<li>sharp positioning  </li>\n<li>and direct-response copy that actually sells  </li>\n</ul>\n<p>Not as prompts.</p>\n<p>As <strong>skills</strong>.</p>\n<p>---</p>\n<h2>What This Is</h2>\n<p>A best-in-class skill library for AI agents built around:</p>\n<ul>\n<li>Paid acquisition (Meta, TikTok, YouTube)  </li>\n<li>Eugene Schwartz-style copywriting  </li>\n<li>Offer design and positioning  </li>\n<li>Funnel architecture and conversion logic  </li>\n<li>Creative testing and scaling  </li>\n<li>Campaign diagnosis and optimisation  </li>\n</ul>\n<p>Each skill is:</p>\n<ul>\n<li>focused  </li>\n<li>opinionated  </li>\n<li>reusable  </li>\n<li>and designed to work together  </li>\n</ul>\n<p>---</p>\n<h2>Why This Is Different</h2>\n<p>Most “AI marketing libraries” optimise for output.</p>\n<p>This optimises for <strong>thinking</strong>.</p>\n<p>That means:</p>\n<ul>\n<li>It doesn’t guess the audience — it defines it  </li>\n<li>It doesn’t write copy first — it builds the strategy first  </li>\n<li>It doesn’t try to sound smart — it tries to convert  </li>\n<li>It doesn’t just create — it filters, qualifies, and diagnoses  </li>\n</ul>\n<p>It combines two worlds that are usually separate:</p>\n<h3>The Copy Chief Brain</h3>\n<ul>\n<li>Awareness levels (Eugene Schwartz)  </li>\n<li>Market sophistication  </li>\n<li>Mechanisms and big ideas  </li>\n<li>Headlines, leads, proof, objections, close  </li>\n</ul>\n<h3>The Operator Brain</h3>\n<ul>\n<li>Ad creative and angles  </li>\n<li>Funnel paths and conversion logic  </li>\n<li>Qualification and filtering  </li>\n<li>Testing and performance diagnosis  </li>\n</ul>\n<p>Most systems have one.</p>\n<p>This has both.</p>\n<p>---</p>\n<h2>How It Works</h2>\n<p>Each skill lives in its own folder:</p>\n<p>skills/&lt;category&gt;/&lt;skill-name&gt;/SKILL.md</p>\n<p>Each skill defines:</p>\n<ul>\n<li>when to use it  </li>\n<li>what inputs it needs  </li>\n<li>how it thinks  </li>\n<li>what it outputs  </li>\n<li>what it should not do  </li>\n</ul>\n<p>They are designed to be chained.</p>\n<p>---</p>\n<h2>Example Flow</h2>\n<p>Building a booked-call campaign:</p>\n<p>avatar-extraction</p>\n<p>→ offer-extraction</p>\n<p>→ schwartz-awareness-mapper</p>\n<p>→ mechanism-builder</p>\n<p>→ ad-angle-multiplier</p>\n<p>→ scroll-stopping-creative</p>\n<p>→ conversion-path-builder</p>\n<p>→ objection-crusher</p>\n<p>→ generic-language-killer</p>\n<p>This produces:</p>\n<ul>\n<li>clear positioning  </li>\n<li>strong angles  </li>\n<li>high-performing ads  </li>\n<li>a clean funnel  </li>\n<li>and conversion-ready messaging  </li>\n</ul>\n<p>---</p>\n<h2>Example Output</h2>\n<p>See:</p>\n<p>/examples/booked-call-campaign-ai-ads.md</p>\n<p>---</p>\n<h2>Core Skill Categories</h2>\n<h3>Foundations</h3>\n<p>Define reality before writing anything.</p>\n<ul>\n<li>avatar-extraction  </li>\n<li>voice-of-customer-miner  </li>\n<li>offer-extraction  </li>\n<li>proof-harvester  </li>\n<li>positioning-core  </li>\n</ul>\n<p>---</p>\n<h3>Copy Chief</h3>\n<p>The Eugene Schwartz layer.</p>\n<ul>\n<li>schwartz-awareness-mapper  </li>\n<li>market-sophistication-analyzer  </li>\n<li>dominant-desire-extractor  </li>\n<li>mechanism-builder  </li>\n<li>headline-matrix  </li>\n<li>objection-crusher  </li>\n<li>close-architect  </li>\n</ul>\n<p>---</p>\n<h3>Operator OS</h3>\n<p>Execution and scale.</p>\n<ul>\n<li>scroll-stopping-creative  </li>\n<li>ad-angle-multiplier  </li>\n<li>conversion-path-builder  </li>\n<li>landing-page-architect  </li>\n<li>email-sequence-architect  </li>\n<li>performance-diagnosis  </li>\n<li>testing-roadmap  </li>\n</ul>\n<p>---</p>\n<h3>QA</h3>\n<p>What makes the output actually good.</p>\n<ul>\n<li>generic-language-killer  </li>\n<li>claim-checker  </li>\n<li>consistency-auditor  </li>\n<li>final-polish  </li>\n</ul>\n<p>---</p>\n<h3>Orchestrators</h3>\n<p>Pre-built multi-skill flows.</p>\n<ul>\n<li>full-funnel-campaign-orchestrator  </li>\n<li>booked-call-campaign-orchestrator  </li>\n<li>campaign-diagnosis-orchestrator  </li>\n</ul>\n<p>---</p>\n<h2>Who This Is For</h2>\n<ul>\n<li>Media buyers who want better creative and messaging  </li>\n<li>Founders running paid ads who are tired of guesswork  </li>\n<li>Agencies who want consistency across teams  </li>\n<li>Operators building AI-driven marketing systems  </li>\n</ul>\n<p>---</p>\n<h2>What This Is Not</h2>\n<ul>\n<li>Not generic content marketing templates  </li>\n<li>Not “write me 10 captions” prompts  </li>\n<li>Not surface-level frameworks  </li>\n</ul>\n<p>This is built for:</p>\n<ul>\n<li>direct response  </li>\n<li>paid traffic  </li>\n<li>real budgets  </li>\n<li>real consequences  </li>\n</ul>\n<p>---</p>\n<h2>Installation</h2>\n<p>Compatible with any agent using the Agent Skills pattern.</p>\n<p>Install into:</p>\n<p>.agents/skills/</p>\n<p>Works with:</p>\n<ul>\n<li>Claude Code  </li>\n<li>Cursor  </li>\n<li>Windsurf  </li>\n<li>Codex  </li>\n<li>custom agent frameworks</li>\n<li>Open Claw</li>\n</ul>\n<p>---</p>\n<h2>Philosophy</h2>\n<p>The future isn’t better prompts.</p>\n<p>It’s <strong>better encoded thinking</strong>.</p>\n<p>---</p>\n<h2>Roadmap</h2>\n<ul>\n<li>Expanded Copy Chief library (mechanisms, big ideas, proof systems)  </li>\n<li>Advanced funnel orchestration  </li>\n<li>Creative testing systems  </li>\n<li>Platform-specific skill layers (Meta, TikTok, YouTube)  </li>\n</ul>\n<p>---</p>\n<h2>License</h2>\n<p>MIT</p>\n<p>---</p>\n<h2>Author</h2>\n<p>Kim Barrett  </p>\n<p>Advertising systems, AI-driven marketing, and direct-response strategy  </p>\n<p>---</p>\n<p>If you use this properly, it won’t just improve your ads.</p>\n<p>It will change how you think about them.</p>",
+  "skillMd": "---\nname: avatar-extraction\ndescription: Use when you need to define exactly who the buyer is, what they want, what they’ve tried, and what’s driving their decisions. Trigger on \"target audience\", \"ideal client\", \"who is this for\", \"avatar\", \"customer profile\".\nlicense: MIT\nmetadata:\n  category: foundation\n  outputs:\n    - primary-avatar\n    - pains\n    - desires\n    - failed-solutions\n---\n\n# Role\nYou are a buyer psychologist. Your job is to define a real, specific person — not a demographic.\n\n# Process\n1. Identify:\n   - Who they are (life, job, stage)\n   - What they are trying to achieve\n   - What’s frustrating them daily\n\n2. Extract:\n   - What they’ve already tried\n   - Why those attempts failed\n   - What they believe about their problem\n\n3. Surface:\n   - Emotional drivers (fear, frustration, desire)\n   - Hidden motivations (status, control, relief)\n\n# Output\nPrimary Avatar:\n- Description:\n- Current Situation:\n- Pain Points:\n- Desired Outcome:\n- Failed Attempts:\n- Emotional Drivers:\n\n# Rules\n- Be specific enough to picture the person\n- Use real-world language\n- Focus on decision context\n\n# Avoid\n- Broad demographics\n- Vague descriptions",
+  "updatedAt": "2026-03-26T08:44:06Z",
   "author": {
     "login": "realkimbarrett",
     "name": "realkimbarrett",
-    "avatarUrl": "",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/271179175?v=4",
     "profileUrl": "https://github.com/realkimbarrett",
     "location": ""
   },
   "location": null,
   "related": [
     {
-      "slug": "realkimbarrett-advertising-skills",
-      "displayName": "realkimbarrett/advertising-skills",
-      "stars": 608,
-      "relation": "source_overlap",
-      "evidence": "repo:realkimbarrett/advertising-skills"
+      "slug": "coreyhaines31-ab-test-setup",
+      "displayName": "coreyhaines31/ab-test-setup",
+      "stars": 35923,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
     },
     {
-      "slug": "realkimbarrett-offer-extraction",
-      "displayName": "realkimbarrett/offer-extraction",
-      "stars": 0,
-      "relation": "source_overlap",
-      "evidence": "repo:realkimbarrett/advertising-skills"
+      "slug": "phuryn-ab-test-analysis",
+      "displayName": "phuryn/ab-test-analysis",
+      "stars": 22293,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
     },
     {
-      "slug": "realkimbarrett-schwartz-awareness-mapper",
-      "displayName": "realkimbarrett/schwartz-awareness-mapper",
-      "stars": 0,
-      "relation": "source_overlap",
-      "evidence": "repo:realkimbarrett/advertising-skills"
+      "slug": "deanpeters-acquisition-channel-advisor",
+      "displayName": "deanpeters/acquisition-channel-advisor",
+      "stars": 5553,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
     },
     {
-      "slug": "realkimbarrett-mechanism-builder",
-      "displayName": "realkimbarrett/mechanism-builder",
-      "stars": 0,
-      "relation": "source_overlap",
-      "evidence": "repo:realkimbarrett/advertising-skills"
+      "slug": "resend-resend",
+      "displayName": "resend/resend",
+      "stars": 143,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
     },
     {
-      "slug": "realkimbarrett-headline-matrix",
-      "displayName": "realkimbarrett/headline-matrix",
-      "stars": 0,
-      "relation": "source_overlap",
-      "evidence": "repo:realkimbarrett/advertising-skills"
+      "slug": "redis-redis-development",
+      "displayName": "redis/redis-development",
+      "stars": 82,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
     },
     {
-      "slug": "realkimbarrett-objection-crusher",
-      "displayName": "realkimbarrett/objection-crusher",
+      "slug": "microsoft-azure-ai-contentsafety-ts",
+      "displayName": "microsoft/azure-ai-contentsafety-ts",
       "stars": 0,
-      "relation": "source_overlap",
-      "evidence": "repo:realkimbarrett/advertising-skills"
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
     },
     {
-      "slug": "realkimbarrett-ad-angle-multiplier",
-      "displayName": "realkimbarrett/ad-angle-multiplier",
+      "slug": "microsoft-azure-ai-document-intelligence-ts",
+      "displayName": "microsoft/azure-ai-document-intelligence-ts",
       "stars": 0,
-      "relation": "source_overlap",
-      "evidence": "repo:realkimbarrett/advertising-skills"
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
     },
     {
-      "slug": "realkimbarrett-scroll-stopping-creative",
-      "displayName": "realkimbarrett/scroll-stopping-creative",
+      "slug": "microsoft-azure-ai-projects-ts",
+      "displayName": "microsoft/azure-ai-projects-ts",
       "stars": 0,
-      "relation": "source_overlap",
-      "evidence": "repo:realkimbarrett/advertising-skills"
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
     }
   ],
   "mapLocation": {

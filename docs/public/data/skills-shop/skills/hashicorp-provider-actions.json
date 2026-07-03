@@ -5,30 +5,29 @@
   "displayName": "hashicorp/provider-actions",
   "description": "Implement Terraform Provider Actions using the Plugin Framework",
   "stars": 0,
-  "category": "Skills by HashiCorp Team for Terraform",
+  "category": "Official Skills by",
   "source": "voltagent",
   "url": "https://officialskills.sh/hashicorp/skills/provider-actions",
   "githubRepo": "",
   "readme": "# hashicorp/provider-actions\n\nImplement Terraform Provider Actions using the Plugin Framework",
   "readmeHtml": "<h1>hashicorp/provider-actions</h1>\n<p>Implement Terraform Provider Actions using the Plugin Framework</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.091Z",
+  "updatedAt": "2026-07-03T11:33:56.325Z",
   "author": {
     "login": "hashicorp",
-    "name": "hashicorp",
-    "avatarUrl": "",
+    "name": "HashiCorp",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/761456?v=4",
     "profileUrl": "https://github.com/hashicorp",
-    "location": ""
+    "location": "San Francisco, CA"
   },
-  "location": null,
+  "location": {
+    "id": "san-francisco",
+    "label": "San Francisco, London, Austin, Lisbon, Singapore",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "github_profile"
+  },
   "related": [
-    {
-      "slug": "hashicorp-agent-skills",
-      "displayName": "hashicorp/agent-skills",
-      "stars": 604,
-      "relation": "source_overlap",
-      "evidence": "author:hashicorp"
-    },
     {
       "slug": "hashicorp-azure-verified-modules",
       "displayName": "hashicorp/azure-verified-modules",
@@ -77,13 +76,20 @@
       "stars": 0,
       "relation": "source_overlap",
       "evidence": "author:hashicorp"
+    },
+    {
+      "slug": "hashicorp-terraform-style-guide",
+      "displayName": "hashicorp/terraform-style-guide",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:hashicorp"
     }
   ],
   "mapLocation": {
-    "id": "virtual-bengaluru",
-    "label": "Global Skill Market / Bengaluru / Skills by HashiCorp Team for Terraform",
-    "lat": 12.9716,
-    "lon": 77.5946,
-    "source": "virtual_market"
+    "id": "san-francisco",
+    "label": "San Francisco, London, Austin, Lisbon, Singapore",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "github_profile"
   }
 }

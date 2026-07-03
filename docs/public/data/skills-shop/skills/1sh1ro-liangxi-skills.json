@@ -1,0 +1,89 @@
+{
+  "id": "skill:1sh1ro-liangxi-skills",
+  "slug": "1sh1ro-liangxi-skills",
+  "name": "liangxi-skills",
+  "displayName": "1sh1ro/liangxi-skills",
+  "description": "从公开可见的 X 内容与交易复盘中提炼凉兮的结构判断、风险习惯与中文交易表达，形成可复用的交易方法论视角。",
+  "stars": 6,
+  "category": "Persona Distill Skills",
+  "source": "persona-distill",
+  "url": "https://github.com/1sh1ro/liangxi-skills",
+  "githubRepo": "1sh1ro/liangxi-skills",
+  "readme": "<div align=\"center\">\n\n# 凉兮-skills\n\n> 把公开可见的推文、交易复盘和表达习惯，整理成一个能直接调用的交易型 Skill。\n\n[![Claude Code Skill](https://img.shields.io/badge/Claude%20Code-Skill-blueviolet)](https://claude.ai/code)\n[![Codex](https://img.shields.io/badge/Codex-Compatible-green)](https://github.com/openai)\n[![Language](https://img.shields.io/badge/Language-中文-red)](#)\n\n<br>\n\n这是一个围绕交易员 **凉兮** 风格整理的 Skill 仓库。<br>\n目标不是做“语气模仿”，而是把公开材料里能稳定提炼出来的：<br>\n**交易框架、结构偏好、风险习惯、表达方式** 做成一个可复用的 Skill。\n\n[安装](#安装) · [用法](#用法) · [包含内容](#包含内容) · [来源说明](#来源说明)\n\n</div>\n\n---\n\n## 项目说明\n\n当前仓库收录的是一个交易型 Skill：\n\n- `liangxi-trader`\n\n它适合这些场景：\n\n- 按“凉兮”风格看 BTC / ETH / 黄金 / 白银结构\n- 把普通市场观点改写成更直接、更像盘手的中文表达\n- 按他的思路输出交易计划，而不是只给方向判断\n- 从公开帖子里提炼“什么时候做，什么时候等，什么时候承认看错”\n\n这个 Skill 的重点不是人格扮演，而是以下四层：\n\n1. 交易画像\n2. 结构打法\n3. 风险模型\n4. 话术风格\n\n---\n\n## 安装\n\n### Codex\n\n把仓库克隆到 `~/.codex/skills/` 下：\n\n```bash\ngit clone https://github.com/1sh1ro/liangxi-skills.git ~/.codex/skills/liangxi-skills\n```\n\n或者只取其中的 Skill 目录：\n\n```bash\nmkdir -p ~/.codex/skills\ncp -R liangxi-trader ~/.codex/skills/\n```\n\n### Claude Code\n\n如果你在 Claude Code 里使用，可放到项目根目录或全局技能目录：\n\n```bash\nmkdir -p .claude/skills\ngit clone https://github.com/1sh1ro/liangxi-skills.git .claude/skills/liangxi-skills\n```\n\n---\n\n## 用法\n\n直接把它当成一个交易风格 Skill 调用即可，例如：\n\n```text\n按凉兮风格看一下 BTC 这段结构\n```\n\n```text\n把我这段做多观点改成凉兮会发的那种推文\n```\n\n```text\n按凉兮的方法，给我出一个黄金交易计划\n```\n\n```text\n如果是凉兮来做这段 ETH，他会等什么确认，哪里不会追\n```\n\n建议输出场景：\n\n- 盘面分析\n- 交易计划\n- 风险提示\n- 推文改写\n- 观点压缩\n\n---\n\n## 包含内容\n\n当前 `liangxi-trader` Skill 主要由这些文件组成：\n\n### 1. Skill 入口\n\n- `liangxi-trader/SKILL.md`\n\n定义触发场景、核心规则、输出格式和使用方式。\n\n### 2. 交易画像\n\n- `liangxi-trader/references/trading-profile.md`\n\n总结其公开材料里稳定出现的：\n\n- 市场关注范围\n- 结构偏好\n- 指标使用方式\n- 执行风格\n- 典型判断逻辑\n\n### 3. 结构打法库\n\n- `liangxi-trader/references/setup-playbook.md`\n\n包括：\n\n- 假突破反手\n- 真突破延续\n- 区间吸筹 / 派发\n- 双孕线 / 压缩突破\n- 先走第一段再考虑反手\n- 宏观事件 + 图形共振\n- 巨鲸 / 消息速度差跟单\n\n### 4. 风险模型\n\n- `liangxi-trader/references/risk-model.md`\n\n包括：\n\n- 大币 / 小币的仓位差异\n- 杠杆使用习惯\n- 什么情况下不做\n- 什么算确认\n- 什么算失效\n\n### 5. 公开交易记录提炼\n\n- `liangxi-trader/references/public-trade-history.md`\n\n只保留公开可见、自述可追溯的交易/复盘材料，不把不可验证内容当作事实。\n\n### 6. 风格表达\n\n- `liangxi-trader/references/style-guide.md`\n\n用于约束输出语气，避免写成“研究报告腔”或“AI 空话”。\n\n### 7. 来源摘要\n\n- `liangxi-trader/references/source-posts.md`\n\n记录这个 Skill 主要依据了哪些公开索引材料。\n\n---\n\n## 来源说明\n\n这个 Skill 主要基于公开可访问的网页索引内容整理，不包含私有聊天记录或交易后台数据。\n\n当前使用的主要公开来源包括：\n\n- `r.jina.ai` 对 X 公开页面的镜像抓取\n- `x-sou.com` 的公开索引页\n- 少量第三方公开转述页，仅作低置信补充\n\n重要说明：\n\n- 当前仓库把 `@WallStreet0Name` 作为“凉兮 persona”的最佳努力公开来源\n- 这是一种基于公开材料的归纳，不是身份认证\n- 部分交易记录属于公开自述或复盘内容，不等同于交易所对账单\n\n所以这个 Skill 更适合：\n\n- 学习交易框架\n- 复用表达方式\n- 提炼结构打法\n\n不适合：\n\n- 当作身份认证材料\n- 当作收益证明材料\n- 当作真实持仓证明材料\n\n---\n\n## 设计原则\n\n这个仓库的目标不是做一个“像他说话”的玩具，而是做一个更实用的交易 Skill。\n\n所以保留内容遵循三条原则：\n\n1. 能稳定复用\n2. 能支撑交易决策表达\n3. 能被公开来源解释\n\n删掉的内容也很明确：\n\n- 原始抓取脚本\n- 临时缓存数据\n- 对最终使用没有帮助的过程性文件\n\n---\n\n## 后续可扩展方向\n\n如果后面继续扩展，这个仓库还可以补：\n\n- BTC / ETH / 黄金三套固定分析模板\n- 更细的推文语料分层\n- 不同市场状态下的“凉兮式表达模板”\n- 更多公开来源交叉验证\n\n---\n\n## 目录结构\n\n```text\nliangxi-skills/\n└── liangxi-trader/\n    ├── SKILL.md\n    └── references/\n        ├── trading-profile.md\n        ├── setup-playbook.md\n        ├── risk-model.md\n        ├── public-trade-history.md\n        ├── source-posts.md\n        └── style-guide.md\n```\n\n---\n\n## 免责声明\n\n本仓库仅用于：\n\n- 公开资料整理\n- 风格与交易方法提炼\n- AI Skill 构建\n\n不构成：\n\n- 投资建议\n- 身份证明\n- 收益保证\n\n",
+  "readmeHtml": "<p>&lt;div align=\"center\"&gt;</p>\n<h1>凉兮-skills</h1>\n<p>&gt; 把公开可见的推文、交易复盘和表达习惯，整理成一个能直接调用的交易型 Skill。</p>\n<p><a href=\"https://img.shields.io/badge/Claude%20Code-Skill-blueviolet\" target=\"_blank\" rel=\"noreferrer\">![Claude Code Skill</a>](https://claude.ai/code)</p>\n<p><a href=\"https://img.shields.io/badge/Codex-Compatible-green\" target=\"_blank\" rel=\"noreferrer\">![Codex</a>](https://github.com/openai)</p>\n<p><a href=\"https://img.shields.io/badge/Language-中文-red\" target=\"_blank\" rel=\"noreferrer\">![Language</a>](#)</p>\n<p>&lt;br&gt;</p>\n<p>这是一个围绕交易员 <strong>凉兮</strong> 风格整理的 Skill 仓库。&lt;br&gt;</p>\n<p>目标不是做“语气模仿”，而是把公开材料里能稳定提炼出来的：&lt;br&gt;</p>\n<p><strong>交易框架、结构偏好、风险习惯、表达方式</strong> 做成一个可复用的 Skill。</p>\n<p>[安装](#安装) · [用法](#用法) · [包含内容](#包含内容) · [来源说明](#来源说明)</p>\n<p>&lt;/div&gt;</p>\n<p>---</p>\n<h2>项目说明</h2>\n<p>当前仓库收录的是一个交易型 Skill：</p>\n<ul>\n<li><code>liangxi-trader</code></li>\n</ul>\n<p>它适合这些场景：</p>\n<ul>\n<li>按“凉兮”风格看 BTC / ETH / 黄金 / 白银结构</li>\n<li>把普通市场观点改写成更直接、更像盘手的中文表达</li>\n<li>按他的思路输出交易计划，而不是只给方向判断</li>\n<li>从公开帖子里提炼“什么时候做，什么时候等，什么时候承认看错”</li>\n</ul>\n<p>这个 Skill 的重点不是人格扮演，而是以下四层：</p>\n<p>1. 交易画像</p>\n<p>2. 结构打法</p>\n<p>3. 风险模型</p>\n<p>4. 话术风格</p>\n<p>---</p>\n<h2>安装</h2>\n<h3>Codex</h3>\n<p>把仓库克隆到 <code>~/.codex/skills/</code> 下：</p>\n<pre><code>\ngit clone https://github.com/1sh1ro/liangxi-skills.git ~/.codex/skills/liangxi-skills\n\n</code></pre>\n<p>或者只取其中的 Skill 目录：</p>\n<pre><code>\nmkdir -p ~/.codex/skills\n\ncp -R liangxi-trader ~/.codex/skills/\n\n</code></pre>\n<h3>Claude Code</h3>\n<p>如果你在 Claude Code 里使用，可放到项目根目录或全局技能目录：</p>\n<pre><code>\nmkdir -p .claude/skills\n\ngit clone https://github.com/1sh1ro/liangxi-skills.git .claude/skills/liangxi-skills\n\n</code></pre>\n<p>---</p>\n<h2>用法</h2>\n<p>直接把它当成一个交易风格 Skill 调用即可，例如：</p>\n<pre><code>\n按凉兮风格看一下 BTC 这段结构\n\n</code></pre>\n<pre><code>\n把我这段做多观点改成凉兮会发的那种推文\n\n</code></pre>\n<pre><code>\n按凉兮的方法，给我出一个黄金交易计划\n\n</code></pre>\n<pre><code>\n如果是凉兮来做这段 ETH，他会等什么确认，哪里不会追\n\n</code></pre>\n<p>建议输出场景：</p>\n<ul>\n<li>盘面分析</li>\n<li>交易计划</li>\n<li>风险提示</li>\n<li>推文改写</li>\n<li>观点压缩</li>\n</ul>\n<p>---</p>\n<h2>包含内容</h2>\n<p>当前 <code>liangxi-trader</code> Skill 主要由这些文件组成：</p>\n<h3>1. Skill 入口</h3>\n<ul>\n<li><code>liangxi-trader/SKILL.md</code></li>\n</ul>\n<p>定义触发场景、核心规则、输出格式和使用方式。</p>\n<h3>2. 交易画像</h3>\n<ul>\n<li><code>liangxi-trader/references/trading-profile.md</code></li>\n</ul>\n<p>总结其公开材料里稳定出现的：</p>\n<ul>\n<li>市场关注范围</li>\n<li>结构偏好</li>\n<li>指标使用方式</li>\n<li>执行风格</li>\n<li>典型判断逻辑</li>\n</ul>\n<h3>3. 结构打法库</h3>\n<ul>\n<li><code>liangxi-trader/references/setup-playbook.md</code></li>\n</ul>\n<p>包括：</p>\n<ul>\n<li>假突破反手</li>\n<li>真突破延续</li>\n<li>区间吸筹 / 派发</li>\n<li>双孕线 / 压缩突破</li>\n<li>先走第一段再考虑反手</li>\n<li>宏观事件 + 图形共振</li>\n<li>巨鲸 / 消息速度差跟单</li>\n</ul>\n<h3>4. 风险模型</h3>\n<ul>\n<li><code>liangxi-trader/references/risk-model.md</code></li>\n</ul>\n<p>包括：</p>\n<ul>\n<li>大币 / 小币的仓位差异</li>\n<li>杠杆使用习惯</li>\n<li>什么情况下不做</li>\n<li>什么算确认</li>\n<li>什么算失效</li>\n</ul>\n<h3>5. 公开交易记录提炼</h3>\n<ul>\n<li><code>liangxi-trader/references/public-trade-history.md</code></li>\n</ul>\n<p>只保留公开可见、自述可追溯的交易/复盘材料，不把不可验证内容当作事实。</p>\n<h3>6. 风格表达</h3>\n<ul>\n<li><code>liangxi-trader/references/style-guide.md</code></li>\n</ul>\n<p>用于约束输出语气，避免写成“研究报告腔”或“AI 空话”。</p>\n<h3>7. 来源摘要</h3>\n<ul>\n<li><code>liangxi-trader/references/source-posts.md</code></li>\n</ul>\n<p>记录这个 Skill 主要依据了哪些公开索引材料。</p>\n<p>---</p>\n<h2>来源说明</h2>\n<p>这个 Skill 主要基于公开可访问的网页索引内容整理，不包含私有聊天记录或交易后台数据。</p>\n<p>当前使用的主要公开来源包括：</p>\n<ul>\n<li><code>r.jina.ai</code> 对 X 公开页面的镜像抓取</li>\n<li><code>x-sou.com</code> 的公开索引页</li>\n<li>少量第三方公开转述页，仅作低置信补充</li>\n</ul>\n<p>重要说明：</p>\n<ul>\n<li>当前仓库把 <code>@WallStreet0Name</code> 作为“凉兮 persona”的最佳努力公开来源</li>\n<li>这是一种基于公开材料的归纳，不是身份认证</li>\n<li>部分交易记录属于公开自述或复盘内容，不等同于交易所对账单</li>\n</ul>\n<p>所以这个 Skill 更适合：</p>\n<ul>\n<li>学习交易框架</li>\n<li>复用表达方式</li>\n<li>提炼结构打法</li>\n</ul>\n<p>不适合：</p>\n<ul>\n<li>当作身份认证材料</li>\n<li>当作收益证明材料</li>\n<li>当作真实持仓证明材料</li>\n</ul>\n<p>---</p>\n<h2>设计原则</h2>\n<p>这个仓库的目标不是做一个“像他说话”的玩具，而是做一个更实用的交易 Skill。</p>\n<p>所以保留内容遵循三条原则：</p>\n<p>1. 能稳定复用</p>\n<p>2. 能支撑交易决策表达</p>\n<p>3. 能被公开来源解释</p>\n<p>删掉的内容也很明确：</p>\n<ul>\n<li>原始抓取脚本</li>\n<li>临时缓存数据</li>\n<li>对最终使用没有帮助的过程性文件</li>\n</ul>\n<p>---</p>\n<h2>后续可扩展方向</h2>\n<p>如果后面继续扩展，这个仓库还可以补：</p>\n<ul>\n<li>BTC / ETH / 黄金三套固定分析模板</li>\n<li>更细的推文语料分层</li>\n<li>不同市场状态下的“凉兮式表达模板”</li>\n<li>更多公开来源交叉验证</li>\n</ul>\n<p>---</p>\n<h2>目录结构</h2>\n<pre><code>\nliangxi-skills/\n\n└── liangxi-trader/\n\n    ├── SKILL.md\n\n    └── references/\n\n        ├── trading-profile.md\n\n        ├── setup-playbook.md\n\n        ├── risk-model.md\n\n        ├── public-trade-history.md\n\n        ├── source-posts.md\n\n        └── style-guide.md\n\n</code></pre>\n<p>---</p>\n<h2>免责声明</h2>\n<p>本仓库仅用于：</p>\n<ul>\n<li>公开资料整理</li>\n<li>风格与交易方法提炼</li>\n<li>AI Skill 构建</li>\n</ul>\n<p>不构成：</p>\n<ul>\n<li>投资建议</li>\n<li>身份证明</li>\n<li>收益保证</li>\n</ul>",
+  "skillMd": "",
+  "updatedAt": "2026-04-10T17:37:12Z",
+  "author": {
+    "login": "1sh1ro",
+    "name": "Guikun Yang",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/113789277?v=4",
+    "profileUrl": "https://github.com/1sh1ro",
+    "location": "tianjin"
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "samadhifire-xinqingnian-skill",
+      "displayName": "SamadhiFire/xinqingnian-skill",
+      "stars": 261,
+      "relation": "shared_tag",
+      "evidence": "Persona Distill Skills"
+    },
+    {
+      "slug": "swaylq-master-skill",
+      "displayName": "swaylq/master-skill",
+      "stars": 97,
+      "relation": "shared_tag",
+      "evidence": "Persona Distill Skills"
+    },
+    {
+      "slug": "voidforall-fengshui-skill",
+      "displayName": "voidforall/fengshui.skill",
+      "stars": 74,
+      "relation": "shared_tag",
+      "evidence": "Persona Distill Skills"
+    },
+    {
+      "slug": "youaifuou-karl-marx-skill",
+      "displayName": "youaifuou/karl-marx-skill",
+      "stars": 40,
+      "relation": "shared_tag",
+      "evidence": "Persona Distill Skills"
+    },
+    {
+      "slug": "lcmomo-my-anti-distill",
+      "displayName": "lcmomo/my-anti-distill",
+      "stars": 39,
+      "relation": "shared_tag",
+      "evidence": "Persona Distill Skills"
+    },
+    {
+      "slug": "schlaflied-hr-skill",
+      "displayName": "Schlaflied/hr-skill",
+      "stars": 14,
+      "relation": "shared_tag",
+      "evidence": "Persona Distill Skills"
+    },
+    {
+      "slug": "realteamprinz-brother-skill",
+      "displayName": "realteamprinz/brother-skill",
+      "stars": 14,
+      "relation": "shared_tag",
+      "evidence": "Persona Distill Skills"
+    },
+    {
+      "slug": "cantian-ai-bazi-persona-skill",
+      "displayName": "cantian-ai/bazi-persona-skill",
+      "stars": 12,
+      "relation": "shared_tag",
+      "evidence": "Persona Distill Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-tokyo",
+    "label": "Global Skill Market / Tokyo / Persona Distill Skills",
+    "lat": 35.6762,
+    "lon": 139.6503,
+    "source": "virtual_market"
+  }
+}

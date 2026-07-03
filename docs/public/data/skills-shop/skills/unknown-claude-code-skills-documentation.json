@@ -12,15 +12,21 @@
   "readme": "# unknown/claude-code-skills-documentation\n\nOfficial reference",
   "readmeHtml": "<h1>unknown/claude-code-skills-documentation</h1>\n<p>Official reference</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.157Z",
+  "updatedAt": "2026-07-03T11:33:56.392Z",
   "author": {
     "login": "unknown",
-    "name": "unknown",
-    "avatarUrl": "",
+    "name": "David Mo",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/44306450?v=4",
     "profileUrl": "https://github.com/unknown",
-    "location": ""
+    "location": "New York"
   },
-  "location": null,
+  "location": {
+    "id": "new-york",
+    "label": "New York",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "source": "github_profile"
+  },
   "related": [
     {
       "slug": "unknown-using-skills-in-claude",
@@ -70,13 +76,20 @@
       "stars": 0,
       "relation": "shared_tag",
       "evidence": "Claude and Anthropic"
+    },
+    {
+      "slug": "takechanman1228-claude-ecom",
+      "displayName": "takechanman1228/claude-ecom",
+      "stars": 39,
+      "relation": "shared_tag",
+      "evidence": "location:new-york"
     }
   ],
   "mapLocation": {
-    "id": "virtual-berlin",
-    "label": "Global Skill Market / Berlin / Claude and Anthropic",
-    "lat": 52.52,
-    "lon": 13.405,
-    "source": "virtual_market"
+    "id": "new-york",
+    "label": "New York",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "source": "github_profile"
   }
 }

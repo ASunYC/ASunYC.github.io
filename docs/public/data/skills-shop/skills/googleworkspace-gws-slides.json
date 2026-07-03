@@ -5,30 +5,23 @@
   "displayName": "googleworkspace/gws-slides",
   "description": "Read and write Google Slides presentations",
   "stars": 0,
-  "category": "Skills by Typefully",
+  "category": "Official Skills by",
   "source": "voltagent",
   "url": "https://officialskills.sh/googleworkspace/skills/gws-slides",
   "githubRepo": "",
   "readme": "# googleworkspace/gws-slides\n\nRead and write Google Slides presentations",
   "readmeHtml": "<h1>googleworkspace/gws-slides</h1>\n<p>Read and write Google Slides presentations</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.102Z",
+  "updatedAt": "2026-07-03T11:33:56.331Z",
   "author": {
     "login": "googleworkspace",
-    "name": "googleworkspace",
-    "avatarUrl": "",
+    "name": "Google Workspace",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/3708359?v=4",
     "profileUrl": "https://github.com/googleworkspace",
-    "location": ""
+    "location": "☁️"
   },
   "location": null,
   "related": [
-    {
-      "slug": "googleworkspace-cli",
-      "displayName": "googleworkspace/cli",
-      "stars": 25868,
-      "relation": "source_overlap",
-      "evidence": "author:googleworkspace"
-    },
     {
       "slug": "googleworkspace-gws-shared",
       "displayName": "googleworkspace/gws-shared",
@@ -77,13 +70,20 @@
       "stars": 0,
       "relation": "source_overlap",
       "evidence": "author:googleworkspace"
+    },
+    {
+      "slug": "googleworkspace-gws-tasks",
+      "displayName": "googleworkspace/gws-tasks",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:googleworkspace"
     }
   ],
   "mapLocation": {
-    "id": "virtual-san-francisco",
-    "label": "Global Skill Market / San Francisco / Skills by Typefully",
-    "lat": 37.7749,
-    "lon": -122.4194,
+    "id": "virtual-new-york",
+    "label": "Global Skill Market / New York / Official Skills by",
+    "lat": 40.7128,
+    "lon": -74.006,
     "source": "virtual_market"
   }
 }

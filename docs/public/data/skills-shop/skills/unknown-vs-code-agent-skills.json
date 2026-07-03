@@ -12,15 +12,21 @@
   "readme": "# unknown/vs-code-agent-skills\n\nVS Code integration",
   "readmeHtml": "<h1>unknown/vs-code-agent-skills</h1>\n<p>VS Code integration</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.157Z",
+  "updatedAt": "2026-07-03T11:33:56.392Z",
   "author": {
     "login": "unknown",
-    "name": "unknown",
-    "avatarUrl": "",
+    "name": "David Mo",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/44306450?v=4",
     "profileUrl": "https://github.com/unknown",
-    "location": ""
+    "location": "New York"
   },
-  "location": null,
+  "location": {
+    "id": "new-york",
+    "label": "New York",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "source": "github_profile"
+  },
   "related": [
     {
       "slug": "unknown-using-skills-in-claude",
@@ -63,13 +69,27 @@
       "stars": 0,
       "relation": "shared_tag",
       "evidence": "GitHub Copilot"
+    },
+    {
+      "slug": "takechanman1228-claude-ecom",
+      "displayName": "takechanman1228/claude-ecom",
+      "stars": 39,
+      "relation": "shared_tag",
+      "evidence": "location:new-york"
+    },
+    {
+      "slug": "trailofbits-ask-questions-if-underspecified",
+      "displayName": "trailofbits/ask-questions-if-underspecified",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "location:new-york"
     }
   ],
   "mapLocation": {
-    "id": "virtual-sao-paulo",
-    "label": "Global Skill Market / Sao Paulo / GitHub Copilot",
-    "lat": -23.5558,
-    "lon": -46.6396,
-    "source": "virtual_market"
+    "id": "new-york",
+    "label": "New York",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "source": "github_profile"
   }
 }

@@ -4,51 +4,92 @@
   "name": "angular-developer",
   "displayName": "angular/angular-developer",
   "description": "Generate Angular code and architectural guidance for components, services, reactivity",
-  "stars": 337,
-  "category": "Skills by Angular",
+  "stars": 544,
+  "category": "Official Skills by",
   "source": "voltagent",
   "url": "https://github.com/angular/skills",
   "githubRepo": "angular/skills",
-  "readme": "# angular/angular-developer\n\nGenerate Angular code and architectural guidance for components, services, reactivity",
-  "readmeHtml": "<h1>angular/angular-developer</h1>\n<p>Generate Angular code and architectural guidance for components, services, reactivity</p>",
+  "readme": "# Angular Skills\n\nThe Angular skills are designed to help coding agents create applications aligned with the latest versions of Angular, best practices, new features and manage Angular applications effectively. These skills provide architectural guidance, generate idiomatic Angular code, and help scaffold new projects using modern best practices.\n\n## Available Skills\n\n- **`angular-developer`**: Generates Angular code and provides architectural guidance. Useful for creating components, services, or obtaining best practices on reactivity (signals, linkedSignal, resource), forms, dependency injection, routing, SSR, accessibility (ARIA), animations, styling, testing, or CLI tooling.\n- **`angular-new-app`**: Creates a new Angular app using the Angular CLI. Provides important guidelines for effectively setting up and structuring a modern Angular application.\n\n## Using Agent Skills\n\nAgent Skills are designed to be used with agentic coding tools like [Gemini CLI](https://geminicli.com/docs/cli/skills/), [Antigravity](https://antigravity.google/docs/skills) and more. Activating a skill loads the specific instructions and resources needed for that task.\n\nTo use these skills in your own environment you may follow the instructions for your specific tool or use a community tool like [skills.sh](https://skills.sh/).\n\n```bash\nnpx skills add https://github.com/angular/skills\n```\n\n## Contributions\n\nWe welcome contributions to the Angular agent skills. If you would like to contribute to the skills, please make the updates directly in `angular/angular` repository, and to that repository will be output here as a part of our infrastructure setup.\n\n### Feedback & Issues\n\nIf you encounter a bug, have feedback, or want to suggest an improvement to the skills, please file an issue in the [angular/angular](https://github.com/angular/angular/issues/new?template=3-docs-bug.yaml) issue tracker. Providing detailed context will help us address your feedback effectively.\n\n### Features & Changes (Pull Requests)\n\nWe also accept pull requests for new features, updates, or bug fixes for the skills:\n\n1. Make your changes within the `skills/dev-skills/` directory.\n2. Follow the standard Angular [Commit Guidelines](https://github.com/angular/angular/blob/main/contributing-docs/commit-message-guidelines.md) and [Coding Standards](https://github.com/angular/angular/blob/main/contributing-docs/coding-standards.md).\n3. Submit a Pull Request to the main `angular/angular` repository.\n",
+  "readmeHtml": "<h1>Angular Skills</h1>\n<p>The Angular skills are designed to help coding agents create applications aligned with the latest versions of Angular, best practices, new features and manage Angular applications effectively. These skills provide architectural guidance, generate idiomatic Angular code, and help scaffold new projects using modern best practices.</p>\n<h2>Available Skills</h2>\n<ul>\n<li><strong><code>angular-developer</code></strong>: Generates Angular code and provides architectural guidance. Useful for creating components, services, or obtaining best practices on reactivity (signals, linkedSignal, resource), forms, dependency injection, routing, SSR, accessibility (ARIA), animations, styling, testing, or CLI tooling.</li>\n<li><strong><code>angular-new-app</code></strong>: Creates a new Angular app using the Angular CLI. Provides important guidelines for effectively setting up and structuring a modern Angular application.</li>\n</ul>\n<h2>Using Agent Skills</h2>\n<p>Agent Skills are designed to be used with agentic coding tools like <a href=\"https://geminicli.com/docs/cli/skills/\" target=\"_blank\" rel=\"noreferrer\">Gemini CLI</a>, <a href=\"https://antigravity.google/docs/skills\" target=\"_blank\" rel=\"noreferrer\">Antigravity</a> and more. Activating a skill loads the specific instructions and resources needed for that task.</p>\n<p>To use these skills in your own environment you may follow the instructions for your specific tool or use a community tool like <a href=\"https://skills.sh/\" target=\"_blank\" rel=\"noreferrer\">skills.sh</a>.</p>\n<pre><code>\nnpx skills add https://github.com/angular/skills\n\n</code></pre>\n<h2>Contributions</h2>\n<p>We welcome contributions to the Angular agent skills. If you would like to contribute to the skills, please make the updates directly in <code>angular/angular</code> repository, and to that repository will be output here as a part of our infrastructure setup.</p>\n<h3>Feedback &amp; Issues</h3>\n<p>If you encounter a bug, have feedback, or want to suggest an improvement to the skills, please file an issue in the <a href=\"https://github.com/angular/angular/issues/new?template=3-docs-bug.yaml\" target=\"_blank\" rel=\"noreferrer\">angular/angular</a> issue tracker. Providing detailed context will help us address your feedback effectively.</p>\n<h3>Features &amp; Changes (Pull Requests)</h3>\n<p>We also accept pull requests for new features, updates, or bug fixes for the skills:</p>\n<p>1. Make your changes within the <code>skills/dev-skills/</code> directory.</p>\n<p>2. Follow the standard Angular <a href=\"https://github.com/angular/angular/blob/main/contributing-docs/commit-message-guidelines.md\" target=\"_blank\" rel=\"noreferrer\">Commit Guidelines</a> and <a href=\"https://github.com/angular/angular/blob/main/contributing-docs/coding-standards.md\" target=\"_blank\" rel=\"noreferrer\">Coding Standards</a>.</p>\n<p>3. Submit a Pull Request to the main <code>angular/angular</code> repository.</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.048Z",
+  "updatedAt": "2026-07-01T21:15:46Z",
   "author": {
     "login": "angular",
-    "name": "angular",
-    "avatarUrl": "",
+    "name": "Angular",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/139426?v=4",
     "profileUrl": "https://github.com/angular",
-    "location": ""
+    "location": "United States of America"
   },
-  "location": null,
+  "location": {
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
+  },
   "related": [
     {
-      "slug": "angular-angular-new-app",
-      "displayName": "angular/angular-new-app",
-      "stars": 337,
-      "relation": "source_overlap",
-      "evidence": "repo:angular/skills"
-    },
-    {
-      "slug": "angular-angular-new-app",
-      "displayName": "angular/angular-new-app",
-      "stars": 337,
-      "relation": "source_overlap",
-      "evidence": "author:angular"
-    },
-    {
-      "slug": "angular-angular-new-app",
-      "displayName": "angular/angular-new-app",
-      "stars": 337,
+      "slug": "testmu-ai-api-skill",
+      "displayName": "testmu-ai/api-skill",
+      "stars": 318,
       "relation": "shared_tag",
-      "evidence": "Skills by Angular"
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "veniceai-venice-api-overview",
+      "displayName": "veniceai/venice-api-overview",
+      "stars": 105,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "zero-zero",
+      "displayName": "zero/zero",
+      "stars": 14,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "trycourier-courier-skills",
+      "displayName": "trycourier/courier-skills",
+      "stars": 11,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "anthropics-docx",
+      "displayName": "anthropics/docx",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "anthropics-doc-coauthoring",
+      "displayName": "anthropics/doc-coauthoring",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "anthropics-pptx",
+      "displayName": "anthropics/pptx",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "anthropics-xlsx",
+      "displayName": "anthropics/xlsx",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
     }
   ],
   "mapLocation": {
-    "id": "virtual-shanghai",
-    "label": "Global Skill Market / Shanghai / Skills by Angular",
-    "lat": 31.2304,
-    "lon": 121.4737,
-    "source": "virtual_market"
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
   }
 }

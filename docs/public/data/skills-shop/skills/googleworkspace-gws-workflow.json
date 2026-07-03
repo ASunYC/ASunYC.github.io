@@ -5,30 +5,23 @@
   "displayName": "googleworkspace/gws-workflow",
   "description": "Cross-service Google Workspace productivity workflows",
   "stars": 0,
-  "category": "Skills by Typefully",
+  "category": "Official Skills by",
   "source": "voltagent",
   "url": "https://officialskills.sh/googleworkspace/skills/gws-workflow",
   "githubRepo": "",
   "readme": "# googleworkspace/gws-workflow\n\nCross-service Google Workspace productivity workflows",
   "readmeHtml": "<h1>googleworkspace/gws-workflow</h1>\n<p>Cross-service Google Workspace productivity workflows</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.102Z",
+  "updatedAt": "2026-07-03T11:33:56.337Z",
   "author": {
     "login": "googleworkspace",
-    "name": "googleworkspace",
-    "avatarUrl": "",
+    "name": "Google Workspace",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/3708359?v=4",
     "profileUrl": "https://github.com/googleworkspace",
-    "location": ""
+    "location": "☁️"
   },
   "location": null,
   "related": [
-    {
-      "slug": "googleworkspace-cli",
-      "displayName": "googleworkspace/cli",
-      "stars": 25868,
-      "relation": "source_overlap",
-      "evidence": "author:googleworkspace"
-    },
     {
       "slug": "googleworkspace-gws-shared",
       "displayName": "googleworkspace/gws-shared",
@@ -77,13 +70,20 @@
       "stars": 0,
       "relation": "source_overlap",
       "evidence": "author:googleworkspace"
+    },
+    {
+      "slug": "googleworkspace-gws-slides",
+      "displayName": "googleworkspace/gws-slides",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:googleworkspace"
     }
   ],
   "mapLocation": {
-    "id": "virtual-new-york",
-    "label": "Global Skill Market / New York / Skills by Typefully",
-    "lat": 40.7128,
-    "lon": -74.006,
+    "id": "virtual-shanghai",
+    "label": "Global Skill Market / Shanghai / Official Skills by",
+    "lat": 31.2304,
+    "lon": 121.4737,
     "source": "virtual_market"
   }
 }

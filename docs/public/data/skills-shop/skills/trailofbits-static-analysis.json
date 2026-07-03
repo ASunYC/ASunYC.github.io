@@ -5,29 +5,35 @@
   "displayName": "trailofbits/static-analysis",
   "description": "Static analysis toolkit with CodeQL, Semgrep, and SARIF",
   "stars": 0,
-  "category": "Skills by Typefully",
+  "category": "Official Skills by",
   "source": "voltagent",
   "url": "https://officialskills.sh/trailofbits/skills/static-analysis",
   "githubRepo": "",
   "readme": "# trailofbits/static-analysis\n\nStatic analysis toolkit with CodeQL, Semgrep, and SARIF",
   "readmeHtml": "<h1>trailofbits/static-analysis</h1>\n<p>Static analysis toolkit with CodeQL, Semgrep, and SARIF</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.104Z",
+  "updatedAt": "2026-07-03T11:33:56.342Z",
   "author": {
     "login": "trailofbits",
-    "name": "trailofbits",
-    "avatarUrl": "",
+    "name": "Trail of Bits",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/2314423?v=4",
     "profileUrl": "https://github.com/trailofbits",
-    "location": ""
+    "location": "New York, New York"
   },
-  "location": null,
+  "location": {
+    "id": "new-york",
+    "label": "New York",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "source": "github_profile"
+  },
   "related": [
     {
-      "slug": "trailofbits-skills",
-      "displayName": "trailofbits/skills",
-      "stars": 5043,
-      "relation": "source_overlap",
-      "evidence": "author:trailofbits"
+      "slug": "combo-security-audit-stack",
+      "displayName": "Security Audit Stack",
+      "stars": 0,
+      "relation": "combo_component",
+      "evidence": "Security Audit Stack includes trailofbits/static-analysis"
     },
     {
       "slug": "trailofbits-ask-questions-if-underspecified",
@@ -80,10 +86,10 @@
     }
   ],
   "mapLocation": {
-    "id": "virtual-singapore",
-    "label": "Global Skill Market / Singapore / Skills by Typefully",
-    "lat": 1.3521,
-    "lon": 103.8198,
-    "source": "virtual_market"
+    "id": "new-york",
+    "label": "New York",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "source": "github_profile"
   }
 }

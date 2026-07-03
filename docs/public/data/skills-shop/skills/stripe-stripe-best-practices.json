@@ -5,22 +5,28 @@
   "displayName": "stripe/stripe-best-practices",
   "description": "Best practices for building Stripe integrations",
   "stars": 0,
-  "category": "Skills by Stripe Team",
+  "category": "Official Skills by",
   "source": "voltagent",
   "url": "https://officialskills.sh/stripe/skills/stripe-best-practices",
   "githubRepo": "",
   "readme": "# stripe/stripe-best-practices\n\nBest practices for building Stripe integrations",
   "readmeHtml": "<h1>stripe/stripe-best-practices</h1>\n<p>Best practices for building Stripe integrations</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.090Z",
+  "updatedAt": "2026-07-03T11:33:56.323Z",
   "author": {
     "login": "stripe",
-    "name": "stripe",
-    "avatarUrl": "",
+    "name": "Stripe",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/856813?v=4",
     "profileUrl": "https://github.com/stripe",
-    "location": ""
+    "location": "San Francisco, CA"
   },
-  "location": null,
+  "location": {
+    "id": "san-francisco",
+    "label": "San Francisco, London, Austin, Lisbon, Singapore",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "github_profile"
+  },
   "related": [
     {
       "slug": "stripe-upgrade-stripe",
@@ -30,18 +36,60 @@
       "evidence": "author:stripe"
     },
     {
-      "slug": "stripe-upgrade-stripe",
-      "displayName": "stripe/upgrade-stripe",
+      "slug": "angular-angular-developer",
+      "displayName": "angular/angular-developer",
+      "stars": 544,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "testmu-ai-api-skill",
+      "displayName": "testmu-ai/api-skill",
+      "stars": 318,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "veniceai-venice-api-overview",
+      "displayName": "veniceai/venice-api-overview",
+      "stars": 105,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "zero-zero",
+      "displayName": "zero/zero",
+      "stars": 14,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "trycourier-courier-skills",
+      "displayName": "trycourier/courier-skills",
+      "stars": 11,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "anthropics-docx",
+      "displayName": "anthropics/docx",
       "stars": 0,
       "relation": "shared_tag",
-      "evidence": "Skills by Stripe Team"
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "anthropics-doc-coauthoring",
+      "displayName": "anthropics/doc-coauthoring",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
     }
   ],
   "mapLocation": {
-    "id": "virtual-shanghai",
-    "label": "Global Skill Market / Shanghai / Skills by Stripe Team",
-    "lat": 31.2304,
-    "lon": 121.4737,
-    "source": "virtual_market"
+    "id": "san-francisco",
+    "label": "San Francisco, London, Austin, Lisbon, Singapore",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "github_profile"
   }
 }

@@ -5,18 +5,18 @@
   "displayName": "tinybirdco/tinybird-typescript-sdk-guidelines",
   "description": "Tinybird TypeScript SDK usage guidelines",
   "stars": 0,
-  "category": "Skills by Tinybird Team",
+  "category": "Official Skills by",
   "source": "voltagent",
   "url": "https://officialskills.sh/tinybirdco/skills/tinybird-typescript-sdk-guidelines",
   "githubRepo": "",
   "readme": "# tinybirdco/tinybird-typescript-sdk-guidelines\n\nTinybird TypeScript SDK usage guidelines",
   "readmeHtml": "<h1>tinybirdco/tinybird-typescript-sdk-guidelines</h1>\n<p>Tinybird TypeScript SDK usage guidelines</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.091Z",
+  "updatedAt": "2026-07-03T11:33:56.324Z",
   "author": {
     "login": "tinybirdco",
-    "name": "tinybirdco",
-    "avatarUrl": "",
+    "name": "Tinybird",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/53208553?v=4",
     "profileUrl": "https://github.com/tinybirdco",
     "location": ""
   },
@@ -44,32 +44,46 @@
       "evidence": "author:tinybirdco"
     },
     {
-      "slug": "tinybirdco-tinybird-best-practices",
-      "displayName": "tinybirdco/tinybird-best-practices",
-      "stars": 0,
+      "slug": "angular-angular-developer",
+      "displayName": "angular/angular-developer",
+      "stars": 544,
       "relation": "shared_tag",
-      "evidence": "Skills by Tinybird Team"
+      "evidence": "Official Skills by"
     },
     {
-      "slug": "tinybirdco-tinybird-cli-guidelines",
-      "displayName": "tinybirdco/tinybird-cli-guidelines",
-      "stars": 0,
+      "slug": "testmu-ai-api-skill",
+      "displayName": "testmu-ai/api-skill",
+      "stars": 318,
       "relation": "shared_tag",
-      "evidence": "Skills by Tinybird Team"
+      "evidence": "Official Skills by"
     },
     {
-      "slug": "tinybirdco-tinybird-python-sdk-guidelines",
-      "displayName": "tinybirdco/tinybird-python-sdk-guidelines",
-      "stars": 0,
+      "slug": "veniceai-venice-api-overview",
+      "displayName": "veniceai/venice-api-overview",
+      "stars": 105,
       "relation": "shared_tag",
-      "evidence": "Skills by Tinybird Team"
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "zero-zero",
+      "displayName": "zero/zero",
+      "stars": 14,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "trycourier-courier-skills",
+      "displayName": "trycourier/courier-skills",
+      "stars": 11,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
     }
   ],
   "mapLocation": {
-    "id": "virtual-tokyo",
-    "label": "Global Skill Market / Tokyo / Skills by Tinybird Team",
-    "lat": 35.6762,
-    "lon": 139.6503,
+    "id": "virtual-new-york",
+    "label": "Global Skill Market / New York / Official Skills by",
+    "lat": 40.7128,
+    "lon": -74.006,
     "source": "virtual_market"
   }
 }

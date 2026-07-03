@@ -5,27 +5,33 @@
   "displayName": "firecrawl/firecrawl-build",
   "description": "Integrate Firecrawl into application code for web search, scraping, extraction, and browser interaction",
   "stars": 0,
-  "category": "Skills by Firecrawl Team",
+  "category": "Official Skills by",
   "source": "voltagent",
   "url": "https://officialskills.sh/firecrawl/skills/firecrawl-build",
   "githubRepo": "",
   "readme": "# firecrawl/firecrawl-build\n\nIntegrate Firecrawl into application code for web search, scraping, extraction, and browser interaction",
   "readmeHtml": "<h1>firecrawl/firecrawl-build</h1>\n<p>Integrate Firecrawl into application code for web search, scraping, extraction, and browser interaction</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.091Z",
+  "updatedAt": "2026-07-03T11:33:56.326Z",
   "author": {
     "login": "firecrawl",
-    "name": "firecrawl",
-    "avatarUrl": "",
+    "name": "Firecrawl",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/135057108?v=4",
     "profileUrl": "https://github.com/firecrawl",
-    "location": ""
+    "location": "United States of America"
   },
-  "location": null,
+  "location": {
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
+  },
   "related": [
     {
       "slug": "firecrawl-cli",
       "displayName": "firecrawl/cli",
-      "stars": 369,
+      "stars": 505,
       "relation": "source_overlap",
       "evidence": "author:firecrawl"
     },
@@ -80,10 +86,10 @@
     }
   ],
   "mapLocation": {
-    "id": "virtual-toronto",
-    "label": "Global Skill Market / Toronto / Skills by Firecrawl Team",
-    "lat": 43.6532,
-    "lon": -79.3832,
-    "source": "virtual_market"
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
   }
 }

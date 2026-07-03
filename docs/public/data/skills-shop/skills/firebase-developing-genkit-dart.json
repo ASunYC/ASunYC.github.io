@@ -12,15 +12,21 @@
   "readme": "# firebase/developing-genkit-dart\n\nBuild AI apps with the Genkit Dart SDK",
   "readmeHtml": "<h1>firebase/developing-genkit-dart</h1>\n<p>Build AI apps with the Genkit Dart SDK</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.133Z",
+  "updatedAt": "2026-07-03T11:33:56.376Z",
   "author": {
     "login": "firebase",
-    "name": "firebase",
-    "avatarUrl": "",
+    "name": "Firebase",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/1335026?v=4",
     "profileUrl": "https://github.com/firebase",
-    "location": ""
+    "location": "San Francisco, CA"
   },
-  "location": null,
+  "location": {
+    "id": "san-francisco",
+    "label": "San Francisco, London, Austin, Lisbon, Singapore",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "github_profile"
+  },
   "related": [
     {
       "slug": "firebase-developing-genkit-go",
@@ -80,10 +86,10 @@
     }
   ],
   "mapLocation": {
-    "id": "virtual-singapore",
-    "label": "Global Skill Market / Singapore / TypeScript Skills",
-    "lat": 1.3521,
-    "lon": 103.8198,
-    "source": "virtual_market"
+    "id": "san-francisco",
+    "label": "San Francisco, London, Austin, Lisbon, Singapore",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "github_profile"
   }
 }

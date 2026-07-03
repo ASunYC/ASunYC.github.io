@@ -3,87 +3,93 @@
   "slug": "dadwadw233-vibeportrait",
   "name": "vibeportrait",
   "displayName": "dadwadw233/VibePortrait",
-  "description": "🎭 Know yourself as a developer. One command → AI analyzes your coding history → beautiful personality portrait + persona skill. Works with Claude Code & Codex.",
-  "stars": 16,
-  "category": "Discovered",
-  "source": "discover:topic",
+  "description": "Distill a developer's persona, coding skills and preferences from Vibe Coding conversations.",
+  "stars": 23,
+  "category": "EverythingSkill / Persona",
+  "source": "everythingskill",
   "url": "https://github.com/dadwadw233/VibePortrait",
   "githubRepo": "dadwadw233/VibePortrait",
-  "readme": "# dadwadw233/VibePortrait\n\n🎭 Know yourself as a developer. One command → AI analyzes your coding history → beautiful personality portrait + persona skill. Works with Claude Code & Codex.",
-  "readmeHtml": "<h1>dadwadw233/VibePortrait</h1>\n<p>🎭 Know yourself as a developer. One command → AI analyzes your coding history → beautiful personality portrait + persona skill. Works with Claude Code &amp; Codex.</p>",
+  "readme": "<div align=\"center\">\n\n<img src=\"assets/banner.svg\" alt=\"VibePortrait Banner\" width=\"100%\">\n\n<br>\n\n[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)\n[![Claude Code](https://img.shields.io/badge/Claude_Code-skill-14b8a6?logo=anthropic&logoColor=white)](https://claude.ai/claude-code)\n[![Codex](https://img.shields.io/badge/Codex-skill-10a37f?logo=openai&logoColor=white)](https://github.com/openai/codex)\n[![GitHub stars](https://img.shields.io/github/stars/dadwadw233/VibePortrait?style=social)](https://github.com/dadwadw233/VibePortrait)\n[![Release](https://img.shields.io/github/v/release/dadwadw233/VibePortrait?color=14b8a6)](https://github.com/dadwadw233/VibePortrait/releases)\n\n**Your AI conversations already know who you are. VibePortrait makes it visible.**\n\n[English](#what-is-vibeportrait) · [中文](#vibeportrait-是什么)\n\n</div>\n\n---\n\n### ⚡ 30-Second Demo\n\n```bash\n# Install (one time)\ncp -R VibePortrait/skills/vibe-portrait ~/.claude/skills/vibe-portrait\n\n# Run\n/vibe-portrait\n```\n\n**Input:** Your `~/.claude/history.jsonl` + `~/.codex/history.jsonl` (read-only, never sent anywhere)\n\n**Output:**\n\n| Output | What you get |\n|--------|-------------|\n| 📄 `vibe-portrait.html` | Beautiful portrait page — open in browser, export as PNG |\n| 🧠 `~/.claude/skills/.../me/` | Persona skill — say \"think like me\" in any future conversation |\n| 🔄 `my-vibe-portrait` repo | Private GitHub repo syncing portraits across all your machines |\n\n<details>\n<summary><b>📸 What the portrait looks like (click to expand)</b></summary>\n\n<br>\n\n<img src=\"assets/portrait-preview.png\" alt=\"VibePortrait Preview\" width=\"100%\">\n\n*The portrait includes: MBTI type with per-type color theme · 6-axis capability radar · developer rating (夯爆了→拉完了) · 3-dimension famous match · communication style analysis · tech domain map · work rhythm heatmap · and more.*\n\n</details>\n\n---\n\n## What is VibePortrait?\n\nA skill for **Claude Code** and **Codex**. It reads your conversation history and generates:\n\n- **🖼️ HTML Portrait** — MBTI type (16 color themes), radar chart, developer rating, 3D famous match, communication style, tech domain map, work rhythm heatmap\n- **🧠 Persona Skill** — multi-file skill capturing your thinking patterns, decision framework, engineering philosophy — loadable by any AI (\"think like me\")\n- **📸 Image Export** — one-click PNG for sharing on social media\n- **🔄 Multi-machine Sync** — private GitHub repo keeps everything in sync across all your dev machines\n\n> Rating philosophy: judged by **observable output**, not claims or intent. No flattery. Evidence speaks.\n\n---\n\n## VibePortrait 是什么？\n\n一个 **Claude Code / Codex 技能**，读取你的对话历史，生成：\n\n- **🖼️ HTML 画像页** — 单文件网页，含 MBTI、能力雷达、开发者评级、名人匹配等可视化\n- **🧠 人格 Skill** — 凝练你的思维方式，让 AI 能\"像你一样思考\"\n- **📸 一键导出图片** — PNG 格式，方便分享\n- **🔄 多机器同步** — 通过 private GitHub 仓库跨机器同步\n\n> 评分哲学：以**可观察的实际产出**为准。不谄媚，不推测。证据说话。\n\n---\n\n## Quick Start / 快速开始\n\n**Claude Code (marketplace):**\n\n```bash\n# Step 1: Add marketplace\n/plugin marketplace add dadwadw233/VibePortrait\n\n# Step 2: Install\n/plugin install vibe-portrait@vibe-portrait\n\n# Step 3: Run\n/vibe-portrait:vibe-portrait\n```\n\n**Claude Code (manual):**\n\n```bash\ngit clone https://github.com/dadwadw233/VibePortrait.git\ncp -R VibePortrait/skills/vibe-portrait ~/.claude/skills/vibe-portrait\n/vibe-portrait\n```\n\n**Codex:**\n\n```bash\n$skill-installer install https://github.com/dadwadw233/VibePortrait/tree/main/skills/vibe-portrait\n# Then: Use $vibe-portrait to generate my developer personality portrait.\n```\n\n---\n\n## How It Works / 工作流程\n\n```\n ⚡ Quick mode (~200 msgs)  or  🔍 Full mode (all msgs)\n                        │\n          ┌─────────────▼──────────────┐\n          │  Read conversation history  │\n          │  + import from other machines│\n          └─────────────┬──────────────┘\n                        │\n          ┌─────────────▼──────────────┐\n          │  Analyze 6 dimensions       │\n          │  → MBTI · Rating · Famous   │\n          └─────────────┬──────────────┘\n                        │\n          ┌─────────────▼──────────────┐\n          │  Generate outputs           │\n          │  📄 HTML  🧠 Skill  📸 PNG │\n          └─────────────┬──────────────┘\n                        │\n          ┌─────────────▼──────────────┐\n          │  Sync to GitHub (optional)  │\n          └────────────────────────────┘\n```\n\n---\n\n## Portrait Contents / 画像内容\n\n| | Section | Description |\n|-|---------|-------------|\n| 🧬 | **MBTI Type** | 4-axis mapping with per-type color theme / 四轴映射 + 16 种独立配色 |\n| 📊 | **Radar** | Depth · Breadth · Communication · Decision · Collaboration · Creativity |\n| 🏆 | **Rating** | `Legendary 夯爆了` → `Elite 夯` → `Above Avg 人上人` → `NPC` → `Below Avg 拉` → `Inactive 拉完了` |\n| 🎭 | **Famous Match** | 3 dimensions: Technical Spirit · Strategic Mind · Communication Soul — AI picks from all of human history |\n| 💬 | **Communication** | Language split, directness, keywords / 语言分布、直接度、关键词 |\n| 🗺️ | **Tech Map** | Domain breakdown + tool badges / 领域分布 + 工具徽章 |\n| ⏰ | **Work Rhythm** | 24h heatmap + session patterns / 24h 热力图 + 会话模式 |\n\n## MBTI Themes / 配色主题\n\n| Group | Types | Colors |\n|-------|-------|--------|\n| 🧠 Analysts 分析师 | INTJ · INTP · ENTJ · ENTP | Teal + Slate 青绿灰蓝 |\n| 💚 Diplomats 外交官 | INFJ · INFP · ENFJ · ENFP | Emerald + Amber 翠绿琥珀 |\n| 🛡️ Sentinels 哨兵 | ISTJ · ISFJ · ESTJ · ESFJ | Cobalt + Steel 钴蓝钢灰 |\n| 🔥 Explorers 探险家 | ISTP · ISFP · ESTP · ESFP | Gold + Rose 金橙玫红 |\n\n---\n\n## Persona Skills / 人格技能\n\nVibePortrait generates a skill that captures: thinking patterns, decision framework, communication style, engineering philosophy.\n\n**No raw chat messages are included** — only abstracted mindset markers.\n\n```bash\n# Activate personas / 激活人格\nthink like me                        # Your own / 你自己的\n像马斯克一样思考这个问题               # Community / 社区人格\nthink like linus-torvalds            # By ID\n\n# Manage / 管理\nupdate my portrait                   # Incremental update (only new msgs) / 增量更新\ninstall persona from <github-url>    # Install from GitHub / 安装\nlist personas                        # See installed / 查看已安装\nremove persona <id>                  # Uninstall / 删除\n```\n\n```\n~/.claude/skills/vibe-portrait-personas/\n├── me/                        ← yours (auto-generated, multi-file)\n│   ├── SKILL.md\n│   ├── portrait-meta.json     ← timestamps for incremental updates\n│   └── references/\n│       ├── thinking-patterns.md\n│       ├── decision-framework.md\n│       ├── communication-style.md\n│       ├── engineering-philosophy.md\n│       └── mindset-markers.md\n├── elon-musk/                 ← installed from GitHub\n│   └── ...\n└── zhuge-liang/               ← installed from community\n    └── ...\n```\n\n---\n\n## Multi-Machine Sync / 多机器同步\n\nSyncs via **private GitHub repo** using `gh` CLI.\n\n```\nMachine A ──push──► my-vibe-portrait (private) ◄──push── Machine B\n                    ├── me/SKILL.md\n                    ├── analysis/macbook.json\n                    ├── analysis/linux-4090.json\n                    ├── portraits/latest.html\n                    └── README.md (auto-filled)\n```\n\nFirst run creates the repo. Subsequent runs on any machine pull → merge → push.\n\n---\n\n## Privacy / 隐私\n\n- Only reads local `~/.claude/history.jsonl` — never sends data externally\n- API keys, tokens, passwords, file paths, personal info auto-redacted from all outputs\n- Persona skills contain **zero raw chat messages** — only abstracted personality descriptions\n- Portrait repo is private by default — you control what to share\n\n> 🛡️ **Want real-time protection?** Try [**VibeGuard**](https://github.com/dadwadw233/VibeGuard) — a security plugin for Claude Code that detects secrets, blocks dangerous commands, and logs all tool actions. Pairs naturally with VibePortrait: VibeGuard protects your code in real-time, VibePortrait ensures your exported persona stays clean.\n>\n> ```bash\n> npm install -g @embodot/vibeguard && vibeguard install\n> ```\n\n---\n\n## Requirements / 环境要求\n\n- Claude Code or Codex with 20+ messages of history\n- Modern browser for HTML viewing\n- `gh` CLI for multi-machine sync (optional)\n\n---\n\n## Roadmap\n\n- [x] HTML portrait with 10 visual sections + MBTI color themes\n- [x] Persona skill generation (abstracted, no raw quotes)\n- [x] Bilingual (zh/en) + one-click image export\n- [x] Multi-machine sync via private GitHub repo\n- [x] Materialist rating rubric\n- [ ] Community platform for sharing & discovering persona skills\n\n---\n\n<div align=\"center\">\n\n**Every great developer evolves. The first step is seeing clearly where you stand.**\n\n**每一次对话都是你的进化轨迹。看见自己，分享自己，成为更强的自己。**\n\n</div>\n",
+  "readmeHtml": "<p>&lt;div align=\"center\"&gt;</p>\n<p>&lt;img src=\"assets/banner.svg\" alt=\"VibePortrait Banner\" width=\"100%\"&gt;</p>\n<p>&lt;br&gt;</p>\n<p><a href=\"https://img.shields.io/badge/License-MIT-yellow.svg\" target=\"_blank\" rel=\"noreferrer\">![License: MIT</a>](https://opensource.org/licenses/MIT)</p>\n<p><a href=\"https://img.shields.io/badge/Claude_Code-skill-14b8a6?logo=anthropic&amp;logoColor=white\" target=\"_blank\" rel=\"noreferrer\">![Claude Code</a>](https://claude.ai/claude-code)</p>\n<p><a href=\"https://img.shields.io/badge/Codex-skill-10a37f?logo=openai&amp;logoColor=white\" target=\"_blank\" rel=\"noreferrer\">![Codex</a>](https://github.com/openai/codex)</p>\n<p><a href=\"https://img.shields.io/github/stars/dadwadw233/VibePortrait?style=social\" target=\"_blank\" rel=\"noreferrer\">![GitHub stars</a>](https://github.com/dadwadw233/VibePortrait)</p>\n<p><a href=\"https://img.shields.io/github/v/release/dadwadw233/VibePortrait?color=14b8a6\" target=\"_blank\" rel=\"noreferrer\">![Release</a>](https://github.com/dadwadw233/VibePortrait/releases)</p>\n<p><strong>Your AI conversations already know who you are. VibePortrait makes it visible.</strong></p>\n<p>[English](#what-is-vibeportrait) · [中文](#vibeportrait-是什么)</p>\n<p>&lt;/div&gt;</p>\n<p>---</p>\n<h3>⚡ 30-Second Demo</h3>\n<pre><code>\n# Install (one time)\n\ncp -R VibePortrait/skills/vibe-portrait ~/.claude/skills/vibe-portrait\n\n\n\n# Run\n\n/vibe-portrait\n\n</code></pre>\n<p><strong>Input:</strong> Your <code>~/.claude/history.jsonl</code> + <code>~/.codex/history.jsonl</code> (read-only, never sent anywhere)</p>\n<p><strong>Output:</strong></p>\n<p>| Output | What you get |</p>\n<p>|--------|-------------|</p>\n<p>| 📄 <code>vibe-portrait.html</code> | Beautiful portrait page — open in browser, export as PNG |</p>\n<p>| 🧠 <code>~/.claude/skills/.../me/</code> | Persona skill — say \"think like me\" in any future conversation |</p>\n<p>| 🔄 <code>my-vibe-portrait</code> repo | Private GitHub repo syncing portraits across all your machines |</p>\n<p>&lt;details&gt;</p>\n<p>&lt;summary&gt;&lt;b&gt;📸 What the portrait looks like (click to expand)&lt;/b&gt;&lt;/summary&gt;</p>\n<p>&lt;br&gt;</p>\n<p>&lt;img src=\"assets/portrait-preview.png\" alt=\"VibePortrait Preview\" width=\"100%\"&gt;</p>\n<p>*The portrait includes: MBTI type with per-type color theme · 6-axis capability radar · developer rating (夯爆了→拉完了) · 3-dimension famous match · communication style analysis · tech domain map · work rhythm heatmap · and more.*</p>\n<p>&lt;/details&gt;</p>\n<p>---</p>\n<h2>What is VibePortrait?</h2>\n<p>A skill for <strong>Claude Code</strong> and <strong>Codex</strong>. It reads your conversation history and generates:</p>\n<ul>\n<li><strong>🖼️ HTML Portrait</strong> — MBTI type (16 color themes), radar chart, developer rating, 3D famous match, communication style, tech domain map, work rhythm heatmap</li>\n<li><strong>🧠 Persona Skill</strong> — multi-file skill capturing your thinking patterns, decision framework, engineering philosophy — loadable by any AI (\"think like me\")</li>\n<li><strong>📸 Image Export</strong> — one-click PNG for sharing on social media</li>\n<li><strong>🔄 Multi-machine Sync</strong> — private GitHub repo keeps everything in sync across all your dev machines</li>\n</ul>\n<p>&gt; Rating philosophy: judged by <strong>observable output</strong>, not claims or intent. No flattery. Evidence speaks.</p>\n<p>---</p>\n<h2>VibePortrait 是什么？</h2>\n<p>一个 <strong>Claude Code / Codex 技能</strong>，读取你的对话历史，生成：</p>\n<ul>\n<li><strong>🖼️ HTML 画像页</strong> — 单文件网页，含 MBTI、能力雷达、开发者评级、名人匹配等可视化</li>\n<li><strong>🧠 人格 Skill</strong> — 凝练你的思维方式，让 AI 能\"像你一样思考\"</li>\n<li><strong>📸 一键导出图片</strong> — PNG 格式，方便分享</li>\n<li><strong>🔄 多机器同步</strong> — 通过 private GitHub 仓库跨机器同步</li>\n</ul>\n<p>&gt; 评分哲学：以<strong>可观察的实际产出</strong>为准。不谄媚，不推测。证据说话。</p>\n<p>---</p>\n<h2>Quick Start / 快速开始</h2>\n<p><strong>Claude Code (marketplace):</strong></p>\n<pre><code>\n# Step 1: Add marketplace\n\n/plugin marketplace add dadwadw233/VibePortrait\n\n\n\n# Step 2: Install\n\n/plugin install vibe-portrait@vibe-portrait\n\n\n\n# Step 3: Run\n\n/vibe-portrait:vibe-portrait\n\n</code></pre>\n<p><strong>Claude Code (manual):</strong></p>\n<pre><code>\ngit clone https://github.com/dadwadw233/VibePortrait.git\n\ncp -R VibePortrait/skills/vibe-portrait ~/.claude/skills/vibe-portrait\n\n/vibe-portrait\n\n</code></pre>\n<p><strong>Codex:</strong></p>\n<pre><code>\n$skill-installer install https://github.com/dadwadw233/VibePortrait/tree/main/skills/vibe-portrait\n\n# Then: Use $vibe-portrait to generate my developer personality portrait.\n\n</code></pre>\n<p>---</p>\n<h2>How It Works / 工作流程</h2>\n<pre><code>\n ⚡ Quick mode (~200 msgs)  or  🔍 Full mode (all msgs)\n\n                        │\n\n          ┌─────────────▼──────────────┐\n\n          │  Read conversation history  │\n\n          │  + import from other machines│\n\n          └─────────────┬──────────────┘\n\n                        │\n\n          ┌─────────────▼──────────────┐\n\n          │  Analyze 6 dimensions       │\n\n          │  → MBTI · Rating · Famous   │\n\n          └─────────────┬──────────────┘\n\n                        │\n\n          ┌─────────────▼──────────────┐\n\n          │  Generate outputs           │\n\n          │  📄 HTML  🧠 Skill  📸 PNG │\n\n          └─────────────┬──────────────┘\n\n                        │\n\n          ┌─────────────▼──────────────┐\n\n          │  Sync to GitHub (optional)  │\n\n          └────────────────────────────┘\n\n</code></pre>\n<p>---</p>\n<h2>Portrait Contents / 画像内容</h2>\n<p>| | Section | Description |</p>\n<p>|-|---------|-------------|</p>\n<p>| 🧬 | <strong>MBTI Type</strong> | 4-axis mapping with per-type color theme / 四轴映射 + 16 种独立配色 |</p>\n<p>| 📊 | <strong>Radar</strong> | Depth · Breadth · Communication · Decision · Collaboration · Creativity |</p>\n<p>| 🏆 | <strong>Rating</strong> | <code>Legendary 夯爆了</code> → <code>Elite 夯</code> → <code>Above Avg 人上人</code> → <code>NPC</code> → <code>Below Avg 拉</code> → <code>Inactive 拉完了</code> |</p>\n<p>| 🎭 | <strong>Famous Match</strong> | 3 dimensions: Technical Spirit · Strategic Mind · Communication Soul — AI picks from all of human history |</p>\n<p>| 💬 | <strong>Communication</strong> | Language split, directness, keywords / 语言分布、直接度、关键词 |</p>\n<p>| 🗺️ | <strong>Tech Map</strong> | Domain breakdown + tool badges / 领域分布 + 工具徽章 |</p>\n<p>| ⏰ | <strong>Work Rhythm</strong> | 24h heatmap + session patterns / 24h 热力图 + 会话模式 |</p>\n<h2>MBTI Themes / 配色主题</h2>\n<p>| Group | Types | Colors |</p>\n<p>|-------|-------|--------|</p>\n<p>| 🧠 Analysts 分析师 | INTJ · INTP · ENTJ · ENTP | Teal + Slate 青绿灰蓝 |</p>\n<p>| 💚 Diplomats 外交官 | INFJ · INFP · ENFJ · ENFP | Emerald + Amber 翠绿琥珀 |</p>\n<p>| 🛡️ Sentinels 哨兵 | ISTJ · ISFJ · ESTJ · ESFJ | Cobalt + Steel 钴蓝钢灰 |</p>\n<p>| 🔥 Explorers 探险家 | ISTP · ISFP · ESTP · ESFP | Gold + Rose 金橙玫红 |</p>\n<p>---</p>\n<h2>Persona Skills / 人格技能</h2>\n<p>VibePortrait generates a skill that captures: thinking patterns, decision framework, communication style, engineering philosophy.</p>\n<p><strong>No raw chat messages are included</strong> — only abstracted mindset markers.</p>\n<pre><code>\n# Activate personas / 激活人格\n\nthink like me                        # Your own / 你自己的\n\n像马斯克一样思考这个问题               # Community / 社区人格\n\nthink like linus-torvalds            # By ID\n\n\n\n# Manage / 管理\n\nupdate my portrait                   # Incremental update (only new msgs) / 增量更新\n\ninstall persona from &lt;github-url&gt;    # Install from GitHub / 安装\n\nlist personas                        # See installed / 查看已安装\n\nremove persona &lt;id&gt;                  # Uninstall / 删除\n\n</code></pre>\n<pre><code>\n~/.claude/skills/vibe-portrait-personas/\n\n├── me/                        ← yours (auto-generated, multi-file)\n\n│   ├── SKILL.md\n\n│   ├── portrait-meta.json     ← timestamps for incremental updates\n\n│   └── references/\n\n│       ├── thinking-patterns.md\n\n│       ├── decision-framework.md\n\n│       ├── communication-style.md\n\n│       ├── engineering-philosophy.md\n\n│       └── mindset-markers.md\n\n├── elon-musk/                 ← installed from GitHub\n\n│   └── ...\n\n└── zhuge-liang/               ← installed from community\n\n    └── ...\n\n</code></pre>\n<p>---</p>\n<h2>Multi-Machine Sync / 多机器同步</h2>\n<p>Syncs via <strong>private GitHub repo</strong> using <code>gh</code> CLI.</p>\n<pre><code>\nMachine A ──push──► my-vibe-portrait (private) ◄──push── Machine B\n\n                    ├── me/SKILL.md\n\n                    ├── analysis/macbook.json\n\n                    ├── analysis/linux-4090.json\n\n                    ├── portraits/latest.html\n\n                    └── README.md (auto-filled)\n\n</code></pre>\n<p>First run creates the repo. Subsequent runs on any machine pull → merge → push.</p>\n<p>---</p>\n<h2>Privacy / 隐私</h2>\n<ul>\n<li>Only reads local <code>~/.claude/history.jsonl</code> — never sends data externally</li>\n<li>API keys, tokens, passwords, file paths, personal info auto-redacted from all outputs</li>\n<li>Persona skills contain <strong>zero raw chat messages</strong> — only abstracted personality descriptions</li>\n<li>Portrait repo is private by default — you control what to share</li>\n</ul>\n<p>&gt; 🛡️ <strong>Want real-time protection?</strong> Try <a href=\"https://github.com/dadwadw233/VibeGuard\" target=\"_blank\" rel=\"noreferrer\"><strong>VibeGuard</strong></a> — a security plugin for Claude Code that detects secrets, blocks dangerous commands, and logs all tool actions. Pairs naturally with VibePortrait: VibeGuard protects your code in real-time, VibePortrait ensures your exported persona stays clean.</p>\n<p>&gt;</p>\n<p>&gt; ```bash</p>\n<p>&gt; npm install -g @embodot/vibeguard &amp;&amp; vibeguard install</p>\n<p>&gt; ```</p>\n<p>---</p>\n<h2>Requirements / 环境要求</h2>\n<ul>\n<li>Claude Code or Codex with 20+ messages of history</li>\n<li>Modern browser for HTML viewing</li>\n<li><code>gh</code> CLI for multi-machine sync (optional)</li>\n</ul>\n<p>---</p>\n<h2>Roadmap</h2>\n<ul>\n<li>[x] HTML portrait with 10 visual sections + MBTI color themes</li>\n<li>[x] Persona skill generation (abstracted, no raw quotes)</li>\n<li>[x] Bilingual (zh/en) + one-click image export</li>\n<li>[x] Multi-machine sync via private GitHub repo</li>\n<li>[x] Materialist rating rubric</li>\n<li>[ ] Community platform for sharing &amp; discovering persona skills</li>\n</ul>\n<p>---</p>\n<p>&lt;div align=\"center\"&gt;</p>\n<p><strong>Every great developer evolves. The first step is seeing clearly where you stand.</strong></p>\n<p><strong>每一次对话都是你的进化轨迹。看见自己，分享自己，成为更强的自己。</strong></p>\n<p>&lt;/div&gt;</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.064Z",
+  "updatedAt": "2026-04-10",
   "author": {
     "login": "dadwadw233",
-    "name": "dadwadw233",
-    "avatarUrl": "",
+    "name": "Yuanhong Yu",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/80851531?v=4",
     "profileUrl": "https://github.com/dadwadw233",
-    "location": ""
+    "location": "Hangzhou"
   },
-  "location": null,
+  "location": {
+    "id": "hangzhou",
+    "label": "Hangzhou",
+    "lat": 30.2741,
+    "lon": 120.1551,
+    "source": "github_profile"
+  },
   "related": [
     {
-      "slug": "affaan-m-everything-claude-code",
-      "displayName": "affaan-m/everything-claude-code",
-      "stars": 175105,
+      "slug": "notdog1998-yourself-skill",
+      "displayName": "notdog1998/yourself-skill",
+      "stars": 3108,
       "relation": "shared_tag",
-      "evidence": "Discovered"
+      "evidence": "EverythingSkill / Persona"
     },
     {
-      "slug": "snailclimb-javaguide",
-      "displayName": "Snailclimb/JavaGuide",
-      "stars": 155456,
+      "slug": "agenmod-immortal-skill",
+      "displayName": "agenmod/immortal-skill",
+      "stars": 879,
       "relation": "shared_tag",
-      "evidence": "Discovered"
+      "evidence": "EverythingSkill / Persona"
     },
     {
-      "slug": "nousresearch-hermes-agent",
-      "displayName": "NousResearch/hermes-agent",
-      "stars": 136906,
+      "slug": "rottenpen-fengge-wangmingtianya",
+      "displayName": "rottenpen/fengge-wangmingtianya-perspective",
+      "stars": 124,
       "relation": "shared_tag",
-      "evidence": "Discovered"
+      "evidence": "EverythingSkill / Persona"
     },
     {
-      "slug": "thedotmack-claude-mem",
-      "displayName": "thedotmack/claude-mem",
-      "stars": 73174,
+      "slug": "wildbyteai-digital-life",
+      "displayName": "wildbyteai/digital-life",
+      "stars": 54,
       "relation": "shared_tag",
-      "evidence": "Discovered"
+      "evidence": "EverythingSkill / Persona"
     },
     {
-      "slug": "bytedance-deer-flow",
-      "displayName": "bytedance/deer-flow",
-      "stars": 65827,
+      "slug": "weixr18-my-digital-life",
+      "displayName": "weixr18/my-digital-life",
+      "stars": 19,
       "relation": "shared_tag",
-      "evidence": "Discovered"
+      "evidence": "EverythingSkill / Persona"
     },
     {
-      "slug": "farion1231-cc-switch",
-      "displayName": "farion1231/cc-switch",
-      "stars": 62022,
+      "slug": "zour-ma-cyberdoc-skill",
+      "displayName": "ZouR-Ma/cyberfit",
+      "stars": 15,
       "relation": "shared_tag",
-      "evidence": "Discovered"
+      "evidence": "EverythingSkill / Persona"
     },
     {
-      "slug": "gsd-build-get-shit-done",
-      "displayName": "gsd-build/get-shit-done",
-      "stars": 60616,
+      "slug": "guilings-firefly-skill",
+      "displayName": "guilings/firefly.skill",
+      "stars": 13,
       "relation": "shared_tag",
-      "evidence": "Discovered"
+      "evidence": "EverythingSkill / Persona"
     },
     {
-      "slug": "shareai-lab-learn-claude-code",
-      "displayName": "shareAI-lab/learn-claude-code",
-      "stars": 58737,
+      "slug": "tmstack-retail-investors",
+      "displayName": "tmstack/retail-investors",
+      "stars": 12,
       "relation": "shared_tag",
-      "evidence": "Discovered"
+      "evidence": "EverythingSkill / Persona"
     }
   ],
   "mapLocation": {
-    "id": "virtual-bengaluru",
-    "label": "Global Skill Market / Bengaluru / Discovered",
-    "lat": 12.9716,
-    "lon": 77.5946,
-    "source": "virtual_market"
+    "id": "hangzhou",
+    "label": "Hangzhou",
+    "lat": 30.2741,
+    "lon": 120.1551,
+    "source": "github_profile"
   }
 }

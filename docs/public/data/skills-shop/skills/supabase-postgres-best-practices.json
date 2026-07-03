@@ -5,36 +5,91 @@
   "displayName": "supabase/postgres-best-practices",
   "description": "PostgreSQL best practices for Supabase",
   "stars": 0,
-  "category": "Skills by Supabase Team",
+  "category": "Official Skills by",
   "source": "voltagent",
   "url": "https://officialskills.sh/supabase/skills/postgres-best-practices",
   "githubRepo": "",
   "readme": "# supabase/postgres-best-practices\n\nPostgreSQL best practices for Supabase",
   "readmeHtml": "<h1>supabase/postgres-best-practices</h1>\n<p>PostgreSQL best practices for Supabase</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.090Z",
+  "updatedAt": "2026-07-03T11:33:56.323Z",
   "author": {
     "login": "supabase",
-    "name": "supabase",
-    "avatarUrl": "",
+    "name": "Supabase",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/54469796?v=4",
     "profileUrl": "https://github.com/supabase",
-    "location": ""
+    "location": "United States of America"
   },
-  "location": null,
+  "location": {
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
+  },
   "related": [
     {
-      "slug": "supabase-agent-skills",
-      "displayName": "supabase/agent-skills",
-      "stars": 2046,
-      "relation": "source_overlap",
-      "evidence": "author:supabase"
+      "slug": "combo-data-backend-api-stack",
+      "displayName": "Data Backend API Stack",
+      "stars": 0,
+      "relation": "combo_component",
+      "evidence": "Data Backend API Stack includes supabase/postgres-best-practices"
+    },
+    {
+      "slug": "angular-angular-developer",
+      "displayName": "angular/angular-developer",
+      "stars": 544,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "testmu-ai-api-skill",
+      "displayName": "testmu-ai/api-skill",
+      "stars": 318,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "veniceai-venice-api-overview",
+      "displayName": "veniceai/venice-api-overview",
+      "stars": 105,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "zero-zero",
+      "displayName": "zero/zero",
+      "stars": 14,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "trycourier-courier-skills",
+      "displayName": "trycourier/courier-skills",
+      "stars": 11,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "anthropics-docx",
+      "displayName": "anthropics/docx",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "anthropics-doc-coauthoring",
+      "displayName": "anthropics/doc-coauthoring",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
     }
   ],
   "mapLocation": {
-    "id": "virtual-toronto",
-    "label": "Global Skill Market / Toronto / Skills by Supabase Team",
-    "lat": 43.6532,
-    "lon": -79.3832,
-    "source": "virtual_market"
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
   }
 }

@@ -12,15 +12,21 @@
   "readme": "# firebase/developing-genkit-js\n\nBuild AI-powered apps with Firebase Genkit in Node.js",
   "readmeHtml": "<h1>firebase/developing-genkit-js</h1>\n<p>Build AI-powered apps with Firebase Genkit in Node.js</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.137Z",
+  "updatedAt": "2026-07-03T11:33:56.376Z",
   "author": {
     "login": "firebase",
-    "name": "firebase",
-    "avatarUrl": "",
+    "name": "Firebase",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/1335026?v=4",
     "profileUrl": "https://github.com/firebase",
-    "location": ""
+    "location": "San Francisco, CA"
   },
-  "location": null,
+  "location": {
+    "id": "san-francisco",
+    "label": "San Francisco, London, Austin, Lisbon, Singapore",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "github_profile"
+  },
   "related": [
     {
       "slug": "firebase-developing-genkit-dart",
@@ -80,10 +86,10 @@
     }
   ],
   "mapLocation": {
-    "id": "virtual-new-york",
-    "label": "Global Skill Market / New York / TypeScript Skills",
-    "lat": 40.7128,
-    "lon": -74.006,
-    "source": "virtual_market"
+    "id": "san-francisco",
+    "label": "San Francisco, London, Austin, Lisbon, Singapore",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "github_profile"
   }
 }

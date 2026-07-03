@@ -12,22 +12,22 @@
   "readme": "# openai/slides\n\nCreate and edit .pptx presentation decks with PptxGenJS",
   "readmeHtml": "<h1>openai/slides</h1>\n<p>Create and edit .pptx presentation decks with PptxGenJS</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.126Z",
+  "updatedAt": "2026-07-03T11:33:56.364Z",
   "author": {
     "login": "openai",
-    "name": "openai",
-    "avatarUrl": "",
+    "name": "OpenAI",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/14957082?v=4",
     "profileUrl": "https://github.com/openai",
     "location": ""
   },
   "location": null,
   "related": [
     {
-      "slug": "openai-skills",
-      "displayName": "openai/skills",
-      "stars": 18508,
-      "relation": "source_overlap",
-      "evidence": "author:openai"
+      "slug": "combo-office-document-suite",
+      "displayName": "Office Document Suite",
+      "stars": 0,
+      "relation": "combo_component",
+      "evidence": "Office Document Suite includes openai/slides"
     },
     {
       "slug": "openai-cloudflare-deploy",

@@ -1,0 +1,89 @@
+{
+  "id": "skill:weixr18-my-digital-life",
+  "slug": "weixr18-my-digital-life",
+  "name": "my-digital-life",
+  "displayName": "weixr18/my-digital-life",
+  "description": "A framework for upgrading your personal knowledge base into a digital alter ego.",
+  "stars": 19,
+  "category": "EverythingSkill / Persona",
+  "source": "everythingskill",
+  "url": "https://github.com/weixr18/my-digital-life",
+  "githubRepo": "weixr18/my-digital-life",
+  "readme": "# 数字生命开源计划\n\n> 让 AI 真正理解你，成为专属的思维伙伴\n\n---\n\n## 这是什么？\n\n这是一个**个人知识库框架**，让你的 AI Agent 能够深度理解你——不只是记住你说过什么，而是真正理解你的思维方式、价值观和人生经历。\n\n### 它能做什么？\n\n想象这样一个场景：\n\n> 你站在人生的岔路口，不知道该选 A 还是选 B。你问 AI：\"我该怎么做？\"\n> \n> 普通 AI 会给你通用的建议。但这个数字生命会反问：\"基于你过去三次重大决策的模式，你似乎更看重长期价值而非短期收益。这次的选择，符合这个模式吗？\"\n\n**这就是区别**——它不是工具，而是一个真正懂你的对话者。\n\n\n### 详细介绍\n\n- **项目故事**: 个人公众号**北冥w**文章 [40万字，我创造了自己的数字生命](https://mp.weixin.qq.com/s/FK8jWGlwu2KpZ2WaWeH3yg)\n- **构建指南**: 个人公众号**北冥w**文章 [数字生命构建指南：从0到38万字个人库](https://mp.weixin.qq.com/s/bD3peiuP8i7PUOjLyYF3nQ)\n- 欢迎阅读 & 关注！\n\n---\n\n## 核心设计理念\n\n### \"既是我，又不是我\"\n\n- **\"是我\"**：用你习惯的方式思考，说你能听懂的话，理解你独特的经历\n- **\"不是我\"**：保留 AI 的第三方视角，在你陷入盲区时敢于挑战你\n\n**结果是**：就像在和另一个自己对话——既懂你，又能帮你看清自己看不到的东西。\n\n---\n\n## 关于这个仓库\n\n⚠️ **重要说明**：\n\n这个仓库是**脱敏后的结构示例**，仅包含：\n- 知识库的目录结构\n- 文件命名规范\n- 核心文件的模板/示例\n- 部分脱敏后的内容片段\n\n**不包含**任何真实个人信息。\n\n**我们的建议**：不要直接照搬，而是参考这个框架，搭建属于你自己的数字生命。\n\n---\n\n## 知识库结构参考\n\n这是一个人的知识可以如何组织的示例（你可以改成适合自己的结构）：\n\n```\n├── 1经历库/          # 成长轨迹\n│   ├── 小学/初中/高中/本科/读博\n│   ├── 每日记录/     # 周记形式的生活流水\n│   └── 经历-总述.md  # 全局概览\n├── 2认知库/          # 价值观、思考体系\n│   ├── 1新心学/      # 示例：个人哲学体系\n│   └── 2觉察对话/    # 与 AI 的深度对话记录\n├── 3技术库/          # 技术能力\n└── 4兴趣库/          # 兴趣与品味\n```\n\n### 为什么是这四个库？\n\n| 库 | 作用 | 包含什么 |\n|---|------|---------|\n| 经历库 | 认识\"你从哪里来\" | 各阶段自述、日常记录 |\n| 认知库 | 认识\"你如何思考\" | 价值观、哲学体系、深度对话 |\n| 技术库 | 认识\"你能做什么\" | 技术笔记、项目记录 |\n| 兴趣库 | 认识\"你热爱什么\" | 兴趣自述、阅读/观影笔记 |\n\n### 关键的\"总-分\"结构\n\n每个子库都有一个**总述文件**（如 `经历-总述.md`），概括全局；具体细节放在分文件中。\n\n这样做的好处：\n- AI 能快速建立整体认知\n- 按需深入细节，不受上下文限制\n- 文件再多也能高效定位\n\n---\n\n## 让 AI 读懂你的核心文件\n\n根目录下这四个文件，是让 Claude Code 能\"理解\"这个库的关键：\n\n| 文件 | 作用 | 谁来写 |\n|-----|------|--------|\n| `CLAUDE.md` | 项目级提示词，每次对话自动加载。包含：你是谁、文件怎么找、什么场景调用什么 Skill | 你写 |\n| `CONTENTS.md` | 完整目录索引，文件列表和用途说明 | AI 辅助生成 |\n| `LETTER.md` | 给 AI 的\"信\"，定义它该如何与你对话 | 你写 |\n| `PERSON.md` | AI 生成的人物分析报告——它如何\"看\"你 | AI 生成 |\n\n### LETTER.md 示例核心内容\n\n这是\"既是我又不是我\"原则的定义文件。示例：\n\n> \"你可以用我独特的逻辑和价值观与我对话，让我感觉'我在和另一个我对话'。\n> \n> 但同时，你拥有 AI 的'涌现智能'和'第三方视角'。当我陷入自己的偏见时，请勇敢指出。\"\n\n### PERSON.md 示例结构\n\n这是 AI 读完你的所有资料后，生成的一份\"人物报告\"，示例包含：\n\n1. 基础认知：身份定位、核心信念\n2. 成长轨迹：关键阶段、转折点、模式识别\n3. 家庭与关系\n4. 认知框架：价值观体系、行为模式\n5. 能力体系\n6. 对话指导：如何与我互动\n7. 关键盲点与挑战\n\n**这份报告本身就会给你很多启发**——因为它看见的是你自己都看不清的结构。\n\n---\n\n## 三种思维模式（Skills）\n\n`.claude/skills/` 目录下定义了三种深度思考方式，让 AI \"像你一样思考\"：\n\n| Skill | 触发场景 | 做什么 |\n|-------|---------|--------|\n| `retrospective-thinking` | 问\"我为什么变成这样\" | 因果追踪，连接你没想到的节点 |\n| `integrative-thinking` | 需要跨领域分析 | 在不同领域的认知间搭桥 |\n| `futuristic-thinking` | 做重大决策、规划未来 | 基于你的过去和价值观，给出真正\"属于你\"的建议 |\n\n---\n\n## 快速开始：搭建你自己的数字生命\n\n### 第一步：最小可行版本（今晚就能开始对话）\n\n你不需要准备几百个文件。今晚就能开始的**3 个文件**：\n\n1. **CLAUDE.md**（50-100 行）\n   ```markdown\n   # 数字生命项目\n   \n   ## 人设定位\n   - 我是[你的名字]，[一句话定位]\n   - 这个项目的核心是\"既是我，又不是我\"\n   \n   ## 文件结构\n   - 总述文件：[经历-总述.md]\n   - 详细内容按需读取\n   \n   ## 思维模式\n   - 涉及过去 → 调用 retrospective-thinking\n   - 跨领域分析 → 调用 integrative-thinking\n   - 规划未来 → 调用 futuristic-thinking\n   ```\n\n2. **经历-总述.md**（2000 字即可）\n   - 你的人生概要：几个关键阶段、重大选择、核心特质\n   - 不需要完美，先有骨架\n\n3. **LETTER.md**（1 页纸）\n   - 告诉 AI 你希望它如何与你对话\n   - 定义\"既是我又不是我\"的具体含义\n\n### 第二步：开始对话\n\n打开 VS Code + Claude Code 插件，直接问它：\n\n> \"基于我的经历，你觉得我为什么会（某个特质/选择）？\"\n\n观察它如何读取文件、如何分析、如何回应。\n\n### 第三步：逐步完善\n\n在对话中发现缺什么，就补什么：\n- 它问到你没写的细节 → 补充到经历库\n- 你们聊出了有价值的洞察 → 整理进认知库\n- 每周的持续记录 → 加入每日记录\n\n### 第四步：生成 PERSON.md\n\n当经历库和认知库有了一定内容，让 AI：\n\n> \"基于你对我所有资料的理解，生成一份人物深度认知报告\"\n\n然后迭代优化它。\n\n---\n\n## 给搭建者的建议\n\n### 1. 从最小版本开始\n不要等\"准备好\"才开始。3 个文件，2000 字，今晚就能对话。\n\n### 2. 先有血肉，再有灵魂\nCLAUDE.md 和 LETTER.md 不需要一开始就完美。先写初版，在对话中迭代。\n\n### 3. 写下\"你不知道你知道\"的东西\n很多关于你自己的事情，不写下来的话，连你自己都没意识到。写作本身就是自我发现。\n\n### 4. 持续记录是关键\n每日记录不需要深刻，3-4 句话记录发生了什么即可。持续比深度更重要。\n\n### 5. 结构是可变的\n四个库、九大部分、三种思维模式——这些都是**参考**，不是标准答案。找到适合自己的结构。\n\n### 6. 隐私保护\n涉及真实人名、地名时，使用代号系统。代号与真实信息的对应关系，放在完全离线的加密文件中。\n\n---\n\n## 技术栈\n\n- **Claude Code**: Agent 运行时环境（推荐 VSCode + Claude Code 插件）\n- **Markdown**: 知识存储格式\n- **Git**: 版本控制\n\n### 为什么选 Claude Code？\n\n它能在\"自主执行\"和\"人工干预\"之间找到平衡：\n- 自主规划、调用工具、按需读取文件\n- 同时允许你随时打断、补充、查看每一步\n\n这种\"按需加载上下文\"的能力，是大型个人库能跑通的技术基础。\n\n---\n\n## 文件命名规范\n\n- `-example.md`：脱敏/示例文件\n- `-总述.md`：库级全局概览\n- `-概述.md`：阶段级概览\n- `YYYYWXX.md`：周记格式（如 2025W14.md）\n\n---\n\n## 探索本仓库\n\n| 想做什么 | 看什么 |\n|---------|--------|\n| 理解设计理念 | [LETTER_example.md](LETTER_example.md) |\n| 了解项目配置 | [CLAUDE_example.md](CLAUDE_example.md) |\n| 看人物报告示例 | [PERSON_example.md](PERSON_example.md) |\n| 看完整目录结构 | [CONTENTS_example.md](CONTENTS_example.md) |\n| 看经历库结构 | `1经历库/经历-总述-example.md` |\n\n---\n\n## 推荐阅读顺序\n\n如果你是第一次接触这个概念：\n\n1. 先看 [LETTER_example.md](LETTER_example.md) —— 理解\"数字生命\"是什么\n2. 再看本 README 的\"快速开始\"部分 —— 知道如何动手\n3. 今晚就创建你的 3 个文件，开始第一次对话\n4. 在实践中，逐步完善你的知识库\n\n---\n\n## 常见问题/FAQ\n\n**Q: 我需要写多少字才能开始？**\nA: 2000 字的人生概要就能开始。剩下的在对话中补充。\n\n**Q: 我可以用其他 AI 工具吗？**\nA: 可以。但这个项目是基于 Claude Code 的自主文件读取能力设计的。其他工具可能需要调整方案。\n\n**Q: 我必须按照四个库的结构来吗？**\nA: 完全不必。这是参考结构，适合你就用，不适合就改。\n\n**Q: 这个项目和那种\"蒸馏聊天记录\"的 skill 有什么区别？**\nA: 聊天记录方案侧重\"让 AI 说话像某人\"，这个项目侧重\"让 AI 理解某人\"。前者是表达层，后者是结构层。两者可以结合。\n\n\n---\n\n## 许可\n\n本项目采用 [MIT License](LICENSE) 开源许可。\n\n---\n\n> 在一个可以构建\"数字生命\"的时代，\n> 只要你敢于表达自己，\n> 你也可以拥有一个真正懂你的思维伙伴。\n",
+  "readmeHtml": "<h1>数字生命开源计划</h1>\n<p>&gt; 让 AI 真正理解你，成为专属的思维伙伴</p>\n<p>---</p>\n<h2>这是什么？</h2>\n<p>这是一个<strong>个人知识库框架</strong>，让你的 AI Agent 能够深度理解你——不只是记住你说过什么，而是真正理解你的思维方式、价值观和人生经历。</p>\n<h3>它能做什么？</h3>\n<p>想象这样一个场景：</p>\n<p>&gt; 你站在人生的岔路口，不知道该选 A 还是选 B。你问 AI：\"我该怎么做？\"</p>\n<p>&gt; </p>\n<p>&gt; 普通 AI 会给你通用的建议。但这个数字生命会反问：\"基于你过去三次重大决策的模式，你似乎更看重长期价值而非短期收益。这次的选择，符合这个模式吗？\"</p>\n<p><strong>这就是区别</strong>——它不是工具，而是一个真正懂你的对话者。</p>\n<h3>详细介绍</h3>\n<ul>\n<li><strong>项目故事</strong>: 个人公众号<strong>北冥w</strong>文章 <a href=\"https://mp.weixin.qq.com/s/FK8jWGlwu2KpZ2WaWeH3yg\" target=\"_blank\" rel=\"noreferrer\">40万字，我创造了自己的数字生命</a></li>\n<li><strong>构建指南</strong>: 个人公众号<strong>北冥w</strong>文章 <a href=\"https://mp.weixin.qq.com/s/bD3peiuP8i7PUOjLyYF3nQ\" target=\"_blank\" rel=\"noreferrer\">数字生命构建指南：从0到38万字个人库</a></li>\n<li>欢迎阅读 &amp; 关注！</li>\n</ul>\n<p>---</p>\n<h2>核心设计理念</h2>\n<h3>\"既是我，又不是我\"</h3>\n<ul>\n<li><strong>\"是我\"</strong>：用你习惯的方式思考，说你能听懂的话，理解你独特的经历</li>\n<li><strong>\"不是我\"</strong>：保留 AI 的第三方视角，在你陷入盲区时敢于挑战你</li>\n</ul>\n<p><strong>结果是</strong>：就像在和另一个自己对话——既懂你，又能帮你看清自己看不到的东西。</p>\n<p>---</p>\n<h2>关于这个仓库</h2>\n<p>⚠️ <strong>重要说明</strong>：</p>\n<p>这个仓库是<strong>脱敏后的结构示例</strong>，仅包含：</p>\n<ul>\n<li>知识库的目录结构</li>\n<li>文件命名规范</li>\n<li>核心文件的模板/示例</li>\n<li>部分脱敏后的内容片段</li>\n</ul>\n<p><strong>不包含</strong>任何真实个人信息。</p>\n<p><strong>我们的建议</strong>：不要直接照搬，而是参考这个框架，搭建属于你自己的数字生命。</p>\n<p>---</p>\n<h2>知识库结构参考</h2>\n<p>这是一个人的知识可以如何组织的示例（你可以改成适合自己的结构）：</p>\n<pre><code>\n├── 1经历库/          # 成长轨迹\n\n│   ├── 小学/初中/高中/本科/读博\n\n│   ├── 每日记录/     # 周记形式的生活流水\n\n│   └── 经历-总述.md  # 全局概览\n\n├── 2认知库/          # 价值观、思考体系\n\n│   ├── 1新心学/      # 示例：个人哲学体系\n\n│   └── 2觉察对话/    # 与 AI 的深度对话记录\n\n├── 3技术库/          # 技术能力\n\n└── 4兴趣库/          # 兴趣与品味\n\n</code></pre>\n<h3>为什么是这四个库？</h3>\n<p>| 库 | 作用 | 包含什么 |</p>\n<p>|---|------|---------|</p>\n<p>| 经历库 | 认识\"你从哪里来\" | 各阶段自述、日常记录 |</p>\n<p>| 认知库 | 认识\"你如何思考\" | 价值观、哲学体系、深度对话 |</p>\n<p>| 技术库 | 认识\"你能做什么\" | 技术笔记、项目记录 |</p>\n<p>| 兴趣库 | 认识\"你热爱什么\" | 兴趣自述、阅读/观影笔记 |</p>\n<h3>关键的\"总-分\"结构</h3>\n<p>每个子库都有一个<strong>总述文件</strong>（如 <code>经历-总述.md</code>），概括全局；具体细节放在分文件中。</p>\n<p>这样做的好处：</p>\n<ul>\n<li>AI 能快速建立整体认知</li>\n<li>按需深入细节，不受上下文限制</li>\n<li>文件再多也能高效定位</li>\n</ul>\n<p>---</p>\n<h2>让 AI 读懂你的核心文件</h2>\n<p>根目录下这四个文件，是让 Claude Code 能\"理解\"这个库的关键：</p>\n<p>| 文件 | 作用 | 谁来写 |</p>\n<p>|-----|------|--------|</p>\n<p>| <code>CLAUDE.md</code> | 项目级提示词，每次对话自动加载。包含：你是谁、文件怎么找、什么场景调用什么 Skill | 你写 |</p>\n<p>| <code>CONTENTS.md</code> | 完整目录索引，文件列表和用途说明 | AI 辅助生成 |</p>\n<p>| <code>LETTER.md</code> | 给 AI 的\"信\"，定义它该如何与你对话 | 你写 |</p>\n<p>| <code>PERSON.md</code> | AI 生成的人物分析报告——它如何\"看\"你 | AI 生成 |</p>\n<h3>LETTER.md 示例核心内容</h3>\n<p>这是\"既是我又不是我\"原则的定义文件。示例：</p>\n<p>&gt; \"你可以用我独特的逻辑和价值观与我对话，让我感觉'我在和另一个我对话'。</p>\n<p>&gt; </p>\n<p>&gt; 但同时，你拥有 AI 的'涌现智能'和'第三方视角'。当我陷入自己的偏见时，请勇敢指出。\"</p>\n<h3>PERSON.md 示例结构</h3>\n<p>这是 AI 读完你的所有资料后，生成的一份\"人物报告\"，示例包含：</p>\n<p>1. 基础认知：身份定位、核心信念</p>\n<p>2. 成长轨迹：关键阶段、转折点、模式识别</p>\n<p>3. 家庭与关系</p>\n<p>4. 认知框架：价值观体系、行为模式</p>\n<p>5. 能力体系</p>\n<p>6. 对话指导：如何与我互动</p>\n<p>7. 关键盲点与挑战</p>\n<p><strong>这份报告本身就会给你很多启发</strong>——因为它看见的是你自己都看不清的结构。</p>\n<p>---</p>\n<h2>三种思维模式（Skills）</h2>\n<p><code>.claude/skills/</code> 目录下定义了三种深度思考方式，让 AI \"像你一样思考\"：</p>\n<p>| Skill | 触发场景 | 做什么 |</p>\n<p>|-------|---------|--------|</p>\n<p>| <code>retrospective-thinking</code> | 问\"我为什么变成这样\" | 因果追踪，连接你没想到的节点 |</p>\n<p>| <code>integrative-thinking</code> | 需要跨领域分析 | 在不同领域的认知间搭桥 |</p>\n<p>| <code>futuristic-thinking</code> | 做重大决策、规划未来 | 基于你的过去和价值观，给出真正\"属于你\"的建议 |</p>\n<p>---</p>\n<h2>快速开始：搭建你自己的数字生命</h2>\n<h3>第一步：最小可行版本（今晚就能开始对话）</h3>\n<p>你不需要准备几百个文件。今晚就能开始的<strong>3 个文件</strong>：</p>\n<p>1. <strong>CLAUDE.md</strong>（50-100 行）</p>\n<pre><code>\n   # 数字生命项目\n\n   \n\n   ## 人设定位\n\n   - 我是[你的名字]，[一句话定位]\n\n   - 这个项目的核心是\"既是我，又不是我\"\n\n   \n\n   ## 文件结构\n\n   - 总述文件：[经历-总述.md]\n\n   - 详细内容按需读取\n\n   \n\n   ## 思维模式\n\n   - 涉及过去 → 调用 retrospective-thinking\n\n   - 跨领域分析 → 调用 integrative-thinking\n\n   - 规划未来 → 调用 futuristic-thinking\n\n</code></pre>\n<p>2. <strong>经历-总述.md</strong>（2000 字即可）</p>\n<p>   - 你的人生概要：几个关键阶段、重大选择、核心特质</p>\n<p>   - 不需要完美，先有骨架</p>\n<p>3. <strong>LETTER.md</strong>（1 页纸）</p>\n<p>   - 告诉 AI 你希望它如何与你对话</p>\n<p>   - 定义\"既是我又不是我\"的具体含义</p>\n<h3>第二步：开始对话</h3>\n<p>打开 VS Code + Claude Code 插件，直接问它：</p>\n<p>&gt; \"基于我的经历，你觉得我为什么会（某个特质/选择）？\"</p>\n<p>观察它如何读取文件、如何分析、如何回应。</p>\n<h3>第三步：逐步完善</h3>\n<p>在对话中发现缺什么，就补什么：</p>\n<ul>\n<li>它问到你没写的细节 → 补充到经历库</li>\n<li>你们聊出了有价值的洞察 → 整理进认知库</li>\n<li>每周的持续记录 → 加入每日记录</li>\n</ul>\n<h3>第四步：生成 PERSON.md</h3>\n<p>当经历库和认知库有了一定内容，让 AI：</p>\n<p>&gt; \"基于你对我所有资料的理解，生成一份人物深度认知报告\"</p>\n<p>然后迭代优化它。</p>\n<p>---</p>\n<h2>给搭建者的建议</h2>\n<h3>1. 从最小版本开始</h3>\n<p>不要等\"准备好\"才开始。3 个文件，2000 字，今晚就能对话。</p>\n<h3>2. 先有血肉，再有灵魂</h3>\n<p>CLAUDE.md 和 LETTER.md 不需要一开始就完美。先写初版，在对话中迭代。</p>\n<h3>3. 写下\"你不知道你知道\"的东西</h3>\n<p>很多关于你自己的事情，不写下来的话，连你自己都没意识到。写作本身就是自我发现。</p>\n<h3>4. 持续记录是关键</h3>\n<p>每日记录不需要深刻，3-4 句话记录发生了什么即可。持续比深度更重要。</p>\n<h3>5. 结构是可变的</h3>\n<p>四个库、九大部分、三种思维模式——这些都是<strong>参考</strong>，不是标准答案。找到适合自己的结构。</p>\n<h3>6. 隐私保护</h3>\n<p>涉及真实人名、地名时，使用代号系统。代号与真实信息的对应关系，放在完全离线的加密文件中。</p>\n<p>---</p>\n<h2>技术栈</h2>\n<ul>\n<li><strong>Claude Code</strong>: Agent 运行时环境（推荐 VSCode + Claude Code 插件）</li>\n<li><strong>Markdown</strong>: 知识存储格式</li>\n<li><strong>Git</strong>: 版本控制</li>\n</ul>\n<h3>为什么选 Claude Code？</h3>\n<p>它能在\"自主执行\"和\"人工干预\"之间找到平衡：</p>\n<ul>\n<li>自主规划、调用工具、按需读取文件</li>\n<li>同时允许你随时打断、补充、查看每一步</li>\n</ul>\n<p>这种\"按需加载上下文\"的能力，是大型个人库能跑通的技术基础。</p>\n<p>---</p>\n<h2>文件命名规范</h2>\n<ul>\n<li><code>-example.md</code>：脱敏/示例文件</li>\n<li><code>-总述.md</code>：库级全局概览</li>\n<li><code>-概述.md</code>：阶段级概览</li>\n<li><code>YYYYWXX.md</code>：周记格式（如 2025W14.md）</li>\n</ul>\n<p>---</p>\n<h2>探索本仓库</h2>\n<p>| 想做什么 | 看什么 |</p>\n<p>|---------|--------|</p>\n<p>| 理解设计理念 | [LETTER_example.md](LETTER_example.md) |</p>\n<p>| 了解项目配置 | [CLAUDE_example.md](CLAUDE_example.md) |</p>\n<p>| 看人物报告示例 | [PERSON_example.md](PERSON_example.md) |</p>\n<p>| 看完整目录结构 | [CONTENTS_example.md](CONTENTS_example.md) |</p>\n<p>| 看经历库结构 | <code>1经历库/经历-总述-example.md</code> |</p>\n<p>---</p>\n<h2>推荐阅读顺序</h2>\n<p>如果你是第一次接触这个概念：</p>\n<p>1. 先看 [LETTER_example.md](LETTER_example.md) —— 理解\"数字生命\"是什么</p>\n<p>2. 再看本 README 的\"快速开始\"部分 —— 知道如何动手</p>\n<p>3. 今晚就创建你的 3 个文件，开始第一次对话</p>\n<p>4. 在实践中，逐步完善你的知识库</p>\n<p>---</p>\n<h2>常见问题/FAQ</h2>\n<p><strong>Q: 我需要写多少字才能开始？</strong></p>\n<p>A: 2000 字的人生概要就能开始。剩下的在对话中补充。</p>\n<p><strong>Q: 我可以用其他 AI 工具吗？</strong></p>\n<p>A: 可以。但这个项目是基于 Claude Code 的自主文件读取能力设计的。其他工具可能需要调整方案。</p>\n<p><strong>Q: 我必须按照四个库的结构来吗？</strong></p>\n<p>A: 完全不必。这是参考结构，适合你就用，不适合就改。</p>\n<p><strong>Q: 这个项目和那种\"蒸馏聊天记录\"的 skill 有什么区别？</strong></p>\n<p>A: 聊天记录方案侧重\"让 AI 说话像某人\"，这个项目侧重\"让 AI 理解某人\"。前者是表达层，后者是结构层。两者可以结合。</p>\n<p>---</p>\n<h2>许可</h2>\n<p>本项目采用 [MIT License](LICENSE) 开源许可。</p>\n<p>---</p>\n<p>&gt; 在一个可以构建\"数字生命\"的时代，</p>\n<p>&gt; 只要你敢于表达自己，</p>\n<p>&gt; 你也可以拥有一个真正懂你的思维伙伴。</p>",
+  "skillMd": "",
+  "updatedAt": "2026-04-10",
+  "author": {
+    "login": "weixr18",
+    "name": "Xinran Wei",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/47271979?v=4",
+    "profileUrl": "https://github.com/weixr18",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "notdog1998-yourself-skill",
+      "displayName": "notdog1998/yourself-skill",
+      "stars": 3108,
+      "relation": "shared_tag",
+      "evidence": "EverythingSkill / Persona"
+    },
+    {
+      "slug": "agenmod-immortal-skill",
+      "displayName": "agenmod/immortal-skill",
+      "stars": 879,
+      "relation": "shared_tag",
+      "evidence": "EverythingSkill / Persona"
+    },
+    {
+      "slug": "rottenpen-fengge-wangmingtianya",
+      "displayName": "rottenpen/fengge-wangmingtianya-perspective",
+      "stars": 124,
+      "relation": "shared_tag",
+      "evidence": "EverythingSkill / Persona"
+    },
+    {
+      "slug": "wildbyteai-digital-life",
+      "displayName": "wildbyteai/digital-life",
+      "stars": 54,
+      "relation": "shared_tag",
+      "evidence": "EverythingSkill / Persona"
+    },
+    {
+      "slug": "dadwadw233-vibeportrait",
+      "displayName": "dadwadw233/VibePortrait",
+      "stars": 23,
+      "relation": "shared_tag",
+      "evidence": "EverythingSkill / Persona"
+    },
+    {
+      "slug": "zour-ma-cyberdoc-skill",
+      "displayName": "ZouR-Ma/cyberfit",
+      "stars": 15,
+      "relation": "shared_tag",
+      "evidence": "EverythingSkill / Persona"
+    },
+    {
+      "slug": "guilings-firefly-skill",
+      "displayName": "guilings/firefly.skill",
+      "stars": 13,
+      "relation": "shared_tag",
+      "evidence": "EverythingSkill / Persona"
+    },
+    {
+      "slug": "tmstack-retail-investors",
+      "displayName": "tmstack/retail-investors",
+      "stars": 12,
+      "relation": "shared_tag",
+      "evidence": "EverythingSkill / Persona"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-sao-paulo",
+    "label": "Global Skill Market / Sao Paulo / EverythingSkill / Persona",
+    "lat": -23.5558,
+    "lon": -46.6396,
+    "source": "virtual_market"
+  }
+}

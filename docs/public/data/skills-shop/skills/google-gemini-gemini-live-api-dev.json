@@ -5,22 +5,28 @@
   "displayName": "google-gemini/gemini-live-api-dev",
   "description": "Building real-time bidirectional streaming apps with the Gemini Live API",
   "stars": 0,
-  "category": "Skills by Google Gemini",
+  "category": "Official Skills by",
   "source": "voltagent",
   "url": "https://officialskills.sh/google-gemini/skills/gemini-live-api-dev",
   "githubRepo": "",
   "readme": "# google-gemini/gemini-live-api-dev\n\nBuilding real-time bidirectional streaming apps with the Gemini Live API",
   "readmeHtml": "<h1>google-gemini/gemini-live-api-dev</h1>\n<p>Building real-time bidirectional streaming apps with the Gemini Live API</p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.090Z",
+  "updatedAt": "2026-07-03T11:33:56.323Z",
   "author": {
     "login": "google-gemini",
     "name": "google-gemini",
-    "avatarUrl": "",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/161781182?v=4",
     "profileUrl": "https://github.com/google-gemini",
-    "location": ""
+    "location": "United States of America"
   },
-  "location": null,
+  "location": {
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
+  },
   "related": [
     {
       "slug": "google-gemini-gemini-api-dev",
@@ -44,32 +50,46 @@
       "evidence": "author:google-gemini"
     },
     {
-      "slug": "google-gemini-gemini-api-dev",
-      "displayName": "google-gemini/gemini-api-dev",
-      "stars": 0,
+      "slug": "angular-angular-developer",
+      "displayName": "angular/angular-developer",
+      "stars": 544,
       "relation": "shared_tag",
-      "evidence": "Skills by Google Gemini"
+      "evidence": "Official Skills by"
     },
     {
-      "slug": "google-gemini-vertex-ai-api-dev",
-      "displayName": "google-gemini/vertex-ai-api-dev",
-      "stars": 0,
+      "slug": "testmu-ai-api-skill",
+      "displayName": "testmu-ai/api-skill",
+      "stars": 318,
       "relation": "shared_tag",
-      "evidence": "Skills by Google Gemini"
+      "evidence": "Official Skills by"
     },
     {
-      "slug": "google-gemini-gemini-interactions-api",
-      "displayName": "google-gemini/gemini-interactions-api",
-      "stars": 0,
+      "slug": "veniceai-venice-api-overview",
+      "displayName": "veniceai/venice-api-overview",
+      "stars": 105,
       "relation": "shared_tag",
-      "evidence": "Skills by Google Gemini"
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "zero-zero",
+      "displayName": "zero/zero",
+      "stars": 14,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "trycourier-courier-skills",
+      "displayName": "trycourier/courier-skills",
+      "stars": 11,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
     }
   ],
   "mapLocation": {
-    "id": "virtual-shanghai",
-    "label": "Global Skill Market / Shanghai / Skills by Google Gemini",
-    "lat": 31.2304,
-    "lon": 121.4737,
-    "source": "virtual_market"
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
   }
 }

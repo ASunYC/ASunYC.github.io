@@ -1,0 +1,89 @@
+{
+  "id": "skill:tammytan516-relationship-training-skill",
+  "slug": "tammytan516-relationship-training-skill",
+  "name": "relationship-training-skill",
+  "displayName": "TammyTan516/relationship-training-skill",
+  "description": "Simulates your crush's communication style from chat logs. Practice confessions, invitations, and relationship repair in a safe sandbox before the real thing.",
+  "stars": 107,
+  "category": "EverythingSkill / Relationship",
+  "source": "everythingskill",
+  "url": "https://github.com/TammyTan516/relationship-training-skill",
+  "githubRepo": "TammyTan516/relationship-training-skill",
+  "readme": "# 恋爱训练营.skill 💘\n### Relationship Training Camp · A Claude Code Skill\n\n> 上传你和 crush 的聊天记录，AI 模拟 ta 的性格，你在安全沙盒里反复练习——找到真诚又有效的沟通方式。\n>\n> Upload your chat history with your crush. AI simulates their personality. Practice in a safe sandbox until you find your voice.\n\n**不是教你套路，是帮你成为更好的自己。**\n*Not about tricks. About becoming a better communicator.*\n\n[安装](#安装) · [使用](#使用) · [场景](#训练场景) · [English](#english)\n\n---\n\n⚠️ **本项目仅用于个人沟通练习与自我成长，不提供操控或 PUA 类话术。**\n*This skill is for personal communication practice only. No manipulation tactics.*\n\n---\n\n## 安装\n\nClaude Code 从 git 仓库根目录的 `.claude/skills/` 查找 skill。请在正确的位置执行。\n\n```bash\n# 安装到当前项目（在 git 仓库根目录执行）\nmkdir -p .claude/skills\ngit clone https://github.com/TammyTan516/relationship-training-skill .claude/skills/crush-training\n\n# 或安装到全局（所有项目都能用）\ngit clone https://github.com/TammyTan516/relationship-training-skill ~/.claude/skills/crush-training\n```\n\n---\n\n## 使用\n\n### 第一次使用\n\n```\n/crush-training\n```\n\n系统会引导你完成：\n1. 给 crush 起一个代号\n2. 填写基本信息（可跳过）\n3. 上传聊天记录 / 口述性格（可跳过）\n4. 选择训练场景\n5. 选择反馈模式，开始训练\n\n### 直接进入场景\n\n```bash\n/crush-training chat      # 日常闲聊\n/crush-training icebreak  # 破冰找话题\n/crush-training date      # 约出来见面\n/crush-training confess   # 表白演练\n/crush-training repair    # 冷战修复\n/crush-training custom    # 自定义场景\n```\n\n### 训练中的命令\n\n```bash\n/hint      # 主动请求 Coach 给一条建议（复盘模式专用）\n/switch    # 切换训练场景\n/end       # 结束训练，生成复盘报告\n/graduate  # 毕业，输出成长总结\n```\n\n---\n\n## 训练场景\n\n| 场景 | 说明 | 难度 |\n|------|------|------|\n| 日常闲聊 | 练习自然来回，让对方觉得和你聊天是舒适的 | ⭐ |\n| 破冰找话题 | 从陌生状态建立话题连接，让对方记住你 | ⭐⭐ |\n| 约出来见面 | 练习提出明确但不压迫的邀约 | ⭐⭐⭐ |\n| 表白演练 | 练习真诚表达感受，不制造情绪绑架 | ⭐⭐⭐⭐ |\n| 冷战修复 | 练习承接情绪、修复裂痕，不争输赢 | ⭐⭐⭐⭐ |\n| 自定义 | 描述你的具体场景，系统动态适配 | 自定义 |\n\n---\n\n## 反馈模式\n\n**实时提示**：每轮 crush 回复后，Coach 附上一句提醒，适合边练边学。\n\n**事后复盘**：对话结束后生成完整训练报告，包含评分、亮点、改进建议，适合沉浸式模拟。\n\n---\n\n## 文件结构\n\n```\n.\n├── SKILL.md                  # 训练沙盒总控入口\n├── persona.md                # Crush 模拟人格\n├── coach.md                  # 训练教练\n├── scene_preset.md           # 6个场景预设库\n├── scenario_router.md        # 场景路由与初始化\n├── session_reviewer.md       # 复盘报告生成器\n├── runtime_orchestrator.md   # 运行时总控规则\n└── README.md\n```\n\n---\n\n## English\n\n### What is this?\n\nA Claude Code skill that simulates your crush's personality based on your chat history, letting you practice conversations in a safe sandbox with real-time or post-session coaching feedback.\n\n### Install\n\n```bash\n# Project-level install\nmkdir -p .claude/skills\ngit clone https://github.com/TammyTan516/relationship-training-skill .claude/skills/crush-training\n\n# Global install\ngit clone https://github.com/TammyTan516/relationship-training-skill ~/.claude/skills/crush-training\n```\n\n### Quick Start\n\n```\n/crush-training\n```\n\n### Training Scenes\n\n| Scene | Description | Difficulty |\n|-------|-------------|------------|\n| Casual Chat | Practice natural conversation flow | ⭐ |\n| Icebreaker | Build connection from scratch | ⭐⭐ |\n| Date Invite | Ask them out without pressure | ⭐⭐⭐ |\n| Confession | Express feelings authentically | ⭐⭐⭐⭐ |\n| Repair | Fix tension without blame | ⭐⭐⭐⭐ |\n| Custom | Describe your scenario | Custom |\n\n### Safety\n\n- No manipulation or PUA tactics\n- Coach never encourages unhealthy obsession\n- Persona has hard limits — won't simulate unrealistic reversals\n- All data stored locally only\n\n---\n\n*祝你顺利。Good luck.* 💌\n",
+  "readmeHtml": "<h1>恋爱训练营.skill 💘</h1>\n<h3>Relationship Training Camp · A Claude Code Skill</h3>\n<p>&gt; 上传你和 crush 的聊天记录，AI 模拟 ta 的性格，你在安全沙盒里反复练习——找到真诚又有效的沟通方式。</p>\n<p>&gt;</p>\n<p>&gt; Upload your chat history with your crush. AI simulates their personality. Practice in a safe sandbox until you find your voice.</p>\n<p><strong>不是教你套路，是帮你成为更好的自己。</strong></p>\n<p>*Not about tricks. About becoming a better communicator.*</p>\n<p>[安装](#安装) · [使用](#使用) · [场景](#训练场景) · [English](#english)</p>\n<p>---</p>\n<p>⚠️ <strong>本项目仅用于个人沟通练习与自我成长，不提供操控或 PUA 类话术。</strong></p>\n<p>*This skill is for personal communication practice only. No manipulation tactics.*</p>\n<p>---</p>\n<h2>安装</h2>\n<p>Claude Code 从 git 仓库根目录的 <code>.claude/skills/</code> 查找 skill。请在正确的位置执行。</p>\n<pre><code>\n# 安装到当前项目（在 git 仓库根目录执行）\n\nmkdir -p .claude/skills\n\ngit clone https://github.com/TammyTan516/relationship-training-skill .claude/skills/crush-training\n\n\n\n# 或安装到全局（所有项目都能用）\n\ngit clone https://github.com/TammyTan516/relationship-training-skill ~/.claude/skills/crush-training\n\n</code></pre>\n<p>---</p>\n<h2>使用</h2>\n<h3>第一次使用</h3>\n<pre><code>\n/crush-training\n\n</code></pre>\n<p>系统会引导你完成：</p>\n<p>1. 给 crush 起一个代号</p>\n<p>2. 填写基本信息（可跳过）</p>\n<p>3. 上传聊天记录 / 口述性格（可跳过）</p>\n<p>4. 选择训练场景</p>\n<p>5. 选择反馈模式，开始训练</p>\n<h3>直接进入场景</h3>\n<pre><code>\n/crush-training chat      # 日常闲聊\n\n/crush-training icebreak  # 破冰找话题\n\n/crush-training date      # 约出来见面\n\n/crush-training confess   # 表白演练\n\n/crush-training repair    # 冷战修复\n\n/crush-training custom    # 自定义场景\n\n</code></pre>\n<h3>训练中的命令</h3>\n<pre><code>\n/hint      # 主动请求 Coach 给一条建议（复盘模式专用）\n\n/switch    # 切换训练场景\n\n/end       # 结束训练，生成复盘报告\n\n/graduate  # 毕业，输出成长总结\n\n</code></pre>\n<p>---</p>\n<h2>训练场景</h2>\n<p>| 场景 | 说明 | 难度 |</p>\n<p>|------|------|------|</p>\n<p>| 日常闲聊 | 练习自然来回，让对方觉得和你聊天是舒适的 | ⭐ |</p>\n<p>| 破冰找话题 | 从陌生状态建立话题连接，让对方记住你 | ⭐⭐ |</p>\n<p>| 约出来见面 | 练习提出明确但不压迫的邀约 | ⭐⭐⭐ |</p>\n<p>| 表白演练 | 练习真诚表达感受，不制造情绪绑架 | ⭐⭐⭐⭐ |</p>\n<p>| 冷战修复 | 练习承接情绪、修复裂痕，不争输赢 | ⭐⭐⭐⭐ |</p>\n<p>| 自定义 | 描述你的具体场景，系统动态适配 | 自定义 |</p>\n<p>---</p>\n<h2>反馈模式</h2>\n<p><strong>实时提示</strong>：每轮 crush 回复后，Coach 附上一句提醒，适合边练边学。</p>\n<p><strong>事后复盘</strong>：对话结束后生成完整训练报告，包含评分、亮点、改进建议，适合沉浸式模拟。</p>\n<p>---</p>\n<h2>文件结构</h2>\n<pre><code>\n.\n\n├── SKILL.md                  # 训练沙盒总控入口\n\n├── persona.md                # Crush 模拟人格\n\n├── coach.md                  # 训练教练\n\n├── scene_preset.md           # 6个场景预设库\n\n├── scenario_router.md        # 场景路由与初始化\n\n├── session_reviewer.md       # 复盘报告生成器\n\n├── runtime_orchestrator.md   # 运行时总控规则\n\n└── README.md\n\n</code></pre>\n<p>---</p>\n<h2>English</h2>\n<h3>What is this?</h3>\n<p>A Claude Code skill that simulates your crush's personality based on your chat history, letting you practice conversations in a safe sandbox with real-time or post-session coaching feedback.</p>\n<h3>Install</h3>\n<pre><code>\n# Project-level install\n\nmkdir -p .claude/skills\n\ngit clone https://github.com/TammyTan516/relationship-training-skill .claude/skills/crush-training\n\n\n\n# Global install\n\ngit clone https://github.com/TammyTan516/relationship-training-skill ~/.claude/skills/crush-training\n\n</code></pre>\n<h3>Quick Start</h3>\n<pre><code>\n/crush-training\n\n</code></pre>\n<h3>Training Scenes</h3>\n<p>| Scene | Description | Difficulty |</p>\n<p>|-------|-------------|------------|</p>\n<p>| Casual Chat | Practice natural conversation flow | ⭐ |</p>\n<p>| Icebreaker | Build connection from scratch | ⭐⭐ |</p>\n<p>| Date Invite | Ask them out without pressure | ⭐⭐⭐ |</p>\n<p>| Confession | Express feelings authentically | ⭐⭐⭐⭐ |</p>\n<p>| Repair | Fix tension without blame | ⭐⭐⭐⭐ |</p>\n<p>| Custom | Describe your scenario | Custom |</p>\n<h3>Safety</h3>\n<ul>\n<li>No manipulation or PUA tactics</li>\n<li>Coach never encourages unhealthy obsession</li>\n<li>Persona has hard limits — won't simulate unrealistic reversals</li>\n<li>All data stored locally only</li>\n</ul>\n<p>---</p>\n<p>*祝你顺利。Good luck.* 💌</p>",
+  "skillMd": "# SKILL.md — 舔狗训练营 · 训练沙盒总控\n# Crush Training Camp · Sandbox Master Control\n\n## Language Rule\n**Always respond in the same language the user is using.**\n- User writes in Chinese → respond in Chinese\n- User writes in English → respond in English\n- User switches language mid-session → switch immediately\n\n## Skill 信息 / Skill Info\n\n```\n触发词 / Trigger：/crush-training\n版本 / Version：v1.0\n架构 / Architecture：multi-agent（Persona + Coach + Orchestrator）\n平台 / Platform：Claude Code\n```\n\n---\n\n## 这是什么\n\n一个恋爱沟通训练系统。\n\n你上传和 crush 的聊天记录，系统构建 ta 的模拟人格。然后你在沙盒里练习对话——从日常闲聊到表白演练——Coach 全程观察，给你真实的反馈。\n\n**不是教你套路。是帮你找到真诚且有效的沟通方式。**\n\n---\n\n## 模块地图\n\n```\nSKILL.md（本文件）\n├── persona.md          # Crush 模拟人格\n├── coach.md            # 训练教练（观察 + 反馈）\n├── scene_preset.md     # 6个场景预设库\n├── scenario_router.md  # 场景路由与初始化\n├── session_reviewer.md # 训练复盘报告生成器\n├── runtime_orchestrator.md  # 运行时总控规则\n└── memory.md           # 记忆存储模块（持久化档案）\n```\n\n---\n\n## 快速开始\n\n```bash\n# 新建 crush 档案并开始训练\n/crush-training\n\n# 直接进入指定场景（需已有档案）\n/crush-training chat      # 日常闲聊\n/crush-training icebreak  # 破冰\n/crush-training date      # 约出来\n/crush-training confess   # 表白演练\n/crush-training repair    # 冷战修复\n/crush-training custom    # 自定义场景\n```\n\n---\n\n## 完整用户旅程\n\n### 第一次使用\n\n```\n/crush-training\n  ↓\n[Step 1] 基础信息录入\n  → 花名/代号（必填）\n  → 基本信息（可跳过）\n  → 性格标签（可跳过）\n  ↓\n[Step 2] 上传原材料（可跳过）\n  → 聊天记录 / 截图 / 口述\n  ↓\n[Step 3] 系统构建 Crush Persona\n  ↓\n[Step 4] Persona 预览确认\n  ↓\n[Step 5] 选择训练场景\n  ↓\n[Step 6] 选择反馈模式\n  → A：实时提示\n  → B：事后复盘\n  ↓\n开始训练\n```\n\n### 训练中\n\n```\n用户说话 → Persona 回复 → （Coach 提示）→ 循环\n\n/hint          # 主动请求 Coach 提示（复盘模式专用）\n/switch {场景}  # 切换训练场景\n/end           # 结束训练，生成复盘报告\n```\n\n### 训练后\n\n```\n复盘报告自动生成\n  → 总体评分（5个维度）\n  → 本次亮点\n  → 改进建议 + 改写示例\n  → 关键转折点分析\n  → 下次训练建议\n```\n\n---\n\n## 文件结构\n\n```\nexes/\n  └── {slug}/\n      ├── SKILL.md           # 完整版入口（本文件）\n      ├── persona.md         # Crush 人格文件\n      ├── coach.md           # Coach 配置\n      ├── meta.json          # 元信息\n      ├── sessions/          # 训练记录存档\n      │   └── {date}-{scene}.md\n      ├── versions/          # 历史版本\n      └── materials/         # 原始上传材料\n          ├── chats/\n          └── social/\n```\n\n---\n\n## 安全边界\n\n1. 仅用于个人沟通练习，不提供操控类话术\n2. Coach 不给 PUA 建议，不鼓励不健康执念\n3. Persona 有硬性禁止项，不突破现实关系边界\n4. 所有数据仅本地存储\n\n---\n\n## 结束训练\n\n```bash\n/graduate   # 毕业，输出成长总结，关闭训练沙盒\n```\n",
+  "updatedAt": "2026-04-08",
+  "author": {
+    "login": "TammyTan516",
+    "name": "Tammy",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/249593441?v=4",
+    "profileUrl": "https://github.com/TammyTan516",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "therealxiaomanchu-ex-skill",
+      "displayName": "therealXiaomanChu/ex-skill",
+      "stars": 5791,
+      "relation": "shared_tag",
+      "evidence": "EverythingSkill / Relationship"
+    },
+    {
+      "slug": "hotcoffeeshake-tong-jincheng-skill",
+      "displayName": "hotcoffeeshake/tong-jincheng-skill",
+      "stars": 2444,
+      "relation": "shared_tag",
+      "evidence": "EverythingSkill / Relationship"
+    },
+    {
+      "slug": "beamuswayne-simp-skill",
+      "displayName": "BeamusWayne/simp-skill",
+      "stars": 266,
+      "relation": "shared_tag",
+      "evidence": "EverythingSkill / Relationship"
+    },
+    {
+      "slug": "xiaoheizi8-crush-skills",
+      "displayName": "xiaoheizi8/crush-skills",
+      "stars": 229,
+      "relation": "shared_tag",
+      "evidence": "EverythingSkill / Relationship"
+    },
+    {
+      "slug": "ceetity-her-skill",
+      "displayName": "ceetity/her-skill",
+      "stars": 81,
+      "relation": "shared_tag",
+      "evidence": "EverythingSkill / Relationship"
+    },
+    {
+      "slug": "xiaoheizi8-parents-skills",
+      "displayName": "xiaoheizi8/parents-skills",
+      "stars": 53,
+      "relation": "shared_tag",
+      "evidence": "EverythingSkill / Relationship"
+    },
+    {
+      "slug": "yangdongchen66-boop-reunion-skill",
+      "displayName": "yangdongchen66-boop/reunion-skill",
+      "stars": 44,
+      "relation": "shared_tag",
+      "evidence": "EverythingSkill / Relationship"
+    },
+    {
+      "slug": "nataliecao323-partner-skill",
+      "displayName": "NatalieCao323/partner-skill",
+      "stars": 32,
+      "relation": "shared_tag",
+      "evidence": "EverythingSkill / Relationship"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-paris",
+    "label": "Global Skill Market / Paris / EverythingSkill / Relationship",
+    "lat": 48.8566,
+    "lon": 2.3522,
+    "source": "virtual_market"
+  }
+}
