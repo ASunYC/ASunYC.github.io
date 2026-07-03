@@ -41,6 +41,13 @@ jobs:
           cd skills-book
           node scripts/skills-book.mjs fetch --force
 
+      - name: Build Skills Wiki DB
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cd skills-book
+          node scripts/skills-book.mjs build-wiki
+
       - name: Export static data to site
         run: |
           cd skills-book
