@@ -4,7 +4,7 @@
   "name": "varlock-claude-skill",
   "displayName": "wrsmith108/varlock-claude-skill",
   "description": "Secure environment variable management ensuring secrets are never exposed in Claude sessions, terminals, logs, or git commits",
-  "stars": 27,
+  "stars": 28,
   "category": "Community Skills",
   "source": "voltagent",
   "url": "https://github.com/wrsmith108/varlock-claude-skill",
@@ -25,56 +25,56 @@
     {
       "slug": "wrsmith108-linear-claude-skill",
       "displayName": "wrsmith108/linear-claude-skill",
-      "stars": 115,
+      "stars": 116,
       "relation": "source_overlap",
       "evidence": "author:wrsmith108"
     },
     {
       "slug": "obra-brainstorming",
       "displayName": "obra/brainstorming",
-      "stars": 246785,
+      "stars": 247654,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "mattpocock-skills",
       "displayName": "mattpocock/skills",
-      "stars": 157367,
+      "stars": 158574,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
       "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
-      "stars": 101166,
+      "stars": 101644,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "lum1104-understand-anything",
       "displayName": "Lum1104/understand-anything",
-      "stars": 71016,
+      "stars": 71358,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "santifer-career-ops",
       "displayName": "santifer/career-ops",
-      "stars": 58659,
+      "stars": 58834,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "leonxlnx-taste-skill",
       "displayName": "Leonxlnx/taste-skill",
-      "stars": 57293,
+      "stars": 58767,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "panniantong-agent-reach",
       "displayName": "Panniantong/Agent-Reach",
-      "stars": 51194,
+      "stars": 51965,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     }
