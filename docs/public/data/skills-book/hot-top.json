@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-06T20:32:39.528Z",
+  "generatedAt": "2026-07-07T20:34:03.838Z",
   "source": "local-skills-cache",
   "baseline": {
     "window": "7d",
-    "commit": "a4e5664ac51d09c388839832dc2467a79179a254"
+    "commit": "59f258002a2b48eff0020f74e4e9b4f6379c6c4f"
   },
   "skills": [
     {
@@ -12,10 +12,10 @@
       "displayName": "obra/brainstorming",
       "description": "Generate and explore ideas",
       "category": "Community Skills",
-      "stars": 247654,
+      "stars": 248611,
       "githubRepo": "obra/superpowers",
       "source": "voltagent",
-      "weeklyStars": 869,
+      "weeklyStars": 957,
       "href": "/skills-shop/obra-brainstorming/"
     },
     {
@@ -24,10 +24,10 @@
       "displayName": "mattpocock/skills",
       "description": "17 dev workflow skills: PRD writing, TDD, codebase architecture, git guardrails, issue triage, refactoring plans, and more",
       "category": "Community Skills",
-      "stars": 158574,
+      "stars": 159722,
       "githubRepo": "mattpocock/skills",
       "source": "voltagent",
-      "weeklyStars": 1207,
+      "weeklyStars": 1148,
       "href": "/skills-shop/mattpocock-skills/"
     },
     {
@@ -36,10 +36,10 @@
       "displayName": "garrytan/gstack",
       "description": "YC founder stack recommendations for infra, tooling, and deployment",
       "category": "Skills by Garry Tan (gstack)",
-      "stars": 119978,
+      "stars": 120274,
       "githubRepo": "garrytan/gstack",
       "source": "heilcheng",
-      "weeklyStars": 319,
+      "weeklyStars": 296,
       "href": "/skills-shop/garrytan-gstack/"
     },
     {
@@ -48,10 +48,10 @@
       "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
       "description": "UI/UX design patterns and best practices",
       "category": "Community Skills",
-      "stars": 101644,
+      "stars": 102226,
       "githubRepo": "nextlevelbuilder/ui-ux-pro-max-skill",
       "source": "voltagent",
-      "weeklyStars": 478,
+      "weeklyStars": 582,
       "href": "/skills-shop/nextlevelbuilder-ui-ux-pro-max-skill/"
     },
     {
@@ -60,10 +60,10 @@
       "displayName": "voltagent/awesome-design-md",
       "description": "Standards and tools for the DESIGN.md protocol.",
       "category": "How do I know if a skill is safe to use?",
-      "stars": 96206,
+      "stars": 96672,
       "githubRepo": "VoltAgent/awesome-design-md",
       "source": "heilcheng",
-      "weeklyStars": 323,
+      "weeklyStars": 466,
       "href": "/skills-shop/voltagent-awesome-design-md/"
     },
     {
@@ -72,10 +72,10 @@
       "displayName": "punkpeye/awesome-mcp-servers",
       "description": "A collection of Model Context Protocol (MCP) servers.",
       "category": "How do I know if a skill is safe to use?",
-      "stars": 90381,
+      "stars": 90420,
       "githubRepo": "punkpeye/awesome-mcp-servers",
       "source": "heilcheng",
-      "weeklyStars": 52,
+      "weeklyStars": 39,
       "href": "/skills-shop/punkpeye-awesome-mcp-servers/"
     },
     {
@@ -84,10 +84,10 @@
       "displayName": "modelcontextprotocol/servers",
       "description": "Official server implementations",
       "category": "Model Context Protocol (MCP)",
-      "stars": 88123,
+      "stars": 88168,
       "githubRepo": "modelcontextprotocol/servers",
       "source": "heilcheng",
-      "weeklyStars": 37,
+      "weeklyStars": 45,
       "href": "/skills-shop/modelcontextprotocol-servers/"
     },
     {
@@ -96,35 +96,35 @@
       "displayName": "Lum1104/understand-anything",
       "description": "Interactive codebase knowledge graphs via multi-agent LLM analysis",
       "category": "Community Skills",
-      "stars": 71358,
+      "stars": 71708,
       "githubRepo": "Lum1104/Understand-Anything",
       "source": "voltagent",
-      "weeklyStars": 342,
+      "weeklyStars": 350,
       "href": "/skills-shop/lum1104-understand-anything/"
     },
     {
       "rank": 9,
-      "slug": "santifer-career-ops",
-      "displayName": "santifer/career-ops",
-      "description": "14-skill collection for AI-powered job search: JD evaluation with A-F scoring, ATS-optimized PDF generation, portal scanners (Greenhouse/Ashby/Lever), interview prep with STAR+R, batch processing, and a Go dashboard TUI",
-      "category": "Community Skills",
-      "stars": 58834,
-      "githubRepo": "santifer/career-ops",
-      "source": "voltagent",
-      "weeklyStars": 175,
-      "href": "/skills-shop/santifer-career-ops/"
-    },
-    {
-      "rank": 10,
       "slug": "leonxlnx-taste-skill",
       "displayName": "Leonxlnx/taste-skill",
       "description": "High-agency frontend skill that gives AI good taste with tunable design variance, motion intensity, and visual density to stop generic UI slop",
       "category": "Community Skills",
-      "stars": 58767,
+      "stars": 60018,
       "githubRepo": "Leonxlnx/taste-skill",
       "source": "voltagent",
-      "weeklyStars": 1474,
+      "weeklyStars": 1251,
       "href": "/skills-shop/leonxlnx-taste-skill/"
+    },
+    {
+      "rank": 10,
+      "slug": "santifer-career-ops",
+      "displayName": "santifer/career-ops",
+      "description": "14-skill collection for AI-powered job search: JD evaluation with A-F scoring, ATS-optimized PDF generation, portal scanners (Greenhouse/Ashby/Lever), interview prep with STAR+R, batch processing, and a Go dashboard TUI",
+      "category": "Community Skills",
+      "stars": 59020,
+      "githubRepo": "santifer/career-ops",
+      "source": "voltagent",
+      "weeklyStars": 186,
+      "href": "/skills-shop/santifer-career-ops/"
     }
   ]
 }
