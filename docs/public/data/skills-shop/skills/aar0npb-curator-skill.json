@@ -4,7 +4,7 @@
   "name": "curator-skill",
   "displayName": "Aar0nPB/curator-skill",
   "description": "跨作者 persona skill 调度器 — 根据对话意图，从 30 个 persona skill 中智能匹配推荐。",
-  "stars": 3,
+  "stars": 4,
   "category": "Persona Distill Skills",
   "source": "persona-distill",
   "url": "https://github.com/Aar0nPB/curator-skill",
@@ -32,14 +32,14 @@
     {
       "slug": "swaylq-master-skill",
       "displayName": "swaylq/master-skill",
-      "stars": 102,
+      "stars": 105,
       "relation": "shared_tag",
       "evidence": "Persona Distill Skills"
     },
     {
       "slug": "voidforall-fengshui-skill",
       "displayName": "voidforall/fengshui.skill",
-      "stars": 76,
+      "stars": 77,
       "relation": "shared_tag",
       "evidence": "Persona Distill Skills"
     },
