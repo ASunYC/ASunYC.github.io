@@ -12,7 +12,7 @@
   "readme": "# redhat/openshift-virtualization\n\nManage the full VM lifecycle on OpenShift Virtualization — create, clone, snapshot, restore, rebalance, and report — through a single conversational workflow.",
   "readmeHtml": "<h1>redhat/openshift-virtualization</h1>\n<p>Manage the full VM lifecycle on OpenShift Virtualization — create, clone, snapshot, restore, rebalance, and report — through a single conversational workflow.</p>",
   "skillMd": "",
-  "updatedAt": "2026-07-09T20:23:51.625Z",
+  "updatedAt": "2026-07-10T20:10:49.953Z",
   "author": {
     "login": "redhat",
     "name": "redhat",
@@ -46,7 +46,7 @@
     {
       "slug": "google-cloud-agent-platform-skill-registry",
       "displayName": "google/cloud/agent-platform-skill-registry",
-      "stars": 14484,
+      "stars": 14496,
       "relation": "shared_tag",
       "evidence": "video-search-and-summarization"
     },

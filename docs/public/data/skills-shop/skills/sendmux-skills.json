@@ -1,0 +1,95 @@
+{
+  "id": "skill:sendmux-skills",
+  "slug": "sendmux-skills",
+  "name": "skills",
+  "displayName": "Sendmux/skills",
+  "description": "Sendmux email and mailbox workflows for agents",
+  "stars": 53,
+  "category": "Community Skills",
+  "source": "voltagent",
+  "url": "https://github.com/Sendmux/skills",
+  "githubRepo": "Sendmux/skills",
+  "readme": "# Sendmux Agent Skills\n\nOfficial Sendmux skills for AI coding agents.\n\n## Marketplace install\n\nClaude and Codex users can install Sendmux as a plugin marketplace from this repository.\n\nClaude app, Claude Desktop, and Cowork:\n\n1. Open **Customize**.\n2. Go to **Plugins**.\n3. In **Personal plugins**, click **+** and choose **Add marketplace**.\n4. Choose **Add from a repository**.\n5. Enter `Sendmux/skills`, then install the **Sendmux** plugin.\n\nClaude Code:\n\n```text\n/plugin marketplace add Sendmux/skills\n/plugin install sendmux@sendmux\n/reload-plugins\n```\n\nCodex app and Codex CLI:\n\n```bash\ncodex plugin marketplace add Sendmux/skills\n```\n\nThen open **Plugins** in the Codex app or `/plugins` in Codex CLI and install **Sendmux** from the Sendmux marketplace.\n\n## Direct Agent Skills install\n\nUse `skills add` when your agent supports raw Agent Skills rather than plugin marketplaces.\n\n```bash\nnpx skills add Sendmux/skills\n```\n\nInstall one skill from the pack:\n\n```bash\nnpx skills add Sendmux/skills --skill sendmux-send-email\n```\n\nUpdate an installed pack:\n\n```bash\nnpx skills update\n```\n\n## What This Pack Teaches\n\n- Choose the cheapest correct Sendmux surface for the task: MCP for connected agents, the `sendmux` CLI for terminal one-shots, and SDKs for application flows.\n- Use the right credential for each job: `smx_root_*` for account-level work, send-capable `smx_mbx_*` keys or owner-approved Sending-resource `smx_agent_*` tokens for sending, `smx_mbx_*` keys for single-mailbox work, and scoped `smx_agent_*` tokens for self-registered agent mailbox work.\n- Prefer efficient calls: batch operations, cursor pagination, conditional requests, idempotency keys, counts, snippets, and delta sync where the public surface supports them.\n- Verify results before reporting success.\n\n## Skills Catalogue\n\nThe catalogue is built item by item from the local API, SDK, CLI, and MCP source of truth.\n\n| Skill                           | Use when                                                                                                |\n| ------------------------------- | ------------------------------------------------------------------------------------------------------- |\n| `sendmux-getting-started`       | Choosing a Sendmux surface, setting up auth, or making a first verified call.                           |\n| `sendmux-send-email`            | Sending single or batch transactional email.                                                            |\n| `sendmux-attachments`           | Uploading, downloading, or sending attachments without wasting context on base64.                       |\n| `sendmux-mailbox-agent`         | Reading, triaging, replying, or syncing one mailbox.                                                    |\n| `sendmux-management`            | Managing domains, mailboxes, sending accounts, webhooks, billing, and logs.                             |\n| `sendmux-cli`                   | Using the `sendmux` CLI from a terminal.                                                                |\n| `sendmux-mcp-setup`             | Connecting Sendmux MCP servers to an agent client.                                                      |\n| `sendmux-token-efficient-usage` | Choosing low-token Sendmux calls and avoiding wasteful reads.                                           |\n| `sendmux-email-for-agents`      | Giving an AI agent an inbox, challenge-first self-registration flow, or email workflow, even when Sendmux is not named. |\n\n## Target matrix\n\n| Target | Recommended install |\n| --- | --- |\n| Claude app, Claude Desktop, Cowork | Add marketplace from repository `Sendmux/skills`, then install **Sendmux**. |\n| Claude Code | `/plugin marketplace add Sendmux/skills`, then `/plugin install sendmux@sendmux`. |\n| Codex app and Codex CLI | `codex plugin marketplace add Sendmux/skills`, then install **Sendmux** from **Plugins** or `/plugins`. |\n| Agent Skills clients | `npx skills add Sendmux/skills`. |\n| Single-skill installs | `npx skills add Sendmux/skills --skill <skill-name>`. |\n\nMarketplace plugins and raw Agent Skills only teach workflows. They do not grant Sendmux access. Authorise hosted MCP, create API keys, or use agent access before asking an agent to act on Sendmux data.\n\n## Development\n\nThis repo uses the Agent Skills format:\n\n```text\nskills/\n  <skill-name>/\n    SKILL.md\n    references/\n    scripts/\n    assets/\n```\n\nEach skill must be validated, benchmarked against a baseline, and packaged before it is marked complete.\n\nGenerate Claude and Codex marketplace bundles:\n\n```bash\nnode scripts/build-plugin-bundles.mjs\nnode scripts/check-plugin-bundles.mjs\n```\n\nThe canonical skill source stays in `skills/`. The generated marketplace plugin lives in `plugins/sendmux/` and is checked for drift in CI.\n\nSee `docs/eval-lint-package-playbook.md` for the local eval, lint, package, and install-smoke loop.\nSee `docs/regen-update-playbook.md` for the source drift check and regeneration procedure.\n",
+  "readmeHtml": "<h1>Sendmux Agent Skills</h1>\n<p>Official Sendmux skills for AI coding agents.</p>\n<h2>Marketplace install</h2>\n<p>Claude and Codex users can install Sendmux as a plugin marketplace from this repository.</p>\n<p>Claude app, Claude Desktop, and Cowork:</p>\n<p>1. Open <strong>Customize</strong>.</p>\n<p>2. Go to <strong>Plugins</strong>.</p>\n<p>3. In <strong>Personal plugins</strong>, click <strong>+</strong> and choose <strong>Add marketplace</strong>.</p>\n<p>4. Choose <strong>Add from a repository</strong>.</p>\n<p>5. Enter <code>Sendmux/skills</code>, then install the <strong>Sendmux</strong> plugin.</p>\n<p>Claude Code:</p>\n<pre><code>\n/plugin marketplace add Sendmux/skills\n\n/plugin install sendmux@sendmux\n\n/reload-plugins\n\n</code></pre>\n<p>Codex app and Codex CLI:</p>\n<pre><code>\ncodex plugin marketplace add Sendmux/skills\n\n</code></pre>\n<p>Then open <strong>Plugins</strong> in the Codex app or <code>/plugins</code> in Codex CLI and install <strong>Sendmux</strong> from the Sendmux marketplace.</p>\n<h2>Direct Agent Skills install</h2>\n<p>Use <code>skills add</code> when your agent supports raw Agent Skills rather than plugin marketplaces.</p>\n<pre><code>\nnpx skills add Sendmux/skills\n\n</code></pre>\n<p>Install one skill from the pack:</p>\n<pre><code>\nnpx skills add Sendmux/skills --skill sendmux-send-email\n\n</code></pre>\n<p>Update an installed pack:</p>\n<pre><code>\nnpx skills update\n\n</code></pre>\n<h2>What This Pack Teaches</h2>\n<ul>\n<li>Choose the cheapest correct Sendmux surface for the task: MCP for connected agents, the <code>sendmux</code> CLI for terminal one-shots, and SDKs for application flows.</li>\n<li>Use the right credential for each job: <code>smx_root_*</code> for account-level work, send-capable <code>smx_mbx_*</code> keys or owner-approved Sending-resource <code>smx_agent_*</code> tokens for sending, <code>smx_mbx_*</code> keys for single-mailbox work, and scoped <code>smx_agent_*</code> tokens for self-registered agent mailbox work.</li>\n<li>Prefer efficient calls: batch operations, cursor pagination, conditional requests, idempotency keys, counts, snippets, and delta sync where the public surface supports them.</li>\n<li>Verify results before reporting success.</li>\n</ul>\n<h2>Skills Catalogue</h2>\n<p>The catalogue is built item by item from the local API, SDK, CLI, and MCP source of truth.</p>\n<p>| Skill                           | Use when                                                                                                |</p>\n<p>| ------------------------------- | ------------------------------------------------------------------------------------------------------- |</p>\n<p>| <code>sendmux-getting-started</code>       | Choosing a Sendmux surface, setting up auth, or making a first verified call.                           |</p>\n<p>| <code>sendmux-send-email</code>            | Sending single or batch transactional email.                                                            |</p>\n<p>| <code>sendmux-attachments</code>           | Uploading, downloading, or sending attachments without wasting context on base64.                       |</p>\n<p>| <code>sendmux-mailbox-agent</code>         | Reading, triaging, replying, or syncing one mailbox.                                                    |</p>\n<p>| <code>sendmux-management</code>            | Managing domains, mailboxes, sending accounts, webhooks, billing, and logs.                             |</p>\n<p>| <code>sendmux-cli</code>                   | Using the <code>sendmux</code> CLI from a terminal.                                                                |</p>\n<p>| <code>sendmux-mcp-setup</code>             | Connecting Sendmux MCP servers to an agent client.                                                      |</p>\n<p>| <code>sendmux-token-efficient-usage</code> | Choosing low-token Sendmux calls and avoiding wasteful reads.                                           |</p>\n<p>| <code>sendmux-email-for-agents</code>      | Giving an AI agent an inbox, challenge-first self-registration flow, or email workflow, even when Sendmux is not named. |</p>\n<h2>Target matrix</h2>\n<p>| Target | Recommended install |</p>\n<p>| --- | --- |</p>\n<p>| Claude app, Claude Desktop, Cowork | Add marketplace from repository <code>Sendmux/skills</code>, then install <strong>Sendmux</strong>. |</p>\n<p>| Claude Code | <code>/plugin marketplace add Sendmux/skills</code>, then <code>/plugin install sendmux@sendmux</code>. |</p>\n<p>| Codex app and Codex CLI | <code>codex plugin marketplace add Sendmux/skills</code>, then install <strong>Sendmux</strong> from <strong>Plugins</strong> or <code>/plugins</code>. |</p>\n<p>| Agent Skills clients | <code>npx skills add Sendmux/skills</code>. |</p>\n<p>| Single-skill installs | <code>npx skills add Sendmux/skills --skill &lt;skill-name&gt;</code>. |</p>\n<p>Marketplace plugins and raw Agent Skills only teach workflows. They do not grant Sendmux access. Authorise hosted MCP, create API keys, or use agent access before asking an agent to act on Sendmux data.</p>\n<h2>Development</h2>\n<p>This repo uses the Agent Skills format:</p>\n<pre><code>\nskills/\n\n  &lt;skill-name&gt;/\n\n    SKILL.md\n\n    references/\n\n    scripts/\n\n    assets/\n\n</code></pre>\n<p>Each skill must be validated, benchmarked against a baseline, and packaged before it is marked complete.</p>\n<p>Generate Claude and Codex marketplace bundles:</p>\n<pre><code>\nnode scripts/build-plugin-bundles.mjs\n\nnode scripts/check-plugin-bundles.mjs\n\n</code></pre>\n<p>The canonical skill source stays in <code>skills/</code>. The generated marketplace plugin lives in <code>plugins/sendmux/</code> and is checked for drift in CI.</p>\n<p>See <code>docs/eval-lint-package-playbook.md</code> for the local eval, lint, package, and install-smoke loop.</p>\n<p>See <code>docs/regen-update-playbook.md</code> for the source drift check and regeneration procedure.</p>",
+  "skillMd": "",
+  "updatedAt": "2026-07-09T03:59:22Z",
+  "author": {
+    "login": "Sendmux",
+    "name": "Sendmux",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/262046752?v=4",
+    "profileUrl": "https://github.com/Sendmux",
+    "location": "Australia"
+  },
+  "location": {
+    "id": "australia",
+    "label": "Australia",
+    "lat": -25.2744,
+    "lon": 133.7751,
+    "source": "github_profile"
+  },
+  "related": [
+    {
+      "slug": "obra-brainstorming",
+      "displayName": "obra/brainstorming",
+      "stars": 251690,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mattpocock-skills",
+      "displayName": "mattpocock/skills",
+      "stars": 164441,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
+      "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "stars": 103962,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "lum1104-understand-anything",
+      "displayName": "Lum1104/understand-anything",
+      "stars": 72554,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "leonxlnx-taste-skill",
+      "displayName": "Leonxlnx/taste-skill",
+      "stars": 61732,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "santifer-career-ops",
+      "displayName": "santifer/career-ops",
+      "stars": 59541,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "panniantong-agent-reach",
+      "displayName": "Panniantong/Agent-Reach",
+      "stars": 54414,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mvanhorn-last30days-skill",
+      "displayName": "mvanhorn/last30days-skill",
+      "stars": 51446,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "australia",
+    "label": "Australia",
+    "lat": -25.2744,
+    "lon": 133.7751,
+    "source": "github_profile"
+  }
+}

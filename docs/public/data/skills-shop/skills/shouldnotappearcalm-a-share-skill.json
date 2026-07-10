@@ -1,0 +1,95 @@
+{
+  "id": "skill:shouldnotappearcalm-a-share-skill",
+  "slug": "shouldnotappearcalm-a-share-skill",
+  "name": "a-share-skill",
+  "displayName": "shouldnotappearcalm/a-share-skill",
+  "description": "China A-share (Shanghai/Shenzhen) skills: real-time quotes, K-line history, technical indicators, events, capital flows, sector heatmaps, and paper trading. Works with Claude Code, Cursor, Codex, and Qoder",
+  "stars": 195,
+  "category": "Community Skills",
+  "source": "voltagent",
+  "url": "https://github.com/shouldnotappearcalm/a-share-skill",
+  "githubRepo": "shouldnotappearcalm/a-share-skill",
+  "readme": "# a-share-skill\n\n> 中文文档 / Chinese README: [README.zh.md](README.zh.md)\n\nA collection of A-share (China Shanghai/Shenzhen) data-analysis and paper-trading skills for AI tools — built for stock analysis, quant trading, paper trading, and A-share workflows:\n\n- `a-share-data`: market data query and analysis\n- `a-share-paper-trading`: paper-trading execution and backtesting\n\nYou can simply ask your AI to:\n\n- Look up a stock's real-time quote, historical trend, technical indicators, events, and industry info\n- Create a `calm1` paper-trading account, view account details and full trade history, and place simulated orders\n- Combine the broad market, your holdings, and account status to decide whether to buy, sell, hold, or do nothing today\n\n## Trend-Pullback Strategies\n\n`a-share-strategy-mainboard-multi-swing-defensive` (main-board trend pullback) and `a-share-strategy-allmarket-multi-swing-defensive` (all-market trend pullback) are **not open-sourced for now**.\n\nFor daily trading ideas, candidate scans, and position management, follow my Xiaohongshu (RED) account below — I keep posting updates there.\n\n<table>\n  <tr>\n    <td align=\"center\" valign=\"top\">\n      <strong>Xiaohongshu (RED)</strong><br/><br/>\n      <img width=\"280\" alt=\"Xiaohongshu\" src=\"https://github.com/user-attachments/assets/7c63fe7f-14f1-487e-96db-755c75b144f4\" />\n    </td>\n    <td align=\"center\" valign=\"top\">\n      <strong>Xiaohongshu Group</strong><br/><br/>\n      <img width=\"280\" alt=\"Xiaohongshu Group\" src=\"https://github.com/user-attachments/assets/d37b2861-24a0-4fba-a52f-18cb27fe8cb7\" />\n    </td>\n  </tr>\n</table>\n\n## Paper Account: +40% in 2 Months\n\n<table>\n  <tr>\n    <td align=\"center\" valign=\"top\">\n      <strong>Apr 16 — account initialized with 1,000,000</strong><br/><br/>\n      <img width=\"240\" alt=\"account init\" src=\"https://github.com/user-attachments/assets/ef7d9b23-b9a3-4c49-afc2-3f81fd489058\" />\n    </td>\n    <td align=\"center\" valign=\"top\">\n      <strong>Jun 17 — intraday +39.9% (still updating)</strong><br/>\n      Current holdings: ZTE, BOE A, WUS Printed Circuit, Jiemei Technology, Yongding, Voage Optoelectronics, LION Microelectronics, Boqian New Materials<br/><br/>\n      <img width=\"731\" height=\"859\" alt=\"image\" src=\"https://github.com/user-attachments/assets/3ed0eb21-34fe-4442-b49c-9adbdca31858\" />\n  </tr>\n</table>\n\n## Two Core Skills\n\n### `a-share-data`\n\nGood for questions like:\n\n- How is this stock doing right now?\n- What's the trend over the last 60 days?\n- Are there any event-driven catalysts?\n- How are the CSI 300, hot sectors, and northbound capital doing right now?\n\nCapabilities:\n\n- Real-time quotes, historical K-line, technical indicators, events, industry, index, and macro data\n\nDocs:\n\n- [docs/A股数据安装使用文档.md](docs/A股数据安装使用文档.md) (Chinese)\n\n### `a-share-paper-trading`\n\nGood for tasks like:\n\n- Create a `calm1` paper-trading account\n- View `calm1` account details, positions, orders, and full trade history\n- Place a simulated buy or sell order for `calm1`\n- Run a simple backtest\n\nCapabilities:\n\n- Account management, order placement, cancellation, positions, orders, fills, account valuation, and backtesting\n\nDocs:\n\n- [docs/模拟仓安装使用文档.md](docs/模拟仓安装使用文档.md) (Chinese)\n\n## Quickest Examples\n\n- `Query data`: use `a-share-data` to check 600519's latest quote, the last 60 daily candles, and MACD.\n- `Manage paper trading`: use `a-share-paper-trading` to create `calm1` with an initial balance of `1000000`, then view `calm1`'s account details and full trade history.\n\n## Combined Usage\n\n- `Data analysis`\n  - `a-share-data`\n  - Good for single-stock analysis, market-state monitoring, and batch data pulls\n\n- `Paper execution`\n  - `a-share-data + a-share-paper-trading`\n  - Good for pulling data to form a view first, then executing simulated trades on `calm1`\n\n## Installation\n\nThe examples below include the two core skills: `a-share-data` and `a-share-paper-trading`.\n\n### Codex\n\n```bash\nmkdir -p ~/.agents/skills\ncp -R a-share-data ~/.agents/skills/\ncp -R a-share-paper-trading ~/.agents/skills/\n```\n\n### Cursor\n\n```bash\nmkdir -p ~/.cursor/skills\ncp -R a-share-data ~/.cursor/skills/\ncp -R a-share-paper-trading ~/.cursor/skills/\n```\n\n### Claude Code\n\n```bash\nmkdir -p ~/.claude/skills\ncp -R a-share-data ~/.claude/skills/\ncp -R a-share-paper-trading ~/.claude/skills/\n```\n\n### Qoder\n\n```bash\nmkdir -p ~/.qoder/skills\ncp -R a-share-data ~/.qoder/skills/\ncp -R a-share-paper-trading ~/.qoder/skills/\n```\n\nIf you use OpenCode, openclaw, or another AI tool that supports skills, just replace the path with that tool's skills directory.\n\n## Documentation\n\n- [A-share Data — install & usage (Chinese)](docs/A股数据安装使用文档.md)\n- [Paper Trading — install & usage (Chinese)](docs/模拟仓安装使用文档.md)\n\n## Other Skills\n\n- `macd-second-golden-cross`\n  - Good for spotting repair-type setups like \"MACD bullish divergence + a second golden cross below the zero axis\"\n\n- `macd-trend-resonance-stock-picker`\n  - Good for \"moving averages set the direction, MACD sets the rhythm\" trend-resonance stock picking\n\n- `tuige-shortline-trading`\n  - Good for short-line trigger / invalidation / risk / position_grade decisions\n\n## References\n\n- Cursor: [Agent Skills](https://www.trycursor.com/docs/context/skills)\n- Claude Code: [Extend Claude with skills](https://code.claude.com/docs/en/skills.md)\n- Codex: [Agent Skills](https://developers.openai.com/codex/skills)\n- Qoder: [Skills](https://docs.qoder.com/extensions/skills)\n",
+  "readmeHtml": "<h1>a-share-skill</h1>\n<p>&gt; 中文文档 / Chinese README: [README.zh.md](README.zh.md)</p>\n<p>A collection of A-share (China Shanghai/Shenzhen) data-analysis and paper-trading skills for AI tools — built for stock analysis, quant trading, paper trading, and A-share workflows:</p>\n<ul>\n<li><code>a-share-data</code>: market data query and analysis</li>\n<li><code>a-share-paper-trading</code>: paper-trading execution and backtesting</li>\n</ul>\n<p>You can simply ask your AI to:</p>\n<ul>\n<li>Look up a stock's real-time quote, historical trend, technical indicators, events, and industry info</li>\n<li>Create a <code>calm1</code> paper-trading account, view account details and full trade history, and place simulated orders</li>\n<li>Combine the broad market, your holdings, and account status to decide whether to buy, sell, hold, or do nothing today</li>\n</ul>\n<h2>Trend-Pullback Strategies</h2>\n<p><code>a-share-strategy-mainboard-multi-swing-defensive</code> (main-board trend pullback) and <code>a-share-strategy-allmarket-multi-swing-defensive</code> (all-market trend pullback) are <strong>not open-sourced for now</strong>.</p>\n<p>For daily trading ideas, candidate scans, and position management, follow my Xiaohongshu (RED) account below — I keep posting updates there.</p>\n<p>&lt;table&gt;</p>\n<p>  &lt;tr&gt;</p>\n<p>    &lt;td align=\"center\" valign=\"top\"&gt;</p>\n<p>      &lt;strong&gt;Xiaohongshu (RED)&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;</p>\n<p>      &lt;img width=\"280\" alt=\"Xiaohongshu\" src=\"https://github.com/user-attachments/assets/7c63fe7f-14f1-487e-96db-755c75b144f4\" /&gt;</p>\n<p>    &lt;/td&gt;</p>\n<p>    &lt;td align=\"center\" valign=\"top\"&gt;</p>\n<p>      &lt;strong&gt;Xiaohongshu Group&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;</p>\n<p>      &lt;img width=\"280\" alt=\"Xiaohongshu Group\" src=\"https://github.com/user-attachments/assets/d37b2861-24a0-4fba-a52f-18cb27fe8cb7\" /&gt;</p>\n<p>    &lt;/td&gt;</p>\n<p>  &lt;/tr&gt;</p>\n<p>&lt;/table&gt;</p>\n<h2>Paper Account: +40% in 2 Months</h2>\n<p>&lt;table&gt;</p>\n<p>  &lt;tr&gt;</p>\n<p>    &lt;td align=\"center\" valign=\"top\"&gt;</p>\n<p>      &lt;strong&gt;Apr 16 — account initialized with 1,000,000&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;</p>\n<p>      &lt;img width=\"240\" alt=\"account init\" src=\"https://github.com/user-attachments/assets/ef7d9b23-b9a3-4c49-afc2-3f81fd489058\" /&gt;</p>\n<p>    &lt;/td&gt;</p>\n<p>    &lt;td align=\"center\" valign=\"top\"&gt;</p>\n<p>      &lt;strong&gt;Jun 17 — intraday +39.9% (still updating)&lt;/strong&gt;&lt;br/&gt;</p>\n<p>      Current holdings: ZTE, BOE A, WUS Printed Circuit, Jiemei Technology, Yongding, Voage Optoelectronics, LION Microelectronics, Boqian New Materials&lt;br/&gt;&lt;br/&gt;</p>\n<p>      &lt;img width=\"731\" height=\"859\" alt=\"image\" src=\"https://github.com/user-attachments/assets/3ed0eb21-34fe-4442-b49c-9adbdca31858\" /&gt;</p>\n<p>  &lt;/tr&gt;</p>\n<p>&lt;/table&gt;</p>\n<h2>Two Core Skills</h2>\n<h3><code>a-share-data</code></h3>\n<p>Good for questions like:</p>\n<ul>\n<li>How is this stock doing right now?</li>\n<li>What's the trend over the last 60 days?</li>\n<li>Are there any event-driven catalysts?</li>\n<li>How are the CSI 300, hot sectors, and northbound capital doing right now?</li>\n</ul>\n<p>Capabilities:</p>\n<ul>\n<li>Real-time quotes, historical K-line, technical indicators, events, industry, index, and macro data</li>\n</ul>\n<p>Docs:</p>\n<ul>\n<li>[docs/A股数据安装使用文档.md](docs/A股数据安装使用文档.md) (Chinese)</li>\n</ul>\n<h3><code>a-share-paper-trading</code></h3>\n<p>Good for tasks like:</p>\n<ul>\n<li>Create a <code>calm1</code> paper-trading account</li>\n<li>View <code>calm1</code> account details, positions, orders, and full trade history</li>\n<li>Place a simulated buy or sell order for <code>calm1</code></li>\n<li>Run a simple backtest</li>\n</ul>\n<p>Capabilities:</p>\n<ul>\n<li>Account management, order placement, cancellation, positions, orders, fills, account valuation, and backtesting</li>\n</ul>\n<p>Docs:</p>\n<ul>\n<li>[docs/模拟仓安装使用文档.md](docs/模拟仓安装使用文档.md) (Chinese)</li>\n</ul>\n<h2>Quickest Examples</h2>\n<ul>\n<li><code>Query data</code>: use <code>a-share-data</code> to check 600519's latest quote, the last 60 daily candles, and MACD.</li>\n<li><code>Manage paper trading</code>: use <code>a-share-paper-trading</code> to create <code>calm1</code> with an initial balance of <code>1000000</code>, then view <code>calm1</code>'s account details and full trade history.</li>\n</ul>\n<h2>Combined Usage</h2>\n<ul>\n<li><code>Data analysis</code></li>\n</ul>\n<p>  - <code>a-share-data</code></p>\n<p>  - Good for single-stock analysis, market-state monitoring, and batch data pulls</p>\n<ul>\n<li><code>Paper execution</code></li>\n</ul>\n<p>  - <code>a-share-data + a-share-paper-trading</code></p>\n<p>  - Good for pulling data to form a view first, then executing simulated trades on <code>calm1</code></p>\n<h2>Installation</h2>\n<p>The examples below include the two core skills: <code>a-share-data</code> and <code>a-share-paper-trading</code>.</p>\n<h3>Codex</h3>\n<pre><code>\nmkdir -p ~/.agents/skills\n\ncp -R a-share-data ~/.agents/skills/\n\ncp -R a-share-paper-trading ~/.agents/skills/\n\n</code></pre>\n<h3>Cursor</h3>\n<pre><code>\nmkdir -p ~/.cursor/skills\n\ncp -R a-share-data ~/.cursor/skills/\n\ncp -R a-share-paper-trading ~/.cursor/skills/\n\n</code></pre>\n<h3>Claude Code</h3>\n<pre><code>\nmkdir -p ~/.claude/skills\n\ncp -R a-share-data ~/.claude/skills/\n\ncp -R a-share-paper-trading ~/.claude/skills/\n\n</code></pre>\n<h3>Qoder</h3>\n<pre><code>\nmkdir -p ~/.qoder/skills\n\ncp -R a-share-data ~/.qoder/skills/\n\ncp -R a-share-paper-trading ~/.qoder/skills/\n\n</code></pre>\n<p>If you use OpenCode, openclaw, or another AI tool that supports skills, just replace the path with that tool's skills directory.</p>\n<h2>Documentation</h2>\n<ul>\n<li>[A-share Data — install &amp; usage (Chinese)](docs/A股数据安装使用文档.md)</li>\n<li>[Paper Trading — install &amp; usage (Chinese)](docs/模拟仓安装使用文档.md)</li>\n</ul>\n<h2>Other Skills</h2>\n<ul>\n<li><code>macd-second-golden-cross</code></li>\n</ul>\n<p>  - Good for spotting repair-type setups like \"MACD bullish divergence + a second golden cross below the zero axis\"</p>\n<ul>\n<li><code>macd-trend-resonance-stock-picker</code></li>\n</ul>\n<p>  - Good for \"moving averages set the direction, MACD sets the rhythm\" trend-resonance stock picking</p>\n<ul>\n<li><code>tuige-shortline-trading</code></li>\n</ul>\n<p>  - Good for short-line trigger / invalidation / risk / position_grade decisions</p>\n<h2>References</h2>\n<ul>\n<li>Cursor: <a href=\"https://www.trycursor.com/docs/context/skills\" target=\"_blank\" rel=\"noreferrer\">Agent Skills</a></li>\n<li>Claude Code: <a href=\"https://code.claude.com/docs/en/skills.md\" target=\"_blank\" rel=\"noreferrer\">Extend Claude with skills</a></li>\n<li>Codex: <a href=\"https://developers.openai.com/codex/skills\" target=\"_blank\" rel=\"noreferrer\">Agent Skills</a></li>\n<li>Qoder: <a href=\"https://docs.qoder.com/extensions/skills\" target=\"_blank\" rel=\"noreferrer\">Skills</a></li>\n</ul>",
+  "skillMd": "",
+  "updatedAt": "2026-06-24T05:32:40Z",
+  "author": {
+    "login": "shouldnotappearcalm",
+    "name": "calm",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/20592210?v=4",
+    "profileUrl": "https://github.com/shouldnotappearcalm",
+    "location": "China"
+  },
+  "location": {
+    "id": "china",
+    "label": "China",
+    "lat": 35.8617,
+    "lon": 104.1954,
+    "source": "github_profile"
+  },
+  "related": [
+    {
+      "slug": "obra-brainstorming",
+      "displayName": "obra/brainstorming",
+      "stars": 251690,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mattpocock-skills",
+      "displayName": "mattpocock/skills",
+      "stars": 164441,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
+      "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "stars": 103962,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "lum1104-understand-anything",
+      "displayName": "Lum1104/understand-anything",
+      "stars": 72554,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "leonxlnx-taste-skill",
+      "displayName": "Leonxlnx/taste-skill",
+      "stars": 61732,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "santifer-career-ops",
+      "displayName": "santifer/career-ops",
+      "stars": 59541,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "panniantong-agent-reach",
+      "displayName": "Panniantong/Agent-Reach",
+      "stars": 54414,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mvanhorn-last30days-skill",
+      "displayName": "mvanhorn/last30days-skill",
+      "stars": 51446,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "china",
+    "label": "China",
+    "lat": 35.8617,
+    "lon": 104.1954,
+    "source": "github_profile"
+  }
+}

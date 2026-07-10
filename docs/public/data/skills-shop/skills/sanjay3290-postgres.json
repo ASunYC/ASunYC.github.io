@@ -12,7 +12,7 @@
   "readme": "# postgres\n\nRead-only PostgreSQL query skill. Query multiple databases safely with write protection.\n\n## Setup\n\n1. Copy the example config:\n```bash\ncp connections.example.json connections.json\n```\n\n2. Add your database credentials:\n```json\n{\n  \"databases\": [\n    {\n      \"name\": \"prod\",\n      \"description\": \"Production - users, orders, transactions\",\n      \"host\": \"db.example.com\",\n      \"port\": 5432,\n      \"database\": \"app_prod\",\n      \"user\": \"readonly\",\n      \"password\": \"secret\",\n      \"sslmode\": \"require\"\n    }\n  ]\n}\n```\n\n3. Secure the config:\n```bash\nchmod 600 connections.json\n```\n\n## Usage\n\n```bash\n# List configured databases\npython3 scripts/query.py --list\n\n# List tables\npython3 scripts/query.py --db prod --tables\n\n# Show schema\npython3 scripts/query.py --db prod --schema\n\n# Run query\npython3 scripts/query.py --db prod --query \"SELECT * FROM users\" --limit 100\n```\n\n## Config Fields\n\n| Field | Required | Default | Description |\n|-------|----------|---------|-------------|\n| name | Yes | - | Database identifier |\n| description | Yes | - | What data it contains (for auto-selection) |\n| host | Yes | - | Hostname |\n| port | No | 5432 | Port |\n| database | Yes | - | Database name |\n| user | Yes | - | Username |\n| password | Yes | - | Password |\n| sslmode | No | prefer | disable, allow, prefer, require, verify-ca, verify-full |\n\n## Safety Features\n\n- **Read-only sessions**: PostgreSQL `readonly=True` mode blocks writes at database level\n- **Query validation**: Only SELECT, SHOW, EXPLAIN, WITH allowed\n- **Single statement**: No multi-statement queries (prevents `SELECT 1; DROP TABLE`)\n- **Timeouts**: 30s query timeout, 10s connection timeout\n- **Memory cap**: Max 10,000 rows per query\n- **Credential protection**: Passwords sanitized from error messages\n\n## Requirements\n\n```bash\npip install psycopg2-binary\n```\n",
   "readmeHtml": "<h1>postgres</h1>\n<p>Read-only PostgreSQL query skill. Query multiple databases safely with write protection.</p>\n<h2>Setup</h2>\n<p>1. Copy the example config:</p>\n<pre><code>\ncp connections.example.json connections.json\n\n</code></pre>\n<p>2. Add your database credentials:</p>\n<pre><code>\n{\n\n  \"databases\": [\n\n    {\n\n      \"name\": \"prod\",\n\n      \"description\": \"Production - users, orders, transactions\",\n\n      \"host\": \"db.example.com\",\n\n      \"port\": 5432,\n\n      \"database\": \"app_prod\",\n\n      \"user\": \"readonly\",\n\n      \"password\": \"secret\",\n\n      \"sslmode\": \"require\"\n\n    }\n\n  ]\n\n}\n\n</code></pre>\n<p>3. Secure the config:</p>\n<pre><code>\nchmod 600 connections.json\n\n</code></pre>\n<h2>Usage</h2>\n<pre><code>\n# List configured databases\n\npython3 scripts/query.py --list\n\n\n\n# List tables\n\npython3 scripts/query.py --db prod --tables\n\n\n\n# Show schema\n\npython3 scripts/query.py --db prod --schema\n\n\n\n# Run query\n\npython3 scripts/query.py --db prod --query \"SELECT * FROM users\" --limit 100\n\n</code></pre>\n<h2>Config Fields</h2>\n<p>| Field | Required | Default | Description |</p>\n<p>|-------|----------|---------|-------------|</p>\n<p>| name | Yes | - | Database identifier |</p>\n<p>| description | Yes | - | What data it contains (for auto-selection) |</p>\n<p>| host | Yes | - | Hostname |</p>\n<p>| port | No | 5432 | Port |</p>\n<p>| database | Yes | - | Database name |</p>\n<p>| user | Yes | - | Username |</p>\n<p>| password | Yes | - | Password |</p>\n<p>| sslmode | No | prefer | disable, allow, prefer, require, verify-ca, verify-full |</p>\n<h2>Safety Features</h2>\n<ul>\n<li><strong>Read-only sessions</strong>: PostgreSQL <code>readonly=True</code> mode blocks writes at database level</li>\n<li><strong>Query validation</strong>: Only SELECT, SHOW, EXPLAIN, WITH allowed</li>\n<li><strong>Single statement</strong>: No multi-statement queries (prevents <code>SELECT 1; DROP TABLE</code>)</li>\n<li><strong>Timeouts</strong>: 30s query timeout, 10s connection timeout</li>\n<li><strong>Memory cap</strong>: Max 10,000 rows per query</li>\n<li><strong>Credential protection</strong>: Passwords sanitized from error messages</li>\n</ul>\n<h2>Requirements</h2>\n<pre><code>\npip install psycopg2-binary\n\n</code></pre>",
   "skillMd": "---\nname: postgres\ndescription: \"Execute read-only SQL queries against multiple PostgreSQL databases. Use when: (1) querying PostgreSQL databases, (2) exploring database schemas/tables, (3) running SELECT queries for data analysis, (4) checking database contents. Supports multiple database connections with descriptions for intelligent auto-selection. Blocks all write operations (INSERT, UPDATE, DELETE, DROP, etc.) for safety.\"\nlicense: Apache-2.0\nmetadata:\n  author: sanjay3290\n  version: \"1.0\"\n---\n\n# PostgreSQL Read-Only Query Skill\n\nExecute safe, read-only queries against configured PostgreSQL databases.\n\n## Requirements\n\n- Python 3.8+\n- psycopg2-binary: `pip install -r requirements.txt`\n\n## Setup\n\nCreate `connections.json` in the skill directory or `~/.config/claude/postgres-connections.json`.\n\n**Security**: Set file permissions to `600` since it contains credentials:\n```bash\nchmod 600 connections.json\n```\n\n```json\n{\n  \"databases\": [\n    {\n      \"name\": \"production\",\n      \"description\": \"Main app database - users, orders, transactions\",\n      \"host\": \"db.example.com\",\n      \"port\": 5432,\n      \"database\": \"app_prod\",\n      \"user\": \"readonly_user\",\n      \"password\": \"your-password\",\n      \"sslmode\": \"require\"\n    }\n  ]\n}\n```\n\n### Config Fields\n\n| Field | Required | Description |\n|-------|----------|-------------|\n| name | Yes | Identifier for the database (case-insensitive) |\n| description | Yes | What data this database contains (used for auto-selection) |\n| host | Yes | Database hostname |\n| port | No | Port number (default: 5432) |\n| database | Yes | Database name |\n| user | Yes | Username |\n| password | Yes | Password |\n| sslmode | No | SSL mode: disable, allow, prefer (default), require, verify-ca, verify-full |\n\n## Usage\n\n### List configured databases\n```bash\npython3 scripts/query.py --list\n```\n\n### Query a database\n```bash\npython3 scripts/query.py --db production --query \"SELECT * FROM users LIMIT 10\"\n```\n\n### List tables\n```bash\npython3 scripts/query.py --db production --tables\n```\n\n### Show schema\n```bash\npython3 scripts/query.py --db production --schema\n```\n\n### Limit results\n```bash\npython3 scripts/query.py --db production --query \"SELECT * FROM orders\" --limit 100\n```\n\n## Database Selection\n\nMatch user intent to database `description`:\n\n| User asks about | Look for description containing |\n|-----------------|--------------------------------|\n| users, accounts | users, accounts, customers |\n| orders, sales | orders, transactions, sales |\n| analytics, metrics | analytics, metrics, reports |\n| logs, events | logs, events, audit |\n\nIf unclear, run `--list` and ask user which database.\n\n## Safety Features\n\n- **Read-only session**: Connection uses PostgreSQL `readonly=True` mode (primary protection)\n- **Query validation**: Only SELECT, SHOW, EXPLAIN, WITH queries allowed\n- **Single statement**: Multiple statements per query rejected\n- **SSL support**: Configurable SSL mode for encrypted connections\n- **Query timeout**: 30-second statement timeout enforced\n- **Memory protection**: Max 10,000 rows per query to prevent OOM\n- **Column width cap**: 100 char max per column for readable output\n- **Credential sanitization**: Error messages don't leak passwords\n\n## Troubleshooting\n\n| Error | Solution |\n|-------|----------|\n| Config not found | Create `connections.json` in skill directory |\n| Authentication failed | Check username/password in config |\n| Connection timeout | Verify host/port, check firewall/VPN |\n| SSL error | Try `\"sslmode\": \"disable\"` for local databases |\n| Permission warning | Run `chmod 600 connections.json` |\n\n## Exit Codes\n\n- **0**: Success\n- **1**: Error (config missing, auth failed, invalid query, database error)\n\n## Workflow\n\n1. Run `--list` to show available databases\n2. Match user intent to database description\n3. Run `--tables` or `--schema` to explore structure\n4. Execute query with appropriate LIMIT\n",
-  "updatedAt": "2026-07-09T19:35:09Z",
+  "updatedAt": "2026-07-09T21:13:00Z",
   "author": {
     "login": "sanjay3290",
     "name": "Sanjay Ramadugu",
@@ -25,56 +25,56 @@
     {
       "slug": "obra-brainstorming",
       "displayName": "obra/brainstorming",
-      "stars": 250769,
+      "stars": 251690,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "mattpocock-skills",
       "displayName": "mattpocock/skills",
-      "stars": 162827,
+      "stars": 164441,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
       "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
-      "stars": 103426,
+      "stars": 103962,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "lum1104-understand-anything",
       "displayName": "Lum1104/understand-anything",
-      "stars": 72321,
+      "stars": 72554,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "leonxlnx-taste-skill",
       "displayName": "Leonxlnx/taste-skill",
-      "stars": 61198,
+      "stars": 61732,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "santifer-career-ops",
       "displayName": "santifer/career-ops",
-      "stars": 59342,
+      "stars": 59541,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "panniantong-agent-reach",
       "displayName": "Panniantong/Agent-Reach",
-      "stars": 53821,
+      "stars": 54414,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "mvanhorn-last30days-skill",
       "displayName": "mvanhorn/last30days-skill",
-      "stars": 51193,
+      "stars": 51446,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     }

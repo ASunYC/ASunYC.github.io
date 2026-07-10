@@ -4,7 +4,7 @@
   "name": "threejs-skills",
   "displayName": "CloudAI-X/threejs-skills",
   "description": "Three.js skills for creating 3D elements and interactive experiences",
-  "stars": 2558,
+  "stars": 2568,
   "category": "Community Skills",
   "source": "voltagent",
   "url": "https://github.com/CloudAI-X/threejs-skills",
@@ -12,7 +12,7 @@
   "readme": "# Three.js Skills for Claude Code\n\nA curated collection of Three.js skill files that provide Claude Code with foundational knowledge for creating 3D elements and interactive experiences.\n\n## Purpose\n\nWhen working with Three.js, Claude Code starts with general programming knowledge but lacks specific Three.js API details, best practices, and common patterns. These skill files bridge that gap by providing:\n\n- Accurate API references and constructor signatures\n- Working code examples for common use cases\n- Performance optimization tips\n- Integration patterns between different Three.js systems\n\n## Installation\n\nClone this repository into your project or copy the `.claude/skills` directory:\n\n```bash\ngit clone https://github.com/pinkforest/threejs-playground.git\n```\n\nOr add as a submodule:\n\n```bash\ngit submodule add https://github.com/pinkforest/threejs-playground.git\n```\n\n## Skills Included\n\n| Skill                      | Description                                                             |\n| -------------------------- | ----------------------------------------------------------------------- |\n| **threejs-fundamentals**   | Scene setup, cameras, renderer, Object3D hierarchy, coordinate systems  |\n| **threejs-geometry**       | Built-in shapes, BufferGeometry, custom geometry, instancing            |\n| **threejs-materials**      | PBR materials, basic/phong/standard materials, shader materials         |\n| **threejs-lighting**       | Light types, shadows, environment lighting, light helpers               |\n| **threejs-textures**       | Texture types, UV mapping, environment maps, render targets             |\n| **threejs-animation**      | Keyframe animation, skeletal animation, morph targets, animation mixing |\n| **threejs-loaders**        | GLTF/GLB loading, texture loading, async patterns, caching              |\n| **threejs-shaders**        | GLSL basics, ShaderMaterial, uniforms, custom effects                   |\n| **threejs-postprocessing** | EffectComposer, bloom, DOF, screen effects, custom passes               |\n| **threejs-interaction**    | Raycasting, camera controls, mouse/touch input, object selection        |\n\n## How It Works\n\nClaude Code automatically loads skill files from the `.claude/skills` directory when they match the context of your request. When you ask Claude Code to:\n\n- Create a 3D scene → `threejs-fundamentals` is loaded\n- Add lighting and shadows → `threejs-lighting` is loaded\n- Load a GLTF model → `threejs-loaders` is loaded\n- Create custom visual effects → `threejs-shaders` and `threejs-postprocessing` are loaded\n\n## Usage Examples\n\n### Basic Scene Setup\n\nAsk Claude Code:\n\n> \"Create a basic Three.js scene with a rotating cube\"\n\nClaude Code will use `threejs-fundamentals` to generate accurate boilerplate with proper renderer setup, animation loop, and resize handling.\n\n### Loading 3D Models\n\nAsk Claude Code:\n\n> \"Load a GLTF model with Draco compression and play its animations\"\n\nClaude Code will use `threejs-loaders` and `threejs-animation` to generate code with proper loader configuration, animation mixer setup, and error handling.\n\n### Custom Shaders\n\nAsk Claude Code:\n\n> \"Create a custom shader material with a fresnel effect\"\n\nClaude Code will use `threejs-shaders` to generate working GLSL code with proper uniform declarations and coordinate space handling.\n\n## Skill File Structure\n\nEach skill file follows a consistent format:\n\n```markdown\n---\nname: skill-name\ndescription: When this skill should be activated\n---\n\n# Skill Title\n\n## Quick Start\n\n[Minimal working example]\n\n## Core Concepts\n\n[Detailed API documentation with examples]\n\n## Common Patterns\n\n[Real-world usage patterns]\n\n## Performance Tips\n\n[Optimization guidance]\n\n## See Also\n\n[Related skills]\n```\n\n## Verification\n\nThese skills have been audited against the official Three.js documentation (r160+) for:\n\n- Correct class names and constructor signatures\n- Valid property names and method signatures\n- Accurate import paths (`three/addons/` format)\n- Working code examples\n- Current best practices\n\n## Contributing\n\nFound an error or want to add coverage for additional Three.js features?\n\n1. Fork the repository\n2. Edit or create skill files in `.claude/skills/`\n3. Verify against [Three.js documentation](https://threejs.org/docs/)\n4. Submit a pull request\n\n### Skill File Guidelines\n\n- Use accurate, tested code examples\n- Include both simple and advanced patterns\n- Document performance implications\n- Cross-reference related skills\n- Keep examples concise but complete\n\n## License\n\nMIT License - Feel free to use, modify, and distribute.\n\n## Acknowledgments\n\n- [Three.js](https://threejs.org/) - The 3D library these skills document\n",
   "readmeHtml": "<h1>Three.js Skills for Claude Code</h1>\n<p>A curated collection of Three.js skill files that provide Claude Code with foundational knowledge for creating 3D elements and interactive experiences.</p>\n<h2>Purpose</h2>\n<p>When working with Three.js, Claude Code starts with general programming knowledge but lacks specific Three.js API details, best practices, and common patterns. These skill files bridge that gap by providing:</p>\n<ul>\n<li>Accurate API references and constructor signatures</li>\n<li>Working code examples for common use cases</li>\n<li>Performance optimization tips</li>\n<li>Integration patterns between different Three.js systems</li>\n</ul>\n<h2>Installation</h2>\n<p>Clone this repository into your project or copy the <code>.claude/skills</code> directory:</p>\n<pre><code>\ngit clone https://github.com/pinkforest/threejs-playground.git\n\n</code></pre>\n<p>Or add as a submodule:</p>\n<pre><code>\ngit submodule add https://github.com/pinkforest/threejs-playground.git\n\n</code></pre>\n<h2>Skills Included</h2>\n<p>| Skill                      | Description                                                             |</p>\n<p>| -------------------------- | ----------------------------------------------------------------------- |</p>\n<p>| <strong>threejs-fundamentals</strong>   | Scene setup, cameras, renderer, Object3D hierarchy, coordinate systems  |</p>\n<p>| <strong>threejs-geometry</strong>       | Built-in shapes, BufferGeometry, custom geometry, instancing            |</p>\n<p>| <strong>threejs-materials</strong>      | PBR materials, basic/phong/standard materials, shader materials         |</p>\n<p>| <strong>threejs-lighting</strong>       | Light types, shadows, environment lighting, light helpers               |</p>\n<p>| <strong>threejs-textures</strong>       | Texture types, UV mapping, environment maps, render targets             |</p>\n<p>| <strong>threejs-animation</strong>      | Keyframe animation, skeletal animation, morph targets, animation mixing |</p>\n<p>| <strong>threejs-loaders</strong>        | GLTF/GLB loading, texture loading, async patterns, caching              |</p>\n<p>| <strong>threejs-shaders</strong>        | GLSL basics, ShaderMaterial, uniforms, custom effects                   |</p>\n<p>| <strong>threejs-postprocessing</strong> | EffectComposer, bloom, DOF, screen effects, custom passes               |</p>\n<p>| <strong>threejs-interaction</strong>    | Raycasting, camera controls, mouse/touch input, object selection        |</p>\n<h2>How It Works</h2>\n<p>Claude Code automatically loads skill files from the <code>.claude/skills</code> directory when they match the context of your request. When you ask Claude Code to:</p>\n<ul>\n<li>Create a 3D scene → <code>threejs-fundamentals</code> is loaded</li>\n<li>Add lighting and shadows → <code>threejs-lighting</code> is loaded</li>\n<li>Load a GLTF model → <code>threejs-loaders</code> is loaded</li>\n<li>Create custom visual effects → <code>threejs-shaders</code> and <code>threejs-postprocessing</code> are loaded</li>\n</ul>\n<h2>Usage Examples</h2>\n<h3>Basic Scene Setup</h3>\n<p>Ask Claude Code:</p>\n<p>&gt; \"Create a basic Three.js scene with a rotating cube\"</p>\n<p>Claude Code will use <code>threejs-fundamentals</code> to generate accurate boilerplate with proper renderer setup, animation loop, and resize handling.</p>\n<h3>Loading 3D Models</h3>\n<p>Ask Claude Code:</p>\n<p>&gt; \"Load a GLTF model with Draco compression and play its animations\"</p>\n<p>Claude Code will use <code>threejs-loaders</code> and <code>threejs-animation</code> to generate code with proper loader configuration, animation mixer setup, and error handling.</p>\n<h3>Custom Shaders</h3>\n<p>Ask Claude Code:</p>\n<p>&gt; \"Create a custom shader material with a fresnel effect\"</p>\n<p>Claude Code will use <code>threejs-shaders</code> to generate working GLSL code with proper uniform declarations and coordinate space handling.</p>\n<h2>Skill File Structure</h2>\n<p>Each skill file follows a consistent format:</p>\n<pre><code>\n---\n\nname: skill-name\n\ndescription: When this skill should be activated\n\n---\n\n\n\n# Skill Title\n\n\n\n## Quick Start\n\n\n\n[Minimal working example]\n\n\n\n## Core Concepts\n\n\n\n[Detailed API documentation with examples]\n\n\n\n## Common Patterns\n\n\n\n[Real-world usage patterns]\n\n\n\n## Performance Tips\n\n\n\n[Optimization guidance]\n\n\n\n## See Also\n\n\n\n[Related skills]\n\n</code></pre>\n<h2>Verification</h2>\n<p>These skills have been audited against the official Three.js documentation (r160+) for:</p>\n<ul>\n<li>Correct class names and constructor signatures</li>\n<li>Valid property names and method signatures</li>\n<li>Accurate import paths (<code>three/addons/</code> format)</li>\n<li>Working code examples</li>\n<li>Current best practices</li>\n</ul>\n<h2>Contributing</h2>\n<p>Found an error or want to add coverage for additional Three.js features?</p>\n<p>1. Fork the repository</p>\n<p>2. Edit or create skill files in <code>.claude/skills/</code></p>\n<p>3. Verify against <a href=\"https://threejs.org/docs/\" target=\"_blank\" rel=\"noreferrer\">Three.js documentation</a></p>\n<p>4. Submit a pull request</p>\n<h3>Skill File Guidelines</h3>\n<ul>\n<li>Use accurate, tested code examples</li>\n<li>Include both simple and advanced patterns</li>\n<li>Document performance implications</li>\n<li>Cross-reference related skills</li>\n<li>Keep examples concise but complete</li>\n</ul>\n<h2>License</h2>\n<p>MIT License - Feel free to use, modify, and distribute.</p>\n<h2>Acknowledgments</h2>\n<ul>\n<li><a href=\"https://threejs.org/\" target=\"_blank\" rel=\"noreferrer\">Three.js</a> - The 3D library these skills document</li>\n</ul>",
   "skillMd": "",
-  "updatedAt": "2026-01-19T21:15:32Z",
+  "updatedAt": "2026-07-09T20:45:53Z",
   "author": {
     "login": "CloudAI-X",
     "name": "CloudAI-X",
@@ -25,56 +25,56 @@
     {
       "slug": "obra-brainstorming",
       "displayName": "obra/brainstorming",
-      "stars": 250769,
+      "stars": 251690,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "mattpocock-skills",
       "displayName": "mattpocock/skills",
-      "stars": 162827,
+      "stars": 164441,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
       "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
-      "stars": 103426,
+      "stars": 103962,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "lum1104-understand-anything",
       "displayName": "Lum1104/understand-anything",
-      "stars": 72321,
+      "stars": 72554,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "leonxlnx-taste-skill",
       "displayName": "Leonxlnx/taste-skill",
-      "stars": 61198,
+      "stars": 61732,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "santifer-career-ops",
       "displayName": "santifer/career-ops",
-      "stars": 59342,
+      "stars": 59541,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "panniantong-agent-reach",
       "displayName": "Panniantong/Agent-Reach",
-      "stars": 53821,
+      "stars": 54414,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "mvanhorn-last30days-skill",
       "displayName": "mvanhorn/last30days-skill",
-      "stars": 51193,
+      "stars": 51446,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     }
