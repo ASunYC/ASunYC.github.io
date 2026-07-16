@@ -4,7 +4,7 @@
   "name": "curator-skill",
   "displayName": "Aar0nPB/curator-skill",
   "description": "跨作者 persona skill 调度器 — 根据对话意图，从 30 个 persona skill 中智能匹配推荐。",
-  "stars": 4,
+  "stars": 5,
   "category": "Persona Distill Skills",
   "source": "persona-distill",
   "url": "https://github.com/Aar0nPB/curator-skill",
@@ -39,7 +39,7 @@
     {
       "slug": "voidforall-fengshui-skill",
       "displayName": "voidforall/fengshui.skill",
-      "stars": 81,
+      "stars": 82,
       "relation": "shared_tag",
       "evidence": "Persona Distill Skills"
     },
@@ -58,6 +58,13 @@
       "evidence": "Persona Distill Skills"
     },
     {
+      "slug": "cantian-ai-bazi-persona-skill",
+      "displayName": "cantian-ai/bazi-persona-skill",
+      "stars": 14,
+      "relation": "shared_tag",
+      "evidence": "Persona Distill Skills"
+    },
+    {
       "slug": "schlaflied-hr-skill",
       "displayName": "Schlaflied/hr-skill",
       "stars": 14,
@@ -68,13 +75,6 @@
       "slug": "realteamprinz-brother-skill",
       "displayName": "realteamprinz/brother-skill",
       "stars": 14,
-      "relation": "shared_tag",
-      "evidence": "Persona Distill Skills"
-    },
-    {
-      "slug": "cantian-ai-bazi-persona-skill",
-      "displayName": "cantian-ai/bazi-persona-skill",
-      "stars": 12,
       "relation": "shared_tag",
       "evidence": "Persona Distill Skills"
     }

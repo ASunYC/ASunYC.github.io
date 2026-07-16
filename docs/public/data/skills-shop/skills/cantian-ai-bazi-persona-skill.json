@@ -4,7 +4,7 @@
   "name": "bazi-persona-skill",
   "displayName": "cantian-ai/bazi-persona-skill",
   "description": "基于生辰八字，生成会聊天、有情绪、会随时间变化的AI人格。",
-  "stars": 12,
+  "stars": 14,
   "category": "Persona Distill Skills",
   "source": "persona-distill",
   "url": "https://github.com/cantian-ai/bazi-persona-skill",
@@ -45,7 +45,7 @@
     {
       "slug": "voidforall-fengshui-skill",
       "displayName": "voidforall/fengshui.skill",
-      "stars": 81,
+      "stars": 82,
       "relation": "shared_tag",
       "evidence": "Persona Distill Skills"
     },
