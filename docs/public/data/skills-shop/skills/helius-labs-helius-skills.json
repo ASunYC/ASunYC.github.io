@@ -12,7 +12,7 @@
   "readme": "# Helius Skills\n\nStandalone [Claude Code skills](https://docs.anthropic.com/en/docs/claude-code/skills) for building on Solana. Each skill is a self-contained directory — install it once and invoke it by name in any Claude Code session.\n\n## Skills\n\n| Skill | Invoke | Description |\n|---|---|---|\n| [`helius`](./helius) | `/helius` | Build Solana apps with Helius infrastructure — Sender, DAS API, WebSockets, Laserstream, webhooks, priority fees, and Wallet API |\n| [`helius-dflow`](./helius-dflow) | `/helius-dflow` | Build Solana trading apps with DFlow (spot swaps, prediction markets, Proof KYC) + Helius infrastructure |\n| [`svm`](./svm) | `/svm` | Explore Solana's architecture and protocol internals — SVM, account model, consensus, validators, and token extensions |\n| `helius-phantom` | `/helius-phantom` | Build browser-based Solana apps with Phantom wallet + Helius |\n\n## Installation\n\nEach skill has its own `install.sh`:\n\n```bash\n./helius/install.sh          # personal install (~/.claude/skills/)\n./helius/install.sh --project # project install (.claude/skills/)\n```\n\nAll skills require the Helius MCP server except `svm` (which uses public sources only):\n\n```bash\nclaude mcp add helius npx helius-mcp@latest\n```\n\nFull installation instructions are in the [root README](../README.md#helius-skills).\n",
   "readmeHtml": "<h1>Helius Skills</h1>\n<p>Standalone <a href=\"https://docs.anthropic.com/en/docs/claude-code/skills\" target=\"_blank\" rel=\"noreferrer\">Claude Code skills</a> for building on Solana. Each skill is a self-contained directory — install it once and invoke it by name in any Claude Code session.</p>\n<h2>Skills</h2>\n<p>| Skill | Invoke | Description |</p>\n<p>|---|---|---|</p>\n<p>| [<code>helius</code>](./helius) | <code>/helius</code> | Build Solana apps with Helius infrastructure — Sender, DAS API, WebSockets, Laserstream, webhooks, priority fees, and Wallet API |</p>\n<p>| [<code>helius-dflow</code>](./helius-dflow) | <code>/helius-dflow</code> | Build Solana trading apps with DFlow (spot swaps, prediction markets, Proof KYC) + Helius infrastructure |</p>\n<p>| [<code>svm</code>](./svm) | <code>/svm</code> | Explore Solana's architecture and protocol internals — SVM, account model, consensus, validators, and token extensions |</p>\n<p>| <code>helius-phantom</code> | <code>/helius-phantom</code> | Build browser-based Solana apps with Phantom wallet + Helius |</p>\n<h2>Installation</h2>\n<p>Each skill has its own <code>install.sh</code>:</p>\n<pre><code>\n./helius/install.sh          # personal install (~/.claude/skills/)\n\n./helius/install.sh --project # project install (.claude/skills/)\n\n</code></pre>\n<p>All skills require the Helius MCP server except <code>svm</code> (which uses public sources only):</p>\n<pre><code>\nclaude mcp add helius npx helius-mcp@latest\n\n</code></pre>\n<p>Full installation instructions are in the [root README](../README.md#helius-skills).</p>",
   "skillMd": "",
-  "updatedAt": "2026-07-16T10:44:16Z",
+  "updatedAt": "2026-07-20T16:25:18Z",
   "author": {
     "login": "helius-labs",
     "name": "Helius",
@@ -25,56 +25,56 @@
     {
       "slug": "obra-brainstorming",
       "displayName": "obra/brainstorming",
-      "stars": 257511,
+      "stars": 258110,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "mattpocock-skills",
       "displayName": "mattpocock/skills",
-      "stars": 177351,
+      "stars": 178780,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
       "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
-      "stars": 107734,
+      "stars": 108124,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "lum1104-understand-anything",
       "displayName": "Lum1104/understand-anything",
-      "stars": 75165,
+      "stars": 75334,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "leonxlnx-taste-skill",
       "displayName": "Leonxlnx/taste-skill",
-      "stars": 65197,
+      "stars": 65558,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "santifer-career-ops",
       "displayName": "santifer/career-ops",
-      "stars": 60598,
+      "stars": 60718,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "panniantong-agent-reach",
       "displayName": "Panniantong/Agent-Reach",
-      "stars": 58069,
+      "stars": 58689,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "mvanhorn-last30days-skill",
       "displayName": "mvanhorn/last30days-skill",
-      "stars": 52776,
+      "stars": 52884,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     }
