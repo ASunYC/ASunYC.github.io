@@ -18,27 +18,21 @@
     "name": "Dull Bird",
     "avatarUrl": "https://avatars.githubusercontent.com/u/8479707?v=4",
     "profileUrl": "https://github.com/dull-bird",
-    "location": "China"
+    "location": ""
   },
-  "location": {
-    "id": "china",
-    "label": "China",
-    "lat": 35.8617,
-    "lon": 104.1954,
-    "source": "github_profile"
-  },
+  "location": null,
   "related": [
     {
       "slug": "jinchenma94-bazi-skill",
       "displayName": "jinchenma94/bazi-skill",
-      "stars": 2249,
+      "stars": 2251,
       "relation": "shared_tag",
       "evidence": "EverythingSkill / Mystical"
     },
     {
       "slug": "fanzr-arch-numerology-skill",
       "displayName": "FANzR-arch/Numerologist_skills",
-      "stars": 879,
+      "stars": 881,
       "relation": "shared_tag",
       "evidence": "EverythingSkill / Mystical"
     },
@@ -55,41 +49,13 @@
       "stars": 255,
       "relation": "shared_tag",
       "evidence": "EverythingSkill / Mystical"
-    },
-    {
-      "slug": "alchaincyf-nuwa-skill",
-      "displayName": "alchaincyf/nuwa-skill",
-      "stars": 28461,
-      "relation": "shared_tag",
-      "evidence": "location:china"
-    },
-    {
-      "slug": "alchaincyf-zhangxuefeng-skill",
-      "displayName": "alchaincyf/zhangxuefeng-skill",
-      "stars": 9966,
-      "relation": "shared_tag",
-      "evidence": "location:china"
-    },
-    {
-      "slug": "alchaincyf-x-mentor-skill",
-      "displayName": "alchaincyf/x-mentor-skill",
-      "stars": 1078,
-      "relation": "shared_tag",
-      "evidence": "location:china"
-    },
-    {
-      "slug": "alchaincyf-steve-jobs-skill",
-      "displayName": "alchaincyf/steve-jobs-skill",
-      "stars": 909,
-      "relation": "shared_tag",
-      "evidence": "location:china"
     }
   ],
   "mapLocation": {
-    "id": "china",
-    "label": "China",
-    "lat": 35.8617,
-    "lon": 104.1954,
-    "source": "github_profile"
+    "id": "virtual-toronto",
+    "label": "Global Skill Market / Toronto / EverythingSkill / Mystical",
+    "lat": 43.6532,
+    "lon": -79.3832,
+    "source": "virtual_market"
   }
 }
