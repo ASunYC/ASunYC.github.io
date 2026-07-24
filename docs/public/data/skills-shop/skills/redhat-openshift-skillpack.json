@@ -12,7 +12,7 @@
   "readme": "# redhat/openshift-skillpack\n\nProvision, inventory, and report on OpenShift clusters — spanning Assisted Installer, OCM, ROSA, ARO, and kubeconfig fleets — through a single conversational workflow.",
   "readmeHtml": "<h1>redhat/openshift-skillpack</h1>\n<p>Provision, inventory, and report on OpenShift clusters — spanning Assisted Installer, OCM, ROSA, ARO, and kubeconfig fleets — through a single conversational workflow.</p>",
   "skillMd": "",
-  "updatedAt": "2026-07-23T20:04:58.720Z",
+  "updatedAt": "2026-07-24T20:04:23.930Z",
   "author": {
     "login": "redhat",
     "name": "redhat",
@@ -46,7 +46,7 @@
     {
       "slug": "google-cloud-agent-platform-skill-registry",
       "displayName": "google/cloud/agent-platform-skill-registry",
-      "stars": 15178,
+      "stars": 15220,
       "relation": "shared_tag",
       "evidence": "video-search-and-summarization"
     },
