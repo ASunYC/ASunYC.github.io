@@ -4,7 +4,7 @@
   "name": "apple-hig-skills",
   "displayName": "raintree-technology/apple-hig-skills",
   "description": "Apple Human Interface Guidelines as 14 agent skills covering platforms, foundations, components, patterns, inputs, and technologies for iOS, macOS, visionOS, watchOS, and tvOS",
-  "stars": 99,
+  "stars": 101,
   "category": "Community Skills",
   "source": "voltagent",
   "url": "https://github.com/raintree-technology/apple-hig-skills",
@@ -18,78 +18,72 @@
     "name": "Raintree Technology",
     "avatarUrl": "https://avatars.githubusercontent.com/u/242706288?v=4",
     "profileUrl": "https://github.com/raintree-technology",
-    "location": "United States"
+    "location": "Bay Area, CA"
   },
-  "location": {
-    "id": "united-states",
-    "label": "United States of America",
-    "lat": 39.8283,
-    "lon": -98.5795,
-    "source": "github_profile"
-  },
+  "location": null,
   "related": [
     {
       "slug": "obra-brainstorming",
       "displayName": "obra/brainstorming",
-      "stars": 265651,
+      "stars": 266364,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "mattpocock-skills",
       "displayName": "mattpocock/skills",
-      "stars": 201301,
+      "stars": 203049,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
       "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
-      "stars": 113019,
+      "stars": 113423,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "lum1104-understand-anything",
       "displayName": "Lum1104/understand-anything",
-      "stars": 77341,
+      "stars": 77462,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "leonxlnx-taste-skill",
       "displayName": "Leonxlnx/taste-skill",
-      "stars": 71014,
+      "stars": 71804,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "panniantong-agent-reach",
       "displayName": "Panniantong/Agent-Reach",
-      "stars": 65603,
+      "stars": 66418,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "santifer-career-ops",
       "displayName": "santifer/career-ops",
-      "stars": 62639,
+      "stars": 62776,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "mvanhorn-last30days-skill",
       "displayName": "mvanhorn/last30days-skill",
-      "stars": 57079,
+      "stars": 57238,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     }
   ],
   "mapLocation": {
-    "id": "united-states",
-    "label": "United States of America",
-    "lat": 39.8283,
-    "lon": -98.5795,
-    "source": "github_profile"
+    "id": "virtual-bengaluru",
+    "label": "Global Skill Market / Bengaluru / Community Skills",
+    "lat": 12.9716,
+    "lon": 77.5946,
+    "source": "virtual_market"
   }
 }
