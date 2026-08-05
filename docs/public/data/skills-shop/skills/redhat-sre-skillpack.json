@@ -12,7 +12,7 @@
   "readme": "# redhat/sre-skillpack\n\nDiscover, remediate, and verify CVEs across your RHEL fleet — orchestrating Red Hat Lightspeed and Ansible Automation Platform through a single workflow.",
   "readmeHtml": "<h1>redhat/sre-skillpack</h1>\n<p>Discover, remediate, and verify CVEs across your RHEL fleet — orchestrating Red Hat Lightspeed and Ansible Automation Platform through a single workflow.</p>",
   "skillMd": "",
-  "updatedAt": "2026-08-04T20:18:27.748Z",
+  "updatedAt": "2026-08-05T20:13:27.583Z",
   "author": {
     "login": "redhat",
     "name": "redhat",
@@ -46,14 +46,14 @@
     {
       "slug": "google-cloud-agent-platform-skill-registry",
       "displayName": "google/cloud/agent-platform-skill-registry",
-      "stars": 15553,
+      "stars": 15629,
       "relation": "shared_tag",
       "evidence": "video-search-and-summarization"
     },
     {
       "slug": "cypress-io-cypress-author",
       "displayName": "cypress-io/cypress-author",
-      "stars": 37,
+      "stars": 38,
       "relation": "shared_tag",
       "evidence": "video-search-and-summarization"
     },
