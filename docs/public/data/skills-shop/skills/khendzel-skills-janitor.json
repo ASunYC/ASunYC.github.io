@@ -1,0 +1,89 @@
+{
+  "id": "skill:khendzel-skills-janitor",
+  "slug": "khendzel-skills-janitor",
+  "name": "skills-janitor",
+  "displayName": "khendzel/skills-janitor",
+  "description": "Token audit, usage tracking, and swipe-to-delete skill pruning.",
+  "stars": 113,
+  "category": "Community Skills",
+  "source": "voltagent",
+  "url": "https://github.com/khendzel/skills-janitor",
+  "githubRepo": "khendzel/skills-janitor",
+  "readme": "# Skills Janitor\n\n> Tinder for your Claude Code skills. Swipe through your collection and delete what's wasting context, in seconds.\n\nWorks with **Claude Code** and **OpenAI Codex**. 6 commands, zero dependencies.\n\n![/janitor-swipe — swipe keep / delete / skip through every installed skill](janitor-swipe-demo.gif)\n\n> **New in v1.7: MCP servers join the triage.** Every configured MCP server is inventoried and cross-referenced against real usage from your session transcripts. Connected-but-never-called servers rank high in the swipe deck — their tool schemas load into context on every request for nothing. Swiping one left removes it from its config file, with a timestamped `.bak`. [Jump to MCP triage →](#mcp-server-triage-v17)\n\nScans every place a skill lives: user, project, codex, and every skill installed via `/plugin install` — plus your subagents and MCP servers. Surfaces duplicates, broken symlinks, unused skills, and connected-but-never-called MCP servers cluttering your context. Usage counts come from real session transcripts, including skills Claude auto-triggered.\n\n## Commands\n\n| Command | What it does |\n|---|---|\n| `/janitor-report` | Health check: inventory, duplicates, broken skills. `--brief` for inventory only. |\n| `/janitor-fix` | Auto-fix issues. `--prune` removes broken symlinks and empty dirs. |\n| `/janitor-value` | Honest token costs (always-loaded descriptions vs on-demand bodies) + usage, skills and subagents. |\n| `/janitor-security` | Heuristic scan for prompt injection, hidden instructions, and dangerous script patterns. (v1.6+) |\n| `/janitor-discover` | Search GitHub for skills, or check a URL before installing — now including a pre-install security scan. |\n| `/janitor-swipe` | Interactive TUI — swipe keep/delete/skip through skills AND MCP servers, sorted most-likely-waste first. (v1.4+) |\n\nEach has its own slash command. Or use natural language: *\"check my skills\"*, *\"which skills are wasting context?\"*, *\"find an n8n skill\"*.\n\n## Install\n\n```\n/plugin marketplace add khendzel/skills-janitor\n/plugin install skills-janitor\n```\n\nOr via [skills.sh](https://skills.sh):\n\n```bash\nnpx skills add khendzel/skills-janitor\n```\n\nOr clone directly:\n\n```bash\ngit clone https://github.com/khendzel/skills-janitor ~/.claude/skills/skills-janitor\n```\n\n## Security scan (v1.6)\n\nA skill is text your agent trusts. Public research found prompt injection in roughly a third of tested community skills — so the janitor now scans for the known bad shapes: instruction-override phrases, \"don't tell the user\" directives, instructions hidden in HTML comments or zero-width unicode, smuggled base64 payloads, and scripts that pipe the network into a shell or read credential stores.\n\n```\n/janitor-security          # audit everything installed\n/janitor-discover <url>    # overlap + security check BEFORE installing\n```\n\nVerdicts are honest heuristics (PASS / REVIEW / RISK): a RISK means \"read this before trusting it\", not \"malware\". Calibrated for low noise — on a real 178-skill machine it flags 2, both genuinely worth reading.\n\n## Swipe through your skills (v1.4)\n\nTinder-style triage for your skill collection. The deck is sorted heaviest-and-least-used first, so most users hit `← delete` through the top 5–10 cards and quit before reviewing everything.\n\n```\n!bash ~/.claude/skills/skills-janitor/scripts/swipe.sh\n```\n\n(The `!` prefix runs in your terminal, not the Claude Code Bash tool — the TUI needs a real interactive stdin.)\n\nControls: `←` delete, `→` keep, `↓` skip, `u` undo, `i` inspect full description, `q` quit.\n\nPlugin skills are flagged for review (you can't `rm` individual plugin skills — they belong to a plugin). User-scope skills stage for actual deletion, applied on `y` confirmation at the end.\n\nSince v1.7 the deck also includes your MCP servers — see [MCP server triage](#mcp-server-triage-v17).\n\n## MCP server triage (v1.7)\n\nSkills aren't the only thing renting space in your context. Every connected MCP server loads\nits tool schemas on every request, whether you call it or not.\n\nThe janitor inventories every configured server — user `~/.claude.json`, per-project entries,\nproject `.mcp.json`, and plugin-bundled — then cross-references real usage from your session\ntranscripts (`mcp__server__tool` records):\n\n```\n=== Skills Janitor - MCP Servers ===\nUsage window: last 8 weeks of session transcripts\n\n  Server                       Scope         Calls  Tools Last Used   Origin\n  ──────────────────────────── ──────────── ────── ────── ─────────── ────────────\n  design-tool                  mcp-user          0      0 never       ~/.claude.json\n  deploy-tool                  mcp-plugin        0      0 never       plugin:deploy\n  cms                          mcp-project      41      4 2026-07-02  ~/.claude.json\n\n--- Unused in 8 weeks (2) ---\n  design-tool (mcp-user) — configured in ~/.claude.json\n  deploy-tool (mcp-plugin) — configured in plugin:deploy\n```\n\nNo invented token numbers — MCP schemas live server-side, so the janitor reports only what it\ncan prove: where the server is configured, how many distinct tools you actually called, how\noften, and when last. Servers seen in transcripts but no longer configured are listed\nseparately.\n\nUnused servers rank high in the swipe deck. Swiping one left removes the entry from its config\nfile with a timestamped `.bak` backup. Plugin-bundled servers are flagged for plugin review\ninstead.\n\n## Duplicate detection\n\nThe duplicate detector flags cross-scope overlaps, including plugins that re-implement a skill\nyou already had standalone:\n\n```\n=== Skills Janitor - Duplicate Detection ===\n\n--- Description Overlap (Jaccard > 30%) ---\n\n  [98%] marketing-seo-audit <-> marketing-skills:seo-audit\n        Scopes: user / plugin\n\n  [100%] marketing-content-strategy <-> marketing-skills:content-strategy\n        Scopes: user / plugin\n```\n\nOverlap is scored on descriptions (Jaccard), so it catches re-implementations that share no\nfilename and live in different scopes.\n\n## Upgrading from v1.2\n\nThe five v1.2 aliases were removed in v1.5. Renames:\n\n| v1.2 | now |\n|---|---|\n| `/janitor-audit` | `/janitor-report --brief` |\n| `/janitor-usage` | `/janitor-value` |\n| `/janitor-tokens` | `/janitor-value` |\n| `/janitor-search` | `/janitor-discover` |\n| `/janitor-precheck` | `/janitor-discover <url>` |\n\nFull release notes: [CHANGELOG.md](CHANGELOG.md).\n\n## Requirements\n\nBash, Python 3, `curl`. No pip installs, no node modules.\n\n## Contributing\n\nPRs welcome. Each command is self-contained in `skills/janitor-*/SKILL.md` plus a sibling script in `scripts/`.\n\n## License\n\nMIT\n",
+  "readmeHtml": "<h1>Skills Janitor</h1>\n<p>&gt; Tinder for your Claude Code skills. Swipe through your collection and delete what's wasting context, in seconds.</p>\n<p>Works with <strong>Claude Code</strong> and <strong>OpenAI Codex</strong>. 6 commands, zero dependencies.</p>\n<p>![/janitor-swipe — swipe keep / delete / skip through every installed skill](janitor-swipe-demo.gif)</p>\n<p>&gt; <strong>New in v1.7: MCP servers join the triage.</strong> Every configured MCP server is inventoried and cross-referenced against real usage from your session transcripts. Connected-but-never-called servers rank high in the swipe deck — their tool schemas load into context on every request for nothing. Swiping one left removes it from its config file, with a timestamped <code>.bak</code>. [Jump to MCP triage →](#mcp-server-triage-v17)</p>\n<p>Scans every place a skill lives: user, project, codex, and every skill installed via <code>/plugin install</code> — plus your subagents and MCP servers. Surfaces duplicates, broken symlinks, unused skills, and connected-but-never-called MCP servers cluttering your context. Usage counts come from real session transcripts, including skills Claude auto-triggered.</p>\n<h2>Commands</h2>\n<p>| Command | What it does |</p>\n<p>|---|---|</p>\n<p>| <code>/janitor-report</code> | Health check: inventory, duplicates, broken skills. <code>--brief</code> for inventory only. |</p>\n<p>| <code>/janitor-fix</code> | Auto-fix issues. <code>--prune</code> removes broken symlinks and empty dirs. |</p>\n<p>| <code>/janitor-value</code> | Honest token costs (always-loaded descriptions vs on-demand bodies) + usage, skills and subagents. |</p>\n<p>| <code>/janitor-security</code> | Heuristic scan for prompt injection, hidden instructions, and dangerous script patterns. (v1.6+) |</p>\n<p>| <code>/janitor-discover</code> | Search GitHub for skills, or check a URL before installing — now including a pre-install security scan. |</p>\n<p>| <code>/janitor-swipe</code> | Interactive TUI — swipe keep/delete/skip through skills AND MCP servers, sorted most-likely-waste first. (v1.4+) |</p>\n<p>Each has its own slash command. Or use natural language: *\"check my skills\"*, *\"which skills are wasting context?\"*, *\"find an n8n skill\"*.</p>\n<h2>Install</h2>\n<pre><code>\n/plugin marketplace add khendzel/skills-janitor\n\n/plugin install skills-janitor\n\n</code></pre>\n<p>Or via <a href=\"https://skills.sh\" target=\"_blank\" rel=\"noreferrer\">skills.sh</a>:</p>\n<pre><code>\nnpx skills add khendzel/skills-janitor\n\n</code></pre>\n<p>Or clone directly:</p>\n<pre><code>\ngit clone https://github.com/khendzel/skills-janitor ~/.claude/skills/skills-janitor\n\n</code></pre>\n<h2>Security scan (v1.6)</h2>\n<p>A skill is text your agent trusts. Public research found prompt injection in roughly a third of tested community skills — so the janitor now scans for the known bad shapes: instruction-override phrases, \"don't tell the user\" directives, instructions hidden in HTML comments or zero-width unicode, smuggled base64 payloads, and scripts that pipe the network into a shell or read credential stores.</p>\n<pre><code>\n/janitor-security          # audit everything installed\n\n/janitor-discover &lt;url&gt;    # overlap + security check BEFORE installing\n\n</code></pre>\n<p>Verdicts are honest heuristics (PASS / REVIEW / RISK): a RISK means \"read this before trusting it\", not \"malware\". Calibrated for low noise — on a real 178-skill machine it flags 2, both genuinely worth reading.</p>\n<h2>Swipe through your skills (v1.4)</h2>\n<p>Tinder-style triage for your skill collection. The deck is sorted heaviest-and-least-used first, so most users hit <code>← delete</code> through the top 5–10 cards and quit before reviewing everything.</p>\n<pre><code>\n!bash ~/.claude/skills/skills-janitor/scripts/swipe.sh\n\n</code></pre>\n<p>(The <code>!</code> prefix runs in your terminal, not the Claude Code Bash tool — the TUI needs a real interactive stdin.)</p>\n<p>Controls: <code>←</code> delete, <code>→</code> keep, <code>↓</code> skip, <code>u</code> undo, <code>i</code> inspect full description, <code>q</code> quit.</p>\n<p>Plugin skills are flagged for review (you can't <code>rm</code> individual plugin skills — they belong to a plugin). User-scope skills stage for actual deletion, applied on <code>y</code> confirmation at the end.</p>\n<p>Since v1.7 the deck also includes your MCP servers — see [MCP server triage](#mcp-server-triage-v17).</p>\n<h2>MCP server triage (v1.7)</h2>\n<p>Skills aren't the only thing renting space in your context. Every connected MCP server loads</p>\n<p>its tool schemas on every request, whether you call it or not.</p>\n<p>The janitor inventories every configured server — user <code>~/.claude.json</code>, per-project entries,</p>\n<p>project <code>.mcp.json</code>, and plugin-bundled — then cross-references real usage from your session</p>\n<p>transcripts (<code>mcp__server__tool</code> records):</p>\n<pre><code>\n=== Skills Janitor - MCP Servers ===\n\nUsage window: last 8 weeks of session transcripts\n\n\n\n  Server                       Scope         Calls  Tools Last Used   Origin\n\n  ──────────────────────────── ──────────── ────── ────── ─────────── ────────────\n\n  design-tool                  mcp-user          0      0 never       ~/.claude.json\n\n  deploy-tool                  mcp-plugin        0      0 never       plugin:deploy\n\n  cms                          mcp-project      41      4 2026-07-02  ~/.claude.json\n\n\n\n--- Unused in 8 weeks (2) ---\n\n  design-tool (mcp-user) — configured in ~/.claude.json\n\n  deploy-tool (mcp-plugin) — configured in plugin:deploy\n\n</code></pre>\n<p>No invented token numbers — MCP schemas live server-side, so the janitor reports only what it</p>\n<p>can prove: where the server is configured, how many distinct tools you actually called, how</p>\n<p>often, and when last. Servers seen in transcripts but no longer configured are listed</p>\n<p>separately.</p>\n<p>Unused servers rank high in the swipe deck. Swiping one left removes the entry from its config</p>\n<p>file with a timestamped <code>.bak</code> backup. Plugin-bundled servers are flagged for plugin review</p>\n<p>instead.</p>\n<h2>Duplicate detection</h2>\n<p>The duplicate detector flags cross-scope overlaps, including plugins that re-implement a skill</p>\n<p>you already had standalone:</p>\n<pre><code>\n=== Skills Janitor - Duplicate Detection ===\n\n\n\n--- Description Overlap (Jaccard &gt; 30%) ---\n\n\n\n  [98%] marketing-seo-audit &lt;-&gt; marketing-skills:seo-audit\n\n        Scopes: user / plugin\n\n\n\n  [100%] marketing-content-strategy &lt;-&gt; marketing-skills:content-strategy\n\n        Scopes: user / plugin\n\n</code></pre>\n<p>Overlap is scored on descriptions (Jaccard), so it catches re-implementations that share no</p>\n<p>filename and live in different scopes.</p>\n<h2>Upgrading from v1.2</h2>\n<p>The five v1.2 aliases were removed in v1.5. Renames:</p>\n<p>| v1.2 | now |</p>\n<p>|---|---|</p>\n<p>| <code>/janitor-audit</code> | <code>/janitor-report --brief</code> |</p>\n<p>| <code>/janitor-usage</code> | <code>/janitor-value</code> |</p>\n<p>| <code>/janitor-tokens</code> | <code>/janitor-value</code> |</p>\n<p>| <code>/janitor-search</code> | <code>/janitor-discover</code> |</p>\n<p>| <code>/janitor-precheck</code> | <code>/janitor-discover &lt;url&gt;</code> |</p>\n<p>Full release notes: [CHANGELOG.md](CHANGELOG.md).</p>\n<h2>Requirements</h2>\n<p>Bash, Python 3, <code>curl</code>. No pip installs, no node modules.</p>\n<h2>Contributing</h2>\n<p>PRs welcome. Each command is self-contained in <code>skills/janitor-*/SKILL.md</code> plus a sibling script in <code>scripts/</code>.</p>\n<h2>License</h2>\n<p>MIT</p>",
+  "skillMd": "",
+  "updatedAt": "2026-08-11T07:34:31Z",
+  "author": {
+    "login": "khendzel",
+    "name": "Krzysztof Hendzel",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/79056193?v=4",
+    "profileUrl": "https://github.com/khendzel",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "obra-brainstorming",
+      "displayName": "obra/brainstorming",
+      "stars": 271198,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mattpocock-skills",
+      "displayName": "mattpocock/skills",
+      "stars": 214934,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
+      "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "stars": 116083,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "lum1104-understand-anything",
+      "displayName": "Lum1104/understand-anything",
+      "stars": 79101,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "leonxlnx-taste-skill",
+      "displayName": "Leonxlnx/taste-skill",
+      "stars": 75813,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "panniantong-agent-reach",
+      "displayName": "Panniantong/Agent-Reach",
+      "stars": 71091,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "santifer-career-ops",
+      "displayName": "santifer/career-ops",
+      "stars": 63619,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mvanhorn-last30days-skill",
+      "displayName": "mvanhorn/last30days-skill",
+      "stars": 58002,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-sydney",
+    "label": "Global Skill Market / Sydney / Community Skills",
+    "lat": -33.8688,
+    "lon": 151.2093,
+    "source": "virtual_market"
+  }
+}

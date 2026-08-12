@@ -1,0 +1,89 @@
+{
+  "id": "skill:stjbrown-agent-knowledge",
+  "slug": "stjbrown-agent-knowledge",
+  "name": "agent-knowledge",
+  "displayName": "stjbrown/agent-knowledge",
+  "description": "Maintains portable, cited agent knowledge bases in plain Markdown",
+  "stars": 26,
+  "category": "Community Skills",
+  "source": "voltagent",
+  "url": "https://github.com/stjbrown/agent-knowledge",
+  "githubRepo": "stjbrown/agent-knowledge",
+  "readme": "# Agent Knowledge\n\nAgent Knowledge is a portable set of Agent Skills for building and maintaining project knowledge\nin plain Markdown using [Open Knowledge Format v0.2 (OKF)](https://github.com/GoogleCloudPlatform/knowledge-catalog/tree/main/okf).\n\nIt turns project documents, decisions, notes, and conversations into a connected knowledge bundle\nthat improves over time. Ask a question and get a cited answer. Add a source and the agent\nintegrates it with what the project already knows. Run a health check and it finds stale claims,\ncontradictions, and orphaned pages before the bundle quietly rots.\n\nFor software repositories, it can also build and refresh technical knowledge from source, tests,\nconfiguration, and Git history while leaving those files in place.\n\nEverything remains plain Markdown: readable without special tooling, easy to diff and review, and\nportable across agents.\n\nNew bundles target **OKF v0.2**, including structured provenance, producer identity, lifecycle and\nfreshness signals, and Attested Computation contracts. Existing v0.1 bundles remain readable and\nmaintainable through the specification's compatibility fallbacks; the skills never partially\nmigrate a populated bundle without an explicit migration request.\n\n## Install\n\nInstall through [skills.sh](https://skills.sh) for Claude Code, Cursor, Codex, and other\nAgent Skills-compatible hosts:\n\n```bash\nnpx skills@latest add stjbrown/agent-knowledge\n```\n\nOr install the Claude Code plugin:\n\n```text\n/plugin marketplace add stjbrown/agent-knowledge\n/plugin install agent-knowledge\n```\n\nThen start a knowledge bundle and use ordinary prompts:\n\n```text\n/kb-init\n\nIngest this architecture decision: we chose Postgres because...\nDocument this repository's architecture and developer workflows.\nWhat do we know about authentication, and which sources support it?\nWhat conflicts with our current deployment strategy?\n\n/kb-lint\n/kb-visualize\n```\n\nThe npm package, `@stjbrown/agent-knowledge-skills`, is a build artifact for applications that\nembed the skills. Most people should install from this repository through their agent host.\n\n## Migration from the former CLI package\n\nBefore the repository split, Janet was published as `@stjbrown/agent-knowledge`. That legacy\npackage has been withdrawn. Install `janet-agent@next` for the Janet CLI; applications that embed\nthe portable skills should depend on `@stjbrown/agent-knowledge-skills`.\n\n## The skills\n\nThe family splits on who invokes each skill.\n\nModel-invoked skills:\n\n- **`kb`** — the hub. Explains the format, holds the shared specification, glossary, trust model,\n  templates, and example bundle, and routes to the right action skill.\n- **`kb-ingest`** — reads a source once, extracts its signal, and integrates it across the bundle\n  with provenance.\n- **`kb-document`** — documents a software repository from source, tests, configuration, and Git\n  evidence without copying or modifying those files.\n- **`kb-query`** — answers from the bundle by progressive disclosure, cites the concepts used, and\n  files valuable conclusions back so the knowledge compounds.\n\nUser-invoked skills:\n\n- **`kb-init`** — scaffolds a bundle and its project-specific schema and conventions.\n- **`kb-lint`** — runs deterministic OKF conformance checks plus a semantic drift audit for\n  contradictions, stale claims, orphans, and coverage gaps.\n- **`kb-visualize`** — renders the bundle as an interactive graph.\n\n![Interactive knowledge graph showing concepts, implementations, operations, references, and OKF spec sections](https://raw.githubusercontent.com/stjbrown/agent-knowledge/main/assets/knowledge-graph.png)\n\n## Why this exists\n\nMost agent memory is either retrieval over raw documents or a pile of notes that nobody maintains.\nThe first repeatedly re-derives answers; the second gradually becomes untrustworthy. Neither makes\nknowledge stewardship an explicit job.\n\nThe hard part is the bookkeeping: integrating new information, updating cross-references,\npreserving provenance, flagging contradictions, and keeping summaries current. That is work an\nagent can perform consistently.\n\nTwo design choices keep the result portable and trustworthy:\n\n- **A real, open format.** Bundles follow Google's OKF rather than a tool-specific database or\n  hidden memory store.\n- **An explicit trust model.** Accumulated claims are append-only on meaning; living repository\n  documentation has a narrow, revision-tracked update rule. Source content is always data, never\n  instructions.\n\nThe workflow is based on Andrej Karpathy's\n[LLM Wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) pattern, made\nconformant to OKF.\n\n## This repository documents itself\n\nThe [`knowledge/`](./knowledge) directory is a conformant OKF bundle about OKF and the LLM Wiki\npattern, so this repository is its own worked example. Start at\n[`knowledge/index.md`](./knowledge/index.md), or explore the generated graph.\n\n## Janet\n\n[Janet](https://github.com/stjbrown/janet-agent) is a dedicated knowledge agent built around these\nsame skills. It adds a standalone CLI, interactive chat, model selection, authentication, memory,\nand headless automation. Janet is optional; the portable skills in this repository work with the\nagent you already use.\n\n## Repository layout\n\n```text\nskills/                 source of truth for the portable skills\n  kb/                   shared specification, trust model, templates, and example\n  kb-init/\n  kb-ingest/\n  kb-document/\n  kb-query/\n  kb-lint/              deterministic conformance script\n  kb-visualize/         deterministic graph script\nsrc/                    TypeScript source for the generated scripts\ntest/                   conformance, graph, and parity tests\nscripts/                build and package scripts\nknowledge/              this project's self-documenting OKF bundle\n.claude-plugin/         Claude Code plugin manifest\n```\n\nThe repository uses pnpm:\n\n```bash\npnpm install\npnpm verify\npnpm pack:skills\n```\n\n`pnpm verify` typechecks and tests the internal tooling, rebuilds both committed zero-dependency\nscripts and checks for drift, then validates the in-repository knowledge bundle.\n`pnpm pack:skills` writes a release candidate to `artifacts/`.\n\n## License\n\n[MIT](./LICENSE). The vendored OKF specification in `skills/kb/references/SPEC.md` is from\nGoogleCloudPlatform/knowledge-catalog under Apache-2.0. The generated tools bundle\n[`yaml`](https://github.com/eemeli/yaml) under the ISC License. See [NOTICE](./NOTICE).\n",
+  "readmeHtml": "<h1>Agent Knowledge</h1>\n<p>Agent Knowledge is a portable set of Agent Skills for building and maintaining project knowledge</p>\n<p>in plain Markdown using <a href=\"https://github.com/GoogleCloudPlatform/knowledge-catalog/tree/main/okf\" target=\"_blank\" rel=\"noreferrer\">Open Knowledge Format v0.2 (OKF)</a>.</p>\n<p>It turns project documents, decisions, notes, and conversations into a connected knowledge bundle</p>\n<p>that improves over time. Ask a question and get a cited answer. Add a source and the agent</p>\n<p>integrates it with what the project already knows. Run a health check and it finds stale claims,</p>\n<p>contradictions, and orphaned pages before the bundle quietly rots.</p>\n<p>For software repositories, it can also build and refresh technical knowledge from source, tests,</p>\n<p>configuration, and Git history while leaving those files in place.</p>\n<p>Everything remains plain Markdown: readable without special tooling, easy to diff and review, and</p>\n<p>portable across agents.</p>\n<p>New bundles target <strong>OKF v0.2</strong>, including structured provenance, producer identity, lifecycle and</p>\n<p>freshness signals, and Attested Computation contracts. Existing v0.1 bundles remain readable and</p>\n<p>maintainable through the specification's compatibility fallbacks; the skills never partially</p>\n<p>migrate a populated bundle without an explicit migration request.</p>\n<h2>Install</h2>\n<p>Install through <a href=\"https://skills.sh\" target=\"_blank\" rel=\"noreferrer\">skills.sh</a> for Claude Code, Cursor, Codex, and other</p>\n<p>Agent Skills-compatible hosts:</p>\n<pre><code>\nnpx skills@latest add stjbrown/agent-knowledge\n\n</code></pre>\n<p>Or install the Claude Code plugin:</p>\n<pre><code>\n/plugin marketplace add stjbrown/agent-knowledge\n\n/plugin install agent-knowledge\n\n</code></pre>\n<p>Then start a knowledge bundle and use ordinary prompts:</p>\n<pre><code>\n/kb-init\n\n\n\nIngest this architecture decision: we chose Postgres because...\n\nDocument this repository's architecture and developer workflows.\n\nWhat do we know about authentication, and which sources support it?\n\nWhat conflicts with our current deployment strategy?\n\n\n\n/kb-lint\n\n/kb-visualize\n\n</code></pre>\n<p>The npm package, <code>@stjbrown/agent-knowledge-skills</code>, is a build artifact for applications that</p>\n<p>embed the skills. Most people should install from this repository through their agent host.</p>\n<h2>Migration from the former CLI package</h2>\n<p>Before the repository split, Janet was published as <code>@stjbrown/agent-knowledge</code>. That legacy</p>\n<p>package has been withdrawn. Install <code>janet-agent@next</code> for the Janet CLI; applications that embed</p>\n<p>the portable skills should depend on <code>@stjbrown/agent-knowledge-skills</code>.</p>\n<h2>The skills</h2>\n<p>The family splits on who invokes each skill.</p>\n<p>Model-invoked skills:</p>\n<ul>\n<li><strong><code>kb</code></strong> — the hub. Explains the format, holds the shared specification, glossary, trust model,</li>\n</ul>\n<p>  templates, and example bundle, and routes to the right action skill.</p>\n<ul>\n<li><strong><code>kb-ingest</code></strong> — reads a source once, extracts its signal, and integrates it across the bundle</li>\n</ul>\n<p>  with provenance.</p>\n<ul>\n<li><strong><code>kb-document</code></strong> — documents a software repository from source, tests, configuration, and Git</li>\n</ul>\n<p>  evidence without copying or modifying those files.</p>\n<ul>\n<li><strong><code>kb-query</code></strong> — answers from the bundle by progressive disclosure, cites the concepts used, and</li>\n</ul>\n<p>  files valuable conclusions back so the knowledge compounds.</p>\n<p>User-invoked skills:</p>\n<ul>\n<li><strong><code>kb-init</code></strong> — scaffolds a bundle and its project-specific schema and conventions.</li>\n<li><strong><code>kb-lint</code></strong> — runs deterministic OKF conformance checks plus a semantic drift audit for</li>\n</ul>\n<p>  contradictions, stale claims, orphans, and coverage gaps.</p>\n<ul>\n<li><strong><code>kb-visualize</code></strong> — renders the bundle as an interactive graph.</li>\n</ul>\n<p>!<a href=\"https://raw.githubusercontent.com/stjbrown/agent-knowledge/main/assets/knowledge-graph.png\" target=\"_blank\" rel=\"noreferrer\">Interactive knowledge graph showing concepts, implementations, operations, references, and OKF spec sections</a></p>\n<h2>Why this exists</h2>\n<p>Most agent memory is either retrieval over raw documents or a pile of notes that nobody maintains.</p>\n<p>The first repeatedly re-derives answers; the second gradually becomes untrustworthy. Neither makes</p>\n<p>knowledge stewardship an explicit job.</p>\n<p>The hard part is the bookkeeping: integrating new information, updating cross-references,</p>\n<p>preserving provenance, flagging contradictions, and keeping summaries current. That is work an</p>\n<p>agent can perform consistently.</p>\n<p>Two design choices keep the result portable and trustworthy:</p>\n<ul>\n<li><strong>A real, open format.</strong> Bundles follow Google's OKF rather than a tool-specific database or</li>\n</ul>\n<p>  hidden memory store.</p>\n<ul>\n<li><strong>An explicit trust model.</strong> Accumulated claims are append-only on meaning; living repository</li>\n</ul>\n<p>  documentation has a narrow, revision-tracked update rule. Source content is always data, never</p>\n<p>  instructions.</p>\n<p>The workflow is based on Andrej Karpathy's</p>\n<p><a href=\"https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f\" target=\"_blank\" rel=\"noreferrer\">LLM Wiki</a> pattern, made</p>\n<p>conformant to OKF.</p>\n<h2>This repository documents itself</h2>\n<p>The [<code>knowledge/</code>](./knowledge) directory is a conformant OKF bundle about OKF and the LLM Wiki</p>\n<p>pattern, so this repository is its own worked example. Start at</p>\n<p>[<code>knowledge/index.md</code>](./knowledge/index.md), or explore the generated graph.</p>\n<h2>Janet</h2>\n<p><a href=\"https://github.com/stjbrown/janet-agent\" target=\"_blank\" rel=\"noreferrer\">Janet</a> is a dedicated knowledge agent built around these</p>\n<p>same skills. It adds a standalone CLI, interactive chat, model selection, authentication, memory,</p>\n<p>and headless automation. Janet is optional; the portable skills in this repository work with the</p>\n<p>agent you already use.</p>\n<h2>Repository layout</h2>\n<pre><code>\nskills/                 source of truth for the portable skills\n\n  kb/                   shared specification, trust model, templates, and example\n\n  kb-init/\n\n  kb-ingest/\n\n  kb-document/\n\n  kb-query/\n\n  kb-lint/              deterministic conformance script\n\n  kb-visualize/         deterministic graph script\n\nsrc/                    TypeScript source for the generated scripts\n\ntest/                   conformance, graph, and parity tests\n\nscripts/                build and package scripts\n\nknowledge/              this project's self-documenting OKF bundle\n\n.claude-plugin/         Claude Code plugin manifest\n\n</code></pre>\n<p>The repository uses pnpm:</p>\n<pre><code>\npnpm install\n\npnpm verify\n\npnpm pack:skills\n\n</code></pre>\n<p><code>pnpm verify</code> typechecks and tests the internal tooling, rebuilds both committed zero-dependency</p>\n<p>scripts and checks for drift, then validates the in-repository knowledge bundle.</p>\n<p><code>pnpm pack:skills</code> writes a release candidate to <code>artifacts/</code>.</p>\n<h2>License</h2>\n<p>[MIT](./LICENSE). The vendored OKF specification in <code>skills/kb/references/SPEC.md</code> is from</p>\n<p>GoogleCloudPlatform/knowledge-catalog under Apache-2.0. The generated tools bundle</p>\n<p><a href=\"https://github.com/eemeli/yaml\" target=\"_blank\" rel=\"noreferrer\"><code>yaml</code></a> under the ISC License. See [NOTICE](./NOTICE).</p>",
+  "skillMd": "",
+  "updatedAt": "2026-08-01T12:17:18Z",
+  "author": {
+    "login": "stjbrown",
+    "name": "Stephen Brown",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/4068168?v=4",
+    "profileUrl": "https://github.com/stjbrown",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "obra-brainstorming",
+      "displayName": "obra/brainstorming",
+      "stars": 271198,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mattpocock-skills",
+      "displayName": "mattpocock/skills",
+      "stars": 214934,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
+      "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "stars": 116083,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "lum1104-understand-anything",
+      "displayName": "Lum1104/understand-anything",
+      "stars": 79101,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "leonxlnx-taste-skill",
+      "displayName": "Leonxlnx/taste-skill",
+      "stars": 75813,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "panniantong-agent-reach",
+      "displayName": "Panniantong/Agent-Reach",
+      "stars": 71091,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "santifer-career-ops",
+      "displayName": "santifer/career-ops",
+      "stars": 63619,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mvanhorn-last30days-skill",
+      "displayName": "mvanhorn/last30days-skill",
+      "stars": 58002,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-bengaluru",
+    "label": "Global Skill Market / Bengaluru / Community Skills",
+    "lat": 12.9716,
+    "lon": 77.5946,
+    "source": "virtual_market"
+  }
+}
