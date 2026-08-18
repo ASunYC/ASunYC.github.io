@@ -4,15 +4,15 @@
   "name": "ui-skills",
   "displayName": "ibelick/ui-skills",
   "description": "Opinionated, evolving constraints to guide agents when building interfaces",
-  "stars": 7262,
+  "stars": 7293,
   "category": "Community Skills",
   "source": "voltagent",
   "url": "https://github.com/ibelick/ui-skills",
   "githubRepo": "ibelick/ui-skills",
-  "readme": "# UI Skills\n\n![UI Skills](./public/UI-OG.webp)\n\nSkills for Design Engineers\n\nMore on [ui-skills.com](http://ui-skills.com/)\n\nRun `npx ui-skills start` to route your agent through the right UI skill set for the task.\n\n## CLI\n\n```bash\nnpx ui-skills\nnpx ui-skills start\nnpx ui-skills categories\nnpx ui-skills list --category motion\nnpx ui-skills get baseline-ui\n```\n\n## License\n\nLicensed under the [MIT license](https://github.com/ibelick/ui-skills/blob/main/LICENSE).\n",
-  "readmeHtml": "<h1>UI Skills</h1>\n<p>![UI Skills](./public/UI-OG.webp)</p>\n<p>Skills for Design Engineers</p>\n<p>More on <a href=\"http://ui-skills.com/\" target=\"_blank\" rel=\"noreferrer\">ui-skills.com</a></p>\n<p>Run <code>npx ui-skills start</code> to route your agent through the right UI skill set for the task.</p>\n<h2>CLI</h2>\n<pre><code>\nnpx ui-skills\n\nnpx ui-skills start\n\nnpx ui-skills categories\n\nnpx ui-skills list --category motion\n\nnpx ui-skills get baseline-ui\n\n</code></pre>\n<h2>License</h2>\n<p>Licensed under the <a href=\"https://github.com/ibelick/ui-skills/blob/main/LICENSE\" target=\"_blank\" rel=\"noreferrer\">MIT license</a>.</p>",
+  "readme": "# UI Skills\n\n![UI Skills](./public/UI-OG.webp)\n\nSkills for Design Engineers.\n\nMore on [ui-skills.com](https://www.ui-skills.com/)\n\n## CLI\n\nBrowse and fetch skills from your terminal.\n\n```bash\nnpx ui-skills start\nnpx ui-skills categories\nnpx ui-skills list --category motion\nnpx ui-skills get baseline-ui\n```\n\n## MCP\n\nConnect agents to the registry over Model Context Protocol.\n\n```\nhttps://www.ui-skills.com/mcp\n```\n\nTools: `list_skills`, `get_skill`\n\n## Playbook\n\nDistilled UI lessons from the best design engineering skills.\n\n[ui-skills.com/playbook](https://www.ui-skills.com/playbook)\n\n## License\n\nLicensed under the [MIT license](https://github.com/ibelick/ui-skills/blob/main/LICENSE).\n",
+  "readmeHtml": "<h1>UI Skills</h1>\n<p>![UI Skills](./public/UI-OG.webp)</p>\n<p>Skills for Design Engineers.</p>\n<p>More on <a href=\"https://www.ui-skills.com/\" target=\"_blank\" rel=\"noreferrer\">ui-skills.com</a></p>\n<h2>CLI</h2>\n<p>Browse and fetch skills from your terminal.</p>\n<pre><code>\nnpx ui-skills start\n\nnpx ui-skills categories\n\nnpx ui-skills list --category motion\n\nnpx ui-skills get baseline-ui\n\n</code></pre>\n<h2>MCP</h2>\n<p>Connect agents to the registry over Model Context Protocol.</p>\n<pre><code>\nhttps://www.ui-skills.com/mcp\n\n</code></pre>\n<p>Tools: <code>list_skills</code>, <code>get_skill</code></p>\n<h2>Playbook</h2>\n<p>Distilled UI lessons from the best design engineering skills.</p>\n<p><a href=\"https://www.ui-skills.com/playbook\" target=\"_blank\" rel=\"noreferrer\">ui-skills.com/playbook</a></p>\n<h2>License</h2>\n<p>Licensed under the <a href=\"https://github.com/ibelick/ui-skills/blob/main/LICENSE\" target=\"_blank\" rel=\"noreferrer\">MIT license</a>.</p>",
   "skillMd": "",
-  "updatedAt": "2026-08-13T18:34:03Z",
+  "updatedAt": "2026-08-18T17:00:03Z",
   "author": {
     "login": "ibelick",
     "name": "Julien Thibeaut",
@@ -31,56 +31,56 @@
     {
       "slug": "obra-brainstorming",
       "displayName": "obra/brainstorming",
-      "stars": 273146,
+      "stars": 273603,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "mattpocock-skills",
       "displayName": "mattpocock/skills",
-      "stars": 220176,
+      "stars": 221336,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
       "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
-      "stars": 117585,
+      "stars": 117890,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "lum1104-understand-anything",
       "displayName": "Lum1104/understand-anything",
-      "stars": 79611,
+      "stars": 79724,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "leonxlnx-taste-skill",
       "displayName": "Leonxlnx/taste-skill",
-      "stars": 77356,
+      "stars": 77699,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "panniantong-agent-reach",
       "displayName": "Panniantong/Agent-Reach",
-      "stars": 72504,
+      "stars": 72771,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "santifer-career-ops",
       "displayName": "santifer/career-ops",
-      "stars": 64462,
+      "stars": 65307,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "mvanhorn-last30days-skill",
       "displayName": "mvanhorn/last30days-skill",
-      "stars": 58465,
+      "stars": 58608,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     }

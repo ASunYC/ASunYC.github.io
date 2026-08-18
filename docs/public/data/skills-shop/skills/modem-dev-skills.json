@@ -1,0 +1,95 @@
+{
+  "id": "skill:modem-dev-skills",
+  "slug": "modem-dev-skills",
+  "name": "skills",
+  "displayName": "modem-dev/skills",
+  "description": "Agent skills from [Modem](https://modem.dev/go/awesome-agent-skills), starting with write-discoverable-code",
+  "stars": 42,
+  "category": "Official Skills by",
+  "source": "voltagent",
+  "url": "https://github.com/modem-dev/skills",
+  "githubRepo": "modem-dev/skills",
+  "readme": "# Modem skills\n\nAgent skills from [Modem](https://modem.dev).\n\n## Skills\n\n### [`write-discoverable-code`](./write-discoverable-code/)\n\nRules for writing code that coding agents (and humans) can find through plain-text search: distinctive names, precise types, comments where search lands, and concept-named modules.\n\nDistilled from Modem’s [How coding agents read your code](https://modem.dev/blog/how-coding-agents-read-your-code) post and the experiments behind it. This is skill **v4** from those runs.\n\n## Install\n\nCopy a skill directory into your agent’s skills folder:\n\n```bash\n# Cursor (project)\ncp -R write-discoverable-code .cursor/skills/\n\n# Claude Code (project)\ncp -R write-discoverable-code .claude/skills/\n```\n\nOr clone this repo and point your harness at the skill path you want.\n\n## Experiment data\n\nMethodology, generated codebases, and run results live in the private [`code-writing-data`](https://github.com/modem-dev/code-writing-data) repo.\n\n## License\n\n[MIT](./LICENSE)\n",
+  "readmeHtml": "<h1>Modem skills</h1>\n<p>Agent skills from <a href=\"https://modem.dev\" target=\"_blank\" rel=\"noreferrer\">Modem</a>.</p>\n<h2>Skills</h2>\n<h3>[<code>write-discoverable-code</code>](./write-discoverable-code/)</h3>\n<p>Rules for writing code that coding agents (and humans) can find through plain-text search: distinctive names, precise types, comments where search lands, and concept-named modules.</p>\n<p>Distilled from Modem’s <a href=\"https://modem.dev/blog/how-coding-agents-read-your-code\" target=\"_blank\" rel=\"noreferrer\">How coding agents read your code</a> post and the experiments behind it. This is skill <strong>v4</strong> from those runs.</p>\n<h2>Install</h2>\n<p>Copy a skill directory into your agent’s skills folder:</p>\n<pre><code>\n# Cursor (project)\n\ncp -R write-discoverable-code .cursor/skills/\n\n\n\n# Claude Code (project)\n\ncp -R write-discoverable-code .claude/skills/\n\n</code></pre>\n<p>Or clone this repo and point your harness at the skill path you want.</p>\n<h2>Experiment data</h2>\n<p>Methodology, generated codebases, and run results live in the private <a href=\"https://github.com/modem-dev/code-writing-data\" target=\"_blank\" rel=\"noreferrer\"><code>code-writing-data</code></a> repo.</p>\n<h2>License</h2>\n<p>[MIT](./LICENSE)</p>",
+  "skillMd": "",
+  "updatedAt": "2026-07-20T13:52:25Z",
+  "author": {
+    "login": "modem-dev",
+    "name": "Modem",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/207912732?v=4",
+    "profileUrl": "https://github.com/modem-dev",
+    "location": "Canada"
+  },
+  "location": {
+    "id": "canada",
+    "label": "Canada",
+    "lat": 56.1304,
+    "lon": -106.3468,
+    "source": "github_profile"
+  },
+  "related": [
+    {
+      "slug": "angular-angular-developer",
+      "displayName": "angular/angular-developer",
+      "stars": 618,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "testmu-ai-api-skill",
+      "displayName": "testmu-ai/api-skill",
+      "stars": 356,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "veniceai-venice-api-overview",
+      "displayName": "veniceai/venice-api-overview",
+      "stars": 134,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "zero-zero",
+      "displayName": "zero/zero",
+      "stars": 19,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "trycourier-courier-skills",
+      "displayName": "trycourier/courier-skills",
+      "stars": 13,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "anthropics-docx",
+      "displayName": "anthropics/docx",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "anthropics-doc-coauthoring",
+      "displayName": "anthropics/doc-coauthoring",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "anthropics-pptx",
+      "displayName": "anthropics/pptx",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    }
+  ],
+  "mapLocation": {
+    "id": "canada",
+    "label": "Canada",
+    "lat": 56.1304,
+    "lon": -106.3468,
+    "source": "github_profile"
+  }
+}
