@@ -12,7 +12,7 @@
   "readme": "# datadog-labs/dd-docs\n\nLook up Datadog documentation via the LLM-optimized docs index",
   "readmeHtml": "<h1>datadog-labs/dd-docs</h1>\n<p>Look up Datadog documentation via the LLM-optimized docs index</p>",
   "skillMd": "",
-  "updatedAt": "2026-08-19T19:16:28.415Z",
+  "updatedAt": "2026-08-20T19:20:31.952Z",
   "author": {
     "login": "datadog-labs",
     "name": "Datadog Labs",
@@ -78,9 +78,9 @@
       "evidence": "author:datadog-labs"
     },
     {
-      "slug": "coreyhaines31-ab-test-setup",
-      "displayName": "coreyhaines31/ab-test-setup",
-      "stars": 44900,
+      "slug": "coreyhaines31-ab-testing",
+      "displayName": "coreyhaines31/ab-testing",
+      "stars": 45061,
       "relation": "shared_tag",
       "evidence": "TypeScript Skills"
     }

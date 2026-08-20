@@ -12,7 +12,7 @@
   "readme": "# datadog-labs/dd-llmo-eval-bootstrap\n\nAnalyze production LLM traces and generate evaluators",
   "readmeHtml": "<h1>datadog-labs/dd-llmo-eval-bootstrap</h1>\n<p>Analyze production LLM traces and generate evaluators</p>",
   "skillMd": "",
-  "updatedAt": "2026-08-19T19:16:28.416Z",
+  "updatedAt": "2026-08-20T19:20:31.952Z",
   "author": {
     "login": "datadog-labs",
     "name": "Datadog Labs",
@@ -78,9 +78,9 @@
       "evidence": "author:datadog-labs"
     },
     {
-      "slug": "coreyhaines31-ab-test-setup",
-      "displayName": "coreyhaines31/ab-test-setup",
-      "stars": 44900,
+      "slug": "coreyhaines31-ab-testing",
+      "displayName": "coreyhaines31/ab-testing",
+      "stars": 45061,
       "relation": "shared_tag",
       "evidence": "TypeScript Skills"
     }
