@@ -1,0 +1,89 @@
+{
+  "id": "skill:aeonfun-aeon",
+  "slug": "aeonfun-aeon",
+  "name": "aeon",
+  "displayName": "aeonfun/aeon",
+  "description": "70+ Claude Code skills + autonomous GitHub Actions agent framework",
+  "stars": 677,
+  "category": "Community Skills",
+  "source": "voltagent",
+  "url": "https://github.com/aeonfun/aeon",
+  "githubRepo": "aeonfun/aeon",
+  "readme": "# aeonfun/aeon\n\n70+ Claude Code skills + autonomous GitHub Actions agent framework",
+  "readmeHtml": "<h1>aeonfun/aeon</h1>\n<p>70+ Claude Code skills + autonomous GitHub Actions agent framework</p>",
+  "skillMd": "",
+  "updatedAt": "2026-08-21T15:05:26Z",
+  "author": {
+    "login": "aeonfun",
+    "name": "aeon",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/287715280?v=4",
+    "profileUrl": "https://github.com/aeonfun",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "obra-brainstorming",
+      "displayName": "obra/brainstorming",
+      "stars": 275542,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mattpocock-skills",
+      "displayName": "mattpocock/skills",
+      "stars": 229032,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
+      "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "stars": 119259,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 91431,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "lum1104-understand-anything",
+      "displayName": "Lum1104/understand-anything",
+      "stars": 80022,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "leonxlnx-taste-skill",
+      "displayName": "Leonxlnx/taste-skill",
+      "stars": 78944,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "panniantong-agent-reach",
+      "displayName": "Panniantong/Agent-Reach",
+      "stars": 73818,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "santifer-career-ops",
+      "displayName": "santifer/career-ops",
+      "stars": 67318,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-san-francisco",
+    "label": "Global Skill Market / San Francisco / Community Skills",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "virtual_market"
+  }
+}

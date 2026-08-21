@@ -1,0 +1,89 @@
+{
+  "id": "skill:mailtrap-mailtrap-skills",
+  "slug": "mailtrap-mailtrap-skills",
+  "name": "mailtrap-skills",
+  "displayName": "mailtrap/mailtrap-skills",
+  "description": "Send emails via API/SMTP with sandbox testing",
+  "stars": 8,
+  "category": "Community Skills",
+  "source": "voltagent",
+  "url": "https://github.com/mailtrap/mailtrap-skills",
+  "githubRepo": "mailtrap/mailtrap-skills",
+  "readme": "# Mailtrap user skills\n\nAgent skills for [Mailtrap](https://mailtrap.io) end users and builders using LLM-assisted coding. They summarize product flows, API bases and paths, and links to official documentation. They are not a substitute for [docs.mailtrap.io](https://docs.mailtrap.io/) or the [developer API documentation](https://docs.mailtrap.io/developers/).\n\n## Standard\n\nThese skills follow the [Agent Skills](https://agentskills.io) open standard (Anthropic, Dec 2025). Each skill is a directory containing a `SKILL.md` with YAML frontmatter (`name`, `description`) plus Markdown instructions. Compliant agents read only the frontmatter at startup and pull the body on demand (progressive disclosure), so the same folder works across multiple tools.\n\n## Install\n\nCopy or symlink the skill folders into the skills directory your agent reads. The examples below assume you cloned this repo to `/path/to/mailtrap-skills`. After install, restart or reload the agent if it does not pick up new skills.\n\n### Cursor\n\n- Project: `.cursor/skills/<skill-name>/`\n- User (all projects): `~/.cursor/skills/<skill-name>/`\n\n```bash\nln -s /path/to/mailtrap-skills/skills/* ~/.cursor/skills/\n```\n\n### Claude Code (Anthropic)\n\n- Project: `.claude/skills/<skill-name>/`\n- User: `~/.claude/skills/<skill-name>/`\n\n```bash\nln -s /path/to/mailtrap-skills/skills/* ~/.claude/skills/\n```\n\n### Codex CLI (OpenAI)\n\n- Project: `.agents/skills/<skill-name>/`\n- User: `~/.agents/skills/<skill-name>/`\n\n```bash\nln -s /path/to/mailtrap-skills/skills/* ~/.agents/skills/\n```\n\n### Gemini CLI (Google)\n\n- Project: `.gemini/skills/<skill-name>/` (also accepts `.agents/skills/`)\n- User: `~/.gemini/skills/<skill-name>/`\n\n```bash\nln -s /path/to/mailtrap-skills/skills/* ~/.gemini/skills/\n```\n\n### GitHub Copilot\n\n- Project: `.github/skills/<skill-name>/` (also accepts `.claude/skills/` and `.agents/skills/`)\n- User: `~/.copilot/skills/<skill-name>/` (also accepts `~/.agents/skills/`)\n\n```bash\nln -s /path/to/mailtrap-skills/skills/* ~/.copilot/skills/\n```\n\n### Windsurf (Cascade)\n\n- Project: `.windsurf/skills/<skill-name>/`\n- User: `~/.codeium/windsurf/skills/<skill-name>/`\n\n```bash\nln -s /path/to/mailtrap-skills/skills/* ~/.codeium/windsurf/skills/\n```\n\n### Other agents\n\nMost other agents that support the Agent Skills standard also accept `~/.agents/skills/` (user scope) and `.agents/skills/` (project scope). If your tool uses a different path, point it at this repository's `skills/` folder.\n\n## Tokens and account_id\n\nSkill examples reference these environment variables instead of literal secrets:\n\n| Variable                     | Used for                                                                              |\n| ---------------------------- | ------------------------------------------------------------------------------------- |\n| `MAILTRAP_API_TOKEN`         | General API: Email Send (transactional and bulk), Templates, Contacts, Sending Domains |\n| `MAILTRAP_SANDBOX_API_TOKEN` | Sandbox / Email Testing (separate scope)                                              |\n| `MAILTRAP_ACCOUNT_ID`        | Path parameter for account-scoped endpoints (resolve at runtime, do not hardcode)     |\n\nFull guidance — token scope, where to store tokens, auth header forms, and how to resolve `MAILTRAP_ACCOUNT_ID` from `GET https://mailtrap.io/api/accounts` — lives in the `authorizing-api-requests` skill. Every other skill in this repo points at it instead of duplicating the rules.\n\n## Contents\n\n| Skill                          | Purpose                                                                                         |\n| ------------------------------ | ----------------------------------------------------------------------------------------------- |\n| `authorizing-api-requests`     | API tokens, env vars, auth headers, `account_id` resolution                                     |\n| `sending-emails`               | Live sending via Email API and SMTP (transactional vs bulk)                                     |\n| `testing-with-sandbox`         | Email Sandbox, Testing API, safe capture in dev/staging                                         |\n| `using-email-templates`        | Account-scoped templates, Handlebars, API template send                                         |\n| `converting-email-templates`   | Convert templates from SendGrid, Mailgun, Mandrill, Postmark, Brevo, SES to Mailtrap Handlebars |\n| `setting-up-sending-domain`    | Domain verification, DNS (add all records), compliance                                          |\n| `managing-contacts`            | Contacts API, lists, segments, CRM-style sync                                                   |\n\n## References\n\n- Product documentation: [docs.mailtrap.io](https://docs.mailtrap.io/)\n- Developer and API documentation: [docs.mailtrap.io/developers](https://docs.mailtrap.io/developers/)\n- Agent Skills standard: [agentskills.io](https://agentskills.io)\n",
+  "readmeHtml": "<h1>Mailtrap user skills</h1>\n<p>Agent skills for <a href=\"https://mailtrap.io\" target=\"_blank\" rel=\"noreferrer\">Mailtrap</a> end users and builders using LLM-assisted coding. They summarize product flows, API bases and paths, and links to official documentation. They are not a substitute for <a href=\"https://docs.mailtrap.io/\" target=\"_blank\" rel=\"noreferrer\">docs.mailtrap.io</a> or the <a href=\"https://docs.mailtrap.io/developers/\" target=\"_blank\" rel=\"noreferrer\">developer API documentation</a>.</p>\n<h2>Standard</h2>\n<p>These skills follow the <a href=\"https://agentskills.io\" target=\"_blank\" rel=\"noreferrer\">Agent Skills</a> open standard (Anthropic, Dec 2025). Each skill is a directory containing a <code>SKILL.md</code> with YAML frontmatter (<code>name</code>, <code>description</code>) plus Markdown instructions. Compliant agents read only the frontmatter at startup and pull the body on demand (progressive disclosure), so the same folder works across multiple tools.</p>\n<h2>Install</h2>\n<p>Copy or symlink the skill folders into the skills directory your agent reads. The examples below assume you cloned this repo to <code>/path/to/mailtrap-skills</code>. After install, restart or reload the agent if it does not pick up new skills.</p>\n<h3>Cursor</h3>\n<ul>\n<li>Project: <code>.cursor/skills/&lt;skill-name&gt;/</code></li>\n<li>User (all projects): <code>~/.cursor/skills/&lt;skill-name&gt;/</code></li>\n</ul>\n<pre><code>\nln -s /path/to/mailtrap-skills/skills/* ~/.cursor/skills/\n\n</code></pre>\n<h3>Claude Code (Anthropic)</h3>\n<ul>\n<li>Project: <code>.claude/skills/&lt;skill-name&gt;/</code></li>\n<li>User: <code>~/.claude/skills/&lt;skill-name&gt;/</code></li>\n</ul>\n<pre><code>\nln -s /path/to/mailtrap-skills/skills/* ~/.claude/skills/\n\n</code></pre>\n<h3>Codex CLI (OpenAI)</h3>\n<ul>\n<li>Project: <code>.agents/skills/&lt;skill-name&gt;/</code></li>\n<li>User: <code>~/.agents/skills/&lt;skill-name&gt;/</code></li>\n</ul>\n<pre><code>\nln -s /path/to/mailtrap-skills/skills/* ~/.agents/skills/\n\n</code></pre>\n<h3>Gemini CLI (Google)</h3>\n<ul>\n<li>Project: <code>.gemini/skills/&lt;skill-name&gt;/</code> (also accepts <code>.agents/skills/</code>)</li>\n<li>User: <code>~/.gemini/skills/&lt;skill-name&gt;/</code></li>\n</ul>\n<pre><code>\nln -s /path/to/mailtrap-skills/skills/* ~/.gemini/skills/\n\n</code></pre>\n<h3>GitHub Copilot</h3>\n<ul>\n<li>Project: <code>.github/skills/&lt;skill-name&gt;/</code> (also accepts <code>.claude/skills/</code> and <code>.agents/skills/</code>)</li>\n<li>User: <code>~/.copilot/skills/&lt;skill-name&gt;/</code> (also accepts <code>~/.agents/skills/</code>)</li>\n</ul>\n<pre><code>\nln -s /path/to/mailtrap-skills/skills/* ~/.copilot/skills/\n\n</code></pre>\n<h3>Windsurf (Cascade)</h3>\n<ul>\n<li>Project: <code>.windsurf/skills/&lt;skill-name&gt;/</code></li>\n<li>User: <code>~/.codeium/windsurf/skills/&lt;skill-name&gt;/</code></li>\n</ul>\n<pre><code>\nln -s /path/to/mailtrap-skills/skills/* ~/.codeium/windsurf/skills/\n\n</code></pre>\n<h3>Other agents</h3>\n<p>Most other agents that support the Agent Skills standard also accept <code>~/.agents/skills/</code> (user scope) and <code>.agents/skills/</code> (project scope). If your tool uses a different path, point it at this repository's <code>skills/</code> folder.</p>\n<h2>Tokens and account_id</h2>\n<p>Skill examples reference these environment variables instead of literal secrets:</p>\n<p>| Variable                     | Used for                                                                              |</p>\n<p>| ---------------------------- | ------------------------------------------------------------------------------------- |</p>\n<p>| <code>MAILTRAP_API_TOKEN</code>         | General API: Email Send (transactional and bulk), Templates, Contacts, Sending Domains |</p>\n<p>| <code>MAILTRAP_SANDBOX_API_TOKEN</code> | Sandbox / Email Testing (separate scope)                                              |</p>\n<p>| <code>MAILTRAP_ACCOUNT_ID</code>        | Path parameter for account-scoped endpoints (resolve at runtime, do not hardcode)     |</p>\n<p>Full guidance — token scope, where to store tokens, auth header forms, and how to resolve <code>MAILTRAP_ACCOUNT_ID</code> from <code>GET https://mailtrap.io/api/accounts</code> — lives in the <code>authorizing-api-requests</code> skill. Every other skill in this repo points at it instead of duplicating the rules.</p>\n<h2>Contents</h2>\n<p>| Skill                          | Purpose                                                                                         |</p>\n<p>| ------------------------------ | ----------------------------------------------------------------------------------------------- |</p>\n<p>| <code>authorizing-api-requests</code>     | API tokens, env vars, auth headers, <code>account_id</code> resolution                                     |</p>\n<p>| <code>sending-emails</code>               | Live sending via Email API and SMTP (transactional vs bulk)                                     |</p>\n<p>| <code>testing-with-sandbox</code>         | Email Sandbox, Testing API, safe capture in dev/staging                                         |</p>\n<p>| <code>using-email-templates</code>        | Account-scoped templates, Handlebars, API template send                                         |</p>\n<p>| <code>converting-email-templates</code>   | Convert templates from SendGrid, Mailgun, Mandrill, Postmark, Brevo, SES to Mailtrap Handlebars |</p>\n<p>| <code>setting-up-sending-domain</code>    | Domain verification, DNS (add all records), compliance                                          |</p>\n<p>| <code>managing-contacts</code>            | Contacts API, lists, segments, CRM-style sync                                                   |</p>\n<h2>References</h2>\n<ul>\n<li>Product documentation: <a href=\"https://docs.mailtrap.io/\" target=\"_blank\" rel=\"noreferrer\">docs.mailtrap.io</a></li>\n<li>Developer and API documentation: <a href=\"https://docs.mailtrap.io/developers/\" target=\"_blank\" rel=\"noreferrer\">docs.mailtrap.io/developers</a></li>\n<li>Agent Skills standard: <a href=\"https://agentskills.io\" target=\"_blank\" rel=\"noreferrer\">agentskills.io</a></li>\n</ul>",
+  "skillMd": "",
+  "updatedAt": "2026-08-05T14:18:32Z",
+  "author": {
+    "login": "mailtrap",
+    "name": "Mailtrap.io",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/228706481?v=4",
+    "profileUrl": "https://github.com/mailtrap",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "obra-brainstorming",
+      "displayName": "obra/brainstorming",
+      "stars": 275542,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mattpocock-skills",
+      "displayName": "mattpocock/skills",
+      "stars": 229032,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
+      "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "stars": 119259,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 91431,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "lum1104-understand-anything",
+      "displayName": "Lum1104/understand-anything",
+      "stars": 80022,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "leonxlnx-taste-skill",
+      "displayName": "Leonxlnx/taste-skill",
+      "stars": 78944,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "panniantong-agent-reach",
+      "displayName": "Panniantong/Agent-Reach",
+      "stars": 73818,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "santifer-career-ops",
+      "displayName": "santifer/career-ops",
+      "stars": 67318,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-berlin",
+    "label": "Global Skill Market / Berlin / Community Skills",
+    "lat": 52.52,
+    "lon": 13.405,
+    "source": "virtual_market"
+  }
+}
