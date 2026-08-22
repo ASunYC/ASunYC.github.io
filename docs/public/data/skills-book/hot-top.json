@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-08-21T19:17:37.108Z",
+  "generatedAt": "2026-08-22T19:08:38.788Z",
   "source": "local-skills-cache",
   "baseline": {
     "window": "7d",
-    "commit": "71ac1460de3fbc633c346cdc2028dd05406a3a36"
+    "commit": "6b2c7d09239f78f2302b47d9fa1005ee332502cc"
   },
   "skills": [
     {
@@ -12,10 +12,10 @@
       "displayName": "obra/brainstorming",
       "description": "Generate and explore ideas",
       "category": "Community Skills",
-      "stars": 275542,
+      "stars": 276073,
       "githubRepo": "obra/superpowers",
       "source": "voltagent",
-      "weeklyStars": 709,
+      "weeklyStars": 531,
       "href": "/skills-shop/obra-brainstorming/"
     },
     {
@@ -24,10 +24,10 @@
       "displayName": "mattpocock/skills",
       "description": "17 dev workflow skills: PRD writing, TDD, codebase architecture, git guardrails, issue triage, refactoring plans, and more",
       "category": "Community Skills",
-      "stars": 229032,
+      "stars": 231585,
       "githubRepo": "mattpocock/skills",
       "source": "voltagent",
-      "weeklyStars": 3126,
+      "weeklyStars": 2553,
       "href": "/skills-shop/mattpocock-skills/"
     },
     {
@@ -36,10 +36,10 @@
       "displayName": "garrytan/gstack",
       "description": "YC founder stack recommendations for infra, tooling, and deployment",
       "category": "Skills by Garry Tan (gstack)",
-      "stars": 129051,
+      "stars": 129193,
       "githubRepo": "garrytan/gstack",
       "source": "heilcheng",
-      "weeklyStars": 178,
+      "weeklyStars": 142,
       "href": "/skills-shop/garrytan-gstack/"
     },
     {
@@ -48,10 +48,10 @@
       "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
       "description": "UI/UX design patterns and best practices",
       "category": "Community Skills",
-      "stars": 119259,
+      "stars": 119777,
       "githubRepo": "nextlevelbuilder/ui-ux-pro-max-skill",
       "source": "voltagent",
-      "weeklyStars": 598,
+      "weeklyStars": 518,
       "href": "/skills-shop/nextlevelbuilder-ui-ux-pro-max-skill/"
     },
     {
@@ -60,10 +60,10 @@
       "displayName": "voltagent/awesome-design-md",
       "description": "Standards and tools for the DESIGN.md protocol.",
       "category": "How do I know if a skill is safe to use?",
-      "stars": 109552,
+      "stars": 109687,
       "githubRepo": "VoltAgent/awesome-design-md",
       "source": "heilcheng",
-      "weeklyStars": 122,
+      "weeklyStars": 135,
       "href": "/skills-shop/voltagent-awesome-design-md/"
     },
     {
@@ -72,10 +72,10 @@
       "displayName": "punkpeye/awesome-mcp-servers",
       "description": "A collection of Model Context Protocol (MCP) servers.",
       "category": "How do I know if a skill is safe to use?",
-      "stars": 92659,
+      "stars": 92693,
       "githubRepo": "punkpeye/awesome-mcp-servers",
       "source": "heilcheng",
-      "weeklyStars": 43,
+      "weeklyStars": 34,
       "href": "/skills-shop/punkpeye-awesome-mcp-servers/"
     },
     {
@@ -84,10 +84,10 @@
       "displayName": "thedotmack/claude-mem",
       "description": "Compresses and persists agent memory across sessions",
       "category": "Community Skills",
-      "stars": 91431,
+      "stars": 91520,
       "githubRepo": "thedotmack/claude-mem",
       "source": "voltagent",
-      "weeklyStars": 0,
+      "weeklyStars": 89,
       "href": "/skills-shop/thedotmack-claude-mem/"
     },
     {
@@ -96,7 +96,7 @@
       "displayName": "modelcontextprotocol/servers",
       "description": "Official server implementations",
       "category": "Model Context Protocol (MCP)",
-      "stars": 89748,
+      "stars": 89778,
       "githubRepo": "modelcontextprotocol/servers",
       "source": "heilcheng",
       "weeklyStars": 30,
@@ -108,10 +108,10 @@
       "displayName": "Lum1104/understand-anything",
       "description": "Interactive codebase knowledge graphs via multi-agent LLM analysis",
       "category": "Community Skills",
-      "stars": 80022,
+      "stars": 80116,
       "githubRepo": "Lum1104/Understand-Anything",
       "source": "voltagent",
-      "weeklyStars": 100,
+      "weeklyStars": 94,
       "href": "/skills-shop/lum1104-understand-anything/"
     },
     {
@@ -120,10 +120,10 @@
       "displayName": "Leonxlnx/taste-skill",
       "description": "High-agency frontend skill that gives AI good taste with tunable design variance, motion intensity, and visual density to stop generic UI slop",
       "category": "Community Skills",
-      "stars": 78944,
+      "stars": 79248,
       "githubRepo": "Leonxlnx/taste-skill",
       "source": "voltagent",
-      "weeklyStars": 384,
+      "weeklyStars": 304,
       "href": "/skills-shop/leonxlnx-taste-skill/"
     }
   ]
