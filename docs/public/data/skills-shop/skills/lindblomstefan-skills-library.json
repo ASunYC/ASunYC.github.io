@@ -1,0 +1,89 @@
+{
+  "id": "skill:lindblomstefan-skills-library",
+  "slug": "lindblomstefan-skills-library",
+  "name": "skills-library",
+  "displayName": "lindblomstefan/skills-library",
+  "description": "Guided discovery skill for Claude Code: runs an interview to recommend from a catalog of 100+ AI skills; records session feedback that validates candidates over time",
+  "stars": 1,
+  "category": "Community Skills",
+  "source": "voltagent",
+  "url": "https://github.com/lindblomstefan/skills-library",
+  "githubRepo": "lindblomstefan/skills-library",
+  "readme": "# skills-library\n\nA Claude Code skill that runs a guided interview and recommends the right AI skills for your repo or team.\n\nIf it's useful, a star helps others find it.\n\nThe skill runs entirely inside Claude — no CLI, no server, no external dependencies. The interview, recommendations, onboarding, and feedback flows are all driven by `SKILL.md` and Claude Code's native tooling.\n\n## Install\n\nPaste this into any Claude Code session:\n\n```text\nInstall the skills-library skill from https://github.com/lindblomstefan/skills-library and set it up so I can type /skills-library to start it.\n```\n\nClaude will clone the repo, copy `.claude/skills/skills-library/` into `~/.claude/skills/`, and add the trigger lines to `~/.claude/CLAUDE.md`. Nothing else runs.\n\n## Use\n\nType `/skills-library` in any Claude Code session to start the guided interview. Claude will:\n\n1. Check if you're in a git repo and offer to inspect it\n2. Ask how you want to share context (describe freely, problem only, or chat)\n3. Ask narrowing questions — work area, stack, constraints, sensitivity\n4. Recommend up to 5 skills with license state, status, and blockers\n\nClaude will also suggest `/skills-library` automatically when you ask what AI skills, tools, or AI-powered workflows to use for a project or team.\n\nAfter using a recommended skill, say \"I have feedback on [skill name].\" Claude appends a dated entry to a local feedback file at `~/.claude/skills/skills-library/feedback/<skill-id>.md`. Once a skill reaches 3 entries it is marked validated — confirmed working in practice, not universally recommended.\n\nTo read the feedback for any skill, ask Claude: \"Show me the feedback for graphify\" — or open the file directly.\n\n## Catalog\n\nOver 100 skills tracked across all stages. The skill recommends from the full catalog — status is always shown so you know the confidence level.\n\nSee [CATALOG.md](CATALOG.md) for the full list. Skills move from candidate → evaluating → approved through real usage and community feedback.\n\n## Contributing\n\n**This library is still young.** The catalog has over 100 skills but very few have real-world feedback yet. That is the gap. If you have feedback of a skill that is not in the library, add it first.\n\nThe most valuable thing you can do is use a skill and leave feedback. No GitHub account needed:\n\n- **Give feedback on a skill** — use a skill, then say \"I have feedback on [skill name]\" in any Claude Code session. Claude appends a dated entry to a local file. Once a skill reaches 3 real-session entries it is marked validated. This is how the library earns trust.\n- **Add a skill** — type `/skills-library` and say \"I have a skill to add.\" Only when there is something genuinely missing.\n- **Improve the library** — fork, edit, open a PR. Run `npm test` before pushing.\n\nSee [CONTRIBUTING.md](CONTRIBUTING.md) for the validation model and what makes a good skill addition.\n\n## This repository\n\nThe installable artifact is the skill folder:\n\n```text\n.claude/skills/skills-library/\n├── SKILL.md          # Interview, recommendation, onboarding, and feedback instructions\n├── VERSION           # Used for update detection\n├── feedback/         # Per-skill feedback files; read before recommending\n│   ├── _template.md  # Template for new skills\n│   ├── gstack.md\n│   └── graphify.md\n├── agents/           # Claude agent descriptor\n└── references/       # Catalog overview for offline use\n```\n\nThe rest of the repo is catalog governance tooling — YAML manifests, evaluation runs, and validation scripts. It is not part of the installed skill.\n\n```text\ncatalog/      # Library skill manifests and taxonomies\nevaluations/  # Evaluation runs and evidence\ntools/        # Catalog validation and guardrail checks\ndocs/         # Engineering decisions and guardrails\n```\n",
+  "readmeHtml": "<h1>skills-library</h1>\n<p>A Claude Code skill that runs a guided interview and recommends the right AI skills for your repo or team.</p>\n<p>If it's useful, a star helps others find it.</p>\n<p>The skill runs entirely inside Claude — no CLI, no server, no external dependencies. The interview, recommendations, onboarding, and feedback flows are all driven by <code>SKILL.md</code> and Claude Code's native tooling.</p>\n<h2>Install</h2>\n<p>Paste this into any Claude Code session:</p>\n<pre><code>\nInstall the skills-library skill from https://github.com/lindblomstefan/skills-library and set it up so I can type /skills-library to start it.\n\n</code></pre>\n<p>Claude will clone the repo, copy <code>.claude/skills/skills-library/</code> into <code>~/.claude/skills/</code>, and add the trigger lines to <code>~/.claude/CLAUDE.md</code>. Nothing else runs.</p>\n<h2>Use</h2>\n<p>Type <code>/skills-library</code> in any Claude Code session to start the guided interview. Claude will:</p>\n<p>1. Check if you're in a git repo and offer to inspect it</p>\n<p>2. Ask how you want to share context (describe freely, problem only, or chat)</p>\n<p>3. Ask narrowing questions — work area, stack, constraints, sensitivity</p>\n<p>4. Recommend up to 5 skills with license state, status, and blockers</p>\n<p>Claude will also suggest <code>/skills-library</code> automatically when you ask what AI skills, tools, or AI-powered workflows to use for a project or team.</p>\n<p>After using a recommended skill, say \"I have feedback on [skill name].\" Claude appends a dated entry to a local feedback file at <code>~/.claude/skills/skills-library/feedback/&lt;skill-id&gt;.md</code>. Once a skill reaches 3 entries it is marked validated — confirmed working in practice, not universally recommended.</p>\n<p>To read the feedback for any skill, ask Claude: \"Show me the feedback for graphify\" — or open the file directly.</p>\n<h2>Catalog</h2>\n<p>Over 100 skills tracked across all stages. The skill recommends from the full catalog — status is always shown so you know the confidence level.</p>\n<p>See [CATALOG.md](CATALOG.md) for the full list. Skills move from candidate → evaluating → approved through real usage and community feedback.</p>\n<h2>Contributing</h2>\n<p><strong>This library is still young.</strong> The catalog has over 100 skills but very few have real-world feedback yet. That is the gap. If you have feedback of a skill that is not in the library, add it first.</p>\n<p>The most valuable thing you can do is use a skill and leave feedback. No GitHub account needed:</p>\n<ul>\n<li><strong>Give feedback on a skill</strong> — use a skill, then say \"I have feedback on [skill name]\" in any Claude Code session. Claude appends a dated entry to a local file. Once a skill reaches 3 real-session entries it is marked validated. This is how the library earns trust.</li>\n<li><strong>Add a skill</strong> — type <code>/skills-library</code> and say \"I have a skill to add.\" Only when there is something genuinely missing.</li>\n<li><strong>Improve the library</strong> — fork, edit, open a PR. Run <code>npm test</code> before pushing.</li>\n</ul>\n<p>See [CONTRIBUTING.md](CONTRIBUTING.md) for the validation model and what makes a good skill addition.</p>\n<h2>This repository</h2>\n<p>The installable artifact is the skill folder:</p>\n<pre><code>\n.claude/skills/skills-library/\n\n├── SKILL.md          # Interview, recommendation, onboarding, and feedback instructions\n\n├── VERSION           # Used for update detection\n\n├── feedback/         # Per-skill feedback files; read before recommending\n\n│   ├── _template.md  # Template for new skills\n\n│   ├── gstack.md\n\n│   └── graphify.md\n\n├── agents/           # Claude agent descriptor\n\n└── references/       # Catalog overview for offline use\n\n</code></pre>\n<p>The rest of the repo is catalog governance tooling — YAML manifests, evaluation runs, and validation scripts. It is not part of the installed skill.</p>\n<pre><code>\ncatalog/      # Library skill manifests and taxonomies\n\nevaluations/  # Evaluation runs and evidence\n\ntools/        # Catalog validation and guardrail checks\n\ndocs/         # Engineering decisions and guardrails\n\n</code></pre>",
+  "skillMd": "",
+  "updatedAt": "2026-08-23T17:53:22Z",
+  "author": {
+    "login": "lindblomstefan",
+    "name": "lindblomstefan",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/46811709?v=4",
+    "profileUrl": "https://github.com/lindblomstefan",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "obra-brainstorming",
+      "displayName": "obra/brainstorming",
+      "stars": 276600,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mattpocock-skills",
+      "displayName": "mattpocock/skills",
+      "stars": 233584,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
+      "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "stars": 120164,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 91597,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "lum1104-understand-anything",
+      "displayName": "Lum1104/understand-anything",
+      "stars": 80207,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "leonxlnx-taste-skill",
+      "displayName": "Leonxlnx/taste-skill",
+      "stars": 79629,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "panniantong-agent-reach",
+      "displayName": "Panniantong/Agent-Reach",
+      "stars": 74433,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "santifer-career-ops",
+      "displayName": "santifer/career-ops",
+      "stars": 67931,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-sydney",
+    "label": "Global Skill Market / Sydney / Community Skills",
+    "lat": -33.8688,
+    "lon": 151.2093,
+    "source": "virtual_market"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "id": "skill:apitube-news-api-skills",
+  "slug": "apitube-news-api-skills",
+  "name": "news-api-skills",
+  "displayName": "apitube/news-api-skills",
+  "description": "Search worldwide news by keyword, entity, sentiment, source, date",
+  "stars": 0,
+  "category": "Community Skills",
+  "source": "voltagent",
+  "url": "https://github.com/apitube/news-api-skills",
+  "githubRepo": "apitube/news-api-skills",
+  "readme": "# APITube News API — skill for AI coding agents\n\n[![skills.sh](https://skills.sh/b/apitube/news-api-skills)](https://skills.sh/apitube/news-api-skills)\n\nThe official `SKILL.md` for the [APITube](https://apitube.io) News API. It teaches a coding\nagent how to authenticate, search worldwide news, filter by entity, sentiment, source and\ndate, and read the JSON response — without guessing parameter names.\n\n`SKILL.md` is an open format, so this works in Claude Code, Cursor, Codex, GitHub Copilot,\nVS Code, Gemini CLI, Amp, Goose, opencode, Roo Code, Windsurf, JetBrains Junie and every other\nskills-compatible agent.\n\nYou need an API key: **[get one at apitube.io](https://apitube.io)** — the free tier is 100\nrequests/day and does not require a card.\n\n## The skill\n\n[`apitube-news-api`](skills/apitube-news-api/SKILL.md) — authentication, endpoints, the\n`/news/everything` filters, plain-language `prompt` queries, the response shape, pagination,\nrate limits and error codes.\n\nEvery parameter, field name, limit and error code in it was executed against the live API at\n`api.apitube.io` before being written down.\n\n## Install\n\n### Any agent\n\n```bash\nnpx skills add apitube/news-api-skills --skill apitube-news-api --agent claude-code\n```\n\nThis installs into the **current project**, not your home directory: the file lands in\n`./.claude/skills/apitube-news-api/SKILL.md` and a `skills-lock.json` is written alongside it,\npinning the source repo and a content hash. Run it from your project root, and commit the lock\nfile if you want the whole team on the same revision.\n\n`--agent` takes your agent's slug — the [skills.sh](https://skills.sh) registry covers Claude\nCode, Cursor, Codex, GitHub Copilot, VS Code, Gemini, Windsurf, opencode, Amp, Goose, Roo,\nCline, Kiro, Trae, Zed and others; run `npx skills add --help` for the current list.\n\n### Claude Code — as a plugin marketplace\n\n```\n/plugin marketplace add apitube/news-api-skills\n/plugin install news-api-skills@apitube-news-api\n```\n\nThe first command registers the marketplace, the second installs the plugin at user scope.\nRemove them with `/plugin uninstall news-api-skills@apitube-news-api` and\n`/plugin marketplace remove apitube-news-api`.\n\n### Manual — copy the folder\n\n```bash\ngit clone https://github.com/apitube/news-api-skills.git\n\n# Works for Cursor, Codex, VS Code / Copilot and opencode alike\nmkdir -p ~/.agents/skills && cp -r news-api-skills/skills/* ~/.agents/skills/\n\n# Claude Code\nmkdir -p ~/.claude/skills && cp -r news-api-skills/skills/* ~/.claude/skills/\n```\n\n`~/.agents/skills/` (and `.agents/skills/` inside a repo) is the shared location Cursor,\nCodex, VS Code, GitHub Copilot and opencode all read, so one copy covers them at once.\n\n| Agent | Personal | Project |\n|---|---|---|\n| Claude Code | `~/.claude/skills/` | `.claude/skills/` |\n| Cursor | `~/.agents/skills/`, `~/.cursor/skills/` | `.agents/skills/`, `.cursor/skills/` |\n| Codex | `~/.agents/skills/` | `.agents/skills/` |\n| VS Code / GitHub Copilot | `~/.agents/skills/`, `~/.copilot/skills/` | `.agents/skills/`, `.github/skills/` |\n| opencode | `~/.agents/skills/`, `~/.config/opencode/skills/` | `.agents/skills/`, `.opencode/skills/` |\n\nCursor, Codex, VS Code and opencode also read the Claude directories for compatibility.\n\n## Provide the API key\n\nThe skill embeds no key. Export it in the environment your agent runs in:\n\n```bash\nexport APITUBE_API_KEY=\"your_key\"\n```\n\nThen pass it as `Authorization: Bearer $APITUBE_API_KEY`, `X-API-Key: $APITUBE_API_KEY`, or\n`api_key=` in the query string. Test keys prefixed `api_test_` return masked bodies and do not\nconsume quota — use one while wiring things up.\n\n## Without installing anything\n\nAPITube also serves its skills over HTTP, so an agent can discover them on its own:\n\n- Index: https://docs.apitube.io/.well-known/agent-skills/index.json\n- MCP server card: https://docs.apitube.io/.well-known/mcp/server-card.json\n\nThere is also a hosted MCP server at `https://mcp.apitube.io/` if you would rather give the\nagent tools than instructions — see\nhttps://docs.apitube.io/platform/news-api/ai/mcp-server.\n\n## Links\n\n- Website — https://apitube.io\n- Documentation — https://docs.apitube.io\n- Pricing — https://apitube.io/pricing\n- API reference — https://api-reference.apitube.io\n- SDKs and migration kits — https://github.com/apitube\n- Contact — https://apitube.io/contact\n\n## Contributing\n\nFound a parameter that behaves differently from what the skill says? Open an issue with the\nrequest you ran and the response you got. Corrections to documented behaviour are the most\nuseful contribution here — this file is read by agents that will act on it.\n\n## License\n\nMIT — see [LICENSE](LICENSE).\n",
+  "readmeHtml": "<h1>APITube News API — skill for AI coding agents</h1>\n<p><a href=\"https://skills.sh/b/apitube/news-api-skills\" target=\"_blank\" rel=\"noreferrer\">![skills.sh</a>](https://skills.sh/apitube/news-api-skills)</p>\n<p>The official <code>SKILL.md</code> for the <a href=\"https://apitube.io\" target=\"_blank\" rel=\"noreferrer\">APITube</a> News API. It teaches a coding</p>\n<p>agent how to authenticate, search worldwide news, filter by entity, sentiment, source and</p>\n<p>date, and read the JSON response — without guessing parameter names.</p>\n<p><code>SKILL.md</code> is an open format, so this works in Claude Code, Cursor, Codex, GitHub Copilot,</p>\n<p>VS Code, Gemini CLI, Amp, Goose, opencode, Roo Code, Windsurf, JetBrains Junie and every other</p>\n<p>skills-compatible agent.</p>\n<p>You need an API key: <strong><a href=\"https://apitube.io\" target=\"_blank\" rel=\"noreferrer\">get one at apitube.io</a></strong> — the free tier is 100</p>\n<p>requests/day and does not require a card.</p>\n<h2>The skill</h2>\n<p>[<code>apitube-news-api</code>](skills/apitube-news-api/SKILL.md) — authentication, endpoints, the</p>\n<p><code>/news/everything</code> filters, plain-language <code>prompt</code> queries, the response shape, pagination,</p>\n<p>rate limits and error codes.</p>\n<p>Every parameter, field name, limit and error code in it was executed against the live API at</p>\n<p><code>api.apitube.io</code> before being written down.</p>\n<h2>Install</h2>\n<h3>Any agent</h3>\n<pre><code>\nnpx skills add apitube/news-api-skills --skill apitube-news-api --agent claude-code\n\n</code></pre>\n<p>This installs into the <strong>current project</strong>, not your home directory: the file lands in</p>\n<p><code>./.claude/skills/apitube-news-api/SKILL.md</code> and a <code>skills-lock.json</code> is written alongside it,</p>\n<p>pinning the source repo and a content hash. Run it from your project root, and commit the lock</p>\n<p>file if you want the whole team on the same revision.</p>\n<p><code>--agent</code> takes your agent's slug — the <a href=\"https://skills.sh\" target=\"_blank\" rel=\"noreferrer\">skills.sh</a> registry covers Claude</p>\n<p>Code, Cursor, Codex, GitHub Copilot, VS Code, Gemini, Windsurf, opencode, Amp, Goose, Roo,</p>\n<p>Cline, Kiro, Trae, Zed and others; run <code>npx skills add --help</code> for the current list.</p>\n<h3>Claude Code — as a plugin marketplace</h3>\n<pre><code>\n/plugin marketplace add apitube/news-api-skills\n\n/plugin install news-api-skills@apitube-news-api\n\n</code></pre>\n<p>The first command registers the marketplace, the second installs the plugin at user scope.</p>\n<p>Remove them with <code>/plugin uninstall news-api-skills@apitube-news-api</code> and</p>\n<p><code>/plugin marketplace remove apitube-news-api</code>.</p>\n<h3>Manual — copy the folder</h3>\n<pre><code>\ngit clone https://github.com/apitube/news-api-skills.git\n\n\n\n# Works for Cursor, Codex, VS Code / Copilot and opencode alike\n\nmkdir -p ~/.agents/skills &amp;&amp; cp -r news-api-skills/skills/* ~/.agents/skills/\n\n\n\n# Claude Code\n\nmkdir -p ~/.claude/skills &amp;&amp; cp -r news-api-skills/skills/* ~/.claude/skills/\n\n</code></pre>\n<p><code>~/.agents/skills/</code> (and <code>.agents/skills/</code> inside a repo) is the shared location Cursor,</p>\n<p>Codex, VS Code, GitHub Copilot and opencode all read, so one copy covers them at once.</p>\n<p>| Agent | Personal | Project |</p>\n<p>|---|---|---|</p>\n<p>| Claude Code | <code>~/.claude/skills/</code> | <code>.claude/skills/</code> |</p>\n<p>| Cursor | <code>~/.agents/skills/</code>, <code>~/.cursor/skills/</code> | <code>.agents/skills/</code>, <code>.cursor/skills/</code> |</p>\n<p>| Codex | <code>~/.agents/skills/</code> | <code>.agents/skills/</code> |</p>\n<p>| VS Code / GitHub Copilot | <code>~/.agents/skills/</code>, <code>~/.copilot/skills/</code> | <code>.agents/skills/</code>, <code>.github/skills/</code> |</p>\n<p>| opencode | <code>~/.agents/skills/</code>, <code>~/.config/opencode/skills/</code> | <code>.agents/skills/</code>, <code>.opencode/skills/</code> |</p>\n<p>Cursor, Codex, VS Code and opencode also read the Claude directories for compatibility.</p>\n<h2>Provide the API key</h2>\n<p>The skill embeds no key. Export it in the environment your agent runs in:</p>\n<pre><code>\nexport APITUBE_API_KEY=\"your_key\"\n\n</code></pre>\n<p>Then pass it as <code>Authorization: Bearer $APITUBE_API_KEY</code>, <code>X-API-Key: $APITUBE_API_KEY</code>, or</p>\n<p><code>api_key=</code> in the query string. Test keys prefixed <code>api_test_</code> return masked bodies and do not</p>\n<p>consume quota — use one while wiring things up.</p>\n<h2>Without installing anything</h2>\n<p>APITube also serves its skills over HTTP, so an agent can discover them on its own:</p>\n<ul>\n<li>Index: https://docs.apitube.io/.well-known/agent-skills/index.json</li>\n<li>MCP server card: https://docs.apitube.io/.well-known/mcp/server-card.json</li>\n</ul>\n<p>There is also a hosted MCP server at <code>https://mcp.apitube.io/</code> if you would rather give the</p>\n<p>agent tools than instructions — see</p>\n<p>https://docs.apitube.io/platform/news-api/ai/mcp-server.</p>\n<h2>Links</h2>\n<ul>\n<li>Website — https://apitube.io</li>\n<li>Documentation — https://docs.apitube.io</li>\n<li>Pricing — https://apitube.io/pricing</li>\n<li>API reference — https://api-reference.apitube.io</li>\n<li>SDKs and migration kits — https://github.com/apitube</li>\n<li>Contact — https://apitube.io/contact</li>\n</ul>\n<h2>Contributing</h2>\n<p>Found a parameter that behaves differently from what the skill says? Open an issue with the</p>\n<p>request you ran and the response you got. Corrections to documented behaviour are the most</p>\n<p>useful contribution here — this file is read by agents that will act on it.</p>\n<h2>License</h2>\n<p>MIT — see [LICENSE](LICENSE).</p>",
+  "skillMd": "",
+  "updatedAt": "2026-08-17T19:03:28Z",
+  "author": {
+    "login": "apitube",
+    "name": "APITube - News API",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/115082322?v=4",
+    "profileUrl": "https://github.com/apitube",
+    "location": "United States of America"
+  },
+  "location": {
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
+  },
+  "related": [
+    {
+      "slug": "obra-brainstorming",
+      "displayName": "obra/brainstorming",
+      "stars": 276600,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mattpocock-skills",
+      "displayName": "mattpocock/skills",
+      "stars": 233584,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
+      "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "stars": 120164,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 91597,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "lum1104-understand-anything",
+      "displayName": "Lum1104/understand-anything",
+      "stars": 80207,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "leonxlnx-taste-skill",
+      "displayName": "Leonxlnx/taste-skill",
+      "stars": 79629,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "panniantong-agent-reach",
+      "displayName": "Panniantong/Agent-Reach",
+      "stars": 74433,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "santifer-career-ops",
+      "displayName": "santifer/career-ops",
+      "stars": 67931,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
+  }
+}

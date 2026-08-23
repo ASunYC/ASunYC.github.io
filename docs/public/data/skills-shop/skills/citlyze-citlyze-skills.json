@@ -1,0 +1,89 @@
+{
+  "id": "skill:citlyze-citlyze-skills",
+  "slug": "citlyze-citlyze-skills",
+  "name": "citlyze-skills",
+  "displayName": "Citlyze/citlyze-skills",
+  "description": "AI search visibility skills from the Citlyze team: window-over-window visibility reports, citation gap analysis, prompt audits, and action plans via the Citlyze MCP server, plus a standalone AEO page audit that grades any URL without an account",
+  "stars": 0,
+  "category": "Community Skills",
+  "source": "voltagent",
+  "url": "https://github.com/citlyze/citlyze-skills",
+  "githubRepo": "citlyze/citlyze-skills",
+  "readme": "# Citlyze Agent Skills\n\nAgent skills for [Citlyze](https://www.citlyze.com), the AI search visibility platform. These skills teach AI coding agents (Claude Code, Codex, Cursor, Gemini CLI, VS Code, and any tool that reads the [Agent Skills](https://agentskills.io) `SKILL.md` standard) how to analyze brand visibility in ChatGPT, Claude, Perplexity, Gemini, and Google AI Overviews - and how to audit pages for AI search readiness.\n\nOne format, every tool: the skills follow the open SKILL.md standard, so the same files work across all supporting agents. No per-tool versions needed.\n\n## Skills\n\n| Skill | What it does | Needs Citlyze? |\n| --- | --- | --- |\n| [aeo-page-audit](skills/aeo-page-audit/SKILL.md) | Grade any page /100 for AI crawlability and answer extractability | **No** - works standalone |\n| [citlyze-visibility-report](skills/citlyze-visibility-report/SKILL.md) | Window-over-window AI visibility report with per-engine deltas and competitor standings | Yes (MCP) |\n| [citlyze-citation-gap](skills/citlyze-citation-gap/SKILL.md) | Classify cited domains by channel and content type, build an outreach/content target list | Yes (MCP) |\n| [citlyze-prompt-audit](skills/citlyze-prompt-audit/SKILL.md) | Find underperforming tracked prompts and coverage gaps, suggest prompts to add | Yes (MCP) |\n| [citlyze-action-plan](skills/citlyze-action-plan/SKILL.md) | Turn recommendations into a sequenced two-week action plan with an impact/effort matrix | Yes (MCP) |\n\n## Install\n\nWith the [skills CLI](https://skills.sh) (works for Claude Code, Codex, Cursor, and more):\n\n```bash\nnpx skills add Citlyze/citlyze-skills\n```\n\nOr manually: clone this repo and copy the folders under `skills/` into your agent's skills directory (for Claude Code, `~/.claude/skills/` globally or `.claude/skills/` per project; see [agentskills.io](https://agentskills.io) for other tools).\n\n## Connect Citlyze (for the MCP-based skills)\n\nThe four `citlyze-*` skills read live workspace data through the Citlyze MCP server:\n\n- Endpoint: `https://app.citlyze.com/api/mcp` (streamable HTTP, read-only)\n- Auth: workspace API key as a bearer token, created at [app.citlyze.com/workspace-settings](https://app.citlyze.com/workspace-settings)\n- Setup guides for every client: [citlyze.com/docs/mcp/overview](https://www.citlyze.com/docs/mcp/overview)\n- Client configs and the MCP artifacts live in [Citlyze/citlyze-mcp](https://github.com/citlyze/citlyze-mcp)\n\n`aeo-page-audit` needs no account: it uses your agent's own fetch tools and the same public checklist as the free [AEO grader](https://www.citlyze.com/free-tools/aeo-grader).\n\n## About Citlyze\n\n[Citlyze](https://www.citlyze.com) tracks how brands show up in AI search: visibility scores per engine, tracked prompts, citations, competitor comparisons, optimization recommendations, and AI crawler analytics. These skills are MIT licensed - use them, fork them, adapt them.\n",
+  "readmeHtml": "<h1>Citlyze Agent Skills</h1>\n<p>Agent skills for <a href=\"https://www.citlyze.com\" target=\"_blank\" rel=\"noreferrer\">Citlyze</a>, the AI search visibility platform. These skills teach AI coding agents (Claude Code, Codex, Cursor, Gemini CLI, VS Code, and any tool that reads the <a href=\"https://agentskills.io\" target=\"_blank\" rel=\"noreferrer\">Agent Skills</a> <code>SKILL.md</code> standard) how to analyze brand visibility in ChatGPT, Claude, Perplexity, Gemini, and Google AI Overviews - and how to audit pages for AI search readiness.</p>\n<p>One format, every tool: the skills follow the open SKILL.md standard, so the same files work across all supporting agents. No per-tool versions needed.</p>\n<h2>Skills</h2>\n<p>| Skill | What it does | Needs Citlyze? |</p>\n<p>| --- | --- | --- |</p>\n<p>| [aeo-page-audit](skills/aeo-page-audit/SKILL.md) | Grade any page /100 for AI crawlability and answer extractability | <strong>No</strong> - works standalone |</p>\n<p>| [citlyze-visibility-report](skills/citlyze-visibility-report/SKILL.md) | Window-over-window AI visibility report with per-engine deltas and competitor standings | Yes (MCP) |</p>\n<p>| [citlyze-citation-gap](skills/citlyze-citation-gap/SKILL.md) | Classify cited domains by channel and content type, build an outreach/content target list | Yes (MCP) |</p>\n<p>| [citlyze-prompt-audit](skills/citlyze-prompt-audit/SKILL.md) | Find underperforming tracked prompts and coverage gaps, suggest prompts to add | Yes (MCP) |</p>\n<p>| [citlyze-action-plan](skills/citlyze-action-plan/SKILL.md) | Turn recommendations into a sequenced two-week action plan with an impact/effort matrix | Yes (MCP) |</p>\n<h2>Install</h2>\n<p>With the <a href=\"https://skills.sh\" target=\"_blank\" rel=\"noreferrer\">skills CLI</a> (works for Claude Code, Codex, Cursor, and more):</p>\n<pre><code>\nnpx skills add Citlyze/citlyze-skills\n\n</code></pre>\n<p>Or manually: clone this repo and copy the folders under <code>skills/</code> into your agent's skills directory (for Claude Code, <code>~/.claude/skills/</code> globally or <code>.claude/skills/</code> per project; see <a href=\"https://agentskills.io\" target=\"_blank\" rel=\"noreferrer\">agentskills.io</a> for other tools).</p>\n<h2>Connect Citlyze (for the MCP-based skills)</h2>\n<p>The four <code>citlyze-*</code> skills read live workspace data through the Citlyze MCP server:</p>\n<ul>\n<li>Endpoint: <code>https://app.citlyze.com/api/mcp</code> (streamable HTTP, read-only)</li>\n<li>Auth: workspace API key as a bearer token, created at <a href=\"https://app.citlyze.com/workspace-settings\" target=\"_blank\" rel=\"noreferrer\">app.citlyze.com/workspace-settings</a></li>\n<li>Setup guides for every client: <a href=\"https://www.citlyze.com/docs/mcp/overview\" target=\"_blank\" rel=\"noreferrer\">citlyze.com/docs/mcp/overview</a></li>\n<li>Client configs and the MCP artifacts live in <a href=\"https://github.com/citlyze/citlyze-mcp\" target=\"_blank\" rel=\"noreferrer\">Citlyze/citlyze-mcp</a></li>\n</ul>\n<p><code>aeo-page-audit</code> needs no account: it uses your agent's own fetch tools and the same public checklist as the free <a href=\"https://www.citlyze.com/free-tools/aeo-grader\" target=\"_blank\" rel=\"noreferrer\">AEO grader</a>.</p>\n<h2>About Citlyze</h2>\n<p><a href=\"https://www.citlyze.com\" target=\"_blank\" rel=\"noreferrer\">Citlyze</a> tracks how brands show up in AI search: visibility scores per engine, tracked prompts, citations, competitor comparisons, optimization recommendations, and AI crawler analytics. These skills are MIT licensed - use them, fork them, adapt them.</p>",
+  "skillMd": "",
+  "updatedAt": "2026-08-12T02:29:32Z",
+  "author": {
+    "login": "Citlyze",
+    "name": "Citlyze",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/316013764?v=4",
+    "profileUrl": "https://github.com/Citlyze",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "obra-brainstorming",
+      "displayName": "obra/brainstorming",
+      "stars": 276600,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mattpocock-skills",
+      "displayName": "mattpocock/skills",
+      "stars": 233584,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
+      "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "stars": 120164,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 91597,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "lum1104-understand-anything",
+      "displayName": "Lum1104/understand-anything",
+      "stars": 80207,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "leonxlnx-taste-skill",
+      "displayName": "Leonxlnx/taste-skill",
+      "stars": 79629,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "panniantong-agent-reach",
+      "displayName": "Panniantong/Agent-Reach",
+      "stars": 74433,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "santifer-career-ops",
+      "displayName": "santifer/career-ops",
+      "stars": 67931,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-tokyo",
+    "label": "Global Skill Market / Tokyo / Community Skills",
+    "lat": 35.6762,
+    "lon": 139.6503,
+    "source": "virtual_market"
+  }
+}
