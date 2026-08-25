@@ -1,0 +1,89 @@
+{
+  "id": "skill:yanniskiefer-dark-psychology-skills",
+  "slug": "yanniskiefer-dark-psychology-skills",
+  "name": "dark-psychology-skills",
+  "displayName": "YannisKiefer/dark-psychology-skills",
+  "description": "13 sales and negotiation skills for agents distilled from 36 books (CIA psyop manuals, FBI behavioral research, propaganda science, persuasion classics); every tactic passes an honest-influence filter: it must still work when fully disclosed",
+  "stars": 1,
+  "category": "Community Skills",
+  "source": "voltagent",
+  "url": "https://github.com/YannisKiefer/dark-psychology-skills",
+  "githubRepo": "YannisKiefer/dark-psychology-skills",
+  "readme": "<div align=\"center\">\n\n<img src=\"assets/banner.svg\" alt=\"dark-psychology-skills\" width=\"100%\"/>\n\n[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)\n![Skills](https://img.shields.io/badge/skills-13-blue)\n[![Format](https://img.shields.io/badge/format-SKILL.md-green)](https://github.com/anthropics/skills)\n\n**13 skills that teach an AI agent how to sell, negotiate, and close.**\n\nDistilled from 36 books read cover to cover.\nCIA manuals. FBI behavior work. Propaganda science. The persuasion classics.\n\n</div>\n\n---\n\n## The problem\n\nAgents can code and browse.\nAsk one to handle a skeptical buyer, and it sends a corporate email nobody answers.\n\nNobody trained it. These books did the training for humans for 100 years.\nWe turned that training into files an agent can load.\n\n## The filter\n\nEvery tactic had to pass one test:\n\n> **Does it still work after you explain it out loud?**\n\nTricks die when seen. Honest moves keep working.\nSo manipulation shows up here only as defense material.\n\n## The skills\n\n| Skill | Use it for |\n|---|---|\n| [deal-router](skills/deal-router/) | Which skill fits the message you just got |\n| [trust-from-zero](skills/trust-from-zero/) | Get believed when nobody knows you |\n| [frame-control](skills/frame-control/) | Stop needing the deal |\n| [discovery-power](skills/discovery-power/) | Questions that make people open up |\n| [price-anchor](skills/price-anchor/) | Set the first number. Hold it. |\n| [objection-slayer](skills/objection-slayer/) | Answers to every \"no\" |\n| [risk-reversal](skills/risk-reversal/) | You carry the risk, deal closes itself |\n| [cold-outreach](skills/cold-outreach/) | First messages that get replies |\n| [reading-people](skills/reading-people/) | Spot real intent in chat |\n| [client-archetypes](skills/client-archetypes/) | Six buyer types, six tones |\n| [walk-away-power](skills/walk-away-power/) | Leave in a way that raises your value |\n| [operator-mindset](skills/operator-mindset/) | Stay calm before every send |\n| [dark-tactics-defense](skills/dark-tactics-defense/) | See tricks aimed at you |\n\nStart with [deal-router](skills/deal-router/). It points to the rest.\n\n## Install\n\nWorks with Claude Code, opencode, Cursor, Codex CLI, or any agent that reads markdown.\n\n```bash\nnpx skills add YannisKiefer/dark-psychology-skills\n```\n\nOr the manual way:\n\n```bash\ngit clone https://github.com/YannisKiefer/dark-psychology-skills.git\ncp -r dark-psychology-skills/skills/* ~/.claude/skills/\n```\n\nOr paste any SKILL.md into your system prompt.\n\nEach skill follows the [agent skills format](https://github.com/anthropics/skills):\nYAML frontmatter with `name` and `description`, body in plain English.\n\n## Example\n\nSee [EXAMPLES.md](EXAMPLES.md). A buyer goes from\n\"is this another scam?\" to \"deal\" without one argument about price.\n\n## Sources\n\n[SOURCES.md](SOURCES.md) lists all 36 books and what each one gave us.\n\n## Rules baked into every skill\n\n1. Proof before money.\n2. Real numbers beat adjectives.\n3. Urgency must be true, or silent.\n4. Never make anyone wrong.\n5. Walk warm.\n\n## License\n\nMIT. Fork it, ship it, sell products with it.\n\n<div align=\"center\">\n<sub>Built by <a href=\"https://github.com/YannisKiefer\">Yannis Kiefer</a></sub>\n</div>\n",
+  "readmeHtml": "<p>&lt;div align=\"center\"&gt;</p>\n<p>&lt;img src=\"assets/banner.svg\" alt=\"dark-psychology-skills\" width=\"100%\"/&gt;</p>\n<p><a href=\"https://img.shields.io/badge/License-MIT-yellow.svg\" target=\"_blank\" rel=\"noreferrer\">![License: MIT</a>](LICENSE)</p>\n<p>!<a href=\"https://img.shields.io/badge/skills-13-blue\" target=\"_blank\" rel=\"noreferrer\">Skills</a></p>\n<p><a href=\"https://img.shields.io/badge/format-SKILL.md-green\" target=\"_blank\" rel=\"noreferrer\">![Format</a>](https://github.com/anthropics/skills)</p>\n<p><strong>13 skills that teach an AI agent how to sell, negotiate, and close.</strong></p>\n<p>Distilled from 36 books read cover to cover.</p>\n<p>CIA manuals. FBI behavior work. Propaganda science. The persuasion classics.</p>\n<p>&lt;/div&gt;</p>\n<p>---</p>\n<h2>The problem</h2>\n<p>Agents can code and browse.</p>\n<p>Ask one to handle a skeptical buyer, and it sends a corporate email nobody answers.</p>\n<p>Nobody trained it. These books did the training for humans for 100 years.</p>\n<p>We turned that training into files an agent can load.</p>\n<h2>The filter</h2>\n<p>Every tactic had to pass one test:</p>\n<p>&gt; <strong>Does it still work after you explain it out loud?</strong></p>\n<p>Tricks die when seen. Honest moves keep working.</p>\n<p>So manipulation shows up here only as defense material.</p>\n<h2>The skills</h2>\n<p>| Skill | Use it for |</p>\n<p>|---|---|</p>\n<p>| [deal-router](skills/deal-router/) | Which skill fits the message you just got |</p>\n<p>| [trust-from-zero](skills/trust-from-zero/) | Get believed when nobody knows you |</p>\n<p>| [frame-control](skills/frame-control/) | Stop needing the deal |</p>\n<p>| [discovery-power](skills/discovery-power/) | Questions that make people open up |</p>\n<p>| [price-anchor](skills/price-anchor/) | Set the first number. Hold it. |</p>\n<p>| [objection-slayer](skills/objection-slayer/) | Answers to every \"no\" |</p>\n<p>| [risk-reversal](skills/risk-reversal/) | You carry the risk, deal closes itself |</p>\n<p>| [cold-outreach](skills/cold-outreach/) | First messages that get replies |</p>\n<p>| [reading-people](skills/reading-people/) | Spot real intent in chat |</p>\n<p>| [client-archetypes](skills/client-archetypes/) | Six buyer types, six tones |</p>\n<p>| [walk-away-power](skills/walk-away-power/) | Leave in a way that raises your value |</p>\n<p>| [operator-mindset](skills/operator-mindset/) | Stay calm before every send |</p>\n<p>| [dark-tactics-defense](skills/dark-tactics-defense/) | See tricks aimed at you |</p>\n<p>Start with [deal-router](skills/deal-router/). It points to the rest.</p>\n<h2>Install</h2>\n<p>Works with Claude Code, opencode, Cursor, Codex CLI, or any agent that reads markdown.</p>\n<pre><code>\nnpx skills add YannisKiefer/dark-psychology-skills\n\n</code></pre>\n<p>Or the manual way:</p>\n<pre><code>\ngit clone https://github.com/YannisKiefer/dark-psychology-skills.git\n\ncp -r dark-psychology-skills/skills/* ~/.claude/skills/\n\n</code></pre>\n<p>Or paste any SKILL.md into your system prompt.</p>\n<p>Each skill follows the <a href=\"https://github.com/anthropics/skills\" target=\"_blank\" rel=\"noreferrer\">agent skills format</a>:</p>\n<p>YAML frontmatter with <code>name</code> and <code>description</code>, body in plain English.</p>\n<h2>Example</h2>\n<p>See [EXAMPLES.md](EXAMPLES.md). A buyer goes from</p>\n<p>\"is this another scam?\" to \"deal\" without one argument about price.</p>\n<h2>Sources</h2>\n<p>[SOURCES.md](SOURCES.md) lists all 36 books and what each one gave us.</p>\n<h2>Rules baked into every skill</h2>\n<p>1. Proof before money.</p>\n<p>2. Real numbers beat adjectives.</p>\n<p>3. Urgency must be true, or silent.</p>\n<p>4. Never make anyone wrong.</p>\n<p>5. Walk warm.</p>\n<h2>License</h2>\n<p>MIT. Fork it, ship it, sell products with it.</p>\n<p>&lt;div align=\"center\"&gt;</p>\n<p>&lt;sub&gt;Built by &lt;a href=\"https://github.com/YannisKiefer\"&gt;Yannis Kiefer&lt;/a&gt;&lt;/sub&gt;</p>\n<p>&lt;/div&gt;</p>",
+  "skillMd": "",
+  "updatedAt": "2026-08-23T14:42:03Z",
+  "author": {
+    "login": "YannisKiefer",
+    "name": "YannisKiefer",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/247807368?v=4",
+    "profileUrl": "https://github.com/YannisKiefer",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "obra-brainstorming",
+      "displayName": "obra/brainstorming",
+      "stars": 277480,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mattpocock-skills",
+      "displayName": "mattpocock/skills",
+      "stars": 236522,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
+      "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "stars": 120869,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 91815,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "leonxlnx-taste-skill",
+      "displayName": "Leonxlnx/taste-skill",
+      "stars": 80467,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "lum1104-understand-anything",
+      "displayName": "Lum1104/understand-anything",
+      "stars": 80467,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "panniantong-agent-reach",
+      "displayName": "Panniantong/Agent-Reach",
+      "stars": 75226,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "santifer-career-ops",
+      "displayName": "santifer/career-ops",
+      "stars": 68366,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-singapore",
+    "label": "Global Skill Market / Singapore / Community Skills",
+    "lat": 1.3521,
+    "lon": 103.8198,
+    "source": "virtual_market"
+  }
+}
