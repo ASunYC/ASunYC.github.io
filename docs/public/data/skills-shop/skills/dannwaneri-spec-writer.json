@@ -1,0 +1,89 @@
+{
+  "id": "skill:dannwaneri-spec-writer",
+  "slug": "dannwaneri-spec-writer",
+  "name": "spec-writer",
+  "displayName": "dannwaneri/spec-writer",
+  "description": "Turns vague requests into spec, plan, and tasks",
+  "stars": 25,
+  "category": "Community Skills",
+  "source": "voltagent",
+  "url": "https://github.com/dannwaneri/spec-writer",
+  "githubRepo": "dannwaneri/spec-writer",
+  "readme": "# dannwaneri/spec-writer\n\nTurns vague requests into spec, plan, and tasks",
+  "readmeHtml": "<h1>dannwaneri/spec-writer</h1>\n<p>Turns vague requests into spec, plan, and tasks</p>",
+  "skillMd": "---\nname: spec-writer\ndescription: Takes a vague feature request and generates a structured spec, technical plan, and task breakdown ready for any coding agent. Use whenever you're about to build a feature and want to reduce ambiguity before writing code. Invoke with /spec-writer followed by your feature description.\n---\n\n# spec-writer\n\nYou turn vague feature requests into structured specs, technical plans, and task breakdowns that any coding agent can implement without guessing.\n\nYou generate first, flag assumptions inline. Every decision you make that the user didn't specify gets marked with `[ASSUMPTION: ...]`. The user corrects what's wrong. This is faster than Q&A and surfaces decisions that would otherwise be invisible.\n\n---\n\n## How to invoke\n\n```\n/spec-writer [feature description]\n```\n\nExamples:\n- `/spec-writer Add a way for users to reset their password`\n- `/spec-writer Build an admin dashboard that shows daily signups`\n- `/spec-writer Let users export their data as CSV`\n\nIf the user pastes a ticket, a PRD fragment, or a rough description — treat it as the feature request and proceed.\n\nThe output format is compatible with [GitHub Spec Kit](https://github.com/github/spec-kit) and [OpenSpec](https://github.com/Fission-AI/OpenSpec). If you're using either framework, save the spec output to your `.specify/` or `openspec/changes/` directory and continue from there.\n\n---\n\n## Output format\n\nProduce three sections in order. Do not skip any section. Do not merge them.\n\n---\n\n### SECTION 1: SPEC\n\n**One-line purpose**\nWhat this feature does, in one sentence, from the user's perspective.\n\n**Users and use cases**\nWho uses this feature and what they're trying to accomplish. List each use case as: `As a [user type], I want to [action] so that [outcome].`\n\n**Requirements**\nWhat must be true for this feature to work. Numbered list. Functional only — no implementation details.\n\n**Edge cases**\nWhat can go wrong or behave unexpectedly. For each: describe the situation and the expected behavior.\n\n**Acceptance criteria**\nUse Given/When/Then format. One criterion per scenario. Cover the happy path first, then edge cases.\n\n```\nGiven [starting condition]\nWhen [user action or system event]\nThen [expected outcome]\n```\n\nMark every assumption with `[ASSUMPTION: ...]` inline. Examples:\n- `[ASSUMPTION: only authenticated users can trigger this]`\n- `[ASSUMPTION: email is the unique identifier]`\n- `[ASSUMPTION: the operation should be idempotent]`\n\n---\n\n### SECTION 2: PLAN\n\n**Stack and architecture**\nState what you know about the user's stack from context. If unknown, write `[ASSUMPTION: standard web stack — adjust to your framework]` and proceed with generic patterns.\n\n**Data model changes**\nWhat needs to be created, modified, or deleted in the data layer. Be specific about fields and types.\n\n**API contracts**\nEndpoints or functions needed. For each: method, path or name, inputs, outputs, error states.\n\n**Patterns to follow**\nReference existing patterns in the codebase if mentioned. If not mentioned, flag: `[ASSUMPTION: following standard CRUD pattern — point me to your auth/data layer if you want me to match your conventions]`\n\n**Testing strategy**\nWhat needs unit tests, integration tests, and end-to-end tests. Specify coverage expectations for critical paths.\n\n**Security and performance constraints**\nAuthentication requirements, authorization rules, rate limits, response time targets. Mark each unknown as `[ASSUMPTION: ...]`.\n\n---\n\n### SECTION 3: TASKS\n\nBreak the plan into ordered, self-contained tasks. Each task must:\n- Be completable in a single agent session\n- Produce a verifiable, testable change\n- Contain all context needed — no assumptions, no \"see previous task\"\n- Have its own mini acceptance criteria\n\nFormat each task as:\n\n```\n## Task N: [Title]\n\n**What to build:** [specific description]\n**Files likely affected:** [list]\n**Acceptance criteria:** [1-3 specific, verifiable outcomes]\n**Dependencies:** [Task N if blocked, or \"none\"]\n```\n\nAfter the task list, add a **Review checkpoint** — one sentence telling the developer what to verify manually before handing the full task list to an agent.\n\n---\n\n## Assumption handling\n\nAfter all three sections, add an **Assumptions summary** — a numbered list of every `[ASSUMPTION: ...]` you marked, in order of importance. The user should correct the high-impact ones before handing this to a coding agent.\n\nFormat:\n```\n## Assumptions to review\n\n1. [ASSUMPTION text] — Impact: HIGH / MEDIUM / LOW\n   Correct this if: [when it matters]\n```\n\n---\n\n## Quality rules\n\n- The spec must be technology-agnostic. No framework names, no library choices, no implementation details.\n- The plan must be concrete. No \"consider using X\" — make a decision and flag it as an assumption if uncertain.\n- Every task must be independently deployable or testable. If a task can't be verified on its own, split it.\n- Acceptance criteria must be binary. \"Works correctly\" is not a criterion. \"Returns 401 when unauthenticated\" is.\n- Never write a task that says \"implement the feature.\" That's the whole spec. Tasks are the pieces.\n\n---\n\n## Example\n\n**Input:**\n`/spec-writer Add CLI capture for Claude Code sessions stored in ~/.claude/projects/`\n\n**Output (abbreviated):**\n\n### SPEC\n\n**One-line purpose**\nDevelopers can capture Claude Code session logs from their local filesystem into Foundation before they are deleted after 30 days.\n\n**Users and use cases**\n- As a developer using Claude Code daily, I want my coding sessions captured automatically so that architectural decisions and debugging patterns don't disappear after 30 days.\n- As a Foundation user, I want CLI sessions and browser extension captures in the same knowledge base so that I have one place to query across all my AI interactions.\n\n**Acceptance criteria**\n```\nGiven a developer with Claude Code sessions in ~/.claude/projects/\nWhen they run the Foundation CLI capture command\nThen a list of uncaptured sessions is displayed, sorted by most recent first\n\nGiven a session already in Foundation\nWhen the developer runs capture again\nThen that session does not appear in the review list\n\nGiven a malformed .jsonl file\nWhen the capture command processes it\nThen an error is logged for that file and processing continues on remaining sessions\n```\n\n### PLAN\n\n**Stack and architecture**\n```\nCLI capture runs locally — it needs to read the local filesystem, which\nCloudflare Workers cannot do. [ASSUMPTION: CLI capture is a local Node.js\nor Bun script that calls the Foundation API to insert sessions, rather\nthan a Worker itself]\n```\n\n**API contracts**\n- `POST /api/sessions/import` — accepts parsed session JSON, returns session ID\n- Returns 409 if session already exists\n- Triggers evaluator pipeline after successful insert\n\n...\n\n### TASKS\n\n## Task 1: .jsonl parser\n\n**What to build:** A parser that reads a Claude Code `.jsonl` session file and outputs Foundation's internal message format.\n**Files likely affected:** `cli/src/parsers/claudeCode.js` (create)\n**Acceptance criteria:**\n1. Parses a valid `.jsonl` file into the correct message format\n2. Handles malformed lines without crashing — logs and skips\n3. Returns empty array for empty file\n**Dependencies:** none\n\n...\n\n## Assumptions to review\n\n1. CLI capture is a local script calling the Foundation API, not a Worker — Impact: HIGH\n   Correct this if: you want a purely serverless approach\n\n2. Manual curation before capture, not automatic bulk import — Impact: HIGH\n   Correct this if: you want automatic background capture\n\n3. Session ID from .jsonl filename is the deduplication key — Impact: MEDIUM\n   Correct this if: session IDs are stored differently in your schema\n\n4. No sensitive data scrubbing in v1 — Impact: MEDIUM\n   Correct this if: your sessions contain credentials or keys\n2. Async generation for exports over 1,000 rows — Impact: HIGH\n   Correct this if: your order volumes are low and synchronous is fine\n3. REST API pattern — Impact: HIGH\n   Correct this if: you're using GraphQL, tRPC, or another pattern",
+  "updatedAt": "2026-03-18T09:56:16Z",
+  "author": {
+    "login": "dannwaneri",
+    "name": "daniel nwaneri",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/58055460?v=4",
+    "profileUrl": "https://github.com/dannwaneri",
+    "location": "Nigeria"
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "obra-brainstorming",
+      "displayName": "obra/brainstorming",
+      "stars": 278018,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mattpocock-skills",
+      "displayName": "mattpocock/skills",
+      "stars": 237833,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
+      "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "stars": 121297,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 91927,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "leonxlnx-taste-skill",
+      "displayName": "Leonxlnx/taste-skill",
+      "stars": 80968,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "lum1104-understand-anything",
+      "displayName": "Lum1104/understand-anything",
+      "stars": 80599,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "panniantong-agent-reach",
+      "displayName": "Panniantong/Agent-Reach",
+      "stars": 75580,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "santifer-career-ops",
+      "displayName": "santifer/career-ops",
+      "stars": 68656,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-paris",
+    "label": "Global Skill Market / Paris / Community Skills",
+    "lat": 48.8566,
+    "lon": 2.3522,
+    "source": "virtual_market"
+  }
+}
