@@ -4,7 +4,7 @@
   "name": "cloud/agent-platform-skill-registry",
   "displayName": "google/cloud/agent-platform-skill-registry",
   "description": "Interact with the Gemini Enterprise Agent Platform Skill Registry to create and search for available skills.",
-  "stars": 18926,
+  "stars": 18969,
   "category": "video-search-and-summarization",
   "source": "voltagent",
   "url": "https://github.com/google/skills/tree/main/skills/cloud/agent-platform-skill-registry",
@@ -66,21 +66,21 @@
     {
       "slug": "voltagent-awesome-design-md",
       "displayName": "voltagent/awesome-design-md",
-      "stars": 111098,
+      "stars": 111242,
       "relation": "shared_tag",
       "evidence": "location:united-states"
     },
     {
       "slug": "voltagent-awesome-openclaw-skills",
       "displayName": "voltagent/awesome-openclaw-skills",
-      "stars": 52224,
+      "stars": 52241,
       "relation": "shared_tag",
       "evidence": "location:united-states"
     },
     {
-      "slug": "k-dense-ai-claude-scientific-skills",
-      "displayName": "K-Dense-AI/claude-scientific-skills",
-      "stars": 36650,
+      "slug": "k-dense-ai-scientific-agent-skills",
+      "displayName": "K-Dense-AI/scientific-agent-skills",
+      "stars": 37858,
       "relation": "shared_tag",
       "evidence": "location:united-states"
     }
