@@ -1,0 +1,89 @@
+{
+  "id": "skill:crawlbase-crawlbase-mcp",
+  "slug": "crawlbase-crawlbase-mcp",
+  "name": "crawlbase-mcp",
+  "displayName": "crawlbase/crawlbase-mcp",
+  "description": "The MCP server behind these skills (npm `@crawlbase/mcp`) with JS rendering, proxy rotation, and anti-bot protection",
+  "stars": 56,
+  "category": "Official Skills by",
+  "source": "voltagent",
+  "url": "https://github.com/crawlbase/crawlbase-mcp",
+  "githubRepo": "crawlbase/crawlbase-mcp",
+  "readme": "# What is Crawlbase MCP?\n\nCrawlbase MCP is a Model Context Protocol (MCP) server that bridges AI agents and the live web. Instead of relying on outdated training data, your LLMs can now fetch fresh, structured, real-time content — powered by Crawlbase’s proven crawling infrastructure trusted by 70,000+ developers worldwide.\n\nIt handles the complexity of scraping for you:\n\n- JavaScript rendering for modern web apps\n- Proxy rotation & anti-bot evasion\n- Structured outputs (HTML, Markdown, screenshots)\n\n## How It Works\n\n- Get Free Crawlbase Tokens → Sign up at [Crawlbase ↗️](https://crawlbase.com/signup?utm_source=github&utm_medium=readme&utm_campaign=mcp_launch&utm_content=signup_link), get free Normal, and JavaScript tokens.\n- Set Up MCP Configuration → Configure the MCP server in your preferred client (Claude, Cursor, or Windsurf) by updating the MCP Servers settings.\n- Start Crawling → Use commands like **crawl**, **crawl_markdown**, or **crawl_screenshot** to bring live web data into your AI agent.\n\n## Setup & Integration\n\n### Claude Desktop\n\n1. Open Claude Desktop → Settings → Developer → Edit Config\n2. Add to `claude_desktop_config.json`:\n3. Replace `your_token_here` and `your_js_token_here` with the tokens from your dashboard.\n\n```json\n{\n  \"mcpServers\": {\n    \"crawlbase\": {\n      \"type\": \"stdio\",\n      \"command\": \"npx\",\n      \"args\": [\"@crawlbase/mcp@latest\"],\n      \"env\": {\n        \"CRAWLBASE_TOKEN\": \"your_token_here\",\n        \"CRAWLBASE_JS_TOKEN\": \"your_js_token_here\"\n      }\n    }\n  }\n}\n```\n\n### Claude Code\n\nAdd to your `claude.json` configuration:\n\n```json\n{\n  \"mcpServers\": {\n    \"crawlbase\": {\n      \"type\": \"stdio\",\n      \"command\": \"npx\",\n      \"args\": [\"@crawlbase/mcp@latest\"],\n      \"env\": {\n        \"CRAWLBASE_TOKEN\": \"your_token_here\",\n        \"CRAWLBASE_JS_TOKEN\": \"your_js_token_here\"\n      }\n    }\n  }\n}\n```\n\n### Cursor IDE\n\n1. Open Cursor IDE → File → Preferences → Cursor Settings → Tools and Integrations → Add Custom MCP\n2. Add to `mcp.json`:\n3. Replace `your_token_here` and `your_js_token_here` with the tokens from your dashboard.\n\n```json\n{\n  \"mcpServers\": {\n    \"crawlbase\": {\n      \"type\": \"stdio\",\n      \"command\": \"npx\",\n      \"args\": [\"@crawlbase/mcp@latest\"],\n      \"env\": {\n        \"CRAWLBASE_TOKEN\": \"your_token_here\",\n        \"CRAWLBASE_JS_TOKEN\": \"your_js_token_here\"\n      }\n    }\n  }\n}\n```\n\n### Windsurf IDE\n\n1. Open WindSurf IDE → File → Preferences → WindSurf Settings → General → MCP Servers → Manage MCPs → View raw config\n2. Add to `mcp_config.json`:\n3. Replace `your_token_here` and `your_js_token_here` with the tokens from your dashboard.\n\n```json\n{\n  \"mcpServers\": {\n    \"crawlbase\": {\n      \"type\": \"stdio\",\n      \"command\": \"npx\",\n      \"args\": [\"@crawlbase/mcp@latest\"],\n      \"env\": {\n        \"CRAWLBASE_TOKEN\": \"your_token_here\",\n        \"CRAWLBASE_JS_TOKEN\": \"your_js_token_here\"\n      }\n    }\n  }\n}\n```\n\n### HTTP Transport Mode\n\nFor scenarios where you need a shared MCP server accessible over HTTP (e.g., multi-user environments, custom integrations), you can run the server in HTTP mode:\n\n```bash\n# Clone and install\ngit clone https://github.com/crawlbase/crawlbase-mcp.git\ncd crawlbase-mcp\nnpm install\n\n# Start HTTP server with tokens (default port: 3000)\nCRAWLBASE_TOKEN=your_token CRAWLBASE_JS_TOKEN=your_js_token npm run start:http\n\n# Or with custom port\nCRAWLBASE_TOKEN=your_token CRAWLBASE_JS_TOKEN=your_js_token MCP_PORT=8080 npm run start:http\n```\n\nThe server exposes:\n\n- `POST /mcp` - MCP Streamable HTTP endpoint\n- `GET /health` - Health check endpoint\n\n#### Per-Request Token Authentication\n\nHTTP mode supports per-request tokens via headers, allowing multiple users to share a single server:\n\n```bash\ncurl -X POST http://localhost:3000/mcp \\\n  -H \"Content-Type: application/json\" \\\n  -H \"Accept: application/json, text/event-stream\" \\\n  -H \"X-Crawlbase-Token: your_token\" \\\n  -H \"X-Crawlbase-JS-Token: your_js_token\" \\\n  -d '{\"jsonrpc\": \"2.0\", \"method\": \"tools/list\", \"id\": 1}'\n```\n\n**Headers:**\n\n- `X-Crawlbase-Token` - Normal token for HTML requests\n- `X-Crawlbase-JS-Token` - JavaScript token for JS-rendered pages/screenshots\n\nHeaders override environment variables when provided, enabling multi-tenant deployments.\n\n🔑 Get your free tokens at [Crawlbase ↗️](https://crawlbase.com/signup?utm_source=github&utm_medium=readme&utm_campaign=mcp_launch&utm_content=signup_link).\n\n## Usage\n\nOnce configured, use these commands inside Claude, Cursor, or Windsurf:\n\n- crawl → Fetch raw HTML\n- crawl_markdown → Extract clean Markdown\n- crawl_screenshot → Capture screenshots\n\nExample prompts:\n\n- “Crawl Hacker News and return top stories in markdown.”\n- “Take a screenshot of TechCrunch homepage.”\n- “Fetch Tesla investor relations page as HTML.”\n\n### Async Crawling with Cloud Storage\n\nFor larger jobs, Crawlbase MCP can push crawl results to [Crawlbase Cloud Storage](https://crawlbase.com/docs/cloud-storage/) instead of returning them immediately. Your AI agent can then come back later to read, list, or clean up those pages — useful when crawling many URLs at once, revisiting a dataset across sessions, or keeping heavy HTML out of the chat until you actually need it.\n\nExample prompts:\n\n- “Crawl these 50 product pages and save them to my Crawlbase storage. Once they're saved, summarize each one.”\n- “Save the Hacker News front page to storage so I can analyze it later.”\n- “How many pages do I have stored in Crawlbase right now? Show me the most recent 20.”\n- “Pull back everything I saved yesterday from my Crawlbase storage and give me a report.”\n- “Delete all the pages I have in Crawlbase storage — I'm done with that project.”\n\n## Use Cases\n\n- Market research → Pull live data from competitors, news, and reports\n- E-commerce monitoring → Track products, reviews, and prices in real time\n- News & finance feeds → Keep AI agents up-to-date with live events\n- Autonomous AI agents → Give them vision to act on fresh web data\n\n## Resources & Next Steps\n\nLooking to supercharge your AI agents with live web data? Get started here:\n\n- [✍️ Learn More – See how MCP powers AI agents with real-time web data ↗️](https://crawlbase.com/blog/introducing-crawlbase-mcp-feed-real-time-web-data-to-the-llms/?utm_source=github&utm_medium=readme&utm_campaign=mcp_launch&utm_content=learn_more)\n- [🌐 Crawlbase Website – Get free tokens & start crawling today ↗️](https://crawlbase.com/?utm_source=github&utm_medium=readme&utm_campaign=mcp_launch&utm_content=website_link)\n\n---\n\n[![MSeeP.ai Security Assessment Badge](https://mseep.net/pr/crawlbase-crawlbase-mcp-badge.png)](https://mseep.ai/app/crawlbase-crawlbase-mcp)\n\nCopyright 2026 Crawlbase\n",
+  "readmeHtml": "<h1>What is Crawlbase MCP?</h1>\n<p>Crawlbase MCP is a Model Context Protocol (MCP) server that bridges AI agents and the live web. Instead of relying on outdated training data, your LLMs can now fetch fresh, structured, real-time content — powered by Crawlbase’s proven crawling infrastructure trusted by 70,000+ developers worldwide.</p>\n<p>It handles the complexity of scraping for you:</p>\n<ul>\n<li>JavaScript rendering for modern web apps</li>\n<li>Proxy rotation &amp; anti-bot evasion</li>\n<li>Structured outputs (HTML, Markdown, screenshots)</li>\n</ul>\n<h2>How It Works</h2>\n<ul>\n<li>Get Free Crawlbase Tokens → Sign up at <a href=\"https://crawlbase.com/signup?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=mcp_launch&amp;utm_content=signup_link\" target=\"_blank\" rel=\"noreferrer\">Crawlbase ↗️</a>, get free Normal, and JavaScript tokens.</li>\n<li>Set Up MCP Configuration → Configure the MCP server in your preferred client (Claude, Cursor, or Windsurf) by updating the MCP Servers settings.</li>\n<li>Start Crawling → Use commands like <strong>crawl</strong>, <strong>crawl_markdown</strong>, or <strong>crawl_screenshot</strong> to bring live web data into your AI agent.</li>\n</ul>\n<h2>Setup &amp; Integration</h2>\n<h3>Claude Desktop</h3>\n<p>1. Open Claude Desktop → Settings → Developer → Edit Config</p>\n<p>2. Add to <code>claude_desktop_config.json</code>:</p>\n<p>3. Replace <code>your_token_here</code> and <code>your_js_token_here</code> with the tokens from your dashboard.</p>\n<pre><code>\n{\n\n  \"mcpServers\": {\n\n    \"crawlbase\": {\n\n      \"type\": \"stdio\",\n\n      \"command\": \"npx\",\n\n      \"args\": [\"@crawlbase/mcp@latest\"],\n\n      \"env\": {\n\n        \"CRAWLBASE_TOKEN\": \"your_token_here\",\n\n        \"CRAWLBASE_JS_TOKEN\": \"your_js_token_here\"\n\n      }\n\n    }\n\n  }\n\n}\n\n</code></pre>\n<h3>Claude Code</h3>\n<p>Add to your <code>claude.json</code> configuration:</p>\n<pre><code>\n{\n\n  \"mcpServers\": {\n\n    \"crawlbase\": {\n\n      \"type\": \"stdio\",\n\n      \"command\": \"npx\",\n\n      \"args\": [\"@crawlbase/mcp@latest\"],\n\n      \"env\": {\n\n        \"CRAWLBASE_TOKEN\": \"your_token_here\",\n\n        \"CRAWLBASE_JS_TOKEN\": \"your_js_token_here\"\n\n      }\n\n    }\n\n  }\n\n}\n\n</code></pre>\n<h3>Cursor IDE</h3>\n<p>1. Open Cursor IDE → File → Preferences → Cursor Settings → Tools and Integrations → Add Custom MCP</p>\n<p>2. Add to <code>mcp.json</code>:</p>\n<p>3. Replace <code>your_token_here</code> and <code>your_js_token_here</code> with the tokens from your dashboard.</p>\n<pre><code>\n{\n\n  \"mcpServers\": {\n\n    \"crawlbase\": {\n\n      \"type\": \"stdio\",\n\n      \"command\": \"npx\",\n\n      \"args\": [\"@crawlbase/mcp@latest\"],\n\n      \"env\": {\n\n        \"CRAWLBASE_TOKEN\": \"your_token_here\",\n\n        \"CRAWLBASE_JS_TOKEN\": \"your_js_token_here\"\n\n      }\n\n    }\n\n  }\n\n}\n\n</code></pre>\n<h3>Windsurf IDE</h3>\n<p>1. Open WindSurf IDE → File → Preferences → WindSurf Settings → General → MCP Servers → Manage MCPs → View raw config</p>\n<p>2. Add to <code>mcp_config.json</code>:</p>\n<p>3. Replace <code>your_token_here</code> and <code>your_js_token_here</code> with the tokens from your dashboard.</p>\n<pre><code>\n{\n\n  \"mcpServers\": {\n\n    \"crawlbase\": {\n\n      \"type\": \"stdio\",\n\n      \"command\": \"npx\",\n\n      \"args\": [\"@crawlbase/mcp@latest\"],\n\n      \"env\": {\n\n        \"CRAWLBASE_TOKEN\": \"your_token_here\",\n\n        \"CRAWLBASE_JS_TOKEN\": \"your_js_token_here\"\n\n      }\n\n    }\n\n  }\n\n}\n\n</code></pre>\n<h3>HTTP Transport Mode</h3>\n<p>For scenarios where you need a shared MCP server accessible over HTTP (e.g., multi-user environments, custom integrations), you can run the server in HTTP mode:</p>\n<pre><code>\n# Clone and install\n\ngit clone https://github.com/crawlbase/crawlbase-mcp.git\n\ncd crawlbase-mcp\n\nnpm install\n\n\n\n# Start HTTP server with tokens (default port: 3000)\n\nCRAWLBASE_TOKEN=your_token CRAWLBASE_JS_TOKEN=your_js_token npm run start:http\n\n\n\n# Or with custom port\n\nCRAWLBASE_TOKEN=your_token CRAWLBASE_JS_TOKEN=your_js_token MCP_PORT=8080 npm run start:http\n\n</code></pre>\n<p>The server exposes:</p>\n<ul>\n<li><code>POST /mcp</code> - MCP Streamable HTTP endpoint</li>\n<li><code>GET /health</code> - Health check endpoint</li>\n</ul>\n<h4>Per-Request Token Authentication</h4>\n<p>HTTP mode supports per-request tokens via headers, allowing multiple users to share a single server:</p>\n<pre><code>\ncurl -X POST http://localhost:3000/mcp \\\n\n  -H \"Content-Type: application/json\" \\\n\n  -H \"Accept: application/json, text/event-stream\" \\\n\n  -H \"X-Crawlbase-Token: your_token\" \\\n\n  -H \"X-Crawlbase-JS-Token: your_js_token\" \\\n\n  -d '{\"jsonrpc\": \"2.0\", \"method\": \"tools/list\", \"id\": 1}'\n\n</code></pre>\n<p><strong>Headers:</strong></p>\n<ul>\n<li><code>X-Crawlbase-Token</code> - Normal token for HTML requests</li>\n<li><code>X-Crawlbase-JS-Token</code> - JavaScript token for JS-rendered pages/screenshots</li>\n</ul>\n<p>Headers override environment variables when provided, enabling multi-tenant deployments.</p>\n<p>🔑 Get your free tokens at <a href=\"https://crawlbase.com/signup?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=mcp_launch&amp;utm_content=signup_link\" target=\"_blank\" rel=\"noreferrer\">Crawlbase ↗️</a>.</p>\n<h2>Usage</h2>\n<p>Once configured, use these commands inside Claude, Cursor, or Windsurf:</p>\n<ul>\n<li>crawl → Fetch raw HTML</li>\n<li>crawl_markdown → Extract clean Markdown</li>\n<li>crawl_screenshot → Capture screenshots</li>\n</ul>\n<p>Example prompts:</p>\n<ul>\n<li>“Crawl Hacker News and return top stories in markdown.”</li>\n<li>“Take a screenshot of TechCrunch homepage.”</li>\n<li>“Fetch Tesla investor relations page as HTML.”</li>\n</ul>\n<h3>Async Crawling with Cloud Storage</h3>\n<p>For larger jobs, Crawlbase MCP can push crawl results to <a href=\"https://crawlbase.com/docs/cloud-storage/\" target=\"_blank\" rel=\"noreferrer\">Crawlbase Cloud Storage</a> instead of returning them immediately. Your AI agent can then come back later to read, list, or clean up those pages — useful when crawling many URLs at once, revisiting a dataset across sessions, or keeping heavy HTML out of the chat until you actually need it.</p>\n<p>Example prompts:</p>\n<ul>\n<li>“Crawl these 50 product pages and save them to my Crawlbase storage. Once they're saved, summarize each one.”</li>\n<li>“Save the Hacker News front page to storage so I can analyze it later.”</li>\n<li>“How many pages do I have stored in Crawlbase right now? Show me the most recent 20.”</li>\n<li>“Pull back everything I saved yesterday from my Crawlbase storage and give me a report.”</li>\n<li>“Delete all the pages I have in Crawlbase storage — I'm done with that project.”</li>\n</ul>\n<h2>Use Cases</h2>\n<ul>\n<li>Market research → Pull live data from competitors, news, and reports</li>\n<li>E-commerce monitoring → Track products, reviews, and prices in real time</li>\n<li>News &amp; finance feeds → Keep AI agents up-to-date with live events</li>\n<li>Autonomous AI agents → Give them vision to act on fresh web data</li>\n</ul>\n<h2>Resources &amp; Next Steps</h2>\n<p>Looking to supercharge your AI agents with live web data? Get started here:</p>\n<ul>\n<li><a href=\"https://crawlbase.com/blog/introducing-crawlbase-mcp-feed-real-time-web-data-to-the-llms/?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=mcp_launch&amp;utm_content=learn_more\" target=\"_blank\" rel=\"noreferrer\">✍️ Learn More – See how MCP powers AI agents with real-time web data ↗️</a></li>\n<li><a href=\"https://crawlbase.com/?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=mcp_launch&amp;utm_content=website_link\" target=\"_blank\" rel=\"noreferrer\">🌐 Crawlbase Website – Get free tokens &amp; start crawling today ↗️</a></li>\n</ul>\n<p>---</p>\n<p><a href=\"https://mseep.net/pr/crawlbase-crawlbase-mcp-badge.png\" target=\"_blank\" rel=\"noreferrer\">![MSeeP.ai Security Assessment Badge</a>](https://mseep.ai/app/crawlbase-crawlbase-mcp)</p>\n<p>Copyright 2026 Crawlbase</p>",
+  "skillMd": "",
+  "updatedAt": "2026-04-23T23:38:07Z",
+  "author": {
+    "login": "crawlbase",
+    "name": "Crawlbase",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/39630115?v=4",
+    "profileUrl": "https://github.com/crawlbase",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "crawlbase-crawl-html",
+      "displayName": "crawlbase/crawl-html",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:crawlbase"
+    },
+    {
+      "slug": "crawlbase-crawl-markdown",
+      "displayName": "crawlbase/crawl-markdown",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:crawlbase"
+    },
+    {
+      "slug": "crawlbase-crawl-screenshot",
+      "displayName": "crawlbase/crawl-screenshot",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:crawlbase"
+    },
+    {
+      "slug": "crawlbase-storage-get",
+      "displayName": "crawlbase/storage-get",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:crawlbase"
+    },
+    {
+      "slug": "crawlbase-storage-list",
+      "displayName": "crawlbase/storage-list",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:crawlbase"
+    },
+    {
+      "slug": "crawlbase-storage-bulk-get",
+      "displayName": "crawlbase/storage-bulk-get",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:crawlbase"
+    },
+    {
+      "slug": "crawlbase-storage-count",
+      "displayName": "crawlbase/storage-count",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:crawlbase"
+    },
+    {
+      "slug": "crawlbase-storage-delete",
+      "displayName": "crawlbase/storage-delete",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:crawlbase"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-paris",
+    "label": "Global Skill Market / Paris / Official Skills by",
+    "lat": 48.8566,
+    "lon": 2.3522,
+    "source": "virtual_market"
+  }
+}

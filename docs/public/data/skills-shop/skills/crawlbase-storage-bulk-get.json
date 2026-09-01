@@ -1,0 +1,89 @@
+{
+  "id": "skill:crawlbase-storage-bulk-get",
+  "slug": "crawlbase-storage-bulk-get",
+  "name": "storage-bulk-get",
+  "displayName": "crawlbase/storage-bulk-get",
+  "description": "Retrieve up to 100 stored pages in one call, with optional auto-delete",
+  "stars": 0,
+  "category": "Official Skills by",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/crawlbase/skills/storage-bulk-get",
+  "githubRepo": "",
+  "readme": "# crawlbase/storage-bulk-get\n\nRetrieve up to 100 stored pages in one call, with optional auto-delete",
+  "readmeHtml": "<h1>crawlbase/storage-bulk-get</h1>\n<p>Retrieve up to 100 stored pages in one call, with optional auto-delete</p>",
+  "skillMd": "",
+  "updatedAt": "2026-09-01T21:25:27.530Z",
+  "author": {
+    "login": "crawlbase",
+    "name": "Crawlbase",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/39630115?v=4",
+    "profileUrl": "https://github.com/crawlbase",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "crawlbase-crawlbase-mcp",
+      "displayName": "crawlbase/crawlbase-mcp",
+      "stars": 56,
+      "relation": "source_overlap",
+      "evidence": "author:crawlbase"
+    },
+    {
+      "slug": "crawlbase-crawl-html",
+      "displayName": "crawlbase/crawl-html",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:crawlbase"
+    },
+    {
+      "slug": "crawlbase-crawl-markdown",
+      "displayName": "crawlbase/crawl-markdown",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:crawlbase"
+    },
+    {
+      "slug": "crawlbase-crawl-screenshot",
+      "displayName": "crawlbase/crawl-screenshot",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:crawlbase"
+    },
+    {
+      "slug": "crawlbase-storage-get",
+      "displayName": "crawlbase/storage-get",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:crawlbase"
+    },
+    {
+      "slug": "crawlbase-storage-list",
+      "displayName": "crawlbase/storage-list",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:crawlbase"
+    },
+    {
+      "slug": "crawlbase-storage-count",
+      "displayName": "crawlbase/storage-count",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:crawlbase"
+    },
+    {
+      "slug": "crawlbase-storage-delete",
+      "displayName": "crawlbase/storage-delete",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:crawlbase"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-san-francisco",
+    "label": "Global Skill Market / San Francisco / Official Skills by",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "virtual_market"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "skill:crawlbase-langchain-crawlbase",
+  "slug": "crawlbase-langchain-crawlbase",
+  "name": "langchain-crawlbase",
+  "displayName": "crawlbase/langchain-crawlbase",
+  "description": "LangChain document loader, tool, and retriever backed by the Crawling API",
+  "stars": 0,
+  "category": "Official Skills by",
+  "source": "voltagent",
+  "url": "https://github.com/crawlbase/langchain-crawlbase",
+  "githubRepo": "crawlbase/langchain-crawlbase",
+  "readme": "# langchain-crawlbase\n\nLangChain primitives backed by the [Crawlbase](https://crawlbase.com) Crawling API.\n\nThree drop-in classes:\n\n- **`CrawlbaseLoader`** — a `BaseLoader` that fetches a list of URLs and returns clean Markdown `Document`s ready for chunking.\n- **`CrawlbaseTool`** — a `BaseTool` that lets an LLM agent fetch a live web page mid-conversation.\n- **`CrawlbaseRetriever`** — a `BaseRetriever` that fetches a fixed set of seed URLs and filters by query.\n\nAll three return GitHub-flavored Markdown via Crawlbase's `format=md` parameter, so you skip the HTML-stripping step entirely.\n\n## Installation\n\n```bash\npip install langchain-crawlbase\n```\n\n## Setup\n\nGet a token from your [Crawlbase dashboard](https://crawlbase.com/dashboard). Use your **normal token** for static pages, or your **JavaScript token** for SPA / JS-rendered pages — Crawlbase routes the request automatically based on which token you send.\n\n```bash\nexport CRAWLBASE_TOKEN=your_token\n```\n\n## Usage\n\n### Document loader\n\n```python\nimport os\nfrom langchain_crawlbase import CrawlbaseLoader\n\nloader = CrawlbaseLoader(\n    token=os.environ[\"CRAWLBASE_TOKEN\"],\n    urls=[\n        \"https://en.wikipedia.org/wiki/Large_language_model\",\n        \"https://en.wikipedia.org/wiki/Retrieval-augmented_generation\",\n    ],\n)\ndocs = loader.load()\nprint(docs[0].page_content[:500])\nprint(docs[0].metadata)  # {'source': '...', 'pc_status': 200, ...}\n```\n\nFor SPA pages, just use your JavaScript token instead — same interface:\n\n```python\nloader = CrawlbaseLoader(\n    token=os.environ[\"CRAWLBASE_JS_TOKEN\"],\n    urls=[\"https://some-spa-site.com/page\"],\n)\n```\n\n### Agent tool\n\n```python\nimport os\nfrom langchain_crawlbase import CrawlbaseTool\n\ntool = CrawlbaseTool(token=os.environ[\"CRAWLBASE_TOKEN\"])\n\n# Use directly:\nmarkdown = tool.invoke({\"url\": \"https://example.com\"})\n\n# Or bind to an LLM:\nfrom langchain_anthropic import ChatAnthropic\nllm = ChatAnthropic(model=\"claude-opus-4-7\")\nagent_llm = llm.bind_tools([tool])\n```\n\n### Retriever\n\n```python\nimport os\nfrom langchain_crawlbase import CrawlbaseRetriever\n\nretriever = CrawlbaseRetriever(\n    token=os.environ[\"CRAWLBASE_TOKEN\"],\n    urls=[\n        \"https://crawlbase.com/docs/crawling-api\",\n        \"https://crawlbase.com/docs/crawling-api#parameters\",\n    ],\n)\ndocs = retriever.invoke(\"how do I render JavaScript pages\")\n```\n\n> v0.1 uses simple substring matching. For semantic retrieval, pair `CrawlbaseLoader` with a vector store of your choice.\n\n## Extra Crawlbase parameters\n\nPass any [Crawlbase API parameter](https://crawlbase.com/docs/crawling-api#parameters) via `extra_params`:\n\n```python\nloader = CrawlbaseLoader(\n    token=token,\n    urls=[\"https://example.com\"],\n    extra_params={\"country\": \"US\", \"device\": \"mobile\"},\n)\n```\n\n## Development\n\n```bash\npip install -e \".[dev]\"\npytest tests/unit\nruff check .\n```\n\nIntegration tests are gated on `CRAWLBASE_TOKEN`:\n\n```bash\nCRAWLBASE_TOKEN=xxx pytest tests/integration\n```\n\n## License\n\nMIT — © Crawlbase Team. Contact: support@crawlbase.com\n",
+  "readmeHtml": "<h1>langchain-crawlbase</h1>\n<p>LangChain primitives backed by the <a href=\"https://crawlbase.com\" target=\"_blank\" rel=\"noreferrer\">Crawlbase</a> Crawling API.</p>\n<p>Three drop-in classes:</p>\n<ul>\n<li><strong><code>CrawlbaseLoader</code></strong> — a <code>BaseLoader</code> that fetches a list of URLs and returns clean Markdown <code>Document</code>s ready for chunking.</li>\n<li><strong><code>CrawlbaseTool</code></strong> — a <code>BaseTool</code> that lets an LLM agent fetch a live web page mid-conversation.</li>\n<li><strong><code>CrawlbaseRetriever</code></strong> — a <code>BaseRetriever</code> that fetches a fixed set of seed URLs and filters by query.</li>\n</ul>\n<p>All three return GitHub-flavored Markdown via Crawlbase's <code>format=md</code> parameter, so you skip the HTML-stripping step entirely.</p>\n<h2>Installation</h2>\n<pre><code>\npip install langchain-crawlbase\n\n</code></pre>\n<h2>Setup</h2>\n<p>Get a token from your <a href=\"https://crawlbase.com/dashboard\" target=\"_blank\" rel=\"noreferrer\">Crawlbase dashboard</a>. Use your <strong>normal token</strong> for static pages, or your <strong>JavaScript token</strong> for SPA / JS-rendered pages — Crawlbase routes the request automatically based on which token you send.</p>\n<pre><code>\nexport CRAWLBASE_TOKEN=your_token\n\n</code></pre>\n<h2>Usage</h2>\n<h3>Document loader</h3>\n<pre><code>\nimport os\n\nfrom langchain_crawlbase import CrawlbaseLoader\n\n\n\nloader = CrawlbaseLoader(\n\n    token=os.environ[\"CRAWLBASE_TOKEN\"],\n\n    urls=[\n\n        \"https://en.wikipedia.org/wiki/Large_language_model\",\n\n        \"https://en.wikipedia.org/wiki/Retrieval-augmented_generation\",\n\n    ],\n\n)\n\ndocs = loader.load()\n\nprint(docs[0].page_content[:500])\n\nprint(docs[0].metadata)  # {'source': '...', 'pc_status': 200, ...}\n\n</code></pre>\n<p>For SPA pages, just use your JavaScript token instead — same interface:</p>\n<pre><code>\nloader = CrawlbaseLoader(\n\n    token=os.environ[\"CRAWLBASE_JS_TOKEN\"],\n\n    urls=[\"https://some-spa-site.com/page\"],\n\n)\n\n</code></pre>\n<h3>Agent tool</h3>\n<pre><code>\nimport os\n\nfrom langchain_crawlbase import CrawlbaseTool\n\n\n\ntool = CrawlbaseTool(token=os.environ[\"CRAWLBASE_TOKEN\"])\n\n\n\n# Use directly:\n\nmarkdown = tool.invoke({\"url\": \"https://example.com\"})\n\n\n\n# Or bind to an LLM:\n\nfrom langchain_anthropic import ChatAnthropic\n\nllm = ChatAnthropic(model=\"claude-opus-4-7\")\n\nagent_llm = llm.bind_tools([tool])\n\n</code></pre>\n<h3>Retriever</h3>\n<pre><code>\nimport os\n\nfrom langchain_crawlbase import CrawlbaseRetriever\n\n\n\nretriever = CrawlbaseRetriever(\n\n    token=os.environ[\"CRAWLBASE_TOKEN\"],\n\n    urls=[\n\n        \"https://crawlbase.com/docs/crawling-api\",\n\n        \"https://crawlbase.com/docs/crawling-api#parameters\",\n\n    ],\n\n)\n\ndocs = retriever.invoke(\"how do I render JavaScript pages\")\n\n</code></pre>\n<p>&gt; v0.1 uses simple substring matching. For semantic retrieval, pair <code>CrawlbaseLoader</code> with a vector store of your choice.</p>\n<h2>Extra Crawlbase parameters</h2>\n<p>Pass any <a href=\"https://crawlbase.com/docs/crawling-api#parameters\" target=\"_blank\" rel=\"noreferrer\">Crawlbase API parameter</a> via <code>extra_params</code>:</p>\n<pre><code>\nloader = CrawlbaseLoader(\n\n    token=token,\n\n    urls=[\"https://example.com\"],\n\n    extra_params={\"country\": \"US\", \"device\": \"mobile\"},\n\n)\n\n</code></pre>\n<h2>Development</h2>\n<pre><code>\npip install -e \".[dev]\"\n\npytest tests/unit\n\nruff check .\n\n</code></pre>\n<p>Integration tests are gated on <code>CRAWLBASE_TOKEN</code>:</p>\n<pre><code>\nCRAWLBASE_TOKEN=xxx pytest tests/integration\n\n</code></pre>\n<h2>License</h2>\n<p>MIT — © Crawlbase Team. Contact: support@crawlbase.com</p>",
+  "skillMd": "",
+  "updatedAt": "2026-05-02T17:38:56Z",
+  "author": {
+    "login": "crawlbase",
+    "name": "Crawlbase",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/39630115?v=4",
+    "profileUrl": "https://github.com/crawlbase",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "crawlbase-crawlbase-mcp",
+      "displayName": "crawlbase/crawlbase-mcp",
+      "stars": 56,
+      "relation": "source_overlap",
+      "evidence": "author:crawlbase"
+    },
+    {
+      "slug": "crawlbase-crawl-html",
+      "displayName": "crawlbase/crawl-html",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:crawlbase"
+    },
+    {
+      "slug": "crawlbase-crawl-markdown",
+      "displayName": "crawlbase/crawl-markdown",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:crawlbase"
+    },
+    {
+      "slug": "crawlbase-crawl-screenshot",
+      "displayName": "crawlbase/crawl-screenshot",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:crawlbase"
+    },
+    {
+      "slug": "crawlbase-storage-get",
+      "displayName": "crawlbase/storage-get",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:crawlbase"
+    },
+    {
+      "slug": "crawlbase-storage-list",
+      "displayName": "crawlbase/storage-list",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:crawlbase"
+    },
+    {
+      "slug": "crawlbase-storage-bulk-get",
+      "displayName": "crawlbase/storage-bulk-get",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:crawlbase"
+    },
+    {
+      "slug": "crawlbase-storage-count",
+      "displayName": "crawlbase/storage-count",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:crawlbase"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-bengaluru",
+    "label": "Global Skill Market / Bengaluru / Official Skills by",
+    "lat": 12.9716,
+    "lon": 77.5946,
+    "source": "virtual_market"
+  }
+}
