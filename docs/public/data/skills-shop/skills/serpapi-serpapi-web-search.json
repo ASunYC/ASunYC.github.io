@@ -1,0 +1,95 @@
+{
+  "id": "skill:serpapi-serpapi-web-search",
+  "slug": "serpapi-serpapi-web-search",
+  "name": "serpapi-web-search",
+  "displayName": "serpapi/serpapi-web-search",
+  "description": "Structured search data via 130+ engines: pick the right engine, extract the right keys, recover from errors",
+  "stars": 0,
+  "category": "Official Skills by",
+  "source": "voltagent",
+  "url": "https://officialskills.sh/serpapi/skills/serpapi-web-search",
+  "githubRepo": "",
+  "readme": "# serpapi/serpapi-web-search\n\nStructured search data via 130+ engines: pick the right engine, extract the right keys, recover from errors",
+  "readmeHtml": "<h1>serpapi/serpapi-web-search</h1>\n<p>Structured search data via 130+ engines: pick the right engine, extract the right keys, recover from errors</p>",
+  "skillMd": "",
+  "updatedAt": "2026-09-04T21:07:01.885Z",
+  "author": {
+    "login": "serpapi",
+    "name": "SerpApi",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/34724717?v=4",
+    "profileUrl": "https://github.com/serpapi",
+    "location": "United States of America"
+  },
+  "location": {
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
+  },
+  "related": [
+    {
+      "slug": "serpapi-serpapi-cli",
+      "displayName": "serpapi/serpapi-cli",
+      "stars": 11,
+      "relation": "source_overlap",
+      "evidence": "author:serpapi"
+    },
+    {
+      "slug": "serpapi-serpapi-search-tools-python",
+      "displayName": "serpapi/serpapi-search-tools-python",
+      "stars": 10,
+      "relation": "source_overlap",
+      "evidence": "author:serpapi"
+    },
+    {
+      "slug": "serpapi-agent-usability-test",
+      "displayName": "serpapi/agent-usability-test",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:serpapi"
+    },
+    {
+      "slug": "angular-angular-developer",
+      "displayName": "angular/angular-developer",
+      "stars": 633,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "testmu-ai-api-skill",
+      "displayName": "testmu-ai/api-skill",
+      "stars": 366,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "veniceai-venice-api-overview",
+      "displayName": "veniceai/venice-api-overview",
+      "stars": 139,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "crawlbase-crawlbase-mcp",
+      "displayName": "crawlbase/crawlbase-mcp",
+      "stars": 56,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "modem-dev-skills",
+      "displayName": "modem-dev/skills",
+      "stars": 53,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    }
+  ],
+  "mapLocation": {
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
+  }
+}

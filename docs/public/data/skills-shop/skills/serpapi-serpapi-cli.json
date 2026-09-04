@@ -1,0 +1,95 @@
+{
+  "id": "skill:serpapi-serpapi-cli",
+  "slug": "serpapi-serpapi-cli",
+  "name": "serpapi-cli",
+  "displayName": "serpapi/serpapi-cli",
+  "description": "SerpApi client for the command line, covering all 130+ engines",
+  "stars": 11,
+  "category": "Official Skills by",
+  "source": "voltagent",
+  "url": "https://github.com/serpapi/serpapi-cli",
+  "githubRepo": "serpapi/serpapi-cli",
+  "readme": "# serpapi-cli\n\n> HTTP client for structured web search data via SerpApi\n\n## Installation\n\n### Homebrew (macOS/Linux)\n\n```bash\nbrew tap serpapi/homebrew-tap\nbrew install serpapi-cli\n```\n\n### Pre-built Binaries\n\nDownload directly from [GitHub Releases](https://github.com/serpapi/serpapi-cli/releases)\n\n### Go (compile from source)\n\n```bash\ngo install github.com/serpapi/serpapi-cli/cmd/serpapi@latest\n```\n\n## Quick Start\n\n```bash\n# Authenticate\nserpapi login\n\n# Perform a search\nserpapi search engine=google q=coffee\n```\n\n## Commands\n\n### search\n\nPerform a search with any supported SerpApi engine. Parameters are passed as bare `key=value` pairs.\n\n```bash\n# Basic search\nserpapi search engine=google q=coffee\n\n# Multiple parameters\nserpapi search engine=google q=\"coffee shops\" location=\"Austin,TX\"\n\n# Use a different engine\nserpapi search engine=google_maps q=\"pizza\" ll=\"@40.7455096,-74.0083012,14z\"\n\n# With server-side field filtering (reduces response size at API level)\nserpapi search --fields \"organic_results[].{title,link}\" engine=google q=coffee\n\n# With client-side jq filtering (like gh --jq)\nserpapi search --jq \".organic_results[0:3] | [.[] | {title, link}]\" engine=google q=coffee\n\n# Both: server-side reduces payload, then client-side refines\nserpapi search --fields \"organic_results\" --jq \".organic_results[0:3] | [.[] | {title, link}]\" engine=google q=coffee\n```\n\n#### Pagination Flags\n\n- `--all-pages` — Fetch all result pages and merge array fields across pages\n- `--max-pages <n>` — Maximum number of pages to fetch when using `--all-pages`\n\n```bash\n# Fetch all pages and merge array results\nserpapi search engine=google q=coffee --all-pages\n\n# Limit to first 3 pages\nserpapi search engine=google q=coffee --all-pages --max-pages 3\n```\n\n### account\n\nRetrieve account information and usage statistics.\n\n```bash\nserpapi account\n```\n\n### locations\n\nLookup available locations for search queries (no API key required).\n\n```bash\n# Find locations matching \"austin\"\nserpapi locations q=austin num=5\n```\n\n### archive\n\nRetrieve a previously cached search by ID.\n\n```bash\nserpapi archive <search-id>\n```\n\n### login\n\nInteractive authentication flow to save API key to config file.\n\n```bash\nserpapi login\n```\n\n## Global Flags\n\n- `--fields <expr>` — Server-side field filtering (maps to SerpApi's `json_restrictor` parameter). Note: The `--fields` filter uses SerpApi's server-side field restrictor syntax—see [SerpApi docs](https://serpapi.com) for supported expressions.\n- `--jq <expr>` — Client-side [jq](https://jqlang.github.io/jq/) filter applied to the JSON response, same as `gh --jq` (see the [jq tutorial](https://jqlang.github.io/jq/tutorial/) for syntax). Runs locally after the API call; the jq engine is embedded so no external `jq` install is required. Use `--fields` to shrink the payload server-side, then `--jq` to reshape it client-side. Examples:\n  ```bash\n  # Pick the first 3 organic results, keeping only title and link\n  serpapi search --jq '.organic_results[0:3] | [.[] | {title, link}]' engine=google q=coffee\n\n  # Print just the link of each organic result\n  serpapi search --jq '.organic_results[].link' engine=google q=coffee\n\n  # Count organic results\n  serpapi search --jq '.organic_results | length' engine=google q=coffee\n  ```\n  Quote the expression with single quotes in bash/zsh to avoid shell interpretation of `$`, `|`, and `\"`.\n- `--api-key <key>` — Override API key (takes priority over environment and config file)\n\n## Configuration\n\n### Authentication Priority Chain\n\nThe CLI checks for API keys in this order:\n\n1. `--api-key` flag\n2. `SERPAPI_KEY` environment variable\n3. Config file: `~/.config/serpapi/config.toml`\n\nIf no API key is found, run `serpapi login` to authenticate interactively.\n\n> **Security note:** For security, prefer setting `SERPAPI_KEY` as an environment variable over\n> passing `--api-key` on the command line (command-line arguments are visible in process listings).\n\n### Config File Format\n\n```toml\napi_key = \"your_serpapi_key_here\"\n```\n\n## For AI Agents\n\nThis CLI is optimized for consumption by AI agents (Claude, Codex, etc.):\n\n- **Use `--fields` for server-side filtering** to reduce token usage:\n  - Example: `--fields \"organic_results[0:3]\"` returns only first 3 results\n  - Filtering happens at the API level, saving bandwidth and context window tokens\n  - Syntax follows SerpApi's `json_restrictor` parameter\n- **Use `--jq` for client-side filtering** (same as `gh --jq`):\n  - Example: `--jq \".organic_results | length\"` counts results locally\n  - Full jq expression support: pipes, array slicing, object construction, `select`, `map`, etc.\n  - Runs after API response is received\n- **Combine both** for maximum efficiency:\n  - `--fields` reduces the API response size (less bandwidth)\n  - `--jq` refines the result further (less context window tokens)\n- **Exit codes**:\n  - `0` = success\n  - `1` = API error (invalid key, rate limit, etc.)\n  - `2` = usage error (missing arguments, invalid flags)\n- **Errors are always JSON** on stderr for structured parsing\n\n## Links\n\n- [SerpApi Website](https://serpapi.com/)\n- [API Documentation](https://serpapi.com/search-api)\n- [MCP Server](https://github.com/serpapi/serpapi-mcp)\n- [serpapi-go Library](https://github.com/serpapi/serpapi-golang)\n",
+  "readmeHtml": "<h1>serpapi-cli</h1>\n<p>&gt; HTTP client for structured web search data via SerpApi</p>\n<h2>Installation</h2>\n<h3>Homebrew (macOS/Linux)</h3>\n<pre><code>\nbrew tap serpapi/homebrew-tap\n\nbrew install serpapi-cli\n\n</code></pre>\n<h3>Pre-built Binaries</h3>\n<p>Download directly from <a href=\"https://github.com/serpapi/serpapi-cli/releases\" target=\"_blank\" rel=\"noreferrer\">GitHub Releases</a></p>\n<h3>Go (compile from source)</h3>\n<pre><code>\ngo install github.com/serpapi/serpapi-cli/cmd/serpapi@latest\n\n</code></pre>\n<h2>Quick Start</h2>\n<pre><code>\n# Authenticate\n\nserpapi login\n\n\n\n# Perform a search\n\nserpapi search engine=google q=coffee\n\n</code></pre>\n<h2>Commands</h2>\n<h3>search</h3>\n<p>Perform a search with any supported SerpApi engine. Parameters are passed as bare <code>key=value</code> pairs.</p>\n<pre><code>\n# Basic search\n\nserpapi search engine=google q=coffee\n\n\n\n# Multiple parameters\n\nserpapi search engine=google q=\"coffee shops\" location=\"Austin,TX\"\n\n\n\n# Use a different engine\n\nserpapi search engine=google_maps q=\"pizza\" ll=\"@40.7455096,-74.0083012,14z\"\n\n\n\n# With server-side field filtering (reduces response size at API level)\n\nserpapi search --fields \"organic_results[].{title,link}\" engine=google q=coffee\n\n\n\n# With client-side jq filtering (like gh --jq)\n\nserpapi search --jq \".organic_results[0:3] | [.[] | {title, link}]\" engine=google q=coffee\n\n\n\n# Both: server-side reduces payload, then client-side refines\n\nserpapi search --fields \"organic_results\" --jq \".organic_results[0:3] | [.[] | {title, link}]\" engine=google q=coffee\n\n</code></pre>\n<h4>Pagination Flags</h4>\n<ul>\n<li><code>--all-pages</code> — Fetch all result pages and merge array fields across pages</li>\n<li><code>--max-pages &lt;n&gt;</code> — Maximum number of pages to fetch when using <code>--all-pages</code></li>\n</ul>\n<pre><code>\n# Fetch all pages and merge array results\n\nserpapi search engine=google q=coffee --all-pages\n\n\n\n# Limit to first 3 pages\n\nserpapi search engine=google q=coffee --all-pages --max-pages 3\n\n</code></pre>\n<h3>account</h3>\n<p>Retrieve account information and usage statistics.</p>\n<pre><code>\nserpapi account\n\n</code></pre>\n<h3>locations</h3>\n<p>Lookup available locations for search queries (no API key required).</p>\n<pre><code>\n# Find locations matching \"austin\"\n\nserpapi locations q=austin num=5\n\n</code></pre>\n<h3>archive</h3>\n<p>Retrieve a previously cached search by ID.</p>\n<pre><code>\nserpapi archive &lt;search-id&gt;\n\n</code></pre>\n<h3>login</h3>\n<p>Interactive authentication flow to save API key to config file.</p>\n<pre><code>\nserpapi login\n\n</code></pre>\n<h2>Global Flags</h2>\n<ul>\n<li><code>--fields &lt;expr&gt;</code> — Server-side field filtering (maps to SerpApi's <code>json_restrictor</code> parameter). Note: The <code>--fields</code> filter uses SerpApi's server-side field restrictor syntax—see <a href=\"https://serpapi.com\" target=\"_blank\" rel=\"noreferrer\">SerpApi docs</a> for supported expressions.</li>\n<li><code>--jq &lt;expr&gt;</code> — Client-side <a href=\"https://jqlang.github.io/jq/\" target=\"_blank\" rel=\"noreferrer\">jq</a> filter applied to the JSON response, same as <code>gh --jq</code> (see the <a href=\"https://jqlang.github.io/jq/tutorial/\" target=\"_blank\" rel=\"noreferrer\">jq tutorial</a> for syntax). Runs locally after the API call; the jq engine is embedded so no external <code>jq</code> install is required. Use <code>--fields</code> to shrink the payload server-side, then <code>--jq</code> to reshape it client-side. Examples:</li>\n<pre><code>\n  # Pick the first 3 organic results, keeping only title and link\n\n  serpapi search --jq '.organic_results[0:3] | [.[] | {title, link}]' engine=google q=coffee\n\n\n\n  # Print just the link of each organic result\n\n  serpapi search --jq '.organic_results[].link' engine=google q=coffee\n\n\n\n  # Count organic results\n\n  serpapi search --jq '.organic_results | length' engine=google q=coffee\n\n</code></pre>\n</ul>\n<p>  Quote the expression with single quotes in bash/zsh to avoid shell interpretation of <code>$</code>, <code>|</code>, and <code>\"</code>.</p>\n<ul>\n<li><code>--api-key &lt;key&gt;</code> — Override API key (takes priority over environment and config file)</li>\n</ul>\n<h2>Configuration</h2>\n<h3>Authentication Priority Chain</h3>\n<p>The CLI checks for API keys in this order:</p>\n<p>1. <code>--api-key</code> flag</p>\n<p>2. <code>SERPAPI_KEY</code> environment variable</p>\n<p>3. Config file: <code>~/.config/serpapi/config.toml</code></p>\n<p>If no API key is found, run <code>serpapi login</code> to authenticate interactively.</p>\n<p>&gt; <strong>Security note:</strong> For security, prefer setting <code>SERPAPI_KEY</code> as an environment variable over</p>\n<p>&gt; passing <code>--api-key</code> on the command line (command-line arguments are visible in process listings).</p>\n<h3>Config File Format</h3>\n<pre><code>\napi_key = \"your_serpapi_key_here\"\n\n</code></pre>\n<h2>For AI Agents</h2>\n<p>This CLI is optimized for consumption by AI agents (Claude, Codex, etc.):</p>\n<ul>\n<li><strong>Use <code>--fields</code> for server-side filtering</strong> to reduce token usage:</li>\n</ul>\n<p>  - Example: <code>--fields \"organic_results[0:3]\"</code> returns only first 3 results</p>\n<p>  - Filtering happens at the API level, saving bandwidth and context window tokens</p>\n<p>  - Syntax follows SerpApi's <code>json_restrictor</code> parameter</p>\n<ul>\n<li><strong>Use <code>--jq</code> for client-side filtering</strong> (same as <code>gh --jq</code>):</li>\n</ul>\n<p>  - Example: <code>--jq \".organic_results | length\"</code> counts results locally</p>\n<p>  - Full jq expression support: pipes, array slicing, object construction, <code>select</code>, <code>map</code>, etc.</p>\n<p>  - Runs after API response is received</p>\n<ul>\n<li><strong>Combine both</strong> for maximum efficiency:</li>\n</ul>\n<p>  - <code>--fields</code> reduces the API response size (less bandwidth)</p>\n<p>  - <code>--jq</code> refines the result further (less context window tokens)</p>\n<ul>\n<li><strong>Exit codes</strong>:</li>\n</ul>\n<p>  - <code>0</code> = success</p>\n<p>  - <code>1</code> = API error (invalid key, rate limit, etc.)</p>\n<p>  - <code>2</code> = usage error (missing arguments, invalid flags)</p>\n<ul>\n<li><strong>Errors are always JSON</strong> on stderr for structured parsing</li>\n</ul>\n<h2>Links</h2>\n<ul>\n<li><a href=\"https://serpapi.com/\" target=\"_blank\" rel=\"noreferrer\">SerpApi Website</a></li>\n<li><a href=\"https://serpapi.com/search-api\" target=\"_blank\" rel=\"noreferrer\">API Documentation</a></li>\n<li><a href=\"https://github.com/serpapi/serpapi-mcp\" target=\"_blank\" rel=\"noreferrer\">MCP Server</a></li>\n<li><a href=\"https://github.com/serpapi/serpapi-golang\" target=\"_blank\" rel=\"noreferrer\">serpapi-go Library</a></li>\n</ul>",
+  "skillMd": "",
+  "updatedAt": "2026-09-03T08:13:16Z",
+  "author": {
+    "login": "serpapi",
+    "name": "SerpApi",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/34724717?v=4",
+    "profileUrl": "https://github.com/serpapi",
+    "location": "United States of America"
+  },
+  "location": {
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
+  },
+  "related": [
+    {
+      "slug": "serpapi-serpapi-search-tools-python",
+      "displayName": "serpapi/serpapi-search-tools-python",
+      "stars": 10,
+      "relation": "source_overlap",
+      "evidence": "author:serpapi"
+    },
+    {
+      "slug": "serpapi-serpapi-web-search",
+      "displayName": "serpapi/serpapi-web-search",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:serpapi"
+    },
+    {
+      "slug": "serpapi-agent-usability-test",
+      "displayName": "serpapi/agent-usability-test",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:serpapi"
+    },
+    {
+      "slug": "angular-angular-developer",
+      "displayName": "angular/angular-developer",
+      "stars": 633,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "testmu-ai-api-skill",
+      "displayName": "testmu-ai/api-skill",
+      "stars": 366,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "veniceai-venice-api-overview",
+      "displayName": "veniceai/venice-api-overview",
+      "stars": 139,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "crawlbase-crawlbase-mcp",
+      "displayName": "crawlbase/crawlbase-mcp",
+      "stars": 56,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "modem-dev-skills",
+      "displayName": "modem-dev/skills",
+      "stars": 53,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    }
+  ],
+  "mapLocation": {
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
+  }
+}
