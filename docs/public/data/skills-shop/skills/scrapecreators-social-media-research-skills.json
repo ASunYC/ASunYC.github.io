@@ -1,0 +1,89 @@
+{
+  "id": "skill:scrapecreators-social-media-research-skills",
+  "slug": "scrapecreators-social-media-research-skills",
+  "name": "social-media-research-skills",
+  "displayName": "ScrapeCreators/social-media-research-skills",
+  "description": "Research social outliers, comments, competitors, ads, and trends",
+  "stars": 2076,
+  "category": "Community Skills",
+  "source": "voltagent",
+  "url": "https://github.com/ScrapeCreators/social-media-research-skills",
+  "githubRepo": "ScrapeCreators/social-media-research-skills",
+  "readme": "# Social Media Research Skills for AI Agents\n\nPractical AI agent skills for social media research, powered by [ScrapeCreators](https://scrapecreators.com).\n\nThese skills help agents find outlier posts, mine comments, summarize transcripts, tear down competitors, analyze ad libraries, and turn public social data into useful business artifacts.\n\nThis is not just endpoint routing. The goal is to give your AI agent complete research workflows it can run across TikTok, Instagram, YouTube, Reddit, X/Twitter, LinkedIn, Facebook, Threads, Bluesky, Pinterest, Rumble, ad libraries, and more.\n\n## Install\n\n```bash\nnpx skills add ScrapeCreators/social-media-research-skills\n```\n\nWorks with Claude Code, Cursor, OpenAI Codex, GitHub Copilot, Gemini CLI, Windsurf, VS Code, and other agents that support the [Agent Skills spec](https://agentskills.io).\n\n## Setup\n\nSet your ScrapeCreators API key:\n\n```bash\nexport SCRAPECREATORS_API_KEY=sk_...\n```\n\nGet a key at [scrapecreators.com](https://scrapecreators.com).\n\n## Available Skills\n\n| Skill | Use it when you want to... | Output |\n|---|---|---|\n| [`outlier-post-finder`](skills/outlier-post-finder/) | Find posts, reels, shorts, tweets, or videos that beat a creator's baseline | Outlier table, repeatable patterns, hooks to steal |\n| [`transcript-intelligence`](skills/transcript-intelligence/) | Analyze video transcripts from TikTok, Instagram, YouTube, Facebook, X, LinkedIn, Rumble, or Reddit | Summary, hooks, claims, quotes, content atoms |\n| [`comment-mining`](skills/comment-mining/) | Mine comments for questions, objections, pain points, product ideas, and audience language | VOC report, themes, quotes, content ideas |\n| [`competitor-social-research`](skills/competitor-social-research/) | Compare competitors' social strategy and find what is working | Competitor brief, content pillars, gaps, recommendations |\n| [`ad-library-teardown`](skills/ad-library-teardown/) | Analyze active Meta, Google, and LinkedIn ads | Messaging angles, hooks, CTAs, offers, test ideas |\n| [`trend-discovery`](skills/trend-discovery/) | Find trending topics, hashtags, sounds, posts, and short-form formats in a niche | Trend brief, evidence table, suggested content angles |\n| [`influencer-prospecting`](skills/influencer-prospecting/) | Build creator or influencer prospect lists from public social data | Prospect CSV/table, fit score, outreach notes |\n| [`audience-research`](skills/audience-research/) | Evaluate creator or brand audience fit from public profile and demographic signals | Audience-fit report, market/country notes, confidence labels |\n| [`social-listening-brief`](skills/social-listening-brief/) | Research what people are saying about a brand, topic, product category, or niche | Multi-source brief, themes, cited examples, sentiment caveats |\n| [`product-demand-research`](skills/product-demand-research/) | Validate product ideas and find pain points from social posts, comments, and Reddit | Demand signals, pains, objections, exact language, ideas |\n| [`creator-profile-teardown`](skills/creator-profile-teardown/) | Analyze why a creator or brand account works and what to copy | Positioning teardown, content pillars, outliers, playbook |\n| [`content-repurposing`](skills/content-repurposing/) | Turn social videos, transcripts, and posts into reusable content assets | LinkedIn posts, X threads, scripts, newsletter/blog ideas |\n| [`scrapecreators-api`](skills/scrapecreators-api/) | Route a raw scraping/fetching request to the right ScrapeCreators endpoint | API calls, endpoint references, pagination guidance |\n\n## Example Prompts\n\n```text\nFind the outlier posts for @starterstory on YouTube Shorts from the latest page of videos.\n```\n\n```text\nAnalyze the transcripts from these 12 TikToks and pull out the best hooks, claims, and reusable content angles.\n```\n\n```text\nMine the comments on this viral Instagram Reel. I want objections, questions, buying intent, and exact audience language.\n```\n\n```text\nCompare these five brands on TikTok and Instagram. What formats and topics are working for each one?\n```\n\n```text\nTear down the active Facebook, Google, and LinkedIn ads for this competitor. Give me hooks, offers, CTAs, and what to test.\n```\n\n## How the Skills Work Together\n\n```text\nscrapecreators-api\n        │\n        ▼\nsocial research workflows\n ├─ outlier-post-finder\n ├─ transcript-intelligence\n ├─ comment-mining\n ├─ competitor-social-research\n ├─ ad-library-teardown\n ├─ trend-discovery\n ├─ influencer-prospecting\n ├─ audience-research\n ├─ social-listening-brief\n ├─ product-demand-research\n ├─ creator-profile-teardown\n └─ content-repurposing\n```\n\nThe workflow skills should use `scrapecreators-api` as the data layer when they need endpoint details. Each workflow produces a useful artifact, not just raw JSON.\n\n## Design Principles\n\n1. **Workflow-first, API-second** — users ask for a business outcome, not an endpoint.\n2. **Public-data only** — ScrapeCreators extracts public social data. Do not promise logged-in/private data.\n3. **Cited outputs** — include source URLs for posts, videos, ads, and comments whenever possible.\n4. **Baseline-aware analysis** — judge performance against a creator's own normal performance, not only raw vanity metrics.\n5. **Exact language matters** — preserve useful comments, hooks, captions, and transcript quotes verbatim.\n6. **Keep outputs actionable** — end with patterns, recommendations, test ideas, or a CSV when useful.\n\n## Links\n\n- [ScrapeCreators](https://scrapecreators.com)\n- [API Documentation](https://docs.scrapecreators.com)\n- [MCP Integration](https://docs.scrapecreators.com/integrations/mcp)\n- [Agent Skill Docs](https://docs.scrapecreators.com/integrations/agent-skill)\n",
+  "readmeHtml": "<h1>Social Media Research Skills for AI Agents</h1>\n<p>Practical AI agent skills for social media research, powered by <a href=\"https://scrapecreators.com\" target=\"_blank\" rel=\"noreferrer\">ScrapeCreators</a>.</p>\n<p>These skills help agents find outlier posts, mine comments, summarize transcripts, tear down competitors, analyze ad libraries, and turn public social data into useful business artifacts.</p>\n<p>This is not just endpoint routing. The goal is to give your AI agent complete research workflows it can run across TikTok, Instagram, YouTube, Reddit, X/Twitter, LinkedIn, Facebook, Threads, Bluesky, Pinterest, Rumble, ad libraries, and more.</p>\n<h2>Install</h2>\n<pre><code>\nnpx skills add ScrapeCreators/social-media-research-skills\n\n</code></pre>\n<p>Works with Claude Code, Cursor, OpenAI Codex, GitHub Copilot, Gemini CLI, Windsurf, VS Code, and other agents that support the <a href=\"https://agentskills.io\" target=\"_blank\" rel=\"noreferrer\">Agent Skills spec</a>.</p>\n<h2>Setup</h2>\n<p>Set your ScrapeCreators API key:</p>\n<pre><code>\nexport SCRAPECREATORS_API_KEY=sk_...\n\n</code></pre>\n<p>Get a key at <a href=\"https://scrapecreators.com\" target=\"_blank\" rel=\"noreferrer\">scrapecreators.com</a>.</p>\n<h2>Available Skills</h2>\n<p>| Skill | Use it when you want to... | Output |</p>\n<p>|---|---|---|</p>\n<p>| [<code>outlier-post-finder</code>](skills/outlier-post-finder/) | Find posts, reels, shorts, tweets, or videos that beat a creator's baseline | Outlier table, repeatable patterns, hooks to steal |</p>\n<p>| [<code>transcript-intelligence</code>](skills/transcript-intelligence/) | Analyze video transcripts from TikTok, Instagram, YouTube, Facebook, X, LinkedIn, Rumble, or Reddit | Summary, hooks, claims, quotes, content atoms |</p>\n<p>| [<code>comment-mining</code>](skills/comment-mining/) | Mine comments for questions, objections, pain points, product ideas, and audience language | VOC report, themes, quotes, content ideas |</p>\n<p>| [<code>competitor-social-research</code>](skills/competitor-social-research/) | Compare competitors' social strategy and find what is working | Competitor brief, content pillars, gaps, recommendations |</p>\n<p>| [<code>ad-library-teardown</code>](skills/ad-library-teardown/) | Analyze active Meta, Google, and LinkedIn ads | Messaging angles, hooks, CTAs, offers, test ideas |</p>\n<p>| [<code>trend-discovery</code>](skills/trend-discovery/) | Find trending topics, hashtags, sounds, posts, and short-form formats in a niche | Trend brief, evidence table, suggested content angles |</p>\n<p>| [<code>influencer-prospecting</code>](skills/influencer-prospecting/) | Build creator or influencer prospect lists from public social data | Prospect CSV/table, fit score, outreach notes |</p>\n<p>| [<code>audience-research</code>](skills/audience-research/) | Evaluate creator or brand audience fit from public profile and demographic signals | Audience-fit report, market/country notes, confidence labels |</p>\n<p>| [<code>social-listening-brief</code>](skills/social-listening-brief/) | Research what people are saying about a brand, topic, product category, or niche | Multi-source brief, themes, cited examples, sentiment caveats |</p>\n<p>| [<code>product-demand-research</code>](skills/product-demand-research/) | Validate product ideas and find pain points from social posts, comments, and Reddit | Demand signals, pains, objections, exact language, ideas |</p>\n<p>| [<code>creator-profile-teardown</code>](skills/creator-profile-teardown/) | Analyze why a creator or brand account works and what to copy | Positioning teardown, content pillars, outliers, playbook |</p>\n<p>| [<code>content-repurposing</code>](skills/content-repurposing/) | Turn social videos, transcripts, and posts into reusable content assets | LinkedIn posts, X threads, scripts, newsletter/blog ideas |</p>\n<p>| [<code>scrapecreators-api</code>](skills/scrapecreators-api/) | Route a raw scraping/fetching request to the right ScrapeCreators endpoint | API calls, endpoint references, pagination guidance |</p>\n<h2>Example Prompts</h2>\n<pre><code>\nFind the outlier posts for @starterstory on YouTube Shorts from the latest page of videos.\n\n</code></pre>\n<pre><code>\nAnalyze the transcripts from these 12 TikToks and pull out the best hooks, claims, and reusable content angles.\n\n</code></pre>\n<pre><code>\nMine the comments on this viral Instagram Reel. I want objections, questions, buying intent, and exact audience language.\n\n</code></pre>\n<pre><code>\nCompare these five brands on TikTok and Instagram. What formats and topics are working for each one?\n\n</code></pre>\n<pre><code>\nTear down the active Facebook, Google, and LinkedIn ads for this competitor. Give me hooks, offers, CTAs, and what to test.\n\n</code></pre>\n<h2>How the Skills Work Together</h2>\n<pre><code>\nscrapecreators-api\n\n        │\n\n        ▼\n\nsocial research workflows\n\n ├─ outlier-post-finder\n\n ├─ transcript-intelligence\n\n ├─ comment-mining\n\n ├─ competitor-social-research\n\n ├─ ad-library-teardown\n\n ├─ trend-discovery\n\n ├─ influencer-prospecting\n\n ├─ audience-research\n\n ├─ social-listening-brief\n\n ├─ product-demand-research\n\n ├─ creator-profile-teardown\n\n └─ content-repurposing\n\n</code></pre>\n<p>The workflow skills should use <code>scrapecreators-api</code> as the data layer when they need endpoint details. Each workflow produces a useful artifact, not just raw JSON.</p>\n<h2>Design Principles</h2>\n<p>1. <strong>Workflow-first, API-second</strong> — users ask for a business outcome, not an endpoint.</p>\n<p>2. <strong>Public-data only</strong> — ScrapeCreators extracts public social data. Do not promise logged-in/private data.</p>\n<p>3. <strong>Cited outputs</strong> — include source URLs for posts, videos, ads, and comments whenever possible.</p>\n<p>4. <strong>Baseline-aware analysis</strong> — judge performance against a creator's own normal performance, not only raw vanity metrics.</p>\n<p>5. <strong>Exact language matters</strong> — preserve useful comments, hooks, captions, and transcript quotes verbatim.</p>\n<p>6. <strong>Keep outputs actionable</strong> — end with patterns, recommendations, test ideas, or a CSV when useful.</p>\n<h2>Links</h2>\n<ul>\n<li><a href=\"https://scrapecreators.com\" target=\"_blank\" rel=\"noreferrer\">ScrapeCreators</a></li>\n<li><a href=\"https://docs.scrapecreators.com\" target=\"_blank\" rel=\"noreferrer\">API Documentation</a></li>\n<li><a href=\"https://docs.scrapecreators.com/integrations/mcp\" target=\"_blank\" rel=\"noreferrer\">MCP Integration</a></li>\n<li><a href=\"https://docs.scrapecreators.com/integrations/agent-skill\" target=\"_blank\" rel=\"noreferrer\">Agent Skill Docs</a></li>\n</ul>",
+  "skillMd": "",
+  "updatedAt": "2026-08-26T17:26:01Z",
+  "author": {
+    "login": "ScrapeCreators",
+    "name": "ScrapeCreators",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/272332798?v=4",
+    "profileUrl": "https://github.com/ScrapeCreators",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "obra-brainstorming",
+      "displayName": "obra/brainstorming",
+      "stars": 282055,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mattpocock-skills",
+      "displayName": "mattpocock/skills",
+      "stars": 252317,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
+      "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "stars": 125255,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 93286,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "leonxlnx-taste-skill",
+      "displayName": "Leonxlnx/taste-skill",
+      "stars": 84574,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "lum1104-understand-anything",
+      "displayName": "Lum1104/understand-anything",
+      "stars": 81591,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "panniantong-agent-reach",
+      "displayName": "Panniantong/Agent-Reach",
+      "stars": 78219,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "santifer-career-ops",
+      "displayName": "santifer/career-ops",
+      "stars": 70227,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-bengaluru",
+    "label": "Global Skill Market / Bengaluru / Community Skills",
+    "lat": 12.9716,
+    "lon": 77.5946,
+    "source": "virtual_market"
+  }
+}
