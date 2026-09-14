@@ -5,14 +5,14 @@
   "displayName": "redhat/sre-skillpack",
   "description": "Discover, remediate, and verify CVEs across your RHEL fleet — orchestrating Red Hat Lightspeed and Ansible Automation Platform through a single workflow.",
   "stars": 0,
-  "category": "video-search-and-summarization",
+  "category": "TypeScript Skills",
   "source": "voltagent",
   "url": "https://catalog.redhat.com/en/ai/skills/detail/agentic-skill-pack-for-site-reliability-engineers",
   "githubRepo": "",
   "readme": "# redhat/sre-skillpack\n\nDiscover, remediate, and verify CVEs across your RHEL fleet — orchestrating Red Hat Lightspeed and Ansible Automation Platform through a single workflow.",
   "readmeHtml": "<h1>redhat/sre-skillpack</h1>\n<p>Discover, remediate, and verify CVEs across your RHEL fleet — orchestrating Red Hat Lightspeed and Ansible Automation Platform through a single workflow.</p>",
   "skillMd": "",
-  "updatedAt": "2026-09-13T21:15:18.556Z",
+  "updatedAt": "2026-09-14T22:12:12.336Z",
   "author": {
     "login": "redhat",
     "name": "redhat",
@@ -44,46 +44,46 @@
       "evidence": "author:redhat"
     },
     {
+      "slug": "coreyhaines31-ab-testing",
+      "displayName": "coreyhaines31/ab-testing",
+      "stars": 50232,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    },
+    {
+      "slug": "phuryn-ab-test-analysis",
+      "displayName": "phuryn/ab-test-analysis",
+      "stars": 26315,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    },
+    {
       "slug": "google-cloud-agent-platform-skill-registry",
       "displayName": "google/cloud/agent-platform-skill-registry",
-      "stars": 19855,
+      "stars": 19903,
       "relation": "shared_tag",
-      "evidence": "video-search-and-summarization"
+      "evidence": "TypeScript Skills"
     },
     {
-      "slug": "cypress-io-cypress-author",
-      "displayName": "cypress-io/cypress-author",
-      "stars": 40,
+      "slug": "deanpeters-acquisition-channel-advisor",
+      "displayName": "deanpeters/acquisition-channel-advisor",
+      "stars": 6960,
       "relation": "shared_tag",
-      "evidence": "video-search-and-summarization"
+      "evidence": "TypeScript Skills"
     },
     {
-      "slug": "redhat-cve-skillpack",
-      "displayName": "redhat/cve-skillpack",
-      "stars": 0,
+      "slug": "realkimbarrett-avatar-extraction",
+      "displayName": "realkimbarrett/avatar-extraction",
+      "stars": 748,
       "relation": "shared_tag",
-      "evidence": "video-search-and-summarization"
-    },
-    {
-      "slug": "redhat-openshift-skillpack",
-      "displayName": "redhat/openshift-skillpack",
-      "stars": 0,
-      "relation": "shared_tag",
-      "evidence": "video-search-and-summarization"
-    },
-    {
-      "slug": "redhat-openshift-virtualization",
-      "displayName": "redhat/openshift-virtualization",
-      "stars": 0,
-      "relation": "shared_tag",
-      "evidence": "video-search-and-summarization"
+      "evidence": "TypeScript Skills"
     }
   ],
   "mapLocation": {
-    "id": "virtual-berlin",
-    "label": "Global Skill Market / Berlin / video-search-and-summarization",
-    "lat": 52.52,
-    "lon": 13.405,
+    "id": "virtual-san-francisco",
+    "label": "Global Skill Market / San Francisco / TypeScript Skills",
+    "lat": 37.7749,
+    "lon": -122.4194,
     "source": "virtual_market"
   }
 }

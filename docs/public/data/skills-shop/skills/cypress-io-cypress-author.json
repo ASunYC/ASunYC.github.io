@@ -5,7 +5,7 @@
   "displayName": "cypress-io/cypress-author",
   "description": "Creates, updates, and fixes Cypress E2E and component tests.",
   "stars": 40,
-  "category": "video-search-and-summarization",
+  "category": "TypeScript Skills",
   "source": "voltagent",
   "url": "https://github.com/cypress-io/ai-toolkit/tree/main/skills/cypress-author",
   "githubRepo": "cypress-io/ai-toolkit",
@@ -29,60 +29,60 @@
   },
   "related": [
     {
+      "slug": "coreyhaines31-ab-testing",
+      "displayName": "coreyhaines31/ab-testing",
+      "stars": 50232,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    },
+    {
+      "slug": "phuryn-ab-test-analysis",
+      "displayName": "phuryn/ab-test-analysis",
+      "stars": 26315,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    },
+    {
       "slug": "google-cloud-agent-platform-skill-registry",
       "displayName": "google/cloud/agent-platform-skill-registry",
-      "stars": 19855,
+      "stars": 19903,
       "relation": "shared_tag",
-      "evidence": "video-search-and-summarization"
+      "evidence": "TypeScript Skills"
     },
     {
-      "slug": "redhat-cve-skillpack",
-      "displayName": "redhat/cve-skillpack",
+      "slug": "deanpeters-acquisition-channel-advisor",
+      "displayName": "deanpeters/acquisition-channel-advisor",
+      "stars": 6960,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    },
+    {
+      "slug": "realkimbarrett-avatar-extraction",
+      "displayName": "realkimbarrett/avatar-extraction",
+      "stars": 748,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    },
+    {
+      "slug": "resend-resend",
+      "displayName": "resend/resend",
+      "stars": 177,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    },
+    {
+      "slug": "redis-redis-core",
+      "displayName": "redis/redis-core",
+      "stars": 148,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    },
+    {
+      "slug": "microsoft-azure-ai-contentsafety-ts",
+      "displayName": "microsoft/azure-ai-contentsafety-ts",
       "stars": 0,
       "relation": "shared_tag",
-      "evidence": "video-search-and-summarization"
-    },
-    {
-      "slug": "redhat-sre-skillpack",
-      "displayName": "redhat/sre-skillpack",
-      "stars": 0,
-      "relation": "shared_tag",
-      "evidence": "video-search-and-summarization"
-    },
-    {
-      "slug": "redhat-openshift-skillpack",
-      "displayName": "redhat/openshift-skillpack",
-      "stars": 0,
-      "relation": "shared_tag",
-      "evidence": "video-search-and-summarization"
-    },
-    {
-      "slug": "redhat-openshift-virtualization",
-      "displayName": "redhat/openshift-virtualization",
-      "stars": 0,
-      "relation": "shared_tag",
-      "evidence": "video-search-and-summarization"
-    },
-    {
-      "slug": "voltagent-awesome-design-md",
-      "displayName": "voltagent/awesome-design-md",
-      "stars": 115686,
-      "relation": "shared_tag",
-      "evidence": "location:united-states"
-    },
-    {
-      "slug": "voltagent-awesome-openclaw-skills",
-      "displayName": "voltagent/awesome-openclaw-skills",
-      "stars": 52554,
-      "relation": "shared_tag",
-      "evidence": "location:united-states"
-    },
-    {
-      "slug": "k-dense-ai-scientific-agent-skills",
-      "displayName": "K-Dense-AI/scientific-agent-skills",
-      "stars": 44741,
-      "relation": "shared_tag",
-      "evidence": "location:united-states"
+      "evidence": "TypeScript Skills"
     }
   ],
   "mapLocation": {

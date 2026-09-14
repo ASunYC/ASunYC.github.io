@@ -1,0 +1,89 @@
+{
+  "id": "skill:cyperx84-claude-skills-mental-models",
+  "slug": "cyperx84-claude-skills-mental-models",
+  "name": "claude-skills-mental-models",
+  "displayName": "cyperx84/claude-skills-mental-models",
+  "description": "Drop your own mental models in as files; 21 included",
+  "stars": 19,
+  "category": "Community Skills",
+  "source": "voltagent",
+  "url": "https://github.com/cyperx84/claude-skills-mental-models",
+  "githubRepo": "cyperx84/claude-skills-mental-models",
+  "readme": "# Mental Models for Claude Code\n\n[![GitHub stars](https://img.shields.io/github/stars/cyperx84/claude-skills-mental-models?style=flat-square)](https://github.com/cyperx84/claude-skills-mental-models/stargazers)\n[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)](./LICENSE)\n[![Claude Code Compatible](https://img.shields.io/badge/Claude%20Code-Compatible-8A2BE2?style=flat-square)](https://code.claude.com/docs)\n[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](./.github/CONTRIBUTING.md)\n\nMental models as files an agent reads — bring your own, or start with the 21 that ship.\n\n> A latticework for better decisions, one prompt away.\n\n## What It Does\n\nAsk for \"inversion,\" \"find the bottleneck,\" or \"help me think through X\" and Claude picks\n2–4 models from different areas, walks their Thinking Steps against your actual problem,\nsurfaces the conditions under which each one misleads you, and tells you where they disagree.\n\nThe models are files. Twenty-one ship with it — each with a `sources` block whose claims\ntrace to something real — and you can add your own, which take precedence. No dependencies,\nno runtime, no build step.\n\n## Install\n\n**Claude Code — plugin (recommended):**\n\n```bash\n/plugin marketplace add cyperx84/claude-skills-mental-models\n/plugin install mental-models@mental-models\n```\n\nOr from your shell:\n\n```bash\nclaude plugin marketplace add cyperx84/claude-skills-mental-models\nclaude plugin install mental-models@mental-models\n```\n\n**Any other harness — clone and symlink.** The skill is one self-contained folder with a\n`SKILL.md` at its root, which is the format Codex, Cursor, OpenCode, and other\nAgentSkills-convention harnesses read:\n\n```bash\ngit clone https://github.com/cyperx84/claude-skills-mental-models.git\nln -s \"$PWD/claude-skills-mental-models/skills/mental-models\" ~/.claude/skills/mental-models\n# or ~/.agents/skills/, or whatever your harness scans\n```\n\nNothing else to run. The skill reads its own files.\n\n**Upgrading from an older clone?** Previous versions told you to symlink\n`.claude/skills/mental-models`. That directory is gone. A stale symlink fails silently — the\nskill simply stops activating, with no error. Repoint it:\n\n```bash\ncd /path/to/your/claude-skills-mental-models   # your existing clone\ngit pull                                        # skills/ does not exist until you do\nrm -f ~/.claude/skills/mental-models            # -f: the old symlink may already be gone\nln -s \"$PWD/skills/mental-models\" ~/.claude/skills/mental-models\n```\n\n`ln -s` never checks that its target exists, so pull first or you will replace one dangling\nsymlink with another.\n\nOr drop the symlink entirely and install the plugin above.\n\n## Quick Start\n\nOnce installed, it activates on its own:\n\n```\nApply inversion to this architecture decision\n```\n\n```\nWhat mental models help with scaling systems?\n```\n\n```\nHelp me think through whether to take this job offer\n```\n\n## Bring Your Own Models\n\nThe bundled models are a starting set, not a fixed list. Drop a markdown file in either place\nand it joins the latticework:\n\n```\n.mental-models/<name>.md            this project's or team's models, committed with the code\n~/.claude/mental-models/<name>.md   your personal models, available everywhere\n```\n\nCopy [`TEMPLATE.md`](./skills/mental-models/TEMPLATE.md) and fill in the sections.\nNo registration, no config, no rebuild — the skill globs those paths every time it runs, and\na model you wrote wins any name collision with a bundled one.\n\nThis is the interesting half. A general model about incidents is fine; *your* model about\nhow your team handles incidents, sitting in your repo where every agent working there picks\nit up, is better. Institutional judgment, version-controlled, applied automatically.\n\nPlugin updates never touch either path.\n\n### It's an OKF bundle\n\n`models/` conforms to Google's [Open Knowledge Format](https://github.com/GoogleCloudPlatform/open-knowledge-format) —\na directory of markdown files with YAML frontmatter, one `type` per concept, an `index.md` at\nthe root. That is not a detail: it means any OKF bundle is already a valid drop-in here, and\nthis bundle is readable by any OKF-aware agent. Obsidian vaults work too — `[[wikilinks]]`\nare treated as links.\n\nNothing to convert. If you have a knowledge bundle, it's already in the right shape.\n\n## Why Munger?\n\nCharlie Munger argued that worldly wisdom comes from building a **latticework of mental\nmodels** drawn from many disciplines—then hanging experience on that lattice. A single\ndiscipline gives you a hammer; a latticework gives you judgment. This skill operationalizes\nthat idea: instead of one framework, Claude reaches across psychology, physics, economics,\nmath, and strategy to analyze your problem. Read more in\n[Poor Charlie's Almanack](https://www.stripe.press/poor-charlies-almanack) or Farnam Street's\n[Mental Models hub](https://fs.blog/mental-models/).\n\n## The Models\n\nTwenty-one, listed in [`models/index.md`](./skills/mental-models/models/index.md):\n\n| Area | Models |\n|---|---|\n| Thinking tools | first-principles thinking, second-order thinking, inversion |\n| Systems | bottlenecks, feedback loops, emergence, leverage, margin of safety |\n| Physical | activation energy, inertia |\n| Evidence | sampling, randomness, regression to the mean |\n| Economics | trade-offs, scarcity, creative destruction |\n| People | bias from incentives, social proof, confirmation bias, framing |\n| Strategy | asymmetric warfare |\n\nThere were 98. They were one generation run that mirrored someone else's list with no\ncitations, so 2.0 replaced them with a smaller set that carries sources. The count was never\nthe point — [your own models](#bring-your-own-models) are.\n\nOne problem, many lenses — that's the point.\n\n## What's In Here\n\n```\nskills/mental-models/\n├── SKILL.md      entry point: when to activate, how to select, how to apply\n├── TEMPLATE.md   the format — copy this to write your own\n└── models/       an OKF bundle: index.md plus one file per model\n```\n\nYour own models live outside the skill, at `.mental-models/` or `~/.claude/mental-models/`,\nso an update can never overwrite them.\n\n## Contributing\n\nModel additions, fixes, and new examples welcome. See [CONTRIBUTING.md](./.github/CONTRIBUTING.md).\n\n## License\n\n[MIT](./LICENSE)\n\n## References\n\nSources, citations, and further reading in [REFERENCES.md](./REFERENCES.md).\n",
+  "readmeHtml": "<h1>Mental Models for Claude Code</h1>\n<p><a href=\"https://img.shields.io/github/stars/cyperx84/claude-skills-mental-models?style=flat-square\" target=\"_blank\" rel=\"noreferrer\">![GitHub stars</a>](https://github.com/cyperx84/claude-skills-mental-models/stargazers)</p>\n<p><a href=\"https://img.shields.io/badge/License-MIT-green.svg?style=flat-square\" target=\"_blank\" rel=\"noreferrer\">![License: MIT</a>](./LICENSE)</p>\n<p><a href=\"https://img.shields.io/badge/Claude%20Code-Compatible-8A2BE2?style=flat-square\" target=\"_blank\" rel=\"noreferrer\">![Claude Code Compatible</a>](https://code.claude.com/docs)</p>\n<p><a href=\"https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square\" target=\"_blank\" rel=\"noreferrer\">![PRs Welcome</a>](./.github/CONTRIBUTING.md)</p>\n<p>Mental models as files an agent reads — bring your own, or start with the 21 that ship.</p>\n<p>&gt; A latticework for better decisions, one prompt away.</p>\n<h2>What It Does</h2>\n<p>Ask for \"inversion,\" \"find the bottleneck,\" or \"help me think through X\" and Claude picks</p>\n<p>2–4 models from different areas, walks their Thinking Steps against your actual problem,</p>\n<p>surfaces the conditions under which each one misleads you, and tells you where they disagree.</p>\n<p>The models are files. Twenty-one ship with it — each with a <code>sources</code> block whose claims</p>\n<p>trace to something real — and you can add your own, which take precedence. No dependencies,</p>\n<p>no runtime, no build step.</p>\n<h2>Install</h2>\n<p><strong>Claude Code — plugin (recommended):</strong></p>\n<pre><code>\n/plugin marketplace add cyperx84/claude-skills-mental-models\n\n/plugin install mental-models@mental-models\n\n</code></pre>\n<p>Or from your shell:</p>\n<pre><code>\nclaude plugin marketplace add cyperx84/claude-skills-mental-models\n\nclaude plugin install mental-models@mental-models\n\n</code></pre>\n<p><strong>Any other harness — clone and symlink.</strong> The skill is one self-contained folder with a</p>\n<p><code>SKILL.md</code> at its root, which is the format Codex, Cursor, OpenCode, and other</p>\n<p>AgentSkills-convention harnesses read:</p>\n<pre><code>\ngit clone https://github.com/cyperx84/claude-skills-mental-models.git\n\nln -s \"$PWD/claude-skills-mental-models/skills/mental-models\" ~/.claude/skills/mental-models\n\n# or ~/.agents/skills/, or whatever your harness scans\n\n</code></pre>\n<p>Nothing else to run. The skill reads its own files.</p>\n<p><strong>Upgrading from an older clone?</strong> Previous versions told you to symlink</p>\n<p><code>.claude/skills/mental-models</code>. That directory is gone. A stale symlink fails silently — the</p>\n<p>skill simply stops activating, with no error. Repoint it:</p>\n<pre><code>\ncd /path/to/your/claude-skills-mental-models   # your existing clone\n\ngit pull                                        # skills/ does not exist until you do\n\nrm -f ~/.claude/skills/mental-models            # -f: the old symlink may already be gone\n\nln -s \"$PWD/skills/mental-models\" ~/.claude/skills/mental-models\n\n</code></pre>\n<p><code>ln -s</code> never checks that its target exists, so pull first or you will replace one dangling</p>\n<p>symlink with another.</p>\n<p>Or drop the symlink entirely and install the plugin above.</p>\n<h2>Quick Start</h2>\n<p>Once installed, it activates on its own:</p>\n<pre><code>\nApply inversion to this architecture decision\n\n</code></pre>\n<pre><code>\nWhat mental models help with scaling systems?\n\n</code></pre>\n<pre><code>\nHelp me think through whether to take this job offer\n\n</code></pre>\n<h2>Bring Your Own Models</h2>\n<p>The bundled models are a starting set, not a fixed list. Drop a markdown file in either place</p>\n<p>and it joins the latticework:</p>\n<pre><code>\n.mental-models/&lt;name&gt;.md            this project's or team's models, committed with the code\n\n~/.claude/mental-models/&lt;name&gt;.md   your personal models, available everywhere\n\n</code></pre>\n<p>Copy [<code>TEMPLATE.md</code>](./skills/mental-models/TEMPLATE.md) and fill in the sections.</p>\n<p>No registration, no config, no rebuild — the skill globs those paths every time it runs, and</p>\n<p>a model you wrote wins any name collision with a bundled one.</p>\n<p>This is the interesting half. A general model about incidents is fine; *your* model about</p>\n<p>how your team handles incidents, sitting in your repo where every agent working there picks</p>\n<p>it up, is better. Institutional judgment, version-controlled, applied automatically.</p>\n<p>Plugin updates never touch either path.</p>\n<h3>It's an OKF bundle</h3>\n<p><code>models/</code> conforms to Google's <a href=\"https://github.com/GoogleCloudPlatform/open-knowledge-format\" target=\"_blank\" rel=\"noreferrer\">Open Knowledge Format</a> —</p>\n<p>a directory of markdown files with YAML frontmatter, one <code>type</code> per concept, an <code>index.md</code> at</p>\n<p>the root. That is not a detail: it means any OKF bundle is already a valid drop-in here, and</p>\n<p>this bundle is readable by any OKF-aware agent. Obsidian vaults work too — <code>[[wikilinks]]</code></p>\n<p>are treated as links.</p>\n<p>Nothing to convert. If you have a knowledge bundle, it's already in the right shape.</p>\n<h2>Why Munger?</h2>\n<p>Charlie Munger argued that worldly wisdom comes from building a **latticework of mental</p>\n<p>models** drawn from many disciplines—then hanging experience on that lattice. A single</p>\n<p>discipline gives you a hammer; a latticework gives you judgment. This skill operationalizes</p>\n<p>that idea: instead of one framework, Claude reaches across psychology, physics, economics,</p>\n<p>math, and strategy to analyze your problem. Read more in</p>\n<p><a href=\"https://www.stripe.press/poor-charlies-almanack\" target=\"_blank\" rel=\"noreferrer\">Poor Charlie's Almanack</a> or Farnam Street's</p>\n<p><a href=\"https://fs.blog/mental-models/\" target=\"_blank\" rel=\"noreferrer\">Mental Models hub</a>.</p>\n<h2>The Models</h2>\n<p>Twenty-one, listed in [<code>models/index.md</code>](./skills/mental-models/models/index.md):</p>\n<p>| Area | Models |</p>\n<p>|---|---|</p>\n<p>| Thinking tools | first-principles thinking, second-order thinking, inversion |</p>\n<p>| Systems | bottlenecks, feedback loops, emergence, leverage, margin of safety |</p>\n<p>| Physical | activation energy, inertia |</p>\n<p>| Evidence | sampling, randomness, regression to the mean |</p>\n<p>| Economics | trade-offs, scarcity, creative destruction |</p>\n<p>| People | bias from incentives, social proof, confirmation bias, framing |</p>\n<p>| Strategy | asymmetric warfare |</p>\n<p>There were 98. They were one generation run that mirrored someone else's list with no</p>\n<p>citations, so 2.0 replaced them with a smaller set that carries sources. The count was never</p>\n<p>the point — [your own models](#bring-your-own-models) are.</p>\n<p>One problem, many lenses — that's the point.</p>\n<h2>What's In Here</h2>\n<pre><code>\nskills/mental-models/\n\n├── SKILL.md      entry point: when to activate, how to select, how to apply\n\n├── TEMPLATE.md   the format — copy this to write your own\n\n└── models/       an OKF bundle: index.md plus one file per model\n\n</code></pre>\n<p>Your own models live outside the skill, at <code>.mental-models/</code> or <code>~/.claude/mental-models/</code>,</p>\n<p>so an update can never overwrite them.</p>\n<h2>Contributing</h2>\n<p>Model additions, fixes, and new examples welcome. See [CONTRIBUTING.md](./.github/CONTRIBUTING.md).</p>\n<h2>License</h2>\n<p>[MIT](./LICENSE)</p>\n<h2>References</h2>\n<p>Sources, citations, and further reading in [REFERENCES.md](./REFERENCES.md).</p>",
+  "skillMd": "",
+  "updatedAt": "2026-09-10T10:44:10Z",
+  "author": {
+    "login": "cyperx84",
+    "name": "Cyperx",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/47339338?v=4",
+    "profileUrl": "https://github.com/cyperx84",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "obra-brainstorming",
+      "displayName": "obra/brainstorming",
+      "stars": 286652,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mattpocock-skills",
+      "displayName": "mattpocock/skills",
+      "stars": 262014,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
+      "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "stars": 127608,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 93872,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "leonxlnx-taste-skill",
+      "displayName": "Leonxlnx/taste-skill",
+      "stars": 87111,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "lum1104-understand-anything",
+      "displayName": "Lum1104/understand-anything",
+      "stars": 82757,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "panniantong-agent-reach",
+      "displayName": "Panniantong/Agent-Reach",
+      "stars": 81156,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "santifer-career-ops",
+      "displayName": "santifer/career-ops",
+      "stars": 71605,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-bengaluru",
+    "label": "Global Skill Market / Bengaluru / Community Skills",
+    "lat": 12.9716,
+    "lon": 77.5946,
+    "source": "virtual_market"
+  }
+}

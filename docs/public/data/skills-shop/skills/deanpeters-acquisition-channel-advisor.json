@@ -4,7 +4,7 @@
   "name": "acquisition-channel-advisor",
   "displayName": "deanpeters/acquisition-channel-advisor",
   "description": "Evaluate channels using unit economics and recommend scale/test/kill decisions",
-  "stars": 6941,
+  "stars": 6960,
   "category": "TypeScript Skills",
   "source": "voltagent",
   "url": "https://github.com/deanpeters/Product-Manager-Skills/tree/main/skills/acquisition-channel-advisor",
@@ -32,28 +32,35 @@
     {
       "slug": "coreyhaines31-ab-testing",
       "displayName": "coreyhaines31/ab-testing",
-      "stars": 49961,
+      "stars": 50232,
       "relation": "shared_tag",
       "evidence": "TypeScript Skills"
     },
     {
       "slug": "phuryn-ab-test-analysis",
       "displayName": "phuryn/ab-test-analysis",
-      "stars": 26288,
+      "stars": 26315,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    },
+    {
+      "slug": "google-cloud-agent-platform-skill-registry",
+      "displayName": "google/cloud/agent-platform-skill-registry",
+      "stars": 19903,
       "relation": "shared_tag",
       "evidence": "TypeScript Skills"
     },
     {
       "slug": "realkimbarrett-avatar-extraction",
       "displayName": "realkimbarrett/avatar-extraction",
-      "stars": 747,
+      "stars": 748,
       "relation": "shared_tag",
       "evidence": "TypeScript Skills"
     },
     {
       "slug": "resend-resend",
       "displayName": "resend/resend",
-      "stars": 176,
+      "stars": 177,
       "relation": "shared_tag",
       "evidence": "TypeScript Skills"
     },
@@ -65,16 +72,9 @@
       "evidence": "TypeScript Skills"
     },
     {
-      "slug": "microsoft-azure-ai-contentsafety-ts",
-      "displayName": "microsoft/azure-ai-contentsafety-ts",
-      "stars": 0,
-      "relation": "shared_tag",
-      "evidence": "TypeScript Skills"
-    },
-    {
-      "slug": "microsoft-azure-ai-document-intelligence-ts",
-      "displayName": "microsoft/azure-ai-document-intelligence-ts",
-      "stars": 0,
+      "slug": "cypress-io-cypress-author",
+      "displayName": "cypress-io/cypress-author",
+      "stars": 40,
       "relation": "shared_tag",
       "evidence": "TypeScript Skills"
     }
