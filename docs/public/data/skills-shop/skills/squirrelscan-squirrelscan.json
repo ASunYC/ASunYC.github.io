@@ -12,7 +12,7 @@
   "readme": "# squirrelscan skills\n\nTwo [Agent Skills](https://agentskills.io) that let a coding agent (Claude Code, Cursor, Codex, OpenCode, Gemini CLI, or anything else that reads `SKILL.md`) audit a website with the `squirrel` CLI and fix what it finds.\n\n| Skill | What it does |\n|---|---|\n| [`audit-website`](./audit-website/SKILL.md) | The full fix loop: run an audit, read the LLM report, map each finding to the source file that causes it, fix in batches, re-audit until the site scores well. |\n| [`squirrelscan`](./squirrelscan/SKILL.md) | Operating the CLI: install, login, API keys, credits, running audits, publishing reports, MCP setup, config, troubleshooting. |\n\nBoth require the `squirrel` CLI on your PATH. Install it from [squirrelscan.com/download](https://squirrelscan.com/download) and check with `squirrel --version`. Local audits are free.\n\n## Install\n\n```bash\nnpx skills add squirrelscan/squirrelscan\n```\n\nThis lands both skills in `.agents/skills/`. Claude Code users can instead install the plugin, which bundles the skills and the MCP server:\n\n```\n/plugin marketplace add squirrelscan/squirrelscan\n/plugin install squirrelscan@squirrelscan\n```\n\n## Use\n\nAsk your agent in plain language. For example:\n\n```\nUse the audit-website skill to audit https://example.com and fix all the issues, but only crawl 10 pages\n```\n\n```\nUse the squirrelscan skill to publish the last audit and share the report\n```\n\n## Layout\n\n```\nskills/\n  audit-website/\n    SKILL.md              the skill (instructions the agent follows)\n    references/           output format reference the skill points at\n    agents/openai.yaml    Codex metadata\n    assets/               icons\n  squirrelscan/\n    SKILL.md\n    agents/openai.yaml\n    assets/\n```\n\nRule documentation for every finding lives at [docs.squirrelscan.com/rules](https://docs.squirrelscan.com/rules). The MCP server, GitHub Action, and CLI reference are in the [main README](../README.md).\n",
   "readmeHtml": "<h1>squirrelscan skills</h1>\n<p>Two <a href=\"https://agentskills.io\" target=\"_blank\" rel=\"noreferrer\">Agent Skills</a> that let a coding agent (Claude Code, Cursor, Codex, OpenCode, Gemini CLI, or anything else that reads <code>SKILL.md</code>) audit a website with the <code>squirrel</code> CLI and fix what it finds.</p>\n<p>| Skill | What it does |</p>\n<p>|---|---|</p>\n<p>| [<code>audit-website</code>](./audit-website/SKILL.md) | The full fix loop: run an audit, read the LLM report, map each finding to the source file that causes it, fix in batches, re-audit until the site scores well. |</p>\n<p>| [<code>squirrelscan</code>](./squirrelscan/SKILL.md) | Operating the CLI: install, login, API keys, credits, running audits, publishing reports, MCP setup, config, troubleshooting. |</p>\n<p>Both require the <code>squirrel</code> CLI on your PATH. Install it from <a href=\"https://squirrelscan.com/download\" target=\"_blank\" rel=\"noreferrer\">squirrelscan.com/download</a> and check with <code>squirrel --version</code>. Local audits are free.</p>\n<h2>Install</h2>\n<pre><code>\nnpx skills add squirrelscan/squirrelscan\n\n</code></pre>\n<p>This lands both skills in <code>.agents/skills/</code>. Claude Code users can instead install the plugin, which bundles the skills and the MCP server:</p>\n<pre><code>\n/plugin marketplace add squirrelscan/squirrelscan\n\n/plugin install squirrelscan@squirrelscan\n\n</code></pre>\n<h2>Use</h2>\n<p>Ask your agent in plain language. For example:</p>\n<pre><code>\nUse the audit-website skill to audit https://example.com and fix all the issues, but only crawl 10 pages\n\n</code></pre>\n<pre><code>\nUse the squirrelscan skill to publish the last audit and share the report\n\n</code></pre>\n<h2>Layout</h2>\n<pre><code>\nskills/\n\n  audit-website/\n\n    SKILL.md              the skill (instructions the agent follows)\n\n    references/           output format reference the skill points at\n\n    agents/openai.yaml    Codex metadata\n\n    assets/               icons\n\n  squirrelscan/\n\n    SKILL.md\n\n    agents/openai.yaml\n\n    assets/\n\n</code></pre>\n<p>Rule documentation for every finding lives at <a href=\"https://docs.squirrelscan.com/rules\" target=\"_blank\" rel=\"noreferrer\">docs.squirrelscan.com/rules</a>. The MCP server, GitHub Action, and CLI reference are in the [main README](../README.md).</p>",
   "skillMd": "",
-  "updatedAt": "2026-09-16T20:12:57Z",
+  "updatedAt": "2026-09-17T03:38:13Z",
   "author": {
     "login": "squirrelscan",
     "name": "squirrelscan",
@@ -25,56 +25,56 @@
     {
       "slug": "obra-brainstorming",
       "displayName": "obra/brainstorming",
-      "stars": 287596,
+      "stars": 288073,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "mattpocock-skills",
       "displayName": "mattpocock/skills",
-      "stars": 263557,
+      "stars": 264393,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
       "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
-      "stars": 128166,
+      "stars": 128492,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "thedotmack-claude-mem",
       "displayName": "thedotmack/claude-mem",
-      "stars": 94049,
+      "stars": 94126,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "leonxlnx-taste-skill",
       "displayName": "Leonxlnx/taste-skill",
-      "stars": 87675,
+      "stars": 87958,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "lum1104-understand-anything",
       "displayName": "Lum1104/understand-anything",
-      "stars": 83063,
+      "stars": 83153,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "panniantong-agent-reach",
       "displayName": "Panniantong/Agent-Reach",
-      "stars": 82492,
+      "stars": 82772,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "santifer-career-ops",
       "displayName": "santifer/career-ops",
-      "stars": 71826,
+      "stars": 71947,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     }
