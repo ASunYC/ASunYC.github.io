@@ -4,15 +4,15 @@
   "name": "subagent-cli-skills",
   "displayName": "amirkiarafiei/subagent-cli-skills",
   "description": "Delegate heavy work to 15 other agent CLIs as subagents",
-  "stars": 7,
+  "stars": 8,
   "category": "Community Skills",
   "source": "voltagent",
   "url": "https://github.com/amirkiarafiei/subagent-cli-skills/tree/main/skills",
   "githubRepo": "amirkiarafiei/subagent-cli-skills",
-  "readme": "<h3 align=\"center\">Let your Claude Code prompt Codex and Antigravity as Subagent</h3>\n\n<p align=\"center\">\n  <img src=\"../assets/banner.png\" width=\"720\" alt=\"Delegation Flow Diagram\">\n</p>\n\nEach folder here is one skill. A skill teaches your main agent to send a task to a different CLI\nagent. The other agent does the work in the background. It returns only a summary. Your main agent\nkeeps a small context and a low cost.\n\n## Usage examples\n\nName the tool in your request. Your agent then activates the correct skill. You can also type the\nslash command yourself. You can name a model for each tool.\n\n**1. Review a feature with two agents and two models**\n\n```\nAsk Codex with GPT-Astra and Hermes with GLM-5.3 to review this feature using their subagent cli skills\n```\n\n**2. Get the latest documentation**\n\n```\n/antigravity-cli Read the latest docs for the Stripe API. List the breaking changes.\n```\n\n**3. Build two features at the same time**\n\n```\nBuild the login form in src/auth/ with Codex. Build the signup form in src/signup/ with OpenCode.\n```\n\n**4. Get fresh ideas on a plan from three agents**\n\n```\nAsk Pi and Grok and Devin to review the implementation plan to get fresh ideas.\n```\n\n## Available skills\n\n19 CLI agents: Antigravity (`agy`), Claude Code, Codex, Copilot, Cursor, Devin, Gemini, Grok,\nHermes, Junie, Kimi Code, Kiro, Mistral Vibe, Oh My Pi, OpenCode, OpenHands, Pi, Qoder, Qwen Code.\n\nEvery skill holds two files: `SKILL.md` for the behaviour, and `reference.md` for the flags, models\nand authentication.\n\n## Install\n\n```bash\ncurl -sSL https://raw.githubusercontent.com/amirkiarafiei/subagent-cli-skills/main/install.sh | bash\n```\n\nOr ask your agent to do it — see [AGENTIC_INSTALLATION.md](../AGENTIC_INSTALLATION.md).\n\nMore detail: [main README](../README.md)\n",
-  "readmeHtml": "<p>&lt;h3 align=\"center\"&gt;Let your Claude Code prompt Codex and Antigravity as Subagent&lt;/h3&gt;</p>\n<p>&lt;p align=\"center\"&gt;</p>\n<p>  &lt;img src=\"../assets/banner.png\" width=\"720\" alt=\"Delegation Flow Diagram\"&gt;</p>\n<p>&lt;/p&gt;</p>\n<p>Each folder here is one skill. A skill teaches your main agent to send a task to a different CLI</p>\n<p>agent. The other agent does the work in the background. It returns only a summary. Your main agent</p>\n<p>keeps a small context and a low cost.</p>\n<h2>Usage examples</h2>\n<p>Name the tool in your request. Your agent then activates the correct skill. You can also type the</p>\n<p>slash command yourself. You can name a model for each tool.</p>\n<p><strong>1. Review a feature with two agents and two models</strong></p>\n<pre><code>\nAsk Codex with GPT-Astra and Hermes with GLM-5.3 to review this feature using their subagent cli skills\n\n</code></pre>\n<p><strong>2. Get the latest documentation</strong></p>\n<pre><code>\n/antigravity-cli Read the latest docs for the Stripe API. List the breaking changes.\n\n</code></pre>\n<p><strong>3. Build two features at the same time</strong></p>\n<pre><code>\nBuild the login form in src/auth/ with Codex. Build the signup form in src/signup/ with OpenCode.\n\n</code></pre>\n<p><strong>4. Get fresh ideas on a plan from three agents</strong></p>\n<pre><code>\nAsk Pi and Grok and Devin to review the implementation plan to get fresh ideas.\n\n</code></pre>\n<h2>Available skills</h2>\n<p>19 CLI agents: Antigravity (<code>agy</code>), Claude Code, Codex, Copilot, Cursor, Devin, Gemini, Grok,</p>\n<p>Hermes, Junie, Kimi Code, Kiro, Mistral Vibe, Oh My Pi, OpenCode, OpenHands, Pi, Qoder, Qwen Code.</p>\n<p>Every skill holds two files: <code>SKILL.md</code> for the behaviour, and <code>reference.md</code> for the flags, models</p>\n<p>and authentication.</p>\n<h2>Install</h2>\n<pre><code>\ncurl -sSL https://raw.githubusercontent.com/amirkiarafiei/subagent-cli-skills/main/install.sh | bash\n\n</code></pre>\n<p>Or ask your agent to do it — see [AGENTIC_INSTALLATION.md](../AGENTIC_INSTALLATION.md).</p>\n<p>More detail: [main README](../README.md)</p>",
+  "readme": "<h3 align=\"center\">Let your Claude Code prompt Codex and Antigravity as Subagent</h3>\n\n<p align=\"center\">\n  <img src=\"../assets/banner.png\" width=\"720\" alt=\"Delegation Flow Diagram\">\n</p>\n\nEach folder here is one skill. A skill teaches your main agent to send a task to a different CLI\nagent. The other agent does the work in the background. It returns only a summary. Your main agent\nkeeps a small context and a low cost.\n\n## Usage examples\n\nName the tool in your request. Your agent then activates the correct skill. You can also type the\nslash command yourself. You can name a model for each tool.\n\n**1. Review a feature with two agents and two models**\n\n```\nAsk Codex with GPT-Astra and Hermes with GLM-5.3 to review this feature using their subagent cli skills\n```\n\n**2. Get the latest documentation**\n\n```\n/antigravity-cli Read the latest docs for the Stripe API. List the breaking changes.\n```\n\n**3. Build two features at the same time**\n\n```\nBuild the login form with Codex. Build the signup form with OpenCode.\n```\n\n**4. Get fresh ideas on a plan from three agents**\n\n```\nAsk Pi and Grok and Devin to analyze the plan to get fresh and diverse ideas.\n```\n\n## Available skills\n\n20 CLI agents: Antigravity (`agy`), Claude Code, Codex, Copilot, Cursor, Devin, Gemini, Grok,\nHermes, Junie, Kimi Code, Kiro, Mistral Vibe, Oh My Pi, OpenClaw, OpenCode, OpenHands, Pi, Qoder,\nQwen Code.\n\nEvery skill holds two files: `SKILL.md` for the behaviour, and `reference.md` for the flags, models\nand authentication.\n\n## Install\n\n```bash\ncurl -sSL https://raw.githubusercontent.com/amirkiarafiei/subagent-cli-skills/main/install.sh | bash\n```\n\nOr ask your agent to do it — see [AGENTIC_INSTALLATION.md](../AGENTIC_INSTALLATION.md).\n\nMore detail: [main README](../README.md)\n",
+  "readmeHtml": "<p>&lt;h3 align=\"center\"&gt;Let your Claude Code prompt Codex and Antigravity as Subagent&lt;/h3&gt;</p>\n<p>&lt;p align=\"center\"&gt;</p>\n<p>  &lt;img src=\"../assets/banner.png\" width=\"720\" alt=\"Delegation Flow Diagram\"&gt;</p>\n<p>&lt;/p&gt;</p>\n<p>Each folder here is one skill. A skill teaches your main agent to send a task to a different CLI</p>\n<p>agent. The other agent does the work in the background. It returns only a summary. Your main agent</p>\n<p>keeps a small context and a low cost.</p>\n<h2>Usage examples</h2>\n<p>Name the tool in your request. Your agent then activates the correct skill. You can also type the</p>\n<p>slash command yourself. You can name a model for each tool.</p>\n<p><strong>1. Review a feature with two agents and two models</strong></p>\n<pre><code>\nAsk Codex with GPT-Astra and Hermes with GLM-5.3 to review this feature using their subagent cli skills\n\n</code></pre>\n<p><strong>2. Get the latest documentation</strong></p>\n<pre><code>\n/antigravity-cli Read the latest docs for the Stripe API. List the breaking changes.\n\n</code></pre>\n<p><strong>3. Build two features at the same time</strong></p>\n<pre><code>\nBuild the login form with Codex. Build the signup form with OpenCode.\n\n</code></pre>\n<p><strong>4. Get fresh ideas on a plan from three agents</strong></p>\n<pre><code>\nAsk Pi and Grok and Devin to analyze the plan to get fresh and diverse ideas.\n\n</code></pre>\n<h2>Available skills</h2>\n<p>20 CLI agents: Antigravity (<code>agy</code>), Claude Code, Codex, Copilot, Cursor, Devin, Gemini, Grok,</p>\n<p>Hermes, Junie, Kimi Code, Kiro, Mistral Vibe, Oh My Pi, OpenClaw, OpenCode, OpenHands, Pi, Qoder,</p>\n<p>Qwen Code.</p>\n<p>Every skill holds two files: <code>SKILL.md</code> for the behaviour, and <code>reference.md</code> for the flags, models</p>\n<p>and authentication.</p>\n<h2>Install</h2>\n<pre><code>\ncurl -sSL https://raw.githubusercontent.com/amirkiarafiei/subagent-cli-skills/main/install.sh | bash\n\n</code></pre>\n<p>Or ask your agent to do it — see [AGENTIC_INSTALLATION.md](../AGENTIC_INSTALLATION.md).</p>\n<p>More detail: [main README](../README.md)</p>",
   "skillMd": "",
-  "updatedAt": "2026-09-19T12:44:11Z",
+  "updatedAt": "2026-09-20T20:23:39Z",
   "author": {
     "login": "amirkiarafiei",
     "name": "Amirkia RAFIEI OSKOOEI",
@@ -25,56 +25,56 @@
     {
       "slug": "obra-brainstorming",
       "displayName": "obra/brainstorming",
-      "stars": 288794,
+      "stars": 289204,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "mattpocock-skills",
       "displayName": "mattpocock/skills",
-      "stars": 265770,
+      "stars": 266408,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
       "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
-      "stars": 129034,
+      "stars": 129310,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "thedotmack-claude-mem",
       "displayName": "thedotmack/claude-mem",
-      "stars": 94267,
+      "stars": 94336,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "leonxlnx-taste-skill",
       "displayName": "Leonxlnx/taste-skill",
-      "stars": 88450,
+      "stars": 88784,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "panniantong-agent-reach",
       "displayName": "Panniantong/Agent-Reach",
-      "stars": 83416,
+      "stars": 83806,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "lum1104-understand-anything",
       "displayName": "Lum1104/understand-anything",
-      "stars": 83312,
+      "stars": 83426,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "santifer-career-ops",
       "displayName": "santifer/career-ops",
-      "stars": 72153,
+      "stars": 72253,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     }
