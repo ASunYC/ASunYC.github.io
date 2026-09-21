@@ -12,7 +12,7 @@
   "readme": "# cloudflare/building-mcp-server-on-cloudflare\n\nBuild remote MCP servers with tools and OAuth",
   "readmeHtml": "<h1>cloudflare/building-mcp-server-on-cloudflare</h1>\n<p>Build remote MCP servers with tools and OAuth</p>",
   "skillMd": "",
-  "updatedAt": "2026-09-20T21:13:13.508Z",
+  "updatedAt": "2026-09-21T22:24:53.396Z",
   "author": {
     "login": "cloudflare",
     "name": "Cloudflare",
@@ -28,6 +28,13 @@
     "source": "github_profile"
   },
   "related": [
+    {
+      "slug": "cloudflare-security-audit-skill",
+      "displayName": "cloudflare/security-audit-skill",
+      "stars": 18928,
+      "relation": "source_overlap",
+      "evidence": "author:cloudflare"
+    },
     {
       "slug": "cloudflare-agents-sdk",
       "displayName": "cloudflare/agents-sdk",
@@ -73,13 +80,6 @@
     {
       "slug": "cloudflare-workers-best-practices",
       "displayName": "cloudflare/workers-best-practices",
-      "stars": 0,
-      "relation": "source_overlap",
-      "evidence": "author:cloudflare"
-    },
-    {
-      "slug": "cloudflare-wrangler",
-      "displayName": "cloudflare/wrangler",
       "stars": 0,
       "relation": "source_overlap",
       "evidence": "author:cloudflare"

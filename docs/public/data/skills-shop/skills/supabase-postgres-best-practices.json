@@ -12,7 +12,7 @@
   "readme": "# supabase/postgres-best-practices\n\nPostgreSQL best practices for Supabase",
   "readmeHtml": "<h1>supabase/postgres-best-practices</h1>\n<p>PostgreSQL best practices for Supabase</p>",
   "skillMd": "",
-  "updatedAt": "2026-09-20T21:13:13.443Z",
+  "updatedAt": "2026-09-21T22:24:53.211Z",
   "author": {
     "login": "supabase",
     "name": "Supabase",
@@ -36,9 +36,16 @@
       "evidence": "Data Backend API Stack includes supabase/postgres-best-practices"
     },
     {
+      "slug": "cloudflare-security-audit-skill",
+      "displayName": "cloudflare/security-audit-skill",
+      "stars": 18928,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
       "slug": "angular-angular-developer",
       "displayName": "angular/angular-developer",
-      "stars": 651,
+      "stars": 653,
       "relation": "shared_tag",
       "evidence": "Official Skills by"
     },
@@ -74,13 +81,6 @@
       "slug": "zero-zero",
       "displayName": "zero/zero",
       "stars": 20,
-      "relation": "shared_tag",
-      "evidence": "Official Skills by"
-    },
-    {
-      "slug": "serpapi-serpapi-cli",
-      "displayName": "serpapi/serpapi-cli",
-      "stars": 13,
       "relation": "shared_tag",
       "evidence": "Official Skills by"
     }

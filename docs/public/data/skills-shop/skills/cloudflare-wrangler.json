@@ -12,7 +12,7 @@
   "readme": "# cloudflare/wrangler\n\nDeploy and manage Workers, KV, R2, D1, Vectorize, Queues, Workflows",
   "readmeHtml": "<h1>cloudflare/wrangler</h1>\n<p>Deploy and manage Workers, KV, R2, D1, Vectorize, Queues, Workflows</p>",
   "skillMd": "",
-  "updatedAt": "2026-09-20T21:13:13.454Z",
+  "updatedAt": "2026-09-21T22:24:53.227Z",
   "author": {
     "login": "cloudflare",
     "name": "Cloudflare",
@@ -28,6 +28,13 @@
     "source": "github_profile"
   },
   "related": [
+    {
+      "slug": "cloudflare-security-audit-skill",
+      "displayName": "cloudflare/security-audit-skill",
+      "stars": 18928,
+      "relation": "source_overlap",
+      "evidence": "author:cloudflare"
+    },
     {
       "slug": "cloudflare-agents-sdk",
       "displayName": "cloudflare/agents-sdk",
@@ -73,13 +80,6 @@
     {
       "slug": "cloudflare-workers-best-practices",
       "displayName": "cloudflare/workers-best-practices",
-      "stars": 0,
-      "relation": "source_overlap",
-      "evidence": "author:cloudflare"
-    },
-    {
-      "slug": "cloudflare-building-ai-agent-on-cloudflare",
-      "displayName": "cloudflare/building-ai-agent-on-cloudflare",
       "stars": 0,
       "relation": "source_overlap",
       "evidence": "author:cloudflare"

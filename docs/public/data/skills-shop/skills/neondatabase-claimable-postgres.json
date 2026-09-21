@@ -12,7 +12,7 @@
   "readme": "# neondatabase/claimable-postgres\n\nClaimable Postgres database provisioning with Neon",
   "readmeHtml": "<h1>neondatabase/claimable-postgres</h1>\n<p>Claimable Postgres database provisioning with Neon</p>",
   "skillMd": "",
-  "updatedAt": "2026-09-20T21:13:13.447Z",
+  "updatedAt": "2026-09-21T22:24:53.226Z",
   "author": {
     "login": "neondatabase",
     "name": "neondatabase",
@@ -37,9 +37,16 @@
       "evidence": "author:neondatabase"
     },
     {
+      "slug": "cloudflare-security-audit-skill",
+      "displayName": "cloudflare/security-audit-skill",
+      "stars": 18928,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
       "slug": "angular-angular-developer",
       "displayName": "angular/angular-developer",
-      "stars": 651,
+      "stars": 653,
       "relation": "shared_tag",
       "evidence": "Official Skills by"
     },
@@ -68,13 +75,6 @@
       "slug": "modem-dev-skills",
       "displayName": "modem-dev/skills",
       "stars": 55,
-      "relation": "shared_tag",
-      "evidence": "Official Skills by"
-    },
-    {
-      "slug": "zero-zero",
-      "displayName": "zero/zero",
-      "stars": 20,
       "relation": "shared_tag",
       "evidence": "Official Skills by"
     }

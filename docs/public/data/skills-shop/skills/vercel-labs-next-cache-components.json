@@ -12,7 +12,7 @@
   "readme": "# vercel-labs/next-cache-components\n\nCaching strategies and cache-aware components in Next.js",
   "readmeHtml": "<h1>vercel-labs/next-cache-components</h1>\n<p>Caching strategies and cache-aware components in Next.js</p>",
   "skillMd": "",
-  "updatedAt": "2026-09-20T21:13:13.453Z",
+  "updatedAt": "2026-09-21T22:24:53.226Z",
   "author": {
     "login": "vercel-labs",
     "name": "Vercel Labs",
@@ -58,9 +58,16 @@
       "evidence": "author:vercel-labs"
     },
     {
+      "slug": "cloudflare-security-audit-skill",
+      "displayName": "cloudflare/security-audit-skill",
+      "stars": 18928,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
       "slug": "angular-angular-developer",
       "displayName": "angular/angular-developer",
-      "stars": 651,
+      "stars": 653,
       "relation": "shared_tag",
       "evidence": "Official Skills by"
     },
@@ -68,13 +75,6 @@
       "slug": "testmu-ai-api-skill",
       "displayName": "testmu-ai/api-skill",
       "stars": 369,
-      "relation": "shared_tag",
-      "evidence": "Official Skills by"
-    },
-    {
-      "slug": "veniceai-venice-api-overview",
-      "displayName": "veniceai/venice-api-overview",
-      "stars": 142,
       "relation": "shared_tag",
       "evidence": "Official Skills by"
     }

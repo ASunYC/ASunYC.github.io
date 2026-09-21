@@ -12,7 +12,7 @@
   "readme": "# replicate/replicate\n\nDiscover, compare, and run AI models using Replicate's API",
   "readmeHtml": "<h1>replicate/replicate</h1>\n<p>Discover, compare, and run AI models using Replicate's API</p>",
   "skillMd": "",
-  "updatedAt": "2026-09-20T21:13:13.448Z",
+  "updatedAt": "2026-09-21T22:24:53.226Z",
   "author": {
     "login": "replicate",
     "name": "Replicate",
@@ -23,9 +23,16 @@
   "location": null,
   "related": [
     {
+      "slug": "cloudflare-security-audit-skill",
+      "displayName": "cloudflare/security-audit-skill",
+      "stars": 18928,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
       "slug": "angular-angular-developer",
       "displayName": "angular/angular-developer",
-      "stars": 651,
+      "stars": 653,
       "relation": "shared_tag",
       "evidence": "Official Skills by"
     },
@@ -67,13 +74,6 @@
     {
       "slug": "serpapi-serpapi-cli",
       "displayName": "serpapi/serpapi-cli",
-      "stars": 13,
-      "relation": "shared_tag",
-      "evidence": "Official Skills by"
-    },
-    {
-      "slug": "trycourier-courier-skills",
-      "displayName": "trycourier/courier-skills",
       "stars": 13,
       "relation": "shared_tag",
       "evidence": "Official Skills by"

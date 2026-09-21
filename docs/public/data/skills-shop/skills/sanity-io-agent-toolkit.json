@@ -4,7 +4,7 @@
   "name": "agent-toolkit",
   "displayName": "sanity-io/agent-toolkit",
   "description": "Best practices for Sanity Studio, GROQ queries, and content workflows",
-  "stars": 185,
+  "stars": 186,
   "category": "Skills by Sanity",
   "source": "heilcheng",
   "url": "https://github.com/sanity-io/agent-toolkit/tree/main/sanity-best-practices",
@@ -59,28 +59,28 @@
     {
       "slug": "garrytan-gstack",
       "displayName": "garrytan/gstack",
-      "stars": 133786,
+      "stars": 133864,
       "relation": "shared_tag",
       "evidence": "location:san-francisco"
     },
     {
       "slug": "blader-humanizer",
       "displayName": "blader/humanizer",
-      "stars": 50599,
+      "stars": 51041,
+      "relation": "shared_tag",
+      "evidence": "location:san-francisco"
+    },
+    {
+      "slug": "cloudflare-security-audit-skill",
+      "displayName": "cloudflare/security-audit-skill",
+      "stars": 18928,
       "relation": "shared_tag",
       "evidence": "location:san-francisco"
     },
     {
       "slug": "rorkai-app-store-connect-cli-skills",
       "displayName": "rorkai/app-store-connect-cli-skills",
-      "stars": 1034,
-      "relation": "shared_tag",
-      "evidence": "location:san-francisco"
-    },
-    {
-      "slug": "alisa0808-vibe-creating-skill",
-      "displayName": "Alisa0808/vibe-creating-skill",
-      "stars": 144,
+      "stars": 1035,
       "relation": "shared_tag",
       "evidence": "location:san-francisco"
     }

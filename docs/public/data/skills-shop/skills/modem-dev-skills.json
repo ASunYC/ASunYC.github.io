@@ -29,9 +29,16 @@
   },
   "related": [
     {
+      "slug": "cloudflare-security-audit-skill",
+      "displayName": "cloudflare/security-audit-skill",
+      "stars": 18928,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
       "slug": "angular-angular-developer",
       "displayName": "angular/angular-developer",
-      "stars": 651,
+      "stars": 653,
       "relation": "shared_tag",
       "evidence": "Official Skills by"
     },
@@ -74,13 +81,6 @@
       "slug": "trycourier-courier-skills",
       "displayName": "trycourier/courier-skills",
       "stars": 13,
-      "relation": "shared_tag",
-      "evidence": "Official Skills by"
-    },
-    {
-      "slug": "serpapi-serpapi-search-tools-python",
-      "displayName": "serpapi/serpapi-search-tools-python",
-      "stars": 11,
       "relation": "shared_tag",
       "evidence": "Official Skills by"
     }

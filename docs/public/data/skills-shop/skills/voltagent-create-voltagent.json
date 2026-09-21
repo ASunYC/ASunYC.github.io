@@ -12,7 +12,7 @@
   "readme": "# voltagent/create-voltagent\n\nProject setup guide with CLI and manual steps",
   "readmeHtml": "<h1>voltagent/create-voltagent</h1>\n<p>Project setup guide with CLI and manual steps</p>",
   "skillMd": "",
-  "updatedAt": "2026-09-20T21:13:13.441Z",
+  "updatedAt": "2026-09-21T22:24:53.210Z",
   "author": {
     "login": "VoltAgent",
     "name": "VoltAgent",
@@ -31,14 +31,14 @@
     {
       "slug": "voltagent-awesome-design-md",
       "displayName": "voltagent/awesome-design-md",
-      "stars": 116847,
+      "stars": 117062,
       "relation": "source_overlap",
       "evidence": "author:VoltAgent"
     },
     {
       "slug": "voltagent-awesome-openclaw-skills",
       "displayName": "voltagent/awesome-openclaw-skills",
-      "stars": 52686,
+      "stars": 52708,
       "relation": "source_overlap",
       "evidence": "author:VoltAgent"
     },
@@ -64,9 +64,16 @@
       "evidence": "author:VoltAgent"
     },
     {
+      "slug": "cloudflare-security-audit-skill",
+      "displayName": "cloudflare/security-audit-skill",
+      "stars": 18928,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
       "slug": "angular-angular-developer",
       "displayName": "angular/angular-developer",
-      "stars": 651,
+      "stars": 653,
       "relation": "shared_tag",
       "evidence": "Official Skills by"
     },
@@ -74,13 +81,6 @@
       "slug": "testmu-ai-api-skill",
       "displayName": "testmu-ai/api-skill",
       "stars": 369,
-      "relation": "shared_tag",
-      "evidence": "Official Skills by"
-    },
-    {
-      "slug": "veniceai-venice-api-overview",
-      "displayName": "veniceai/venice-api-overview",
-      "stars": 142,
       "relation": "shared_tag",
       "evidence": "Official Skills by"
     }
