@@ -4,7 +4,7 @@
   "name": "hr-skill",
   "displayName": "Schlaflied/hr-skill",
   "description": "从拒信与招聘流程中整理 HR 的沟通逻辑与决策模式，用于反向拆解筛选标准并重构求职叙事。",
-  "stars": 15,
+  "stars": 16,
   "category": "Persona Distill Skills",
   "source": "persona-distill",
   "url": "https://github.com/Schlaflied/hr-skill",
@@ -32,21 +32,21 @@
     {
       "slug": "samadhifire-xinqingnian-skill",
       "displayName": "SamadhiFire/xinqingnian-skill",
-      "stars": 311,
-      "relation": "shared_tag",
-      "evidence": "Persona Distill Skills"
-    },
-    {
-      "slug": "swaylq-master-skill",
-      "displayName": "swaylq/master-skill",
-      "stars": 122,
+      "stars": 355,
       "relation": "shared_tag",
       "evidence": "Persona Distill Skills"
     },
     {
       "slug": "voidforall-fengshui-skill",
       "displayName": "voidforall/fengshui.skill",
-      "stars": 101,
+      "stars": 290,
+      "relation": "shared_tag",
+      "evidence": "Persona Distill Skills"
+    },
+    {
+      "slug": "swaylq-master-skill",
+      "displayName": "swaylq/master-skill",
+      "stars": 141,
       "relation": "shared_tag",
       "evidence": "Persona Distill Skills"
     },
@@ -67,14 +67,14 @@
     {
       "slug": "realteamprinz-brother-skill",
       "displayName": "realteamprinz/brother-skill",
-      "stars": 18,
+      "stars": 20,
       "relation": "shared_tag",
       "evidence": "Persona Distill Skills"
     },
     {
       "slug": "cantian-ai-bazi-persona-skill",
       "displayName": "cantian-ai/bazi-persona-skill",
-      "stars": 15,
+      "stars": 16,
       "relation": "shared_tag",
       "evidence": "Persona Distill Skills"
     }
