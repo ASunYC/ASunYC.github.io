@@ -45,3 +45,21 @@ The build writes static files to `dist/`. Pushes to `master` trigger the GitHub 
 - `npm run mapnews:import-submissions` is the separate server-side import command for MapNews submissions.
 
 Site pages and Vue components are in `docs/`; shared VitePress configuration is in `docs/.vitepress/`.
+
+## Updating Skills data
+
+The [refresh workflow](.github/workflows/refresh-skills-data.yml) checks out this site beside `skills-book`, fetches the latest index, builds the wiki, exports static data into `docs/public/data/`, and regenerates the Skills Hot top list. It commits that data only when files change. The workflow can also be started manually from GitHub Actions.
+
+For a local refresh with the two repositories as sibling directories, use Node.js 22 or newer and run the same commands in order:
+
+```bash
+cd ../skills-book
+npm ci
+node scripts/skills-book.mjs fetch --force
+node scripts/skills-book.mjs build-wiki
+node scripts/skills-book.mjs shop-export ../ASunYC.github.io/docs/public/data
+cd ../ASunYC.github.io
+node scripts/generate-skills-book-hot-top.mjs
+```
+
+Review the generated data diff before committing. The site build reads the files already present in `docs/public/data/`; building alone does not refresh the external skills index.
