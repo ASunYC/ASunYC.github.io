@@ -4,7 +4,7 @@
   "name": "brother-skill",
   "displayName": "realteamprinz/brother-skill",
   "description": "从抖音、微信截图等来源蒸馏你的兄弟们（支持真实兄弟、群聊好友和网络红人）——他们的说话方式、口头禅、搞笑风格和恶搞能量。",
-  "stars": 18,
+  "stars": 20,
   "category": "Persona Distill Skills",
   "source": "persona-distill",
   "url": "https://github.com/realteamprinz/brother-skill",
@@ -32,21 +32,21 @@
     {
       "slug": "samadhifire-xinqingnian-skill",
       "displayName": "SamadhiFire/xinqingnian-skill",
-      "stars": 311,
-      "relation": "shared_tag",
-      "evidence": "Persona Distill Skills"
-    },
-    {
-      "slug": "swaylq-master-skill",
-      "displayName": "swaylq/master-skill",
-      "stars": 122,
+      "stars": 356,
       "relation": "shared_tag",
       "evidence": "Persona Distill Skills"
     },
     {
       "slug": "voidforall-fengshui-skill",
       "displayName": "voidforall/fengshui.skill",
-      "stars": 101,
+      "stars": 290,
+      "relation": "shared_tag",
+      "evidence": "Persona Distill Skills"
+    },
+    {
+      "slug": "swaylq-master-skill",
+      "displayName": "swaylq/master-skill",
+      "stars": 142,
       "relation": "shared_tag",
       "evidence": "Persona Distill Skills"
     },
@@ -67,14 +67,14 @@
     {
       "slug": "cantian-ai-bazi-persona-skill",
       "displayName": "cantian-ai/bazi-persona-skill",
-      "stars": 15,
+      "stars": 16,
       "relation": "shared_tag",
       "evidence": "Persona Distill Skills"
     },
     {
-      "slug": "linzzzzzz-zhuzi-skill",
-      "displayName": "linzzzzzz/zhuzi-skill",
-      "stars": 15,
+      "slug": "schlaflied-hr-skill",
+      "displayName": "Schlaflied/hr-skill",
+      "stars": 16,
       "relation": "shared_tag",
       "evidence": "Persona Distill Skills"
     }

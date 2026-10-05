@@ -4,7 +4,7 @@
   "name": "xinqingnian-skill",
   "displayName": "SamadhiFire/xinqingnian-skill",
   "description": "把“新中国最会解决问题的脑子”请来，当一次“临时参谋”。把《毛选》157篇文章进行蒸馏，将其方法论变成可执行的现实分析 skill。",
-  "stars": 311,
+  "stars": 356,
   "category": "Persona Distill Skills",
   "source": "persona-distill",
   "url": "https://github.com/SamadhiFire/xinqingnian-skill",
@@ -23,16 +23,16 @@
   "location": null,
   "related": [
     {
-      "slug": "swaylq-master-skill",
-      "displayName": "swaylq/master-skill",
-      "stars": 122,
+      "slug": "voidforall-fengshui-skill",
+      "displayName": "voidforall/fengshui.skill",
+      "stars": 290,
       "relation": "shared_tag",
       "evidence": "Persona Distill Skills"
     },
     {
-      "slug": "voidforall-fengshui-skill",
-      "displayName": "voidforall/fengshui.skill",
-      "stars": 101,
+      "slug": "swaylq-master-skill",
+      "displayName": "swaylq/master-skill",
+      "stars": 142,
       "relation": "shared_tag",
       "evidence": "Persona Distill Skills"
     },
@@ -53,27 +53,27 @@
     {
       "slug": "realteamprinz-brother-skill",
       "displayName": "realteamprinz/brother-skill",
-      "stars": 18,
+      "stars": 20,
       "relation": "shared_tag",
       "evidence": "Persona Distill Skills"
     },
     {
       "slug": "cantian-ai-bazi-persona-skill",
       "displayName": "cantian-ai/bazi-persona-skill",
-      "stars": 15,
-      "relation": "shared_tag",
-      "evidence": "Persona Distill Skills"
-    },
-    {
-      "slug": "linzzzzzz-zhuzi-skill",
-      "displayName": "linzzzzzz/zhuzi-skill",
-      "stars": 15,
+      "stars": 16,
       "relation": "shared_tag",
       "evidence": "Persona Distill Skills"
     },
     {
       "slug": "schlaflied-hr-skill",
       "displayName": "Schlaflied/hr-skill",
+      "stars": 16,
+      "relation": "shared_tag",
+      "evidence": "Persona Distill Skills"
+    },
+    {
+      "slug": "linzzzzzz-zhuzi-skill",
+      "displayName": "linzzzzzz/zhuzi-skill",
       "stars": 15,
       "relation": "shared_tag",
       "evidence": "Persona Distill Skills"
