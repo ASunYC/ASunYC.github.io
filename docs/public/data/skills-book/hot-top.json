@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-08T23:49:17.018Z",
+  "generatedAt": "2026-10-09T23:06:11.094Z",
   "source": "local-skills-cache",
   "baseline": {
     "window": "7d",
-    "commit": "042c078acea791222bb9ec8dd1846708b82f8cd5"
+    "commit": "656d80646f03135c7c7049644c97cc8e3fd3ae65"
   },
   "skills": [
     {
@@ -12,10 +12,10 @@
       "displayName": "obra/brainstorming",
       "description": "Generate and explore ideas",
       "category": "Community Skills",
-      "stars": 296555,
+      "stars": 296876,
       "githubRepo": "obra/superpowers",
       "source": "voltagent",
-      "weeklyStars": 179,
+      "weeklyStars": 321,
       "href": "/skills-shop/obra-brainstorming/"
     },
     {
@@ -24,10 +24,10 @@
       "displayName": "mattpocock/skills",
       "description": "17 dev workflow skills: PRD writing, TDD, codebase architecture, git guardrails, issue triage, refactoring plans, and more",
       "category": "Community Skills",
-      "stars": 281017,
+      "stars": 282571,
       "githubRepo": "mattpocock/skills",
       "source": "voltagent",
-      "weeklyStars": 1493,
+      "weeklyStars": 1554,
       "href": "/skills-shop/mattpocock-skills/"
     },
     {
@@ -36,10 +36,10 @@
       "displayName": "garrytan/gstack",
       "description": "YC founder stack recommendations for infra, tooling, and deployment",
       "category": "Skills by Garry Tan (gstack)",
-      "stars": 135638,
+      "stars": 135732,
       "githubRepo": "garrytan/gstack",
       "source": "heilcheng",
-      "weeklyStars": 0,
+      "weeklyStars": 94,
       "href": "/skills-shop/garrytan-gstack/"
     },
     {
@@ -48,10 +48,10 @@
       "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
       "description": "UI/UX design patterns and best practices",
       "category": "Community Skills",
-      "stars": 133899,
+      "stars": 134222,
       "githubRepo": "nextlevelbuilder/ui-ux-pro-max-skill",
       "source": "voltagent",
-      "weeklyStars": 74,
+      "weeklyStars": 323,
       "href": "/skills-shop/nextlevelbuilder-ui-ux-pro-max-skill/"
     },
     {
@@ -60,10 +60,10 @@
       "displayName": "voltagent/awesome-design-md",
       "description": "Standards and tools for the DESIGN.md protocol.",
       "category": "How do I know if a skill is safe to use?",
-      "stars": 119906,
+      "stars": 120032,
       "githubRepo": "VoltAgent/awesome-design-md",
       "source": "heilcheng",
-      "weeklyStars": 0,
+      "weeklyStars": 126,
       "href": "/skills-shop/voltagent-awesome-design-md/"
     },
     {
@@ -72,10 +72,10 @@
       "displayName": "thedotmack/claude-mem",
       "description": "Compresses and persists agent memory across sessions",
       "category": "Community Skills",
-      "stars": 98428,
+      "stars": 98970,
       "githubRepo": "thedotmack/claude-mem",
       "source": "voltagent",
-      "weeklyStars": 745,
+      "weeklyStars": 542,
       "href": "/skills-shop/thedotmack-claude-mem/"
     },
     {
@@ -84,10 +84,10 @@
       "displayName": "punkpeye/awesome-mcp-servers",
       "description": "A collection of Model Context Protocol (MCP) servers.",
       "category": "How do I know if a skill is safe to use?",
-      "stars": 95936,
+      "stars": 95995,
       "githubRepo": "punkpeye/awesome-mcp-servers",
       "source": "heilcheng",
-      "weeklyStars": 28,
+      "weeklyStars": 59,
       "href": "/skills-shop/punkpeye-awesome-mcp-servers/"
     },
     {
@@ -96,10 +96,10 @@
       "displayName": "Panniantong/Agent-Reach",
       "description": "Multi-platform search CLI for 17 sites including Chinese platforms",
       "category": "Community Skills",
-      "stars": 94115,
+      "stars": 94846,
       "githubRepo": "Panniantong/Agent-Reach",
       "source": "voltagent",
-      "weeklyStars": 918,
+      "weeklyStars": 731,
       "href": "/skills-shop/panniantong-agent-reach/"
     },
     {
@@ -108,10 +108,10 @@
       "displayName": "Leonxlnx/taste-skill",
       "description": "High-agency frontend skill that gives AI good taste with tunable design variance, motion intensity, and visual density to stop generic UI slop",
       "category": "Community Skills",
-      "stars": 93812,
+      "stars": 94093,
       "githubRepo": "Leonxlnx/taste-skill",
       "source": "voltagent",
-      "weeklyStars": 313,
+      "weeklyStars": 281,
       "href": "/skills-shop/leonxlnx-taste-skill/"
     },
     {
@@ -120,10 +120,10 @@
       "displayName": "modelcontextprotocol/servers",
       "description": "Official server implementations",
       "category": "Model Context Protocol (MCP)",
-      "stars": 91081,
+      "stars": 91091,
       "githubRepo": "modelcontextprotocol/servers",
       "source": "heilcheng",
-      "weeklyStars": 13,
+      "weeklyStars": 10,
       "href": "/skills-shop/modelcontextprotocol-servers/"
     }
   ]
