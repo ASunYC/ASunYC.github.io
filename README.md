@@ -37,6 +37,18 @@ npm run preview
 
 The build writes static files to `dist/`. Pushes to `master` trigger the GitHub Actions deployment to GitHub Pages.
 
+## Editing the site
+
+| Change | Source |
+| --- | --- |
+| Navigation and page metadata | `docs/.vitepress/configs/` and `docs/.vitepress/config.ts` |
+| Homepage project cards | `docs/projects/data.ts` and `docs/components/HomeHub.vue` |
+| Project guides | `docs/agent-switch/`, `docs/open-agent-seal/`, and `docs/kanban.md` |
+| Skills and MapNews pages | Their directories under `docs/` |
+| Static discovery and news data | `docs/public/data/` |
+
+After editing a page, run `npm run build` to catch broken imports or rendering errors before pushing. The [deploy workflow](.github/workflows/deploy.yml) builds and publishes the site; the separate [data refresh workflow](.github/workflows/refresh-skills-data.yml) updates generated Skills data.
+
 ## Data and optional services
 
 - Skills Book exports discovery data into `docs/public/data/`. The `skills-book:hot-top` script generates the list displayed on Skills Hot.
