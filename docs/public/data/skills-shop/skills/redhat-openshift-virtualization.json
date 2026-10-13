@@ -12,7 +12,7 @@
   "readme": "# redhat/openshift-virtualization\n\nManage the full VM lifecycle on OpenShift Virtualization — create, clone, snapshot, restore, rebalance, and report — through a single conversational workflow.",
   "readmeHtml": "<h1>redhat/openshift-virtualization</h1>\n<p>Manage the full VM lifecycle on OpenShift Virtualization — create, clone, snapshot, restore, rebalance, and report — through a single conversational workflow.</p>",
   "skillMd": "",
-  "updatedAt": "2026-10-11T22:27:05.207Z",
+  "updatedAt": "2026-10-13T01:08:28.565Z",
   "author": {
     "login": "redhat",
     "name": "redhat",
@@ -46,35 +46,35 @@
     {
       "slug": "coreyhaines31-ab-testing",
       "displayName": "coreyhaines31/ab-testing",
-      "stars": 54194,
+      "stars": 54376,
       "relation": "shared_tag",
       "evidence": "TypeScript Skills"
     },
     {
       "slug": "phuryn-ab-test-analysis",
       "displayName": "phuryn/ab-test-analysis",
-      "stars": 26893,
+      "stars": 26926,
       "relation": "shared_tag",
       "evidence": "TypeScript Skills"
     },
     {
       "slug": "google-cloud-agent-platform-skill-registry",
       "displayName": "google/cloud/agent-platform-skill-registry",
-      "stars": 21180,
+      "stars": 21218,
       "relation": "shared_tag",
       "evidence": "TypeScript Skills"
     },
     {
       "slug": "deanpeters-acquisition-channel-advisor",
       "displayName": "deanpeters/acquisition-channel-advisor",
-      "stars": 7253,
+      "stars": 7293,
       "relation": "shared_tag",
       "evidence": "TypeScript Skills"
     },
     {
       "slug": "realkimbarrett-avatar-extraction",
       "displayName": "realkimbarrett/avatar-extraction",
-      "stars": 761,
+      "stars": 762,
       "relation": "shared_tag",
       "evidence": "TypeScript Skills"
     }

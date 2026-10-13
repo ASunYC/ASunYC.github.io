@@ -4,7 +4,7 @@
   "name": "cutaway",
   "displayName": "half144/cutaway",
   "description": "Record polished demo videos of web flows with Playwright",
-  "stars": 45,
+  "stars": 46,
   "category": "Community Skills",
   "source": "voltagent",
   "url": "https://github.com/half144/cutaway",
@@ -15,81 +15,75 @@
   "updatedAt": "2026-09-29T15:58:47Z",
   "author": {
     "login": "half144",
-    "name": "rafavncxs",
+    "name": "half144",
     "avatarUrl": "https://avatars.githubusercontent.com/u/99549268?v=4",
     "profileUrl": "https://github.com/half144",
-    "location": "Rio de Janeiro, Brazil"
+    "location": ""
   },
-  "location": {
-    "id": "brazil",
-    "label": "São Paulo, Brazil",
-    "lat": -14.235,
-    "lon": -51.9253,
-    "source": "github_profile"
-  },
+  "location": null,
   "related": [
     {
       "slug": "obra-brainstorming",
       "displayName": "obra/brainstorming",
-      "stars": 297655,
+      "stars": 298202,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "mattpocock-skills",
       "displayName": "mattpocock/skills",
-      "stars": 286098,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
-      "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
-      "stars": 134807,
+      "stars": 287968,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "morluto-rea",
       "displayName": "morluto/rea",
-      "stars": 100999,
+      "stars": 157073,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
+      "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "stars": 135168,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "thedotmack-claude-mem",
       "displayName": "thedotmack/claude-mem",
-      "stars": 99700,
+      "stars": 100090,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "panniantong-agent-reach",
       "displayName": "Panniantong/Agent-Reach",
-      "stars": 95967,
+      "stars": 96585,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "leonxlnx-taste-skill",
       "displayName": "Leonxlnx/taste-skill",
-      "stars": 94716,
+      "stars": 95139,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "lum1104-understand-anything",
       "displayName": "Lum1104/understand-anything",
-      "stars": 85915,
+      "stars": 86065,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     }
   ],
   "mapLocation": {
-    "id": "brazil",
-    "label": "São Paulo, Brazil",
-    "lat": -14.235,
-    "lon": -51.9253,
-    "source": "github_profile"
+    "id": "virtual-toronto",
+    "label": "Global Skill Market / Toronto / Community Skills",
+    "lat": 43.6532,
+    "lon": -79.3832,
+    "source": "virtual_market"
   }
 }
