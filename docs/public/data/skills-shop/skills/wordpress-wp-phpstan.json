@@ -12,7 +12,7 @@
   "readme": "# WordPress/wp-phpstan\n\nPHPStan static analysis for WordPress projects",
   "readmeHtml": "<h1>WordPress/wp-phpstan</h1>\n<p>PHPStan static analysis for WordPress projects</p>",
   "skillMd": "",
-  "updatedAt": "2026-10-14T22:08:28.428Z",
+  "updatedAt": "2026-10-15T21:59:20.775Z",
   "author": {
     "login": "WordPress",
     "name": "WordPress",
@@ -23,6 +23,13 @@
   "location": null,
   "related": [
     {
+      "slug": "wordpress-wp-block-development",
+      "displayName": "WordPress/wp-block-development",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:WordPress"
+    },
+    {
       "slug": "wordpress-wordpress-router",
       "displayName": "WordPress/wordpress-router",
       "stars": 0,
@@ -32,13 +39,6 @@
     {
       "slug": "wordpress-wp-project-triage",
       "displayName": "WordPress/wp-project-triage",
-      "stars": 0,
-      "relation": "source_overlap",
-      "evidence": "author:WordPress"
-    },
-    {
-      "slug": "wordpress-wp-block-development",
-      "displayName": "WordPress/wp-block-development",
       "stars": 0,
       "relation": "source_overlap",
       "evidence": "author:WordPress"

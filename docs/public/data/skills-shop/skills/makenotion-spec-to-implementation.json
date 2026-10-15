@@ -12,7 +12,7 @@
   "readme": "# makenotion/spec-to-implementation\n\nTurn product/tech specs into concrete Notion tasks with acceptance criteria and progress tracking",
   "readmeHtml": "<h1>makenotion/spec-to-implementation</h1>\n<p>Turn product/tech specs into concrete Notion tasks with acceptance criteria and progress tracking</p>",
   "skillMd": "",
-  "updatedAt": "2026-10-14T22:08:28.461Z",
+  "updatedAt": "2026-10-15T21:59:20.796Z",
   "author": {
     "login": "makenotion",
     "name": "Notion",
@@ -28,6 +28,13 @@
     "source": "github_profile"
   },
   "related": [
+    {
+      "slug": "makenotion-skills",
+      "displayName": "makenotion/skills",
+      "stars": 174,
+      "relation": "source_overlap",
+      "evidence": "author:makenotion"
+    },
     {
       "slug": "makenotion-knowledge-capture",
       "displayName": "makenotion/knowledge-capture",
@@ -50,37 +57,30 @@
       "evidence": "author:makenotion"
     },
     {
+      "slug": "garrytan-office-hours",
+      "displayName": "garrytan/office-hours",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    },
+    {
       "slug": "coreyhaines31-ab-testing",
       "displayName": "coreyhaines31/ab-testing",
-      "stars": 54738,
+      "stars": 54886,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    },
+    {
+      "slug": "openai-cloudflare-deploy",
+      "displayName": "openai/cloudflare-deploy",
+      "stars": 0,
       "relation": "shared_tag",
       "evidence": "TypeScript Skills"
     },
     {
       "slug": "phuryn-ab-test-analysis",
       "displayName": "phuryn/ab-test-analysis",
-      "stars": 27041,
-      "relation": "shared_tag",
-      "evidence": "TypeScript Skills"
-    },
-    {
-      "slug": "google-cloud-agent-platform-skill-registry",
-      "displayName": "google/cloud/agent-platform-skill-registry",
-      "stars": 21293,
-      "relation": "shared_tag",
-      "evidence": "TypeScript Skills"
-    },
-    {
-      "slug": "deanpeters-acquisition-channel-advisor",
-      "displayName": "deanpeters/acquisition-channel-advisor",
-      "stars": 7381,
-      "relation": "shared_tag",
-      "evidence": "TypeScript Skills"
-    },
-    {
-      "slug": "realkimbarrett-avatar-extraction",
-      "displayName": "realkimbarrett/avatar-extraction",
-      "stars": 764,
+      "stars": 27089,
       "relation": "shared_tag",
       "evidence": "TypeScript Skills"
     }

@@ -12,7 +12,7 @@
   "readme": "# voltagent/voltagent-docs-bundle\n\nLookup embedded docs from @voltagent/core for version-matched documentation",
   "readmeHtml": "<h1>voltagent/voltagent-docs-bundle</h1>\n<p>Lookup embedded docs from @voltagent/core for version-matched documentation</p>",
   "skillMd": "",
-  "updatedAt": "2026-10-14T22:08:28.203Z",
+  "updatedAt": "2026-10-15T21:59:20.731Z",
   "author": {
     "login": "VoltAgent",
     "name": "VoltAgent",
@@ -31,14 +31,21 @@
     {
       "slug": "voltagent-awesome-design-md",
       "displayName": "voltagent/awesome-design-md",
-      "stars": 121352,
+      "stars": 121567,
       "relation": "source_overlap",
       "evidence": "author:VoltAgent"
     },
     {
       "slug": "voltagent-awesome-openclaw-skills",
       "displayName": "voltagent/awesome-openclaw-skills",
-      "stars": 53139,
+      "stars": 53150,
+      "relation": "source_overlap",
+      "evidence": "author:VoltAgent"
+    },
+    {
+      "slug": "voltagent-awesome-agent-skills",
+      "displayName": "voltagent/awesome-agent-skills",
+      "stars": 35779,
       "relation": "source_overlap",
       "evidence": "author:VoltAgent"
     },
@@ -64,23 +71,16 @@
       "evidence": "author:VoltAgent"
     },
     {
-      "slug": "cloudflare-security-audit-skill",
-      "displayName": "cloudflare/security-audit-skill",
-      "stars": 29582,
+      "slug": "anthropics-docx",
+      "displayName": "anthropics/docx",
+      "stars": 0,
       "relation": "shared_tag",
       "evidence": "Official Skills by"
     },
     {
-      "slug": "angular-angular-developer",
-      "displayName": "angular/angular-developer",
-      "stars": 685,
-      "relation": "shared_tag",
-      "evidence": "Official Skills by"
-    },
-    {
-      "slug": "testmu-ai-api-skill",
-      "displayName": "testmu-ai/api-skill",
-      "stars": 376,
+      "slug": "googleworkspace-gws-drive",
+      "displayName": "googleworkspace/gws-drive",
+      "stars": 0,
       "relation": "shared_tag",
       "evidence": "Official Skills by"
     }

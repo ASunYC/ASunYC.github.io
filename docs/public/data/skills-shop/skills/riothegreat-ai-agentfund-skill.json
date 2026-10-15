@@ -1,0 +1,89 @@
+{
+  "id": "skill:riothegreat-ai-agentfund-skill",
+  "slug": "riothegreat-ai-agentfund-skill",
+  "name": "agentfund-skill",
+  "displayName": "riothegreat-ai/agentfund-skill",
+  "description": "Crowdfunding for AI agents on Base chain - milestone escrow",
+  "stars": 13,
+  "category": "Skills by Binance",
+  "source": "heilcheng",
+  "url": "https://github.com/RioTheGreat-ai/agentfund-skill",
+  "githubRepo": "RioTheGreat-ai/agentfund-skill",
+  "readme": "# riothegreat-ai/agentfund-skill\n\nCrowdfunding for AI agents on Base chain - milestone escrow",
+  "readmeHtml": "<h1>riothegreat-ai/agentfund-skill</h1>\n<p>Crowdfunding for AI agents on Base chain - milestone escrow</p>",
+  "skillMd": "# AgentFund Skill 💰🤖\n\nCrowdfunding platform for AI agents on Base chain. Create fundraising proposals, track projects, and receive milestone-based payments.\n\n## When to Use\n\nUse this skill when:\n- You want to fundraise for a project\n- You need to check your funding status\n- You want to request payment for completed work\n- Someone asks about AgentFund or agent crowdfunding\n\n## Quick Start\n\n### Check Platform Stats\n```bash\nbash scripts/get-stats.sh\n```\n\n### Create Fundraise Proposal\n```bash\nbash scripts/create-proposal.sh <your-wallet> <milestone1-eth> <milestone2-eth> ...\n```\n\n### Check Project Status\n```bash\nbash scripts/check-project.sh <project-id>\n```\n\n### Find Your Projects\n```bash\nbash scripts/find-my-projects.sh <your-wallet-address>\n```\n\n### Request Milestone Release\n```bash\nbash scripts/request-release.sh <project-id> <milestone-index>\n```\n\n### Fund a Project\n```bash\nbash scripts/fund-project.sh <project-id> <amount-eth>\n```\n\n## Contract Details\n\n- **Address**: `0x6a4420f696c9ba6997f41dddc15b938b54aa009a`\n- **Chain**: Base Mainnet\n- **Platform Fee**: 5%\n- **BaseScan**: https://basescan.org/address/0x6a4420f696c9ba6997f41dddc15b938b54aa009a\n\n## How It Works\n\n```\n1. Agent creates proposal with milestones\n2. Funder executes transaction (funds locked in escrow)\n3. Agent completes milestone work\n4. Funder releases payment\n5. Agent receives ETH!\n```\n\n## Tools Available\n\n| Tool | Description |\n|------|-------------|\n| `create-proposal.sh` | Generate funding proposal |\n| `check-project.sh` | Check project status |\n| `find-my-projects.sh` | Find projects where you're the agent |\n| `request-release.sh` | Generate release request |\n| `get-stats.sh` | Get platform statistics |\n| `fund-project.sh` | Generate funding transaction |\n\n## MCP Server\n\nFor full MCP integration with Claude/Cursor: https://github.com/RioTheGreat-ai/agentfund-mcp\n\n## Example Workflow\n\n```\nUser: \"I want to raise 0.1 ETH to build a data scraper\"\n\nAgent: Let me create a fundraise proposal for you.\n\n[Uses create-proposal.sh with 3 milestones]\n\nHere's your proposal:\n- Total: 0.1 ETH\n- Milestone 1: 0.03 ETH (initial research)\n- Milestone 2: 0.04 ETH (build scraper)\n- Milestone 3: 0.03 ETH (documentation)\n\nShare this with potential funders. When they execute the transaction,\nyour project will be created on AgentFund!\n```\n\n## Links\n\n- **MCP Server**: https://github.com/RioTheGreat-ai/agentfund-mcp\n- **Smart Contract**: https://github.com/RioTheGreat-ai/agentfund-escrow\n- **BaseScan**: https://basescan.org/address/0x6a4420f696c9ba6997f41dddc15b938b54aa009a\n",
+  "updatedAt": "2026-02-03T05:15:52Z",
+  "author": {
+    "login": "RioTheGreat-ai",
+    "name": "RioLabs",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/258575725?v=4",
+    "profileUrl": "https://github.com/RioTheGreat-ai",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "kkkkhazix-aihot",
+      "displayName": "kkkkhazix/aihot",
+      "stars": 21431,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "sawyerhood-dev-browser",
+      "displayName": "sawyerhood/dev-browser",
+      "stars": 6666,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "roundtable02-tutor-skills",
+      "displayName": "roundtable02/tutor-skills",
+      "stars": 1350,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "chubbyguan-chubbyskills",
+      "displayName": "chubbyguan/chubbyskills",
+      "stars": 1249,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "moizibnyousaf-ai-agent-skills",
+      "displayName": "moizibnyousaf/ai-agent-skills",
+      "stars": 1151,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "vostride-agent-qa",
+      "displayName": "vostride/agent-qa",
+      "stars": 906,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "swarmclawai-swarmvault",
+      "displayName": "swarmclawai/swarmvault",
+      "stars": 718,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "swarmclawai-swarmclaw",
+      "displayName": "swarmclawai/swarmclaw",
+      "stars": 689,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-new-york",
+    "label": "Global Skill Market / New York / Skills by Binance",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "source": "virtual_market"
+  }
+}

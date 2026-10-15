@@ -4,7 +4,7 @@
   "name": "ab-test-analysis",
   "displayName": "phuryn/ab-test-analysis",
   "description": "Analyze A/B test results with statistical significance and recommendations",
-  "stars": 27041,
+  "stars": 27089,
   "category": "TypeScript Skills",
   "source": "voltagent",
   "url": "https://github.com/phuryn/pm-skills/tree/main/pm-data-analytics/skills/ab-test-analysis",
@@ -23,57 +23,57 @@
   "location": null,
   "related": [
     {
+      "slug": "garrytan-office-hours",
+      "displayName": "garrytan/office-hours",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    },
+    {
       "slug": "coreyhaines31-ab-testing",
       "displayName": "coreyhaines31/ab-testing",
-      "stars": 54738,
+      "stars": 54886,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    },
+    {
+      "slug": "openai-cloudflare-deploy",
+      "displayName": "openai/cloudflare-deploy",
+      "stars": 0,
       "relation": "shared_tag",
       "evidence": "TypeScript Skills"
     },
     {
       "slug": "google-cloud-agent-platform-skill-registry",
       "displayName": "google/cloud/agent-platform-skill-registry",
-      "stars": 21293,
+      "stars": 21337,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    },
+    {
+      "slug": "greensock-gsap-core",
+      "displayName": "greensock/gsap-core",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "TypeScript Skills"
+    },
+    {
+      "slug": "minimax-ai-frontend-dev",
+      "displayName": "MiniMax-AI/frontend-dev",
+      "stars": 0,
       "relation": "shared_tag",
       "evidence": "TypeScript Skills"
     },
     {
       "slug": "deanpeters-acquisition-channel-advisor",
       "displayName": "deanpeters/acquisition-channel-advisor",
-      "stars": 7381,
+      "stars": 7410,
       "relation": "shared_tag",
       "evidence": "TypeScript Skills"
     },
     {
-      "slug": "realkimbarrett-avatar-extraction",
-      "displayName": "realkimbarrett/avatar-extraction",
-      "stars": 764,
-      "relation": "shared_tag",
-      "evidence": "TypeScript Skills"
-    },
-    {
-      "slug": "resend-resend",
-      "displayName": "resend/resend",
-      "stars": 200,
-      "relation": "shared_tag",
-      "evidence": "TypeScript Skills"
-    },
-    {
-      "slug": "redis-redis-core",
-      "displayName": "redis/redis-core",
-      "stars": 167,
-      "relation": "shared_tag",
-      "evidence": "TypeScript Skills"
-    },
-    {
-      "slug": "cypress-io-cypress-author",
-      "displayName": "cypress-io/cypress-author",
-      "stars": 46,
-      "relation": "shared_tag",
-      "evidence": "TypeScript Skills"
-    },
-    {
-      "slug": "microsoft-azure-ai-contentsafety-ts",
-      "displayName": "microsoft/azure-ai-contentsafety-ts",
+      "slug": "wordpress-wp-block-development",
+      "displayName": "WordPress/wp-block-development",
       "stars": 0,
       "relation": "shared_tag",
       "evidence": "TypeScript Skills"

@@ -12,7 +12,7 @@
   "readme": "# cloudflare/web-perf\n\nAudit Core Web Vitals and render-blocking resources",
   "readmeHtml": "<h1>cloudflare/web-perf</h1>\n<p>Audit Core Web Vitals and render-blocking resources</p>",
   "skillMd": "",
-  "updatedAt": "2026-10-14T22:08:28.310Z",
+  "updatedAt": "2026-10-15T21:59:20.743Z",
   "author": {
     "login": "cloudflare",
     "name": "Cloudflare",
@@ -22,7 +22,7 @@
   },
   "location": {
     "id": "san-francisco",
-    "label": "San Francisco, London, Austin, Lisbon, Singapore",
+    "label": "San Francisco, CA",
     "lat": 37.7749,
     "lon": -122.4194,
     "source": "github_profile"
@@ -31,7 +31,7 @@
     {
       "slug": "cloudflare-security-audit-skill",
       "displayName": "cloudflare/security-audit-skill",
-      "stars": 29582,
+      "stars": 29867,
       "relation": "source_overlap",
       "evidence": "author:cloudflare"
     },
@@ -87,7 +87,7 @@
   ],
   "mapLocation": {
     "id": "san-francisco",
-    "label": "San Francisco, London, Austin, Lisbon, Singapore",
+    "label": "San Francisco, CA",
     "lat": 37.7749,
     "lon": -122.4194,
     "source": "github_profile"

@@ -1,0 +1,89 @@
+{
+  "id": "skill:dragon1086-claude-skills",
+  "slug": "dragon1086-claude-skills",
+  "name": "claude-skills",
+  "displayName": "dragon1086/claude-skills",
+  "description": "Analyzes prompts and recommends optimal tools, skills, agents, and orchestration patterns",
+  "stars": 12,
+  "category": "Skills by Binance",
+  "source": "heilcheng",
+  "url": "https://github.com/dragon1086/claude-skills",
+  "githubRepo": "dragon1086/claude-skills",
+  "readme": "# 🧭 Tool Advisor\n\n**English** | [한국어](./README.ko.md) | [日本語](./README.ja.md) | [中文](./README.zh-CN.md) | [Español](./README.es.md) | [Português](./README.pt-BR.md) | [Русский](./README.ru.md) | [Français](./README.fr.md) | [Deutsch](./README.de.md)\n\n**Discover your tool environment. Amplify your capabilities. (Claude Code + Codex)**\n\nTool Advisor scans your runtime environment — MCP servers, skills, plugins, CLI tools — and suggests optimal tool compositions as **non-binding options** with copy-paste commands. It arms the model with knowledge it wouldn't otherwise have.\n\n![Demo](./assets/demo.gif)\n\n## Install\n\n**Option 1: One-line install (default: Claude Code + Codex)**\n```bash\ncurl -fsSL https://raw.githubusercontent.com/dragon1086/claude-skills/main/install.sh | bash\n```\n\nInstall for a single agent:\n```bash\n# Codex only\ncurl -fsSL https://raw.githubusercontent.com/dragon1086/claude-skills/main/install.sh | bash -s -- --agent codex\n\n# Claude Code only\ncurl -fsSL https://raw.githubusercontent.com/dragon1086/claude-skills/main/install.sh | bash -s -- --agent claude-code\n```\n\n**Option 2: Via [skills.sh](https://skills.sh)**\n```bash\nnpx skills add dragon1086/claude-skills -y --agent claude-code\nnpx skills add dragon1086/claude-skills -y --agent codex\n```\n\nTo update, run the same command again.\n\n## Usage\n\nJust ask naturally:\n\n```\n\"Analyze with tool-advisor: refactor the auth module\"\n\"tool-advisor, how should I tackle this database migration?\"\n\"What's the best approach for implementing user authentication?\"\n\"Use $tool-advisor to analyze this task: ship v2 API migration\"\n```\n\nThe skill activates when you mention **tool-advisor** or ask for tool recommendations.\n\n## What It Does\n\n```\nYour Prompt\n    ↓\n┌──────────────────────────────────┐\n│     Tool Advisor v3.4            │\n│     \"Amplifier, not Commander\"   │\n├──────────────────────────────────┤\n│ 1. Discover Environment          │\n│    MCP / Skills / Plugins / CLI  │\n│ 2. Analyze Task + Done When      │\n│ 3. Match Capabilities            │\n│ 4. Suggest Options (up to 3)     │\n│ 5. Identify Gaps                 │\n│ 6. Performance Tips              │\n└──────────────────────────────────┘\n    ↓\nOptions + Quick Action table\n```\n\n## Features\n\n| Feature | Description |\n|---------|-------------|\n| **4-Layer Environment Scan** | Discovers MCP servers, skills, plugins, and CLI tools at runtime |\n| **Completion Criteria** | Extracts \"Done when\" from prompts so the model knows the finish line |\n| **Scale-Adaptive Output** | Small tasks get <10 lines; large tasks get full analysis |\n| **Multi-Option Suggestions** | Up to 3 approaches (Methodical / Fast / Deep) — never mandates |\n| **Capability Gap Analysis** | Suggests missing tools with \"doable without these\" disclaimer |\n| **Iron Rules & Anti-Patterns** | 9 hard boundaries prevent advisor-to-executor drift; 3 concise anti-patterns |\n| **Phase Enforcement** | Every phase MUST produce output or explicit \"N/A\" — no skipping allowed |\n| **Human-in-the-loop** | Never installs without your approval |\n\n## Example\n\n**Input:**\n```\nAnalyze with tool-advisor: Refactor auth module to use JWT tokens\n```\n\n**Output:**\n```markdown\n## Tool Advisor v3.4 — Environment & Composition Analysis\n\nPrompt: `Refactor auth module to use JWT tokens`\n\n### Your Environment\n\n| Layer | Available |\n|-------|-----------|\n| MCP Servers | lsp, context7 |\n| Skills | /feature-dev, /code-review, /tdd |\n| Plugins | oh-my-claudecode (33 agents) |\n| CLI | git, node, pytest, docker |\n\n### Task Profile\n- **Type**: Modification / **Scale**: Large / **Traits**: Needs planning, has tests\n- **Done when**: all session-based auth replaced with JWT, tests pass, no session imports remain\n\n### Relevant Capabilities\n- `lsp_diagnostics` — Type-check after changes\n- `ast_grep_search` — Find all session usage patterns\n- `/feature-dev` — Guided development workflow\n\n### Suggested Approaches\n\n**A — Methodical** (Recommended)\nTask(Explore) -> EnterPlanMode -> Edit in stages -> Bash(pytest)\n\n**B — Skill-guided**\n/feature-dev (handles the full flow)\n\n**C — Agent-parallel**\n[Task(Explore, bg), WebSearch(\"JWT best practices\")] -> plan -> implement\n\n---\n\n## Quick Action\n\n| Approach | Copy & Paste |\n|----------|--------------|\n| Methodical | Start with `Task(Explore)` to scout the codebase |\n| Skill-guided | `/feature-dev` then describe the refactoring |\n| Fast | `Glob(\"**/auth/**\") + Grep(\"session\")` parallel |\n\n-> Recommended: \"Methodical\" (large refactoring benefits from planning first)\n```\n\n## Requirements\n\n- Claude Code CLI and/or Codex CLI\n\n## License\n\nMIT © 2026 dragon1086\n",
+  "readmeHtml": "<h1>🧭 Tool Advisor</h1>\n<p><strong>English</strong> | [한국어](./README.ko.md) | [日本語](./README.ja.md) | [中文](./README.zh-CN.md) | [Español](./README.es.md) | [Português](./README.pt-BR.md) | [Русский](./README.ru.md) | [Français](./README.fr.md) | [Deutsch](./README.de.md)</p>\n<p><strong>Discover your tool environment. Amplify your capabilities. (Claude Code + Codex)</strong></p>\n<p>Tool Advisor scans your runtime environment — MCP servers, skills, plugins, CLI tools — and suggests optimal tool compositions as <strong>non-binding options</strong> with copy-paste commands. It arms the model with knowledge it wouldn't otherwise have.</p>\n<p>![Demo](./assets/demo.gif)</p>\n<h2>Install</h2>\n<p><strong>Option 1: One-line install (default: Claude Code + Codex)</strong></p>\n<pre><code>\ncurl -fsSL https://raw.githubusercontent.com/dragon1086/claude-skills/main/install.sh | bash\n\n</code></pre>\n<p>Install for a single agent:</p>\n<pre><code>\n# Codex only\n\ncurl -fsSL https://raw.githubusercontent.com/dragon1086/claude-skills/main/install.sh | bash -s -- --agent codex\n\n\n\n# Claude Code only\n\ncurl -fsSL https://raw.githubusercontent.com/dragon1086/claude-skills/main/install.sh | bash -s -- --agent claude-code\n\n</code></pre>\n<p><strong>Option 2: Via <a href=\"https://skills.sh\" target=\"_blank\" rel=\"noreferrer\">skills.sh</a></strong></p>\n<pre><code>\nnpx skills add dragon1086/claude-skills -y --agent claude-code\n\nnpx skills add dragon1086/claude-skills -y --agent codex\n\n</code></pre>\n<p>To update, run the same command again.</p>\n<h2>Usage</h2>\n<p>Just ask naturally:</p>\n<pre><code>\n\"Analyze with tool-advisor: refactor the auth module\"\n\n\"tool-advisor, how should I tackle this database migration?\"\n\n\"What's the best approach for implementing user authentication?\"\n\n\"Use $tool-advisor to analyze this task: ship v2 API migration\"\n\n</code></pre>\n<p>The skill activates when you mention <strong>tool-advisor</strong> or ask for tool recommendations.</p>\n<h2>What It Does</h2>\n<pre><code>\nYour Prompt\n\n    ↓\n\n┌──────────────────────────────────┐\n\n│     Tool Advisor v3.4            │\n\n│     \"Amplifier, not Commander\"   │\n\n├──────────────────────────────────┤\n\n│ 1. Discover Environment          │\n\n│    MCP / Skills / Plugins / CLI  │\n\n│ 2. Analyze Task + Done When      │\n\n│ 3. Match Capabilities            │\n\n│ 4. Suggest Options (up to 3)     │\n\n│ 5. Identify Gaps                 │\n\n│ 6. Performance Tips              │\n\n└──────────────────────────────────┘\n\n    ↓\n\nOptions + Quick Action table\n\n</code></pre>\n<h2>Features</h2>\n<p>| Feature | Description |</p>\n<p>|---------|-------------|</p>\n<p>| <strong>4-Layer Environment Scan</strong> | Discovers MCP servers, skills, plugins, and CLI tools at runtime |</p>\n<p>| <strong>Completion Criteria</strong> | Extracts \"Done when\" from prompts so the model knows the finish line |</p>\n<p>| <strong>Scale-Adaptive Output</strong> | Small tasks get &lt;10 lines; large tasks get full analysis |</p>\n<p>| <strong>Multi-Option Suggestions</strong> | Up to 3 approaches (Methodical / Fast / Deep) — never mandates |</p>\n<p>| <strong>Capability Gap Analysis</strong> | Suggests missing tools with \"doable without these\" disclaimer |</p>\n<p>| <strong>Iron Rules &amp; Anti-Patterns</strong> | 9 hard boundaries prevent advisor-to-executor drift; 3 concise anti-patterns |</p>\n<p>| <strong>Phase Enforcement</strong> | Every phase MUST produce output or explicit \"N/A\" — no skipping allowed |</p>\n<p>| <strong>Human-in-the-loop</strong> | Never installs without your approval |</p>\n<h2>Example</h2>\n<p><strong>Input:</strong></p>\n<pre><code>\nAnalyze with tool-advisor: Refactor auth module to use JWT tokens\n\n</code></pre>\n<p><strong>Output:</strong></p>\n<pre><code>\n## Tool Advisor v3.4 — Environment &amp; Composition Analysis\n\n\n\nPrompt: `Refactor auth module to use JWT tokens`\n\n\n\n### Your Environment\n\n\n\n| Layer | Available |\n\n|-------|-----------|\n\n| MCP Servers | lsp, context7 |\n\n| Skills | /feature-dev, /code-review, /tdd |\n\n| Plugins | oh-my-claudecode (33 agents) |\n\n| CLI | git, node, pytest, docker |\n\n\n\n### Task Profile\n\n- **Type**: Modification / **Scale**: Large / **Traits**: Needs planning, has tests\n\n- **Done when**: all session-based auth replaced with JWT, tests pass, no session imports remain\n\n\n\n### Relevant Capabilities\n\n- `lsp_diagnostics` — Type-check after changes\n\n- `ast_grep_search` — Find all session usage patterns\n\n- `/feature-dev` — Guided development workflow\n\n\n\n### Suggested Approaches\n\n\n\n**A — Methodical** (Recommended)\n\nTask(Explore) -&gt; EnterPlanMode -&gt; Edit in stages -&gt; Bash(pytest)\n\n\n\n**B — Skill-guided**\n\n/feature-dev (handles the full flow)\n\n\n\n**C — Agent-parallel**\n\n[Task(Explore, bg), WebSearch(\"JWT best practices\")] -&gt; plan -&gt; implement\n\n\n\n---\n\n\n\n## Quick Action\n\n\n\n| Approach | Copy &amp; Paste |\n\n|----------|--------------|\n\n| Methodical | Start with `Task(Explore)` to scout the codebase |\n\n| Skill-guided | `/feature-dev` then describe the refactoring |\n\n| Fast | `Glob(\"**/auth/**\") + Grep(\"session\")` parallel |\n\n\n\n-&gt; Recommended: \"Methodical\" (large refactoring benefits from planning first)\n\n</code></pre>\n<h2>Requirements</h2>\n<ul>\n<li>Claude Code CLI and/or Codex CLI</li>\n</ul>\n<h2>License</h2>\n<p>MIT © 2026 dragon1086</p>",
+  "skillMd": "",
+  "updatedAt": "2026-04-23T09:41:30Z",
+  "author": {
+    "login": "dragon1086",
+    "name": "rocky-mun",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/42714082?v=4",
+    "profileUrl": "https://github.com/dragon1086",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "kkkkhazix-aihot",
+      "displayName": "kkkkhazix/aihot",
+      "stars": 21431,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "sawyerhood-dev-browser",
+      "displayName": "sawyerhood/dev-browser",
+      "stars": 6666,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "roundtable02-tutor-skills",
+      "displayName": "roundtable02/tutor-skills",
+      "stars": 1350,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "chubbyguan-chubbyskills",
+      "displayName": "chubbyguan/chubbyskills",
+      "stars": 1249,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "moizibnyousaf-ai-agent-skills",
+      "displayName": "moizibnyousaf/ai-agent-skills",
+      "stars": 1151,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "vostride-agent-qa",
+      "displayName": "vostride/agent-qa",
+      "stars": 906,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "swarmclawai-swarmvault",
+      "displayName": "swarmclawai/swarmvault",
+      "stars": 718,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "swarmclawai-swarmclaw",
+      "displayName": "swarmclawai/swarmclaw",
+      "stars": 689,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-shanghai",
+    "label": "Global Skill Market / Shanghai / Skills by Binance",
+    "lat": 31.2304,
+    "lon": 121.4737,
+    "source": "virtual_market"
+  }
+}

@@ -12,7 +12,7 @@
   "readme": "# garrytan/codex\n\nSecond Opinion via OpenAI Codex CLI: review, adversarial challenge, and open consultation",
   "readmeHtml": "<h1>garrytan/codex</h1>\n<p>Second Opinion via OpenAI Codex CLI: review, adversarial challenge, and open consultation</p>",
   "skillMd": "",
-  "updatedAt": "2026-10-14T22:08:28.461Z",
+  "updatedAt": "2026-10-15T21:59:20.796Z",
   "author": {
     "login": "garrytan",
     "name": "Garry Tan",
@@ -22,19 +22,12 @@
   },
   "location": {
     "id": "san-francisco",
-    "label": "San Francisco, London, Austin, Lisbon, Singapore",
+    "label": "San Francisco, CA",
     "lat": 37.7749,
     "lon": -122.4194,
     "source": "github_profile"
   },
   "related": [
-    {
-      "slug": "garrytan-gstack",
-      "displayName": "garrytan/gstack",
-      "stars": 136421,
-      "relation": "source_overlap",
-      "evidence": "author:garrytan"
-    },
     {
       "slug": "garrytan-office-hours",
       "displayName": "garrytan/office-hours",
@@ -83,11 +76,18 @@
       "stars": 0,
       "relation": "source_overlap",
       "evidence": "author:garrytan"
+    },
+    {
+      "slug": "garrytan-investigate",
+      "displayName": "garrytan/investigate",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:garrytan"
     }
   ],
   "mapLocation": {
     "id": "san-francisco",
-    "label": "San Francisco, London, Austin, Lisbon, Singapore",
+    "label": "San Francisco, CA",
     "lat": 37.7749,
     "lon": -122.4194,
     "source": "github_profile"

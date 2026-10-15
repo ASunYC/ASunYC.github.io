@@ -12,7 +12,7 @@
   "readme": "# trailofbits/static-analysis\n\nStatic analysis toolkit with CodeQL, Semgrep, and SARIF",
   "readmeHtml": "<h1>trailofbits/static-analysis</h1>\n<p>Static analysis toolkit with CodeQL, Semgrep, and SARIF</p>",
   "skillMd": "",
-  "updatedAt": "2026-10-14T22:08:28.315Z",
+  "updatedAt": "2026-10-15T21:59:20.751Z",
   "author": {
     "login": "trailofbits",
     "name": "Trail of Bits",
@@ -36,15 +36,15 @@
       "evidence": "Security Audit Stack includes trailofbits/static-analysis"
     },
     {
-      "slug": "trailofbits-ask-questions-if-underspecified",
-      "displayName": "trailofbits/ask-questions-if-underspecified",
+      "slug": "trailofbits-audit-context-building",
+      "displayName": "trailofbits/audit-context-building",
       "stars": 0,
       "relation": "source_overlap",
       "evidence": "author:trailofbits"
     },
     {
-      "slug": "trailofbits-audit-context-building",
-      "displayName": "trailofbits/audit-context-building",
+      "slug": "trailofbits-ask-questions-if-underspecified",
+      "displayName": "trailofbits/ask-questions-if-underspecified",
       "stars": 0,
       "relation": "source_overlap",
       "evidence": "author:trailofbits"

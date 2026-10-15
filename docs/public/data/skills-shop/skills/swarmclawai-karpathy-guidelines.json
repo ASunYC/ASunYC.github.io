@@ -1,0 +1,89 @@
+{
+  "id": "skill:swarmclawai-karpathy-guidelines",
+  "slug": "swarmclawai-karpathy-guidelines",
+  "name": "karpathy-guidelines",
+  "displayName": "swarmclawai/karpathy-guidelines",
+  "description": "Coding-agent guardrails for clarity, minimal diffs, and verification",
+  "stars": 52,
+  "category": "Skills by Binance",
+  "source": "heilcheng",
+  "url": "https://github.com/swarmclawai/andrej-karpathy-skills/tree/main/skills/karpathy-guidelines",
+  "githubRepo": "swarmclawai/andrej-karpathy-skills",
+  "readme": "# Karpathy-Inspired Agent Skills\n\nKarpathy-inspired coding-agent guidelines packaged for Claude Code, Codex, Cursor, Gemini CLI, OpenCode, Aider, GitHub Copilot, OpenClaw, Warp, Windsurf, Cline, and the wider SwarmVault/SwarmClaw agent matrix.\n\nThe canonical source is [`skills/karpathy-guidelines/SKILL.md`](skills/karpathy-guidelines/SKILL.md). Agent-specific files are generated under [`adapters/`](adapters/) so the repository root stays readable while every supported tool receives the same behavioral guidance.\n\nEnglish | [Simplified Chinese](./README.zh.md)\n\n## What This Adds\n\nThese guidelines address four common LLM coding failure modes described by Andrej Karpathy:\n\n| Principle | Prevents |\n| --- | --- |\n| Think Before Coding | Silent assumptions, hidden confusion, missing tradeoffs |\n| Simplicity First | Over-engineering, bloated abstractions, speculative features |\n| Surgical Changes | Drive-by rewrites, unrelated cleanup, accidental behavior changes |\n| Goal-Driven Execution | Vague completion criteria and unverified changes |\n\nThe content is intentionally short. It is meant to merge with project-specific instructions, not replace them.\n\n## Quick Install\n\nInstall through npm and run the installer with `npx`:\n\n```bash\nnpx @swarmclawai/andrej-karpathy-skills --list\nnpx @swarmclawai/andrej-karpathy-skills --agent codex --dest /path/to/project\n```\n\nOr install the CLI globally:\n\n```bash\nnpm install -g @swarmclawai/andrej-karpathy-skills\nandrej-karpathy-skills --agent cursor --dest /path/to/project\n```\n\nThe CLI copies the right adapter from the npm package into the destination project.\n\n## Clone Install\n\nClone once, then copy the right adapter into any project. The installer reads [`install/targets.json`](install/targets.json), copies from `adapters/<agent-id>/...`, and writes to the real path your agent expects.\n\n```bash\ngit clone https://github.com/swarmclawai/andrej-karpathy-skills.git\ncd andrej-karpathy-skills\nnode scripts/install.mjs --list\nnode scripts/install.mjs --agent codex --dest /path/to/project\n```\n\nUse `--force` if you intentionally want to overwrite an existing instruction file:\n\n```bash\nnode scripts/install.mjs --agent claude --dest /path/to/project --force\nnode scripts/install.mjs --agent openclaw --dest /path/to/project --force\n```\n\nUse `--global` for agents with supported user-level skill locations:\n\n```bash\nnode scripts/install.mjs --agent claude --global --force\nnode scripts/install.mjs --agent hermes --global --force\n```\n\n## Adapter Layout\n\nIf you only need one file, copy the adapter source to the install target shown below:\n\n| Agent | Adapter source | Installs to |\n| --- | --- |\n| Codex | `adapters/codex/AGENTS.md` | `AGENTS.md` |\n| Claude Code | `adapters/claude/CLAUDE.md` | `CLAUDE.md` |\n| Cursor | `adapters/cursor/.cursor/rules/karpathy-guidelines.mdc` | `.cursor/rules/karpathy-guidelines.mdc` |\n| Gemini CLI | `adapters/gemini/GEMINI.md` | `GEMINI.md` |\n| Aider | `adapters/aider/CONVENTIONS.md` | `CONVENTIONS.md` |\n| GitHub Copilot | `adapters/copilot/.github/copilot-instructions.md` | `.github/copilot-instructions.md` |\n| VS Code Copilot Chat | `adapters/vscode/.github/chatmodes/karpathy-guidelines.chatmode.md` | `.github/chatmodes/karpathy-guidelines.chatmode.md` |\n| OpenClaw | `adapters/openclaw/.openclaw/skills/karpathy-guidelines/SKILL.md` | `.openclaw/skills/karpathy-guidelines/SKILL.md` |\n| Warp or shared Agent Skills | `adapters/warp/.agents/skills/karpathy-guidelines/SKILL.md` | `.agents/skills/karpathy-guidelines/SKILL.md` |\n| Windsurf | `adapters/windsurf/.windsurfrules` | `.windsurfrules` |\n\nThe full target matrix lives in [`install/targets.json`](install/targets.json).\n\n## Supported Agent Matrix\n\nThe matrix is based on SwarmVault's installer targets and SwarmClaw's agent provider registry, then cross-checked with public agent documentation where available.\n\nCore targets:\n\n`codex`, `claude`, `cursor`, `goose`, `pi`, `gemini`, `opencode`, `aider`, `copilot`, `trae`, `claw`, `droid`, `kiro`, `hermes`, `antigravity`, `vscode`.\n\nExtended Agent Skills targets:\n\n`amp`, `augment`, `adal`, `bob`, `cline`, `codebuddy`, `command-code`, `continue`, `cortex`, `crush`, `deepagents`, `firebender`, `iflow`, `junie`, `kilo-code`, `kimi`, `kode`, `mcpjam`, `mistral-vibe`, `mux`, `neovate`, `openclaw`, `openhands`, `pochi`, `qoder`, `qwen-code`, `replit`, `roo-code`, `trae-cn`, `warp`, `windsurf`, `zencoder`.\n\nSee [`docs/agent-compatibility.md`](docs/agent-compatibility.md) for the research notes and source links.\n\n## Claude Code Plugin\n\nThis repo still includes Claude plugin metadata at the root because plugin tooling expects it there:\n\n```text\n.claude-plugin/plugin.json\n.claude-plugin/marketplace.json\nskills/karpathy-guidelines/SKILL.md\n```\n\nWhen published as a Claude plugin marketplace entry, the plugin exposes the same canonical skill used by every other adapter.\n\n## Maintain The Package\n\nEdit the canonical skill, then regenerate and verify:\n\n```bash\nnpm run generate\nnpm run verify\nnpm run pack:dry-run\n```\n\nGenerated adapters live under `adapters/<agent-id>/` and start with a comment that names their source. Do not edit generated adapters by hand; update `skills/karpathy-guidelines/SKILL.md` or `scripts/generate.mjs`.\n\n## Attribution\n\nThis package is based on the original [`forrestchang/andrej-karpathy-skills`](https://github.com/forrestchang/andrej-karpathy-skills) repository and preserves the MIT license attribution.\n\n## License\n\nMIT\n",
+  "readmeHtml": "<h1>Karpathy-Inspired Agent Skills</h1>\n<p>Karpathy-inspired coding-agent guidelines packaged for Claude Code, Codex, Cursor, Gemini CLI, OpenCode, Aider, GitHub Copilot, OpenClaw, Warp, Windsurf, Cline, and the wider SwarmVault/SwarmClaw agent matrix.</p>\n<p>The canonical source is [<code>skills/karpathy-guidelines/SKILL.md</code>](skills/karpathy-guidelines/SKILL.md). Agent-specific files are generated under [<code>adapters/</code>](adapters/) so the repository root stays readable while every supported tool receives the same behavioral guidance.</p>\n<p>English | [Simplified Chinese](./README.zh.md)</p>\n<h2>What This Adds</h2>\n<p>These guidelines address four common LLM coding failure modes described by Andrej Karpathy:</p>\n<p>| Principle | Prevents |</p>\n<p>| --- | --- |</p>\n<p>| Think Before Coding | Silent assumptions, hidden confusion, missing tradeoffs |</p>\n<p>| Simplicity First | Over-engineering, bloated abstractions, speculative features |</p>\n<p>| Surgical Changes | Drive-by rewrites, unrelated cleanup, accidental behavior changes |</p>\n<p>| Goal-Driven Execution | Vague completion criteria and unverified changes |</p>\n<p>The content is intentionally short. It is meant to merge with project-specific instructions, not replace them.</p>\n<h2>Quick Install</h2>\n<p>Install through npm and run the installer with <code>npx</code>:</p>\n<pre><code>\nnpx @swarmclawai/andrej-karpathy-skills --list\n\nnpx @swarmclawai/andrej-karpathy-skills --agent codex --dest /path/to/project\n\n</code></pre>\n<p>Or install the CLI globally:</p>\n<pre><code>\nnpm install -g @swarmclawai/andrej-karpathy-skills\n\nandrej-karpathy-skills --agent cursor --dest /path/to/project\n\n</code></pre>\n<p>The CLI copies the right adapter from the npm package into the destination project.</p>\n<h2>Clone Install</h2>\n<p>Clone once, then copy the right adapter into any project. The installer reads [<code>install/targets.json</code>](install/targets.json), copies from <code>adapters/&lt;agent-id&gt;/...</code>, and writes to the real path your agent expects.</p>\n<pre><code>\ngit clone https://github.com/swarmclawai/andrej-karpathy-skills.git\n\ncd andrej-karpathy-skills\n\nnode scripts/install.mjs --list\n\nnode scripts/install.mjs --agent codex --dest /path/to/project\n\n</code></pre>\n<p>Use <code>--force</code> if you intentionally want to overwrite an existing instruction file:</p>\n<pre><code>\nnode scripts/install.mjs --agent claude --dest /path/to/project --force\n\nnode scripts/install.mjs --agent openclaw --dest /path/to/project --force\n\n</code></pre>\n<p>Use <code>--global</code> for agents with supported user-level skill locations:</p>\n<pre><code>\nnode scripts/install.mjs --agent claude --global --force\n\nnode scripts/install.mjs --agent hermes --global --force\n\n</code></pre>\n<h2>Adapter Layout</h2>\n<p>If you only need one file, copy the adapter source to the install target shown below:</p>\n<p>| Agent | Adapter source | Installs to |</p>\n<p>| --- | --- |</p>\n<p>| Codex | <code>adapters/codex/AGENTS.md</code> | <code>AGENTS.md</code> |</p>\n<p>| Claude Code | <code>adapters/claude/CLAUDE.md</code> | <code>CLAUDE.md</code> |</p>\n<p>| Cursor | <code>adapters/cursor/.cursor/rules/karpathy-guidelines.mdc</code> | <code>.cursor/rules/karpathy-guidelines.mdc</code> |</p>\n<p>| Gemini CLI | <code>adapters/gemini/GEMINI.md</code> | <code>GEMINI.md</code> |</p>\n<p>| Aider | <code>adapters/aider/CONVENTIONS.md</code> | <code>CONVENTIONS.md</code> |</p>\n<p>| GitHub Copilot | <code>adapters/copilot/.github/copilot-instructions.md</code> | <code>.github/copilot-instructions.md</code> |</p>\n<p>| VS Code Copilot Chat | <code>adapters/vscode/.github/chatmodes/karpathy-guidelines.chatmode.md</code> | <code>.github/chatmodes/karpathy-guidelines.chatmode.md</code> |</p>\n<p>| OpenClaw | <code>adapters/openclaw/.openclaw/skills/karpathy-guidelines/SKILL.md</code> | <code>.openclaw/skills/karpathy-guidelines/SKILL.md</code> |</p>\n<p>| Warp or shared Agent Skills | <code>adapters/warp/.agents/skills/karpathy-guidelines/SKILL.md</code> | <code>.agents/skills/karpathy-guidelines/SKILL.md</code> |</p>\n<p>| Windsurf | <code>adapters/windsurf/.windsurfrules</code> | <code>.windsurfrules</code> |</p>\n<p>The full target matrix lives in [<code>install/targets.json</code>](install/targets.json).</p>\n<h2>Supported Agent Matrix</h2>\n<p>The matrix is based on SwarmVault's installer targets and SwarmClaw's agent provider registry, then cross-checked with public agent documentation where available.</p>\n<p>Core targets:</p>\n<p><code>codex</code>, <code>claude</code>, <code>cursor</code>, <code>goose</code>, <code>pi</code>, <code>gemini</code>, <code>opencode</code>, <code>aider</code>, <code>copilot</code>, <code>trae</code>, <code>claw</code>, <code>droid</code>, <code>kiro</code>, <code>hermes</code>, <code>antigravity</code>, <code>vscode</code>.</p>\n<p>Extended Agent Skills targets:</p>\n<p><code>amp</code>, <code>augment</code>, <code>adal</code>, <code>bob</code>, <code>cline</code>, <code>codebuddy</code>, <code>command-code</code>, <code>continue</code>, <code>cortex</code>, <code>crush</code>, <code>deepagents</code>, <code>firebender</code>, <code>iflow</code>, <code>junie</code>, <code>kilo-code</code>, <code>kimi</code>, <code>kode</code>, <code>mcpjam</code>, <code>mistral-vibe</code>, <code>mux</code>, <code>neovate</code>, <code>openclaw</code>, <code>openhands</code>, <code>pochi</code>, <code>qoder</code>, <code>qwen-code</code>, <code>replit</code>, <code>roo-code</code>, <code>trae-cn</code>, <code>warp</code>, <code>windsurf</code>, <code>zencoder</code>.</p>\n<p>See [<code>docs/agent-compatibility.md</code>](docs/agent-compatibility.md) for the research notes and source links.</p>\n<h2>Claude Code Plugin</h2>\n<p>This repo still includes Claude plugin metadata at the root because plugin tooling expects it there:</p>\n<pre><code>\n.claude-plugin/plugin.json\n\n.claude-plugin/marketplace.json\n\nskills/karpathy-guidelines/SKILL.md\n\n</code></pre>\n<p>When published as a Claude plugin marketplace entry, the plugin exposes the same canonical skill used by every other adapter.</p>\n<h2>Maintain The Package</h2>\n<p>Edit the canonical skill, then regenerate and verify:</p>\n<pre><code>\nnpm run generate\n\nnpm run verify\n\nnpm run pack:dry-run\n\n</code></pre>\n<p>Generated adapters live under <code>adapters/&lt;agent-id&gt;/</code> and start with a comment that names their source. Do not edit generated adapters by hand; update <code>skills/karpathy-guidelines/SKILL.md</code> or <code>scripts/generate.mjs</code>.</p>\n<h2>Attribution</h2>\n<p>This package is based on the original <a href=\"https://github.com/forrestchang/andrej-karpathy-skills\" target=\"_blank\" rel=\"noreferrer\"><code>forrestchang/andrej-karpathy-skills</code></a> repository and preserves the MIT license attribution.</p>\n<h2>License</h2>\n<p>MIT</p>",
+  "skillMd": "---\nname: karpathy-guidelines\ndescription: Behavioral guidelines to reduce common LLM coding mistakes. Use when writing, reviewing, or refactoring code to avoid overcomplication, make surgical changes, surface assumptions, and define verifiable success criteria.\n---\n\n# Karpathy Guidelines\n\nBehavioral guidelines to reduce common LLM coding mistakes, derived from [Andrej Karpathy's observations](https://x.com/karpathy/status/2015883857489522876) on LLM coding pitfalls.\n\n**Tradeoff:** These guidelines bias toward caution over speed. For trivial tasks, use judgment.\n\n## 1. Think Before Coding\n\n**Don't assume. Don't hide confusion. Surface tradeoffs.**\n\nBefore implementing:\n- State your assumptions explicitly. If uncertain, ask.\n- If multiple interpretations exist, present them - don't pick silently.\n- If a simpler approach exists, say so. Push back when warranted.\n- If something is unclear, stop. Name what's confusing. Ask.\n\n## 2. Simplicity First\n\n**Minimum code that solves the problem. Nothing speculative.**\n\n- No features beyond what was asked.\n- No abstractions for single-use code.\n- No \"flexibility\" or \"configurability\" that wasn't requested.\n- No error handling for impossible scenarios.\n- If you write 200 lines and it could be 50, rewrite it.\n\nAsk yourself: \"Would a senior engineer say this is overcomplicated?\" If yes, simplify.\n\n## 3. Surgical Changes\n\n**Touch only what you must. Clean up only your own mess.**\n\nWhen editing existing code:\n- Don't \"improve\" adjacent code, comments, or formatting.\n- Don't refactor things that aren't broken.\n- Match existing style, even if you'd do it differently.\n- If you notice unrelated dead code, mention it - don't delete it.\n\nWhen your changes create orphans:\n- Remove imports/variables/functions that YOUR changes made unused.\n- Don't remove pre-existing dead code unless asked.\n\nThe test: Every changed line should trace directly to the user's request.\n\n## 4. Goal-Driven Execution\n\n**Define success criteria. Loop until verified.**\n\nTransform tasks into verifiable goals:\n- \"Add validation\" → \"Write tests for invalid inputs, then make them pass\"\n- \"Fix the bug\" → \"Write a test that reproduces it, then make it pass\"\n- \"Refactor X\" → \"Ensure tests pass before and after\"\n\nFor multi-step tasks, state a brief plan:\n```\n1. [Step] → verify: [check]\n2. [Step] → verify: [check]\n3. [Step] → verify: [check]\n```\n\nStrong success criteria let you loop independently. Weak criteria (\"make it work\") require constant clarification.\n",
+  "updatedAt": "2026-05-11T12:43:50Z",
+  "author": {
+    "login": "swarmclawai",
+    "name": "SwarmClaw AI",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/262453007?v=4",
+    "profileUrl": "https://github.com/swarmclawai",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "swarmclawai-swarmvault",
+      "displayName": "swarmclawai/swarmvault",
+      "stars": 718,
+      "relation": "source_overlap",
+      "evidence": "author:swarmclawai"
+    },
+    {
+      "slug": "swarmclawai-swarmclaw",
+      "displayName": "swarmclawai/swarmclaw",
+      "stars": 689,
+      "relation": "source_overlap",
+      "evidence": "author:swarmclawai"
+    },
+    {
+      "slug": "kkkkhazix-aihot",
+      "displayName": "kkkkhazix/aihot",
+      "stars": 21431,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "sawyerhood-dev-browser",
+      "displayName": "sawyerhood/dev-browser",
+      "stars": 6666,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "roundtable02-tutor-skills",
+      "displayName": "roundtable02/tutor-skills",
+      "stars": 1350,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "chubbyguan-chubbyskills",
+      "displayName": "chubbyguan/chubbyskills",
+      "stars": 1249,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "moizibnyousaf-ai-agent-skills",
+      "displayName": "moizibnyousaf/ai-agent-skills",
+      "stars": 1151,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "vostride-agent-qa",
+      "displayName": "vostride/agent-qa",
+      "stars": 906,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-singapore",
+    "label": "Global Skill Market / Singapore / Skills by Binance",
+    "lat": 1.3521,
+    "lon": 103.8198,
+    "source": "virtual_market"
+  }
+}

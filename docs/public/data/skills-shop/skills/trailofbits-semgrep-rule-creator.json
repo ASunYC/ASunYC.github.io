@@ -12,7 +12,7 @@
   "readme": "# trailofbits/semgrep-rule-creator\n\nCreate and refine Semgrep rules for vulnerability detection",
   "readmeHtml": "<h1>trailofbits/semgrep-rule-creator</h1>\n<p>Create and refine Semgrep rules for vulnerability detection</p>",
   "skillMd": "",
-  "updatedAt": "2026-10-14T22:08:28.315Z",
+  "updatedAt": "2026-10-15T21:59:20.751Z",
   "author": {
     "login": "trailofbits",
     "name": "Trail of Bits",
@@ -36,15 +36,15 @@
       "evidence": "Security Audit Stack includes trailofbits/semgrep-rule-creator"
     },
     {
-      "slug": "trailofbits-ask-questions-if-underspecified",
-      "displayName": "trailofbits/ask-questions-if-underspecified",
+      "slug": "trailofbits-audit-context-building",
+      "displayName": "trailofbits/audit-context-building",
       "stars": 0,
       "relation": "source_overlap",
       "evidence": "author:trailofbits"
     },
     {
-      "slug": "trailofbits-audit-context-building",
-      "displayName": "trailofbits/audit-context-building",
+      "slug": "trailofbits-ask-questions-if-underspecified",
+      "displayName": "trailofbits/ask-questions-if-underspecified",
       "stars": 0,
       "relation": "source_overlap",
       "evidence": "author:trailofbits"

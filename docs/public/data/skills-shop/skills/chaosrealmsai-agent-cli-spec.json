@@ -1,0 +1,89 @@
+{
+  "id": "skill:chaosrealmsai-agent-cli-spec",
+  "slug": "chaosrealmsai-agent-cli-spec",
+  "name": "agent-cli-spec",
+  "displayName": "chaosrealmsai/agent-cli-spec",
+  "description": "CLI design spec — 98 rules for building agent-safe CLI tools",
+  "stars": 3,
+  "category": "Skills by Binance",
+  "source": "heilcheng",
+  "url": "https://github.com/ChaosRealmsAI/agent-cli-spec",
+  "githubRepo": "ChaosRealmsAI/agent-cli-spec",
+  "readme": "# ai-native-cli\n\nA design spec for building CLI tools that AI agents can safely and reliably use.\n\nCovers structured JSON output, error handling, input contracts, safety guardrails, exit codes, and agent self-description across 98 rules in 11 dimensions.\n\n## Why\n\nMost CLIs were designed for humans — colorized output, interactive prompts, ambiguous exit codes. When an AI agent calls these tools, it can't parse the output, gets stuck on prompts, or silently misinterprets errors. This spec defines what a CLI needs to be a reliable building block in agentic workflows.\n\n## Install\n\n```bash\n# Claude Code\nnpx skills add zhuanz/agent-cli-spec\n\n# Or manually\ncp -r ai-native-cli/ ~/.claude/skills/ai-native-cli/\n\n# OpenAI Codex\ncp -r ai-native-cli/ .agents/skills/ai-native-cli/\n```\n\n## What's inside\n\n| File | Purpose |\n|------|---------|\n| `ai-native-cli/SKILL.md` | The spec — 98 rules across 11 dimensions |\n| `ai-native-cli/references/audit.md` | Audit protocol — Agent-driven compliance verification |\n\n## Certification levels\n\n| Level | Layer | Rules |\n|-------|-------|-------|\n| Agent-Friendly | core | 20 rules — stable execution contract |\n| Agent-Ready | + recommended | 59 rules — self-describing, pipe-friendly |\n| Agent-Native | + ecosystem | 19 rules — identity, skills, feedback loop |\n\n## Compatibility\n\nBuilt on the [Agent Skills](https://agentskills.io) open standard. Works with:\n\n- Claude Code\n- OpenAI Codex\n- Cursor\n- GitHub Copilot\n- Gemini CLI\n- and 30+ other agents\n\n## License\n\nMIT\n",
+  "readmeHtml": "<h1>ai-native-cli</h1>\n<p>A design spec for building CLI tools that AI agents can safely and reliably use.</p>\n<p>Covers structured JSON output, error handling, input contracts, safety guardrails, exit codes, and agent self-description across 98 rules in 11 dimensions.</p>\n<h2>Why</h2>\n<p>Most CLIs were designed for humans — colorized output, interactive prompts, ambiguous exit codes. When an AI agent calls these tools, it can't parse the output, gets stuck on prompts, or silently misinterprets errors. This spec defines what a CLI needs to be a reliable building block in agentic workflows.</p>\n<h2>Install</h2>\n<pre><code>\n# Claude Code\n\nnpx skills add zhuanz/agent-cli-spec\n\n\n\n# Or manually\n\ncp -r ai-native-cli/ ~/.claude/skills/ai-native-cli/\n\n\n\n# OpenAI Codex\n\ncp -r ai-native-cli/ .agents/skills/ai-native-cli/\n\n</code></pre>\n<h2>What's inside</h2>\n<p>| File | Purpose |</p>\n<p>|------|---------|</p>\n<p>| <code>ai-native-cli/SKILL.md</code> | The spec — 98 rules across 11 dimensions |</p>\n<p>| <code>ai-native-cli/references/audit.md</code> | Audit protocol — Agent-driven compliance verification |</p>\n<h2>Certification levels</h2>\n<p>| Level | Layer | Rules |</p>\n<p>|-------|-------|-------|</p>\n<p>| Agent-Friendly | core | 20 rules — stable execution contract |</p>\n<p>| Agent-Ready | + recommended | 59 rules — self-describing, pipe-friendly |</p>\n<p>| Agent-Native | + ecosystem | 19 rules — identity, skills, feedback loop |</p>\n<h2>Compatibility</h2>\n<p>Built on the <a href=\"https://agentskills.io\" target=\"_blank\" rel=\"noreferrer\">Agent Skills</a> open standard. Works with:</p>\n<ul>\n<li>Claude Code</li>\n<li>OpenAI Codex</li>\n<li>Cursor</li>\n<li>GitHub Copilot</li>\n<li>Gemini CLI</li>\n<li>and 30+ other agents</li>\n</ul>\n<h2>License</h2>\n<p>MIT</p>",
+  "skillMd": "",
+  "updatedAt": "2026-03-15T19:20:08Z",
+  "author": {
+    "login": "ChaosRealmsAI",
+    "name": "ChaosRealmsAI",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/231855953?v=4",
+    "profileUrl": "https://github.com/ChaosRealmsAI",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "kkkkhazix-aihot",
+      "displayName": "kkkkhazix/aihot",
+      "stars": 21431,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "sawyerhood-dev-browser",
+      "displayName": "sawyerhood/dev-browser",
+      "stars": 6666,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "roundtable02-tutor-skills",
+      "displayName": "roundtable02/tutor-skills",
+      "stars": 1350,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "chubbyguan-chubbyskills",
+      "displayName": "chubbyguan/chubbyskills",
+      "stars": 1249,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "moizibnyousaf-ai-agent-skills",
+      "displayName": "moizibnyousaf/ai-agent-skills",
+      "stars": 1151,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "vostride-agent-qa",
+      "displayName": "vostride/agent-qa",
+      "stars": 906,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "swarmclawai-swarmvault",
+      "displayName": "swarmclawai/swarmvault",
+      "stars": 718,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "swarmclawai-swarmclaw",
+      "displayName": "swarmclawai/swarmclaw",
+      "stars": 689,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-shanghai",
+    "label": "Global Skill Market / Shanghai / Skills by Binance",
+    "lat": 31.2304,
+    "lon": 121.4737,
+    "source": "virtual_market"
+  }
+}

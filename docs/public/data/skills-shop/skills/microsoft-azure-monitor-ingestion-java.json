@@ -12,7 +12,7 @@
   "readme": "# microsoft/azure-monitor-ingestion-java\n\nCustom log ingestion to Azure Monitor",
   "readmeHtml": "<h1>microsoft/azure-monitor-ingestion-java</h1>\n<p>Custom log ingestion to Azure Monitor</p>",
   "skillMd": "",
-  "updatedAt": "2026-10-14T22:08:28.336Z",
+  "updatedAt": "2026-10-15T21:59:20.763Z",
   "author": {
     "login": "microsoft",
     "name": "Microsoft",
@@ -22,13 +22,6 @@
   },
   "location": null,
   "related": [
-    {
-      "slug": "microsoft-agent-skills",
-      "displayName": "microsoft/agent-skills",
-      "stars": 3115,
-      "relation": "source_overlap",
-      "evidence": "author:microsoft"
-    },
     {
       "slug": "microsoft-cloud-solution-architect",
       "displayName": "microsoft/cloud-solution-architect",
@@ -74,6 +67,13 @@
     {
       "slug": "microsoft-mcp-builder",
       "displayName": "microsoft/mcp-builder",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:microsoft"
+    },
+    {
+      "slug": "microsoft-podcast-generation",
+      "displayName": "microsoft/podcast-generation",
       "stars": 0,
       "relation": "source_overlap",
       "evidence": "author:microsoft"

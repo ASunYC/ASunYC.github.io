@@ -1,0 +1,89 @@
+{
+  "id": "skill:sametcelikbicak-task-decomposer",
+  "slug": "sametcelikbicak-task-decomposer",
+  "name": "task-decomposer",
+  "displayName": "sametcelikbicak/task-decomposer",
+  "description": "Decomposes complex requests into structured, AI-friendly task sequences",
+  "stars": 3,
+  "category": "Skills by Binance",
+  "source": "heilcheng",
+  "url": "https://github.com/sametcelikbicak/task-decomposer",
+  "githubRepo": "sametcelikbicak/task-decomposer",
+  "readme": "<div align=\"center\">\n  <img src=\"assets/task-decomposer.png\" alt=\"Logo\" width=\"256\" height=\"256\">\n\n# Task Decomposer\n\n [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)\n [![GitHub Stars](https://img.shields.io/github/stars/sametcelikbicak/task-decomposer?style=social)](https://github.com/sametcelikbicak/task-decomposer)\n\n   </div>\n\nAn AI agent skill that helps developers decompose complex requests into structured, AI-friendly task sequences. Optimizes context window usage, manages multi-session workflows, and produces better results from fewer, more focused prompts. Compatible with opencode, Claude Code, Cursor, Windsurf, and GitHub Copilot.\n\n## What it does\n\n- **Goal Articulation** — clarifies vague requests into precise objectives\n- **Dependency Mapping** — identifies the natural order of work across phases\n- **Atomic Prompt Slicing** — breaks large work into standalone, verifiable prompt cards\n- **Context Budget Planning** — manages context window limits with session handoffs\n- **Execution Plans** — produces ordered, dependency-aware action plans the user can follow\n\n## Install\n\n```bash\n# rolecraft — install from GitHub (recommended)\nnpx rolecraft install sametcelikbicak/task-decomposer\n\n# or via agentskill.sh\n/learn @sametcelikbicak/task-decomposer\n\n# or copy manually\ncp -r task-decomposer .opencode/skills/\n```\n\n## How it's different\n\nExisting task-decomposition skills focus on **agent-to-agent** decomposition (AI breaks down work for itself or other agents). This one focuses on **human-to-AI** interaction — teaching the _developer_ how to structure their prompts and workflow for better AI collaboration.\n\n## Usage scenarios\n\n- [🇹🇷 Türkçe — Kullanım Senaryosu](USAGE_SCENARIO_TR.md)\n- [🇬🇧 English — Usage Scenario](USAGE_SCENARIO_EN.md)\n\n## License\n\nMIT\n",
+  "readmeHtml": "<p>&lt;div align=\"center\"&gt;</p>\n<p>  &lt;img src=\"assets/task-decomposer.png\" alt=\"Logo\" width=\"256\" height=\"256\"&gt;</p>\n<h1>Task Decomposer</h1>\n<p> <a href=\"https://awesome.re/badge.svg\" target=\"_blank\" rel=\"noreferrer\">![Awesome</a>](https://awesome.re)</p>\n<p> <a href=\"https://img.shields.io/github/stars/sametcelikbicak/task-decomposer?style=social\" target=\"_blank\" rel=\"noreferrer\">![GitHub Stars</a>](https://github.com/sametcelikbicak/task-decomposer)</p>\n<p>   &lt;/div&gt;</p>\n<p>An AI agent skill that helps developers decompose complex requests into structured, AI-friendly task sequences. Optimizes context window usage, manages multi-session workflows, and produces better results from fewer, more focused prompts. Compatible with opencode, Claude Code, Cursor, Windsurf, and GitHub Copilot.</p>\n<h2>What it does</h2>\n<ul>\n<li><strong>Goal Articulation</strong> — clarifies vague requests into precise objectives</li>\n<li><strong>Dependency Mapping</strong> — identifies the natural order of work across phases</li>\n<li><strong>Atomic Prompt Slicing</strong> — breaks large work into standalone, verifiable prompt cards</li>\n<li><strong>Context Budget Planning</strong> — manages context window limits with session handoffs</li>\n<li><strong>Execution Plans</strong> — produces ordered, dependency-aware action plans the user can follow</li>\n</ul>\n<h2>Install</h2>\n<pre><code>\n# rolecraft — install from GitHub (recommended)\n\nnpx rolecraft install sametcelikbicak/task-decomposer\n\n\n\n# or via agentskill.sh\n\n/learn @sametcelikbicak/task-decomposer\n\n\n\n# or copy manually\n\ncp -r task-decomposer .opencode/skills/\n\n</code></pre>\n<h2>How it's different</h2>\n<p>Existing task-decomposition skills focus on <strong>agent-to-agent</strong> decomposition (AI breaks down work for itself or other agents). This one focuses on <strong>human-to-AI</strong> interaction — teaching the _developer_ how to structure their prompts and workflow for better AI collaboration.</p>\n<h2>Usage scenarios</h2>\n<ul>\n<li>[🇹🇷 Türkçe — Kullanım Senaryosu](USAGE_SCENARIO_TR.md)</li>\n<li>[🇬🇧 English — Usage Scenario](USAGE_SCENARIO_EN.md)</li>\n</ul>\n<h2>License</h2>\n<p>MIT</p>",
+  "skillMd": "---\nname: Task Decomposer\nslug: task-decomposer\ndescription: \"Use when the user has a large, complex, or ambiguous request that needs to be broken down into smaller, actionable steps for AI assistance. Helps users structure prompts, manage context window limits, plan multi-session work, and get better results from AI coding agents. Also for 'too complex', 'where do I start', 'break this down', 'step by step', 'context too large', 'multi-step task', 'prompt structure', 'AI workflow', 'organize my request'.\"\nlicense: MIT\ncompatibility: opencode, claude-code, cursor, windsurf, copilot\nmetadata:\n  category: development\n  audience: developers\n---\n\n# Task Decomposer\n\nHelp users decompose complex requests into structured, AI-friendly task sequences. Optimizes for context window efficiency, clear dependency ordering, and measurable progress — so the user gets better results from fewer, more focused interactions.\n\n## Philosophy\n\nMost AI frustration comes from one root cause: **asking for too much at once**. A single vague prompt produces a shallow result. Task decomposition reverses this — it teaches users (and guides the assistant) to think in atomic, dependency-ordered units.\n\nThe model: **Plan → Slice → Prompt → Verify → Next**\n\n---\n\n## User-Facing Framework\n\nWhen a user says something large or vague, walk them through this decomposition framework:\n\n### Step 1: Goal Articulation\n\nAsk the user clarifying questions to define the **true objective**:\n\n- \"What is the single outcome you want when this is done?\"\n- \"What constraints matter? (deadlines, tech stack, standards)\"\n- \"What does success look like? How will you verify it?\"\n- \"What are you *not* trying to do? (anti-goals)\"\n\n**Output:** A one-paragraph goal statement. If it takes more than 3 sentences, keep refining.\n\n### Step 2: Dependency Map\n\nHelp the user identify the natural order of work:\n\n```\nLevel 1 — Foundation   (setup, config, data model)\nLevel 2 — Core Logic   (business logic, API, main feature)\nLevel 3 — Polish       (UI, error handling, edge cases)\nLevel 4 — Verify       (tests, review, deploy)\n```\n\nAsk: \"Which of these must exist before the next can start?\"\n\n**Output:** A numbered list of 3-7 phases with dependencies marked.\n\n### Step 3: Slice into Atomic Prompts\n\nEach prompt the user will give to the AI should be:\n\n| Property | Description |\n|---|---|\n| **Atomic** | One logical change — one file, one concern |\n| **Standalone** | Has enough context to execute without history |\n| **Verifiable** | Clear accept/reject criteria |\n| **Window-fit** | Fits comfortably in context window (under ~40K tokens of instruction) |\n\nTemplate for each slice:\n\n```\n## Task: [short name]\n## Context\n[2-3 sentences: what exists, what doesn't, relevant files]\n## Requirements\n- [bullet list of what the AI should do]\n- [specific files to create/modify]\n## Acceptance Criteria\n- [how to verify this is done correctly]\n## Constraints\n- [patterns to follow, things to avoid]\n```\n\n**Output:** 3-7 prompt cards the user can paste one at a time.\n\n### Step 4: Context Budget Plan\n\nWarn the user about context window limits and plan accordingly:\n\n- **Session 1** (Foundation + Core): ~3 prompts, start fresh\n- **Session 2** (Polish + Verify): ~3 prompts, start fresh\n- **Cross-session handoff**: End each session with a `CONTEXT.md` summary\n\nGenerate a `CONTEXT.md` at each milestone:\n\n```markdown\n# Context Handoff — [Milestone Name]\n\n## Completed\n- [x] Done item 1 — /path/to/file\n- [x] Done item 2 — /path/to/file\n\n## Decisions\n- Chose X over Y because Z\n- API returns shape: { ... }\n\n## Next session\n- Remaining tasks with dependencies\n- Files the next agent needs to read first\n\n## State\n- Branch: feature/xyz\n- Migrations applied: 3\n- Environment variables added: DATABASE_URL, API_KEY\n```\n\n### Step 5: Execution Order\n\nPresent the final plan to the user:\n\n```markdown\n## Execution Plan\n\nPhase 1 — Foundation (Session 1)\n  Prompt 1: Set up project scaffolding and config\n  Prompt 2: Create database schema and models\n  Prompt 3: Implement auth middleware\n  └─ Verify: run `npm run dev`, confirm login page loads\n\nPhase 2 — Core Logic (Session 1 cont.)\n  Prompt 4: Build user CRUD API\n  Prompt 5: Implement business logic service\n  └─ Verify: run tests, confirm API responds\n\nPhase 3 — Polish (Session 2)\n  Prompt 6: Add error handling and validation\n  Prompt 7: Style UI components\n  └─ Verify: manual QA flow\n\nPhase 4 — Verify (Session 2 cont.)\n  Prompt 8: Write missing tests\n  └─ Verify: coverage >= 80%, all tests pass\n```\n\n---\n\n## Assistant Behavior\n\n### When the user asks something large\n\n1. **Do NOT** start implementing immediately\n2. Instead, respond with the Goal Articulation questions (Step 1)\n3. Once the goal is clear, present a Dependency Map for confirmation\n4. After user approves, generate the Execution Plan with prompt cards\n5. Offer to execute Prompt 1 immediately, or let the user drive\n\n### When context is getting full\n\nMonitor the conversation size. If approaching context limits:\n\n1. Summarize decisions and state into a `CONTEXT.md`\n2. Advise the user to start a new session\n3. Tell them to include the `CONTEXT.md` in the new session's first prompt\n\n### When the user is unsure how to prompt\n\nOffer templates:\n\n```\n\"I need you to [action] on [file/area]. \nSpecifically:\n- [requirement 1]\n- [requirement 2]\nDon't: [what to avoid]\nVerify by: [criteria]\"\n```\n\n---\n\n## Anti-Patterns to Avoid\n\n| Anti-pattern | Why it fails | Instead |\n|---|---|---|\n| \"Build the whole app\" | Context overflow, shallow everywhere | Decompose into 5-10 atomic prompts |\n| Mid-session context switch | Previous context wastes tokens | Finish prompt → CONTEXT.md → new session |\n| No acceptance criteria | AI stops early or over-engineers | Write 1-3 specific checks per prompt |\n| Implicit dependencies | AI makes wrong assumptions | State \"X must exist before Y\" explicitly |\n| Vague success criteria | Can't tell when done | \"API returns 200 with { id } on POST /users\" |\n\n---\n\n## Examples\n\n### Example 1: Full-stack feature plan\n\nUser: \"I need to add a payment page\"\n\nAgent response uses the framework:\n\n1. **Goal clarification**: \"What payment provider? Single product or variable amounts? Save payment methods? Any compliance requirements?\"\n2. **Dependency Map**: `Stripe setup → Checkout API → Payment form UI → Success/failure pages → Tests`\n3. **Prompt cards**:\n   - Prompt 1: \"Set up Stripe SDK, create `/api/create-payment-intent` endpoint\"\n   - Prompt 2: \"Build React checkout form with Stripe Elements\"\n   - Prompt 3: \"Add payment success/failure pages with error handling\"\n   - Prompt 4: \"Write tests for payment flow edge cases\"\n4. **Context budget**: Session 1 (Prompt 1-2), Session 2 (Prompt 3-4)\n\n### Example 2: Context recovery\n\nUser starts a new session: \"I was working on the payment page last time\"\n\nAgent: \"Let me check for a CONTEXT.md file in the project root...\"\n\nIf found: Read it and continue from where it left off.\nIf not found: Ask \"What was the last thing that was working? Do you remember the key decisions?\"\n\n### Example 3: Rescuing a stuck user\n\nUser: \"My prompt is getting ignored, the AI keeps going off track\"\n\nAgent: \"Your prompt may be too broad. Let me help restructure it. What are you trying to accomplish?\"\n\nWalk through Steps 1-3 and produce a focused single-prompt card.\n\n---\n\n## Reference: When to use which approach\n\n| User says | Approach |\n|---|---|\n| \"Add a login page\" | Small → just do it (no decomposition needed) |\n| \"Build an e-commerce site\" | Large → use full framework |\n| \"It keeps forgetting what we did\" | Context full → generate CONTEXT.md handoff |\n| \"I don't know where to start\" | Ambiguous → Goal Articulation first |\n| \"I have this PR, write tests\" | Specific → just do it, no decomposition |\n| \"My prompt is too long and AI ignores parts\" | Bloated → slice into atomic prompts |\n",
+  "updatedAt": "2026-09-11T15:58:03Z",
+  "author": {
+    "login": "sametcelikbicak",
+    "name": "Samet ÇELİKBIÇAK",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/5312741?v=4",
+    "profileUrl": "https://github.com/sametcelikbicak",
+    "location": "Izmir, Turkey"
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "sametcelikbicak-rolecraft",
+      "displayName": "sametcelikbicak/rolecraft",
+      "stars": 92,
+      "relation": "source_overlap",
+      "evidence": "author:sametcelikbicak"
+    },
+    {
+      "slug": "sametcelikbicak-coverage-guard",
+      "displayName": "sametcelikbicak/coverage-guard",
+      "stars": 3,
+      "relation": "source_overlap",
+      "evidence": "author:sametcelikbicak"
+    },
+    {
+      "slug": "sametcelikbicak-flaky-test-detector",
+      "displayName": "sametcelikbicak/flaky-test-detector",
+      "stars": 3,
+      "relation": "source_overlap",
+      "evidence": "author:sametcelikbicak"
+    },
+    {
+      "slug": "kkkkhazix-aihot",
+      "displayName": "kkkkhazix/aihot",
+      "stars": 21431,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "sawyerhood-dev-browser",
+      "displayName": "sawyerhood/dev-browser",
+      "stars": 6666,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "roundtable02-tutor-skills",
+      "displayName": "roundtable02/tutor-skills",
+      "stars": 1350,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "chubbyguan-chubbyskills",
+      "displayName": "chubbyguan/chubbyskills",
+      "stars": 1249,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "moizibnyousaf-ai-agent-skills",
+      "displayName": "moizibnyousaf/ai-agent-skills",
+      "stars": 1151,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-sydney",
+    "label": "Global Skill Market / Sydney / Skills by Binance",
+    "lat": -33.8688,
+    "lon": 151.2093,
+    "source": "virtual_market"
+  }
+}

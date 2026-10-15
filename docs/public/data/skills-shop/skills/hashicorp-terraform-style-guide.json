@@ -12,7 +12,7 @@
   "readme": "# hashicorp/terraform-style-guide\n\nGenerate Terraform HCL code following HashiCorp's official style conventions",
   "readmeHtml": "<h1>hashicorp/terraform-style-guide</h1>\n<p>Generate Terraform HCL code following HashiCorp's official style conventions</p>",
   "skillMd": "",
-  "updatedAt": "2026-10-14T22:08:28.308Z",
+  "updatedAt": "2026-10-15T21:59:20.740Z",
   "author": {
     "login": "hashicorp",
     "name": "HashiCorp",
@@ -22,22 +22,22 @@
   },
   "location": {
     "id": "san-francisco",
-    "label": "San Francisco, London, Austin, Lisbon, Singapore",
+    "label": "San Francisco, CA",
     "lat": 37.7749,
     "lon": -122.4194,
     "source": "github_profile"
   },
   "related": [
     {
-      "slug": "hashicorp-azure-verified-modules",
-      "displayName": "hashicorp/azure-verified-modules",
+      "slug": "hashicorp-new-terraform-provider",
+      "displayName": "hashicorp/new-terraform-provider",
       "stars": 0,
       "relation": "source_overlap",
       "evidence": "author:hashicorp"
     },
     {
-      "slug": "hashicorp-new-terraform-provider",
-      "displayName": "hashicorp/new-terraform-provider",
+      "slug": "hashicorp-azure-verified-modules",
+      "displayName": "hashicorp/azure-verified-modules",
       "stars": 0,
       "relation": "source_overlap",
       "evidence": "author:hashicorp"
@@ -87,7 +87,7 @@
   ],
   "mapLocation": {
     "id": "san-francisco",
-    "label": "San Francisco, London, Austin, Lisbon, Singapore",
+    "label": "San Francisco, CA",
     "lat": 37.7749,
     "lon": -122.4194,
     "source": "github_profile"

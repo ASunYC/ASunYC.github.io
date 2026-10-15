@@ -1,0 +1,89 @@
+{
+  "id": "skill:cuongducle-community-demand-prospecting-skill",
+  "slug": "cuongducle-community-demand-prospecting-skill",
+  "name": "community-demand-prospecting-skill",
+  "displayName": "cuongducle/community-demand-prospecting-skill",
+  "description": "Repo audit, market research, positioning, and community outreach planning",
+  "stars": 1,
+  "category": "Skills by Binance",
+  "source": "heilcheng",
+  "url": "https://github.com/cuongducle/community-demand-prospecting-skill",
+  "githubRepo": "cuongducle/community-demand-prospecting-skill",
+  "readme": "# Community Demand Prospecting Skill\n\n`community-demand-prospecting` is a reusable skill for market research, competitor research, product positioning, launch strategy, and community demand analysis.\n\nIt helps developers turn a rough product, GitHub repository, or README into a clearer go-to-market plan. The workflow covers repo audit, demand research, positioning, customer language, and safe community outreach for channels such as Reddit and X.\n\nThis repository is useful when people search for things like \"market research for GitHub project\", \"competitor research skill\", \"product positioning workflow\", \"launch strategy for developer tools\", or \"how to find demand for my software product\".\n\n## Install\n\nClawHub:\n\n```bash\nnpx clawhub install cuongducle/community-demand-prospecting\n```\n\nGitHub:\n\n```bash\nnpx skills add https://github.com/cuongducle/community-demand-prospecting-skill\n```\n\nManual:\n\n- copy `community-demand-prospecting/` into your local skills directory\n- start with [community-demand-prospecting/SKILL.md](./community-demand-prospecting/SKILL.md)\n\n## What It Covers\n\n- audit a repository, landing page, or README before promotion\n- run market research on users, competitors, substitutes, and category shape\n- choose a sharper product positioning angle\n- turn a GitHub repo into a launch strategy, messaging brief, or product brief\n- help find early users or customers for a developer tool or software product\n- generate buyer-intent search queries and research directions\n- score community threads by intent, fit, and spam risk\n- draft helpful-first Reddit outreach and X outreach with anti-spam guardrails\n\n## Common Use Cases\n\n- validate demand before launching a new developer tool\n- understand competitors before writing a landing page\n- improve product positioning for an open-source repo\n- turn a side project into a clearer marketable product\n- research communities where target users already discuss the problem\n\n## Best For\n\n- developers shipping an early product without a polished marketing brief\n- founders who want to understand market demand before posting everywhere\n- teams that want structured outreach without turning into a spam bot\n- open-source maintainers who want better positioning and distribution\n\n## Search Terms\n\nPeople usually find this skill through phrases such as:\n\n- market research for software products\n- market research for GitHub repos\n- repo audit\n- market research\n- competitor research\n- product positioning\n- launch strategy\n- find users for my product\n- Reddit outreach\n- X outreach\n- GitHub project marketing\n- community demand prospecting\n- product demand research\n- go to market for developer tools\n\n## Repository Layout\n\n- `community-demand-prospecting/`: the actual skill bundle\n- `community-demand-prospecting/SKILL.md`: main workflow\n- `community-demand-prospecting/references/`: focused references loaded as needed\n- `community-demand-prospecting/assets/`: reusable templates\n\n## Why This Repo Exists\n\nMany developer tools and side projects fail distribution long before they fail technically. This skill exists to make market research, competitor research, product positioning, and early community discovery more systematic for repo-first products.\n\n## Links\n\n- ClawHub: [cuongducle/community-demand-prospecting](https://clawhub.ai/cuongducle/community-demand-prospecting)\n- GitHub release: [v0.1.0](https://github.com/cuongducle/community-demand-prospecting-skill/releases/tag/v0.1.0)\n",
+  "readmeHtml": "<h1>Community Demand Prospecting Skill</h1>\n<p><code>community-demand-prospecting</code> is a reusable skill for market research, competitor research, product positioning, launch strategy, and community demand analysis.</p>\n<p>It helps developers turn a rough product, GitHub repository, or README into a clearer go-to-market plan. The workflow covers repo audit, demand research, positioning, customer language, and safe community outreach for channels such as Reddit and X.</p>\n<p>This repository is useful when people search for things like \"market research for GitHub project\", \"competitor research skill\", \"product positioning workflow\", \"launch strategy for developer tools\", or \"how to find demand for my software product\".</p>\n<h2>Install</h2>\n<p>ClawHub:</p>\n<pre><code>\nnpx clawhub install cuongducle/community-demand-prospecting\n\n</code></pre>\n<p>GitHub:</p>\n<pre><code>\nnpx skills add https://github.com/cuongducle/community-demand-prospecting-skill\n\n</code></pre>\n<p>Manual:</p>\n<ul>\n<li>copy <code>community-demand-prospecting/</code> into your local skills directory</li>\n<li>start with [community-demand-prospecting/SKILL.md](./community-demand-prospecting/SKILL.md)</li>\n</ul>\n<h2>What It Covers</h2>\n<ul>\n<li>audit a repository, landing page, or README before promotion</li>\n<li>run market research on users, competitors, substitutes, and category shape</li>\n<li>choose a sharper product positioning angle</li>\n<li>turn a GitHub repo into a launch strategy, messaging brief, or product brief</li>\n<li>help find early users or customers for a developer tool or software product</li>\n<li>generate buyer-intent search queries and research directions</li>\n<li>score community threads by intent, fit, and spam risk</li>\n<li>draft helpful-first Reddit outreach and X outreach with anti-spam guardrails</li>\n</ul>\n<h2>Common Use Cases</h2>\n<ul>\n<li>validate demand before launching a new developer tool</li>\n<li>understand competitors before writing a landing page</li>\n<li>improve product positioning for an open-source repo</li>\n<li>turn a side project into a clearer marketable product</li>\n<li>research communities where target users already discuss the problem</li>\n</ul>\n<h2>Best For</h2>\n<ul>\n<li>developers shipping an early product without a polished marketing brief</li>\n<li>founders who want to understand market demand before posting everywhere</li>\n<li>teams that want structured outreach without turning into a spam bot</li>\n<li>open-source maintainers who want better positioning and distribution</li>\n</ul>\n<h2>Search Terms</h2>\n<p>People usually find this skill through phrases such as:</p>\n<ul>\n<li>market research for software products</li>\n<li>market research for GitHub repos</li>\n<li>repo audit</li>\n<li>market research</li>\n<li>competitor research</li>\n<li>product positioning</li>\n<li>launch strategy</li>\n<li>find users for my product</li>\n<li>Reddit outreach</li>\n<li>X outreach</li>\n<li>GitHub project marketing</li>\n<li>community demand prospecting</li>\n<li>product demand research</li>\n<li>go to market for developer tools</li>\n</ul>\n<h2>Repository Layout</h2>\n<ul>\n<li><code>community-demand-prospecting/</code>: the actual skill bundle</li>\n<li><code>community-demand-prospecting/SKILL.md</code>: main workflow</li>\n<li><code>community-demand-prospecting/references/</code>: focused references loaded as needed</li>\n<li><code>community-demand-prospecting/assets/</code>: reusable templates</li>\n</ul>\n<h2>Why This Repo Exists</h2>\n<p>Many developer tools and side projects fail distribution long before they fail technically. This skill exists to make market research, competitor research, product positioning, and early community discovery more systematic for repo-first products.</p>\n<h2>Links</h2>\n<ul>\n<li>ClawHub: <a href=\"https://clawhub.ai/cuongducle/community-demand-prospecting\" target=\"_blank\" rel=\"noreferrer\">cuongducle/community-demand-prospecting</a></li>\n<li>GitHub release: <a href=\"https://github.com/cuongducle/community-demand-prospecting-skill/releases/tag/v0.1.0\" target=\"_blank\" rel=\"noreferrer\">v0.1.0</a></li>\n</ul>",
+  "skillMd": "",
+  "updatedAt": "2026-03-08T13:08:36Z",
+  "author": {
+    "login": "cuongducle",
+    "name": "Lê Đức Cường",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/35300247?v=4",
+    "profileUrl": "https://github.com/cuongducle",
+    "location": "Hanoi"
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "kkkkhazix-aihot",
+      "displayName": "kkkkhazix/aihot",
+      "stars": 21431,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "sawyerhood-dev-browser",
+      "displayName": "sawyerhood/dev-browser",
+      "stars": 6666,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "roundtable02-tutor-skills",
+      "displayName": "roundtable02/tutor-skills",
+      "stars": 1350,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "chubbyguan-chubbyskills",
+      "displayName": "chubbyguan/chubbyskills",
+      "stars": 1249,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "moizibnyousaf-ai-agent-skills",
+      "displayName": "moizibnyousaf/ai-agent-skills",
+      "stars": 1151,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "vostride-agent-qa",
+      "displayName": "vostride/agent-qa",
+      "stars": 906,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "swarmclawai-swarmvault",
+      "displayName": "swarmclawai/swarmvault",
+      "stars": 718,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "swarmclawai-swarmclaw",
+      "displayName": "swarmclawai/swarmclaw",
+      "stars": 689,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-berlin",
+    "label": "Global Skill Market / Berlin / Skills by Binance",
+    "lat": 52.52,
+    "lon": 13.405,
+    "source": "virtual_market"
+  }
+}

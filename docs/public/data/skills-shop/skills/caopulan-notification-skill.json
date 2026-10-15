@@ -1,0 +1,95 @@
+{
+  "id": "skill:caopulan-notification-skill",
+  "slug": "caopulan-notification-skill",
+  "name": "notification-skill",
+  "displayName": "caopulan/notification-skill",
+  "description": "Send message notifications for agent workflows",
+  "stars": 16,
+  "category": "Skills by Binance",
+  "source": "heilcheng",
+  "url": "https://github.com/caopulan/Notification-Skill",
+  "githubRepo": "caopulan/Notification-Skill",
+  "readme": "# :bell: Notification Skill\n\n[中文](README_ZH.md)\n\nSend push notifications when an Agent task finishes or when you need to notify users (currently supports Bark and email).\n\n## :sparkles: Features\n- :zap: **Quick setup:** Only three steps to get started: install a skill, set environment variables, and update AGENTS.md so the Agent can notify\n- :desktop_computer: **Multi-device naming:** Set `CODEX_MACHINE_NAME` to distinguish devices\n- 📣 **Multi-device notification** Bark (iphone), Email (any devices)\n\n## :book: Usage\n\n### 1. :package: Install Notification-Skill\n\nChoose the notification tool you need to install:\n```bash\n$skill-installer https://github.com/caopulan/Notification-Skill/tree/main/bark-notify\n$skill-installer https://github.com/caopulan/Notification-Skill/tree/main/email-notify\n```\n\n### 2. :gear: Configure\n\n#### 1) :key: Get required keys or parameters\n1. [Bark](https://github.com/finb/bark)\n2. [Email](https://support.google.com/a/answer/176600?hl=en) (Gmail as example)\n\n#### 2) :wrench: Set environment variables on the machine\n\nSet environment variables (for example in `~/.zshrc` or `~/.bashrc`):\n\n```bash\nexport CODEX_MACHINE_NAME=\"Your-Machine-Name\"\n\n# Bark\nexport CODEX_BARK_KEY=\"your-bark-key\"\nexport CODEX_BARK_BASE_URL=\"https://api.day.app\"\n\n# Email\nexport CODEX_EMAIL_SMTP_HOST=\"smtp.example.com\"\nexport CODEX_EMAIL_SMTP_PORT=\"587\"\nexport CODEX_EMAIL_USERNAME=\"user@example.com\"\nexport CODEX_EMAIL_PASSWORD=\"...\"\nexport CODEX_EMAIL_FROM=\"user@example.com\"\nexport CODEX_EMAIL_TO=\"recipient1@example.com,recipient2@example.com\"\nexport CODEX_EMAIL_USE_TLS=\"false\" # true/false, default false\nexport CODEX_EMAIL_USE_SSL=\"true\" # true/false, default true\n```\n\n#### 3) :label: (Optional) Set project name\n\n- Add a project name in `AGENTS.md`\n- Otherwise, the directory name is used as the project name\n\n### 3. :rocket: Use\n\n#### 1) :memo: Add instructions in `AGENTS.md`\nYou can configure the global AGENTS.md to notify for all tasks on this machine. For example in `~/.codex/AGENTS.md`:\n\n```\n- After each task, notify the user via the bark-notify/email-notify skill\n```\n\n#### 2) :computer: Explicit invocation\n1. Bark\n\n```bash\npython bark-notify/scripts/send_bark_notification.py \\\n  --task-title \"Task summary\" \\\n  --status \"success\" \\\n  --summary \"What was done\" \\\n  --project-name \"...\"\n```\n2. Email\n\n```bash\npython email-notify/scripts/send_email_notification.py \\\n  --task-title \"...\" \\\n  --status \"success\" \\\n  --summary \"...\" \\\n  --project-name \"...\"\n```\n",
+  "readmeHtml": "<h1>:bell: Notification Skill</h1>\n<p>[中文](README_ZH.md)</p>\n<p>Send push notifications when an Agent task finishes or when you need to notify users (currently supports Bark and email).</p>\n<h2>:sparkles: Features</h2>\n<ul>\n<li>:zap: <strong>Quick setup:</strong> Only three steps to get started: install a skill, set environment variables, and update AGENTS.md so the Agent can notify</li>\n<li>:desktop_computer: <strong>Multi-device naming:</strong> Set <code>CODEX_MACHINE_NAME</code> to distinguish devices</li>\n<li>📣 <strong>Multi-device notification</strong> Bark (iphone), Email (any devices)</li>\n</ul>\n<h2>:book: Usage</h2>\n<h3>1. :package: Install Notification-Skill</h3>\n<p>Choose the notification tool you need to install:</p>\n<pre><code>\n$skill-installer https://github.com/caopulan/Notification-Skill/tree/main/bark-notify\n\n$skill-installer https://github.com/caopulan/Notification-Skill/tree/main/email-notify\n\n</code></pre>\n<h3>2. :gear: Configure</h3>\n<h4>1) :key: Get required keys or parameters</h4>\n<p>1. <a href=\"https://github.com/finb/bark\" target=\"_blank\" rel=\"noreferrer\">Bark</a></p>\n<p>2. <a href=\"https://support.google.com/a/answer/176600?hl=en\" target=\"_blank\" rel=\"noreferrer\">Email</a> (Gmail as example)</p>\n<h4>2) :wrench: Set environment variables on the machine</h4>\n<p>Set environment variables (for example in <code>~/.zshrc</code> or <code>~/.bashrc</code>):</p>\n<pre><code>\nexport CODEX_MACHINE_NAME=\"Your-Machine-Name\"\n\n\n\n# Bark\n\nexport CODEX_BARK_KEY=\"your-bark-key\"\n\nexport CODEX_BARK_BASE_URL=\"https://api.day.app\"\n\n\n\n# Email\n\nexport CODEX_EMAIL_SMTP_HOST=\"smtp.example.com\"\n\nexport CODEX_EMAIL_SMTP_PORT=\"587\"\n\nexport CODEX_EMAIL_USERNAME=\"user@example.com\"\n\nexport CODEX_EMAIL_PASSWORD=\"...\"\n\nexport CODEX_EMAIL_FROM=\"user@example.com\"\n\nexport CODEX_EMAIL_TO=\"recipient1@example.com,recipient2@example.com\"\n\nexport CODEX_EMAIL_USE_TLS=\"false\" # true/false, default false\n\nexport CODEX_EMAIL_USE_SSL=\"true\" # true/false, default true\n\n</code></pre>\n<h4>3) :label: (Optional) Set project name</h4>\n<ul>\n<li>Add a project name in <code>AGENTS.md</code></li>\n<li>Otherwise, the directory name is used as the project name</li>\n</ul>\n<h3>3. :rocket: Use</h3>\n<h4>1) :memo: Add instructions in <code>AGENTS.md</code></h4>\n<p>You can configure the global AGENTS.md to notify for all tasks on this machine. For example in <code>~/.codex/AGENTS.md</code>:</p>\n<pre><code>\n- After each task, notify the user via the bark-notify/email-notify skill\n\n</code></pre>\n<h4>2) :computer: Explicit invocation</h4>\n<p>1. Bark</p>\n<pre><code>\npython bark-notify/scripts/send_bark_notification.py \\\n\n  --task-title \"Task summary\" \\\n\n  --status \"success\" \\\n\n  --summary \"What was done\" \\\n\n  --project-name \"...\"\n\n</code></pre>\n<p>2. Email</p>\n<pre><code>\npython email-notify/scripts/send_email_notification.py \\\n\n  --task-title \"...\" \\\n\n  --status \"success\" \\\n\n  --summary \"...\" \\\n\n  --project-name \"...\"\n\n</code></pre>",
+  "skillMd": "",
+  "updatedAt": "2026-01-07T05:25:21Z",
+  "author": {
+    "login": "caopulan",
+    "name": "Pu Cao",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/48318302?v=4",
+    "profileUrl": "https://github.com/caopulan",
+    "location": "Beijing, China"
+  },
+  "location": {
+    "id": "beijing",
+    "label": "Beijing,China",
+    "lat": 39.9042,
+    "lon": 116.4074,
+    "source": "github_profile"
+  },
+  "related": [
+    {
+      "slug": "kkkkhazix-aihot",
+      "displayName": "kkkkhazix/aihot",
+      "stars": 21431,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "sawyerhood-dev-browser",
+      "displayName": "sawyerhood/dev-browser",
+      "stars": 6666,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "roundtable02-tutor-skills",
+      "displayName": "roundtable02/tutor-skills",
+      "stars": 1350,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "chubbyguan-chubbyskills",
+      "displayName": "chubbyguan/chubbyskills",
+      "stars": 1249,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "moizibnyousaf-ai-agent-skills",
+      "displayName": "moizibnyousaf/ai-agent-skills",
+      "stars": 1151,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "vostride-agent-qa",
+      "displayName": "vostride/agent-qa",
+      "stars": 906,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "swarmclawai-swarmvault",
+      "displayName": "swarmclawai/swarmvault",
+      "stars": 718,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "swarmclawai-swarmclaw",
+      "displayName": "swarmclawai/swarmclaw",
+      "stars": 689,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    }
+  ],
+  "mapLocation": {
+    "id": "beijing",
+    "label": "Beijing,China",
+    "lat": 39.9042,
+    "lon": 116.4074,
+    "source": "github_profile"
+  }
+}

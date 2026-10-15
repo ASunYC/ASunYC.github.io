@@ -12,7 +12,7 @@
   "readme": "# garrytan/office-hours\n\nYC Office Hours: six forcing questions that reframe your product before you write code",
   "readmeHtml": "<h1>garrytan/office-hours</h1>\n<p>YC Office Hours: six forcing questions that reframe your product before you write code</p>",
   "skillMd": "",
-  "updatedAt": "2026-10-14T22:08:28.459Z",
+  "updatedAt": "2026-10-15T21:59:20.793Z",
   "author": {
     "login": "garrytan",
     "name": "Garry Tan",
@@ -22,19 +22,12 @@
   },
   "location": {
     "id": "san-francisco",
-    "label": "San Francisco, London, Austin, Lisbon, Singapore",
+    "label": "San Francisco, CA",
     "lat": 37.7749,
     "lon": -122.4194,
     "source": "github_profile"
   },
   "related": [
-    {
-      "slug": "garrytan-gstack",
-      "displayName": "garrytan/gstack",
-      "stars": 136421,
-      "relation": "source_overlap",
-      "evidence": "author:garrytan"
-    },
     {
       "slug": "garrytan-plan-ceo-review",
       "displayName": "garrytan/plan-ceo-review",
@@ -83,11 +76,18 @@
       "stars": 0,
       "relation": "source_overlap",
       "evidence": "author:garrytan"
+    },
+    {
+      "slug": "garrytan-qa",
+      "displayName": "garrytan/qa",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:garrytan"
     }
   ],
   "mapLocation": {
     "id": "san-francisco",
-    "label": "San Francisco, London, Austin, Lisbon, Singapore",
+    "label": "San Francisco, CA",
     "lat": 37.7749,
     "lon": -122.4194,
     "source": "github_profile"

@@ -1,0 +1,95 @@
+{
+  "id": "skill:makenotion-skills",
+  "slug": "makenotion-skills",
+  "name": "skills",
+  "displayName": "makenotion/skills",
+  "description": "Notion API integration, database operations, and content management",
+  "stars": 174,
+  "category": "Skills by Binance",
+  "source": "heilcheng",
+  "url": "https://github.com/makenotion/skills",
+  "githubRepo": "makenotion/skills",
+  "readme": "# Notion Skills\n\nAgent skills for working with [Notion](https://notion.so).\n\n## Install\n\nWe recommend the [skills CLI](https://github.com/vercel-labs/skills).\n\n```bash\n# Install all skills\nnpx skills add makenotion/skills\n\n# Install a specific skill\nnpx skills add makenotion/skills --skill notion-cli\n```\n\n## Available Skills\n\n| Skill | Description |\n| ----- | ----------- |\n| `notion-cli` | Install and use the Notion CLI (`ntn`) for workers, public API requests, and file uploads. |\n| `notion-apps` | Scaffold and build Notion Apps, including workflows and database syncs. |\n",
+  "readmeHtml": "<h1>Notion Skills</h1>\n<p>Agent skills for working with <a href=\"https://notion.so\" target=\"_blank\" rel=\"noreferrer\">Notion</a>.</p>\n<h2>Install</h2>\n<p>We recommend the <a href=\"https://github.com/vercel-labs/skills\" target=\"_blank\" rel=\"noreferrer\">skills CLI</a>.</p>\n<pre><code>\n# Install all skills\n\nnpx skills add makenotion/skills\n\n\n\n# Install a specific skill\n\nnpx skills add makenotion/skills --skill notion-cli\n\n</code></pre>\n<h2>Available Skills</h2>\n<p>| Skill | Description |</p>\n<p>| ----- | ----------- |</p>\n<p>| <code>notion-cli</code> | Install and use the Notion CLI (<code>ntn</code>) for workers, public API requests, and file uploads. |</p>\n<p>| <code>notion-apps</code> | Scaffold and build Notion Apps, including workflows and database syncs. |</p>",
+  "skillMd": "",
+  "updatedAt": "2026-09-22T22:14:26Z",
+  "author": {
+    "login": "makenotion",
+    "name": "Notion",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/4792552?v=4",
+    "profileUrl": "https://github.com/makenotion",
+    "location": "United States of America"
+  },
+  "location": {
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
+  },
+  "related": [
+    {
+      "slug": "makenotion-knowledge-capture",
+      "displayName": "makenotion/knowledge-capture",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:makenotion"
+    },
+    {
+      "slug": "makenotion-meeting-intelligence",
+      "displayName": "makenotion/meeting-intelligence",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:makenotion"
+    },
+    {
+      "slug": "makenotion-research-documentation",
+      "displayName": "makenotion/research-documentation",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:makenotion"
+    },
+    {
+      "slug": "makenotion-spec-to-implementation",
+      "displayName": "makenotion/spec-to-implementation",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:makenotion"
+    },
+    {
+      "slug": "kkkkhazix-aihot",
+      "displayName": "kkkkhazix/aihot",
+      "stars": 21431,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "sawyerhood-dev-browser",
+      "displayName": "sawyerhood/dev-browser",
+      "stars": 6666,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "roundtable02-tutor-skills",
+      "displayName": "roundtable02/tutor-skills",
+      "stars": 1350,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "chubbyguan-chubbyskills",
+      "displayName": "chubbyguan/chubbyskills",
+      "stars": 1249,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    }
+  ],
+  "mapLocation": {
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
+  }
+}

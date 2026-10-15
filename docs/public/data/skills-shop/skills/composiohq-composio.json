@@ -4,15 +4,15 @@
   "name": "composio",
   "displayName": "composiohq/composio",
   "description": "Connect AI agents to 1000+ external apps with managed authentication",
-  "stars": 0,
-  "category": "Official Skills by",
-  "source": "voltagent",
-  "url": "https://officialskills.sh/composiohq/skills/composio",
-  "githubRepo": "",
-  "readme": "# composiohq/composio\n\nConnect AI agents to 1000+ external apps with managed authentication",
-  "readmeHtml": "<h1>composiohq/composio</h1>\n<p>Connect AI agents to 1000+ external apps with managed authentication</p>",
-  "skillMd": "",
-  "updatedAt": "2026-10-14T22:08:28.204Z",
+  "stars": 180,
+  "category": "Skills by Composio",
+  "source": "heilcheng",
+  "url": "https://github.com/composio-community/skills/tree/main/skills/composio",
+  "githubRepo": "composio-community/skills",
+  "readme": "# @composiohq/skills\n\nDistributable agent skills for Composio developers. This repository contains comprehensive guides and best practices for building AI agents with Composio's Tool Router and Triggers.\n\n## Quick Start\n\nAdd Composio skills to your AI assistant:\n\n```bash\nnpx skills add composiohq/skills\n```\n\nThis command installs the Composio agent skills, giving your AI assistant access to:\n- **Tool Router best practices** - Session management, authentication, and framework integration\n- **Triggers & Events** - Real-time webhooks and event handling\n- **Production patterns** - Security, error handling, and deployment guides\n\nYour AI assistant can now reference these skills when helping you build with Composio!\n\n## Overview\n\nThis skills repository provides comprehensive guides and best practices for building AI agents with Composio, organized as markdown files that AI assistants can easily reference.\n\n## Structure\n\n```\nskills/\n└── composio/\n    ├── SKILL.md           # Main skill overview with rule references\n    ├── AGENTS.md          # Consolidated single-file version (auto-generated)\n    └── rules/             # Individual rule files\n        ├── tr-*.md        # Tool Router rules\n        └── triggers-*.md  # Trigger rules\n```\n\n## Available Skills\n\n### 1. Tool Router (Building Agents)\n- User ID best practices for security\n- Creating and managing sessions\n- Session lifecycle patterns\n- Native tools vs MCP integration\n- Framework integration (Vercel, OpenAI Agents, LangChain, Claude, CrewAI)\n\n### 2. Authentication\n- Auto authentication in chat\n- Manual authorization flows\n- Connection management\n\n### 3. Toolkits & Connection Status\n- Querying toolkit availability\n- Building connection UIs\n\n### 4. Advanced Features (Triggers & Events)\n- Creating triggers for real-time events\n- Subscribing to events (development only)\n- Webhook verification (production recommended)\n- Managing trigger lifecycle\n\n## Usage\n\n### For AI Assistants\n\nRead either:\n- **SKILL.md** - Main file with links to individual rules (faster to navigate)\n- **AGENTS.md** - Single consolidated file with all content (easier to consume)\n\n### For Developers\n\n#### Build AGENTS.md\n\nAutomatically generate the consolidated AGENTS.md file from all rule files:\n\n```bash\nnpm run build:agents\n```\n\nThis script:\n- Reads SKILL.md for structure\n- Extracts all rule references\n- Combines individual rule files\n- Generates table of contents\n- Outputs AGENTS.md with proper formatting\n\n#### Watch Mode\n\nAuto-rebuild AGENTS.md when any file changes:\n\n```bash\nnpm run watch:agents\n```\n\nThis watches:\n- `SKILL.md` for structure changes\n- `rules/*.md` for content changes\n- Auto-rebuilds on any modification\n\n## Contributing\n\n### Adding a New Rule\n\n1. Create a new markdown file in `skills/composio/rules/`\n2. Use the naming convention:\n   - `tr-*.md` for Tool Router rules\n   - `triggers-*.md` for Trigger rules\n3. Include frontmatter:\n\n```markdown\n---\ntitle: Your Rule Title\nimpact: CRITICAL|HIGH|MEDIUM|LOW\ndescription: Brief description of what this rule covers\ntags: [tool-router, triggers, etc]\n---\n\n# Your Rule Title\n\nContent with ❌ Incorrect and ✅ Correct examples...\n```\n\n4. Add reference to `SKILL.md` in the appropriate section\n5. Run `npm run build:agents` to regenerate AGENTS.md\n6. Commit all changes (rule file, SKILL.md, and AGENTS.md)\n\n### Rule Format\n\nEach rule should include:\n- **Frontmatter** with metadata\n- **❌ Incorrect examples** showing what not to do\n- **✅ Correct examples** showing best practices\n- **Explanations** of why each approach is better\n- **Code examples** in both TypeScript and Python (when applicable)\n- **References** to official documentation\n\n## Build Scripts\n\nThe repository includes two scripts in `scripts/`:\n\n### build-agents.cjs\n\nGenerates the consolidated AGENTS.md file:\n- Parses SKILL.md for structure\n- Reads all rule files\n- Combines content with proper formatting\n- Generates table of contents\n- Adds impact badges and descriptions\n\n### watch-agents.cjs\n\nWatches for file changes and auto-rebuilds:\n- Monitors SKILL.md and rules/ directory\n- Triggers rebuild on any .md file change\n- Shows real-time build status\n\n## File Statistics\n\nCurrent repository stats:\n- **14+ rules** covering Tool Router and Triggers\n- **150+ KB** of consolidated documentation\n- **Both TypeScript and Python** examples throughout\n- **Production-ready** patterns and best practices\n\n## Key Features\n\n### Tool Router Coverage\n- Session management and lifecycle\n- User isolation patterns\n- Native tools vs MCP comparison\n- Framework integration guides\n- Connection management\n- Authentication flows\n\n### Triggers Coverage\n- Creating trigger instances\n- Real-time event subscription\n- Webhook verification and security\n- Trigger lifecycle management\n- Production deployment patterns\n\n## License\n\nMIT\n\n## Links\n\n- [Composio Documentation](https://docs.composio.dev)\n- [Tool Router API](https://docs.composio.dev/sdk/typescript/api/tool-router)\n- [Triggers API](https://docs.composio.dev/sdk/typescript/api/triggers)\n- [GitHub Repository](https://github.com/composiohq/skills)\n",
+  "readmeHtml": "<h1>@composiohq/skills</h1>\n<p>Distributable agent skills for Composio developers. This repository contains comprehensive guides and best practices for building AI agents with Composio's Tool Router and Triggers.</p>\n<h2>Quick Start</h2>\n<p>Add Composio skills to your AI assistant:</p>\n<pre><code>\nnpx skills add composiohq/skills\n\n</code></pre>\n<p>This command installs the Composio agent skills, giving your AI assistant access to:</p>\n<ul>\n<li><strong>Tool Router best practices</strong> - Session management, authentication, and framework integration</li>\n<li><strong>Triggers &amp; Events</strong> - Real-time webhooks and event handling</li>\n<li><strong>Production patterns</strong> - Security, error handling, and deployment guides</li>\n</ul>\n<p>Your AI assistant can now reference these skills when helping you build with Composio!</p>\n<h2>Overview</h2>\n<p>This skills repository provides comprehensive guides and best practices for building AI agents with Composio, organized as markdown files that AI assistants can easily reference.</p>\n<h2>Structure</h2>\n<pre><code>\nskills/\n\n└── composio/\n\n    ├── SKILL.md           # Main skill overview with rule references\n\n    ├── AGENTS.md          # Consolidated single-file version (auto-generated)\n\n    └── rules/             # Individual rule files\n\n        ├── tr-*.md        # Tool Router rules\n\n        └── triggers-*.md  # Trigger rules\n\n</code></pre>\n<h2>Available Skills</h2>\n<h3>1. Tool Router (Building Agents)</h3>\n<ul>\n<li>User ID best practices for security</li>\n<li>Creating and managing sessions</li>\n<li>Session lifecycle patterns</li>\n<li>Native tools vs MCP integration</li>\n<li>Framework integration (Vercel, OpenAI Agents, LangChain, Claude, CrewAI)</li>\n</ul>\n<h3>2. Authentication</h3>\n<ul>\n<li>Auto authentication in chat</li>\n<li>Manual authorization flows</li>\n<li>Connection management</li>\n</ul>\n<h3>3. Toolkits &amp; Connection Status</h3>\n<ul>\n<li>Querying toolkit availability</li>\n<li>Building connection UIs</li>\n</ul>\n<h3>4. Advanced Features (Triggers &amp; Events)</h3>\n<ul>\n<li>Creating triggers for real-time events</li>\n<li>Subscribing to events (development only)</li>\n<li>Webhook verification (production recommended)</li>\n<li>Managing trigger lifecycle</li>\n</ul>\n<h2>Usage</h2>\n<h3>For AI Assistants</h3>\n<p>Read either:</p>\n<ul>\n<li><strong>SKILL.md</strong> - Main file with links to individual rules (faster to navigate)</li>\n<li><strong>AGENTS.md</strong> - Single consolidated file with all content (easier to consume)</li>\n</ul>\n<h3>For Developers</h3>\n<h4>Build AGENTS.md</h4>\n<p>Automatically generate the consolidated AGENTS.md file from all rule files:</p>\n<pre><code>\nnpm run build:agents\n\n</code></pre>\n<p>This script:</p>\n<ul>\n<li>Reads SKILL.md for structure</li>\n<li>Extracts all rule references</li>\n<li>Combines individual rule files</li>\n<li>Generates table of contents</li>\n<li>Outputs AGENTS.md with proper formatting</li>\n</ul>\n<h4>Watch Mode</h4>\n<p>Auto-rebuild AGENTS.md when any file changes:</p>\n<pre><code>\nnpm run watch:agents\n\n</code></pre>\n<p>This watches:</p>\n<ul>\n<li><code>SKILL.md</code> for structure changes</li>\n<li><code>rules/*.md</code> for content changes</li>\n<li>Auto-rebuilds on any modification</li>\n</ul>\n<h2>Contributing</h2>\n<h3>Adding a New Rule</h3>\n<p>1. Create a new markdown file in <code>skills/composio/rules/</code></p>\n<p>2. Use the naming convention:</p>\n<p>   - <code>tr-*.md</code> for Tool Router rules</p>\n<p>   - <code>triggers-*.md</code> for Trigger rules</p>\n<p>3. Include frontmatter:</p>\n<pre><code>\n---\n\ntitle: Your Rule Title\n\nimpact: CRITICAL|HIGH|MEDIUM|LOW\n\ndescription: Brief description of what this rule covers\n\ntags: [tool-router, triggers, etc]\n\n---\n\n\n\n# Your Rule Title\n\n\n\nContent with ❌ Incorrect and ✅ Correct examples...\n\n</code></pre>\n<p>4. Add reference to <code>SKILL.md</code> in the appropriate section</p>\n<p>5. Run <code>npm run build:agents</code> to regenerate AGENTS.md</p>\n<p>6. Commit all changes (rule file, SKILL.md, and AGENTS.md)</p>\n<h3>Rule Format</h3>\n<p>Each rule should include:</p>\n<ul>\n<li><strong>Frontmatter</strong> with metadata</li>\n<li><strong>❌ Incorrect examples</strong> showing what not to do</li>\n<li><strong>✅ Correct examples</strong> showing best practices</li>\n<li><strong>Explanations</strong> of why each approach is better</li>\n<li><strong>Code examples</strong> in both TypeScript and Python (when applicable)</li>\n<li><strong>References</strong> to official documentation</li>\n</ul>\n<h2>Build Scripts</h2>\n<p>The repository includes two scripts in <code>scripts/</code>:</p>\n<h3>build-agents.cjs</h3>\n<p>Generates the consolidated AGENTS.md file:</p>\n<ul>\n<li>Parses SKILL.md for structure</li>\n<li>Reads all rule files</li>\n<li>Combines content with proper formatting</li>\n<li>Generates table of contents</li>\n<li>Adds impact badges and descriptions</li>\n</ul>\n<h3>watch-agents.cjs</h3>\n<p>Watches for file changes and auto-rebuilds:</p>\n<ul>\n<li>Monitors SKILL.md and rules/ directory</li>\n<li>Triggers rebuild on any .md file change</li>\n<li>Shows real-time build status</li>\n</ul>\n<h2>File Statistics</h2>\n<p>Current repository stats:</p>\n<ul>\n<li><strong>14+ rules</strong> covering Tool Router and Triggers</li>\n<li><strong>150+ KB</strong> of consolidated documentation</li>\n<li><strong>Both TypeScript and Python</strong> examples throughout</li>\n<li><strong>Production-ready</strong> patterns and best practices</li>\n</ul>\n<h2>Key Features</h2>\n<h3>Tool Router Coverage</h3>\n<ul>\n<li>Session management and lifecycle</li>\n<li>User isolation patterns</li>\n<li>Native tools vs MCP comparison</li>\n<li>Framework integration guides</li>\n<li>Connection management</li>\n<li>Authentication flows</li>\n</ul>\n<h3>Triggers Coverage</h3>\n<ul>\n<li>Creating trigger instances</li>\n<li>Real-time event subscription</li>\n<li>Webhook verification and security</li>\n<li>Trigger lifecycle management</li>\n<li>Production deployment patterns</li>\n</ul>\n<h2>License</h2>\n<p>MIT</p>\n<h2>Links</h2>\n<ul>\n<li><a href=\"https://docs.composio.dev\" target=\"_blank\" rel=\"noreferrer\">Composio Documentation</a></li>\n<li><a href=\"https://docs.composio.dev/sdk/typescript/api/tool-router\" target=\"_blank\" rel=\"noreferrer\">Tool Router API</a></li>\n<li><a href=\"https://docs.composio.dev/sdk/typescript/api/triggers\" target=\"_blank\" rel=\"noreferrer\">Triggers API</a></li>\n<li><a href=\"https://github.com/composiohq/skills\" target=\"_blank\" rel=\"noreferrer\">GitHub Repository</a></li>\n</ul>",
+  "skillMd": "---\nname: composio\ndescription: Use 1000+ external apps via Composio - either directly through the CLI or by building AI agents and apps with the SDK\ntags: [composio, tool-router, agents, mcp, tools, api, automation, cli]\n---\n\n## When to Apply\n\n- User wants to access or interact with external apps (Gmail, Slack, GitHub, Notion, etc.)\n- User wants to automate a task using an external service (send email, create issue, post message)\n- Building an AI agent or app that integrates with external tools\n- Multi-user apps that need per-user connections to external services\n\n## Setup\n\nCheck if the CLI is installed; if not, install it:\n```bash\ncurl -fsSL https://composio.dev/install | bash\n```\n\nAfter installation, restart your terminal or source your shell config, then authenticate:\n```bash\ncomposio login       # OAuth; interactive org/project picker (use -y to skip)\ncomposio whoami      # verify org_id, project_id, user_id\n```\nFor agents without direct browser access: `composio login --no-wait | jq` to get URL/key, share URL with user, then `composio login --key <cli_key> --no-wait` once they complete login.\n\n---\n\n### 1. Use Apps via Composio CLI\n\n**Use this when:** The user wants to take action on an external app directly — no code writing needed. The agent uses the CLI to search, connect, and execute tools on behalf of the user.\n\nKey commands (new top-level aliases):\n- `composio search \"<query>\"` — find tools by use case\n- `composio execute \"<TOOL_SLUG>\" -d '{...<input params>}'` — execute a tool\n- `composio link [toolkit]` — connect a user account to an app (agents: always use `--no-wait` for non-interactive mode)\n- `composio listen` — listen for real-time trigger events\n\nTypical workflow: **search → link (if needed) → execute**\n\n> Full reference: [Composio CLI Guide](rules/composio-cli.md)\n\n---\n\n### 2. Building Apps and Agents with Composio\n\n**Use this when:** Writing code — an AI agent, app, or backend service that integrates with external tools via the Composio SDK.\n\nRun this first inside the project directory to set up the API key:\n```bash\ncomposio init\n```\n\n> Full reference: [Building with Composio](rules/building-with-composio.md)\n",
+  "updatedAt": "2026-03-19T06:11:27Z",
   "author": {
     "login": "ComposioHQ",
     "name": "Composio",
@@ -29,60 +29,60 @@
   },
   "related": [
     {
-      "slug": "cloudflare-security-audit-skill",
-      "displayName": "cloudflare/security-audit-skill",
-      "stars": 29582,
+      "slug": "anthropics-docx",
+      "displayName": "anthropics/docx",
+      "stars": 0,
       "relation": "shared_tag",
-      "evidence": "Official Skills by"
+      "evidence": "location:united-states"
     },
     {
-      "slug": "angular-angular-developer",
-      "displayName": "angular/angular-developer",
-      "stars": 685,
+      "slug": "voltagent-awesome-design-md",
+      "displayName": "voltagent/awesome-design-md",
+      "stars": 121567,
       "relation": "shared_tag",
-      "evidence": "Official Skills by"
+      "evidence": "location:united-states"
     },
     {
-      "slug": "testmu-ai-api-skill",
-      "displayName": "testmu-ai/api-skill",
-      "stars": 376,
+      "slug": "voltagent-awesome-openclaw-skills",
+      "displayName": "voltagent/awesome-openclaw-skills",
+      "stars": 53150,
       "relation": "shared_tag",
-      "evidence": "Official Skills by"
+      "evidence": "location:united-states"
     },
     {
-      "slug": "veniceai-venice-api-overview",
-      "displayName": "veniceai/venice-api-overview",
-      "stars": 145,
+      "slug": "k-dense-ai-scientific-agent-skills",
+      "displayName": "K-Dense-AI/scientific-agent-skills",
+      "stars": 50361,
       "relation": "shared_tag",
-      "evidence": "Official Skills by"
+      "evidence": "location:united-states"
     },
     {
-      "slug": "crawlbase-crawlbase-mcp",
-      "displayName": "crawlbase/crawlbase-mcp",
-      "stars": 58,
+      "slug": "voltagent-awesome-agent-skills",
+      "displayName": "voltagent/awesome-agent-skills",
+      "stars": 35779,
       "relation": "shared_tag",
-      "evidence": "Official Skills by"
+      "evidence": "location:united-states"
     },
     {
-      "slug": "modem-dev-skills",
-      "displayName": "modem-dev/skills",
-      "stars": 57,
+      "slug": "google-cloud-agent-platform-skill-registry",
+      "displayName": "google/cloud/agent-platform-skill-registry",
+      "stars": 21337,
       "relation": "shared_tag",
-      "evidence": "Official Skills by"
+      "evidence": "location:united-states"
     },
     {
-      "slug": "zero-zero",
-      "displayName": "zero/zero",
-      "stars": 21,
+      "slug": "google-gemini-gemini-api-dev",
+      "displayName": "google-gemini/gemini-api-dev",
+      "stars": 0,
       "relation": "shared_tag",
-      "evidence": "Official Skills by"
+      "evidence": "location:united-states"
     },
     {
-      "slug": "serpapi-serpapi-cli",
-      "displayName": "serpapi/serpapi-cli",
-      "stars": 15,
+      "slug": "expo-building-native-ui",
+      "displayName": "expo/building-native-ui",
+      "stars": 0,
       "relation": "shared_tag",
-      "evidence": "Official Skills by"
+      "evidence": "location:united-states"
     }
   ],
   "mapLocation": {

@@ -12,7 +12,7 @@
   "readme": "# WordPress/wordpress-router\n\nClassifies WordPress repos and routes to the right workflow",
   "readmeHtml": "<h1>WordPress/wordpress-router</h1>\n<p>Classifies WordPress repos and routes to the right workflow</p>",
   "skillMd": "",
-  "updatedAt": "2026-10-14T22:08:28.428Z",
+  "updatedAt": "2026-10-15T21:59:20.774Z",
   "author": {
     "login": "WordPress",
     "name": "WordPress",
@@ -23,15 +23,15 @@
   "location": null,
   "related": [
     {
-      "slug": "wordpress-wp-project-triage",
-      "displayName": "WordPress/wp-project-triage",
+      "slug": "wordpress-wp-block-development",
+      "displayName": "WordPress/wp-block-development",
       "stars": 0,
       "relation": "source_overlap",
       "evidence": "author:WordPress"
     },
     {
-      "slug": "wordpress-wp-block-development",
-      "displayName": "WordPress/wp-block-development",
+      "slug": "wordpress-wp-project-triage",
+      "displayName": "WordPress/wp-project-triage",
       "stars": 0,
       "relation": "source_overlap",
       "evidence": "author:WordPress"

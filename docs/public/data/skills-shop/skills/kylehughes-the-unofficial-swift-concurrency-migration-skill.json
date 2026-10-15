@@ -1,0 +1,95 @@
+{
+  "id": "skill:kylehughes-the-unofficial-swift-concurrency-migration-skill",
+  "slug": "kylehughes-the-unofficial-swift-concurrency-migration-skill",
+  "name": "the-unofficial-swift-concurrency-migration-skill",
+  "displayName": "kylehughes/the-unofficial-swift-concurrency-migration-skill",
+  "description": "Swift Concurrency Migration guide",
+  "stars": 56,
+  "category": "Skills by Binance",
+  "source": "heilcheng",
+  "url": "https://github.com/kylehughes/the-unofficial-swift-concurrency-migration-skill",
+  "githubRepo": "kylehughes/the-unofficial-swift-concurrency-migration-skill",
+  "readme": "# The Unofficial Swift Concurrency Migration Skill\n\n[![Agent Skill](https://img.shields.io/badge/Agent_Skill-555?logo=claude)](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview)\n[![Latest Release](https://img.shields.io/github/v/release/kylehughes/the-unofficial-swift-concurrency-migration-skill)](https://github.com/kylehughes/the-unofficial-swift-concurrency-migration-skill/releases)\n\n*[Swift Concurrency Migration Guide](https://www.swift.org/migration/documentation/migrationguide/), packaged as a Skill for LLMs.*\n\n## About\n\nThe Unofficial Swift Concurrency Migration Skill provides the complete content of the [Swift Concurrency Migration Guide](https://www.swift.org/migration/documentation/migrationguide/) in the structured Skill format used by Claude. This includes all documentation articles and Swift code examples.\n\n## Installation\n\n### Claude Code\n\n#### Personal Usage\n\nTo install this Skill for your personal use in Claude Code:\n\n1. Add the marketplace:\n   ```bash\n   /plugin marketplace add kylehughes/the-unofficial-swift-concurrency-migration-skill\n   ```\n\n2. Install the Skill:\n   ```bash\n   /plugin install migrating-to-swift-concurrency-skill@the-unofficial-swift-concurrency-migration-skill\n   ```\n\n#### Project Configuration\n\nTo automatically provide this Skill to everyone working in a repository, configure the repository's `.claude/settings.json`:\n\n```json\n{\n  \"enabledPlugins\": {\n    \"migrating-to-swift-concurrency-skill@the-unofficial-swift-concurrency-migration-skill\": true\n  },\n  \"extraKnownMarketplaces\": {\n    \"the-unofficial-swift-concurrency-migration-skill\": {\n      \"source\": {\n        \"source\": \"github\",\n        \"repo\": \"kylehughes/the-unofficial-swift-concurrency-migration-skill\"\n      }\n    }\n  }\n}\n```\n\nWhen team members open the project, Claude Code will prompt them to install the Skill.\n\n### Manual Installation\n\nYou can download the pre-packaged release for use in other environments (e.g. Claude Desktop).\n\n1. Go to the [Releases](https://github.com/kylehughes/the-unofficial-swift-concurrency-migration-skill/releases) page.\n2. Download the `migrating-to-swift-concurrency.zip` file from the latest release.\n3. Import the Skill into your environment (e.g. ask Claude how).\n\nThe raw Skill content is also available in this repository's `migrating-to-swift-concurrency` directory.\n\n## Releases\n\nThis Skill is automatically updated nightly to match the official documentation. A new version is released only when the upstream content changes.\n\nVersion numbers follow the format `YYYYMMDD` (e.g., `20251206`).\n\n## Development\n\n### Build from Source\n\nYou can generate the Skill package locally using the provided Python script. The script has no external dependencies and is what is used to generate the pre-packaged releases.\n\n```bash\npython3 package.py\n```\n\nThis will clone the official repository and generate a `migrating-to-swift-concurrency` directory and `migrating-to-swift-concurrency.zip` archive in your current working directory.\n\n### Options\n\n| Option | Description |\n| :--- | :--- |\n| `--output DIR`, `-o DIR` | Specify output directory (default: `./migrating-to-swift-concurrency`) |\n| `--keep-temp` | Do not delete the temporary git clone after packaging |\n| `--dry-run` | Simulate operations without writing files |\n\n## Contributions\n\nThe Unofficial Swift Concurrency Migration Skill is not accepting source contributions at this time. Bug reports will be considered.\n\n## Author\n\n[Kyle Hughes](https://kylehugh.es)\n\n[![Bluesky][bluesky_image]][bluesky_url]  \n[![LinkedIn][linkedin_image]][linkedin_url]  \n[![Mastodon][mastodon_image]][mastodon_url]\n\n[bluesky_image]: https://img.shields.io/badge/Bluesky-0285FF?logo=bluesky&logoColor=fff\n[bluesky_url]: https://bsky.app/profile/kylehugh.es\n[linkedin_image]: https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=fff\n[linkedin_url]: https://www.linkedin.com/in/kyle-hughes\n[mastodon_image]: https://img.shields.io/mastodon/follow/109356914477272810?domain=https%3A%2F%2Fmister.computer&style=social\n[mastodon_url]: https://mister.computer/@kyle\n\n## License & Attribution\n\nThe Unofficial Swift Concurrency Migration Skill is available under the **MIT License**. See `LICENSE` for details.\n\nThe content contained within the generated Skill is sourced from the [Swift Concurrency Migration Guide](https://github.com/swiftlang/swift-migration-guide) by Apple Inc. and the Swift project authors, and is distributed under the **Apache 2.0 License**.\n",
+  "readmeHtml": "<h1>The Unofficial Swift Concurrency Migration Skill</h1>\n<p><a href=\"https://img.shields.io/badge/Agent_Skill-555?logo=claude\" target=\"_blank\" rel=\"noreferrer\">![Agent Skill</a>](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview)</p>\n<p><a href=\"https://img.shields.io/github/v/release/kylehughes/the-unofficial-swift-concurrency-migration-skill\" target=\"_blank\" rel=\"noreferrer\">![Latest Release</a>](https://github.com/kylehughes/the-unofficial-swift-concurrency-migration-skill/releases)</p>\n<p>*<a href=\"https://www.swift.org/migration/documentation/migrationguide/\" target=\"_blank\" rel=\"noreferrer\">Swift Concurrency Migration Guide</a>, packaged as a Skill for LLMs.*</p>\n<h2>About</h2>\n<p>The Unofficial Swift Concurrency Migration Skill provides the complete content of the <a href=\"https://www.swift.org/migration/documentation/migrationguide/\" target=\"_blank\" rel=\"noreferrer\">Swift Concurrency Migration Guide</a> in the structured Skill format used by Claude. This includes all documentation articles and Swift code examples.</p>\n<h2>Installation</h2>\n<h3>Claude Code</h3>\n<h4>Personal Usage</h4>\n<p>To install this Skill for your personal use in Claude Code:</p>\n<p>1. Add the marketplace:</p>\n<pre><code>\n   /plugin marketplace add kylehughes/the-unofficial-swift-concurrency-migration-skill\n\n</code></pre>\n<p>2. Install the Skill:</p>\n<pre><code>\n   /plugin install migrating-to-swift-concurrency-skill@the-unofficial-swift-concurrency-migration-skill\n\n</code></pre>\n<h4>Project Configuration</h4>\n<p>To automatically provide this Skill to everyone working in a repository, configure the repository's <code>.claude/settings.json</code>:</p>\n<pre><code>\n{\n\n  \"enabledPlugins\": {\n\n    \"migrating-to-swift-concurrency-skill@the-unofficial-swift-concurrency-migration-skill\": true\n\n  },\n\n  \"extraKnownMarketplaces\": {\n\n    \"the-unofficial-swift-concurrency-migration-skill\": {\n\n      \"source\": {\n\n        \"source\": \"github\",\n\n        \"repo\": \"kylehughes/the-unofficial-swift-concurrency-migration-skill\"\n\n      }\n\n    }\n\n  }\n\n}\n\n</code></pre>\n<p>When team members open the project, Claude Code will prompt them to install the Skill.</p>\n<h3>Manual Installation</h3>\n<p>You can download the pre-packaged release for use in other environments (e.g. Claude Desktop).</p>\n<p>1. Go to the <a href=\"https://github.com/kylehughes/the-unofficial-swift-concurrency-migration-skill/releases\" target=\"_blank\" rel=\"noreferrer\">Releases</a> page.</p>\n<p>2. Download the <code>migrating-to-swift-concurrency.zip</code> file from the latest release.</p>\n<p>3. Import the Skill into your environment (e.g. ask Claude how).</p>\n<p>The raw Skill content is also available in this repository's <code>migrating-to-swift-concurrency</code> directory.</p>\n<h2>Releases</h2>\n<p>This Skill is automatically updated nightly to match the official documentation. A new version is released only when the upstream content changes.</p>\n<p>Version numbers follow the format <code>YYYYMMDD</code> (e.g., <code>20251206</code>).</p>\n<h2>Development</h2>\n<h3>Build from Source</h3>\n<p>You can generate the Skill package locally using the provided Python script. The script has no external dependencies and is what is used to generate the pre-packaged releases.</p>\n<pre><code>\npython3 package.py\n\n</code></pre>\n<p>This will clone the official repository and generate a <code>migrating-to-swift-concurrency</code> directory and <code>migrating-to-swift-concurrency.zip</code> archive in your current working directory.</p>\n<h3>Options</h3>\n<p>| Option | Description |</p>\n<p>| :--- | :--- |</p>\n<p>| <code>--output DIR</code>, <code>-o DIR</code> | Specify output directory (default: <code>./migrating-to-swift-concurrency</code>) |</p>\n<p>| <code>--keep-temp</code> | Do not delete the temporary git clone after packaging |</p>\n<p>| <code>--dry-run</code> | Simulate operations without writing files |</p>\n<h2>Contributions</h2>\n<p>The Unofficial Swift Concurrency Migration Skill is not accepting source contributions at this time. Bug reports will be considered.</p>\n<h2>Author</h2>\n<p><a href=\"https://kylehugh.es\" target=\"_blank\" rel=\"noreferrer\">Kyle Hughes</a></p>\n<p>[![Bluesky][bluesky_image]][bluesky_url]  </p>\n<p>[![LinkedIn][linkedin_image]][linkedin_url]  </p>\n<p>[![Mastodon][mastodon_image]][mastodon_url]</p>\n<p>[bluesky_image]: https://img.shields.io/badge/Bluesky-0285FF?logo=bluesky&amp;logoColor=fff</p>\n<p>[bluesky_url]: https://bsky.app/profile/kylehugh.es</p>\n<p>[linkedin_image]: https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&amp;logoColor=fff</p>\n<p>[linkedin_url]: https://www.linkedin.com/in/kyle-hughes</p>\n<p>[mastodon_image]: https://img.shields.io/mastodon/follow/109356914477272810?domain=https%3A%2F%2Fmister.computer&amp;style=social</p>\n<p>[mastodon_url]: https://mister.computer/@kyle</p>\n<h2>License &amp; Attribution</h2>\n<p>The Unofficial Swift Concurrency Migration Skill is available under the <strong>MIT License</strong>. See <code>LICENSE</code> for details.</p>\n<p>The content contained within the generated Skill is sourced from the <a href=\"https://github.com/swiftlang/swift-migration-guide\" target=\"_blank\" rel=\"noreferrer\">Swift Concurrency Migration Guide</a> by Apple Inc. and the Swift project authors, and is distributed under the <strong>Apache 2.0 License</strong>.</p>",
+  "skillMd": "",
+  "updatedAt": "2025-12-07T07:33:41Z",
+  "author": {
+    "login": "kylehughes",
+    "name": "Kyle Hughes",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/229059?v=4",
+    "profileUrl": "https://github.com/kylehughes",
+    "location": "Seattle, WA"
+  },
+  "location": {
+    "id": "seattle",
+    "label": "Seattle",
+    "lat": 47.6062,
+    "lon": -122.3321,
+    "source": "github_profile"
+  },
+  "related": [
+    {
+      "slug": "kkkkhazix-aihot",
+      "displayName": "kkkkhazix/aihot",
+      "stars": 21431,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "sawyerhood-dev-browser",
+      "displayName": "sawyerhood/dev-browser",
+      "stars": 6666,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "roundtable02-tutor-skills",
+      "displayName": "roundtable02/tutor-skills",
+      "stars": 1350,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "chubbyguan-chubbyskills",
+      "displayName": "chubbyguan/chubbyskills",
+      "stars": 1249,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "moizibnyousaf-ai-agent-skills",
+      "displayName": "moizibnyousaf/ai-agent-skills",
+      "stars": 1151,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "vostride-agent-qa",
+      "displayName": "vostride/agent-qa",
+      "stars": 906,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "swarmclawai-swarmvault",
+      "displayName": "swarmclawai/swarmvault",
+      "stars": 718,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "swarmclawai-swarmclaw",
+      "displayName": "swarmclawai/swarmclaw",
+      "stars": 689,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    }
+  ],
+  "mapLocation": {
+    "id": "seattle",
+    "label": "Seattle",
+    "lat": 47.6062,
+    "lon": -122.3321,
+    "source": "github_profile"
+  }
+}

@@ -12,7 +12,7 @@
   "readme": "# vercel-labs/next-best-practices\n\nNext.js best practices and recommended patterns",
   "readmeHtml": "<h1>vercel-labs/next-best-practices</h1>\n<p>Next.js best practices and recommended patterns</p>",
   "skillMd": "",
-  "updatedAt": "2026-10-14T22:08:28.310Z",
+  "updatedAt": "2026-10-15T21:59:20.743Z",
   "author": {
     "login": "vercel-labs",
     "name": "Vercel Labs",
@@ -22,6 +22,13 @@
   },
   "location": null,
   "related": [
+    {
+      "slug": "vercel-labs-react-best-practices",
+      "displayName": "vercel-labs/react-best-practices",
+      "stars": 32481,
+      "relation": "source_overlap",
+      "evidence": "author:vercel-labs"
+    },
     {
       "slug": "vercel-labs-next-cache-components",
       "displayName": "vercel-labs/next-cache-components",
@@ -37,44 +44,37 @@
       "evidence": "author:vercel-labs"
     },
     {
-      "slug": "vercel-labs-react-best-practices",
-      "displayName": "vercel-labs/react-best-practices",
+      "slug": "anthropics-docx",
+      "displayName": "anthropics/docx",
       "stars": 0,
-      "relation": "source_overlap",
-      "evidence": "author:vercel-labs"
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
     },
     {
-      "slug": "vercel-labs-web-design-guidelines",
-      "displayName": "vercel-labs/web-design-guidelines",
+      "slug": "googleworkspace-gws-drive",
+      "displayName": "googleworkspace/gws-drive",
       "stars": 0,
-      "relation": "source_overlap",
-      "evidence": "author:vercel-labs"
-    },
-    {
-      "slug": "vercel-labs-react-native-skills",
-      "displayName": "vercel-labs/react-native-skills",
-      "stars": 0,
-      "relation": "source_overlap",
-      "evidence": "author:vercel-labs"
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
     },
     {
       "slug": "cloudflare-security-audit-skill",
       "displayName": "cloudflare/security-audit-skill",
-      "stars": 29582,
+      "stars": 29867,
       "relation": "shared_tag",
       "evidence": "Official Skills by"
     },
     {
-      "slug": "angular-angular-developer",
-      "displayName": "angular/angular-developer",
-      "stars": 685,
+      "slug": "huggingface-hf-cli",
+      "displayName": "huggingface/hf-cli",
+      "stars": 0,
       "relation": "shared_tag",
       "evidence": "Official Skills by"
     },
     {
-      "slug": "testmu-ai-api-skill",
-      "displayName": "testmu-ai/api-skill",
-      "stars": 376,
+      "slug": "google-labs-code-design-md",
+      "displayName": "google-labs-code/design-md",
+      "stars": 0,
       "relation": "shared_tag",
       "evidence": "Official Skills by"
     }

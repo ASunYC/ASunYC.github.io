@@ -1,0 +1,89 @@
+{
+  "id": "skill:heyvincent-ai-agent-skills",
+  "slug": "heyvincent-ai-agent-skills",
+  "name": "agent-skills",
+  "displayName": "heyvincent-ai/agent-skills",
+  "description": "Polymarket prediction market trading for agents",
+  "stars": 5,
+  "category": "Skills by Binance",
+  "source": "heilcheng",
+  "url": "https://github.com/HeyVincent-ai/agent-skills",
+  "githubRepo": "HeyVincent-ai/agent-skills",
+  "readme": "# Vincent Agent Skills\n\nPre-built capabilities for AI agents to safely interact with wallets, DeFi, and prediction markets — without ever exposing private keys. Skills enable autonomous crypto operations with policy controls, spending limits, and human approval flows through natural language interfaces.\n\nPublic repository of skills for [Vincent](https://heyvincent.ai) — secure secret management and wallet infrastructure for AI agents.\n\n## Quick Start\n\n```bash\n# Add this repo URL to your agent runtime to browse and install skills:\nhttps://github.com/HeyVincent-ai/agent-skills\n```\n\nSkills are drop-in modules. The agent creates its own wallet at runtime — no pre-existing credentials or configuration required.\n\n## Available Skills\n\n| Skill | Description |\n| ----- | ----------- |\n| [wallet](wallet/) | EVM smart account wallet for agents. Transfers, token swaps, contract interactions on any EVM chain. Gas-free via ZeroDev paymaster. |\n| [polymarket](polymarket/) | Prediction market trading for agents. Browse markets, place bets, manage positions on Polymarket. Gasless via relayer. |\n| [brave-search](brave-search/) | Web and news search for agents via Brave Search. Pay-per-call ($0.005/query) through Vincent credit system. |\n| [twitter](twitter/) | Twitter/X.com data access for agents. Search tweets, look up profiles, retrieve recent tweets. Pay-per-call through Vincent credit system. |\n| [trading-engine](trading-engine/) | Strategy-driven automated trading for Polymarket. LLM-powered strategies with data monitors (web search, Twitter, newswire, price feeds) that evaluate a thesis and trade autonomously. Also includes standalone stop-loss, take-profit, and trailing stops. |\n\n## How It Works\n\n1. **Agent creates a wallet** by calling the Vincent API — receives a scoped API key (never a private key)\n2. **Agent operates autonomously** within policy boundaries set by the human owner\n3. **Human claims ownership** via a claim URL, sets spending limits, approval thresholds, and allowlists\n4. **All policies enforced server-side** — the agent cannot bypass them regardless of what it sends\n\nThe private key never leaves the Vincent server. The agent's API key is a scoped Bearer token that the wallet owner can revoke at any time.\n\n## Structure\n\nEach top-level directory is an installable skill containing a `SKILL.md` with full API documentation and usage instructions.\n\n```\nagent-skills/\n├── wallet/\n│   └── SKILL.md          # EVM wallet — transfers, swaps, contract calls\n├── polymarket/\n│   └── SKILL.md          # Polymarket — prediction market trading\n├── brave-search/\n│   └── SKILL.md          # Brave Search — web and news search\n├── twitter/\n│   └── SKILL.md          # Twitter/X.com — tweet search, user profiles\n└── trading-engine/\n    └── SKILL.md          # Trading Engine — LLM strategies, trade rules, stop-loss\n```\n\n## Policy Controls\n\nThe wallet owner configures policies from the [Vincent dashboard](https://heyvincent.ai). All enforcement is server-side.\n\n| Policy | Description |\n| ------ | ----------- |\n| Address allowlist | Only interact with approved addresses |\n| Token allowlist | Only transfer approved tokens |\n| Function allowlist | Only call approved contract functions |\n| Spending limit (per tx) | Max USD value per transaction |\n| Spending limit (daily) | Max USD value per rolling 24 hours |\n| Spending limit (weekly) | Max USD value per rolling 7 days |\n| Require approval | Every action needs human approval via Telegram |\n| Approval threshold | Actions above a USD amount need human approval |\n\n## Use Cases\n\n**Autonomous trading** — Agents manage portfolios, execute swaps, and trade prediction markets within spending limits.\n\n**DeFi operations** — Transfer tokens, interact with smart contracts, and swap on DEXs across any EVM chain with gas fully sponsored.\n\n**Prediction markets** — Browse Polymarket, place bets, and manage positions with policy-controlled risk limits.\n\n**Web research** — Agents search the web and news via Brave Search to gather real-time information, monitor topics, and inform decisions.\n\n**Social intelligence** — Agents search tweets, track user profiles, and monitor conversations on Twitter/X.com for sentiment and signals.\n\n**Automated trading strategies** — Agents create LLM-powered strategies that monitor web, Twitter, newswire, and price data, then trade autonomously based on a thesis. Standalone stop-loss, take-profit, and trailing stops provide additional risk management.\n\n**Human-in-the-loop workflows** — High-value actions trigger Telegram approval notifications for the wallet owner before execution.\n\n## Contributing\n\nWe welcome community contributions! Here's how to add a new skill:\n\n### Adding a New Skill\n\n1. **Fork this repository** and create a new branch for your skill.\n\n2. **Create a skill directory**:\n   ```\n   mkdir your-skill-name/\n   ```\n\n3. **Add the required files**:\n   - `SKILL.md` — The main skill definition file (required)\n\n4. **Follow the structure**:\n   ```\n   your-skill-name/\n   └── SKILL.md\n   ```\n\n5. **Submit a Pull Request** with a clear description of your skill.\n\n### Guidelines\n\n- Keep skill definitions clear and well-documented\n- Include API examples and workflow walkthroughs in your `SKILL.md`\n- All skills should use the Vincent API at `heyvincent.ai`\n- Test your skill before submitting\n\n## Links\n\n- **Website**: [heyvincent.ai](https://heyvincent.ai)\n- **Vincent repo**: [github.com/HeyVincent-ai/Vincent](https://github.com/HeyVincent-ai/Vincent)\n",
+  "readmeHtml": "<h1>Vincent Agent Skills</h1>\n<p>Pre-built capabilities for AI agents to safely interact with wallets, DeFi, and prediction markets — without ever exposing private keys. Skills enable autonomous crypto operations with policy controls, spending limits, and human approval flows through natural language interfaces.</p>\n<p>Public repository of skills for <a href=\"https://heyvincent.ai\" target=\"_blank\" rel=\"noreferrer\">Vincent</a> — secure secret management and wallet infrastructure for AI agents.</p>\n<h2>Quick Start</h2>\n<pre><code>\n# Add this repo URL to your agent runtime to browse and install skills:\n\nhttps://github.com/HeyVincent-ai/agent-skills\n\n</code></pre>\n<p>Skills are drop-in modules. The agent creates its own wallet at runtime — no pre-existing credentials or configuration required.</p>\n<h2>Available Skills</h2>\n<p>| Skill | Description |</p>\n<p>| ----- | ----------- |</p>\n<p>| [wallet](wallet/) | EVM smart account wallet for agents. Transfers, token swaps, contract interactions on any EVM chain. Gas-free via ZeroDev paymaster. |</p>\n<p>| [polymarket](polymarket/) | Prediction market trading for agents. Browse markets, place bets, manage positions on Polymarket. Gasless via relayer. |</p>\n<p>| [brave-search](brave-search/) | Web and news search for agents via Brave Search. Pay-per-call ($0.005/query) through Vincent credit system. |</p>\n<p>| [twitter](twitter/) | Twitter/X.com data access for agents. Search tweets, look up profiles, retrieve recent tweets. Pay-per-call through Vincent credit system. |</p>\n<p>| [trading-engine](trading-engine/) | Strategy-driven automated trading for Polymarket. LLM-powered strategies with data monitors (web search, Twitter, newswire, price feeds) that evaluate a thesis and trade autonomously. Also includes standalone stop-loss, take-profit, and trailing stops. |</p>\n<h2>How It Works</h2>\n<p>1. <strong>Agent creates a wallet</strong> by calling the Vincent API — receives a scoped API key (never a private key)</p>\n<p>2. <strong>Agent operates autonomously</strong> within policy boundaries set by the human owner</p>\n<p>3. <strong>Human claims ownership</strong> via a claim URL, sets spending limits, approval thresholds, and allowlists</p>\n<p>4. <strong>All policies enforced server-side</strong> — the agent cannot bypass them regardless of what it sends</p>\n<p>The private key never leaves the Vincent server. The agent's API key is a scoped Bearer token that the wallet owner can revoke at any time.</p>\n<h2>Structure</h2>\n<p>Each top-level directory is an installable skill containing a <code>SKILL.md</code> with full API documentation and usage instructions.</p>\n<pre><code>\nagent-skills/\n\n├── wallet/\n\n│   └── SKILL.md          # EVM wallet — transfers, swaps, contract calls\n\n├── polymarket/\n\n│   └── SKILL.md          # Polymarket — prediction market trading\n\n├── brave-search/\n\n│   └── SKILL.md          # Brave Search — web and news search\n\n├── twitter/\n\n│   └── SKILL.md          # Twitter/X.com — tweet search, user profiles\n\n└── trading-engine/\n\n    └── SKILL.md          # Trading Engine — LLM strategies, trade rules, stop-loss\n\n</code></pre>\n<h2>Policy Controls</h2>\n<p>The wallet owner configures policies from the <a href=\"https://heyvincent.ai\" target=\"_blank\" rel=\"noreferrer\">Vincent dashboard</a>. All enforcement is server-side.</p>\n<p>| Policy | Description |</p>\n<p>| ------ | ----------- |</p>\n<p>| Address allowlist | Only interact with approved addresses |</p>\n<p>| Token allowlist | Only transfer approved tokens |</p>\n<p>| Function allowlist | Only call approved contract functions |</p>\n<p>| Spending limit (per tx) | Max USD value per transaction |</p>\n<p>| Spending limit (daily) | Max USD value per rolling 24 hours |</p>\n<p>| Spending limit (weekly) | Max USD value per rolling 7 days |</p>\n<p>| Require approval | Every action needs human approval via Telegram |</p>\n<p>| Approval threshold | Actions above a USD amount need human approval |</p>\n<h2>Use Cases</h2>\n<p><strong>Autonomous trading</strong> — Agents manage portfolios, execute swaps, and trade prediction markets within spending limits.</p>\n<p><strong>DeFi operations</strong> — Transfer tokens, interact with smart contracts, and swap on DEXs across any EVM chain with gas fully sponsored.</p>\n<p><strong>Prediction markets</strong> — Browse Polymarket, place bets, and manage positions with policy-controlled risk limits.</p>\n<p><strong>Web research</strong> — Agents search the web and news via Brave Search to gather real-time information, monitor topics, and inform decisions.</p>\n<p><strong>Social intelligence</strong> — Agents search tweets, track user profiles, and monitor conversations on Twitter/X.com for sentiment and signals.</p>\n<p><strong>Automated trading strategies</strong> — Agents create LLM-powered strategies that monitor web, Twitter, newswire, and price data, then trade autonomously based on a thesis. Standalone stop-loss, take-profit, and trailing stops provide additional risk management.</p>\n<p><strong>Human-in-the-loop workflows</strong> — High-value actions trigger Telegram approval notifications for the wallet owner before execution.</p>\n<h2>Contributing</h2>\n<p>We welcome community contributions! Here's how to add a new skill:</p>\n<h3>Adding a New Skill</h3>\n<p>1. <strong>Fork this repository</strong> and create a new branch for your skill.</p>\n<p>2. <strong>Create a skill directory</strong>:</p>\n<pre><code>\n   mkdir your-skill-name/\n\n</code></pre>\n<p>3. <strong>Add the required files</strong>:</p>\n<p>   - <code>SKILL.md</code> — The main skill definition file (required)</p>\n<p>4. <strong>Follow the structure</strong>:</p>\n<pre><code>\n   your-skill-name/\n\n   └── SKILL.md\n\n</code></pre>\n<p>5. <strong>Submit a Pull Request</strong> with a clear description of your skill.</p>\n<h3>Guidelines</h3>\n<ul>\n<li>Keep skill definitions clear and well-documented</li>\n<li>Include API examples and workflow walkthroughs in your <code>SKILL.md</code></li>\n<li>All skills should use the Vincent API at <code>heyvincent.ai</code></li>\n<li>Test your skill before submitting</li>\n</ul>\n<h2>Links</h2>\n<ul>\n<li><strong>Website</strong>: <a href=\"https://heyvincent.ai\" target=\"_blank\" rel=\"noreferrer\">heyvincent.ai</a></li>\n<li><strong>Vincent repo</strong>: <a href=\"https://github.com/HeyVincent-ai/Vincent\" target=\"_blank\" rel=\"noreferrer\">github.com/HeyVincent-ai/Vincent</a></li>\n</ul>",
+  "skillMd": "",
+  "updatedAt": "2026-03-09T20:37:06Z",
+  "author": {
+    "login": "HeyVincent-ai",
+    "name": "HeyVincent.ai",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/258376451?v=4",
+    "profileUrl": "https://github.com/HeyVincent-ai",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "kkkkhazix-aihot",
+      "displayName": "kkkkhazix/aihot",
+      "stars": 21431,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "sawyerhood-dev-browser",
+      "displayName": "sawyerhood/dev-browser",
+      "stars": 6666,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "roundtable02-tutor-skills",
+      "displayName": "roundtable02/tutor-skills",
+      "stars": 1350,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "chubbyguan-chubbyskills",
+      "displayName": "chubbyguan/chubbyskills",
+      "stars": 1249,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "moizibnyousaf-ai-agent-skills",
+      "displayName": "moizibnyousaf/ai-agent-skills",
+      "stars": 1151,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "vostride-agent-qa",
+      "displayName": "vostride/agent-qa",
+      "stars": 906,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "swarmclawai-swarmvault",
+      "displayName": "swarmclawai/swarmvault",
+      "stars": 718,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "swarmclawai-swarmclaw",
+      "displayName": "swarmclawai/swarmclaw",
+      "stars": 689,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-berlin",
+    "label": "Global Skill Market / Berlin / Skills by Binance",
+    "lat": 52.52,
+    "lon": 13.405,
+    "source": "virtual_market"
+  }
+}

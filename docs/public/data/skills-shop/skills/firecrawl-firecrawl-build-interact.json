@@ -12,7 +12,7 @@
   "readme": "# firecrawl/firecrawl-build-interact\n\nMulti-step Firecrawl browser flows: clicks, form fills, pagination, and auth-aware navigation",
   "readmeHtml": "<h1>firecrawl/firecrawl-build-interact</h1>\n<p>Multi-step Firecrawl browser flows: clicks, form fills, pagination, and auth-aware navigation</p>",
   "skillMd": "",
-  "updatedAt": "2026-10-14T22:08:28.308Z",
+  "updatedAt": "2026-10-15T21:59:20.741Z",
   "author": {
     "login": "firecrawl",
     "name": "Firecrawl",
@@ -29,9 +29,9 @@
   },
   "related": [
     {
-      "slug": "firecrawl-cli",
-      "displayName": "firecrawl/cli",
-      "stars": 651,
+      "slug": "firecrawl-firecrawl-cli",
+      "displayName": "firecrawl/firecrawl-cli",
+      "stars": 652,
       "relation": "source_overlap",
       "evidence": "author:firecrawl"
     },
@@ -64,25 +64,25 @@
       "evidence": "author:firecrawl"
     },
     {
-      "slug": "firecrawl-firecrawl-cli",
-      "displayName": "firecrawl/firecrawl-cli",
+      "slug": "anthropics-docx",
+      "displayName": "anthropics/docx",
       "stars": 0,
-      "relation": "source_overlap",
-      "evidence": "author:firecrawl"
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
     },
     {
-      "slug": "firecrawl-firecrawl-agent",
-      "displayName": "firecrawl/firecrawl-agent",
+      "slug": "googleworkspace-gws-drive",
+      "displayName": "googleworkspace/gws-drive",
       "stars": 0,
-      "relation": "source_overlap",
-      "evidence": "author:firecrawl"
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
     },
     {
-      "slug": "firecrawl-firecrawl-browser",
-      "displayName": "firecrawl/firecrawl-browser",
-      "stars": 0,
-      "relation": "source_overlap",
-      "evidence": "author:firecrawl"
+      "slug": "cloudflare-security-audit-skill",
+      "displayName": "cloudflare/security-audit-skill",
+      "stars": 29867,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
     }
   ],
   "mapLocation": {

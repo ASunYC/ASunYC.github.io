@@ -2,88 +2,88 @@
   "id": "skill:sawyerhood-dev-browser",
   "slug": "sawyerhood-dev-browser",
   "name": "dev-browser",
-  "displayName": "SawyerHood/dev-browser",
-  "description": "A Claude Skill to give your agent the ability to use a web browser",
-  "stars": 6058,
-  "category": "Discovered",
-  "source": "discover:topic",
+  "displayName": "sawyerhood/dev-browser",
+  "description": "Web browser capability for agents",
+  "stars": 6666,
+  "category": "Skills by Binance",
+  "source": "heilcheng",
   "url": "https://github.com/SawyerHood/dev-browser",
   "githubRepo": "SawyerHood/dev-browser",
-  "readme": "# SawyerHood/dev-browser\n\nA Claude Skill to give your agent the ability to use a web browser",
-  "readmeHtml": "<h1>SawyerHood/dev-browser</h1>\n<p>A Claude Skill to give your agent the ability to use a web browser</p>",
+  "readme": "<p align=\"center\">\n  <img src=\"assets/header.png\" alt=\"Dev Browser - browser automation for coding agents\" width=\"100%\">\n</p>\n\nBrought to you by [Do Browser](https://dobrowser.io).\n\n`dev-browser` lets coding agents control Chrome with short JavaScript scripts. The browser stays open between calls,\nso an agent can navigate once, inspect the page, act, and verify the result without starting over each time.\n\n**Key features:**\n\n- **Persistent pages.** Named tabs carry state across scripts.\n- **Compact snapshots.** Accessibility trees give agents readable output and stable element refs.\n- **Real Puppeteer.** Scripts use the Puppeteer Page API plus a small set of agent-focused helpers.\n- **Launch or attach.** Start an isolated Chrome profile or connect to a browser you already have open.\n\n## Demo\n\nhttps://github.com/user-attachments/assets/c6cf7fb9-b1dc-46ed-93b9-6e7240990c53\n\n## CLI installation\n\n```bash\nnpm install -g dev-browser\ndev-browser install    # only needed if dev-browser cannot find Chrome\n```\n\nThe release binary includes Bun and Puppeteer. Node is not required after installation. macOS and glibc Linux are\nsupported; Windows and musl Linux are not yet supported.\n\nSnap-packaged Chromium cannot read the default `~/.dev-browser/v1` directory. On Ubuntu, use `dev-browser install`\nor point `DEV_BROWSER_CHROME` at another Chrome binary.\n\nIf your package manager blocks lifecycle scripts, run `npm rebuild -g dev-browser`, `pnpm approve-builds -g\ndev-browser`, or `bun pm -g trust dev-browser`. The CLI will also try to download its binary on first use. For a\nprivate mirror, set `DEV_BROWSER_DOWNLOAD_BASE`; set `DEV_BROWSER_SKIP_DOWNLOAD=1` if you install the binary yourself.\n\n### Quick start\n\n```bash\n# Launch a headless browser and run a script\ndev-browser --headless <<'EOF'\nconst page = await browser.getPage(\"main\");\nawait page.goto(\"https://example.com\");\nconsole.log(await page.title());\nEOF\n\n# Attach to Chrome started with `dev-browser chrome`\ndev-browser chrome\ndev-browser --connect <<'EOF'\nconsole.log(await browser.listPages());\nEOF\n```\n\nChrome 136 and newer ignore remote-debugging flags on the default profile. `dev-browser chrome` handles this by using\na dedicated profile and checking that Chrome actually started.\n\n### Using it with coding agents\n\nTell the agent to run `dev-browser --help`. The built-in guide covers the current API and the preferred\nlook → act → verify workflow.\n\nAgents that discover local skills can install the bundled skill explicitly:\n\n```bash\ndev-browser install-skill --codex   # ~/.codex/skills/dev-browser/SKILL.md\ndev-browser install-skill --claude  # ~/.claude/skills/dev-browser/SKILL.md\ndev-browser install-skill --agents  # ~/.agents/skills/dev-browser/SKILL.md\n```\n\nRun `dev-browser install-skill` without flags to update all three locations.\n\n### Idle browser cleanup\n\nLaunched browsers close after 30 minutes without a script by default. Change that per command, in the environment, or\nin `~/.dev-browser/v1/config.json`:\n\n```bash\ndev-browser --idle-timeout 5m < script.js\nDEV_BROWSER_IDLE_TIMEOUT=1h dev-browser -e 'await browser.listPages()'\n```\n\n```json\n{\n  \"idleTimeout\": \"5m\"\n}\n```\n\nDurations accept `30s`, `5m`, `1h`, or raw milliseconds. Set the value to `0` to keep a launched browser open until\n`dev-browser stop`. Attached browsers are never closed by idle cleanup. Profiles, cookies, and login state remain on\ndisk when a launched browser closes.\n\n<details>\n<summary>Allowing dev-browser in Claude Code without permission prompts</summary>\n\nAdd `dev-browser` to the `allow` list in `.claude/settings.json` for one project or `~/.claude/settings.json` for every\nproject:\n\n```json\n{\n  \"permissions\": {\n    \"allow\": [\"Bash(dev-browser *)\"]\n  }\n}\n```\n\nThis allows any matching command without another prompt. Only do this where you trust the scripts being run:\n`node:vm` gives each script fresh globals, but it is not a security sandbox.\n\n</details>\n\n<details>\n<summary>Legacy Claude Code plugin installation</summary>\n\n```text\n/plugin marketplace add sawyerhood/dev-browser\n/plugin install dev-browser@sawyerhood/dev-browser\n```\n\nRestart Claude Code after installation.\n\n</details>\n\n## Script API\n\nScripts get these globals:\n\n```javascript\n// Browser control\nbrowser.getPage(nameOrId)    // Get/create a named page, or attach by target ID\nbrowser.newPage()            // Create an anonymous page; close it yourself\nbrowser.listPages()          // [{ id, url, title, name }]\nbrowser.closePage(name)      // Close a named page\n\n// File I/O, restricted to ~/.dev-browser/v1/tmp\nsaveFile(name, data)\nreadFile(name)\n\n// Output\nconsole.log()\nconsole.warn()\nconsole.error()\n```\n\nTop-level `await` works, and the last expression becomes the command result. Pages are real [Puppeteer Page\nobjects](https://pptr.dev/api/puppeteer.page) with a few additions:\n\n```javascript\nawait page.snapshot({ interactive: true }) // Accessibility tree with refs such as e12\nawait page.click(\"ref/e12\")                 // Refs work in Puppeteer selector methods\nawait page.ref(\"e12\")                       // ElementHandle for a ref\nawait page.shot()                           // JPEG path and CSS-pixel dimensions\nawait page.waitForLoad()                    // Wait for navigation, requests, and DOM activity to settle\nawait page.fill(\"#email\", \"me@example.com\")\n```\n\nEach command runs in a fresh `node:vm` context inside the daemon. This keeps script globals separate, but it is not a\nsecurity boundary. When a command finishes or times out, its page, locator, browser-context, and registry operations\nare closed so detached work cannot interfere with the next command.\n\nScripts may run concurrently. Browser and page creation are serialized, as are input operations on different tabs\nthrough a bring-to-front lock. Two scripts using the same named page can still interleave.\n\nSee [`dev-browser --help`](docs/help.md) for the full API, error behavior, configuration, JSON output, MCP tools, and\nexamples.\n\n## Connecting to an existing browser\n\n`--connect` accepts auto-discovery, a port, an HTTP URL, a WebSocket URL, or a raw CDP Unix socket:\n\n```bash\ndev-browser chrome --profile work\ndev-browser --connect -e 'await browser.listPages()'\ndev-browser --connect 9222 -e 'await browser.listPages()'\ndev-browser --connect 'wss://provider.example?token=…' -e 'await browser.listPages()'\n```\n\nAttached browsers belong to the user. dev-browser extends only the tabs a script asks for and never closes the browser\nbecause of an idle timeout. Credentials are redacted from logs and status output, while differently authenticated\nendpoints remain separate sessions.\n\n## MCP\n\n```bash\nclaude mcp add dev-browser -- dev-browser mcp --headless\n```\n\nThe server exposes `dev_browser_run`, `dev_browser_pages`, `dev_browser_browsers`, `dev_browser_stop`, and\n`dev_browser_help` over the same warm daemon as the CLI.\n\n## Upgrading to 1.0\n\nVersion 1.0 replaces the Playwright/QuickJS implementation from dev-browser 0.2 with the Puppeteer/Bun implementation\ndeveloped as doobie. Its state lives under `~/.dev-browser/v1`, separate from both older installations.\n\nTo copy durable doobie state:\n\n```bash\ndoobie stop\ndev-browser migrate-from-doobie\n```\n\n`migrate-from-doobie` leaves `~/.doobie` untouched. Scripts written for dev-browser 0.2 need to replace helpers such as\n`snapshotForAI()` and `getByRef()` with `snapshot()` and `ref/eN`. Computer-use helpers under `page.cua` and\n`page.domCua` are not part of 1.0.\n\n## Benchmarks\n\nMeasured on Linux with a headless browser and warm daemon, medians of 9 runs:\n\n| Scenario | Time |\n| --- | ---: |\n| Empty script | ~13 ms |\n| `getPage(\"x\")` + `page.title()` | ~14 ms |\n| `page.snapshot()` on a SERP-like page | ~18 ms |\n| `page.shot()` | ~36 ms |\n| Cold daemon and Chrome launch | ~280 ms |\n\nRun them with `bun run build && bun run bench/run.ts --runs 9`. The older end-to-end comparison is in\n[dev-browser-eval](https://github.com/SawyerHood/dev-browser-eval).\n\n## Development\n\n```bash\nbun install\nbun run dev -- -e '1+1'\nbun test\nbun run build\n```\n\nDesign notes live in [docs/design-decisions.md](docs/design-decisions.md).\n\n## Releasing\n\nSee [RELEASING.md](RELEASING.md) for release-candidate testing, npm trusted publishing, and post-release verification.\n\n## License\n\nMIT\n\n## Author\n\n[Sawyer Hood](https://github.com/sawyerhood)\n",
+  "readmeHtml": "<p>&lt;p align=\"center\"&gt;</p>\n<p>  &lt;img src=\"assets/header.png\" alt=\"Dev Browser - browser automation for coding agents\" width=\"100%\"&gt;</p>\n<p>&lt;/p&gt;</p>\n<p>Brought to you by <a href=\"https://dobrowser.io\" target=\"_blank\" rel=\"noreferrer\">Do Browser</a>.</p>\n<p><code>dev-browser</code> lets coding agents control Chrome with short JavaScript scripts. The browser stays open between calls,</p>\n<p>so an agent can navigate once, inspect the page, act, and verify the result without starting over each time.</p>\n<p><strong>Key features:</strong></p>\n<ul>\n<li><strong>Persistent pages.</strong> Named tabs carry state across scripts.</li>\n<li><strong>Compact snapshots.</strong> Accessibility trees give agents readable output and stable element refs.</li>\n<li><strong>Real Puppeteer.</strong> Scripts use the Puppeteer Page API plus a small set of agent-focused helpers.</li>\n<li><strong>Launch or attach.</strong> Start an isolated Chrome profile or connect to a browser you already have open.</li>\n</ul>\n<h2>Demo</h2>\n<p>https://github.com/user-attachments/assets/c6cf7fb9-b1dc-46ed-93b9-6e7240990c53</p>\n<h2>CLI installation</h2>\n<pre><code>\nnpm install -g dev-browser\n\ndev-browser install    # only needed if dev-browser cannot find Chrome\n\n</code></pre>\n<p>The release binary includes Bun and Puppeteer. Node is not required after installation. macOS and glibc Linux are</p>\n<p>supported; Windows and musl Linux are not yet supported.</p>\n<p>Snap-packaged Chromium cannot read the default <code>~/.dev-browser/v1</code> directory. On Ubuntu, use <code>dev-browser install</code></p>\n<p>or point <code>DEV_BROWSER_CHROME</code> at another Chrome binary.</p>\n<p>If your package manager blocks lifecycle scripts, run <code>npm rebuild -g dev-browser</code>, `pnpm approve-builds -g</p>\n<p>dev-browser<code>, or </code>bun pm -g trust dev-browser`. The CLI will also try to download its binary on first use. For a</p>\n<p>private mirror, set <code>DEV_BROWSER_DOWNLOAD_BASE</code>; set <code>DEV_BROWSER_SKIP_DOWNLOAD=1</code> if you install the binary yourself.</p>\n<h3>Quick start</h3>\n<pre><code>\n# Launch a headless browser and run a script\n\ndev-browser --headless &lt;&lt;'EOF'\n\nconst page = await browser.getPage(\"main\");\n\nawait page.goto(\"https://example.com\");\n\nconsole.log(await page.title());\n\nEOF\n\n\n\n# Attach to Chrome started with `dev-browser chrome`\n\ndev-browser chrome\n\ndev-browser --connect &lt;&lt;'EOF'\n\nconsole.log(await browser.listPages());\n\nEOF\n\n</code></pre>\n<p>Chrome 136 and newer ignore remote-debugging flags on the default profile. <code>dev-browser chrome</code> handles this by using</p>\n<p>a dedicated profile and checking that Chrome actually started.</p>\n<h3>Using it with coding agents</h3>\n<p>Tell the agent to run <code>dev-browser --help</code>. The built-in guide covers the current API and the preferred</p>\n<p>look → act → verify workflow.</p>\n<p>Agents that discover local skills can install the bundled skill explicitly:</p>\n<pre><code>\ndev-browser install-skill --codex   # ~/.codex/skills/dev-browser/SKILL.md\n\ndev-browser install-skill --claude  # ~/.claude/skills/dev-browser/SKILL.md\n\ndev-browser install-skill --agents  # ~/.agents/skills/dev-browser/SKILL.md\n\n</code></pre>\n<p>Run <code>dev-browser install-skill</code> without flags to update all three locations.</p>\n<h3>Idle browser cleanup</h3>\n<p>Launched browsers close after 30 minutes without a script by default. Change that per command, in the environment, or</p>\n<p>in <code>~/.dev-browser/v1/config.json</code>:</p>\n<pre><code>\ndev-browser --idle-timeout 5m &lt; script.js\n\nDEV_BROWSER_IDLE_TIMEOUT=1h dev-browser -e 'await browser.listPages()'\n\n</code></pre>\n<pre><code>\n{\n\n  \"idleTimeout\": \"5m\"\n\n}\n\n</code></pre>\n<p>Durations accept <code>30s</code>, <code>5m</code>, <code>1h</code>, or raw milliseconds. Set the value to <code>0</code> to keep a launched browser open until</p>\n<p><code>dev-browser stop</code>. Attached browsers are never closed by idle cleanup. Profiles, cookies, and login state remain on</p>\n<p>disk when a launched browser closes.</p>\n<p>&lt;details&gt;</p>\n<p>&lt;summary&gt;Allowing dev-browser in Claude Code without permission prompts&lt;/summary&gt;</p>\n<p>Add <code>dev-browser</code> to the <code>allow</code> list in <code>.claude/settings.json</code> for one project or <code>~/.claude/settings.json</code> for every</p>\n<p>project:</p>\n<pre><code>\n{\n\n  \"permissions\": {\n\n    \"allow\": [\"Bash(dev-browser *)\"]\n\n  }\n\n}\n\n</code></pre>\n<p>This allows any matching command without another prompt. Only do this where you trust the scripts being run:</p>\n<p><code>node:vm</code> gives each script fresh globals, but it is not a security sandbox.</p>\n<p>&lt;/details&gt;</p>\n<p>&lt;details&gt;</p>\n<p>&lt;summary&gt;Legacy Claude Code plugin installation&lt;/summary&gt;</p>\n<pre><code>\n/plugin marketplace add sawyerhood/dev-browser\n\n/plugin install dev-browser@sawyerhood/dev-browser\n\n</code></pre>\n<p>Restart Claude Code after installation.</p>\n<p>&lt;/details&gt;</p>\n<h2>Script API</h2>\n<p>Scripts get these globals:</p>\n<pre><code>\n// Browser control\n\nbrowser.getPage(nameOrId)    // Get/create a named page, or attach by target ID\n\nbrowser.newPage()            // Create an anonymous page; close it yourself\n\nbrowser.listPages()          // [{ id, url, title, name }]\n\nbrowser.closePage(name)      // Close a named page\n\n\n\n// File I/O, restricted to ~/.dev-browser/v1/tmp\n\nsaveFile(name, data)\n\nreadFile(name)\n\n\n\n// Output\n\nconsole.log()\n\nconsole.warn()\n\nconsole.error()\n\n</code></pre>\n<p>Top-level <code>await</code> works, and the last expression becomes the command result. Pages are real [Puppeteer Page</p>\n<p>objects](https://pptr.dev/api/puppeteer.page) with a few additions:</p>\n<pre><code>\nawait page.snapshot({ interactive: true }) // Accessibility tree with refs such as e12\n\nawait page.click(\"ref/e12\")                 // Refs work in Puppeteer selector methods\n\nawait page.ref(\"e12\")                       // ElementHandle for a ref\n\nawait page.shot()                           // JPEG path and CSS-pixel dimensions\n\nawait page.waitForLoad()                    // Wait for navigation, requests, and DOM activity to settle\n\nawait page.fill(\"#email\", \"me@example.com\")\n\n</code></pre>\n<p>Each command runs in a fresh <code>node:vm</code> context inside the daemon. This keeps script globals separate, but it is not a</p>\n<p>security boundary. When a command finishes or times out, its page, locator, browser-context, and registry operations</p>\n<p>are closed so detached work cannot interfere with the next command.</p>\n<p>Scripts may run concurrently. Browser and page creation are serialized, as are input operations on different tabs</p>\n<p>through a bring-to-front lock. Two scripts using the same named page can still interleave.</p>\n<p>See [<code>dev-browser --help</code>](docs/help.md) for the full API, error behavior, configuration, JSON output, MCP tools, and</p>\n<p>examples.</p>\n<h2>Connecting to an existing browser</h2>\n<p><code>--connect</code> accepts auto-discovery, a port, an HTTP URL, a WebSocket URL, or a raw CDP Unix socket:</p>\n<pre><code>\ndev-browser chrome --profile work\n\ndev-browser --connect -e 'await browser.listPages()'\n\ndev-browser --connect 9222 -e 'await browser.listPages()'\n\ndev-browser --connect 'wss://provider.example?token=…' -e 'await browser.listPages()'\n\n</code></pre>\n<p>Attached browsers belong to the user. dev-browser extends only the tabs a script asks for and never closes the browser</p>\n<p>because of an idle timeout. Credentials are redacted from logs and status output, while differently authenticated</p>\n<p>endpoints remain separate sessions.</p>\n<h2>MCP</h2>\n<pre><code>\nclaude mcp add dev-browser -- dev-browser mcp --headless\n\n</code></pre>\n<p>The server exposes <code>dev_browser_run</code>, <code>dev_browser_pages</code>, <code>dev_browser_browsers</code>, <code>dev_browser_stop</code>, and</p>\n<p><code>dev_browser_help</code> over the same warm daemon as the CLI.</p>\n<h2>Upgrading to 1.0</h2>\n<p>Version 1.0 replaces the Playwright/QuickJS implementation from dev-browser 0.2 with the Puppeteer/Bun implementation</p>\n<p>developed as doobie. Its state lives under <code>~/.dev-browser/v1</code>, separate from both older installations.</p>\n<p>To copy durable doobie state:</p>\n<pre><code>\ndoobie stop\n\ndev-browser migrate-from-doobie\n\n</code></pre>\n<p><code>migrate-from-doobie</code> leaves <code>~/.doobie</code> untouched. Scripts written for dev-browser 0.2 need to replace helpers such as</p>\n<p><code>snapshotForAI()</code> and <code>getByRef()</code> with <code>snapshot()</code> and <code>ref/eN</code>. Computer-use helpers under <code>page.cua</code> and</p>\n<p><code>page.domCua</code> are not part of 1.0.</p>\n<h2>Benchmarks</h2>\n<p>Measured on Linux with a headless browser and warm daemon, medians of 9 runs:</p>\n<p>| Scenario | Time |</p>\n<p>| --- | ---: |</p>\n<p>| Empty script | ~13 ms |</p>\n<p>| <code>getPage(\"x\")</code> + <code>page.title()</code> | ~14 ms |</p>\n<p>| <code>page.snapshot()</code> on a SERP-like page | ~18 ms |</p>\n<p>| <code>page.shot()</code> | ~36 ms |</p>\n<p>| Cold daemon and Chrome launch | ~280 ms |</p>\n<p>Run them with <code>bun run build &amp;&amp; bun run bench/run.ts --runs 9</code>. The older end-to-end comparison is in</p>\n<p><a href=\"https://github.com/SawyerHood/dev-browser-eval\" target=\"_blank\" rel=\"noreferrer\">dev-browser-eval</a>.</p>\n<h2>Development</h2>\n<pre><code>\nbun install\n\nbun run dev -- -e '1+1'\n\nbun test\n\nbun run build\n\n</code></pre>\n<p>Design notes live in [docs/design-decisions.md](docs/design-decisions.md).</p>\n<h2>Releasing</h2>\n<p>See [RELEASING.md](RELEASING.md) for release-candidate testing, npm trusted publishing, and post-release verification.</p>\n<h2>License</h2>\n<p>MIT</p>\n<h2>Author</h2>\n<p><a href=\"https://github.com/sawyerhood\" target=\"_blank\" rel=\"noreferrer\">Sawyer Hood</a></p>",
   "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.014Z",
+  "updatedAt": "2026-09-05T00:44:45Z",
   "author": {
-    "login": "sawyerhood",
-    "name": "sawyerhood",
-    "avatarUrl": "",
-    "profileUrl": "https://github.com/sawyerhood",
+    "login": "SawyerHood",
+    "name": "Sawyer Hood",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/2380669?v=4",
+    "profileUrl": "https://github.com/SawyerHood",
     "location": ""
   },
   "location": null,
   "related": [
     {
-      "slug": "affaan-m-everything-claude-code",
-      "displayName": "affaan-m/everything-claude-code",
-      "stars": 175105,
+      "slug": "kkkkhazix-aihot",
+      "displayName": "kkkkhazix/aihot",
+      "stars": 21431,
       "relation": "shared_tag",
-      "evidence": "Discovered"
+      "evidence": "Skills by Binance"
     },
     {
-      "slug": "snailclimb-javaguide",
-      "displayName": "Snailclimb/JavaGuide",
-      "stars": 155456,
+      "slug": "roundtable02-tutor-skills",
+      "displayName": "roundtable02/tutor-skills",
+      "stars": 1350,
       "relation": "shared_tag",
-      "evidence": "Discovered"
+      "evidence": "Skills by Binance"
     },
     {
-      "slug": "nousresearch-hermes-agent",
-      "displayName": "NousResearch/hermes-agent",
-      "stars": 136906,
+      "slug": "chubbyguan-chubbyskills",
+      "displayName": "chubbyguan/chubbyskills",
+      "stars": 1249,
       "relation": "shared_tag",
-      "evidence": "Discovered"
+      "evidence": "Skills by Binance"
     },
     {
-      "slug": "thedotmack-claude-mem",
-      "displayName": "thedotmack/claude-mem",
-      "stars": 73174,
+      "slug": "moizibnyousaf-ai-agent-skills",
+      "displayName": "moizibnyousaf/ai-agent-skills",
+      "stars": 1151,
       "relation": "shared_tag",
-      "evidence": "Discovered"
+      "evidence": "Skills by Binance"
     },
     {
-      "slug": "bytedance-deer-flow",
-      "displayName": "bytedance/deer-flow",
-      "stars": 65827,
+      "slug": "vostride-agent-qa",
+      "displayName": "vostride/agent-qa",
+      "stars": 906,
       "relation": "shared_tag",
-      "evidence": "Discovered"
+      "evidence": "Skills by Binance"
     },
     {
-      "slug": "farion1231-cc-switch",
-      "displayName": "farion1231/cc-switch",
-      "stars": 62022,
+      "slug": "swarmclawai-swarmvault",
+      "displayName": "swarmclawai/swarmvault",
+      "stars": 718,
       "relation": "shared_tag",
-      "evidence": "Discovered"
+      "evidence": "Skills by Binance"
     },
     {
-      "slug": "gsd-build-get-shit-done",
-      "displayName": "gsd-build/get-shit-done",
-      "stars": 60616,
+      "slug": "swarmclawai-swarmclaw",
+      "displayName": "swarmclawai/swarmclaw",
+      "stars": 689,
       "relation": "shared_tag",
-      "evidence": "Discovered"
+      "evidence": "Skills by Binance"
     },
     {
-      "slug": "shareai-lab-learn-claude-code",
-      "displayName": "shareAI-lab/learn-claude-code",
-      "stars": 58737,
+      "slug": "mhattingpete-claude-skills-marketplace",
+      "displayName": "mhattingpete/claude-skills-marketplace",
+      "stars": 683,
       "relation": "shared_tag",
-      "evidence": "Discovered"
+      "evidence": "Skills by Binance"
     }
   ],
   "mapLocation": {
-    "id": "virtual-toronto",
-    "label": "Global Skill Market / Toronto / Discovered",
-    "lat": 43.6532,
-    "lon": -79.3832,
+    "id": "virtual-paris",
+    "label": "Global Skill Market / Paris / Skills by Binance",
+    "lat": 48.8566,
+    "lon": 2.3522,
     "source": "virtual_market"
   }
 }

@@ -12,7 +12,7 @@
   "readme": "# googleworkspace/gws-modelarmor\n\nFilter user-generated content for safety",
   "readmeHtml": "<h1>googleworkspace/gws-modelarmor</h1>\n<p>Filter user-generated content for safety</p>",
   "skillMd": "",
-  "updatedAt": "2026-10-14T22:08:28.312Z",
+  "updatedAt": "2026-10-15T21:59:20.746Z",
   "author": {
     "login": "googleworkspace",
     "name": "Google Workspace",
@@ -23,15 +23,15 @@
   "location": null,
   "related": [
     {
-      "slug": "googleworkspace-gws-shared",
-      "displayName": "googleworkspace/gws-shared",
+      "slug": "googleworkspace-gws-drive",
+      "displayName": "googleworkspace/gws-drive",
       "stars": 0,
       "relation": "source_overlap",
       "evidence": "author:googleworkspace"
     },
     {
-      "slug": "googleworkspace-gws-drive",
-      "displayName": "googleworkspace/gws-drive",
+      "slug": "googleworkspace-gws-shared",
+      "displayName": "googleworkspace/gws-shared",
       "stars": 0,
       "relation": "source_overlap",
       "evidence": "author:googleworkspace"

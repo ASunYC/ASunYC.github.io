@@ -1,0 +1,89 @@
+{
+  "id": "skill:c5huracan-meyhem",
+  "slug": "c5huracan-meyhem",
+  "name": "meyhem",
+  "displayName": "c5huracan/meyhem",
+  "description": "Agent-native web search with feedback-driven ranking via REST API and MCP server",
+  "stars": 4,
+  "category": "Skills by Binance",
+  "source": "heilcheng",
+  "url": "https://github.com/c5huracan/meyhem",
+  "githubRepo": "c5huracan/meyhem",
+  "readme": "# Meyhem\n\nFind the right MCP server for your task. 1,400+ servers indexed and ranked by community trust.\n\nAlso: outcome-ranked web search for AI agents across multiple engines.\n\nNo API key. No signup. No rate limits.\n\n## MCP Server Discovery\n\n### REST\n\n```bash\ncurl -X POST https://api.rhdxm.com/find \\\n  -H 'Content-Type: application/json' \\\n  -d '{\"query\": \"I need to query a Postgres database\", \"max_results\": 5}'\n```\n\n### Python (no dependencies)\n\n```bash\npython3 mcp-finder/finder.py \"postgres database\"\npython3 mcp-finder/finder.py \"browser automation\" -n 3\npython3 mcp-finder/finder.py \"kubernetes monitoring\"\n```\n\n### MCP (Claude Desktop, Cursor, etc.)\n\n```json\n{\"mcpServers\": {\"meyhem\": {\"command\": \"npx\", \"args\": [\"mcp-remote\", \"https://api.rhdxm.com/mcp/\"]}}}\n```\n\nTools: `find_server`, `search`, `select`, `outcome`\n\n### OpenClaw\n\nAvailable on ClawHub as `mcp-finder`, `meyhem-search`, and `meyhem-researcher`.\n\n## Web Search for Agents\n\n```bash\npython3 meyhem-search/search.py \"python asyncio best practices\"\npython3 meyhem-researcher/researcher.py \"kubernetes networking\" -q 5\n```\n\n```bash\ncurl -X POST https://api.rhdxm.com/search \\\n  -H 'Content-Type: application/json' \\\n  -d '{\"query\": \"python asyncio best practices\", \"agent_id\": \"my-agent\", \"max_results\": 5}'\n```\n\n## Example Agents\n\n### Research Agent\n\n```bash\npip install httpx claudette\npython example_agent.py 'best practices for error handling in Python async code'\n```\n\n### MCP Discovery Agent\n\n```bash\npip install httpx claudette\npython mcp_discover.py 'I need to interact with a SQLite database'\n```\n\n## Links\n\n- **Try it live:** https://api.rhdxm.com\n- **API docs:** https://api.rhdxm.com/docs\n- **ClawHub:** mcp-finder / meyhem-search / meyhem-researcher\n",
+  "readmeHtml": "<h1>Meyhem</h1>\n<p>Find the right MCP server for your task. 1,400+ servers indexed and ranked by community trust.</p>\n<p>Also: outcome-ranked web search for AI agents across multiple engines.</p>\n<p>No API key. No signup. No rate limits.</p>\n<h2>MCP Server Discovery</h2>\n<h3>REST</h3>\n<pre><code>\ncurl -X POST https://api.rhdxm.com/find \\\n\n  -H 'Content-Type: application/json' \\\n\n  -d '{\"query\": \"I need to query a Postgres database\", \"max_results\": 5}'\n\n</code></pre>\n<h3>Python (no dependencies)</h3>\n<pre><code>\npython3 mcp-finder/finder.py \"postgres database\"\n\npython3 mcp-finder/finder.py \"browser automation\" -n 3\n\npython3 mcp-finder/finder.py \"kubernetes monitoring\"\n\n</code></pre>\n<h3>MCP (Claude Desktop, Cursor, etc.)</h3>\n<pre><code>\n{\"mcpServers\": {\"meyhem\": {\"command\": \"npx\", \"args\": [\"mcp-remote\", \"https://api.rhdxm.com/mcp/\"]}}}\n\n</code></pre>\n<p>Tools: <code>find_server</code>, <code>search</code>, <code>select</code>, <code>outcome</code></p>\n<h3>OpenClaw</h3>\n<p>Available on ClawHub as <code>mcp-finder</code>, <code>meyhem-search</code>, and <code>meyhem-researcher</code>.</p>\n<h2>Web Search for Agents</h2>\n<pre><code>\npython3 meyhem-search/search.py \"python asyncio best practices\"\n\npython3 meyhem-researcher/researcher.py \"kubernetes networking\" -q 5\n\n</code></pre>\n<pre><code>\ncurl -X POST https://api.rhdxm.com/search \\\n\n  -H 'Content-Type: application/json' \\\n\n  -d '{\"query\": \"python asyncio best practices\", \"agent_id\": \"my-agent\", \"max_results\": 5}'\n\n</code></pre>\n<h2>Example Agents</h2>\n<h3>Research Agent</h3>\n<pre><code>\npip install httpx claudette\n\npython example_agent.py 'best practices for error handling in Python async code'\n\n</code></pre>\n<h3>MCP Discovery Agent</h3>\n<pre><code>\npip install httpx claudette\n\npython mcp_discover.py 'I need to interact with a SQLite database'\n\n</code></pre>\n<h2>Links</h2>\n<ul>\n<li><strong>Try it live:</strong> https://api.rhdxm.com</li>\n<li><strong>API docs:</strong> https://api.rhdxm.com/docs</li>\n<li><strong>ClawHub:</strong> mcp-finder / meyhem-search / meyhem-researcher</li>\n</ul>",
+  "skillMd": "",
+  "updatedAt": "2026-03-14T17:36:05Z",
+  "author": {
+    "login": "c5huracan",
+    "name": "c5huracan",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/93015898?v=4",
+    "profileUrl": "https://github.com/c5huracan",
+    "location": "Zion"
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "kkkkhazix-aihot",
+      "displayName": "kkkkhazix/aihot",
+      "stars": 21431,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "sawyerhood-dev-browser",
+      "displayName": "sawyerhood/dev-browser",
+      "stars": 6666,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "roundtable02-tutor-skills",
+      "displayName": "roundtable02/tutor-skills",
+      "stars": 1350,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "chubbyguan-chubbyskills",
+      "displayName": "chubbyguan/chubbyskills",
+      "stars": 1249,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "moizibnyousaf-ai-agent-skills",
+      "displayName": "moizibnyousaf/ai-agent-skills",
+      "stars": 1151,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "vostride-agent-qa",
+      "displayName": "vostride/agent-qa",
+      "stars": 906,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "swarmclawai-swarmvault",
+      "displayName": "swarmclawai/swarmvault",
+      "stars": 718,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "swarmclawai-swarmclaw",
+      "displayName": "swarmclawai/swarmclaw",
+      "stars": 689,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-bengaluru",
+    "label": "Global Skill Market / Bengaluru / Skills by Binance",
+    "lat": 12.9716,
+    "lon": 77.5946,
+    "source": "virtual_market"
+  }
+}

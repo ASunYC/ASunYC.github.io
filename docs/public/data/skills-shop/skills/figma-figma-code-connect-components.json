@@ -12,7 +12,7 @@
   "readme": "# figma/figma-code-connect-components\n\nConnect Figma design components to code components using Code Connect",
   "readmeHtml": "<h1>figma/figma-code-connect-components</h1>\n<p>Connect Figma design components to code components using Code Connect</p>",
   "skillMd": "",
-  "updatedAt": "2026-10-14T22:08:28.431Z",
+  "updatedAt": "2026-10-15T21:59:20.778Z",
   "author": {
     "login": "figma",
     "name": "Figma",
@@ -22,12 +22,19 @@
   },
   "location": {
     "id": "san-francisco",
-    "label": "San Francisco, London, Austin, Lisbon, Singapore",
+    "label": "San Francisco, CA",
     "lat": 37.7749,
     "lon": -122.4194,
     "source": "github_profile"
   },
   "related": [
+    {
+      "slug": "figma-figma-generate-library",
+      "displayName": "figma/figma-generate-library",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:figma"
+    },
     {
       "slug": "figma-figma-create-design-system-rules",
       "displayName": "figma/figma-create-design-system-rules",
@@ -50,13 +57,6 @@
       "evidence": "author:figma"
     },
     {
-      "slug": "figma-figma-generate-library",
-      "displayName": "figma/figma-generate-library",
-      "stars": 0,
-      "relation": "source_overlap",
-      "evidence": "author:figma"
-    },
-    {
       "slug": "figma-figma-implement-design",
       "displayName": "figma/figma-implement-design",
       "stars": 0,
@@ -71,23 +71,23 @@
       "evidence": "author:figma"
     },
     {
-      "slug": "coreyhaines31-ab-testing",
-      "displayName": "coreyhaines31/ab-testing",
-      "stars": 54738,
+      "slug": "garrytan-office-hours",
+      "displayName": "garrytan/office-hours",
+      "stars": 0,
       "relation": "shared_tag",
       "evidence": "TypeScript Skills"
     },
     {
-      "slug": "phuryn-ab-test-analysis",
-      "displayName": "phuryn/ab-test-analysis",
-      "stars": 27041,
+      "slug": "coreyhaines31-ab-testing",
+      "displayName": "coreyhaines31/ab-testing",
+      "stars": 54886,
       "relation": "shared_tag",
       "evidence": "TypeScript Skills"
     }
   ],
   "mapLocation": {
     "id": "san-francisco",
-    "label": "San Francisco, London, Austin, Lisbon, Singapore",
+    "label": "San Francisco, CA",
     "lat": 37.7749,
     "lon": -122.4194,
     "source": "github_profile"

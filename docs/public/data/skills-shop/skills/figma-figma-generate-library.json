@@ -12,7 +12,7 @@
   "readme": "# figma/figma-generate-library\n\nBuild or update a design system library in Figma from a codebase",
   "readmeHtml": "<h1>figma/figma-generate-library</h1>\n<p>Build or update a design system library in Figma from a codebase</p>",
   "skillMd": "",
-  "updatedAt": "2026-10-14T22:08:28.432Z",
+  "updatedAt": "2026-10-15T21:59:20.778Z",
   "author": {
     "login": "figma",
     "name": "Figma",
@@ -22,7 +22,7 @@
   },
   "location": {
     "id": "san-francisco",
-    "label": "San Francisco, London, Austin, Lisbon, Singapore",
+    "label": "San Francisco, CA",
     "lat": 37.7749,
     "lon": -122.4194,
     "source": "github_profile"
@@ -71,23 +71,23 @@
       "evidence": "author:figma"
     },
     {
-      "slug": "coreyhaines31-ab-testing",
-      "displayName": "coreyhaines31/ab-testing",
-      "stars": 54738,
+      "slug": "garrytan-office-hours",
+      "displayName": "garrytan/office-hours",
+      "stars": 0,
       "relation": "shared_tag",
       "evidence": "TypeScript Skills"
     },
     {
-      "slug": "phuryn-ab-test-analysis",
-      "displayName": "phuryn/ab-test-analysis",
-      "stars": 27041,
+      "slug": "coreyhaines31-ab-testing",
+      "displayName": "coreyhaines31/ab-testing",
+      "stars": 54886,
       "relation": "shared_tag",
       "evidence": "TypeScript Skills"
     }
   ],
   "mapLocation": {
     "id": "san-francisco",
-    "label": "San Francisco, London, Austin, Lisbon, Singapore",
+    "label": "San Francisco, CA",
     "lat": 37.7749,
     "lon": -122.4194,
     "source": "github_profile"

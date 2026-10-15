@@ -12,7 +12,7 @@
   "readme": "# clickhouse/clickhouse-best-practices\n\nBest practices for working with ClickHouse",
   "readmeHtml": "<h1>clickhouse/clickhouse-best-practices</h1>\n<p>Best practices for working with ClickHouse</p>",
   "skillMd": "",
-  "updatedAt": "2026-10-14T22:08:28.309Z",
+  "updatedAt": "2026-10-15T21:59:20.742Z",
   "author": {
     "login": "ClickHouse",
     "name": "ClickHouse",
@@ -64,23 +64,23 @@
       "evidence": "author:ClickHouse"
     },
     {
+      "slug": "anthropics-docx",
+      "displayName": "anthropics/docx",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "googleworkspace-gws-drive",
+      "displayName": "googleworkspace/gws-drive",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
       "slug": "cloudflare-security-audit-skill",
       "displayName": "cloudflare/security-audit-skill",
-      "stars": 29582,
-      "relation": "shared_tag",
-      "evidence": "Official Skills by"
-    },
-    {
-      "slug": "angular-angular-developer",
-      "displayName": "angular/angular-developer",
-      "stars": 685,
-      "relation": "shared_tag",
-      "evidence": "Official Skills by"
-    },
-    {
-      "slug": "testmu-ai-api-skill",
-      "displayName": "testmu-ai/api-skill",
-      "stars": 376,
+      "stars": 29867,
       "relation": "shared_tag",
       "evidence": "Official Skills by"
     }

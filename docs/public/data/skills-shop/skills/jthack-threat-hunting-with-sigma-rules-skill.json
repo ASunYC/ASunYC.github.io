@@ -5,14 +5,14 @@
   "displayName": "jthack/threat-hunting-with-sigma-rules-skill",
   "description": "Hunt for threats using Sigma detection rules",
   "stars": 0,
-  "category": "Skills by Trail of Bits",
+  "category": "Skills by Binance",
   "source": "heilcheng",
   "url": "https://github.com/jthack/threat-hunting-with-sigma-rules-skill",
   "githubRepo": "jthack/threat-hunting-with-sigma-rules-skill",
   "readme": "# jthack/threat-hunting-with-sigma-rules-skill\n\nHunt for threats using Sigma detection rules",
   "readmeHtml": "<h1>jthack/threat-hunting-with-sigma-rules-skill</h1>\n<p>Hunt for threats using Sigma detection rules</p>",
   "skillMd": "",
-  "updatedAt": "2026-10-14T22:08:28.464Z",
+  "updatedAt": "2026-10-15T21:59:20.799Z",
   "author": {
     "login": "jthack",
     "name": "Joseph Thacker",
@@ -30,18 +30,60 @@
       "evidence": "author:jthack"
     },
     {
-      "slug": "grittygrease-safe-encryption-skill",
-      "displayName": "grittygrease/safe-encryption-skill",
-      "stars": 4,
+      "slug": "kkkkhazix-aihot",
+      "displayName": "kkkkhazix/aihot",
+      "stars": 21431,
       "relation": "shared_tag",
-      "evidence": "Skills by Trail of Bits"
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "sawyerhood-dev-browser",
+      "displayName": "sawyerhood/dev-browser",
+      "stars": 6666,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "roundtable02-tutor-skills",
+      "displayName": "roundtable02/tutor-skills",
+      "stars": 1350,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "chubbyguan-chubbyskills",
+      "displayName": "chubbyguan/chubbyskills",
+      "stars": 1249,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "moizibnyousaf-ai-agent-skills",
+      "displayName": "moizibnyousaf/ai-agent-skills",
+      "stars": 1151,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "vostride-agent-qa",
+      "displayName": "vostride/agent-qa",
+      "stars": 906,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "swarmclawai-swarmvault",
+      "displayName": "swarmclawai/swarmvault",
+      "stars": 718,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
     }
   ],
   "mapLocation": {
-    "id": "virtual-singapore",
-    "label": "Global Skill Market / Singapore / Skills by Trail of Bits",
-    "lat": 1.3521,
-    "lon": 103.8198,
+    "id": "virtual-san-francisco",
+    "label": "Global Skill Market / San Francisco / Skills by Binance",
+    "lat": 37.7749,
+    "lon": -122.4194,
     "source": "virtual_market"
   }
 }

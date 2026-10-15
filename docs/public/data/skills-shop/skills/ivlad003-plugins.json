@@ -1,0 +1,89 @@
+{
+  "id": "skill:ivlad003-plugins",
+  "slug": "ivlad003-plugins",
+  "name": "plugins",
+  "displayName": "ivlad003/plugins",
+  "description": "Query and analyze Datadog logs, metrics, monitors, and traces directly from Claude Code via REST API",
+  "stars": 0,
+  "category": "Skills by Binance",
+  "source": "heilcheng",
+  "url": "https://github.com/Ivlad003/plugins",
+  "githubRepo": "Ivlad003/plugins",
+  "readme": "# ivlad-plugins\n\nClaude Code plugin marketplace by ivlad003 — observability, DevOps, and developer productivity tools.\n\n## Installation\n\n```bash\n/plugin marketplace add Ivlad003/plugins\n```\n\n## Available Plugins\n\n### newrelic-observability\n\nQuery and analyze New Relic data directly from Claude Code via REST API calls. No MCP server or Python needed.\n\n```bash\n/plugin install newrelic-observability@ivlad-plugins\n```\n\n**Prerequisites:** Set `NEW_RELIC_API_KEY` and `NEW_RELIC_ACCOUNT_ID` environment variables.\n\n**Includes:**\n\n| Component | Description |\n|-----------|-------------|\n| `/nr-query <NRQL>` | Run any NRQL query |\n| `/nr-alerts` | Check active alert violations |\n| `/nr-status` | Health overview of all monitored apps |\n| `/nr-investigate` | Full incident investigation with root cause analysis |\n| `newrelic-ops` skill | 12 API operations + 3 investigation workflows |\n| `newrelic-investigator` agent | Correlates signals for incident root cause analysis |\n\n**Usage:**\n```\n\"What's the error rate for my-app?\"\n\"Are there any open alerts?\"\n/nr-status\n/nr-query SELECT average(duration) FROM Transaction FACET name SINCE 1 hour ago\n/nr-investigate checkout is returning 500s\n```\n\n### datadog-observability\n\nQuery and analyze Datadog data directly from Claude Code via REST API calls. No MCP server or Python needed.\n\n```bash\n/plugin install datadog-observability@ivlad-plugins\n```\n\n**Prerequisites:** Set `DD_API_KEY` and `DD_APP_KEY` environment variables. Optionally set `DD_SITE` (defaults to `datadoghq.com`).\n\n**Includes:**\n\n| Component | Description |\n|-----------|-------------|\n| `/dd-logs <query>` | Search and filter logs |\n| `/dd-query <metric>` | Run a metrics query |\n| `/dd-alerts` | Check triggered monitors |\n| `/dd-status` | Health overview of infrastructure |\n| `/dd-investigate` | Full incident investigation with root cause analysis |\n| `datadog-ops` skill | 12 API operations + 3 investigation workflows |\n| `datadog-investigator` agent | Correlates signals for incident root cause analysis |\n\n**Usage:**\n```\n\"Search logs for errors in the payment service\"\n\"What monitors are triggered?\"\n/dd-status\n/dd-logs service:checkout status:error\n/dd-investigate the checkout service is returning 500s\n```\n\n## License\n\nMIT\n",
+  "readmeHtml": "<h1>ivlad-plugins</h1>\n<p>Claude Code plugin marketplace by ivlad003 — observability, DevOps, and developer productivity tools.</p>\n<h2>Installation</h2>\n<pre><code>\n/plugin marketplace add Ivlad003/plugins\n\n</code></pre>\n<h2>Available Plugins</h2>\n<h3>newrelic-observability</h3>\n<p>Query and analyze New Relic data directly from Claude Code via REST API calls. No MCP server or Python needed.</p>\n<pre><code>\n/plugin install newrelic-observability@ivlad-plugins\n\n</code></pre>\n<p><strong>Prerequisites:</strong> Set <code>NEW_RELIC_API_KEY</code> and <code>NEW_RELIC_ACCOUNT_ID</code> environment variables.</p>\n<p><strong>Includes:</strong></p>\n<p>| Component | Description |</p>\n<p>|-----------|-------------|</p>\n<p>| <code>/nr-query &lt;NRQL&gt;</code> | Run any NRQL query |</p>\n<p>| <code>/nr-alerts</code> | Check active alert violations |</p>\n<p>| <code>/nr-status</code> | Health overview of all monitored apps |</p>\n<p>| <code>/nr-investigate</code> | Full incident investigation with root cause analysis |</p>\n<p>| <code>newrelic-ops</code> skill | 12 API operations + 3 investigation workflows |</p>\n<p>| <code>newrelic-investigator</code> agent | Correlates signals for incident root cause analysis |</p>\n<p><strong>Usage:</strong></p>\n<pre><code>\n\"What's the error rate for my-app?\"\n\n\"Are there any open alerts?\"\n\n/nr-status\n\n/nr-query SELECT average(duration) FROM Transaction FACET name SINCE 1 hour ago\n\n/nr-investigate checkout is returning 500s\n\n</code></pre>\n<h3>datadog-observability</h3>\n<p>Query and analyze Datadog data directly from Claude Code via REST API calls. No MCP server or Python needed.</p>\n<pre><code>\n/plugin install datadog-observability@ivlad-plugins\n\n</code></pre>\n<p><strong>Prerequisites:</strong> Set <code>DD_API_KEY</code> and <code>DD_APP_KEY</code> environment variables. Optionally set <code>DD_SITE</code> (defaults to <code>datadoghq.com</code>).</p>\n<p><strong>Includes:</strong></p>\n<p>| Component | Description |</p>\n<p>|-----------|-------------|</p>\n<p>| <code>/dd-logs &lt;query&gt;</code> | Search and filter logs |</p>\n<p>| <code>/dd-query &lt;metric&gt;</code> | Run a metrics query |</p>\n<p>| <code>/dd-alerts</code> | Check triggered monitors |</p>\n<p>| <code>/dd-status</code> | Health overview of infrastructure |</p>\n<p>| <code>/dd-investigate</code> | Full incident investigation with root cause analysis |</p>\n<p>| <code>datadog-ops</code> skill | 12 API operations + 3 investigation workflows |</p>\n<p>| <code>datadog-investigator</code> agent | Correlates signals for incident root cause analysis |</p>\n<p><strong>Usage:</strong></p>\n<pre><code>\n\"Search logs for errors in the payment service\"\n\n\"What monitors are triggered?\"\n\n/dd-status\n\n/dd-logs service:checkout status:error\n\n/dd-investigate the checkout service is returning 500s\n\n</code></pre>\n<h2>License</h2>\n<p>MIT</p>",
+  "skillMd": "",
+  "updatedAt": "2026-03-20T11:29:34Z",
+  "author": {
+    "login": "Ivlad003",
+    "name": "Vlad Kosmach",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/6023131?v=4",
+    "profileUrl": "https://github.com/Ivlad003",
+    "location": "Vinnitsia"
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "kkkkhazix-aihot",
+      "displayName": "kkkkhazix/aihot",
+      "stars": 21431,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "sawyerhood-dev-browser",
+      "displayName": "sawyerhood/dev-browser",
+      "stars": 6666,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "roundtable02-tutor-skills",
+      "displayName": "roundtable02/tutor-skills",
+      "stars": 1350,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "chubbyguan-chubbyskills",
+      "displayName": "chubbyguan/chubbyskills",
+      "stars": 1249,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "moizibnyousaf-ai-agent-skills",
+      "displayName": "moizibnyousaf/ai-agent-skills",
+      "stars": 1151,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "vostride-agent-qa",
+      "displayName": "vostride/agent-qa",
+      "stars": 906,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "swarmclawai-swarmvault",
+      "displayName": "swarmclawai/swarmvault",
+      "stars": 718,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "swarmclawai-swarmclaw",
+      "displayName": "swarmclawai/swarmclaw",
+      "stars": 689,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-london",
+    "label": "Global Skill Market / London / Skills by Binance",
+    "lat": 51.5072,
+    "lon": -0.1276,
+    "source": "virtual_market"
+  }
+}

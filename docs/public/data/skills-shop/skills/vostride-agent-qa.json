@@ -1,0 +1,89 @@
+{
+  "id": "skill:vostride-agent-qa",
+  "slug": "vostride-agent-qa",
+  "name": "agent-qa",
+  "displayName": "vostride/agent-qa",
+  "description": "Three skills for authoring natural-language web and mobile tests, triaging failures, and debugging fixes with MCP evidence",
+  "stars": 906,
+  "category": "Skills by Binance",
+  "source": "heilcheng",
+  "url": "https://github.com/vostride/agent-qa",
+  "githubRepo": "vostride/agent-qa",
+  "readme": "<div align=\"center\">\n  <img src=\"https://raw.githubusercontent.com/vostride/agent-qa/main/docs/assets/readme-banner.png\" alt=\"agent-qa banner\"/>\n\n  [![npm](https://img.shields.io/npm/dm/agent-qa?style=flat&colorA=13110f&colorB=196872)](https://npm.chart.dev/agent-qa?primary=neutral&gray=neutral&theme=dark)\n  [![npm version](https://img.shields.io/npm/v/agent-qa.svg?style=flat&colorA=13110f&colorB=196872)](https://www.npmjs.com/package/agent-qa)\n  [![GitHub stars](https://img.shields.io/github/stars/vostride/agent-qa?style=flat&colorA=13110f&colorB=196872)](https://github.com/vostride/agent-qa/stargazers)\n\n  <p>\n    <a href=\"https://vostride.com/docs/agent-qa\">Docs</a>\n    ·\n    <a href=\"https://github.com/vostride/agent-qa/tree/main/demo-project\">Demo</a>\n    ·\n    <a href=\"https://github.com/vostride/agent-qa/issues\">Issues</a>\n  </p>\n</div>\n\n## agent-qa\nThe self-improving Agentic QA harness with Memory\n\nWrite tests in natural language for web and mobile. agent-qa learns from past runs, adapts to UI changes, and catches regressions before you ship.\n\n[Docs](https://vostride.com/docs/agent-qa) | [Quickstart](https://vostride.com/docs/agent-qa/quickstart)\n\n## Features\n\n- **Write tests in natural language for web and mobile**: Define actions and assertions in human language while agents work from visible roles, labels, and screen state.\n- **Self-healing test execution**: When any sub-action, such as click, fill, or select, fails, agent-qa re-observes the UI and tries a different path in the same run. Tests recover from UI drift and flaky interactions instead of failing on the first broken action.\n- **Self-improves with Memory**: With every test run, agent-qa builds execution memory from product, suite, and test observations, then adds that context to future runs. agent-qa also curates memory from steps that were healed during execution, helping future runs avoid the same mistake.\n- **Built for humans and machines**: A polished dashboard and CLI for developers, plus MCP and skills for coding agents.\n- **Accelerate runs with smart Cache**: The action cache reuses validated plans across similar subsequent test runs, reducing planner work, token usage, and runtime overhead.\n- **Run sandboxed hooks during tests**: Run Node, Bun, Python, or Bash hooks in isolated Docker containers to set up environments, call APIs, seed fixtures, tear down state, or pass structured outputs back into the active test run.\n- **Open source, reviewable QA**: The harness is open source, and tests, configs, hooks, memory, and suite logic all live as version-controlled code, so every change can be diffed, reviewed, reused, and shared across teams.\n- **Bring your own LLM**: Run tests with the model of your choice via OpenAI- and Anthropic-compatible endpoints, Gemini, local or open-source models, and subscriptions like Codex and Claude Code.\n\n## Quickstart\n\nInstall the package:\n\n```sh\nnpm install -D agent-qa\n```\n\nFor Codex or Claude Code subscription auth, also install:\n\n```sh\nnpm install -D @vostride/agent-qa-subscription-auth\n```\n\nInstall Docker before using hooks. agent-qa runs hooks in a sandboxed runtime, and Docker is required for the Node, Bun, Python, and Bash hook containers.\n\nInitialize agent-qa and install the runtime support you need:\n\n```sh\nnpx agent-qa init\nnpx agent-qa install-browsers --chromium\n# Mobile projects:\nnpx agent-qa install-mobile-drivers --all\n```\n\nStart the dashboard, complete auth, and run tests from the UI:\n\n```sh\nnpx agent-qa dashboard --open\n```\n\nFor the full setup flow, use the [quickstart](https://vostride.com/docs/agent-qa/quickstart).\n\n## CLI\n\nRun tests from the CLI:\n\n```sh\nnpx agent-qa run tests/hacker-news-top-story.yaml\n```\n\n## Docs\n\n- [Full docs](https://vostride.com/docs/agent-qa)\n- [Quickstart](https://vostride.com/docs/agent-qa/quickstart)\n- [CLI reference](https://vostride.com/docs/agent-qa/cli)\n- [Dashboard](https://vostride.com/docs/agent-qa/dashboard)\n- [Configuration](https://vostride.com/docs/agent-qa/configuration)\n- [License](LICENSE.md)\n- [Notice](NOTICE.md)\n",
+  "readmeHtml": "<p>&lt;div align=\"center\"&gt;</p>\n<p>  &lt;img src=\"https://raw.githubusercontent.com/vostride/agent-qa/main/docs/assets/readme-banner.png\" alt=\"agent-qa banner\"/&gt;</p>\n<p>  <a href=\"https://img.shields.io/npm/dm/agent-qa?style=flat&amp;colorA=13110f&amp;colorB=196872\" target=\"_blank\" rel=\"noreferrer\">![npm</a>](https://npm.chart.dev/agent-qa?primary=neutral&amp;gray=neutral&amp;theme=dark)</p>\n<p>  <a href=\"https://img.shields.io/npm/v/agent-qa.svg?style=flat&amp;colorA=13110f&amp;colorB=196872\" target=\"_blank\" rel=\"noreferrer\">![npm version</a>](https://www.npmjs.com/package/agent-qa)</p>\n<p>  <a href=\"https://img.shields.io/github/stars/vostride/agent-qa?style=flat&amp;colorA=13110f&amp;colorB=196872\" target=\"_blank\" rel=\"noreferrer\">![GitHub stars</a>](https://github.com/vostride/agent-qa/stargazers)</p>\n<p>  &lt;p&gt;</p>\n<p>    &lt;a href=\"https://vostride.com/docs/agent-qa\"&gt;Docs&lt;/a&gt;</p>\n<p>    ·</p>\n<p>    &lt;a href=\"https://github.com/vostride/agent-qa/tree/main/demo-project\"&gt;Demo&lt;/a&gt;</p>\n<p>    ·</p>\n<p>    &lt;a href=\"https://github.com/vostride/agent-qa/issues\"&gt;Issues&lt;/a&gt;</p>\n<p>  &lt;/p&gt;</p>\n<p>&lt;/div&gt;</p>\n<h2>agent-qa</h2>\n<p>The self-improving Agentic QA harness with Memory</p>\n<p>Write tests in natural language for web and mobile. agent-qa learns from past runs, adapts to UI changes, and catches regressions before you ship.</p>\n<p><a href=\"https://vostride.com/docs/agent-qa\" target=\"_blank\" rel=\"noreferrer\">Docs</a> | <a href=\"https://vostride.com/docs/agent-qa/quickstart\" target=\"_blank\" rel=\"noreferrer\">Quickstart</a></p>\n<h2>Features</h2>\n<ul>\n<li><strong>Write tests in natural language for web and mobile</strong>: Define actions and assertions in human language while agents work from visible roles, labels, and screen state.</li>\n<li><strong>Self-healing test execution</strong>: When any sub-action, such as click, fill, or select, fails, agent-qa re-observes the UI and tries a different path in the same run. Tests recover from UI drift and flaky interactions instead of failing on the first broken action.</li>\n<li><strong>Self-improves with Memory</strong>: With every test run, agent-qa builds execution memory from product, suite, and test observations, then adds that context to future runs. agent-qa also curates memory from steps that were healed during execution, helping future runs avoid the same mistake.</li>\n<li><strong>Built for humans and machines</strong>: A polished dashboard and CLI for developers, plus MCP and skills for coding agents.</li>\n<li><strong>Accelerate runs with smart Cache</strong>: The action cache reuses validated plans across similar subsequent test runs, reducing planner work, token usage, and runtime overhead.</li>\n<li><strong>Run sandboxed hooks during tests</strong>: Run Node, Bun, Python, or Bash hooks in isolated Docker containers to set up environments, call APIs, seed fixtures, tear down state, or pass structured outputs back into the active test run.</li>\n<li><strong>Open source, reviewable QA</strong>: The harness is open source, and tests, configs, hooks, memory, and suite logic all live as version-controlled code, so every change can be diffed, reviewed, reused, and shared across teams.</li>\n<li><strong>Bring your own LLM</strong>: Run tests with the model of your choice via OpenAI- and Anthropic-compatible endpoints, Gemini, local or open-source models, and subscriptions like Codex and Claude Code.</li>\n</ul>\n<h2>Quickstart</h2>\n<p>Install the package:</p>\n<pre><code>\nnpm install -D agent-qa\n\n</code></pre>\n<p>For Codex or Claude Code subscription auth, also install:</p>\n<pre><code>\nnpm install -D @vostride/agent-qa-subscription-auth\n\n</code></pre>\n<p>Install Docker before using hooks. agent-qa runs hooks in a sandboxed runtime, and Docker is required for the Node, Bun, Python, and Bash hook containers.</p>\n<p>Initialize agent-qa and install the runtime support you need:</p>\n<pre><code>\nnpx agent-qa init\n\nnpx agent-qa install-browsers --chromium\n\n# Mobile projects:\n\nnpx agent-qa install-mobile-drivers --all\n\n</code></pre>\n<p>Start the dashboard, complete auth, and run tests from the UI:</p>\n<pre><code>\nnpx agent-qa dashboard --open\n\n</code></pre>\n<p>For the full setup flow, use the <a href=\"https://vostride.com/docs/agent-qa/quickstart\" target=\"_blank\" rel=\"noreferrer\">quickstart</a>.</p>\n<h2>CLI</h2>\n<p>Run tests from the CLI:</p>\n<pre><code>\nnpx agent-qa run tests/hacker-news-top-story.yaml\n\n</code></pre>\n<h2>Docs</h2>\n<ul>\n<li><a href=\"https://vostride.com/docs/agent-qa\" target=\"_blank\" rel=\"noreferrer\">Full docs</a></li>\n<li><a href=\"https://vostride.com/docs/agent-qa/quickstart\" target=\"_blank\" rel=\"noreferrer\">Quickstart</a></li>\n<li><a href=\"https://vostride.com/docs/agent-qa/cli\" target=\"_blank\" rel=\"noreferrer\">CLI reference</a></li>\n<li><a href=\"https://vostride.com/docs/agent-qa/dashboard\" target=\"_blank\" rel=\"noreferrer\">Dashboard</a></li>\n<li><a href=\"https://vostride.com/docs/agent-qa/configuration\" target=\"_blank\" rel=\"noreferrer\">Configuration</a></li>\n<li>[License](LICENSE.md)</li>\n<li>[Notice](NOTICE.md)</li>\n</ul>",
+  "skillMd": "",
+  "updatedAt": "2026-08-03T18:44:59Z",
+  "author": {
+    "login": "vostride",
+    "name": "Vostride AI",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/266585013?v=4",
+    "profileUrl": "https://github.com/vostride",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "kkkkhazix-aihot",
+      "displayName": "kkkkhazix/aihot",
+      "stars": 21431,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "sawyerhood-dev-browser",
+      "displayName": "sawyerhood/dev-browser",
+      "stars": 6666,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "roundtable02-tutor-skills",
+      "displayName": "roundtable02/tutor-skills",
+      "stars": 1350,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "chubbyguan-chubbyskills",
+      "displayName": "chubbyguan/chubbyskills",
+      "stars": 1249,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "moizibnyousaf-ai-agent-skills",
+      "displayName": "moizibnyousaf/ai-agent-skills",
+      "stars": 1151,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "swarmclawai-swarmvault",
+      "displayName": "swarmclawai/swarmvault",
+      "stars": 718,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "swarmclawai-swarmclaw",
+      "displayName": "swarmclawai/swarmclaw",
+      "stars": 689,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "mhattingpete-claude-skills-marketplace",
+      "displayName": "mhattingpete/claude-skills-marketplace",
+      "stars": 683,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-shanghai",
+    "label": "Global Skill Market / Shanghai / Skills by Binance",
+    "lat": 31.2304,
+    "lon": 121.4737,
+    "source": "virtual_market"
+  }
+}

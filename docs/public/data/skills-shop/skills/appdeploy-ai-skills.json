@@ -1,0 +1,89 @@
+{
+  "id": "skill:appdeploy-ai-skills",
+  "slug": "appdeploy-ai-skills",
+  "name": "skills",
+  "displayName": "appdeploy-ai/skills",
+  "description": "Deploy apps with full stack and get a live URL back",
+  "stars": 2,
+  "category": "Skills by Binance",
+  "source": "heilcheng",
+  "url": "https://github.com/AppDeploy-AI/skills",
+  "githubRepo": "AppDeploy-AI/skills",
+  "readme": "# AppDeploy Skills\n\nDeploy apps with frontend, backend, cron jobs, database, file storage, AI capabilities, auth, and notifications, and get back a live public URL instantly.\n\nWorks with [Claude Code](https://claude.ai), [OpenAI Codex](https://openai.com/codex), and any AI coding assistant that supports skills.\n\nLearn more at [appdeploy.ai](https://appdeploy.ai).\n\n## Skills\n\n| Platform | Path | Format |\n|----------|------|--------|\n| Claude Code | [`skills/claude/`](./skills/claude/) | [Claude Skills](https://github.com/anthropics/skills) |\n| OpenAI Codex | [`skills/openai/`](./skills/openai/) | [OpenAI Agent Skills](https://github.com/openai/skills) |\n| JetBrains AI Assistant | [`skills/jetbrains/`](./skills/jetbrains/) | [JetBrains skills catalog](https://github.com/JetBrains/skills) |\n\n## Quick Start\n\n### Claude Code\n\nCopy `skills/claude/SKILL.md` into your project's `.claude/skills/appdeploy/` directory:\n\n```bash\nmkdir -p .claude/skills/appdeploy\ncp skills/claude/SKILL.md .claude/skills/appdeploy/SKILL.md\n```\n\n### OpenAI Codex\n\nCopy the `skills/openai/` directory into your project's `.codex/skills/` directory:\n\n```bash\nmkdir -p .codex/skills/appdeploy\ncp -r skills/openai/* .codex/skills/appdeploy/\n```\n\n### JetBrains AI Assistant\n\n`skills/jetbrains/` packages the same skill in the [JetBrains skills catalog](https://github.com/JetBrains/skills) format. In JetBrains IDEs, skills are managed under **Settings | Tools | AI Assistant | Skills**.\n\n## MCP Server\n\nAppDeploy is also available as an MCP server at `https://api-v2.appdeploy.ai/mcp` — see the [MCP docs](https://appdeploy.ai/mcp-docs) for setup instructions.\n\n## License\n\nMIT\n",
+  "readmeHtml": "<h1>AppDeploy Skills</h1>\n<p>Deploy apps with frontend, backend, cron jobs, database, file storage, AI capabilities, auth, and notifications, and get back a live public URL instantly.</p>\n<p>Works with <a href=\"https://claude.ai\" target=\"_blank\" rel=\"noreferrer\">Claude Code</a>, <a href=\"https://openai.com/codex\" target=\"_blank\" rel=\"noreferrer\">OpenAI Codex</a>, and any AI coding assistant that supports skills.</p>\n<p>Learn more at <a href=\"https://appdeploy.ai\" target=\"_blank\" rel=\"noreferrer\">appdeploy.ai</a>.</p>\n<h2>Skills</h2>\n<p>| Platform | Path | Format |</p>\n<p>|----------|------|--------|</p>\n<p>| Claude Code | [<code>skills/claude/</code>](./skills/claude/) | <a href=\"https://github.com/anthropics/skills\" target=\"_blank\" rel=\"noreferrer\">Claude Skills</a> |</p>\n<p>| OpenAI Codex | [<code>skills/openai/</code>](./skills/openai/) | <a href=\"https://github.com/openai/skills\" target=\"_blank\" rel=\"noreferrer\">OpenAI Agent Skills</a> |</p>\n<p>| JetBrains AI Assistant | [<code>skills/jetbrains/</code>](./skills/jetbrains/) | <a href=\"https://github.com/JetBrains/skills\" target=\"_blank\" rel=\"noreferrer\">JetBrains skills catalog</a> |</p>\n<h2>Quick Start</h2>\n<h3>Claude Code</h3>\n<p>Copy <code>skills/claude/SKILL.md</code> into your project's <code>.claude/skills/appdeploy/</code> directory:</p>\n<pre><code>\nmkdir -p .claude/skills/appdeploy\n\ncp skills/claude/SKILL.md .claude/skills/appdeploy/SKILL.md\n\n</code></pre>\n<h3>OpenAI Codex</h3>\n<p>Copy the <code>skills/openai/</code> directory into your project's <code>.codex/skills/</code> directory:</p>\n<pre><code>\nmkdir -p .codex/skills/appdeploy\n\ncp -r skills/openai/* .codex/skills/appdeploy/\n\n</code></pre>\n<h3>JetBrains AI Assistant</h3>\n<p><code>skills/jetbrains/</code> packages the same skill in the <a href=\"https://github.com/JetBrains/skills\" target=\"_blank\" rel=\"noreferrer\">JetBrains skills catalog</a> format. In JetBrains IDEs, skills are managed under <strong>Settings | Tools | AI Assistant | Skills</strong>.</p>\n<h2>MCP Server</h2>\n<p>AppDeploy is also available as an MCP server at <code>https://api-v2.appdeploy.ai/mcp</code> — see the <a href=\"https://appdeploy.ai/mcp-docs\" target=\"_blank\" rel=\"noreferrer\">MCP docs</a> for setup instructions.</p>\n<h2>License</h2>\n<p>MIT</p>",
+  "skillMd": "",
+  "updatedAt": "2026-08-02T12:29:04Z",
+  "author": {
+    "login": "AppDeploy-AI",
+    "name": "AppDeploy AI",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/263670461?v=4",
+    "profileUrl": "https://github.com/AppDeploy-AI",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "kkkkhazix-aihot",
+      "displayName": "kkkkhazix/aihot",
+      "stars": 21431,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "sawyerhood-dev-browser",
+      "displayName": "sawyerhood/dev-browser",
+      "stars": 6666,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "roundtable02-tutor-skills",
+      "displayName": "roundtable02/tutor-skills",
+      "stars": 1350,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "chubbyguan-chubbyskills",
+      "displayName": "chubbyguan/chubbyskills",
+      "stars": 1249,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "moizibnyousaf-ai-agent-skills",
+      "displayName": "moizibnyousaf/ai-agent-skills",
+      "stars": 1151,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "vostride-agent-qa",
+      "displayName": "vostride/agent-qa",
+      "stars": 906,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "swarmclawai-swarmvault",
+      "displayName": "swarmclawai/swarmvault",
+      "stars": 718,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "swarmclawai-swarmclaw",
+      "displayName": "swarmclawai/swarmclaw",
+      "stars": 689,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-bengaluru",
+    "label": "Global Skill Market / Bengaluru / Skills by Binance",
+    "lat": 12.9716,
+    "lon": 77.5946,
+    "source": "virtual_market"
+  }
+}

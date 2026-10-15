@@ -4,7 +4,7 @@
   "name": "security-audit-skill",
   "displayName": "cloudflare/security-audit-skill",
   "description": "Multi-phase security audits with independently verified, machine-readable findings",
-  "stars": 29582,
+  "stars": 29867,
   "category": "Official Skills by",
   "source": "voltagent",
   "url": "https://github.com/cloudflare/security-audit-skill",
@@ -22,7 +22,7 @@
   },
   "location": {
     "id": "san-francisco",
-    "label": "San Francisco, London, Austin, Lisbon, Singapore",
+    "label": "San Francisco, CA",
     "lat": 37.7749,
     "lon": -122.4194,
     "source": "github_profile"
@@ -87,7 +87,7 @@
   ],
   "mapLocation": {
     "id": "san-francisco",
-    "label": "San Francisco, London, Austin, Lisbon, Singapore",
+    "label": "San Francisco, CA",
     "lat": 37.7749,
     "lon": -122.4194,
     "source": "github_profile"
