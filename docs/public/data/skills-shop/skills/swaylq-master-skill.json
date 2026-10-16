@@ -4,7 +4,7 @@
   "name": "master-skill",
   "displayName": "swaylq/master-skill",
   "description": "从一个具体行业的从业经验中提炼判断方式、决策框架与工具习惯，形成可复用的方法论 skill。",
-  "stars": 159,
+  "stars": 161,
   "category": "Persona Distill Skills",
   "source": "persona-distill",
   "url": "https://github.com/swaylq/master-skill",
@@ -39,7 +39,14 @@
     {
       "slug": "voidforall-fengshui-skill",
       "displayName": "voidforall/fengshui.skill",
-      "stars": 315,
+      "stars": 324,
+      "relation": "shared_tag",
+      "evidence": "Persona Distill Skills"
+    },
+    {
+      "slug": "arcocodes-renoise-plugins-official",
+      "displayName": "ArcoCodes/renoise-plugins-official",
+      "stars": 60,
       "relation": "shared_tag",
       "evidence": "Persona Distill Skills"
     },
@@ -67,13 +74,6 @@
     {
       "slug": "cantian-ai-bazi-persona-skill",
       "displayName": "cantian-ai/bazi-persona-skill",
-      "stars": 16,
-      "relation": "shared_tag",
-      "evidence": "Persona Distill Skills"
-    },
-    {
-      "slug": "schlaflied-hr-skill",
-      "displayName": "Schlaflied/hr-skill",
       "stars": 16,
       "relation": "shared_tag",
       "evidence": "Persona Distill Skills"
