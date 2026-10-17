@@ -4,7 +4,7 @@
   "name": "ui-skills",
   "displayName": "ibelick/ui-skills",
   "description": "Opinionated, evolving constraints to guide agents when building interfaces",
-  "stars": 9798,
+  "stars": 9829,
   "category": "Community Skills",
   "source": "voltagent",
   "url": "https://github.com/ibelick/ui-skills",
@@ -12,7 +12,7 @@
   "readme": "# UI Skills\n\n![UI Skills](./public/UI-OG.png)\n\nSkills for Design Engineers.\n\nMore on [ui-skills.com](https://www.ui-skills.com/)\n\n## CLI\n\nBrowse and fetch skills from your terminal.\n\n```bash\nnpx ui-skills start\nnpx ui-skills categories\nnpx ui-skills list --category motion\nnpx ui-skills get baseline-ui\n```\n\n## MCP\n\nConnect agents to the registry over Model Context Protocol.\n\n```\nhttps://www.ui-skills.com/mcp\n```\n\nTools: `list_skills`, `get_skill`\n\n## Playbook\n\nDistilled UI lessons from the best design engineering skills.\n\n[ui-skills.com/playbook](https://www.ui-skills.com/playbook)\n\n## Accounts\n\nRequires Node.js 22.19 or newer. See [SECURITY.md](SECURITY.md) for the auth\nboundaries, reporting guidance, and deployment checks.\n\nGoogle and GitHub sign-in use Better Auth and Cloudflare D1. Public pages still\nwork without OAuth credentials; sign-in stays unavailable until configured.\nEach provider is optional: GitHub-only production sign-in needs no Google\ncredentials. Only providers with both a client ID and secret appear in the UI.\n\n1. Run `npm run auth:setup:dev`. This prepares the ignored `.dev.vars` file,\n   sets the local auth origin, and generates a secret without printing it.\n   Existing credentials are preserved; running it again does not rotate the secret.\n2. Create Google and GitHub OAuth applications with these local callbacks:\n   - `http://localhost:4321/api/auth/callback/google`\n   - `http://localhost:4321/api/auth/callback/github`\n3. Add the development provider IDs/secrets to `.dev.vars`. Run\n   `npm run db:migrate:local`, then `npm run dev` and visit `/login`.\n\nFor production, create a D1 database and replace the local placeholder ID in\n`wrangler.jsonc`. The production `BETTER_AUTH_URL` is configured there; local\n`.dev.vars` values are not uploaded. Configure `BETTER_AUTH_SECRET`,\n`GITHUB_CLIENT_ID`, and `GITHUB_CLIENT_SECRET` as Cloudflare Worker secrets for\nGitHub sign-in. Add `GOOGLE_CLIENT_ID` and `GOOGLE_CLIENT_SECRET` only if you also\nwant Google sign-in. Generate a separate\nproduction secret with `openssl rand -hex 32`; do not reuse the local secret.\nRegister the same\ncallback paths on `https://www.ui-skills.com`; use a separate GitHub OAuth app\nfor production. Apply migrations explicitly with `npm run db:migrate:remote`\nbefore deploying. Never use production credentials or D1 data in local previews.\n\nOnly identity/profile and email permissions are needed—no repository or Google\nWorkspace access. Additional providers must be connected from `/account` while\nsigned in; matching email addresses are not silently merged. Account deletion,\nbilling, and saved skills are not included yet.\n\n## License\n\nLicensed under the [MIT license](https://github.com/ibelick/ui-skills/blob/main/LICENSE).\n",
   "readmeHtml": "<h1>UI Skills</h1>\n<p>![UI Skills](./public/UI-OG.png)</p>\n<p>Skills for Design Engineers.</p>\n<p>More on <a href=\"https://www.ui-skills.com/\" target=\"_blank\" rel=\"noreferrer\">ui-skills.com</a></p>\n<h2>CLI</h2>\n<p>Browse and fetch skills from your terminal.</p>\n<pre><code>\nnpx ui-skills start\n\nnpx ui-skills categories\n\nnpx ui-skills list --category motion\n\nnpx ui-skills get baseline-ui\n\n</code></pre>\n<h2>MCP</h2>\n<p>Connect agents to the registry over Model Context Protocol.</p>\n<pre><code>\nhttps://www.ui-skills.com/mcp\n\n</code></pre>\n<p>Tools: <code>list_skills</code>, <code>get_skill</code></p>\n<h2>Playbook</h2>\n<p>Distilled UI lessons from the best design engineering skills.</p>\n<p><a href=\"https://www.ui-skills.com/playbook\" target=\"_blank\" rel=\"noreferrer\">ui-skills.com/playbook</a></p>\n<h2>Accounts</h2>\n<p>Requires Node.js 22.19 or newer. See [SECURITY.md](SECURITY.md) for the auth</p>\n<p>boundaries, reporting guidance, and deployment checks.</p>\n<p>Google and GitHub sign-in use Better Auth and Cloudflare D1. Public pages still</p>\n<p>work without OAuth credentials; sign-in stays unavailable until configured.</p>\n<p>Each provider is optional: GitHub-only production sign-in needs no Google</p>\n<p>credentials. Only providers with both a client ID and secret appear in the UI.</p>\n<p>1. Run <code>npm run auth:setup:dev</code>. This prepares the ignored <code>.dev.vars</code> file,</p>\n<p>   sets the local auth origin, and generates a secret without printing it.</p>\n<p>   Existing credentials are preserved; running it again does not rotate the secret.</p>\n<p>2. Create Google and GitHub OAuth applications with these local callbacks:</p>\n<p>   - <code>http://localhost:4321/api/auth/callback/google</code></p>\n<p>   - <code>http://localhost:4321/api/auth/callback/github</code></p>\n<p>3. Add the development provider IDs/secrets to <code>.dev.vars</code>. Run</p>\n<p>   <code>npm run db:migrate:local</code>, then <code>npm run dev</code> and visit <code>/login</code>.</p>\n<p>For production, create a D1 database and replace the local placeholder ID in</p>\n<p><code>wrangler.jsonc</code>. The production <code>BETTER_AUTH_URL</code> is configured there; local</p>\n<p><code>.dev.vars</code> values are not uploaded. Configure <code>BETTER_AUTH_SECRET</code>,</p>\n<p><code>GITHUB_CLIENT_ID</code>, and <code>GITHUB_CLIENT_SECRET</code> as Cloudflare Worker secrets for</p>\n<p>GitHub sign-in. Add <code>GOOGLE_CLIENT_ID</code> and <code>GOOGLE_CLIENT_SECRET</code> only if you also</p>\n<p>want Google sign-in. Generate a separate</p>\n<p>production secret with <code>openssl rand -hex 32</code>; do not reuse the local secret.</p>\n<p>Register the same</p>\n<p>callback paths on <code>https://www.ui-skills.com</code>; use a separate GitHub OAuth app</p>\n<p>for production. Apply migrations explicitly with <code>npm run db:migrate:remote</code></p>\n<p>before deploying. Never use production credentials or D1 data in local previews.</p>\n<p>Only identity/profile and email permissions are needed—no repository or Google</p>\n<p>Workspace access. Additional providers must be connected from <code>/account</code> while</p>\n<p>signed in; matching email addresses are not silently merged. Account deletion,</p>\n<p>billing, and saved skills are not included yet.</p>\n<h2>License</h2>\n<p>Licensed under the <a href=\"https://github.com/ibelick/ui-skills/blob/main/LICENSE\" target=\"_blank\" rel=\"noreferrer\">MIT license</a>.</p>",
   "skillMd": "",
-  "updatedAt": "2026-10-16T15:18:17Z",
+  "updatedAt": "2026-10-17T15:07:15Z",
   "author": {
     "login": "ibelick",
     "name": "Julien Thibeaut",
@@ -29,58 +29,58 @@
   },
   "related": [
     {
+      "slug": "morluto-rea",
+      "displayName": "morluto/rea",
+      "stars": 305889,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
       "slug": "obra-brainstorming",
       "displayName": "obra/brainstorming",
-      "stars": 300608,
+      "stars": 301154,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "mattpocock-skills",
       "displayName": "mattpocock/skills",
-      "stars": 293973,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "morluto-rea",
-      "displayName": "morluto/rea",
-      "stars": 289520,
+      "stars": 294985,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
       "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
-      "stars": 136562,
+      "stars": 136854,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "thedotmack-claude-mem",
       "displayName": "thedotmack/claude-mem",
-      "stars": 101226,
+      "stars": 101395,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "panniantong-agent-reach",
       "displayName": "Panniantong/Agent-Reach",
-      "stars": 98157,
+      "stars": 98678,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "leonxlnx-taste-skill",
       "displayName": "Leonxlnx/taste-skill",
-      "stars": 97990,
+      "stars": 98413,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "lum1104-understand-anything",
       "displayName": "Lum1104/understand-anything",
-      "stars": 86634,
+      "stars": 86779,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     }

@@ -12,7 +12,7 @@
   "readme": "# firecrawl/firecrawl-build\n\nIntegrate Firecrawl into application code for web search, scraping, extraction, and browser interaction",
   "readmeHtml": "<h1>firecrawl/firecrawl-build</h1>\n<p>Integrate Firecrawl into application code for web search, scraping, extraction, and browser interaction</p>",
   "skillMd": "",
-  "updatedAt": "2026-10-16T21:48:48.720Z",
+  "updatedAt": "2026-10-17T21:11:43.349Z",
   "author": {
     "login": "firecrawl",
     "name": "Firecrawl",
@@ -31,7 +31,7 @@
     {
       "slug": "firecrawl-firecrawl-cli",
       "displayName": "firecrawl/firecrawl-cli",
-      "stars": 653,
+      "stars": 655,
       "relation": "source_overlap",
       "evidence": "author:firecrawl"
     },
@@ -80,7 +80,7 @@
     {
       "slug": "cloudflare-security-audit-skill",
       "displayName": "cloudflare/security-audit-skill",
-      "stars": 30199,
+      "stars": 30633,
       "relation": "shared_tag",
       "evidence": "Official Skills by"
     }
