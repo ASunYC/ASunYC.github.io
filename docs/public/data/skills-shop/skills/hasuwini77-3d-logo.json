@@ -1,0 +1,89 @@
+{
+  "id": "skill:hasuwini77-3d-logo",
+  "slug": "hasuwini77-3d-logo",
+  "name": "3d-logo",
+  "displayName": "hasuwini77/3d-logo",
+  "description": "Turn any logo into a 3D spinning coin React component",
+  "stars": 4,
+  "category": "Community Skills",
+  "source": "voltagent",
+  "url": "https://github.com/hasuwini77/3d-logo-skill",
+  "githubRepo": "hasuwini77/3d-logo-skill",
+  "readme": "<div align=\"center\">\n\n```\n                 ██████╗ ██████╗     ██╗      ██████╗  ██████╗  ██████╗\n                 ╚════██╗██╔══██╗    ██║     ██╔═══██╗██╔════╝ ██╔═══██╗\n                  █████╔╝██║  ██║    ██║     ██║   ██║██║  ███╗██║   ██║\n                  ╚═══██╗██║  ██║    ██║     ██║   ██║██║   ██║██║   ██║\n                 ██████╔╝██████╔╝    ███████╗╚██████╔╝╚██████╔╝╚██████╔╝\n                 ╚═════╝ ╚═════╝     ╚══════╝ ╚═════╝  ╚═════╝  ╚═════╝\n```\n\n### Flat in. 3D out.\n\nAny logo → a 3D spinning coin, as one self-contained React Three Fiber component.\n\nAn agent skill for Claude Code, Cursor and Codex, built on Three.js. No 3D modelling.\n\n<br/>\n\n<img src=\"screenshots/coins.webp\" width=\"800\" alt=\"Firebird, Koi and Manta enamel-pin logos spinning in sync as 3D coins over a sunset sky\" />\n\n<sub><b>FIREBIRD</b> &nbsp;·&nbsp; <b>KOI</b> &nbsp;·&nbsp; <b>MANTA</b></sub>\n\n<br/><br/>\n\n<sub>Download your coin as a looping MP4 straight from the live demo.</sub>\n\n[![Try it live](https://img.shields.io/badge/Try_it_live-FFC9A3?style=for-the-badge)](https://hasuwini77.github.io/3d-logo-skill/)&nbsp;\n[![Agent Skill](https://img.shields.io/badge/Agent_Skill-compatible-C98FB5?style=for-the-badge&labelColor=14163A)](https://agentskills.io)&nbsp;\n[![License: MIT](https://img.shields.io/badge/License-MIT-3B3F8F?style=for-the-badge&labelColor=14163A)](LICENSE)\n\n<sub>Claude Code · Cursor · Codex · Gemini CLI · GitHub Copilot · <a href=\"https://agentskills.io/specification\">50+ more</a></sub>\n\n</div>\n\n---\n\n> The rim isn't a generic circle. It traces your logo's actual outline, every concave notch included.\n\n## Install\n\n```bash\nnpx skills add hasuwini77/3d-logo-skill\n```\n\n`npx skills add` detects which agents you have and drops the skill in the right folder for each.\n\n<details>\n<summary>Claude Code plugin install</summary>\n\n```bash\n# terminal\nclaude plugin marketplace add hasuwini77/3d-logo-skill\nclaude plugin install 3d-logo@3d-logo-skill\n\n# or inside a Claude Code session\n/plugin marketplace add hasuwini77/3d-logo-skill\n/plugin install 3d-logo@3d-logo-skill\n```\n\n</details>\n\nIf it saves you time, a ⭐ helps others find it.\n\n## Usage\n\nAsk your agent:\n\n```\nMake my logo at public/logo.png into a 3D spinning coin\n```\n```\nUse /3d-logo on src/assets/brand-logo.png with night reflections\n```\n\nYou get a self-contained `SpinningLogo3D.tsx`. Drop it anywhere in your React app:\n\n```tsx\nimport { SpinningLogo3D } from './SpinningLogo3D'\n\n<SpinningLogo3D size={540} />\n```\n\n## Live demo\n\n<a href=\"https://hasuwini77.github.io/3d-logo-skill/\"><img src=\"images/social-card.png\" alt=\"3D Logo live demo: Firebird coin floating over a painted sunset sky, with preset, upload and reflection controls\" /></a>\n\n**[hasuwini77.github.io/3d-logo-skill](https://hasuwini77.github.io/3d-logo-skill/)**: pick a preset or drop in your own logo, switch reflections, drag the thickness. It runs the same `SpinningLogo3D.tsx` architecture the skill generates. Your file is processed on an offscreen canvas and never leaves your device.\n\nYou can also download your coin as a short looping video (one seamless 360° turn, MP4 or WebM) with the **Download video** button.\n\n## How it works\n\n1. **Background removal**: samples the 1px border, then flood-fills the connected background from the edge. Enclosed details (the white of an eye, the inside of an \"O\") stay put.\n2. **Outline tracing**: Moore-neighbour contour trace per shape at a real opacity cutoff, with specks dropped. Multi-part logos keep every piece.\n3. **Faces**: front and back planes cut to the same outline; the back is a true mirror, like a stamped coin.\n4. **Chrome rim**: indexed `BufferGeometry` along the smoothed outline, with outward normals for clean reflections.\n5. **Emboss + light**: Sobel normal map on the faces, environment reflections, and `NeutralToneMapping` so your colours don't wash out.\n\n## Reflections\n\n| Preset | Best for | Feeling |\n|--------|----------|---------|\n| **studio** | Corporate, SaaS | Clean, neutral (default) |\n| **warehouse** | Gaming, industrial | Gritty, darker |\n| **city** | Tech, startups | Urban, bright |\n| **night** | Dark themes, premium | Moody, elegant |\n| **dawn** | Health, wellness | Soft, warm |\n| **sunset** | Creative, entertainment | Rich amber |\n\n### Works offline\n\nThe coin needs nothing from the internet. The live demo self-hosts all six HDRs (the same CC0 Poly Haven files drei's `preset` prop would download from a CDN), bundles its fonts, and processes uploads locally, so the coin renders with no internet, behind firewalls, and in air-gapped setups (the GitHub star count is the only online extra, and it simply hides). Only the picked reflection is loaded, and if an HDR ever fails to load the coin falls back to procedural studio lighting instead of disappearing.\n\nThe skill does the same for your project: it saves the chosen HDR into `public/hdri/` and loads it with `<Environment files=… />` instead of `preset=`, so the generated component has no runtime network dependency.\n\n## Customization\n\n| Constant | Default | Controls |\n|----------|---------|----------|\n| `PLANE_SIZE` | 4.8 | Logo face size (3D units) |\n| `THICKNESS` | 0.45 | Coin edge thickness, also exposed as a `thickness` prop |\n| `SPIN_SPEED` | 0.35 | Rotation speed (rad/s) |\n| `BG_TOLERANCE` | 24 | How close a pixel must be to the border colour to count as background (0–255) |\n| `EMBOSS_STRENGTH` | 1.5 | Normal map depth (0 = flat, 3+ = deep) |\n\n## Requirements\n\n```bash\nnpm install three @react-three/fiber @react-three/drei\nnpm install -D @types/three\n```\n\n## Show your coin\n\nExported a video of your coin? Post it in [Show and tell](https://github.com/hasuwini77/3d-logo-skill/discussions/categories/show-and-tell).\n\n## Contributing\n\n1. Fork → feature branch → edit `.claude/skills/3d-logo/SKILL.md`\n2. Test locally: `claude plugin marketplace add ./` then `claude plugin install 3d-logo@3d-logo-skill`\n3. Open a PR with before/after coins\n\nOpen ideas: inner rim for logos with holes, hover interactions, glow, custom shaders.\n\n## License\n\nMIT. Do whatever you want with it.\n\n---\n\n<div align=\"center\">\n<sub>Built with <a href=\"https://github.com/pmndrs/react-three-fiber\">React Three Fiber</a> + <a href=\"https://github.com/pmndrs/drei\">drei</a> + <a href=\"https://threejs.org\">Three.js</a></sub>\n<br/><br/>\n<b>If this saved you time, drop a ⭐</b>\n</div>\n",
+  "readmeHtml": "<p>&lt;div align=\"center\"&gt;</p>\n<pre><code>\n                 ██████╗ ██████╗     ██╗      ██████╗  ██████╗  ██████╗\n\n                 ╚════██╗██╔══██╗    ██║     ██╔═══██╗██╔════╝ ██╔═══██╗\n\n                  █████╔╝██║  ██║    ██║     ██║   ██║██║  ███╗██║   ██║\n\n                  ╚═══██╗██║  ██║    ██║     ██║   ██║██║   ██║██║   ██║\n\n                 ██████╔╝██████╔╝    ███████╗╚██████╔╝╚██████╔╝╚██████╔╝\n\n                 ╚═════╝ ╚═════╝     ╚══════╝ ╚═════╝  ╚═════╝  ╚═════╝\n\n</code></pre>\n<h3>Flat in. 3D out.</h3>\n<p>Any logo → a 3D spinning coin, as one self-contained React Three Fiber component.</p>\n<p>An agent skill for Claude Code, Cursor and Codex, built on Three.js. No 3D modelling.</p>\n<p>&lt;br/&gt;</p>\n<p>&lt;img src=\"screenshots/coins.webp\" width=\"800\" alt=\"Firebird, Koi and Manta enamel-pin logos spinning in sync as 3D coins over a sunset sky\" /&gt;</p>\n<p>&lt;sub&gt;&lt;b&gt;FIREBIRD&lt;/b&gt; &amp;nbsp;·&amp;nbsp; &lt;b&gt;KOI&lt;/b&gt; &amp;nbsp;·&amp;nbsp; &lt;b&gt;MANTA&lt;/b&gt;&lt;/sub&gt;</p>\n<p>&lt;br/&gt;&lt;br/&gt;</p>\n<p>&lt;sub&gt;Download your coin as a looping MP4 straight from the live demo.&lt;/sub&gt;</p>\n<p><a href=\"https://img.shields.io/badge/Try_it_live-FFC9A3?style=for-the-badge\" target=\"_blank\" rel=\"noreferrer\">![Try it live</a>](https://hasuwini77.github.io/3d-logo-skill/)&amp;nbsp;</p>\n<p><a href=\"https://img.shields.io/badge/Agent_Skill-compatible-C98FB5?style=for-the-badge&amp;labelColor=14163A\" target=\"_blank\" rel=\"noreferrer\">![Agent Skill</a>](https://agentskills.io)&amp;nbsp;</p>\n<p><a href=\"https://img.shields.io/badge/License-MIT-3B3F8F?style=for-the-badge&amp;labelColor=14163A\" target=\"_blank\" rel=\"noreferrer\">![License: MIT</a>](LICENSE)</p>\n<p>&lt;sub&gt;Claude Code · Cursor · Codex · Gemini CLI · GitHub Copilot · &lt;a href=\"https://agentskills.io/specification\"&gt;50+ more&lt;/a&gt;&lt;/sub&gt;</p>\n<p>&lt;/div&gt;</p>\n<p>---</p>\n<p>&gt; The rim isn't a generic circle. It traces your logo's actual outline, every concave notch included.</p>\n<h2>Install</h2>\n<pre><code>\nnpx skills add hasuwini77/3d-logo-skill\n\n</code></pre>\n<p><code>npx skills add</code> detects which agents you have and drops the skill in the right folder for each.</p>\n<p>&lt;details&gt;</p>\n<p>&lt;summary&gt;Claude Code plugin install&lt;/summary&gt;</p>\n<pre><code>\n# terminal\n\nclaude plugin marketplace add hasuwini77/3d-logo-skill\n\nclaude plugin install 3d-logo@3d-logo-skill\n\n\n\n# or inside a Claude Code session\n\n/plugin marketplace add hasuwini77/3d-logo-skill\n\n/plugin install 3d-logo@3d-logo-skill\n\n</code></pre>\n<p>&lt;/details&gt;</p>\n<p>If it saves you time, a ⭐ helps others find it.</p>\n<h2>Usage</h2>\n<p>Ask your agent:</p>\n<pre><code>\nMake my logo at public/logo.png into a 3D spinning coin\n\n</code></pre>\n<pre><code>\nUse /3d-logo on src/assets/brand-logo.png with night reflections\n\n</code></pre>\n<p>You get a self-contained <code>SpinningLogo3D.tsx</code>. Drop it anywhere in your React app:</p>\n<pre><code>\nimport { SpinningLogo3D } from './SpinningLogo3D'\n\n\n\n&lt;SpinningLogo3D size={540} /&gt;\n\n</code></pre>\n<h2>Live demo</h2>\n<p>&lt;a href=\"https://hasuwini77.github.io/3d-logo-skill/\"&gt;&lt;img src=\"images/social-card.png\" alt=\"3D Logo live demo: Firebird coin floating over a painted sunset sky, with preset, upload and reflection controls\" /&gt;&lt;/a&gt;</p>\n<p><strong><a href=\"https://hasuwini77.github.io/3d-logo-skill/\" target=\"_blank\" rel=\"noreferrer\">hasuwini77.github.io/3d-logo-skill</a></strong>: pick a preset or drop in your own logo, switch reflections, drag the thickness. It runs the same <code>SpinningLogo3D.tsx</code> architecture the skill generates. Your file is processed on an offscreen canvas and never leaves your device.</p>\n<p>You can also download your coin as a short looping video (one seamless 360° turn, MP4 or WebM) with the <strong>Download video</strong> button.</p>\n<h2>How it works</h2>\n<p>1. <strong>Background removal</strong>: samples the 1px border, then flood-fills the connected background from the edge. Enclosed details (the white of an eye, the inside of an \"O\") stay put.</p>\n<p>2. <strong>Outline tracing</strong>: Moore-neighbour contour trace per shape at a real opacity cutoff, with specks dropped. Multi-part logos keep every piece.</p>\n<p>3. <strong>Faces</strong>: front and back planes cut to the same outline; the back is a true mirror, like a stamped coin.</p>\n<p>4. <strong>Chrome rim</strong>: indexed <code>BufferGeometry</code> along the smoothed outline, with outward normals for clean reflections.</p>\n<p>5. <strong>Emboss + light</strong>: Sobel normal map on the faces, environment reflections, and <code>NeutralToneMapping</code> so your colours don't wash out.</p>\n<h2>Reflections</h2>\n<p>| Preset | Best for | Feeling |</p>\n<p>|--------|----------|---------|</p>\n<p>| <strong>studio</strong> | Corporate, SaaS | Clean, neutral (default) |</p>\n<p>| <strong>warehouse</strong> | Gaming, industrial | Gritty, darker |</p>\n<p>| <strong>city</strong> | Tech, startups | Urban, bright |</p>\n<p>| <strong>night</strong> | Dark themes, premium | Moody, elegant |</p>\n<p>| <strong>dawn</strong> | Health, wellness | Soft, warm |</p>\n<p>| <strong>sunset</strong> | Creative, entertainment | Rich amber |</p>\n<h3>Works offline</h3>\n<p>The coin needs nothing from the internet. The live demo self-hosts all six HDRs (the same CC0 Poly Haven files drei's <code>preset</code> prop would download from a CDN), bundles its fonts, and processes uploads locally, so the coin renders with no internet, behind firewalls, and in air-gapped setups (the GitHub star count is the only online extra, and it simply hides). Only the picked reflection is loaded, and if an HDR ever fails to load the coin falls back to procedural studio lighting instead of disappearing.</p>\n<p>The skill does the same for your project: it saves the chosen HDR into <code>public/hdri/</code> and loads it with <code>&lt;Environment files=… /&gt;</code> instead of <code>preset=</code>, so the generated component has no runtime network dependency.</p>\n<h2>Customization</h2>\n<p>| Constant | Default | Controls |</p>\n<p>|----------|---------|----------|</p>\n<p>| <code>PLANE_SIZE</code> | 4.8 | Logo face size (3D units) |</p>\n<p>| <code>THICKNESS</code> | 0.45 | Coin edge thickness, also exposed as a <code>thickness</code> prop |</p>\n<p>| <code>SPIN_SPEED</code> | 0.35 | Rotation speed (rad/s) |</p>\n<p>| <code>BG_TOLERANCE</code> | 24 | How close a pixel must be to the border colour to count as background (0–255) |</p>\n<p>| <code>EMBOSS_STRENGTH</code> | 1.5 | Normal map depth (0 = flat, 3+ = deep) |</p>\n<h2>Requirements</h2>\n<pre><code>\nnpm install three @react-three/fiber @react-three/drei\n\nnpm install -D @types/three\n\n</code></pre>\n<h2>Show your coin</h2>\n<p>Exported a video of your coin? Post it in <a href=\"https://github.com/hasuwini77/3d-logo-skill/discussions/categories/show-and-tell\" target=\"_blank\" rel=\"noreferrer\">Show and tell</a>.</p>\n<h2>Contributing</h2>\n<p>1. Fork → feature branch → edit <code>.claude/skills/3d-logo/SKILL.md</code></p>\n<p>2. Test locally: <code>claude plugin marketplace add ./</code> then <code>claude plugin install 3d-logo@3d-logo-skill</code></p>\n<p>3. Open a PR with before/after coins</p>\n<p>Open ideas: inner rim for logos with holes, hover interactions, glow, custom shaders.</p>\n<h2>License</h2>\n<p>MIT. Do whatever you want with it.</p>\n<p>---</p>\n<p>&lt;div align=\"center\"&gt;</p>\n<p>&lt;sub&gt;Built with &lt;a href=\"https://github.com/pmndrs/react-three-fiber\"&gt;React Three Fiber&lt;/a&gt; + &lt;a href=\"https://github.com/pmndrs/drei\"&gt;drei&lt;/a&gt; + &lt;a href=\"https://threejs.org\"&gt;Three.js&lt;/a&gt;&lt;/sub&gt;</p>\n<p>&lt;br/&gt;&lt;br/&gt;</p>\n<p>&lt;b&gt;If this saved you time, drop a ⭐&lt;/b&gt;</p>\n<p>&lt;/div&gt;</p>",
+  "skillMd": "",
+  "updatedAt": "2026-10-07T15:41:00Z",
+  "author": {
+    "login": "hasuwini77",
+    "name": "hasuwini",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/114613121?v=4",
+    "profileUrl": "https://github.com/hasuwini77",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "morluto-rea",
+      "displayName": "morluto/rea",
+      "stars": 336023,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "obra-brainstorming",
+      "displayName": "obra/brainstorming",
+      "stars": 302109,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mattpocock-skills",
+      "displayName": "mattpocock/skills",
+      "stars": 297423,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
+      "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "stars": 137602,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 101801,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "panniantong-agent-reach",
+      "displayName": "Panniantong/Agent-Reach",
+      "stars": 99651,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "leonxlnx-taste-skill",
+      "displayName": "Leonxlnx/taste-skill",
+      "stars": 99330,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "lum1104-understand-anything",
+      "displayName": "Lum1104/understand-anything",
+      "stars": 87013,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-san-francisco",
+    "label": "Global Skill Market / San Francisco / Community Skills",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "source": "virtual_market"
+  }
+}
