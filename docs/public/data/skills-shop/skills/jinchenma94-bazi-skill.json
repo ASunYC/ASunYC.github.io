@@ -4,7 +4,7 @@
   "name": "bazi-skill",
   "displayName": "jinchenma94/bazi-skill",
   "description": "BaZi (Eight Characters) chart reading and destiny analysis tool.",
-  "stars": 3528,
+  "stars": 3538,
   "category": "EverythingSkill / Mystical",
   "source": "everythingskill",
   "url": "https://github.com/jinchenma94/bazi-skill",
@@ -31,7 +31,14 @@
     {
       "slug": "fanzr-arch-numerology-skill",
       "displayName": "FANzR-arch/Numerologist_skills",
-      "stars": 1473,
+      "stars": 1475,
+      "relation": "shared_tag",
+      "evidence": "EverythingSkill / Mystical"
+    },
+    {
+      "slug": "ming-h-yinyuan-skills",
+      "displayName": "Ming-H/yinyuan-skills",
+      "stars": 469,
       "relation": "shared_tag",
       "evidence": "EverythingSkill / Mystical"
     },
@@ -39,13 +46,6 @@
       "slug": "xr843-master-skill",
       "displayName": "xr843/Master-skill",
       "stars": 469,
-      "relation": "shared_tag",
-      "evidence": "EverythingSkill / Mystical"
-    },
-    {
-      "slug": "ming-h-yinyuan-skills",
-      "displayName": "Ming-H/yinyuan-skills",
-      "stars": 468,
       "relation": "shared_tag",
       "evidence": "EverythingSkill / Mystical"
     },
@@ -59,28 +59,28 @@
     {
       "slug": "op7418-nanobanana-ppt-skills",
       "displayName": "op7418/NanoBanana-PPT-Skills",
-      "stars": 3306,
+      "stars": 3309,
       "relation": "shared_tag",
       "evidence": "location:beijing"
     },
     {
       "slug": "op7418-youtube-clipper-skill",
       "displayName": "op7418/Youtube-clipper-skill",
-      "stars": 2246,
+      "stars": 2250,
       "relation": "shared_tag",
       "evidence": "location:beijing"
     },
     {
       "slug": "deusyu-translate-book",
       "displayName": "deusyu/translate-book",
-      "stars": 2128,
+      "stars": 2134,
       "relation": "shared_tag",
       "evidence": "location:beijing"
     },
     {
       "slug": "leezythu-maoxuan-skill",
       "displayName": "leezythu/maoxuan-skill",
-      "stars": 1228,
+      "stars": 1231,
       "relation": "shared_tag",
       "evidence": "location:beijing"
     }
