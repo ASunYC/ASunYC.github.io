@@ -4,7 +4,7 @@
   "name": "little-canary",
   "displayName": "hermes-labs-ai/little-canary",
   "description": "Screen inbound text with a sacrificial canary",
-  "stars": 39,
+  "stars": 40,
   "category": "Community Skills",
   "source": "voltagent",
   "url": "https://github.com/hermes-labs-ai/little-canary/blob/main/.agents/skills/little-canary/SKILL.md",
@@ -38,49 +38,49 @@
     {
       "slug": "morluto-rea",
       "displayName": "morluto/rea",
-      "stars": 357130,
+      "stars": 365619,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "obra-brainstorming",
       "displayName": "obra/brainstorming",
-      "stars": 303126,
+      "stars": 303688,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "mattpocock-skills",
       "displayName": "mattpocock/skills",
-      "stars": 299786,
+      "stars": 300823,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
       "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
-      "stars": 138469,
+      "stars": 138970,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "thedotmack-claude-mem",
       "displayName": "thedotmack/claude-mem",
-      "stars": 102140,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "panniantong-agent-reach",
-      "displayName": "Panniantong/Agent-Reach",
-      "stars": 100620,
+      "stars": 102323,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "leonxlnx-taste-skill",
       "displayName": "Leonxlnx/taste-skill",
-      "stars": 100524,
+      "stars": 101091,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "panniantong-agent-reach",
+      "displayName": "Panniantong/Agent-Reach",
+      "stars": 101003,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     }
