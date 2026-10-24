@@ -12,7 +12,7 @@
   "readme": "# firecrawl/firecrawl-build-scrape\n\nIntegrate Firecrawl `/scrape` for single-page extraction from product code",
   "readmeHtml": "<h1>firecrawl/firecrawl-build-scrape</h1>\n<p>Integrate Firecrawl <code>/scrape</code> for single-page extraction from product code</p>",
   "skillMd": "",
-  "updatedAt": "2026-10-23T22:02:19.846Z",
+  "updatedAt": "2026-10-24T21:28:45.347Z",
   "author": {
     "login": "firecrawl",
     "name": "Firecrawl",
@@ -31,7 +31,7 @@
     {
       "slug": "firecrawl-firecrawl-cli",
       "displayName": "firecrawl/firecrawl-cli",
-      "stars": 663,
+      "stars": 664,
       "relation": "source_overlap",
       "evidence": "author:firecrawl"
     },
@@ -73,7 +73,7 @@
     {
       "slug": "cloudflare-security-audit-skill",
       "displayName": "cloudflare/security-audit-skill",
-      "stars": 41932,
+      "stars": 44201,
       "relation": "shared_tag",
       "evidence": "Official Skills by"
     },
