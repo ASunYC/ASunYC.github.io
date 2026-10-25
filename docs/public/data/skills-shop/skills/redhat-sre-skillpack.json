@@ -12,7 +12,7 @@
   "readme": "# redhat/sre-skillpack\n\nDiscover, remediate, and verify CVEs across your RHEL fleet — orchestrating Red Hat Lightspeed and Ansible Automation Platform through a single workflow.",
   "readmeHtml": "<h1>redhat/sre-skillpack</h1>\n<p>Discover, remediate, and verify CVEs across your RHEL fleet — orchestrating Red Hat Lightspeed and Ansible Automation Platform through a single workflow.</p>",
   "skillMd": "",
-  "updatedAt": "2026-10-24T21:28:45.426Z",
+  "updatedAt": "2026-10-25T21:28:34.000Z",
   "author": {
     "login": "redhat",
     "name": "redhat",
@@ -53,7 +53,7 @@
     {
       "slug": "coreyhaines31-ab-testing",
       "displayName": "coreyhaines31/ab-testing",
-      "stars": 56362,
+      "stars": 56497,
       "relation": "shared_tag",
       "evidence": "TypeScript Skills"
     },
@@ -67,14 +67,14 @@
     {
       "slug": "phuryn-ab-test-analysis",
       "displayName": "phuryn/ab-test-analysis",
-      "stars": 27351,
+      "stars": 27366,
       "relation": "shared_tag",
       "evidence": "TypeScript Skills"
     },
     {
       "slug": "google-cloud-agent-platform-skill-registry",
       "displayName": "google/cloud/agent-platform-skill-registry",
-      "stars": 21545,
+      "stars": 21570,
       "relation": "shared_tag",
       "evidence": "TypeScript Skills"
     }
