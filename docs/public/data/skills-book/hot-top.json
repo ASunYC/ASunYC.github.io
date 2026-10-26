@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-25T21:28:46.056Z",
+  "generatedAt": "2026-10-26T23:18:40.051Z",
   "source": "local-skills-cache",
   "baseline": {
     "window": "7d",
-    "commit": "efd0180ceac75af4f53a2e477d29679b598ee0bc"
+    "commit": "363a65ade4194c318c06fe4013afd733e95de8af"
   },
   "skills": [
     {
@@ -12,10 +12,10 @@
       "displayName": "morluto/rea",
       "description": "Reverse-engineer binaries, applications, and runtimes with REA",
       "category": "Community Skills",
-      "stars": 384028,
+      "stars": 391324,
       "githubRepo": "morluto/rea",
       "source": "voltagent",
-      "weeklyStars": 5971,
+      "weeklyStars": 7296,
       "href": "/skills-shop/morluto-rea/"
     },
     {
@@ -24,10 +24,10 @@
       "displayName": "obra/brainstorming",
       "description": "Generate and explore ideas",
       "category": "Community Skills",
-      "stars": 305000,
+      "stars": 305577,
       "githubRepo": "obra/superpowers",
       "source": "voltagent",
-      "weeklyStars": 402,
+      "weeklyStars": 577,
       "href": "/skills-shop/obra-brainstorming/"
     },
     {
@@ -36,10 +36,10 @@
       "displayName": "mattpocock/skills",
       "description": "17 dev workflow skills: PRD writing, TDD, codebase architecture, git guardrails, issue triage, refactoring plans, and more",
       "category": "Community Skills",
-      "stars": 303157,
+      "stars": 304040,
       "githubRepo": "mattpocock/skills",
       "source": "voltagent",
-      "weeklyStars": 716,
+      "weeklyStars": 883,
       "href": "/skills-shop/mattpocock-skills/"
     },
     {
@@ -48,10 +48,10 @@
       "displayName": "anthropics/docx",
       "description": "Create, edit, and analyze Word documents",
       "category": "Skills by Anthropic",
-      "stars": 183740,
+      "stars": 183977,
       "githubRepo": "anthropics/skills",
       "source": "heilcheng",
-      "weeklyStars": 183740,
+      "weeklyStars": 183977,
       "href": "/skills-shop/anthropics-docx/"
     },
     {
@@ -60,10 +60,10 @@
       "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
       "description": "UI/UX design patterns and best practices",
       "category": "Community Skills",
-      "stars": 140330,
+      "stars": 140897,
       "githubRepo": "nextlevelbuilder/ui-ux-pro-max-skill",
       "source": "voltagent",
-      "weeklyStars": 442,
+      "weeklyStars": 567,
       "href": "/skills-shop/nextlevelbuilder-ui-ux-pro-max-skill/"
     },
     {
@@ -72,10 +72,10 @@
       "displayName": "garrytan/office-hours",
       "description": "YC Office Hours: reframing product before code",
       "category": "Skills by SuperCLI",
-      "stars": 137688,
+      "stars": 137832,
       "githubRepo": "garrytan/gstack",
       "source": "heilcheng",
-      "weeklyStars": 137688,
+      "weeklyStars": 137832,
       "href": "/skills-shop/garrytan-office-hours/"
     },
     {
@@ -84,35 +84,35 @@
       "displayName": "voltagent/awesome-design-md",
       "description": "Standards and tools for the DESIGN.md protocol.",
       "category": "How do I know if a skill is safe to use?",
-      "stars": 123481,
+      "stars": 123719,
       "githubRepo": "VoltAgent/awesome-design-md",
       "source": "heilcheng",
-      "weeklyStars": 162,
+      "weeklyStars": 238,
       "href": "/skills-shop/voltagent-awesome-design-md/"
     },
     {
       "rank": 8,
-      "slug": "thedotmack-claude-mem",
-      "displayName": "thedotmack/claude-mem",
-      "description": "Compresses and persists agent memory across sessions",
-      "category": "Community Skills",
-      "stars": 103082,
-      "githubRepo": "thedotmack/claude-mem",
-      "source": "voltagent",
-      "weeklyStars": 293,
-      "href": "/skills-shop/thedotmack-claude-mem/"
-    },
-    {
-      "rank": 9,
       "slug": "panniantong-agent-reach",
       "displayName": "Panniantong/Agent-Reach",
       "description": "Multi-platform search CLI for 17 sites including Chinese platforms",
       "category": "Community Skills",
-      "stars": 102436,
+      "stars": 103478,
       "githubRepo": "Panniantong/Agent-Reach",
       "source": "voltagent",
-      "weeklyStars": 729,
+      "weeklyStars": 1042,
       "href": "/skills-shop/panniantong-agent-reach/"
+    },
+    {
+      "rank": 9,
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "description": "Compresses and persists agent memory across sessions",
+      "category": "Community Skills",
+      "stars": 103408,
+      "githubRepo": "thedotmack/claude-mem",
+      "source": "voltagent",
+      "weeklyStars": 326,
+      "href": "/skills-shop/thedotmack-claude-mem/"
     },
     {
       "rank": 10,
@@ -120,10 +120,10 @@
       "displayName": "Leonxlnx/taste-skill",
       "description": "High-agency frontend skill that gives AI good taste with tunable design variance, motion intensity, and visual density to stop generic UI slop",
       "category": "Community Skills",
-      "stars": 102429,
+      "stars": 102970,
       "githubRepo": "Leonxlnx/taste-skill",
       "source": "voltagent",
-      "weeklyStars": 451,
+      "weeklyStars": 541,
       "href": "/skills-shop/leonxlnx-taste-skill/"
     }
   ]
