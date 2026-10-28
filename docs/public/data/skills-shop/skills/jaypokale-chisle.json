@@ -2,11 +2,11 @@
   "id": "skill:jaypokale-chisle",
   "slug": "jaypokale-chisle",
   "name": "chisle",
-  "displayName": "jaypokale/chisle",
-  "description": "Cuts agent tokens: terse answers, lean code, trimmed tool output; benchmarked",
-  "stars": 721,
-  "category": "Skills by Binance",
-  "source": "heilcheng",
+  "displayName": "JayPokale/chisle",
+  "description": "Cuts agent tokens: terse prose, lean code, trimmed tool output",
+  "stars": 723,
+  "category": "Community Skills",
+  "source": "voltagent",
   "url": "https://github.com/JayPokale/Chisle/tree/main/skills/chisle",
   "githubRepo": "JayPokale/Chisle",
   "readme": "<p align=\"center\">\n  <img src=\"assets/logo.png\" width=\"120\" alt=\"Chisle\">\n</p>\n\n<h1 align=\"center\">Chisle</h1>\n\n<h3 align=\"center\">Fewer tokens than caveman and ponytail. No accuracy lost.</h3>\n\n<p align=\"center\">\n  <em>Your AI talks less, builds less, reads less, and says more. Like a senior dev who bills by the syllable.</em>\n</p>\n\n<p align=\"center\">\n  <em>The only tool in this class that publishes the runs where it lost. <a href=\"https://jaypokale.me/writing/chisle-benchmarks-it-loses\">Here's why.</a></em>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://www.npmjs.com/package/chisle\"><img src=\"https://img.shields.io/npm/v/chisle?style=flat-square&color=d78a3c\" alt=\"npm version\"></a>\n  <img src=\"https://img.shields.io/badge/works%20with-13%20agents-d78a3c?style=flat-square\" alt=\"Works with 13 agents\">\n  <a href=\"https://github.com/JayPokale/Chisle/actions/workflows/test.yml\"><img src=\"https://img.shields.io/github/actions/workflow/status/JayPokale/Chisle/test.yml?style=flat-square&label=CI\" alt=\"CI\"></a>\n  <img src=\"https://img.shields.io/badge/deps-0-2da44e?style=flat-square\" alt=\"Zero deps\">\n  <img src=\"https://img.shields.io/badge/license-MIT-d78a3c?style=flat-square\" alt=\"MIT\">\n  <a href=\"https://github.com/JayPokale/Chisle/stargazers\"><img src=\"https://img.shields.io/github/stars/JayPokale/Chisle?style=social\" alt=\"Star Chisle on GitHub\"></a>\n</p>\n\n<p align=\"center\">\n  <strong>Built for Claude Code: answers about half as long, shorter than caveman and ponytail &middot; 13 agents &middot; zero dependencies &middot; one command</strong>\n</p>\n\nChisle is a Claude Code plugin that makes Claude cheaper to run without making it dumber. It cuts what Claude writes: no filler, no hedging, no speculative abstractions, just the smallest code that works. It also cuts what Claude reads: a `PostToolUse` hook trims oversized tool output by ~46% before it re-enters the context window, where it would be re-billed on every later request. In agent-loop tests Claude with Chisle passes the same tasks as Claude without it. One `npx chisle` installs it, and the same ruleset ships to Pi, Cursor, Codex, Gemini, Copilot, OpenCode, Antigravity and four more agents. Every number here comes from committed raw transcripts, including the runs where it lost.\n\n<p align=\"center\">\n  <img src=\"assets/benchmark-pi.svg\" width=\"820\" alt=\"Pi benchmark, 6 tasks, answer length as percent of the same model with no ruleset. caveman 56%, ponytail 49%, Chisle 37%.\">\n</p>\n\n<p align=\"center\"><sub>Pi, 6 tasks: answer length vs the same model with no ruleset. Lower is leaner. <a href=\"#benchmarks\">More below.</a></sub></p>\n\n---\n\n\"Implement an order state machine covering created, paid, shipped, delivered, cancelled and refunded, with the legal transitions enforced and invalid ones rejected.\" Same model, same prompt, one difference: the injected ruleset. Both answers are the **verbatim committed output** from [`raw-oct-notools/large-s2`](benchmarks/results/raw-oct-notools/large-s2/):\n\n<table>\n<tr><th align=\"left\" width=\"50%\">bare model: 125 lines, 1,342 answer tokens</th><th align=\"left\" width=\"50%\">Chisle: 54 lines, 450 answer tokens</th></tr>\n<tr valign=\"top\"><td>\n\nAn `Enum` of states, a custom exception class, type hints and docstrings on every method, a file write, then a test harness:\n\n```python\nclass OrderState(Enum):\n    CREATED = \"created\"\n    PAID = \"paid\"\n    # … four more\n\nclass InvalidTransition(Exception):\n    \"\"\"Raised when attempting an invalid state transition.\"\"\"\n    pass\n\nclass Order:\n    VALID_TRANSITIONS = { … }\n    def transition_to(self, next_state: OrderState) -> None:\n        \"\"\"Transition to next state if valid, …\"\"\"\n```\n\n…plus usage, tests and a summary.\n\n</td><td>\n\nOne dict of legal transitions, one method that enforces it:\n\n```python\nclass OrderStateMachine:\n    TRANSITIONS = {\n        'created': {'paid', 'cancelled'},\n        'paid': {'shipped', 'refunded'},\n        'shipped': {'delivered', 'cancelled'},\n        'delivered': {'refunded'},\n        'cancelled': set(),\n        'refunded': set(),\n    }\n    def transition(self, new_state):\n        if new_state not in self.TRANSITIONS[self.state]:\n            raise ValueError(f\"Invalid transition: …\")\n        self.state = new_state\n```\n\nThen a short usage block and one line on how it works.\n\n</td></tr>\n</table>\n\nSame behaviour, a third of the tokens. caveman wrote 1,140 and ponytail 842 on the same prompt.\n\n## What it compresses\n\n| axis | what | how |\n|---|---|---|\n| **Output: prose** | filler, hedging, manufactured structure | zero-fluff ruleset, injected per session |\n| **Output: code** | speculative abstractions, unrequested boilerplate | YAGNI efficiency ladder |\n| **Input: context** | oversized tool output flooding the window | Claude `PostToolUse`, Pi `tool_result`, OpenCode plugin, Copilot CLI `postToolUse`: scrub, elide, dedup, plus prevention rules |\n| **Input: MCP** | oversized MCP tool results in any agent | `npx chisle mcp wrap`: a proxy in front of each stdio MCP server (Cursor, Windsurf, Cline, Kiro, Gemini, Qwen Code, Copilot CLI) |\n\nWhere each one attaches to a session:\n\n```mermaid\nflowchart LR\n    subgraph S[\"Session start\"]\n        H1[\"Ruleset injection<br/>once per active session\"]\n    end\n    subgraph T[\"Every turn\"]\n        H2[\"Mode tracking<br/>Claude + Pi\"]\n    end\n    subgraph L[\"Every tool call\"]\n        H3[\"PostToolUse / tool_result<br/>scrub → elide → dedup\"]\n    end\n\n    H1 --> M([\"Model\"])\n    H2 --> M\n    M -->|writes| O[\"Output:<br/>terser prose,<br/>YAGNI-first code\"]\n    M -->|calls a tool| TOOL[[\"Bash / grep / web / extension tools\"]]\n    TOOL -->|raw output| H3\n    H3 -->|\"compressed, rebuilt into<br/>the tool's own shape\"| M\n\n    RE[\"Read / Edit / Write\"] -.->|\"never touched,<br/>exact bytes feed later edits\"| M\n\n    style M fill:#1f2937,stroke:#d78a3c,color:#e6edf3\n    style O fill:#14532d,stroke:#2da44e,color:#e6edf3\n    style H3 fill:#1f2937,stroke:#2da44e,color:#e6edf3\n    style RE fill:#3f1d1d,stroke:#cf3b3b,color:#e6edf3\n```\n\nThe loop on the right is the input axis: tool output is billed again on *every* later request in the session, so shrinking it once pays repeatedly. `Read`, `Edit`, and `Write` are deliberately outside it.\n\n---\n\n## Install\n\nOne command. Auto-detects your agents (Claude Code, Pi, Cursor, Windsurf, Cline, Kiro, Antigravity, Codex, Gemini, Copilot, Copilot CLI, OpenCode, Hermes) and wires each one. `--uninstall` puts everything back. `npx chisle mcp wrap` extends tool-output compression to MCP servers in any agent ([details](INSTALL.md#mcp-output-compression-any-agent)).\n\n```bash\nnpx chisle\n```\n\n```bash\n# or via curl\ncurl -fsSL https://raw.githubusercontent.com/JayPokale/Chisle/main/install.sh | bash\n```\n\n```powershell\n# Windows\nirm https://raw.githubusercontent.com/JayPokale/Chisle/main/install.ps1 | iex\n```\n\nPreview first with `npx chisle --dry-run`, scope with `--only claude` or `--only pi`, see everything with `npx chisle --help`. Remove with `npx chisle --uninstall`.\n\nUpgrading, per-agent setup, `--stats` and config: [docs/usage.md](docs/usage.md).\n\n---\n\n## Benchmarks\n\nSame model, same prompts, one difference: the injected ruleset. Lower = leaner. Chisle is the leanest on every row.\n\n**Claude Code** (Haiku 4.5, 26 live prompts, tools off, [raw cells](benchmarks/results/raw-oct-notools/)):\n\n| % of a bare model | caveman | ponytail | **Chisle** |\n|---|--:|--:|--:|\n| answer length | 65% | 58% | **56%** |\n| answer lines | 66% | 54% | **52%** |\n\n**Pi** (GPT-5.5, 6 tasks, [raw cells](benchmarks/results/raw-pi/)):\n\n| % of a bare model | caveman | ponytail | **Chisle** |\n|---|--:|--:|--:|\n| answer length | 56% | 49% | **37%** |\n| answer lines | 75% | 38% | **37%** |\n| billed tokens, explanations | 43% | 76% | **39%** |\n\n**Accuracy** holds against the bare model: 156/156 vs 155/156 on auto-graded maths and coding, 48/60 vs 49/60 on agentic hidden-test repos, Fisher p = 1.000 on both ([writeup](benchmarks/results/2026-09-14-quality-and-agentic.md)). No judge model anywhere.\n\n**Tool output** is two thirds of a Claude Code session's context and re-billed every turn. The compressor cuts **~46%** off every oversized output ([171 sessions](benchmarks/results/2026-07-07-input-axis.md)); on OpenCode a 30 KB log dropped **87%** of fresh input tokens.\n\nMethod and every raw cell: [docs/benchmarks.md](docs/benchmarks.md).\n\n---\n\n## How it works\n\nBefore writing code, the agent stops at the first rung that holds:\n\n```mermaid\nflowchart TD\n    A[Request for code] --> R[Read the problem fully]\n    R --> Q1{Does this need<br/>to exist at all?}\n    Q1 -->|no| S1[Skip it. Say so in one line]\n    Q1 -->|yes| Q2{Already in<br/>this codebase?}\n    Q2 -->|yes| S2[Reuse it. Don't rewrite]\n    Q2 -->|no| Q3{Stdlib<br/>does it?}\n    Q3 -->|yes| S3[Use the stdlib]\n    Q3 -->|no| Q4{Native platform<br/>feature covers it?}\n    Q4 -->|yes| S4[\"CSS over JS, DB constraint<br/>over app code\"]\n    Q4 -->|no| Q5{Already-installed<br/>dependency?}\n    Q5 -->|yes| S5[Use it. Never add a new dep<br/>for what a few lines do]\n    Q5 -->|no| Q6{Can it be<br/>one line?}\n    Q6 -->|yes| S6[One line]\n    Q6 -->|no| S7[The minimum code that works]\n\n    S1 & S2 & S3 & S4 & S5 & S6 & S7 --> OUT[Ship it + note what was skipped<br/>and when to add it]\n\n    style Q1 fill:#1f2937,stroke:#d78a3c,color:#e6edf3\n    style OUT fill:#14532d,stroke:#2da44e,color:#e6edf3\n    style R fill:#1f2937,stroke:#8b949e,color:#e6edf3\n```\n\nThe ladder runs **after** reading, never instead of it. Note the exit: every rung lands on the same obligation: say what you skipped, so \"later\" doesn't quietly become \"never\".\n\nThe ladder runs *after* reading the code, lazy about the solution and never about understanding. Lazy is not negligent: trust-boundary validation, data-loss handling, security, and accessibility are never on the chopping block.\n\nMark deliberate simplifications so \"later\" doesn't quietly become \"never\":\n\n```js\n// chisle: global lock, per-account locks if throughput matters\n// chisle: O(n) scan, index this when table exceeds ~10k rows\n```\n\n## Usage\n\n| Command | Effect |\n|---------|--------|\n| *(nothing)* | On automatically every session after install |\n| `/chisle` | Re-activate if you'd stopped it |\n| `/chisle off` | Deactivate |\n| `stop chisle` | Deactivate (ruleset *and* input-side compression) |\n| `normal mode` | Deactivate |\n\nNatural language works too: \"activate chisle\", \"chisle mode\", \"chislify this\". Code symbols, function/API names, and error strings stay verbatim, so only the noise around them compresses.\n\n---\n\n## Contributing\n\nSee [CONTRIBUTING.md](CONTRIBUTING.md). Built by [Jay Pokale](https://github.com/JayPokale) with [Claude](https://claude.com/claude-code), [Antigravity](https://antigravity.google), and [Codex](https://openai.com/blog/openai-codex/) as co-engineers.\n\n## Star History\n\n<a href=\"https://www.star-history.com/?repos=JayPokale%2FChisle&type=date&legend=top-left\">\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\"https://api.star-history.com/svg?repos=JayPokale/Chisle&type=date&legend=top-left&theme=dark\">\n    <source media=\"(prefers-color-scheme: light)\" srcset=\"https://api.star-history.com/svg?repos=JayPokale/Chisle&type=date&legend=top-left\">\n    <img alt=\"Star History Chart\" src=\"https://api.star-history.com/svg?repos=JayPokale/Chisle&type=date&legend=top-left\">\n  </picture>\n</a>\n\n## License\n\n[MIT](LICENSE). The shortest license that works.\n\nChisle began as a merge of [caveman](https://github.com/JuliusBrussee/caveman) (terse prose) and [ponytail](https://github.com/DietrichGebert/ponytail) (lazy-senior-dev code rules), and its ruleset still carries parts of both. Their MIT notices are in [NOTICE](NOTICE).\n\n## Contributors\n\n<a href=\"https://github.com/JayPokale/Chisle/graphs/contributors\">\n  <img src=\"https://contrib.rocks/image?repo=JayPokale/Chisle\" alt=\"GitHub contributors\">\n</a>\n\n**AI co-engineers** (pair-work credited in commit trailers and the changelog):\n\n<p>\n  <a href=\"https://claude.com/claude-code\"><img src=\"https://img.shields.io/badge/🤖_Claude-input_axis_·_benchmarks_·_bug_hunts-d97757?style=flat-square\" alt=\"Claude (Anthropic)\"></a>\n  <a href=\"https://openai.com/codex/\"><img src=\"https://img.shields.io/badge/🤖_Codex-early_iterations-10a37f?style=flat-square\" alt=\"Codex (OpenAI)\"></a>\n  <a href=\"https://antigravity.google/\"><img src=\"https://img.shields.io/badge/🤖_Antigravity-early_iterations-4285f4?style=flat-square\" alt=\"Antigravity (Google)\"></a>\n</p>\n\n---\n\n<p align=\"center\">\n  Saved you tokens? <a href=\"https://github.com/JayPokale/Chisle\">⭐ Star the repo</a>. It costs zero tokens and keeps the benchmarks running.\n</p>\n",
@@ -22,72 +22,72 @@
   },
   "location": {
     "id": "india",
-    "label": "Ghaziabad, India",
+    "label": "Banglore, India",
     "lat": 20.5937,
     "lon": 78.9629,
     "source": "github_profile"
   },
   "related": [
     {
-      "slug": "kkkkhazix-aihot",
-      "displayName": "kkkkhazix/aihot",
-      "stars": 21690,
+      "slug": "morluto-rea",
+      "displayName": "morluto/rea",
+      "stars": 402236,
       "relation": "shared_tag",
-      "evidence": "Skills by Binance"
+      "evidence": "Community Skills"
     },
     {
-      "slug": "sawyerhood-dev-browser",
-      "displayName": "sawyerhood/dev-browser",
-      "stars": 6704,
+      "slug": "obra-brainstorming",
+      "displayName": "obra/brainstorming",
+      "stars": 307387,
       "relation": "shared_tag",
-      "evidence": "Skills by Binance"
+      "evidence": "Community Skills"
     },
     {
-      "slug": "cbrock84-headcount",
-      "displayName": "cbrock84/headcount",
-      "stars": 2092,
+      "slug": "mattpocock-skills",
+      "displayName": "mattpocock/skills",
+      "stars": 305725,
       "relation": "shared_tag",
-      "evidence": "Skills by Binance"
+      "evidence": "Community Skills"
     },
     {
-      "slug": "roundtable02-tutor-skills",
-      "displayName": "roundtable02/tutor-skills",
-      "stars": 1369,
+      "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
+      "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "stars": 142060,
       "relation": "shared_tag",
-      "evidence": "Skills by Binance"
+      "evidence": "Community Skills"
     },
     {
-      "slug": "chubbyguan-chubbyskills",
-      "displayName": "chubbyguan/chubbyskills",
-      "stars": 1284,
+      "slug": "panniantong-agent-reach",
+      "displayName": "Panniantong/Agent-Reach",
+      "stars": 105582,
       "relation": "shared_tag",
-      "evidence": "Skills by Binance"
+      "evidence": "Community Skills"
     },
     {
-      "slug": "moizibnyousaf-ai-agent-skills",
-      "displayName": "moizibnyousaf/ai-agent-skills",
-      "stars": 1153,
+      "slug": "leonxlnx-taste-skill",
+      "displayName": "Leonxlnx/taste-skill",
+      "stars": 104381,
       "relation": "shared_tag",
-      "evidence": "Skills by Binance"
+      "evidence": "Community Skills"
     },
     {
-      "slug": "vostride-agent-qa",
-      "displayName": "vostride/agent-qa",
-      "stars": 899,
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 104022,
       "relation": "shared_tag",
-      "evidence": "Skills by Binance"
+      "evidence": "Community Skills"
     },
     {
-      "slug": "swarmclawai-swarmvault",
-      "displayName": "swarmclawai/swarmvault",
-      "stars": 731,
+      "slug": "tt-a1i-archify",
+      "displayName": "tt-a1i/archify",
+      "stars": 90969,
       "relation": "shared_tag",
-      "evidence": "Skills by Binance"
+      "evidence": "Community Skills"
     }
   ],
   "mapLocation": {
     "id": "india",
-    "label": "Ghaziabad, India",
+    "label": "Banglore, India",
     "lat": 20.5937,
     "lon": 78.9629,
     "source": "github_profile"
