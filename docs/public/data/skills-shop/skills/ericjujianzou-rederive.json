@@ -1,0 +1,89 @@
+{
+  "id": "skill:ericjujianzou-rederive",
+  "slug": "ericjujianzou-rederive",
+  "name": "rederive",
+  "displayName": "EricJujianZou/rederive",
+  "description": "Understand any codebase by re-designing its decisions from first principles",
+  "stars": 352,
+  "category": "Community Skills",
+  "source": "voltagent",
+  "url": "https://github.com/EricJujianZou/rederive",
+  "githubRepo": "EricJujianZou/rederive",
+  "readme": "<p align=\"center\">\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\"assets/banner-dark.png\" />\n    <img src=\"assets/banner-light.png\" alt=\"rederive: learn any codebase by re-designing it yourself from first principles\" width=\"100%\" />\n  </picture>\n</p>\n\n<p align=\"center\"><b>An attempt by a frustrated developer to restore humanity's curiosity</b></p>\n\n<p align=\"center\">\n  <a href=\"LICENSE\"><img src=\"https://img.shields.io/badge/license-MIT-24292f?style=flat\" alt=\"MIT License\" /></a>\n  &nbsp;\n  <a href=\"https://agentskills.io\"><img src=\"https://img.shields.io/badge/Agent_Skills-compatible-24292f?style=flat\" alt=\"Agent Skills compatible\" /></a>\n  &nbsp;\n  <a href=\"#install\"><img src=\"https://img.shields.io/badge/works_in-Claude_Code%2C_Codex%2C_Cursor_%2B_22_more-24292f?style=flat\" alt=\"Works in Claude Code, Codex, Cursor and 22 more agents\" /></a>\n</p>\n\n<p align=\"center\"><sub><a href=\"#install\">Install</a> · <a href=\"#a-session\">A session</a> · <a href=\"#how-it-works\">How it works</a> · <a href=\"#license\">License</a></sub></p>\n\n**rederive** is a skill for coding agents that teaches you a codebase by making you design it yourself from first principles. It only asks you questions to guide you to the right answer, and it won't explain things. We made this on purpose to aim for understanding through derivation, instead of memorizing what the agent says.\n## Install\n\n```\nnpx skills add EricJujianZou/rederive\n```\n\nThe same command installs it in Claude Code, Codex, Cursor, Gemini CLI, GitHub Copilot, opencode, Windsurf, Amp, Goose and about 15 other agents. It puts the skill in every agent folder it finds in your project. Add `-g` to install it for every project instead. Then type `/rederive` in your agent.\n\nIt needs `git`, `bash` and `python3`.\n\n<details>\n<summary>Other ways to install</summary>\n\nAs a Claude Code plugin:\n\n```\n/plugin marketplace add EricJujianZou/rederive\n/plugin install rederive@rederive\n```\n\nBy hand, clone the repo and copy `skills/rederive` into your agent's skills folder, such as `~/.claude/skills/` or `~/.agents/skills/`:\n\n```\ngit clone https://github.com/EricJujianZou/rederive\ncp -r rederive/skills/rederive ~/.agents/skills/\n```\n\n</details>\n\n## A session\n\nThe start of a session on Express (an example, shortened):\n\n<p align=\"center\">\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\"assets/session-dark.png\" />\n    <img src=\"assets/session-light.png\" alt=\"rederive asks how you would handle every HTTP request through one function. You suggest one big handler, then a shared auth function. It adds constraints until you describe a list of functions per route, and it tells you that you rederived a middleware chain.\" width=\"100%\" />\n  </picture>\n</p>\n\n## Use\n\n```\n/rederive                                       # the repo you are in\n/rederive ~/code/myapp                          # a local repo\n/rederive https://github.com/expressjs/express  # clones it into the current folder\n```\n\nTalk to it in plain words. Tell it you're stuck, ask to skip a problem, or say you want to start over.\n\n## How it works\n\n- **It starts from why the project exists.** On your own repo it asks you why you built it. On someone else's repo it works out the original problem and asks how you would solve it.\n- **A background agent maps the repo while you answer.** It reads the code, the import links between files and the commits where the design changed. It doesn't trust commit messages, so repos built with AI in a few big commits work too.\n- **The map holds 5 to 10 problems** in the order the system would be built, each with its constraints and the real design. It lives in `.rederive/map.md`. Don't open it until you're done, because it has the answers.\n- **When you're stuck,** it narrows the problem to a few approaches to choose from. After two wrong answers in a row it offers to sketch the problem for you.\n- **It keeps notes on how you did** in `.rederive/log.md`: where you struggled and what you worked out alone. Read it at the end to see what to practice.\n\nEverything stays on your machine. `.rederive/` goes in the repo's local git exclude list, so it never shows up in your commits. rederive sends no telemetry.\n\n## License\n\nMIT\n",
+  "readmeHtml": "<p>&lt;p align=\"center\"&gt;</p>\n<p>  &lt;picture&gt;</p>\n<p>    &lt;source media=\"(prefers-color-scheme: dark)\" srcset=\"assets/banner-dark.png\" /&gt;</p>\n<p>    &lt;img src=\"assets/banner-light.png\" alt=\"rederive: learn any codebase by re-designing it yourself from first principles\" width=\"100%\" /&gt;</p>\n<p>  &lt;/picture&gt;</p>\n<p>&lt;/p&gt;</p>\n<p>&lt;p align=\"center\"&gt;&lt;b&gt;An attempt by a frustrated developer to restore humanity's curiosity&lt;/b&gt;&lt;/p&gt;</p>\n<p>&lt;p align=\"center\"&gt;</p>\n<p>  &lt;a href=\"LICENSE\"&gt;&lt;img src=\"https://img.shields.io/badge/license-MIT-24292f?style=flat\" alt=\"MIT License\" /&gt;&lt;/a&gt;</p>\n<p>  &amp;nbsp;</p>\n<p>  &lt;a href=\"https://agentskills.io\"&gt;&lt;img src=\"https://img.shields.io/badge/Agent_Skills-compatible-24292f?style=flat\" alt=\"Agent Skills compatible\" /&gt;&lt;/a&gt;</p>\n<p>  &amp;nbsp;</p>\n<p>  &lt;a href=\"#install\"&gt;&lt;img src=\"https://img.shields.io/badge/works_in-Claude_Code%2C_Codex%2C_Cursor_%2B_22_more-24292f?style=flat\" alt=\"Works in Claude Code, Codex, Cursor and 22 more agents\" /&gt;&lt;/a&gt;</p>\n<p>&lt;/p&gt;</p>\n<p>&lt;p align=\"center\"&gt;&lt;sub&gt;&lt;a href=\"#install\"&gt;Install&lt;/a&gt; · &lt;a href=\"#a-session\"&gt;A session&lt;/a&gt; · &lt;a href=\"#how-it-works\"&gt;How it works&lt;/a&gt; · &lt;a href=\"#license\"&gt;License&lt;/a&gt;&lt;/sub&gt;&lt;/p&gt;</p>\n<p><strong>rederive</strong> is a skill for coding agents that teaches you a codebase by making you design it yourself from first principles. It only asks you questions to guide you to the right answer, and it won't explain things. We made this on purpose to aim for understanding through derivation, instead of memorizing what the agent says.</p>\n<h2>Install</h2>\n<pre><code>\nnpx skills add EricJujianZou/rederive\n\n</code></pre>\n<p>The same command installs it in Claude Code, Codex, Cursor, Gemini CLI, GitHub Copilot, opencode, Windsurf, Amp, Goose and about 15 other agents. It puts the skill in every agent folder it finds in your project. Add <code>-g</code> to install it for every project instead. Then type <code>/rederive</code> in your agent.</p>\n<p>It needs <code>git</code>, <code>bash</code> and <code>python3</code>.</p>\n<p>&lt;details&gt;</p>\n<p>&lt;summary&gt;Other ways to install&lt;/summary&gt;</p>\n<p>As a Claude Code plugin:</p>\n<pre><code>\n/plugin marketplace add EricJujianZou/rederive\n\n/plugin install rederive@rederive\n\n</code></pre>\n<p>By hand, clone the repo and copy <code>skills/rederive</code> into your agent's skills folder, such as <code>~/.claude/skills/</code> or <code>~/.agents/skills/</code>:</p>\n<pre><code>\ngit clone https://github.com/EricJujianZou/rederive\n\ncp -r rederive/skills/rederive ~/.agents/skills/\n\n</code></pre>\n<p>&lt;/details&gt;</p>\n<h2>A session</h2>\n<p>The start of a session on Express (an example, shortened):</p>\n<p>&lt;p align=\"center\"&gt;</p>\n<p>  &lt;picture&gt;</p>\n<p>    &lt;source media=\"(prefers-color-scheme: dark)\" srcset=\"assets/session-dark.png\" /&gt;</p>\n<p>    &lt;img src=\"assets/session-light.png\" alt=\"rederive asks how you would handle every HTTP request through one function. You suggest one big handler, then a shared auth function. It adds constraints until you describe a list of functions per route, and it tells you that you rederived a middleware chain.\" width=\"100%\" /&gt;</p>\n<p>  &lt;/picture&gt;</p>\n<p>&lt;/p&gt;</p>\n<h2>Use</h2>\n<pre><code>\n/rederive                                       # the repo you are in\n\n/rederive ~/code/myapp                          # a local repo\n\n/rederive https://github.com/expressjs/express  # clones it into the current folder\n\n</code></pre>\n<p>Talk to it in plain words. Tell it you're stuck, ask to skip a problem, or say you want to start over.</p>\n<h2>How it works</h2>\n<ul>\n<li><strong>It starts from why the project exists.</strong> On your own repo it asks you why you built it. On someone else's repo it works out the original problem and asks how you would solve it.</li>\n<li><strong>A background agent maps the repo while you answer.</strong> It reads the code, the import links between files and the commits where the design changed. It doesn't trust commit messages, so repos built with AI in a few big commits work too.</li>\n<li><strong>The map holds 5 to 10 problems</strong> in the order the system would be built, each with its constraints and the real design. It lives in <code>.rederive/map.md</code>. Don't open it until you're done, because it has the answers.</li>\n<li><strong>When you're stuck,</strong> it narrows the problem to a few approaches to choose from. After two wrong answers in a row it offers to sketch the problem for you.</li>\n<li><strong>It keeps notes on how you did</strong> in <code>.rederive/log.md</code>: where you struggled and what you worked out alone. Read it at the end to see what to practice.</li>\n</ul>\n<p>Everything stays on your machine. <code>.rederive/</code> goes in the repo's local git exclude list, so it never shows up in your commits. rederive sends no telemetry.</p>\n<h2>License</h2>\n<p>MIT</p>",
+  "skillMd": "",
+  "updatedAt": "2026-10-25T20:29:45Z",
+  "author": {
+    "login": "EricJujianZou",
+    "name": "Eric Zou",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/182662111?v=4",
+    "profileUrl": "https://github.com/EricJujianZou",
+    "location": "Waterloo, Ontario"
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "morluto-rea",
+      "displayName": "morluto/rea",
+      "stars": 407562,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "obra-brainstorming",
+      "displayName": "obra/brainstorming",
+      "stars": 308480,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mattpocock-skills",
+      "displayName": "mattpocock/skills",
+      "stars": 306580,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
+      "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "stars": 142522,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "panniantong-agent-reach",
+      "displayName": "Panniantong/Agent-Reach",
+      "stars": 106267,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "leonxlnx-taste-skill",
+      "displayName": "Leonxlnx/taste-skill",
+      "stars": 105483,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 104710,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "tt-a1i-archify",
+      "displayName": "tt-a1i/archify",
+      "stars": 91416,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-paris",
+    "label": "Global Skill Market / Paris / Community Skills",
+    "lat": 48.8566,
+    "lon": 2.3522,
+    "source": "virtual_market"
+  }
+}

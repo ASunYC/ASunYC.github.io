@@ -2,11 +2,11 @@
   "id": "skill:msg91-m91-skill",
   "slug": "msg91-m91-skill",
   "name": "m91-skill",
-  "displayName": "msg91/m91-skill",
-  "description": "Ask a human for approval on their phone before risky agent actions",
+  "displayName": "MSG91/m91-skill",
+  "description": "Ask a human for approval on their phone",
   "stars": 46,
-  "category": "Skills by Binance",
-  "source": "heilcheng",
+  "category": "Community Skills",
+  "source": "voltagent",
   "url": "https://github.com/MSG91/m91-skill",
   "githubRepo": "MSG91/m91-skill",
   "readme": "# M91 Alerting Skill\n\nLets your AI assistant raise M91 alerts from your project — a full-volume alert\non every phone in a channel, even on silent, that keeps going until somebody\nanswers and escalates to a phone call.\n\n## Setup\n\n**Install via the skills CLI (recommended):**\n```bash\nnpx skills add MSG91/m91-skill --skill m91-alerting -g\n```\nFor a repo-local install instead of global, drop the `-g` flag.\n\n**Or copy this repo manually:**\nCopy its contents into your project, e.g. `.claude/skills/m91-alerting/`.\n\n**Either way, then set your send link:**\n```bash\nexport M91_SEND_LINK=\"https://.../s/...\"\n```\n\n### Getting a send link\n\nThis is the one step that cannot be automated, by your assistant or by\nanything else — it needs a phone.\n\n1. Install **M91** (App Store / Play Store) and sign in with your phone number.\n2. `＋ New channel` — name it for the job (`Ops`, `Approvals`). **Its send link\n   is created with it.**\n3. Add the people who should be woken — members icon, phone number, add.\n   **Each has to accept the invite and install M91**, or they receive nothing.\n4. Tap the **paper-plane icon** in the channel header and copy the\n   **Send alert link**.\n\nThat link is a credential: anyone holding it can wake everybody on the channel.\nKeep it out of your repository and out of anything client-side, and store it\nthe way you store your other secrets.\n\n## Usage\n\nAsk your assistant — e.g. *\"alert my team when the nightly job fails.\"* It runs\n`scripts/m91.sh`, which raises the alert, checks that somebody was actually\nreached, and closes it when the condition clears.\n\nThe same script is the whole thing if you would rather run it yourself:\n\n```bash\n./scripts/m91.sh check                                  # verify the link, alerts nobody\n./scripts/m91.sh send --title \"Nightly job failed\" \\\n                      --severity HIGH \\\n                      --custom-id nightly-job \\\n                      --respond \"On it,Seen\"\n./scripts/m91.sh close --custom-id nightly-job\n```\n\nIt needs only `curl` and a POSIX shell — no `jq`, no Python — so it runs in a\nminimal container as happily as on a laptop.\n\n**Try `check` first.** A bare link raises no alert and prints the channel name,\nwhich catches the two usual setup mistakes: a mistyped link, and the right link\npointing at the wrong channel.\n\n### Exit codes\n\n| Exit | Meaning |\n|---|---|\n| `0` | Raised and delivered, or nothing needed closing |\n| `1` | Usage or configuration problem |\n| `2` | The API rejected it — the message names the cause |\n| `3` | Raised, but **delivered to nobody** |\n\n`3` is the one worth wiring into your own checks. A successful request that\nreached no phones is not a working alert, and it almost always means people\nwere invited to the channel but never accepted.\n\n### A note on where this works\n\nThis skill calls an external API, so your assistant needs real outbound network\naccess. It works out of the box in a local terminal, in Claude Code, or in any\nenvironment where you control network access.\n\nSome browser-based AI coding tools run network-sandboxed with a fixed\ndomain allowlist and will not reach M91 until you add its host in that tool's\nsettings. A capable agent should recognise this itself — a connection-level\nfailure rather than an HTTP error — and tell you which host to add rather than\nreporting \"alert failed\". If your agent declines to run this for any reason,\ndon't try to talk it past that; confirm this skill and the M91 domain with your\nown team through a separate channel first.\n\n## Support\n\n`scripts/troubleshoot.md` for failure modes and fixes.\nFull reference: <https://m91-api.msg91.com/llms.txt>\n",
@@ -23,67 +23,67 @@
   "location": null,
   "related": [
     {
-      "slug": "kkkkhazix-aihot",
-      "displayName": "kkkkhazix/aihot",
-      "stars": 21718,
+      "slug": "morluto-rea",
+      "displayName": "morluto/rea",
+      "stars": 407562,
       "relation": "shared_tag",
-      "evidence": "Skills by Binance"
+      "evidence": "Community Skills"
     },
     {
-      "slug": "sawyerhood-dev-browser",
-      "displayName": "sawyerhood/dev-browser",
-      "stars": 6704,
+      "slug": "obra-brainstorming",
+      "displayName": "obra/brainstorming",
+      "stars": 308480,
       "relation": "shared_tag",
-      "evidence": "Skills by Binance"
+      "evidence": "Community Skills"
     },
     {
-      "slug": "cbrock84-headcount",
-      "displayName": "cbrock84/headcount",
-      "stars": 2386,
+      "slug": "mattpocock-skills",
+      "displayName": "mattpocock/skills",
+      "stars": 306580,
       "relation": "shared_tag",
-      "evidence": "Skills by Binance"
+      "evidence": "Community Skills"
     },
     {
-      "slug": "roundtable02-tutor-skills",
-      "displayName": "roundtable02/tutor-skills",
-      "stars": 1371,
+      "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
+      "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "stars": 142522,
       "relation": "shared_tag",
-      "evidence": "Skills by Binance"
+      "evidence": "Community Skills"
     },
     {
-      "slug": "chubbyguan-chubbyskills",
-      "displayName": "chubbyguan/chubbyskills",
-      "stars": 1285,
+      "slug": "panniantong-agent-reach",
+      "displayName": "Panniantong/Agent-Reach",
+      "stars": 106267,
       "relation": "shared_tag",
-      "evidence": "Skills by Binance"
+      "evidence": "Community Skills"
     },
     {
-      "slug": "moizibnyousaf-ai-agent-skills",
-      "displayName": "moizibnyousaf/ai-agent-skills",
-      "stars": 1153,
+      "slug": "leonxlnx-taste-skill",
+      "displayName": "Leonxlnx/taste-skill",
+      "stars": 105483,
       "relation": "shared_tag",
-      "evidence": "Skills by Binance"
+      "evidence": "Community Skills"
     },
     {
-      "slug": "vostride-agent-qa",
-      "displayName": "vostride/agent-qa",
-      "stars": 901,
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 104710,
       "relation": "shared_tag",
-      "evidence": "Skills by Binance"
+      "evidence": "Community Skills"
     },
     {
-      "slug": "swarmclawai-swarmvault",
-      "displayName": "swarmclawai/swarmvault",
-      "stars": 731,
+      "slug": "tt-a1i-archify",
+      "displayName": "tt-a1i/archify",
+      "stars": 91416,
       "relation": "shared_tag",
-      "evidence": "Skills by Binance"
+      "evidence": "Community Skills"
     }
   ],
   "mapLocation": {
-    "id": "virtual-sydney",
-    "label": "Global Skill Market / Sydney / Skills by Binance",
-    "lat": -33.8688,
-    "lon": 151.2093,
+    "id": "virtual-singapore",
+    "label": "Global Skill Market / Singapore / Community Skills",
+    "lat": 1.3521,
+    "lon": 103.8198,
     "source": "virtual_market"
   }
 }

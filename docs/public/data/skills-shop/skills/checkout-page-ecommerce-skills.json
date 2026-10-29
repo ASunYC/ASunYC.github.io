@@ -1,0 +1,89 @@
+{
+  "id": "skill:checkout-page-ecommerce-skills",
+  "slug": "checkout-page-ecommerce-skills",
+  "name": "ecommerce-skills",
+  "displayName": "checkout-page/ecommerce-skills",
+  "description": "19 research-based skills for ecommerce pricing, discounts, and checkout",
+  "stars": 5,
+  "category": "Community Skills",
+  "source": "voltagent",
+  "url": "https://github.com/checkout-page/ecommerce-skills",
+  "githubRepo": "checkout-page/ecommerce-skills",
+  "readme": "# Ecommerce Skills for AI Agents\n\nA collection of AI agent skills for ecommerce pricing, discounts, checkout, and product pages. Built for store owners, founders, and marketers who want their AI agent to give advice that comes from research instead of guesswork. Works with Claude Code, OpenAI Codex, Cursor, and any agent that supports the [Agent Skills spec](https://agentskills.io).\n\nBuilt by [Checkout Page](https://checkoutpage.com), checkout pages for digital products, event tickets, and subscriptions.\n\n**Found a rule that is wrong or out of date?** [Open an issue](https://github.com/checkout-page/ecommerce-skills/issues) with the DOI.\n\n## What are Skills?\n\nSkills are markdown files that give AI agents specialized knowledge for specific tasks. When you add these to your project, your agent recognizes when you are working on a price, a discount, or a product page and applies the rule that fits.\n\nMost rules here come from a peer-reviewed study. The agent tells you what to do, the condition it applies under, and the paper behind it.\n\n## Example\n\nAsk: \"We sell a $90 speaker and want to take $30 off. How do we show it?\"\n\n| | Answer |\n|---|---|\n| Without the skill | \"$30 off\" with a strikethrough price |\n| With `discounts` | ~~$90.00~~ **$60.00**, \"was 50% higher\". $30 is 33% of the full price but 50% of the sale price, and people react to the bigger number. |\n\n## Available Skills\n\n### By goal\n\nStart here if you have a number you want to move. Each skill returns a ranked list of changes.\n\n| Skill | Ask it to… |\n|---|---|\n| [increase-conversion](skills/increase-conversion/) | Rank what would get more visitors to buy |\n| [increase-aov](skills/increase-aov/) | Rank what would raise spend per order |\n| [increase-repeat-purchases](skills/increase-repeat-purchases/) | Rank what would bring customers back for a second order |\n| [raise-prices](skills/raise-prices/) | Rank what has to change for a higher price to hold |\n\n### By task\n\n| Skill | Ask it to… |\n|---|---|\n| [pricing](skills/pricing/) | Choose a price: rounded or .99, flat rates, add-ons, where to show it |\n| [discounts](skills/discounts/) | Word and size a discount or coupon: $ or %, \"was X% higher\", when a discount is too deep |\n| [promotions](skills/promotions/) | Design a promotion that isn't a price cut: gifts, bundles, pre-orders, deadlines |\n| [price-research](skills/price-research/) | Find the most profitable price with a customer survey (includes a calculator) |\n| [product-page](skills/product-page/) | Audit a product page: social proof, sold-out options, quantity buttons, price placement |\n| [checkout-ux](skills/checkout-ux/) | Audit cart and checkout: guest checkout, fields, wallets, totals, coupon fields, errors |\n| [product-copy](skills/product-copy/) | Write or rewrite product descriptions |\n| [product-visuals](skills/product-visuals/) | Brief product photos and video |\n| [store-audit](skills/store-audit/) | Review store-wide choices: channels, layout, design style, trust signals |\n| [post-purchase](skills/post-purchase/) | Set up shipping, returns, loyalty, and cart-abandonment emails |\n| [reviews](skills/reviews/) | Get more reviews and respond to them |\n| [referrals](skills/referrals/) | Design a referral program: rewards and share messages |\n\n### By product type\n\n| Skill | Ask it to… |\n|---|---|\n| [digital-product-pricing](skills/digital-product-pricing/) | Price and launch ebooks, courses, templates, and downloads |\n| [subscription-pricing](skills/subscription-pricing/) | Structure plans, tiers, upgrade paths, and member perks |\n| [event-pricing](skills/event-pricing/) | Price and promote tickets, classes, workshops, and bookings |\n\n## Installation\n\n### Option 1: CLI Install (Recommended)\n\nUse [npx skills](https://github.com/vercel-labs/skills) to install the skills:\n\n```bash\n# Install all skills\nnpx skills add checkout-page/ecommerce-skills\n\n# Install specific skills\nnpx skills add checkout-page/ecommerce-skills --skill pricing discounts\n\n# List available skills\nnpx skills add checkout-page/ecommerce-skills --list\n```\n\n### Option 2: Claude Code Plugin\n\n```\n/plugin marketplace add checkout-page/ecommerce-skills\n/plugin install ecommerce-skills@ecommerce-skills\n```\n\nSkills show up as `/ecommerce-skills:pricing`, `/ecommerce-skills:discounts`, and so on.\n\n### Option 3: Clone and Copy\n\nClone the repo and copy or symlink the skill folders you want into `.claude/skills/` (per project) or `~/.claude/skills/` (per user).\n\n```bash\nmkdir -p ~/.claude/skills && ln -s \"$(pwd)/skills/\"* ~/.claude/skills/\n```\n\n## Usage\n\nOnce installed, ask your agent for help:\n\n```\n\"Should this price end in .99 or .00?\"\n→ Uses the pricing skill\n\n\"We want to run a sale next week. How deep should the discount be?\"\n→ Uses the discounts skill\n\n\"Audit my product page and rank what would lift conversion\"\n→ Uses the increase-conversion and product-page skills\n```\n\n## The evidence\n\nEach skill has two files: `SKILL.md` tells the agent what to do, and `reference.md` lists the rule, the measured effect, and the citation.\n\n- Of 132 rules, 101 cite a paper by DOI. Every DOI is checked against Crossref.\n- 6 point to a rule in another skill that has the citation.\n- 25 have no primary paper. They are marked † in the skill and \"practitioner tip\" in the reference file, so you know which to trust less.\n\nEffect sizes are what one study measured, in that study's context. They tell you the direction and the rough size, not what you will get. Test in your own store.\n\n## Accept payments on your site\n\nThese skills help your agent decide what to charge and how to show it. To take the payment, connect the [Checkout Page MCP](https://checkoutpage.com/mcp) to Claude Code, Cursor, Codex, or ChatGPT. Ask your agent to sell tickets, memberships, products, or donations, and it creates the checkout and adds it to your page. Payments go straight to your own Stripe account. The MCP is included on every Checkout Page plan, including Free.\n\n## License\n\nMIT. See [LICENSE](LICENSE).\n",
+  "readmeHtml": "<h1>Ecommerce Skills for AI Agents</h1>\n<p>A collection of AI agent skills for ecommerce pricing, discounts, checkout, and product pages. Built for store owners, founders, and marketers who want their AI agent to give advice that comes from research instead of guesswork. Works with Claude Code, OpenAI Codex, Cursor, and any agent that supports the <a href=\"https://agentskills.io\" target=\"_blank\" rel=\"noreferrer\">Agent Skills spec</a>.</p>\n<p>Built by <a href=\"https://checkoutpage.com\" target=\"_blank\" rel=\"noreferrer\">Checkout Page</a>, checkout pages for digital products, event tickets, and subscriptions.</p>\n<p><strong>Found a rule that is wrong or out of date?</strong> <a href=\"https://github.com/checkout-page/ecommerce-skills/issues\" target=\"_blank\" rel=\"noreferrer\">Open an issue</a> with the DOI.</p>\n<h2>What are Skills?</h2>\n<p>Skills are markdown files that give AI agents specialized knowledge for specific tasks. When you add these to your project, your agent recognizes when you are working on a price, a discount, or a product page and applies the rule that fits.</p>\n<p>Most rules here come from a peer-reviewed study. The agent tells you what to do, the condition it applies under, and the paper behind it.</p>\n<h2>Example</h2>\n<p>Ask: \"We sell a $90 speaker and want to take $30 off. How do we show it?\"</p>\n<p>| | Answer |</p>\n<p>|---|---|</p>\n<p>| Without the skill | \"$30 off\" with a strikethrough price |</p>\n<p>| With <code>discounts</code> | ~~$90.00~~ <strong>$60.00</strong>, \"was 50% higher\". $30 is 33% of the full price but 50% of the sale price, and people react to the bigger number. |</p>\n<h2>Available Skills</h2>\n<h3>By goal</h3>\n<p>Start here if you have a number you want to move. Each skill returns a ranked list of changes.</p>\n<p>| Skill | Ask it to… |</p>\n<p>|---|---|</p>\n<p>| [increase-conversion](skills/increase-conversion/) | Rank what would get more visitors to buy |</p>\n<p>| [increase-aov](skills/increase-aov/) | Rank what would raise spend per order |</p>\n<p>| [increase-repeat-purchases](skills/increase-repeat-purchases/) | Rank what would bring customers back for a second order |</p>\n<p>| [raise-prices](skills/raise-prices/) | Rank what has to change for a higher price to hold |</p>\n<h3>By task</h3>\n<p>| Skill | Ask it to… |</p>\n<p>|---|---|</p>\n<p>| [pricing](skills/pricing/) | Choose a price: rounded or .99, flat rates, add-ons, where to show it |</p>\n<p>| [discounts](skills/discounts/) | Word and size a discount or coupon: $ or %, \"was X% higher\", when a discount is too deep |</p>\n<p>| [promotions](skills/promotions/) | Design a promotion that isn't a price cut: gifts, bundles, pre-orders, deadlines |</p>\n<p>| [price-research](skills/price-research/) | Find the most profitable price with a customer survey (includes a calculator) |</p>\n<p>| [product-page](skills/product-page/) | Audit a product page: social proof, sold-out options, quantity buttons, price placement |</p>\n<p>| [checkout-ux](skills/checkout-ux/) | Audit cart and checkout: guest checkout, fields, wallets, totals, coupon fields, errors |</p>\n<p>| [product-copy](skills/product-copy/) | Write or rewrite product descriptions |</p>\n<p>| [product-visuals](skills/product-visuals/) | Brief product photos and video |</p>\n<p>| [store-audit](skills/store-audit/) | Review store-wide choices: channels, layout, design style, trust signals |</p>\n<p>| [post-purchase](skills/post-purchase/) | Set up shipping, returns, loyalty, and cart-abandonment emails |</p>\n<p>| [reviews](skills/reviews/) | Get more reviews and respond to them |</p>\n<p>| [referrals](skills/referrals/) | Design a referral program: rewards and share messages |</p>\n<h3>By product type</h3>\n<p>| Skill | Ask it to… |</p>\n<p>|---|---|</p>\n<p>| [digital-product-pricing](skills/digital-product-pricing/) | Price and launch ebooks, courses, templates, and downloads |</p>\n<p>| [subscription-pricing](skills/subscription-pricing/) | Structure plans, tiers, upgrade paths, and member perks |</p>\n<p>| [event-pricing](skills/event-pricing/) | Price and promote tickets, classes, workshops, and bookings |</p>\n<h2>Installation</h2>\n<h3>Option 1: CLI Install (Recommended)</h3>\n<p>Use <a href=\"https://github.com/vercel-labs/skills\" target=\"_blank\" rel=\"noreferrer\">npx skills</a> to install the skills:</p>\n<pre><code>\n# Install all skills\n\nnpx skills add checkout-page/ecommerce-skills\n\n\n\n# Install specific skills\n\nnpx skills add checkout-page/ecommerce-skills --skill pricing discounts\n\n\n\n# List available skills\n\nnpx skills add checkout-page/ecommerce-skills --list\n\n</code></pre>\n<h3>Option 2: Claude Code Plugin</h3>\n<pre><code>\n/plugin marketplace add checkout-page/ecommerce-skills\n\n/plugin install ecommerce-skills@ecommerce-skills\n\n</code></pre>\n<p>Skills show up as <code>/ecommerce-skills:pricing</code>, <code>/ecommerce-skills:discounts</code>, and so on.</p>\n<h3>Option 3: Clone and Copy</h3>\n<p>Clone the repo and copy or symlink the skill folders you want into <code>.claude/skills/</code> (per project) or <code>~/.claude/skills/</code> (per user).</p>\n<pre><code>\nmkdir -p ~/.claude/skills &amp;&amp; ln -s \"$(pwd)/skills/\"* ~/.claude/skills/\n\n</code></pre>\n<h2>Usage</h2>\n<p>Once installed, ask your agent for help:</p>\n<pre><code>\n\"Should this price end in .99 or .00?\"\n\n→ Uses the pricing skill\n\n\n\n\"We want to run a sale next week. How deep should the discount be?\"\n\n→ Uses the discounts skill\n\n\n\n\"Audit my product page and rank what would lift conversion\"\n\n→ Uses the increase-conversion and product-page skills\n\n</code></pre>\n<h2>The evidence</h2>\n<p>Each skill has two files: <code>SKILL.md</code> tells the agent what to do, and <code>reference.md</code> lists the rule, the measured effect, and the citation.</p>\n<ul>\n<li>Of 132 rules, 101 cite a paper by DOI. Every DOI is checked against Crossref.</li>\n<li>6 point to a rule in another skill that has the citation.</li>\n<li>25 have no primary paper. They are marked † in the skill and \"practitioner tip\" in the reference file, so you know which to trust less.</li>\n</ul>\n<p>Effect sizes are what one study measured, in that study's context. They tell you the direction and the rough size, not what you will get. Test in your own store.</p>\n<h2>Accept payments on your site</h2>\n<p>These skills help your agent decide what to charge and how to show it. To take the payment, connect the <a href=\"https://checkoutpage.com/mcp\" target=\"_blank\" rel=\"noreferrer\">Checkout Page MCP</a> to Claude Code, Cursor, Codex, or ChatGPT. Ask your agent to sell tickets, memberships, products, or donations, and it creates the checkout and adds it to your page. Payments go straight to your own Stripe account. The MCP is included on every Checkout Page plan, including Free.</p>\n<h2>License</h2>\n<p>MIT. See [LICENSE](LICENSE).</p>",
+  "skillMd": "",
+  "updatedAt": "2026-10-22T05:52:46Z",
+  "author": {
+    "login": "checkout-page",
+    "name": "Checkout Page",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/82061319?v=4",
+    "profileUrl": "https://github.com/checkout-page",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "morluto-rea",
+      "displayName": "morluto/rea",
+      "stars": 407562,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "obra-brainstorming",
+      "displayName": "obra/brainstorming",
+      "stars": 308480,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mattpocock-skills",
+      "displayName": "mattpocock/skills",
+      "stars": 306580,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
+      "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "stars": 142522,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "panniantong-agent-reach",
+      "displayName": "Panniantong/Agent-Reach",
+      "stars": 106267,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "leonxlnx-taste-skill",
+      "displayName": "Leonxlnx/taste-skill",
+      "stars": 105483,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 104710,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "tt-a1i-archify",
+      "displayName": "tt-a1i/archify",
+      "stars": 91416,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-london",
+    "label": "Global Skill Market / London / Community Skills",
+    "lat": 51.5072,
+    "lon": -0.1276,
+    "source": "virtual_market"
+  }
+}

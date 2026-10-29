@@ -12,7 +12,7 @@
   "readme": "# callstackincubator/upgrading-react-native\n\nReact Native upgrade workflow: templates, dependencies, and common pitfalls",
   "readmeHtml": "<h1>callstackincubator/upgrading-react-native</h1>\n<p>React Native upgrade workflow: templates, dependencies, and common pitfalls</p>",
   "skillMd": "",
-  "updatedAt": "2026-10-28T23:19:47.121Z",
+  "updatedAt": "2026-10-29T23:26:45.388Z",
   "author": {
     "login": "callstackincubator",
     "name": "Callstack Incubator",
@@ -46,7 +46,14 @@
     {
       "slug": "cloudflare-security-audit-skill",
       "displayName": "cloudflare/security-audit-skill",
-      "stars": 51583,
+      "stars": 52784,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "vercel-labs-composition-patterns",
+      "displayName": "vercel-labs/composition-patterns",
+      "stars": 33211,
       "relation": "shared_tag",
       "evidence": "Official Skills by"
     },
@@ -67,13 +74,6 @@
     {
       "slug": "google-labs-code-design-md",
       "displayName": "google-labs-code/design-md",
-      "stars": 0,
-      "relation": "shared_tag",
-      "evidence": "Official Skills by"
-    },
-    {
-      "slug": "trailofbits-audit-context-building",
-      "displayName": "trailofbits/audit-context-building",
       "stars": 0,
       "relation": "shared_tag",
       "evidence": "Official Skills by"

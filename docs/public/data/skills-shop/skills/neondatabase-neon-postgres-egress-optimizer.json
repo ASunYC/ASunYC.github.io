@@ -12,7 +12,7 @@
   "readme": "# neondatabase/neon-postgres-egress-optimizer\n\nOptimize Neon Postgres egress and data transfer",
   "readmeHtml": "<h1>neondatabase/neon-postgres-egress-optimizer</h1>\n<p>Optimize Neon Postgres egress and data transfer</p>",
   "skillMd": "",
-  "updatedAt": "2026-10-28T23:19:47.124Z",
+  "updatedAt": "2026-10-29T23:26:45.390Z",
   "author": {
     "login": "neondatabase",
     "name": "neondatabase",
@@ -46,7 +46,14 @@
     {
       "slug": "cloudflare-security-audit-skill",
       "displayName": "cloudflare/security-audit-skill",
-      "stars": 51583,
+      "stars": 52784,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "vercel-labs-composition-patterns",
+      "displayName": "vercel-labs/composition-patterns",
+      "stars": 33211,
       "relation": "shared_tag",
       "evidence": "Official Skills by"
     },
@@ -67,13 +74,6 @@
     {
       "slug": "google-labs-code-design-md",
       "displayName": "google-labs-code/design-md",
-      "stars": 0,
-      "relation": "shared_tag",
-      "evidence": "Official Skills by"
-    },
-    {
-      "slug": "trailofbits-audit-context-building",
-      "displayName": "trailofbits/audit-context-building",
       "stars": 0,
       "relation": "shared_tag",
       "evidence": "Official Skills by"

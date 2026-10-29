@@ -12,7 +12,7 @@
   "readme": "# callstackincubator/github\n\nGitHub workflow patterns for PRs, code review, branching",
   "readmeHtml": "<h1>callstackincubator/github</h1>\n<p>GitHub workflow patterns for PRs, code review, branching</p>",
   "skillMd": "",
-  "updatedAt": "2026-10-28T23:19:47.121Z",
+  "updatedAt": "2026-10-29T23:26:45.388Z",
   "author": {
     "login": "callstackincubator",
     "name": "Callstack Incubator",
@@ -46,7 +46,14 @@
     {
       "slug": "cloudflare-security-audit-skill",
       "displayName": "cloudflare/security-audit-skill",
-      "stars": 51583,
+      "stars": 52784,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "vercel-labs-composition-patterns",
+      "displayName": "vercel-labs/composition-patterns",
+      "stars": 33211,
       "relation": "shared_tag",
       "evidence": "Official Skills by"
     },
@@ -67,13 +74,6 @@
     {
       "slug": "google-labs-code-design-md",
       "displayName": "google-labs-code/design-md",
-      "stars": 0,
-      "relation": "shared_tag",
-      "evidence": "Official Skills by"
-    },
-    {
-      "slug": "trailofbits-audit-context-building",
-      "displayName": "trailofbits/audit-context-building",
       "stars": 0,
       "relation": "shared_tag",
       "evidence": "Official Skills by"

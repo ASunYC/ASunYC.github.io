@@ -12,7 +12,7 @@
   "readme": "# replicate/replicate\n\nDiscover, compare, and run AI models using Replicate's API",
   "readmeHtml": "<h1>replicate/replicate</h1>\n<p>Discover, compare, and run AI models using Replicate's API</p>",
   "skillMd": "",
-  "updatedAt": "2026-10-28T23:19:47.124Z",
+  "updatedAt": "2026-10-29T23:26:45.408Z",
   "author": {
     "login": "replicate",
     "name": "Replicate",
@@ -32,7 +32,14 @@
     {
       "slug": "cloudflare-security-audit-skill",
       "displayName": "cloudflare/security-audit-skill",
-      "stars": 51583,
+      "stars": 52784,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "vercel-labs-composition-patterns",
+      "displayName": "vercel-labs/composition-patterns",
+      "stars": 33211,
       "relation": "shared_tag",
       "evidence": "Official Skills by"
     },
@@ -67,13 +74,6 @@
     {
       "slug": "remotion-dev-remotion",
       "displayName": "remotion-dev/remotion",
-      "stars": 0,
-      "relation": "shared_tag",
-      "evidence": "Official Skills by"
-    },
-    {
-      "slug": "google-gemini-gemini-api-dev",
-      "displayName": "google-gemini/gemini-api-dev",
       "stars": 0,
       "relation": "shared_tag",
       "evidence": "Official Skills by"

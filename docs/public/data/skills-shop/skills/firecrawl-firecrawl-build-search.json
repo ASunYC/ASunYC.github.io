@@ -12,7 +12,7 @@
   "readme": "# firecrawl/firecrawl-build-search\n\nIntegrate Firecrawl `/search` for query-first discovery with optional content hydration",
   "readmeHtml": "<h1>firecrawl/firecrawl-build-search</h1>\n<p>Integrate Firecrawl <code>/search</code> for query-first discovery with optional content hydration</p>",
   "skillMd": "",
-  "updatedAt": "2026-10-28T23:19:47.124Z",
+  "updatedAt": "2026-10-29T23:26:45.390Z",
   "author": {
     "login": "firecrawl",
     "name": "Firecrawl",
@@ -73,14 +73,14 @@
     {
       "slug": "cloudflare-security-audit-skill",
       "displayName": "cloudflare/security-audit-skill",
-      "stars": 51583,
+      "stars": 52784,
       "relation": "shared_tag",
       "evidence": "Official Skills by"
     },
     {
-      "slug": "googleworkspace-gws-drive",
-      "displayName": "googleworkspace/gws-drive",
-      "stars": 0,
+      "slug": "vercel-labs-composition-patterns",
+      "displayName": "vercel-labs/composition-patterns",
+      "stars": 33211,
       "relation": "shared_tag",
       "evidence": "Official Skills by"
     }

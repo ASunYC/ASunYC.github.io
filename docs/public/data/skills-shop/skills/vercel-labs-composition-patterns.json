@@ -3,46 +3,25 @@
   "slug": "vercel-labs-composition-patterns",
   "name": "composition-patterns",
   "displayName": "vercel-labs/composition-patterns",
-  "description": "React component composition and reusable patterns",
-  "stars": 0,
-  "category": "Skills by Typefully",
+  "description": "Scalable React composition patterns for reusable component APIs",
+  "stars": 33211,
+  "category": "Official Skills by",
   "source": "voltagent",
-  "url": "https://officialskills.sh/vercel-labs/skills/composition-patterns",
-  "githubRepo": "",
-  "readme": "# vercel-labs/composition-patterns\n\nReact component composition and reusable patterns",
-  "readmeHtml": "<h1>vercel-labs/composition-patterns</h1>\n<p>React component composition and reusable patterns</p>",
-  "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.100Z",
+  "url": "https://github.com/vercel-labs/agent-skills/tree/main/skills/composition-patterns",
+  "githubRepo": "vercel-labs/agent-skills",
+  "readme": "# React Composition Patterns\n\nA structured repository for React composition patterns that scale. These\npatterns help avoid boolean prop proliferation by using compound components,\nlifting state, and composing internals.\n\n## Structure\n\n- `rules/` - Individual rule files (one per rule)\n  - `_sections.md` - Section metadata (titles, impacts, descriptions)\n  - `_template.md` - Template for creating new rules\n  - `area-description.md` - Individual rule files\n- `metadata.json` - Document metadata (version, organization, abstract)\n- **`AGENTS.md`** - Compiled output (generated)\n\n## Rules\n\n### Component Architecture (CRITICAL)\n\n- `architecture-avoid-boolean-props.md` - Don't add boolean props to customize\n  behavior\n- `architecture-compound-components.md` - Structure as compound components with\n  shared context\n\n### State Management (HIGH)\n\n- `state-lift-state.md` - Lift state into provider components\n- `state-context-interface.md` - Define clear context interfaces\n  (state/actions/meta)\n- `state-decouple-implementation.md` - Decouple state management from UI\n\n### Implementation Patterns (MEDIUM)\n\n- `patterns-children-over-render-props.md` - Prefer children over renderX props\n- `patterns-explicit-variants.md` - Create explicit component variants\n\n## Core Principles\n\n1. **Composition over configuration** — Instead of adding props, let consumers\n   compose\n2. **Lift your state** — State in providers, not trapped in components\n3. **Compose your internals** — Subcomponents access context, not props\n4. **Explicit variants** — Create ThreadComposer, EditComposer, not Composer\n   with isThread\n\n## Creating a New Rule\n\n1. Copy `rules/_template.md` to `rules/area-description.md`\n2. Choose the appropriate area prefix:\n   - `architecture-` for Component Architecture\n   - `state-` for State Management\n   - `patterns-` for Implementation Patterns\n3. Fill in the frontmatter and content\n4. Ensure you have clear examples with explanations\n\n## Impact Levels\n\n- `CRITICAL` - Foundational patterns, prevents unmaintainable code\n- `HIGH` - Significant maintainability improvements\n- `MEDIUM` - Good practices for cleaner code\n",
+  "readmeHtml": "<h1>React Composition Patterns</h1>\n<p>A structured repository for React composition patterns that scale. These</p>\n<p>patterns help avoid boolean prop proliferation by using compound components,</p>\n<p>lifting state, and composing internals.</p>\n<h2>Structure</h2>\n<ul>\n<li><code>rules/</code> - Individual rule files (one per rule)</li>\n</ul>\n<p>  - <code>_sections.md</code> - Section metadata (titles, impacts, descriptions)</p>\n<p>  - <code>_template.md</code> - Template for creating new rules</p>\n<p>  - <code>area-description.md</code> - Individual rule files</p>\n<ul>\n<li><code>metadata.json</code> - Document metadata (version, organization, abstract)</li>\n<li><strong><code>AGENTS.md</code></strong> - Compiled output (generated)</li>\n</ul>\n<h2>Rules</h2>\n<h3>Component Architecture (CRITICAL)</h3>\n<ul>\n<li><code>architecture-avoid-boolean-props.md</code> - Don't add boolean props to customize</li>\n</ul>\n<p>  behavior</p>\n<ul>\n<li><code>architecture-compound-components.md</code> - Structure as compound components with</li>\n</ul>\n<p>  shared context</p>\n<h3>State Management (HIGH)</h3>\n<ul>\n<li><code>state-lift-state.md</code> - Lift state into provider components</li>\n<li><code>state-context-interface.md</code> - Define clear context interfaces</li>\n</ul>\n<p>  (state/actions/meta)</p>\n<ul>\n<li><code>state-decouple-implementation.md</code> - Decouple state management from UI</li>\n</ul>\n<h3>Implementation Patterns (MEDIUM)</h3>\n<ul>\n<li><code>patterns-children-over-render-props.md</code> - Prefer children over renderX props</li>\n<li><code>patterns-explicit-variants.md</code> - Create explicit component variants</li>\n</ul>\n<h2>Core Principles</h2>\n<p>1. <strong>Composition over configuration</strong> — Instead of adding props, let consumers</p>\n<p>   compose</p>\n<p>2. <strong>Lift your state</strong> — State in providers, not trapped in components</p>\n<p>3. <strong>Compose your internals</strong> — Subcomponents access context, not props</p>\n<p>4. <strong>Explicit variants</strong> — Create ThreadComposer, EditComposer, not Composer</p>\n<p>   with isThread</p>\n<h2>Creating a New Rule</h2>\n<p>1. Copy <code>rules/_template.md</code> to <code>rules/area-description.md</code></p>\n<p>2. Choose the appropriate area prefix:</p>\n<p>   - <code>architecture-</code> for Component Architecture</p>\n<p>   - <code>state-</code> for State Management</p>\n<p>   - <code>patterns-</code> for Implementation Patterns</p>\n<p>3. Fill in the frontmatter and content</p>\n<p>4. Ensure you have clear examples with explanations</p>\n<h2>Impact Levels</h2>\n<ul>\n<li><code>CRITICAL</code> - Foundational patterns, prevents unmaintainable code</li>\n<li><code>HIGH</code> - Significant maintainability improvements</li>\n<li><code>MEDIUM</code> - Good practices for cleaner code</li>\n</ul>",
+  "skillMd": "---\nname: vercel-composition-patterns\ndescription:\n  React composition patterns that scale. Use when refactoring components with\n  boolean prop proliferation, building flexible component libraries, or\n  designing reusable APIs. Triggers on tasks involving compound components,\n  render props, context providers, or component architecture. Includes React 19\n  API changes.\nlicense: MIT\nmetadata:\n  author: vercel\n  version: '1.0.0'\n---\n\n# React Composition Patterns\n\nComposition patterns for building flexible, maintainable React components. Avoid\nboolean prop proliferation by using compound components, lifting state, and\ncomposing internals. These patterns make codebases easier for both humans and AI\nagents to work with as they scale.\n\n## When to Apply\n\nReference these guidelines when:\n\n- Refactoring components with many boolean props\n- Building reusable component libraries\n- Designing flexible component APIs\n- Reviewing component architecture\n- Working with compound components or context providers\n\n## Rule Categories by Priority\n\n| Priority | Category                | Impact | Prefix          |\n| -------- | ----------------------- | ------ | --------------- |\n| 1        | Component Architecture  | HIGH   | `architecture-` |\n| 2        | State Management        | MEDIUM | `state-`        |\n| 3        | Implementation Patterns | MEDIUM | `patterns-`     |\n| 4        | React 19 APIs           | MEDIUM | `react19-`      |\n\n## Quick Reference\n\n### 1. Component Architecture (HIGH)\n\n- `architecture-avoid-boolean-props` - Don't add boolean props to customize\n  behavior; use composition\n- `architecture-compound-components` - Structure complex components with shared\n  context\n\n### 2. State Management (MEDIUM)\n\n- `state-decouple-implementation` - Provider is the only place that knows how\n  state is managed\n- `state-context-interface` - Define generic interface with state, actions, meta\n  for dependency injection\n- `state-lift-state` - Move state into provider components for sibling access\n\n### 3. Implementation Patterns (MEDIUM)\n\n- `patterns-explicit-variants` - Create explicit variant components instead of\n  boolean modes\n- `patterns-children-over-render-props` - Use children for composition instead\n  of renderX props\n\n### 4. React 19 APIs (MEDIUM)\n\n> **⚠️ React 19+ only.** Skip this section if using React 18 or earlier.\n\n- `react19-no-forwardref` - Don't use `forwardRef`; use `use()` instead of `useContext()`\n\n## How to Use\n\nRead individual rule files for detailed explanations and code examples:\n\n```\nrules/architecture-avoid-boolean-props.md\nrules/state-context-interface.md\n```\n\nEach rule file contains:\n\n- Brief explanation of why it matters\n- Incorrect code example with explanation\n- Correct code example with explanation\n- Additional context and references\n\n## Full Compiled Document\n\nFor the complete guide with all rules expanded: `AGENTS.md`\n",
+  "updatedAt": "2026-10-28T19:17:28Z",
   "author": {
     "login": "vercel-labs",
-    "name": "vercel-labs",
-    "avatarUrl": "",
+    "name": "Vercel Labs",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/108547162?v=4",
     "profileUrl": "https://github.com/vercel-labs",
     "location": ""
   },
   "location": null,
   "related": [
-    {
-      "slug": "vercel-labs-react-view-transitions-demo",
-      "displayName": "vercel-labs/react-view-transitions-demo",
-      "stars": 19,
-      "relation": "source_overlap",
-      "evidence": "author:vercel-labs"
-    },
-    {
-      "slug": "vercel-labs-react-best-practices",
-      "displayName": "vercel-labs/react-best-practices",
-      "stars": 0,
-      "relation": "source_overlap",
-      "evidence": "author:vercel-labs"
-    },
-    {
-      "slug": "vercel-labs-web-design-guidelines",
-      "displayName": "vercel-labs/web-design-guidelines",
-      "stars": 0,
-      "relation": "source_overlap",
-      "evidence": "author:vercel-labs"
-    },
     {
       "slug": "vercel-labs-next-best-practices",
       "displayName": "vercel-labs/next-best-practices",
@@ -65,25 +44,46 @@
       "evidence": "author:vercel-labs"
     },
     {
-      "slug": "vercel-labs-react-native-skills",
-      "displayName": "vercel-labs/react-native-skills",
-      "stars": 0,
-      "relation": "source_overlap",
-      "evidence": "author:vercel-labs"
-    },
-    {
-      "slug": "typefully-typefully",
-      "displayName": "typefully/typefully",
+      "slug": "anthropics-docx",
+      "displayName": "anthropics/docx",
       "stars": 0,
       "relation": "shared_tag",
-      "evidence": "Skills by Typefully"
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "cloudflare-security-audit-skill",
+      "displayName": "cloudflare/security-audit-skill",
+      "stars": 52784,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "googleworkspace-gws-drive",
+      "displayName": "googleworkspace/gws-drive",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "huggingface-hf-cli",
+      "displayName": "huggingface/hf-cli",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "google-labs-code-design-md",
+      "displayName": "google-labs-code/design-md",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
     }
   ],
   "mapLocation": {
-    "id": "virtual-singapore",
-    "label": "Global Skill Market / Singapore / Skills by Typefully",
-    "lat": 1.3521,
-    "lon": 103.8198,
+    "id": "virtual-new-york",
+    "label": "Global Skill Market / New York / Official Skills by",
+    "lat": 40.7128,
+    "lon": -74.006,
     "source": "virtual_market"
   }
 }
