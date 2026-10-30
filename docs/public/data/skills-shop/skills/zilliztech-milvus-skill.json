@@ -3,87 +3,93 @@
   "slug": "zilliztech-milvus-skill",
   "name": "milvus-skill",
   "displayName": "zilliztech/milvus-skill",
-  "description": "Agent skill that teaches LLMs to operate Milvus vector database using pymilvus — connection,     collections, vector CRUD, search, hybrid search, full-text search, indexing, RBAC, and common    patterns like RAG",
-  "stars": 19,
-  "category": "Discovered",
-  "source": "discover:topic",
+  "description": "Manage Milvus collections, indexes, vector searches, and RAG workflows",
+  "stars": 47,
+  "category": "Community Skills",
+  "source": "voltagent",
   "url": "https://github.com/zilliztech/milvus-skill",
   "githubRepo": "zilliztech/milvus-skill",
-  "readme": "# zilliztech/milvus-skill\n\nAgent skill that teaches LLMs to operate Milvus vector database using pymilvus — connection,     collections, vector CRUD, search, hybrid search, full-text search, indexing, RBAC, and common    patterns like RAG",
-  "readmeHtml": "<h1>zilliztech/milvus-skill</h1>\n<p>Agent skill that teaches LLMs to operate Milvus vector database using pymilvus — connection,     collections, vector CRUD, search, hybrid search, full-text search, indexing, RBAC, and common    patterns like RAG</p>",
-  "skillMd": "",
-  "updatedAt": "2026-05-12T12:38:07.063Z",
+  "readme": "# milvus-skill\n\nAn agent skill that teaches LLMs how to use [pymilvus](https://github.com/milvus-io/pymilvus) to operate [Milvus](https://milvus.io/) vector database.\n\n## What's Included\n\n- **SKILL.md** — Main skill definition with connection, collection management, vector operations, and index management\n- **references/** — Detailed reference docs for each feature area:\n  - `collection.md` — Data types, schema fields, collection operations\n  - `vector.md` — Insert, search, hybrid search, full-text search, iterators, filters\n  - `index.md` — Index types, metric types, create/manage indexes\n  - `partition.md` — Partition CRUD\n  - `database.md` — Database management\n  - `user-role.md` — RBAC: users, roles, privileges\n  - `patterns.md` — Common patterns (RAG, semantic search, hybrid search, full-text search)\n\n## Install as Claude Code Skill\n\n```bash\nclaude skill add --url https://github.com/zilliztech/milvus-skill\n```\n\n## Capabilities\n\n- Connect to Milvus Lite, Standalone, Cluster, or Zilliz Cloud\n- Create collections with quick or custom schemas\n- Insert, upsert, search, query, get, delete vectors\n- Hybrid search with RRF/Weighted reranking\n- Full-text search with BM25\n- Paginated iteration over large result sets\n- Index management (AUTOINDEX, HNSW, IVF_FLAT, etc.)\n- Partition, database, and RBAC management\n\n## Requirements\n\n- Python 3.8+\n- `pymilvus` (`pip install pymilvus`)\n",
+  "readmeHtml": "<h1>milvus-skill</h1>\n<p>An agent skill that teaches LLMs how to use <a href=\"https://github.com/milvus-io/pymilvus\" target=\"_blank\" rel=\"noreferrer\">pymilvus</a> to operate <a href=\"https://milvus.io/\" target=\"_blank\" rel=\"noreferrer\">Milvus</a> vector database.</p>\n<h2>What's Included</h2>\n<ul>\n<li><strong>SKILL.md</strong> — Main skill definition with connection, collection management, vector operations, and index management</li>\n<li><strong>references/</strong> — Detailed reference docs for each feature area:</li>\n</ul>\n<p>  - <code>collection.md</code> — Data types, schema fields, collection operations</p>\n<p>  - <code>vector.md</code> — Insert, search, hybrid search, full-text search, iterators, filters</p>\n<p>  - <code>index.md</code> — Index types, metric types, create/manage indexes</p>\n<p>  - <code>partition.md</code> — Partition CRUD</p>\n<p>  - <code>database.md</code> — Database management</p>\n<p>  - <code>user-role.md</code> — RBAC: users, roles, privileges</p>\n<p>  - <code>patterns.md</code> — Common patterns (RAG, semantic search, hybrid search, full-text search)</p>\n<h2>Install as Claude Code Skill</h2>\n<pre><code>\nclaude skill add --url https://github.com/zilliztech/milvus-skill\n\n</code></pre>\n<h2>Capabilities</h2>\n<ul>\n<li>Connect to Milvus Lite, Standalone, Cluster, or Zilliz Cloud</li>\n<li>Create collections with quick or custom schemas</li>\n<li>Insert, upsert, search, query, get, delete vectors</li>\n<li>Hybrid search with RRF/Weighted reranking</li>\n<li>Full-text search with BM25</li>\n<li>Paginated iteration over large result sets</li>\n<li>Index management (AUTOINDEX, HNSW, IVF_FLAT, etc.)</li>\n<li>Partition, database, and RBAC management</li>\n</ul>\n<h2>Requirements</h2>\n<ul>\n<li>Python 3.8+</li>\n<li><code>pymilvus</code> (<code>pip install pymilvus</code>)</li>\n</ul>",
+  "skillMd": "---\nname: milvus\ndescription: Operate Milvus vector database with pymilvus Python SDK. Use when the user wants to connect to Milvus, create collections, insert vectors, perform similarity search, hybrid search, full-text search, manage indexes, partitions, databases, or RBAC via Python code.\nlicense: Apache-2.0\ncompatibility: Requires Python 3.8+ and pymilvus (pip install pymilvus). Runs on macOS and Linux.\nmetadata:\n  author: zilliztech\n  version: \"1.0.0\"\nallowed-tools: Bash Read Write\n---\n\n# Milvus Vector Database Skill\n\nOperate [Milvus](https://milvus.io/) vector databases directly through Python code using the `pymilvus` SDK. Covers the full lifecycle — connecting, schema design, collection management, vector CRUD, search, hybrid search, full-text search, indexing, partitions, databases, and RBAC.\n\n## When to Use\n\nUse this skill when the user wants to:\n- Connect to a Milvus instance (local, standalone, cluster, or Milvus Lite)\n- Create collections with custom schemas\n- Insert, upsert, search, query, get, or delete vectors\n- Perform hybrid search with reranking\n- Perform full-text search (BM25)\n- Manage indexes, partitions, databases\n- Set up users, roles, and access control (RBAC)\n- Build RAG pipelines, semantic search, or recommendation systems with Milvus\n- Iterate over large result sets with search/query iterators\n\n## Requirements\n\n- Python 3.8+\n- `pymilvus` (`pip install pymilvus`)\n- A running Milvus instance, or use Milvus Lite (embedded, file-based) for development\n\n## Capabilities Overview\n\n| Area | What You Can Do |\n|------|----------------|\n| **Connection** | Connect to Milvus Lite, Standalone, Cluster, or Zilliz Cloud |\n| **Collections** | Create (quick or custom schema), list, describe, drop, rename, truncate, load, release |\n| **Vectors** | Insert, upsert, search, hybrid search, query, get, delete |\n| **Full-Text Search** | BM25-based keyword search with sparse vectors |\n| **Iterators** | Paginated search and query over large datasets |\n| **Indexes** | Create (AUTOINDEX, HNSW, IVF_FLAT, etc.), list, describe, drop |\n| **Partitions** | Create, list, load, release, drop |\n| **Databases** | Create, list, switch, drop |\n| **RBAC** | Users, roles, privileges management |\n\n---\n\n## Connection\n\n> **IMPORTANT: Before writing any connection code, you MUST ask the user for their connection details.** Ask:\n> 1. **Deployment type** — Milvus Lite (local file), Standalone/Cluster (self-hosted), or Zilliz Cloud (managed)?\n> 2. **URI** — For self-hosted: host and port (e.g., `http://localhost:19530`). For Zilliz Cloud: the endpoint URL.\n> 3. **Authentication** — Token, API key, or username/password if required.\n> 4. **Database name** — If not using the default database.\n>\n> **Never assume or hardcode connection parameters.** Use Milvus Lite (`uri=\"./milvus.db\"`) only if the user explicitly wants local/embedded mode for development.\n\n```python\nfrom pymilvus import MilvusClient\n\n# Milvus Lite (embedded, file-based — great for dev/test)\nclient = MilvusClient(uri=\"./milvus.db\")\n\n# Standalone / Cluster Milvus (ask user for actual host:port and credentials)\nclient = MilvusClient(uri=\"<USER_URI>\", token=\"<USER_TOKEN>\")\n\n# Zilliz Cloud (ask user for endpoint and API key)\nclient = MilvusClient(uri=\"<USER_ZILLIZ_ENDPOINT>\", token=\"<USER_API_KEY>\")\n```\n\n**Parameters:**\n\n| Parameter | Type | Description |\n|-----------|------|-------------|\n| `uri` | str | `\"./file.db\"` for Milvus Lite, `\"http://host:19530\"` for server |\n| `token` | str | API key or `\"username:password\"` |\n| `user` | str | Username (alternative to token) |\n| `password` | str | Password (alternative to token) |\n| `db_name` | str | Target database (default: `\"default\"`) |\n| `timeout` | float | Operation timeout in seconds |\n\n### Async Client\n\n```python\nfrom pymilvus import AsyncMilvusClient\n\nasync with AsyncMilvusClient(uri=\"<USER_URI>\") as client:\n    results = await client.search(collection_name=\"my_collection\", data=[query_vector], limit=10)\n```\n\n---\n\n## Collection Management\n\n### Quick Create (auto schema + auto index + auto load)\n\n```python\nclient.create_collection(\n    collection_name=\"my_collection\",\n    dimension=768,\n    metric_type=\"COSINE\"  # Optional: \"COSINE\" (default), \"L2\", \"IP\"\n)\n```\n\nThis automatically creates an `id` field (INT64, primary key, auto_id), a `vector` field (FLOAT_VECTOR), AUTOINDEX, and auto-loads the collection.\n\n### Custom Schema Create\n\n```python\nfrom pymilvus import DataType\n\nschema = client.create_schema(auto_id=False, enable_dynamic_field=True)\nschema.add_field(\"id\", DataType.INT64, is_primary=True)\nschema.add_field(\"text\", DataType.VARCHAR, max_length=512)\nschema.add_field(\"embedding\", DataType.FLOAT_VECTOR, dim=768)\n\nindex_params = client.prepare_index_params()\nindex_params.add_index(field_name=\"embedding\", index_type=\"AUTOINDEX\", metric_type=\"COSINE\")\n\nclient.create_collection(collection_name=\"my_collection\", schema=schema, index_params=index_params)\n```\n\n**See [references/collection.md](references/collection.md) for data types, add_field parameters, and all collection operations.**\n\n### Other Collection Operations\n\n```python\nclient.list_collections()\nclient.describe_collection(collection_name=\"my_collection\")\nclient.has_collection(collection_name=\"my_collection\")\nclient.rename_collection(old_name=\"old\", new_name=\"new\")\nclient.drop_collection(collection_name=\"my_collection\")\nclient.truncate_collection(collection_name=\"my_collection\")\nclient.load_collection(collection_name=\"my_collection\")\nclient.release_collection(collection_name=\"my_collection\")\nclient.get_load_state(collection_name=\"my_collection\")\nclient.get_collection_stats(collection_name=\"my_collection\")\n```\n\n- Quick create is best for prototyping; use custom schema for production.\n- A collection must be **loaded** before search or query.\n- Use `enable_dynamic_field=True` to allow inserting fields not defined in the schema.\n\n---\n\n## Vector Operations\n\n**See [references/vector.md](references/vector.md) for hybrid search, full-text search, iterators, filter syntax, and detailed examples.**\n\n### Insert / Upsert\n\n```python\n# Vectors must come from an embedding model — never use fake/placeholder vectors\nfrom pymilvus import model\n\nembedding_fn = model.dense.SentenceTransformerEmbeddingFunction(model_name=\"all-MiniLM-L6-v2\")\n\ndocs = [\"AI advances in 2024\", \"ML basics for beginners\"]\nvectors = embedding_fn.encode_documents(docs)\n\ndata = [\n    {\"id\": 1, \"text\": docs[0], \"embedding\": vectors[0]},\n    {\"id\": 2, \"text\": docs[1], \"embedding\": vectors[1]},\n]\nclient.insert(collection_name=\"my_collection\", data=data)\nclient.upsert(collection_name=\"my_collection\", data=data)\n```\n\n### Search (vector similarity)\n\n```python\n# Use the same embedding model to encode the query\nquery_vectors = embedding_fn.encode_queries([\"What is artificial intelligence?\"])\n\nresults = client.search(\n    collection_name=\"my_collection\",\n    data=query_vectors,\n    anns_field=\"embedding\",\n    limit=10,\n    output_fields=[\"text\", \"id\"],\n    filter='age > 20 and status == \"active\"',\n    search_params={\"metric_type\": \"COSINE\", \"params\": {\"nprobe\": 10}}\n)\n```\n\n### Query / Get / Delete\n\n```python\n# Query by filter\nclient.query(collection_name=\"my_collection\", filter='id in [1, 2, 3]', output_fields=[\"text\"], limit=100)\n\n# Get by primary key\nclient.get(collection_name=\"my_collection\", ids=[1, 2, 3], output_fields=[\"text\"])\n\n# Delete\nclient.delete(collection_name=\"my_collection\", ids=[1, 2, 3])\nclient.delete(collection_name=\"my_collection\", filter='status == \"obsolete\"')\n```\n\n- **Never use fake or placeholder vectors** (e.g., `[0.1, 0.2, ...]`). Always generate vectors from an embedding model.\n- Use `pip install \"pymilvus[model]\"` for built-in embedding functions, or use any embedding model (OpenAI, Cohere, etc.).\n- Vector dimension in search must match the collection schema exactly.\n- The query embedding model must be the **same model** used to generate the stored vectors.\n- For large inserts, batch data into chunks (e.g., 1000 rows per batch).\n- For large result sets, use iterators — see [references/vector.md](references/vector.md).\n\n---\n\n## Index Management\n\n**See [references/index.md](references/index.md) for index types, metric types, and parameters.**\n\n```python\nindex_params = client.prepare_index_params()\nindex_params.add_index(\n    field_name=\"embedding\",\n    index_type=\"HNSW\",\n    metric_type=\"COSINE\",\n    params={\"M\": 16, \"efConstruction\": 256}\n)\nclient.create_index(collection_name=\"my_collection\", index_params=index_params)\n\nclient.list_indexes(collection_name=\"my_collection\")\nclient.describe_index(collection_name=\"my_collection\", index_name=\"my_index\")\nclient.drop_index(collection_name=\"my_collection\", index_name=\"my_index\")\n```\n\n- `AUTOINDEX` is recommended for most use cases.\n- An index is required before loading a collection.\n\n---\n\n## Additional Features\n\n| Feature | Reference |\n|---------|-----------|\n| Partition Management | [references/partition.md](references/partition.md) |\n| Database Management | [references/database.md](references/database.md) |\n| User & Role Management (RBAC) | [references/user-role.md](references/user-role.md) |\n| Common Patterns (RAG, Semantic Search) | [references/patterns.md](references/patterns.md) |\n\n---\n\n## General Guidance\n\n- **Always ask the user for connection details** (URI, token/credentials) before writing connection code. Never assume or hardcode connection parameters.\n- **Never generate fake or placeholder vectors.** Always use an embedding model to produce real vectors. Suggest `pip install \"pymilvus[model]\"` for built-in embedding functions.\n- For quick prototyping, use **Milvus Lite** (`uri=\"./file.db\"`) — no server needed, but only if the user explicitly requests local/embedded mode.\n- A collection must be **loaded into memory** before search/query.\n- The vector dimension in search data must **exactly match** the collection schema.\n- The query embedding model must be the **same model** used to generate the stored vectors.\n- Before any destructive operation (drop collection, drop database, delete vectors), always confirm with the user.\n- Use `enable_dynamic_field=True` when the schema may evolve.\n- Prefer `AUTOINDEX` unless the user has specific performance requirements.\n- Use `truncate_collection` to clear all data without dropping the collection.\n- For large datasets, use iterators (`search_iterator`, `query_iterator`) instead of increasing limit.\n",
+  "updatedAt": "2026-03-24T04:15:19Z",
   "author": {
     "login": "zilliztech",
-    "name": "zilliztech",
-    "avatarUrl": "",
+    "name": "Zilliz",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/18416694?v=4",
     "profileUrl": "https://github.com/zilliztech",
-    "location": ""
+    "location": "United States of America"
   },
-  "location": null,
+  "location": {
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
+  },
   "related": [
     {
-      "slug": "zilliztech-claude-context",
-      "displayName": "zilliztech/claude-context",
-      "stars": 10835,
+      "slug": "zilliztech-mfs",
+      "displayName": "zilliztech/mfs",
+      "stars": 158,
       "relation": "source_overlap",
       "evidence": "author:zilliztech"
     },
     {
-      "slug": "zilliztech-memsearch",
-      "displayName": "zilliztech/memsearch",
-      "stars": 1619,
-      "relation": "source_overlap",
-      "evidence": "author:zilliztech"
-    },
-    {
-      "slug": "zilliztech-zilliz-skill",
-      "displayName": "zilliztech/zilliz-skill",
-      "stars": 3,
-      "relation": "source_overlap",
-      "evidence": "author:zilliztech"
-    },
-    {
-      "slug": "affaan-m-everything-claude-code",
-      "displayName": "affaan-m/everything-claude-code",
-      "stars": 175105,
+      "slug": "morluto-rea",
+      "displayName": "morluto/rea",
+      "stars": 412083,
       "relation": "shared_tag",
-      "evidence": "Discovered"
+      "evidence": "Community Skills"
     },
     {
-      "slug": "snailclimb-javaguide",
-      "displayName": "Snailclimb/JavaGuide",
-      "stars": 155456,
+      "slug": "obra-brainstorming",
+      "displayName": "obra/brainstorming",
+      "stars": 309379,
       "relation": "shared_tag",
-      "evidence": "Discovered"
+      "evidence": "Community Skills"
     },
     {
-      "slug": "nousresearch-hermes-agent",
-      "displayName": "NousResearch/hermes-agent",
-      "stars": 136906,
+      "slug": "mattpocock-skills",
+      "displayName": "mattpocock/skills",
+      "stars": 307415,
       "relation": "shared_tag",
-      "evidence": "Discovered"
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
+      "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "stars": 143010,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "panniantong-agent-reach",
+      "displayName": "Panniantong/Agent-Reach",
+      "stars": 106786,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "leonxlnx-taste-skill",
+      "displayName": "Leonxlnx/taste-skill",
+      "stars": 106283,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
     },
     {
       "slug": "thedotmack-claude-mem",
       "displayName": "thedotmack/claude-mem",
-      "stars": 73174,
+      "stars": 106115,
       "relation": "shared_tag",
-      "evidence": "Discovered"
-    },
-    {
-      "slug": "bytedance-deer-flow",
-      "displayName": "bytedance/deer-flow",
-      "stars": 65827,
-      "relation": "shared_tag",
-      "evidence": "Discovered"
+      "evidence": "Community Skills"
     }
   ],
   "mapLocation": {
-    "id": "virtual-tokyo",
-    "label": "Global Skill Market / Tokyo / Discovered",
-    "lat": 35.6762,
-    "lon": 139.6503,
-    "source": "virtual_market"
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
   }
 }

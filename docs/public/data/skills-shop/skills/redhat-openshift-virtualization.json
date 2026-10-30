@@ -12,7 +12,7 @@
   "readme": "# redhat/openshift-virtualization\n\nManage the full VM lifecycle on OpenShift Virtualization — create, clone, snapshot, restore, rebalance, and report — through a single conversational workflow.",
   "readmeHtml": "<h1>redhat/openshift-virtualization</h1>\n<p>Manage the full VM lifecycle on OpenShift Virtualization — create, clone, snapshot, restore, rebalance, and report — through a single conversational workflow.</p>",
   "skillMd": "",
-  "updatedAt": "2026-10-29T23:26:45.484Z",
+  "updatedAt": "2026-10-30T23:03:13.485Z",
   "author": {
     "login": "redhat",
     "name": "redhat",
@@ -53,7 +53,7 @@
     {
       "slug": "coreyhaines31-ab-testing",
       "displayName": "coreyhaines31/ab-testing",
-      "stars": 57324,
+      "stars": 57509,
       "relation": "shared_tag",
       "evidence": "TypeScript Skills"
     },
@@ -67,14 +67,14 @@
     {
       "slug": "phuryn-ab-test-analysis",
       "displayName": "phuryn/ab-test-analysis",
-      "stars": 27521,
+      "stars": 27549,
       "relation": "shared_tag",
       "evidence": "TypeScript Skills"
     },
     {
       "slug": "google-cloud-agent-platform-skill-registry",
       "displayName": "google/cloud/agent-platform-skill-registry",
-      "stars": 21680,
+      "stars": 21699,
       "relation": "shared_tag",
       "evidence": "TypeScript Skills"
     }
