@@ -14,25 +14,25 @@
   "skillMd": "---\nname: checking-delivery\ndescription: \"Verify an artifact at its actual delivery destination and distinguish send attempts, acknowledgements, publication and consumer checks. Use when reporting a file, message, export or deployment as delivered; creating a local draft alone does not imply delivery.\"\n---\n\n# Checking delivery\n\nInspecting the source establishes what was prepared. Delivery requires\nevidence about the destination the user was meant to receive. Check only\nwithin the authorized scope; this skill grants no publishing or send rights.\n\n## Identify the artifact and destination\n\nRecord the inspected source artifact and its revision or byte identity,\nthe intended destination and the relevant operation identity. A source path,\npreview or successful build does not identify the delivered copy.\n\nKeep these observations separate, using the states the system exposes:\n\n- **Prepared:** the source exists and has been inspected.\n- **Attempted:** a send, upload or publication operation was issued.\n- **Acknowledged:** the system returned a receipt matching that operation.\n- **Published:** the intended destination exposes the artifact or revision.\n- **Consumer checked:** the delivered artifact was opened in its intended use.\n- **Unverified:** a necessary observation is unavailable or inconclusive.\n\nThese are claims with separate evidence, not a universal status sequence.\nAn acknowledgement can establish system acceptance without establishing\npublication, usable content or that a human read the message.\n\n## Read the destination back\n\n1. If delivery is authorized, inspect its result and retain the operation or\n   receipt identity. Match an acknowledgement to the latest applicable attempt,\n   including artifact, destination and revision where available. An old or\n   unrelated receipt cannot verify a newer attempt.\n2. Fetch or reopen the actual destination using an available read interface.\n   Inspect the retrieved artifact rather than trusting a \"saved\" log, a status\n   flag or a source preview. Record which destination revision was observed.\n3. Compare the destination with the inspected source. Hashes can establish\n   equal bytes when both copies are accessible. For a service that transforms\n   content, check the relevant content and revision, and state the narrower\n   comparison; do not claim byte equality from a successful response.\n4. Check the delivered artifact through the appropriate consumer: decode an\n   image, parse an export, open a document, or load and inspect the page.\n   A matching hash does not establish that the format works or renders well.\n   Likewise, a useful render alone does not establish source byte equality.\n5. Report destination read-back and consumer outcomes independently. If the\n   destination cannot be inspected, report delivery as unverified and retain\n   any known attempt or acknowledgement evidence without upgrading the claim.\n\n## Reconcile before retrying\n\nA missing acknowledgement or timeout can leave a successful operation behind.\nInspect destination state and correlate durable receipts with the original\noperation before resending. Unknown remains unresolved; do not manufacture\ncertainty by sending again. Operation identity helps reconciliation only to\nthe extent supported by that system; it is not a general exactly-once promise.\n\nUse a brief receipt when delivery matters: source inspected, destination and\noperation, acknowledgement, read-back comparison, consumer result and gaps.\nFor a local draft or trivial edit, report the observed result directly without\ninventing a delivery workflow or requesting new permissions to verify it.\n",
   "updatedAt": "2026-10-25T20:25:30Z",
   "author": {
-    "login": "Grit-77",
-    "name": "Grit · İsmet Aydın",
-    "avatarUrl": "https://avatars.githubusercontent.com/u/305451418?v=4",
-    "profileUrl": "https://github.com/Grit-77",
-    "location": "Ankara, Türkiye"
+    "login": "grit-77",
+    "name": "grit-77",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/grit-77",
+    "location": ""
   },
   "location": null,
   "related": [
     {
       "slug": "kkkkhazix-aihot",
       "displayName": "kkkkhazix/aihot",
-      "stars": 21769,
+      "stars": 21782,
       "relation": "shared_tag",
       "evidence": "Skills by Binance"
     },
     {
       "slug": "sawyerhood-dev-browser",
       "displayName": "sawyerhood/dev-browser",
-      "stars": 6709,
+      "stars": 6710,
       "relation": "shared_tag",
       "evidence": "Skills by Binance"
     },
@@ -46,7 +46,7 @@
     {
       "slug": "chubbyguan-chubbyskills",
       "displayName": "chubbyguan/chubbyskills",
-      "stars": 1289,
+      "stars": 1292,
       "relation": "shared_tag",
       "evidence": "Skills by Binance"
     },
@@ -60,7 +60,7 @@
     {
       "slug": "vostride-agent-qa",
       "displayName": "vostride/agent-qa",
-      "stars": 913,
+      "stars": 915,
       "relation": "shared_tag",
       "evidence": "Skills by Binance"
     },
@@ -74,7 +74,7 @@
     {
       "slug": "swarmclawai-swarmclaw",
       "displayName": "swarmclawai/swarmclaw",
-      "stars": 704,
+      "stars": 703,
       "relation": "shared_tag",
       "evidence": "Skills by Binance"
     }
