@@ -12,7 +12,7 @@
   "readme": "# firecrawl/firecrawl-build-onboarding\n\nSet up Firecrawl credentials and SDK in a project for the first integration",
   "readmeHtml": "<h1>firecrawl/firecrawl-build-onboarding</h1>\n<p>Set up Firecrawl credentials and SDK in a project for the first integration</p>",
   "skillMd": "",
-  "updatedAt": "2026-11-01T22:43:07.734Z",
+  "updatedAt": "2026-11-03T01:37:13.675Z",
   "author": {
     "login": "firecrawl",
     "name": "Firecrawl",
@@ -29,8 +29,8 @@
   },
   "related": [
     {
-      "slug": "firecrawl-firecrawl-cli",
-      "displayName": "firecrawl/firecrawl-cli",
+      "slug": "firecrawl-firecrawl-alexandria",
+      "displayName": "firecrawl/firecrawl-alexandria",
       "stars": 676,
       "relation": "source_overlap",
       "evidence": "author:firecrawl"
@@ -73,14 +73,14 @@
     {
       "slug": "cloudflare-security-audit-skill",
       "displayName": "cloudflare/security-audit-skill",
-      "stars": 56296,
+      "stars": 57412,
       "relation": "shared_tag",
       "evidence": "Official Skills by"
     },
     {
       "slug": "vercel-labs-composition-patterns",
       "displayName": "vercel-labs/composition-patterns",
-      "stars": 33352,
+      "stars": 33422,
       "relation": "shared_tag",
       "evidence": "Official Skills by"
     }

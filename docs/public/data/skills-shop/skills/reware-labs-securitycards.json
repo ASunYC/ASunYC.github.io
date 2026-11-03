@@ -1,0 +1,89 @@
+{
+  "id": "skill:reware-labs-securitycards",
+  "slug": "reware-labs-securitycards",
+  "name": "securitycards",
+  "displayName": "reware-labs/securitycards",
+  "description": "Fetch version-pinned secure-coding rules for the libraries a project uses",
+  "stars": 21,
+  "category": "Skills by Binance",
+  "source": "heilcheng",
+  "url": "https://github.com/Reware-Labs/securitycards",
+  "githubRepo": "Reware-Labs/securitycards",
+  "readme": "# Security Cards\n\n[![Install Security Cards](https://skills.sh/b/Reware-Labs/securitycards)](https://skills.sh/Reware-Labs/securitycards)\n\nSecurity Cards is an open source collection of library-specific security guidance for developers and AI coding agents. The cards are tied to specific library versions, so developers and agents can use guidance that matches the code they are working on.\n\nEach card says when it applies, then gives secure rules and code examples. You can browse the cards by language, library, version, and security category.\n\nThe cards are available at [securitycards.rewarelabs.com](https://securitycards.rewarelabs.com).\n\n> [!IMPORTANT]\n> Security Cards can help with security work, but it is not a replacement for a professional security review. Read the [disclaimer](https://securitycards.rewarelabs.com/disclaimer/) for details.\n\n## Use Security Cards as a skill\n\nThe `securitycards` skill lets a coding agent look up and apply cards while it works. Install it with either `npx` or the GitHub CLI.\n\nThe skill is instruction-only: it contains no executable scripts and requires no API keys. It fetches guidance from the public Security Cards catalog and cites the cards it applies.\n\nWith `npx`:\n\n```bash\nnpx skills add Reware-Labs/securitycards --skill securitycards -g\n```\n\nWith the GitHub CLI:\n\n```bash\ngh skill install Reware-Labs/securitycards securitycards --scope user\n```\n\nRemove `-g` from the `npx` command if you only want the skill in the current project.\n\nOnce installed, mention the skill in your prompt. It reads the project's lockfiles to find the dependency versions in use, looks for matching cards, and cites any guidance it applies. If the site does not have cards for that exact version, the skill stops instead of quietly using a different one.\n\n## Example use cases\n\n### Establish secure defaults for a new project\n\n```text\nUse Security Cards to set secure defaults for this project.\n```\n\n### Implement a security-sensitive feature\n\n```text\nUse Security Cards while implementing this file-upload endpoint. Apply the relevant rules and link to the cards you used.\n```\n\n### Review existing code\n\n```text\nReview this authentication service using Security Cards. Only report issues you can verify in the code, and link to each card you used.\n```\n\nThe [agent usage guide](https://securitycards.rewarelabs.com/agent-usage.md) describes the full workflow and lists the machine-readable resources available to agents.\n\n## Local development\n\nTo run the website locally or contribute changes, you will need Node.js 22.12 or later and npm.\n\n```bash\ngit clone https://github.com/Reware-Labs/securitycards.git\ncd securitycards\nnpm install\nnpm run dev\n```\n\nOpen [http://localhost:4321](http://localhost:4321) in your browser.\n\nRun the full set of checks with:\n\n```bash\nnpm run validate\n```\n\n## Contributing\n\nContributions are welcome. Read [CONTRIBUTING.md](CONTRIBUTING.md) for local setup, card\nformatting rules, and the path for requesting a new card. Browse\n[issues marked `help wanted`](https://github.com/Reware-Labs/securitycards/labels/help%20wanted)\nfor opportunities, or [open an issue](https://github.com/Reware-Labs/securitycards/issues/new/choose)\nto report a card problem or suggest a docs or tooling improvement.\n",
+  "readmeHtml": "<h1>Security Cards</h1>\n<p><a href=\"https://skills.sh/b/Reware-Labs/securitycards\" target=\"_blank\" rel=\"noreferrer\">![Install Security Cards</a>](https://skills.sh/Reware-Labs/securitycards)</p>\n<p>Security Cards is an open source collection of library-specific security guidance for developers and AI coding agents. The cards are tied to specific library versions, so developers and agents can use guidance that matches the code they are working on.</p>\n<p>Each card says when it applies, then gives secure rules and code examples. You can browse the cards by language, library, version, and security category.</p>\n<p>The cards are available at <a href=\"https://securitycards.rewarelabs.com\" target=\"_blank\" rel=\"noreferrer\">securitycards.rewarelabs.com</a>.</p>\n<p>&gt; [!IMPORTANT]</p>\n<p>&gt; Security Cards can help with security work, but it is not a replacement for a professional security review. Read the <a href=\"https://securitycards.rewarelabs.com/disclaimer/\" target=\"_blank\" rel=\"noreferrer\">disclaimer</a> for details.</p>\n<h2>Use Security Cards as a skill</h2>\n<p>The <code>securitycards</code> skill lets a coding agent look up and apply cards while it works. Install it with either <code>npx</code> or the GitHub CLI.</p>\n<p>The skill is instruction-only: it contains no executable scripts and requires no API keys. It fetches guidance from the public Security Cards catalog and cites the cards it applies.</p>\n<p>With <code>npx</code>:</p>\n<pre><code>\nnpx skills add Reware-Labs/securitycards --skill securitycards -g\n\n</code></pre>\n<p>With the GitHub CLI:</p>\n<pre><code>\ngh skill install Reware-Labs/securitycards securitycards --scope user\n\n</code></pre>\n<p>Remove <code>-g</code> from the <code>npx</code> command if you only want the skill in the current project.</p>\n<p>Once installed, mention the skill in your prompt. It reads the project's lockfiles to find the dependency versions in use, looks for matching cards, and cites any guidance it applies. If the site does not have cards for that exact version, the skill stops instead of quietly using a different one.</p>\n<h2>Example use cases</h2>\n<h3>Establish secure defaults for a new project</h3>\n<pre><code>\nUse Security Cards to set secure defaults for this project.\n\n</code></pre>\n<h3>Implement a security-sensitive feature</h3>\n<pre><code>\nUse Security Cards while implementing this file-upload endpoint. Apply the relevant rules and link to the cards you used.\n\n</code></pre>\n<h3>Review existing code</h3>\n<pre><code>\nReview this authentication service using Security Cards. Only report issues you can verify in the code, and link to each card you used.\n\n</code></pre>\n<p>The <a href=\"https://securitycards.rewarelabs.com/agent-usage.md\" target=\"_blank\" rel=\"noreferrer\">agent usage guide</a> describes the full workflow and lists the machine-readable resources available to agents.</p>\n<h2>Local development</h2>\n<p>To run the website locally or contribute changes, you will need Node.js 22.12 or later and npm.</p>\n<pre><code>\ngit clone https://github.com/Reware-Labs/securitycards.git\n\ncd securitycards\n\nnpm install\n\nnpm run dev\n\n</code></pre>\n<p>Open <a href=\"http://localhost:4321\" target=\"_blank\" rel=\"noreferrer\">http://localhost:4321</a> in your browser.</p>\n<p>Run the full set of checks with:</p>\n<pre><code>\nnpm run validate\n\n</code></pre>\n<h2>Contributing</h2>\n<p>Contributions are welcome. Read [CONTRIBUTING.md](CONTRIBUTING.md) for local setup, card</p>\n<p>formatting rules, and the path for requesting a new card. Browse</p>\n<p><a href=\"https://github.com/Reware-Labs/securitycards/labels/help%20wanted\" target=\"_blank\" rel=\"noreferrer\">issues marked <code>help wanted</code></a></p>\n<p>for opportunities, or <a href=\"https://github.com/Reware-Labs/securitycards/issues/new/choose\" target=\"_blank\" rel=\"noreferrer\">open an issue</a></p>\n<p>to report a card problem or suggest a docs or tooling improvement.</p>",
+  "skillMd": "",
+  "updatedAt": "2026-10-06T06:45:29Z",
+  "author": {
+    "login": "Reware-Labs",
+    "name": "Reware Labs",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/281433014?v=4",
+    "profileUrl": "https://github.com/Reware-Labs",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "kkkkhazix-aihot",
+      "displayName": "kkkkhazix/aihot",
+      "stars": 21834,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "sawyerhood-dev-browser",
+      "displayName": "sawyerhood/dev-browser",
+      "stars": 6713,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "deanchensj-jiangshan-atlas",
+      "displayName": "deanchensj/jiangshan-atlas",
+      "stars": 3537,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "ajnart-self-host",
+      "displayName": "ajnart/self-host",
+      "stars": 1492,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "roundtable02-tutor-skills",
+      "displayName": "roundtable02/tutor-skills",
+      "stars": 1383,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "chubbyguan-chubbyskills",
+      "displayName": "chubbyguan/chubbyskills",
+      "stars": 1294,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "fastcrw-crw",
+      "displayName": "fastcrw/crw",
+      "stars": 1209,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "moizibnyousaf-ai-agent-skills",
+      "displayName": "moizibnyousaf/ai-agent-skills",
+      "stars": 1156,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-paris",
+    "label": "Global Skill Market / Paris / Skills by Binance",
+    "lat": 48.8566,
+    "lon": 2.3522,
+    "source": "virtual_market"
+  }
+}
