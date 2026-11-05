@@ -12,7 +12,7 @@
   "readme": "# better-auth/create-auth\n\nCreate authentication setup with Better Auth",
   "readmeHtml": "<h1>better-auth/create-auth</h1>\n<p>Create authentication setup with Better Auth</p>",
   "skillMd": "",
-  "updatedAt": "2026-10-10T22:11:42.604Z",
+  "updatedAt": "2026-11-05T00:19:30.625Z",
   "author": {
     "login": "better-auth",
     "name": "Better Auth",
@@ -22,13 +22,6 @@
   },
   "location": null,
   "related": [
-    {
-      "slug": "better-auth-skills",
-      "displayName": "better-auth/skills",
-      "stars": 221,
-      "relation": "source_overlap",
-      "evidence": "author:better-auth"
-    },
     {
       "slug": "better-auth-best-practices",
       "displayName": "better-auth/best-practices",
@@ -72,9 +65,16 @@
       "evidence": "author:better-auth"
     },
     {
+      "slug": "anthropics-docx",
+      "displayName": "anthropics/docx",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
       "slug": "cloudflare-security-audit-skill",
       "displayName": "cloudflare/security-audit-skill",
-      "stars": 27697,
+      "stars": 59302,
       "relation": "shared_tag",
       "evidence": "Official Skills by"
     }

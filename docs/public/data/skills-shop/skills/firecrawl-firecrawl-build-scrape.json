@@ -12,7 +12,7 @@
   "readme": "# firecrawl/firecrawl-build-scrape\n\nIntegrate Firecrawl `/scrape` for single-page extraction from product code",
   "readmeHtml": "<h1>firecrawl/firecrawl-build-scrape</h1>\n<p>Integrate Firecrawl <code>/scrape</code> for single-page extraction from product code</p>",
   "skillMd": "",
-  "updatedAt": "2026-10-10T22:11:42.606Z",
+  "updatedAt": "2026-11-05T00:19:30.628Z",
   "author": {
     "login": "firecrawl",
     "name": "Firecrawl",
@@ -29,9 +29,9 @@
   },
   "related": [
     {
-      "slug": "firecrawl-cli",
-      "displayName": "firecrawl/cli",
-      "stars": 647,
+      "slug": "firecrawl-firecrawl-alexandria",
+      "displayName": "firecrawl/firecrawl-alexandria",
+      "stars": 677,
       "relation": "source_overlap",
       "evidence": "author:firecrawl"
     },
@@ -64,25 +64,25 @@
       "evidence": "author:firecrawl"
     },
     {
-      "slug": "firecrawl-firecrawl-cli",
-      "displayName": "firecrawl/firecrawl-cli",
+      "slug": "anthropics-docx",
+      "displayName": "anthropics/docx",
       "stars": 0,
-      "relation": "source_overlap",
-      "evidence": "author:firecrawl"
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
     },
     {
-      "slug": "firecrawl-firecrawl-agent",
-      "displayName": "firecrawl/firecrawl-agent",
-      "stars": 0,
-      "relation": "source_overlap",
-      "evidence": "author:firecrawl"
+      "slug": "cloudflare-security-audit-skill",
+      "displayName": "cloudflare/security-audit-skill",
+      "stars": 59302,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
     },
     {
-      "slug": "firecrawl-firecrawl-browser",
-      "displayName": "firecrawl/firecrawl-browser",
-      "stars": 0,
-      "relation": "source_overlap",
-      "evidence": "author:firecrawl"
+      "slug": "vercel-labs-composition-patterns",
+      "displayName": "vercel-labs/composition-patterns",
+      "stars": 33546,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
     }
   ],
   "mapLocation": {

@@ -12,7 +12,7 @@
   "readme": "# microsoft/frontend-ui-dark-ts\n\nDark-themed React with Tailwind and animations",
   "readmeHtml": "<h1>microsoft/frontend-ui-dark-ts</h1>\n<p>Dark-themed React with Tailwind and animations</p>",
   "skillMd": "",
-  "updatedAt": "2026-10-10T22:11:42.638Z",
+  "updatedAt": "2026-11-05T00:19:30.657Z",
   "author": {
     "login": "microsoft",
     "name": "Microsoft",
@@ -22,13 +22,6 @@
   },
   "location": null,
   "related": [
-    {
-      "slug": "microsoft-agent-skills",
-      "displayName": "microsoft/agent-skills",
-      "stars": 3099,
-      "relation": "source_overlap",
-      "evidence": "author:microsoft"
-    },
     {
       "slug": "microsoft-cloud-solution-architect",
       "displayName": "microsoft/cloud-solution-architect",
@@ -74,6 +67,13 @@
     {
       "slug": "microsoft-mcp-builder",
       "displayName": "microsoft/mcp-builder",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:microsoft"
+    },
+    {
+      "slug": "microsoft-podcast-generation",
+      "displayName": "microsoft/podcast-generation",
       "stars": 0,
       "relation": "source_overlap",
       "evidence": "author:microsoft"

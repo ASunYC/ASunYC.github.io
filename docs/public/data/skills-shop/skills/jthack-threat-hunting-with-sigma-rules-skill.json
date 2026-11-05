@@ -5,14 +5,14 @@
   "displayName": "jthack/threat-hunting-with-sigma-rules-skill",
   "description": "Hunt for threats using Sigma detection rules",
   "stars": 0,
-  "category": "Skills by Trail of Bits",
+  "category": "Skills by Binance",
   "source": "heilcheng",
   "url": "https://github.com/jthack/threat-hunting-with-sigma-rules-skill",
   "githubRepo": "jthack/threat-hunting-with-sigma-rules-skill",
   "readme": "# jthack/threat-hunting-with-sigma-rules-skill\n\nHunt for threats using Sigma detection rules",
   "readmeHtml": "<h1>jthack/threat-hunting-with-sigma-rules-skill</h1>\n<p>Hunt for threats using Sigma detection rules</p>",
   "skillMd": "",
-  "updatedAt": "2026-10-10T22:11:42.668Z",
+  "updatedAt": "2026-11-05T00:19:30.687Z",
   "author": {
     "login": "jthack",
     "name": "Joseph Thacker",
@@ -25,23 +25,65 @@
     {
       "slug": "jthack-ffuf-claude-skill",
       "displayName": "jthack/ffuf-claude-skill",
-      "stars": 213,
+      "stars": 216,
       "relation": "source_overlap",
       "evidence": "author:jthack"
     },
     {
-      "slug": "grittygrease-safe-encryption-skill",
-      "displayName": "grittygrease/safe-encryption-skill",
-      "stars": 4,
+      "slug": "kkkkhazix-aihot",
+      "displayName": "kkkkhazix/aihot",
+      "stars": 21956,
       "relation": "shared_tag",
-      "evidence": "Skills by Trail of Bits"
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "sawyerhood-dev-browser",
+      "displayName": "sawyerhood/dev-browser",
+      "stars": 6718,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "deanchensj-jiangshan-atlas",
+      "displayName": "deanchensj/jiangshan-atlas",
+      "stars": 4106,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "ajnart-self-host",
+      "displayName": "ajnart/self-host",
+      "stars": 1501,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "roundtable02-tutor-skills",
+      "displayName": "roundtable02/tutor-skills",
+      "stars": 1389,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "chubbyguan-chubbyskills",
+      "displayName": "chubbyguan/chubbyskills",
+      "stars": 1303,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "fastcrw-crw",
+      "displayName": "fastcrw/crw",
+      "stars": 1226,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
     }
   ],
   "mapLocation": {
-    "id": "virtual-singapore",
-    "label": "Global Skill Market / Singapore / Skills by Trail of Bits",
-    "lat": 1.3521,
-    "lon": 103.8198,
+    "id": "virtual-san-francisco",
+    "label": "Global Skill Market / San Francisco / Skills by Binance",
+    "lat": 37.7749,
+    "lon": -122.4194,
     "source": "virtual_market"
   }
 }

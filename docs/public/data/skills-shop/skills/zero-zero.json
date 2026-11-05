@@ -4,7 +4,7 @@
   "name": "zero",
   "displayName": "zero/zero",
   "description": "Discover and call external paid tools for Claude Code agents instead of stopping to ask the user to sign up or fetch an API key",
-  "stars": 20,
+  "stars": 22,
   "category": "Official Skills by",
   "source": "voltagent",
   "url": "https://github.com/officialzeroxyz/zero-plugins/blob/main/plugins/zero/skills/zero/SKILL.md",
@@ -23,58 +23,58 @@
   "location": null,
   "related": [
     {
+      "slug": "anthropics-docx",
+      "displayName": "anthropics/docx",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
       "slug": "cloudflare-security-audit-skill",
       "displayName": "cloudflare/security-audit-skill",
-      "stars": 27697,
+      "stars": 59302,
       "relation": "shared_tag",
       "evidence": "Official Skills by"
     },
     {
-      "slug": "angular-angular-developer",
-      "displayName": "angular/angular-developer",
-      "stars": 677,
+      "slug": "vercel-labs-composition-patterns",
+      "displayName": "vercel-labs/composition-patterns",
+      "stars": 33546,
       "relation": "shared_tag",
       "evidence": "Official Skills by"
     },
     {
-      "slug": "testmu-ai-api-skill",
-      "displayName": "testmu-ai/api-skill",
-      "stars": 375,
+      "slug": "googleworkspace-gws-drive",
+      "displayName": "googleworkspace/gws-drive",
+      "stars": 0,
       "relation": "shared_tag",
       "evidence": "Official Skills by"
     },
     {
-      "slug": "veniceai-venice-api-overview",
-      "displayName": "veniceai/venice-api-overview",
-      "stars": 145,
+      "slug": "huggingface-hf-cli",
+      "displayName": "huggingface/hf-cli",
+      "stars": 0,
       "relation": "shared_tag",
       "evidence": "Official Skills by"
     },
     {
-      "slug": "crawlbase-crawlbase-mcp",
-      "displayName": "crawlbase/crawlbase-mcp",
-      "stars": 58,
+      "slug": "google-labs-code-design-md",
+      "displayName": "google-labs-code/design-md",
+      "stars": 0,
       "relation": "shared_tag",
       "evidence": "Official Skills by"
     },
     {
-      "slug": "modem-dev-skills",
-      "displayName": "modem-dev/skills",
-      "stars": 57,
+      "slug": "trailofbits-audit-context-building",
+      "displayName": "trailofbits/audit-context-building",
+      "stars": 0,
       "relation": "shared_tag",
       "evidence": "Official Skills by"
     },
     {
-      "slug": "serpapi-serpapi-cli",
-      "displayName": "serpapi/serpapi-cli",
-      "stars": 15,
-      "relation": "shared_tag",
-      "evidence": "Official Skills by"
-    },
-    {
-      "slug": "trycourier-courier-skills",
-      "displayName": "trycourier/courier-skills",
-      "stars": 14,
+      "slug": "remotion-dev-remotion",
+      "displayName": "remotion-dev/remotion",
+      "stars": 0,
       "relation": "shared_tag",
       "evidence": "Official Skills by"
     }

@@ -4,7 +4,7 @@
   "name": "mfs",
   "displayName": "zilliztech/mfs",
   "description": "`mfs-find` / `mfs-ingest` skills that search, grep and read across your code, docs, chat (Slack/Gmail/Jira), databases and object stores as one file-like, searchable namespace; self-hosted with local ONNX embeddings",
-  "stars": 154,
+  "stars": 158,
   "category": "Community Skills",
   "source": "voltagent",
   "url": "https://github.com/zilliztech/mfs",
@@ -29,58 +29,58 @@
   },
   "related": [
     {
-      "slug": "obra-brainstorming",
-      "displayName": "obra/brainstorming",
-      "stars": 297208,
+      "slug": "zilliztech-milvus-skill",
+      "displayName": "zilliztech/milvus-skill",
+      "stars": 47,
+      "relation": "source_overlap",
+      "evidence": "author:zilliztech"
+    },
+    {
+      "slug": "morluto-rea",
+      "displayName": "morluto/rea",
+      "stars": 430773,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "mattpocock-skills",
       "displayName": "mattpocock/skills",
-      "stars": 284326,
+      "stars": 313272,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "obra-brainstorming",
+      "displayName": "obra/brainstorming",
+      "stars": 312421,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
       "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
-      "stars": 134499,
+      "stars": 145213,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "thedotmack-claude-mem",
       "displayName": "thedotmack/claude-mem",
-      "stars": 99201,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "panniantong-agent-reach",
-      "displayName": "Panniantong/Agent-Reach",
-      "stars": 95459,
+      "stars": 112815,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "leonxlnx-taste-skill",
       "displayName": "Leonxlnx/taste-skill",
-      "stars": 94400,
+      "stars": 110042,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
-      "slug": "lum1104-understand-anything",
-      "displayName": "Lum1104/understand-anything",
-      "stars": 85844,
-      "relation": "shared_tag",
-      "evidence": "Community Skills"
-    },
-    {
-      "slug": "tt-a1i-archify",
-      "displayName": "tt-a1i/archify",
-      "stars": 81639,
+      "slug": "panniantong-agent-reach",
+      "displayName": "Panniantong/Agent-Reach",
+      "stars": 108796,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     }

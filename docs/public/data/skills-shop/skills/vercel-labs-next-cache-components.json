@@ -12,7 +12,7 @@
   "readme": "# vercel-labs/next-cache-components\n\nCaching strategies and cache-aware components in Next.js",
   "readmeHtml": "<h1>vercel-labs/next-cache-components</h1>\n<p>Caching strategies and cache-aware components in Next.js</p>",
   "skillMd": "",
-  "updatedAt": "2026-10-10T22:11:42.613Z",
+  "updatedAt": "2026-11-05T00:19:30.629Z",
   "author": {
     "login": "vercel-labs",
     "name": "Vercel Labs",
@@ -22,6 +22,13 @@
   },
   "location": null,
   "related": [
+    {
+      "slug": "vercel-labs-composition-patterns",
+      "displayName": "vercel-labs/composition-patterns",
+      "stars": 33546,
+      "relation": "source_overlap",
+      "evidence": "author:vercel-labs"
+    },
     {
       "slug": "vercel-labs-next-best-practices",
       "displayName": "vercel-labs/next-best-practices",
@@ -37,44 +44,37 @@
       "evidence": "author:vercel-labs"
     },
     {
-      "slug": "vercel-labs-react-best-practices",
-      "displayName": "vercel-labs/react-best-practices",
+      "slug": "anthropics-docx",
+      "displayName": "anthropics/docx",
       "stars": 0,
-      "relation": "source_overlap",
-      "evidence": "author:vercel-labs"
-    },
-    {
-      "slug": "vercel-labs-web-design-guidelines",
-      "displayName": "vercel-labs/web-design-guidelines",
-      "stars": 0,
-      "relation": "source_overlap",
-      "evidence": "author:vercel-labs"
-    },
-    {
-      "slug": "vercel-labs-react-native-skills",
-      "displayName": "vercel-labs/react-native-skills",
-      "stars": 0,
-      "relation": "source_overlap",
-      "evidence": "author:vercel-labs"
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
     },
     {
       "slug": "cloudflare-security-audit-skill",
       "displayName": "cloudflare/security-audit-skill",
-      "stars": 27697,
+      "stars": 59302,
       "relation": "shared_tag",
       "evidence": "Official Skills by"
     },
     {
-      "slug": "angular-angular-developer",
-      "displayName": "angular/angular-developer",
-      "stars": 677,
+      "slug": "vercel-labs-composition-patterns",
+      "displayName": "vercel-labs/composition-patterns",
+      "stars": 33546,
       "relation": "shared_tag",
       "evidence": "Official Skills by"
     },
     {
-      "slug": "testmu-ai-api-skill",
-      "displayName": "testmu-ai/api-skill",
-      "stars": 375,
+      "slug": "googleworkspace-gws-drive",
+      "displayName": "googleworkspace/gws-drive",
+      "stars": 0,
+      "relation": "shared_tag",
+      "evidence": "Official Skills by"
+    },
+    {
+      "slug": "huggingface-hf-cli",
+      "displayName": "huggingface/hf-cli",
+      "stars": 0,
       "relation": "shared_tag",
       "evidence": "Official Skills by"
     }

@@ -1,0 +1,89 @@
+{
+  "id": "skill:cbrock84-headcount",
+  "slug": "cbrock84-headcount",
+  "name": "headcount",
+  "displayName": "cbrock84/headcount",
+  "description": "Company departments as installable skills, each citing its sources",
+  "stars": 0,
+  "category": "Community Skills",
+  "source": "voltagent",
+  "url": "https://github.com/cbrock84/headcount",
+  "githubRepo": "cbrock84/headcount",
+  "readme": "# cbrock84/headcount\n\nCompany departments as installable skills, each citing its sources",
+  "readmeHtml": "<h1>cbrock84/headcount</h1>\n<p>Company departments as installable skills, each citing its sources</p>",
+  "skillMd": "",
+  "updatedAt": "2026-11-05T00:19:30.687Z",
+  "author": {
+    "login": "cbrock84",
+    "name": "cbrock84",
+    "avatarUrl": "",
+    "profileUrl": "https://github.com/cbrock84",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "morluto-rea",
+      "displayName": "morluto/rea",
+      "stars": 430773,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mattpocock-skills",
+      "displayName": "mattpocock/skills",
+      "stars": 313272,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "obra-brainstorming",
+      "displayName": "obra/brainstorming",
+      "stars": 312421,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
+      "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "stars": 145213,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 112815,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "leonxlnx-taste-skill",
+      "displayName": "Leonxlnx/taste-skill",
+      "stars": 110042,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "panniantong-agent-reach",
+      "displayName": "Panniantong/Agent-Reach",
+      "stars": 108796,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "tt-a1i-archify",
+      "displayName": "tt-a1i/archify",
+      "stars": 93456,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-new-york",
+    "label": "Global Skill Market / New York / Community Skills",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "source": "virtual_market"
+  }
+}

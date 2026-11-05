@@ -1,22 +1,22 @@
 {
-  "generatedAt": "2026-10-10T22:11:52.904Z",
+  "generatedAt": "2026-11-05T00:19:43.490Z",
   "source": "local-skills-cache",
   "baseline": {
     "window": "7d",
-    "commit": "c46570f24e275476ade82af1e602f5e8a586e84f"
+    "commit": "f8f517518a9a8ecfc7277544958e54b90c3828b7"
   },
   "skills": [
     {
       "rank": 1,
-      "slug": "obra-brainstorming",
-      "displayName": "obra/brainstorming",
-      "description": "Generate and explore ideas",
+      "slug": "morluto-rea",
+      "displayName": "morluto/rea",
+      "description": "Reverse-engineer binaries, applications, and runtimes with REA",
       "category": "Community Skills",
-      "stars": 297208,
-      "githubRepo": "obra/superpowers",
+      "stars": 430773,
+      "githubRepo": "morluto/rea",
       "source": "voltagent",
-      "weeklyStars": 332,
-      "href": "/skills-shop/obra-brainstorming/"
+      "weeklyStars": 3847,
+      "href": "/skills-shop/morluto-rea/"
     },
     {
       "rank": 2,
@@ -24,83 +24,83 @@
       "displayName": "mattpocock/skills",
       "description": "17 dev workflow skills: PRD writing, TDD, codebase architecture, git guardrails, issue triage, refactoring plans, and more",
       "category": "Community Skills",
-      "stars": 284326,
+      "stars": 313272,
       "githubRepo": "mattpocock/skills",
       "source": "voltagent",
-      "weeklyStars": 1755,
+      "weeklyStars": 1871,
       "href": "/skills-shop/mattpocock-skills/"
     },
     {
       "rank": 3,
-      "slug": "garrytan-gstack",
-      "displayName": "garrytan/gstack",
-      "description": "YC founder stack recommendations for infra, tooling, and deployment",
-      "category": "Skills by Garry Tan (gstack)",
-      "stars": 135832,
-      "githubRepo": "garrytan/gstack",
-      "source": "heilcheng",
-      "weeklyStars": 100,
-      "href": "/skills-shop/garrytan-gstack/"
+      "slug": "obra-brainstorming",
+      "displayName": "obra/brainstorming",
+      "description": "Generate and explore ideas",
+      "category": "Community Skills",
+      "stars": 312421,
+      "githubRepo": "obra/superpowers",
+      "source": "voltagent",
+      "weeklyStars": 577,
+      "href": "/skills-shop/obra-brainstorming/"
     },
     {
       "rank": 4,
+      "slug": "anthropics-docx",
+      "displayName": "anthropics/docx",
+      "description": "Create, edit, and analyze Word documents",
+      "category": "Skills by Anthropic",
+      "stars": 187413,
+      "githubRepo": "anthropics/skills",
+      "source": "heilcheng",
+      "weeklyStars": 187413,
+      "href": "/skills-shop/anthropics-docx/"
+    },
+    {
+      "rank": 5,
       "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
       "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
       "description": "UI/UX design patterns and best practices",
       "category": "Community Skills",
-      "stars": 134499,
+      "stars": 145213,
       "githubRepo": "nextlevelbuilder/ui-ux-pro-max-skill",
       "source": "voltagent",
-      "weeklyStars": 277,
+      "weeklyStars": 458,
       "href": "/skills-shop/nextlevelbuilder-ui-ux-pro-max-skill/"
     },
     {
-      "rank": 5,
+      "rank": 6,
+      "slug": "garrytan-office-hours",
+      "displayName": "garrytan/office-hours",
+      "description": "YC Office Hours: reframing product before code",
+      "category": "Skills by SuperCLI",
+      "stars": 139309,
+      "githubRepo": "garrytan/gstack",
+      "source": "heilcheng",
+      "weeklyStars": 139309,
+      "href": "/skills-shop/garrytan-office-hours/"
+    },
+    {
+      "rank": 7,
       "slug": "voltagent-awesome-design-md",
       "displayName": "voltagent/awesome-design-md",
       "description": "Standards and tools for the DESIGN.md protocol.",
       "category": "How do I know if a skill is safe to use?",
-      "stars": 120164,
+      "stars": 125608,
       "githubRepo": "VoltAgent/awesome-design-md",
       "source": "heilcheng",
-      "weeklyStars": 132,
+      "weeklyStars": 154,
       "href": "/skills-shop/voltagent-awesome-design-md/"
     },
     {
-      "rank": 6,
+      "rank": 8,
       "slug": "thedotmack-claude-mem",
       "displayName": "thedotmack/claude-mem",
       "description": "Compresses and persists agent memory across sessions",
       "category": "Community Skills",
-      "stars": 99201,
+      "stars": 112815,
       "githubRepo": "thedotmack/claude-mem",
       "source": "voltagent",
-      "weeklyStars": 231,
+      "weeklyStars": 966,
       "href": "/skills-shop/thedotmack-claude-mem/"
-    },
-    {
-      "rank": 7,
-      "slug": "punkpeye-awesome-mcp-servers",
-      "displayName": "punkpeye/awesome-mcp-servers",
-      "description": "A collection of Model Context Protocol (MCP) servers.",
-      "category": "How do I know if a skill is safe to use?",
-      "stars": 96065,
-      "githubRepo": "punkpeye/awesome-mcp-servers",
-      "source": "heilcheng",
-      "weeklyStars": 70,
-      "href": "/skills-shop/punkpeye-awesome-mcp-servers/"
-    },
-    {
-      "rank": 8,
-      "slug": "panniantong-agent-reach",
-      "displayName": "Panniantong/Agent-Reach",
-      "description": "Multi-platform search CLI for 17 sites including Chinese platforms",
-      "category": "Community Skills",
-      "stars": 95459,
-      "githubRepo": "Panniantong/Agent-Reach",
-      "source": "voltagent",
-      "weeklyStars": 613,
-      "href": "/skills-shop/panniantong-agent-reach/"
     },
     {
       "rank": 9,
@@ -108,23 +108,23 @@
       "displayName": "Leonxlnx/taste-skill",
       "description": "High-agency frontend skill that gives AI good taste with tunable design variance, motion intensity, and visual density to stop generic UI slop",
       "category": "Community Skills",
-      "stars": 94400,
+      "stars": 110042,
       "githubRepo": "Leonxlnx/taste-skill",
       "source": "voltagent",
-      "weeklyStars": 307,
+      "weeklyStars": 573,
       "href": "/skills-shop/leonxlnx-taste-skill/"
     },
     {
       "rank": 10,
-      "slug": "modelcontextprotocol-servers",
-      "displayName": "modelcontextprotocol/servers",
-      "description": "Official server implementations",
-      "category": "Model Context Protocol (MCP)",
-      "stars": 91123,
-      "githubRepo": "modelcontextprotocol/servers",
-      "source": "heilcheng",
-      "weeklyStars": 32,
-      "href": "/skills-shop/modelcontextprotocol-servers/"
+      "slug": "panniantong-agent-reach",
+      "displayName": "Panniantong/Agent-Reach",
+      "description": "Multi-platform search CLI for 17 sites including Chinese platforms",
+      "category": "Community Skills",
+      "stars": 108796,
+      "githubRepo": "Panniantong/Agent-Reach",
+      "source": "voltagent",
+      "weeklyStars": 368,
+      "href": "/skills-shop/panniantong-agent-reach/"
     }
   ]
 }
