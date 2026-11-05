@@ -1,6 +1,6 @@
 # ASunYC.github.io
 
-![VitePress](https://img.shields.io/badge/site-VitePress-blue.svg) ![Vue](https://img.shields.io/badge/Vue-3-green.svg) ![License](https://img.shields.io/badge/license-MIT-green.svg)
+![VitePress](https://img.shields.io/badge/site-VitePress-blue.svg) ![Vue](https://img.shields.io/badge/Vue-3-green.svg)
 
 The source for [ASunYC's project hub](https://asunyc.github.io/). This VitePress site brings together project guides, agent skill discovery pages, and interactive experiments.
 
@@ -55,6 +55,14 @@ After editing a page, run `npm run build` to catch broken imports or rendering e
 - MapNews includes static fallback data at `docs/public/data/map-news/news.json`.
 - To enable supported platform features locally, copy `.env.example` to `.env` and set the relevant `VITE_*` values. The Supabase service role key is for the server-side import script only; never put it in a browser-facing variable.
 - `npm run mapnews:import-submissions` is the separate server-side import command for MapNews submissions.
+
+The variables in `.env.example` have separate roles:
+
+| Variable | Used for |
+| --- | --- |
+| `VITE_METAGL_TOKEN` | MapNews globe rendering in the browser. |
+| `VITE_SUPABASE_URL` and `VITE_SUPABASE_PUBLISHABLE_KEY` | Optional browser-side platform features. |
+| `SUPABASE_SERVICE_ROLE_KEY` | Server-side MapNews submission import only; keep it out of `VITE_*` variables and committed files. |
 
 Site pages and Vue components are in `docs/`; shared VitePress configuration is in `docs/.vitepress/`.
 
