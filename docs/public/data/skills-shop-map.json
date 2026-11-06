@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-05T00:19:43.303Z",
-  "totalSkills": 1154,
-  "mappedSkills": 1154,
-  "realMappedSkills": 433,
-  "virtualMappedSkills": 721,
+  "generatedAt": "2026-11-06T00:21:18.758Z",
+  "totalSkills": 1168,
+  "mappedSkills": 1168,
+  "realMappedSkills": 435,
+  "virtualMappedSkills": 733,
   "locations": [
     {
       "id": "virtual-tokyo",
@@ -16,7 +16,7 @@
         {
           "slug": "morluto-rea",
           "displayName": "morluto/rea",
-          "stars": 430773,
+          "stars": 434238,
           "category": "Community Skills",
           "description": "Reverse-engineer binaries, applications, and runtimes with REA",
           "locationSource": "virtual_market"
@@ -24,7 +24,7 @@
         {
           "slug": "zarazhangrui-frontend-slides",
           "displayName": "zarazhangrui/frontend-slides",
-          "stars": 31887,
+          "stars": 31940,
           "category": "Community Skills",
           "description": "Generate animation-rich HTML presentations with visual style previews",
           "locationSource": "virtual_market"
@@ -32,7 +32,7 @@
         {
           "slug": "antonbabenko-terraform-skill",
           "displayName": "antonbabenko/terraform-skill",
-          "stars": 2440,
+          "stars": 2445,
           "category": "Community Skills",
           "description": "Terraform and OpenTofu patterns: testing, modules, state, CI/CD.",
           "locationSource": "virtual_market"
@@ -40,7 +40,7 @@
         {
           "slug": "plasma-ai-fractal",
           "displayName": "plasma-ai/fractal",
-          "stars": 789,
+          "stars": 788,
           "category": "Community Skills",
           "description": "Bounded hierarchical agent loops in isolated git worktrees",
           "locationSource": "virtual_market"
@@ -48,7 +48,7 @@
         {
           "slug": "jimmysadek-video-fetcher-to-markdown",
           "displayName": "JimmySadek/video-fetcher-to-markdown",
-          "stars": 521,
+          "stars": 522,
           "category": "Community Skills",
           "description": "Create Obsidian-ready Markdown notes from YouTube videos",
           "locationSource": "virtual_market"
@@ -64,7 +64,7 @@
         {
           "slug": "ohad6k-ditto",
           "displayName": "ohad6k/ditto",
-          "stars": 303,
+          "stars": 302,
           "category": "Skills by Binance",
           "description": "Mine Claude Code and Codex session logs into local, evidence-backed agent profiles",
           "locationSource": "virtual_market"
@@ -134,9 +134,17 @@
           "locationSource": "virtual_market"
         },
         {
+          "slug": "koloyaaa-foreign-academic-translator",
+          "displayName": "Koloyaaa/foreign-academic-translator",
+          "stars": 85,
+          "category": "Community Skills",
+          "description": "Translate foreign academic handouts into Chinese with subject glossaries",
+          "locationSource": "virtual_market"
+        },
+        {
           "slug": "skymanbp-cc-tree",
           "displayName": "skymanbp/cc-tree",
-          "stars": 94,
+          "stars": 84,
           "category": "Community Skills",
           "description": "Auditable radial-tree exploration for brainstorming, critique, design and code audit",
           "locationSource": "virtual_market"
@@ -160,7 +168,7 @@
         {
           "slug": "nataliecao323-partner-skill",
           "displayName": "NatalieCao323/partner-skill",
-          "stars": 57,
+          "stars": 58,
           "category": "EverythingSkill / Relationship",
           "description": "Since we decided to be together, let's turn this summer into forever.",
           "locationSource": "virtual_market"
@@ -184,9 +192,17 @@
         {
           "slug": "radres-call-me",
           "displayName": "radres/call-me",
-          "stars": 32,
+          "stars": 33,
           "category": "Community Skills",
           "description": "Agent phones your iPhone and returns your spoken answer",
+          "locationSource": "virtual_market"
+        },
+        {
+          "slug": "0design-unslop-skill",
+          "displayName": "0design/unslop-skill",
+          "stars": 31,
+          "category": "Community Skills",
+          "description": "Audit plugin for Claude Code and Codex",
           "locationSource": "virtual_market"
         },
         {
@@ -553,12 +569,12 @@
       "topSkill": {
         "slug": "morluto-rea",
         "displayName": "morluto/rea",
-        "stars": 430773,
+        "stars": 434238,
         "category": "Community Skills",
         "description": "Reverse-engineer binaries, applications, and runtimes with REA",
         "locationSource": "virtual_market"
       },
-      "skillCount": 67
+      "skillCount": 69
     },
     {
       "id": "virtual-sao-paulo",
@@ -571,7 +587,7 @@
         {
           "slug": "mattpocock-skills",
           "displayName": "mattpocock/skills",
-          "stars": 313272,
+          "stars": 315166,
           "category": "Community Skills",
           "description": "17 dev workflow skills: PRD writing, TDD, codebase architecture, git guardrails, issue triage, refactoring plans, and more",
           "locationSource": "virtual_market"
@@ -579,7 +595,7 @@
         {
           "slug": "aaron-he-zhu-aaron-marketing-skills",
           "displayName": "aaron-he-zhu/aaron-marketing-skills",
-          "stars": 3069,
+          "stars": 3074,
           "category": "Community Skills",
           "description": "69 marketing skills across SEO/GEO, influencer, paid ads, and email on one shared contract, with 5 benchmark-driven auditor gates (CORE-EEAT, CITE, C³, ROAS, SEND) and keyless data connectors",
           "locationSource": "virtual_market"
@@ -587,7 +603,7 @@
         {
           "slug": "appeeky-aso-skills",
           "displayName": "appeeky/aso-skills",
-          "stars": 2260,
+          "stars": 2264,
           "category": "Community Skills",
           "description": "30+ App Store Optimization skills for keyword research, metadata optimization, competitor analysis, creative optimization, and mobile growth strategies via Appeeky API",
           "locationSource": "virtual_market"
@@ -595,7 +611,7 @@
         {
           "slug": "conorluddy-ios-simulator-skill",
           "displayName": "conorluddy/ios-simulator-skill",
-          "stars": 1311,
+          "stars": 1312,
           "category": "Community Skills",
           "description": "Control iOS Simulator",
           "locationSource": "virtual_market"
@@ -635,7 +651,7 @@
         {
           "slug": "9929y-mesh-gradient-generation",
           "displayName": "9929y/mesh-gradient-generation",
-          "stars": 123,
+          "stars": 139,
           "category": "Community Skills",
           "description": "Create editable mesh gradients with Figma and SVG workflows",
           "locationSource": "virtual_market"
@@ -1004,7 +1020,7 @@
       "topSkill": {
         "slug": "mattpocock-skills",
         "displayName": "mattpocock/skills",
-        "stars": 313272,
+        "stars": 315166,
         "category": "Community Skills",
         "description": "17 dev workflow skills: PRD writing, TDD, codebase architecture, git guardrails, issue triage, refactoring plans, and more",
         "locationSource": "virtual_market"
@@ -1022,7 +1038,7 @@
         {
           "slug": "obra-brainstorming",
           "displayName": "obra/brainstorming",
-          "stars": 312421,
+          "stars": 313001,
           "category": "Community Skills",
           "description": "Generate and explore ideas",
           "locationSource": "github_profile"
@@ -1039,7 +1055,7 @@
       "topSkill": {
         "slug": "obra-brainstorming",
         "displayName": "obra/brainstorming",
-        "stars": 312421,
+        "stars": 313001,
         "category": "Community Skills",
         "description": "Generate and explore ideas",
         "locationSource": "github_profile"
@@ -1057,7 +1073,7 @@
         {
           "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
           "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
-          "stars": 145213,
+          "stars": 145698,
           "category": "Community Skills",
           "description": "UI/UX design patterns and best practices",
           "locationSource": "virtual_market"
@@ -1065,7 +1081,7 @@
         {
           "slug": "thedotmack-claude-mem",
           "displayName": "thedotmack/claude-mem",
-          "stars": 112815,
+          "stars": 113520,
           "category": "Community Skills",
           "description": "Compresses and persists agent memory across sessions",
           "locationSource": "virtual_market"
@@ -1073,7 +1089,7 @@
         {
           "slug": "blader-humanizer",
           "displayName": "blader/humanizer",
-          "stars": 64832,
+          "stars": 65249,
           "category": "Community Skills",
           "description": "Remove signs of AI-generated writing from text, making it sound more natural and human",
           "locationSource": "github_profile"
@@ -1081,7 +1097,7 @@
         {
           "slug": "cloudflare-security-audit-skill",
           "displayName": "cloudflare/security-audit-skill",
-          "stars": 59302,
+          "stars": 61397,
           "category": "Official Skills by",
           "description": "Multi-phase security audits with independently verified, machine-readable findings",
           "locationSource": "github_profile"
@@ -1089,7 +1105,7 @@
         {
           "slug": "cloudai-x-threejs-skills",
           "displayName": "CloudAI-X/threejs-skills",
-          "stars": 3984,
+          "stars": 4016,
           "category": "Community Skills",
           "description": "Three.js skills for creating 3D elements and interactive experiences",
           "locationSource": "virtual_market"
@@ -1097,7 +1113,7 @@
         {
           "slug": "nexscope-ai-ecommerce-skills",
           "displayName": "nexscope-ai/eCommerce-Skills",
-          "stars": 1332,
+          "stars": 1339,
           "category": "Community Skills",
           "description": "150+ ecommerce skills for Amazon, Shopify, Etsy, TikTok sellers",
           "locationSource": "virtual_market"
@@ -1105,7 +1121,7 @@
         {
           "slug": "fastcrw-crw",
           "displayName": "fastcrw/crw",
-          "stars": 1226,
+          "stars": 1227,
           "category": "Skills by Binance",
           "description": "Search, scrape, crawl and extract the web with a self-hostable Rust binary and MCP server",
           "locationSource": "virtual_market"
@@ -1113,7 +1129,7 @@
         {
           "slug": "rorkai-app-store-connect-cli-skills",
           "displayName": "rorkai/app-store-connect-cli-skills",
-          "stars": 1123,
+          "stars": 1125,
           "category": "Community Skills",
           "description": "Automate App Store deployments and management using ASC CLI",
           "locationSource": "github_profile"
@@ -1129,7 +1145,7 @@
         {
           "slug": "marvkr-better-design",
           "displayName": "marvkr/better-design",
-          "stars": 554,
+          "stars": 556,
           "category": "Community Skills",
           "description": "Build and review interfaces with Better Design design systems",
           "locationSource": "github_profile"
@@ -1159,20 +1175,20 @@
           "locationSource": "github_profile"
         },
         {
-          "slug": "jasoncolapietro-suede-creator-skills",
-          "displayName": "JasonColapietro/suede-creator-skills",
-          "stars": 125,
-          "category": "Community Skills",
-          "description": "Design, UI polish, code review grading, AI evals, SEO audits.",
-          "locationSource": "virtual_market"
-        },
-        {
           "slug": "ameyalambat128-swiftui-skills",
           "displayName": "ameyalambat128/swiftui-skills",
           "stars": 125,
           "category": "Skills by Binance",
           "description": "Apple-authored SwiftUI and platform guidance extracted from Xcode",
           "locationSource": "github_profile"
+        },
+        {
+          "slug": "jasoncolapietro-suede-creator-skills",
+          "displayName": "JasonColapietro/suede-creator-skills",
+          "stars": 121,
+          "category": "Community Skills",
+          "description": "Design, UI polish, code review grading, AI evals, SEO audits.",
+          "locationSource": "virtual_market"
         },
         {
           "slug": "orziz-odai",
@@ -1273,7 +1289,7 @@
         {
           "slug": "lukstei-slop-grader",
           "displayName": "lukstei/slop-grader",
-          "stars": 37,
+          "stars": 38,
           "category": "Community Skills",
           "description": "Rule-based CLI tool powered by TypeSafe Jev that evaluates documents against custom rulesets, producing document scores and line-by-line violation flags to guide auto-fixing with an AI agent",
           "locationSource": "virtual_market"
@@ -1300,6 +1316,14 @@
           "stars": 22,
           "category": "Skills by Binance",
           "description": "Daily on-chain research with OKX OnchainOS: hot tokens, smart money, meme launches, token risk",
+          "locationSource": "virtual_market"
+        },
+        {
+          "slug": "kinprove-genealogy-research-recipes",
+          "displayName": "kinprove/genealogy-research-recipes",
+          "stars": 17,
+          "category": "Community Skills",
+          "description": "Fact-checked recipes for DNA evidence and genealogy record searches",
           "locationSource": "virtual_market"
         },
         {
@@ -2530,12 +2554,12 @@
       "topSkill": {
         "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
         "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
-        "stars": 145213,
+        "stars": 145698,
         "category": "Community Skills",
         "description": "UI/UX design patterns and best practices",
         "locationSource": "virtual_market"
       },
-      "skillCount": 184
+      "skillCount": 185
     },
     {
       "id": "united-states",
@@ -2548,7 +2572,7 @@
         {
           "slug": "voltagent-awesome-design-md",
           "displayName": "voltagent/awesome-design-md",
-          "stars": 125608,
+          "stars": 125773,
           "category": "How do I know if a skill is safe to use?",
           "description": "Standards and tools for the DESIGN.md protocol.",
           "locationSource": "github_profile"
@@ -2556,7 +2580,7 @@
         {
           "slug": "k-dense-ai-scientific-agent-skills",
           "displayName": "K-Dense-AI/scientific-agent-skills",
-          "stars": 56104,
+          "stars": 56215,
           "category": "Community Skills",
           "description": "Scientific research and analysis skills",
           "locationSource": "github_profile"
@@ -2564,7 +2588,7 @@
         {
           "slug": "voltagent-awesome-openclaw-skills",
           "displayName": "voltagent/awesome-openclaw-skills",
-          "stars": 53553,
+          "stars": 53563,
           "category": "How do I know if a skill is safe to use?",
           "description": "Open source agent skills for OpenClaw.",
           "locationSource": "github_profile"
@@ -2572,7 +2596,7 @@
         {
           "slug": "voltagent-awesome-agent-skills",
           "displayName": "voltagent/awesome-agent-skills",
-          "stars": 36848,
+          "stars": 36897,
           "category": "How do I know if a skill is safe to use?",
           "description": "Large curated list of agent skills from official teams and the community.",
           "locationSource": "github_profile"
@@ -2580,7 +2604,7 @@
         {
           "slug": "google-cloud-agent-platform-skill-registry",
           "displayName": "google/cloud/agent-platform-skill-registry",
-          "stars": 21971,
+          "stars": 22349,
           "category": "TypeScript Skills",
           "description": "Interact with the Gemini Enterprise Agent Platform Skill Registry to create and search for available skills.",
           "locationSource": "github_profile"
@@ -2588,7 +2612,7 @@
         {
           "slug": "gooseworks-ai-goose-skills",
           "displayName": "gooseworks-ai/goose-skills",
-          "stars": 1282,
+          "stars": 1283,
           "category": "Community Skills",
           "description": "125 growth and GTM skills: ads, content, lead gen, SEO",
           "locationSource": "github_profile"
@@ -2596,7 +2620,7 @@
         {
           "slug": "getsentry-agents-md",
           "displayName": "getsentry/agents-md",
-          "stars": 1123,
+          "stars": 1126,
           "category": "Skills by Sentry",
           "description": "Generate and manage AGENTS.md files",
           "locationSource": "github_profile"
@@ -2620,7 +2644,7 @@
         {
           "slug": "angular-angular-developer",
           "displayName": "angular/angular-developer",
-          "stars": 715,
+          "stars": 716,
           "category": "Official Skills by",
           "description": "Generate Angular code and architectural guidance for components, services, reactivity",
           "locationSource": "github_profile"
@@ -2628,7 +2652,7 @@
         {
           "slug": "firecrawl-firecrawl-alexandria",
           "displayName": "firecrawl/firecrawl-alexandria",
-          "stars": 677,
+          "stars": 678,
           "category": "Official Skills by",
           "description": "Find and run Firecrawl Alexandria tools for structured data",
           "locationSource": "github_profile"
@@ -2636,7 +2660,7 @@
         {
           "slug": "openaccountants-openaccountants",
           "displayName": "openaccountants/openaccountants",
-          "stars": 475,
+          "stars": 476,
           "category": "Community Skills",
           "description": "371 tax classification skills across 134 countries",
           "locationSource": "github_profile"
@@ -2644,7 +2668,7 @@
         {
           "slug": "zapier-zapier-mcp",
           "displayName": "zapier/zapier-mcp",
-          "stars": 453,
+          "stars": 452,
           "category": "Community Skills",
           "description": "Official plugin distribution for the hosted Zapier MCP server. Connects Claude to thousands of apps — send messages, pull data, trigger workflows.",
           "locationSource": "github_profile"
@@ -2652,7 +2676,7 @@
         {
           "slug": "testdino-hq-playwright-skill",
           "displayName": "testdino-hq/playwright-skill",
-          "stars": 410,
+          "stars": 412,
           "category": "Community Skills",
           "description": "70+ production-tested Playwright automation testing patterns: E2E, POM, CI/CD, migrations, CLI",
           "locationSource": "github_profile"
@@ -2660,7 +2684,7 @@
         {
           "slug": "continuum-ai-corp-orca-replay",
           "displayName": "Continuum-AI-Corp/orca-replay",
-          "stars": 337,
+          "stars": 345,
           "category": "Community Skills",
           "description": "Answer questions about past agent runs from their recordings",
           "locationSource": "github_profile"
@@ -2674,25 +2698,25 @@
           "locationSource": "github_profile"
         },
         {
-          "slug": "harshmaur-apify-reddit-scraper",
-          "displayName": "harshmaur/apify-reddit-scraper",
-          "stars": 290,
-          "category": "Community Skills",
-          "description": "Scrape Reddit posts, comments and subreddits without an API key",
-          "locationSource": "github_profile"
-        },
-        {
           "slug": "supercmohq-supercmo-skills",
           "displayName": "SupercmoHQ/superCMO-skills",
-          "stars": 288,
+          "stars": 291,
           "category": "Community Skills",
           "description": "Open-source skills + local MCP server for marketing video & image production: UGC videos, ad videos, product photography, and image ads from a product photo and a brief; casts AI actors, picks the best image/video models, edits any-length clips with consistent actor and product, and researches competitor ads. BYO or managed keys, Apache-2.0",
           "locationSource": "github_profile"
         },
         {
+          "slug": "harshmaur-apify-reddit-scraper",
+          "displayName": "harshmaur/apify-reddit-scraper",
+          "stars": 291,
+          "category": "Community Skills",
+          "description": "Scrape Reddit posts, comments and subreddits without an API key",
+          "locationSource": "github_profile"
+        },
+        {
           "slug": "coderabbitai-skills",
           "displayName": "coderabbitai/skills",
-          "stars": 208,
+          "stars": 209,
           "category": "Community Skills",
           "description": "Code review and PR autofix workflows for coding agents",
           "locationSource": "github_profile"
@@ -2700,7 +2724,7 @@
         {
           "slug": "fullselfbrowsing-fsb",
           "displayName": "fullselfbrowsing/fsb",
-          "stars": 204,
+          "stars": 205,
           "category": "Community Skills",
           "description": "Drive your signed-in Chromium browser through FSB's MCP tools",
           "locationSource": "github_profile"
@@ -2708,7 +2732,7 @@
         {
           "slug": "digidai-product-manager-skills",
           "displayName": "Digidai/product-manager-skills",
-          "stars": 195,
+          "stars": 196,
           "category": "Community Skills",
           "description": "Senior PM agent with 30+ frameworks and SaaS metrics",
           "locationSource": "github_profile"
@@ -2724,7 +2748,7 @@
         {
           "slug": "makenotion-skills",
           "displayName": "makenotion/skills",
-          "stars": 179,
+          "stars": 181,
           "category": "Skills by Binance",
           "description": "Notion API integration, database operations, and content management",
           "locationSource": "github_profile"
@@ -2748,7 +2772,7 @@
         {
           "slug": "kubestellar-console",
           "displayName": "kubestellar/console",
-          "stars": 152,
+          "stars": 151,
           "category": "Skills by Binance",
           "description": "Multi-cluster Kubernetes dashboard with 10+ built-in agent skills for performance testing, cache compliance, CI debugging, and K8s troubleshooting. MCP server bridges agents to kubeconfig and Kubernetes APIs",
           "locationSource": "github_profile"
@@ -2764,7 +2788,7 @@
         {
           "slug": "agentrhq-authsome",
           "displayName": "agentrhq/authsome",
-          "stars": 103,
+          "stars": 104,
           "category": "Skills by Authsome",
           "description": "Local OAuth2 and API-key credential broker for AI agents. Login once via browser PKCE or device code, encrypted vault at ~/.authsome, local proxy injects credentials at request time. 30+ providers preconfigured.",
           "locationSource": "github_profile"
@@ -2772,7 +2796,7 @@
         {
           "slug": "omkamal-pypict-skill",
           "displayName": "omkamal/pypict-skill",
-          "stars": 102,
+          "stars": 103,
           "category": "Community Skills",
           "description": "Pairwise test generation",
           "locationSource": "github_profile"
@@ -2786,14 +2810,6 @@
           "locationSource": "github_profile"
         },
         {
-          "slug": "arcmira-find-quotes",
-          "displayName": "arcmira/find-quotes",
-          "stars": 78,
-          "category": "Community Skills",
-          "description": "Find timestamped quotes and clips in YouTube and podcast transcripts",
-          "locationSource": "github_profile"
-        },
-        {
           "slug": "leadmagic-gtm-skills",
           "displayName": "leadmagic/gtm-skills",
           "stars": 74,
@@ -2804,7 +2820,7 @@
         {
           "slug": "0xarchiveio-backtest",
           "displayName": "0xarchiveio/backtest",
-          "stars": 73,
+          "stars": 74,
           "category": "Skills by Binance",
           "description": "Test Hyperliquid trading strategies with backtests and out-of-sample checks",
           "locationSource": "github_profile"
@@ -2812,7 +2828,7 @@
         {
           "slug": "publora-skills",
           "displayName": "publora/skills",
-          "stars": 63,
+          "stars": 67,
           "category": "Community Skills",
           "description": "Draft, schedule and publish posts to ten social networks",
           "locationSource": "github_profile"
@@ -2826,6 +2842,14 @@
           "locationSource": "github_profile"
         },
         {
+          "slug": "cypress-io-cypress-author",
+          "displayName": "cypress-io/cypress-author",
+          "stars": 47,
+          "category": "TypeScript Skills",
+          "description": "Creates, updates, and fixes Cypress E2E and component tests.",
+          "locationSource": "github_profile"
+        },
+        {
           "slug": "zilliztech-milvus-skill",
           "displayName": "zilliztech/milvus-skill",
           "stars": 47,
@@ -2834,11 +2858,11 @@
           "locationSource": "github_profile"
         },
         {
-          "slug": "cypress-io-cypress-author",
-          "displayName": "cypress-io/cypress-author",
+          "slug": "arcmira-find-quotes",
+          "displayName": "arcmira/find-quotes",
           "stars": 46,
-          "category": "TypeScript Skills",
-          "description": "Creates, updates, and fixes Cypress E2E and component tests.",
+          "category": "Community Skills",
+          "description": "Find timestamped quotes and clips in YouTube and podcast transcripts",
           "locationSource": "github_profile"
         },
         {
@@ -3789,7 +3813,7 @@
       "topSkill": {
         "slug": "voltagent-awesome-design-md",
         "displayName": "voltagent/awesome-design-md",
-        "stars": 125608,
+        "stars": 125773,
         "category": "How do I know if a skill is safe to use?",
         "description": "Standards and tools for the DESIGN.md protocol.",
         "locationSource": "github_profile"
@@ -3807,7 +3831,7 @@
         {
           "slug": "leonxlnx-taste-skill",
           "displayName": "Leonxlnx/taste-skill",
-          "stars": 110042,
+          "stars": 110644,
           "category": "Community Skills",
           "description": "High-agency frontend skill that gives AI good taste with tunable design variance, motion intensity, and visual density to stop generic UI slop",
           "locationSource": "virtual_market"
@@ -3815,7 +3839,7 @@
         {
           "slug": "career-ops-hq-career-ops",
           "displayName": "career-ops-hq/career-ops",
-          "stars": 80187,
+          "stars": 80456,
           "category": "Community Skills",
           "description": "Scores jobs against your CV, tailors resumes, tracks applications",
           "locationSource": "virtual_market"
@@ -3823,7 +3847,7 @@
         {
           "slug": "wanshuiyin-auto-claude-code-research-in-sleep",
           "displayName": "wanshuiyin/Auto-claude-code-research-in-sleep",
-          "stars": 18650,
+          "stars": 18729,
           "category": "Community Skills",
           "description": "Autonomous ML research with cross-model review loops and GPU deployment",
           "locationSource": "virtual_market"
@@ -3831,7 +3855,7 @@
         {
           "slug": "dreammis-social-auto-upload",
           "displayName": "dreammis/social-auto-upload",
-          "stars": 16118,
+          "stars": 16162,
           "category": "Community Skills",
           "description": "Cross-platform publishing CLI and skills for 17 social platforms",
           "locationSource": "virtual_market"
@@ -3839,7 +3863,7 @@
         {
           "slug": "ibelick-ui-skills",
           "displayName": "ibelick/ui-skills",
-          "stars": 10627,
+          "stars": 10680,
           "category": "Community Skills",
           "description": "Opinionated, evolving constraints to guide agents when building interfaces",
           "locationSource": "github_profile"
@@ -3847,7 +3871,7 @@
         {
           "slug": "sawyerhood-dev-browser",
           "displayName": "sawyerhood/dev-browser",
-          "stars": 6718,
+          "stars": 6720,
           "category": "Skills by Binance",
           "description": "Web browser capability for agents",
           "locationSource": "virtual_market"
@@ -3855,7 +3879,7 @@
         {
           "slug": "deanchensj-jiangshan-atlas",
           "displayName": "deanchensj/jiangshan-atlas",
-          "stars": 4106,
+          "stars": 4355,
           "category": "Skills by Binance",
           "description": "Locate Chinese historical events, classical poems, ancient places, and figure trajectories",
           "locationSource": "virtual_market"
@@ -3863,7 +3887,7 @@
         {
           "slug": "hughyau-qiushi-skill",
           "displayName": "HughYau/qiushi-skill",
-          "stars": 3850,
+          "stars": 3851,
           "category": "EverythingSkill / Tool",
           "description": "One guiding principle + nine methodology weapons distilled from Mao's thought — arm your AI's brain.",
           "locationSource": "virtual_market"
@@ -3871,7 +3895,7 @@
         {
           "slug": "foryourhealth111-pixel-vibe-skills",
           "displayName": "foryourhealth111-pixel/Vibe-Skills",
-          "stars": 3793,
+          "stars": 3800,
           "category": "Community Skills",
           "description": "A skills governed plug-and-play harness for staged, test-driven skill orchestration",
           "locationSource": "virtual_market"
@@ -3879,7 +3903,7 @@
         {
           "slug": "rebelytics-task-observer",
           "displayName": "rebelytics/task-observer",
-          "stars": 3732,
+          "stars": 3746,
           "category": "Community Skills",
           "description": "Meta-skill for continuous skill improvement & automatic skill creation.",
           "locationSource": "virtual_market"
@@ -3887,7 +3911,7 @@
         {
           "slug": "lackeyjb-playwright-skill",
           "displayName": "lackeyjb/playwright-skill",
-          "stars": 3265,
+          "stars": 3266,
           "category": "Community Skills",
           "description": "Browser automation with Playwright",
           "locationSource": "virtual_market"
@@ -3895,7 +3919,7 @@
         {
           "slug": "ajnart-self-host",
           "displayName": "ajnart/self-host",
-          "stars": 1501,
+          "stars": 1508,
           "category": "Skills by Binance",
           "description": "Agent installs self-hosted apps and sets up admin accounts, API keys and app links",
           "locationSource": "github_profile"
@@ -3903,7 +3927,7 @@
         {
           "slug": "martindelophy-edit-timeline-studio",
           "displayName": "MartinDelophy/edit-timeline-studio",
-          "stars": 943,
+          "stars": 946,
           "category": "Community Skills",
           "description": "Create editable video timelines with captions, voiceovers, and verified exports.",
           "locationSource": "virtual_market"
@@ -3911,7 +3935,7 @@
         {
           "slug": "lawve-ai-awesome-legal-skills",
           "displayName": "lawve-ai/awesome-legal-skills",
-          "stars": 930,
+          "stars": 932,
           "category": "Community Skills",
           "description": "Curated agent skills for automating legal workflows",
           "locationSource": "virtual_market"
@@ -3919,7 +3943,7 @@
         {
           "slug": "wshuyi-x-article-publisher-skill",
           "displayName": "wshuyi/x-article-publisher-skill",
-          "stars": 874,
+          "stars": 872,
           "category": "Community Skills",
           "description": "Publish articles to X/Twitter",
           "locationSource": "virtual_market"
@@ -3927,7 +3951,7 @@
         {
           "slug": "gitroomhq-postiz-agent",
           "displayName": "gitroomhq/postiz-agent",
-          "stars": 562,
+          "stars": 564,
           "category": "Community Skills",
           "description": "Schedule social media posts across 28+ platforms programmatically",
           "locationSource": "virtual_market"
@@ -3943,7 +3967,7 @@
         {
           "slug": "ericjujianzou-rederive",
           "displayName": "EricJujianZou/rederive",
-          "stars": 408,
+          "stars": 417,
           "category": "Community Skills",
           "description": "Understand any codebase by re-designing its decisions from first principles",
           "locationSource": "virtual_market"
@@ -3951,7 +3975,7 @@
         {
           "slug": "cosmoblk-email-marketing-bible",
           "displayName": "CosmoBlk/email-marketing-bible",
-          "stars": 363,
+          "stars": 366,
           "category": "Community Skills",
           "description": "55K-word email marketing guide as an AI skill",
           "locationSource": "virtual_market"
@@ -3959,7 +3983,7 @@
         {
           "slug": "neeeophytee-finding-unknowns-skills",
           "displayName": "Neeeophytee/finding-unknowns-skills",
-          "stars": 363,
+          "stars": 362,
           "category": "Community Skills",
           "description": "8 meta-skills that make a coding agent surface your unknowns before they get expensive: blindspot pass, interview, reference hunt, implementation plan/notes, pitch packager, and a pre-merge change quiz. Works in Claude Code, Codex, and Cursor via the agentskills.io SKILL.md format",
           "locationSource": "virtual_market"
@@ -3973,6 +3997,14 @@
           "locationSource": "virtual_market"
         },
         {
+          "slug": "aboudjem-humanizer-skill",
+          "displayName": "Aboudjem/humanizer-skill",
+          "stars": 302,
+          "category": "Community Skills",
+          "description": "Rewrites AI-sounding text, flagging 55 writing patterns",
+          "locationSource": "virtual_market"
+        },
+        {
           "slug": "talkstream-ru-text",
           "displayName": "talkstream/ru-text",
           "stars": 290,
@@ -3983,9 +4015,17 @@
         {
           "slug": "atomic-mail-atomicmail",
           "displayName": "Atomic-Mail/atomicmail",
-          "stars": 268,
+          "stars": 260,
           "category": "Community Skills",
           "description": "Agent registers its own inbox, then sends and reads mail",
+          "locationSource": "virtual_market"
+        },
+        {
+          "slug": "tinqiao-oss-engramory",
+          "displayName": "tinqiao-oss/engramory",
+          "stars": 201,
+          "category": "Community Skills",
+          "description": "Curated plain-Markdown long-term memory with a size-capped index",
           "locationSource": "virtual_market"
         },
         {
@@ -3997,17 +4037,9 @@
           "locationSource": "virtual_market"
         },
         {
-          "slug": "tinqiao-oss-engramory",
-          "displayName": "tinqiao-oss/engramory",
-          "stars": 199,
-          "category": "Community Skills",
-          "description": "Curated plain-Markdown long-term memory with a size-capped index",
-          "locationSource": "virtual_market"
-        },
-        {
           "slug": "dembrandt-dembrandt-skills",
           "displayName": "dembrandt/dembrandt-skills",
-          "stars": 182,
+          "stars": 183,
           "category": "Community Skills",
           "description": "UX and design system skills: hierarchy, typography, accessibility, interactions",
           "locationSource": "virtual_market"
@@ -4015,7 +4047,7 @@
         {
           "slug": "aaddrick-building-with-typesafe-jev",
           "displayName": "aaddrick/building-with-typesafe-jev",
-          "stars": 148,
+          "stars": 150,
           "category": "Skills by Binance",
           "description": "Design TypeSafe Jev calls: typed questions, confidence routing, 150+ prior-art projects",
           "locationSource": "virtual_market"
@@ -4031,7 +4063,7 @@
         {
           "slug": "ndesv21-socialclaw",
           "displayName": "ndesv21/socialclaw",
-          "stars": 105,
+          "stars": 106,
           "category": "Skills by SocialClaw",
           "description": "Schedule and publish social media posts across 13 platforms (X, LinkedIn, Instagram, Facebook Pages, TikTok, Discord, Telegram, YouTube, Reddit, WordPress, Pinterest) via a single workspace API key.",
           "locationSource": "virtual_market"
@@ -4039,17 +4071,9 @@
         {
           "slug": "kalarislabs-research-agent-skills",
           "displayName": "KalarisLabs/research-agent-skills",
-          "stars": 101,
+          "stars": 104,
           "category": "Community Skills",
           "description": "280+ skills for literature review, analysis, and paper writing",
-          "locationSource": "virtual_market"
-        },
-        {
-          "slug": "xquik-dev-tweetclaw",
-          "displayName": "Xquik-dev/tweetclaw",
-          "stars": 96,
-          "category": "Community Skills",
-          "description": "Post tweets, replies, DMs; search, monitor, run giveaways",
           "locationSource": "virtual_market"
         },
         {
@@ -4059,6 +4083,14 @@
           "category": "Skills by Binance",
           "description": "Typed React command-center components, live examples, and a portable Agent Skills-compatible skill",
           "locationSource": "github_profile"
+        },
+        {
+          "slug": "xquik-dev-tweetclaw",
+          "displayName": "Xquik-dev/tweetclaw",
+          "stars": 95,
+          "category": "Community Skills",
+          "description": "Post tweets, replies, DMs; search, monitor, run giveaways",
+          "locationSource": "virtual_market"
         },
         {
           "slug": "crawlbase-crawlbase-mcp",
@@ -4368,12 +4400,12 @@
       "topSkill": {
         "slug": "leonxlnx-taste-skill",
         "displayName": "Leonxlnx/taste-skill",
-        "stars": 110042,
+        "stars": 110644,
         "category": "Community Skills",
         "description": "High-agency frontend skill that gives AI good taste with tunable design variance, motion intensity, and visual density to stop generic UI slop",
         "locationSource": "virtual_market"
       },
-      "skillCount": 70
+      "skillCount": 71
     },
     {
       "id": "virtual-toronto",
@@ -4386,7 +4418,7 @@
         {
           "slug": "panniantong-agent-reach",
           "displayName": "Panniantong/Agent-Reach",
-          "stars": 108796,
+          "stars": 109202,
           "category": "Community Skills",
           "description": "Multi-platform search CLI for 17 sites including Chinese platforms",
           "locationSource": "virtual_market"
@@ -4394,7 +4426,7 @@
         {
           "slug": "browser-act-browser-act",
           "displayName": "browser-act/browser-act",
-          "stars": 6321,
+          "stars": 6326,
           "category": "Community Skills",
           "description": "Automate authenticated browsers with extraction and human handoff",
           "locationSource": "virtual_market"
@@ -4402,7 +4434,7 @@
         {
           "slug": "behisecc-vibesec",
           "displayName": "BehiSecc/vibesec",
-          "stars": 1379,
+          "stars": 1378,
           "category": "Community Skills",
           "description": "Helps write secure code by preventing common vulnerabilities including IDOR, XSS, SQL injection, SSRF, and weak authentication, approaching code from a bug hunter's perspective",
           "locationSource": "virtual_market"
@@ -4418,7 +4450,7 @@
         {
           "slug": "swarmclawai-swarmvault",
           "displayName": "swarmclawai/swarmvault",
-          "stars": 733,
+          "stars": 734,
           "category": "Skills by Binance",
           "description": "Build local knowledge vaults and context packs",
           "locationSource": "virtual_market"
@@ -4434,7 +4466,7 @@
         {
           "slug": "mohamedabdallah-14-unslop",
           "displayName": "MohamedAbdallah-14/unslop",
-          "stars": 175,
+          "stars": 178,
           "category": "Community Skills",
           "description": "Removes named AI writing tells (tricolons, em-dash pileups, hedging stacks, sycophancy openers, stock vocab like \"delve\"/\"crucial\"). Split lint/rewrite modes for auditing your own text without auto-rewriting. Five intensity levels, MIT",
           "locationSource": "virtual_market"
@@ -4464,14 +4496,6 @@
           "locationSource": "virtual_market"
         },
         {
-          "slug": "tubeagentkit-youtube-transcript-skills",
-          "displayName": "tubeagentkit/youtube-transcript-skills",
-          "stars": 81,
-          "category": "Skills by Binance",
-          "description": "Fetch YouTube transcripts, search videos/channels, browse channels, and extract playlists via getyoutubetranscript.com's free-tier API",
-          "locationSource": "virtual_market"
-        },
-        {
           "slug": "wildbyteai-digital-life",
           "displayName": "wildbyteai/digital-life",
           "stars": 67,
@@ -4496,6 +4520,14 @@
           "locationSource": "virtual_market"
         },
         {
+          "slug": "tubeagentkit-youtube-transcript-skills",
+          "displayName": "tubeagentkit/youtube-transcript-skills",
+          "stars": 52,
+          "category": "Skills by Binance",
+          "description": "Fetch YouTube transcripts, search videos/channels, browse channels, and extract playlists via getyoutubetranscript.com's free-tier API",
+          "locationSource": "virtual_market"
+        },
+        {
           "slug": "kochetkov-ma-brewpage-publish",
           "displayName": "kochetkov-ma/brewpage-publish",
           "stars": 39,
@@ -4506,7 +4538,7 @@
         {
           "slug": "coinpaprika-coinpaprika-api",
           "displayName": "coinpaprika/coinpaprika-api",
-          "stars": 37,
+          "stars": 36,
           "category": "Skills by Binance",
           "description": "Crypto market data for 12,000+ coins and 350+ exchanges",
           "locationSource": "virtual_market"
@@ -4520,19 +4552,19 @@
           "locationSource": "virtual_market"
         },
         {
-          "slug": "sendmux-skills",
-          "displayName": "Sendmux/skills",
-          "stars": 18,
-          "category": "Community Skills",
-          "description": "Sendmux email and mailbox workflows for agents",
-          "locationSource": "virtual_market"
-        },
-        {
           "slug": "realteamprinz-brother-skill",
           "displayName": "realteamprinz/brother-skill",
           "stars": 18,
           "category": "Persona Distill Skills",
           "description": "从抖音、微信截图等来源蒸馏你的兄弟们（支持真实兄弟、群聊好友和网络红人）——他们的说话方式、口头禅、搞笑风格和恶搞能量。",
+          "locationSource": "virtual_market"
+        },
+        {
+          "slug": "sendmux-skills",
+          "displayName": "Sendmux/skills",
+          "stars": 16,
+          "category": "Community Skills",
+          "description": "Sendmux email and mailbox workflows for agents",
           "locationSource": "virtual_market"
         },
         {
@@ -4691,7 +4723,7 @@
       "topSkill": {
         "slug": "panniantong-agent-reach",
         "displayName": "Panniantong/Agent-Reach",
-        "stars": 108796,
+        "stars": 109202,
         "category": "Community Skills",
         "description": "Multi-platform search CLI for 17 sites including Chinese platforms",
         "locationSource": "virtual_market"
@@ -4709,7 +4741,7 @@
         {
           "slug": "punkpeye-awesome-mcp-servers",
           "displayName": "punkpeye/awesome-mcp-servers",
-          "stars": 97308,
+          "stars": 97338,
           "category": "How do I know if a skill is safe to use?",
           "description": "A collection of Model Context Protocol (MCP) servers.",
           "locationSource": "virtual_market"
@@ -4717,7 +4749,7 @@
         {
           "slug": "phuryn-ab-test-analysis",
           "displayName": "phuryn/ab-test-analysis",
-          "stars": 27693,
+          "stars": 27716,
           "category": "TypeScript Skills",
           "description": "Analyze A/B test results with statistical significance and recommendations",
           "locationSource": "virtual_market"
@@ -4725,7 +4757,7 @@
         {
           "slug": "titanwings-colleague-skill",
           "displayName": "titanwings/colleague-skill",
-          "stars": 26375,
+          "stars": 26400,
           "category": "EverythingSkill / Workplace",
           "description": "Distill your real colleague into AI — the spark that started the .skill revolution.",
           "locationSource": "github_profile"
@@ -4733,7 +4765,7 @@
         {
           "slug": "orchestra-research-ai-research-skills",
           "displayName": "Orchestra-Research/AI-Research-SKILLs",
-          "stars": 14269,
+          "stars": 14297,
           "category": "Community Skills",
           "description": "AI research skills for model training, inference, and MLOps",
           "locationSource": "virtual_market"
@@ -4741,7 +4773,7 @@
         {
           "slug": "deanpeters-acquisition-channel-advisor",
           "displayName": "deanpeters/acquisition-channel-advisor",
-          "stars": 7876,
+          "stars": 7888,
           "category": "TypeScript Skills",
           "description": "Evaluate channels using unit economics and recommend scale/test/kill decisions",
           "locationSource": "virtual_market"
@@ -4749,7 +4781,7 @@
         {
           "slug": "nanako0129-sepia",
           "displayName": "Nanako0129/sepia",
-          "stars": 3639,
+          "stars": 3656,
           "category": "Community Skills",
           "description": "De-AI writing skill fixing narrative structure before word choice",
           "locationSource": "virtual_market"
@@ -4757,7 +4789,7 @@
         {
           "slug": "simon-he95-markstream-install",
           "displayName": "Simon-He95/markstream-install",
-          "stars": 3050,
+          "stars": 3051,
           "category": "Community Skills",
           "description": "Install streaming Markdown renderers across five frontend frameworks",
           "locationSource": "github_profile"
@@ -4765,7 +4797,7 @@
         {
           "slug": "bevibing-tutor-skills",
           "displayName": "bevibing/tutor-skills",
-          "stars": 1389,
+          "stars": 1390,
           "category": "Community Skills",
           "description": "Transform docs or codebases into Obsidian StudyVaults with interactive quizzes",
           "locationSource": "virtual_market"
@@ -4773,7 +4805,7 @@
         {
           "slug": "vostride-agent-qa",
           "displayName": "vostride/agent-qa",
-          "stars": 924,
+          "stars": 870,
           "category": "Skills by Binance",
           "description": "Three skills for authoring natural-language web and mobile tests, triaging failures, and debugging fixes with MCP evidence",
           "locationSource": "virtual_market"
@@ -4781,7 +4813,7 @@
         {
           "slug": "qiuner-birdview",
           "displayName": "Qiuner/birdview",
-          "stars": 674,
+          "stars": 675,
           "category": "Community Skills",
           "description": "Put architecture and constraints at the center of AI coding",
           "locationSource": "virtual_market"
@@ -4797,10 +4829,18 @@
         {
           "slug": "beamuswayne-simp-skill",
           "displayName": "BeamusWayne/simp-skill",
-          "stars": 333,
+          "stars": 334,
           "category": "EverythingSkill / Relationship",
           "description": "For the one brave enough to genuinely like someone — teaches you to say it out loud. Not tactics. Just helping you find the courage and words to express what you actually feel.",
           "locationSource": "github_profile"
+        },
+        {
+          "slug": "swiftlysingh-excalidraw-cli",
+          "displayName": "swiftlysingh/excalidraw-cli",
+          "stars": 315,
+          "category": "Community Skills",
+          "description": "Turn text, JSON, or Graphviz DOT into editable Excalidraw diagrams",
+          "locationSource": "virtual_market"
         },
         {
           "slug": "vogtsw-boss-skills",
@@ -4813,9 +4853,17 @@
         {
           "slug": "socai-io-jev-social",
           "displayName": "socai-io/jev-social",
-          "stars": 197,
+          "stars": 200,
           "category": "Community Skills",
           "description": "Route local social research through Jev and socai CLI",
+          "locationSource": "virtual_market"
+        },
+        {
+          "slug": "scrapingbee-scrapingbee-cli",
+          "displayName": "ScrapingBee/scrapingbee-cli",
+          "stars": 112,
+          "category": "Community Skills",
+          "description": "Scrape any page, search the web, crawl sites, extract data",
           "locationSource": "virtual_market"
         },
         {
@@ -4837,7 +4885,7 @@
         {
           "slug": "surendranb-writing-skills",
           "displayName": "surendranb/writing-skills",
-          "stars": 54,
+          "stars": 53,
           "category": "Skills by Surendran B",
           "description": "15 writing-style skills: 8 measurable frameworks (plain language, ASD-STE100, AP journalism, GOV.UK, business BLUF) and 7 character voices, each with a verify checklist",
           "locationSource": "virtual_market"
@@ -4869,7 +4917,7 @@
         {
           "slug": "liyupi-memecub",
           "displayName": "liyupi/memecub",
-          "stars": 30,
+          "stars": 34,
           "category": "Skills by Binance",
           "description": "Search memes, GIFs and Chinese 表情包 by feeling, and place them into articles",
           "locationSource": "github_profile"
@@ -4885,7 +4933,7 @@
         {
           "slug": "cyh29hao-shuixian-skill",
           "displayName": "Cyh29hao/shuixian-skill",
-          "stars": 26,
+          "stars": 27,
           "category": "EverythingSkill / Relationship",
           "description": "You should go and love yourself. Feed it your chat logs, speech patterns, and relationship habits — and it slowly grows into a companion that genuinely gets you. A self-reflective meta-skill for building your own emotional mirror.",
           "locationSource": "github_profile"
@@ -5134,12 +5182,12 @@
       "topSkill": {
         "slug": "punkpeye-awesome-mcp-servers",
         "displayName": "punkpeye/awesome-mcp-servers",
-        "stars": 97308,
+        "stars": 97338,
         "category": "How do I know if a skill is safe to use?",
         "description": "A collection of Model Context Protocol (MCP) servers.",
         "locationSource": "virtual_market"
       },
-      "skillCount": 53
+      "skillCount": 55
     },
     {
       "id": "virtual-bengaluru",
@@ -5152,7 +5200,7 @@
         {
           "slug": "tt-a1i-archify",
           "displayName": "tt-a1i/archify",
-          "stars": 93456,
+          "stars": 93846,
           "category": "Community Skills",
           "description": "Generate validated interactive architecture diagrams from codebases or system descriptions",
           "locationSource": "virtual_market"
@@ -5160,7 +5208,7 @@
         {
           "slug": "kkkkhazix-aihot",
           "displayName": "kkkkhazix/aihot",
-          "stars": 21956,
+          "stars": 21996,
           "category": "Skills by Binance",
           "description": "Query Chinese AI news, current topics, and daily briefs from AIHOT through anonymous read-only requests; retain dates and original-source links. [Service terms](https://aihot.news/terms) apply separately from the MIT-licensed skill.",
           "locationSource": "virtual_market"
@@ -5168,7 +5216,7 @@
         {
           "slug": "scrapecreators-social-media-research-skills",
           "displayName": "ScrapeCreators/social-media-research-skills",
-          "stars": 5582,
+          "stars": 5789,
           "category": "Community Skills",
           "description": "Research social outliers, comments, competitors, ads, and trends",
           "locationSource": "virtual_market"
@@ -5176,7 +5224,7 @@
         {
           "slug": "huangchihhungleo-claude-real-video",
           "displayName": "HUANGCHIHHUNGLeo/claude-real-video",
-          "stars": 2281,
+          "stars": 2287,
           "category": "Community Skills",
           "description": "Scene-aware keyframes plus transcripts so any LLM watches videos",
           "locationSource": "virtual_market"
@@ -5200,7 +5248,7 @@
         {
           "slug": "agenmod-immortal-skill",
           "displayName": "agenmod/immortal-skill",
-          "stars": 1138,
+          "stars": 1140,
           "category": "EverythingSkill / Persona",
           "description": "Don't just steam buns for the sake of it — distill yourself and those around you.",
           "locationSource": "virtual_market"
@@ -5208,7 +5256,7 @@
         {
           "slug": "bitwize-music-studio-claude-ai-music-skills",
           "displayName": "bitwize-music-studio/claude-ai-music-skills",
-          "stars": 629,
+          "stars": 630,
           "category": "Community Skills",
           "description": "Full-lifecycle AI music album production",
           "locationSource": "virtual_market"
@@ -5216,7 +5264,7 @@
         {
           "slug": "assafkip-claudemy",
           "displayName": "assafkip/claudemy",
-          "stars": 611,
+          "stars": 613,
           "category": "Community Skills",
           "description": "Any topic into 2-minute audio lessons with cited sources",
           "locationSource": "virtual_market"
@@ -5248,7 +5296,7 @@
         {
           "slug": "redis-redis-core",
           "displayName": "redis/redis-core",
-          "stars": 173,
+          "stars": 174,
           "category": "TypeScript Skills",
           "description": "Redis development best practices — data structures, query engine, vector search, caching, and performance optimization.",
           "locationSource": "virtual_market"
@@ -5363,6 +5411,14 @@
           "stars": 13,
           "category": "Community Skills",
           "description": "Source-linked research reports with explicit unresolved checks",
+          "locationSource": "virtual_market"
+        },
+        {
+          "slug": "pachca-pachca",
+          "displayName": "pachca/pachca",
+          "stars": 11,
+          "category": "Community Skills",
+          "description": "Connect agents to Pachca and troubleshoot MCP authentication and permissions",
           "locationSource": "virtual_market"
         },
         {
@@ -5641,12 +5697,12 @@
       "topSkill": {
         "slug": "tt-a1i-archify",
         "displayName": "tt-a1i/archify",
-        "stars": 93456,
+        "stars": 93846,
         "category": "Community Skills",
         "description": "Generate validated interactive architecture diagrams from codebases or system descriptions",
         "locationSource": "virtual_market"
       },
-      "skillCount": 61
+      "skillCount": 62
     },
     {
       "id": "virtual-singapore",
@@ -5659,7 +5715,7 @@
         {
           "slug": "modelcontextprotocol-servers",
           "displayName": "modelcontextprotocol/servers",
-          "stars": 91796,
+          "stars": 91815,
           "category": "Model Context Protocol (MCP)",
           "description": "Official server implementations",
           "locationSource": "virtual_market"
@@ -5667,7 +5723,7 @@
         {
           "slug": "mvanhorn-last30days-skill",
           "displayName": "mvanhorn/last30days-skill",
-          "stars": 66612,
+          "stars": 66738,
           "category": "Community Skills",
           "description": "Research any topic across Reddit, X, YouTube, HN, Polymarket, and the web, ranked by upvotes, likes, and real money instead of editors",
           "locationSource": "virtual_market"
@@ -5675,7 +5731,7 @@
         {
           "slug": "coreyhaines31-ab-testing",
           "displayName": "coreyhaines31/ab-testing",
-          "stars": 58517,
+          "stars": 58728,
           "category": "TypeScript Skills",
           "description": "Plan and implement A/B tests or experiments for any digital experience",
           "locationSource": "virtual_market"
@@ -5683,7 +5739,7 @@
         {
           "slug": "agentskills-agentskills",
           "displayName": "agentskills/agentskills",
-          "stars": 26942,
+          "stars": 26977,
           "category": "Agent Skills Specification",
           "description": "The open `SKILL.md` format specification and reference docs",
           "locationSource": "virtual_market"
@@ -5691,7 +5747,7 @@
         {
           "slug": "yang0-handraw-style",
           "displayName": "yang0/handraw-style",
-          "stars": 7065,
+          "stars": 7107,
           "category": "Community Skills",
           "description": "Hand-drawn illustration styles, layouts, and prompts for image generation",
           "locationSource": "virtual_market"
@@ -5699,7 +5755,7 @@
         {
           "slug": "sergebulaev-linkedin-skills",
           "displayName": "sergebulaev/linkedin-skills",
-          "stars": 5594,
+          "stars": 5641,
           "category": "Community Skills",
           "description": "LinkedIn marketing skills: viral hooks, comment drafting, algorithm audit, humanizer",
           "locationSource": "virtual_market"
@@ -5707,7 +5763,7 @@
         {
           "slug": "oil-oil-oil-ui",
           "displayName": "oil-oil/oil-ui",
-          "stars": 2758,
+          "stars": 2813,
           "category": "Community Skills",
           "description": "Unlock AI design potential through UI exploration and visual review",
           "locationSource": "virtual_market"
@@ -5715,7 +5771,7 @@
         {
           "slug": "mcollina-skills",
           "displayName": "mcollina/skills",
-          "stars": 1963,
+          "stars": 1962,
           "category": "Community Skills",
           "description": "11 skills by Matteo Collina: Node.js, Fastify, TypeScript, OAuth, Git/GitHub, ESLint neostandard, documentation (Diataxis), Node.js core internals, skill optimizer, and more",
           "locationSource": "virtual_market"
@@ -5729,6 +5785,14 @@
           "locationSource": "virtual_market"
         },
         {
+          "slug": "vshulcz-deja-history",
+          "displayName": "vshulcz/deja-history",
+          "stars": 1414,
+          "category": "Community Skills",
+          "description": "Searches your own past sessions across 20 coding agents",
+          "locationSource": "virtual_market"
+        },
+        {
           "slug": "truongduy2611-app-store-preflight-skills",
           "displayName": "truongduy2611/app-store-preflight-skills",
           "stars": 1409,
@@ -5737,17 +5801,9 @@
           "locationSource": "virtual_market"
         },
         {
-          "slug": "vshulcz-deja-history",
-          "displayName": "vshulcz/deja-history",
-          "stars": 1403,
-          "category": "Community Skills",
-          "description": "Searches your own past sessions across 20 coding agents",
-          "locationSource": "virtual_market"
-        },
-        {
           "slug": "zeropointrepo-youtube-skills",
           "displayName": "ZeroPointRepo/youtube-skills",
-          "stars": 1167,
+          "stars": 1169,
           "category": "Community Skills",
           "description": "Agent skills for YouTube: pull video transcripts and discover videos (search, channel and playlist listings) via TranscriptAPI.",
           "locationSource": "virtual_market"
@@ -5755,7 +5811,7 @@
         {
           "slug": "prompt-security-clawsec",
           "displayName": "prompt-security/clawsec",
-          "stars": 1130,
+          "stars": 1133,
           "category": "Community Skills",
           "description": "Security skill suite with drift detection, automated audits, and skill integrity verification",
           "locationSource": "virtual_market"
@@ -5763,7 +5819,7 @@
         {
           "slug": "agiwhitelist-auteur",
           "displayName": "agiwhitelist/auteur",
-          "stars": 1048,
+          "stars": 1045,
           "category": "Community Skills",
           "description": "Builds websites gated by an anti-slop linter and motion QA",
           "locationSource": "virtual_market"
@@ -5771,7 +5827,7 @@
         {
           "slug": "superdesigndev-superdesign-skill",
           "displayName": "superdesigndev/superdesign-skill",
-          "stars": 945,
+          "stars": 949,
           "category": "Community Skills",
           "description": "Creates design systems from existing codebases and iterates UI drafts",
           "locationSource": "virtual_market"
@@ -5779,7 +5835,7 @@
         {
           "slug": "unbrowse-ai-unbrowse",
           "displayName": "unbrowse-ai/unbrowse",
-          "stars": 897,
+          "stars": 901,
           "category": "Community Skills",
           "description": "Search, call, and read websites via hosted API or MCP",
           "locationSource": "github_profile"
@@ -5787,7 +5843,7 @@
         {
           "slug": "optim-agent-optim-agent",
           "displayName": "Optim-Agent/optim-agent",
-          "stars": 797,
+          "stars": 798,
           "category": "Community Skills",
           "description": "Agent-guided optimization for measurable system tuning.",
           "locationSource": "virtual_market"
@@ -5795,7 +5851,7 @@
         {
           "slug": "swarmclawai-swarmclaw",
           "displayName": "swarmclawai/swarmclaw",
-          "stars": 704,
+          "stars": 703,
           "category": "Skills by Binance",
           "description": "Operate self-hosted multi-agent runtime workflows",
           "locationSource": "virtual_market"
@@ -5803,7 +5859,7 @@
         {
           "slug": "mhattingpete-claude-skills-marketplace",
           "displayName": "mhattingpete/claude-skills-marketplace",
-          "stars": 691,
+          "stars": 692,
           "category": "Skills by Binance",
           "description": "Digital forensics analysis and investigation",
           "locationSource": "virtual_market"
@@ -5819,7 +5875,7 @@
         {
           "slug": "danjdewhurst-story-skills",
           "displayName": "danjdewhurst/story-skills",
-          "stars": 384,
+          "stars": 391,
           "category": "Skills by Binance",
           "description": "16 skills for planning, tracking, and drafting fiction in markdown (worldbuilding, characters, plot, scenes, chapters, revision, continuity), plus a CLI that checks continuity",
           "locationSource": "virtual_market"
@@ -5843,7 +5899,7 @@
         {
           "slug": "orkas-ai-video-router",
           "displayName": "Orkas-AI/video-router",
-          "stars": 343,
+          "stars": 344,
           "category": "Community Skills",
           "description": "Route video requests through deterministic agent production stages",
           "locationSource": "virtual_market"
@@ -5857,6 +5913,14 @@
           "locationSource": "virtual_market"
         },
         {
+          "slug": "duyunzhoudyz-dyz-gongwen-skills",
+          "displayName": "duyunzhoudyz/dyz-gongwen-skills",
+          "stars": 290,
+          "category": "Community Skills",
+          "description": "Chinese official document drafting, review and GB/T 9704 formatting",
+          "locationSource": "virtual_market"
+        },
+        {
           "slug": "sandbaseai-sandbase-skills-multi-source-search",
           "displayName": "sandbaseai/sandbase-skills/multi-source-search",
           "stars": 206,
@@ -5867,7 +5931,7 @@
         {
           "slug": "ivy-interactive-ivy-tendril",
           "displayName": "ivy-interactive/ivy-tendril",
-          "stars": 204,
+          "stars": 203,
           "category": "Skills by Ivy",
           "description": "Open-source agentic software factory with an amazing UI that handles parallel Git worktrees for you, complete with programmatic verifications and fast review loops.",
           "locationSource": "virtual_market"
@@ -5891,7 +5955,7 @@
         {
           "slug": "salespeak-ai-buyer-eval-skill",
           "displayName": "salespeak-ai/buyer-eval-skill",
-          "stars": 69,
+          "stars": 70,
           "category": "Skills by Binance",
           "description": "B2B vendor evaluation skill: 7-dimension scoring with evidence-tracked scorecards for procurement and build-vs-buy decisions",
           "locationSource": "virtual_market"
@@ -5899,7 +5963,7 @@
         {
           "slug": "mobbin-redesign-screen",
           "displayName": "mobbin/redesign-screen",
-          "stars": 63,
+          "stars": 64,
           "category": "Community Skills",
           "description": "Redesign screens using patterns from real shipped apps",
           "locationSource": "github_profile"
@@ -5939,7 +6003,7 @@
         {
           "slug": "upload-post-upload-post-skill",
           "displayName": "Upload-Post/upload-post-skill",
-          "stars": 38,
+          "stars": 39,
           "category": "Community Skills",
           "description": "Publish and schedule social media posts through one API",
           "locationSource": "virtual_market"
@@ -6252,12 +6316,12 @@
       "topSkill": {
         "slug": "modelcontextprotocol-servers",
         "displayName": "modelcontextprotocol/servers",
-        "stars": 91796,
+        "stars": 91815,
         "category": "Model Context Protocol (MCP)",
         "description": "Official server implementations",
         "locationSource": "virtual_market"
       },
-      "skillCount": 74
+      "skillCount": 75
     },
     {
       "id": "shenzhen",
@@ -6270,7 +6334,7 @@
         {
           "slug": "lum1104-understand-anything",
           "displayName": "Lum1104/understand-anything",
-          "stars": 90583,
+          "stars": 90948,
           "category": "Community Skills",
           "description": "Interactive codebase knowledge graphs via multi-agent LLM analysis",
           "locationSource": "github_profile"
@@ -6278,7 +6342,7 @@
         {
           "slug": "tencent-aig-agent-redteam",
           "displayName": "Tencent/aig-agent-redteam",
-          "stars": 7379,
+          "stars": 7391,
           "category": "Community Skills",
           "description": "One-command Agent red-team security assessment skill",
           "locationSource": "github_profile"
@@ -6303,7 +6367,7 @@
       "topSkill": {
         "slug": "lum1104-understand-anything",
         "displayName": "Lum1104/understand-anything",
-        "stars": 90583,
+        "stars": 90948,
         "category": "Community Skills",
         "description": "Interactive codebase knowledge graphs via multi-agent LLM analysis",
         "locationSource": "github_profile"
@@ -6321,15 +6385,23 @@
         {
           "slug": "heygen-com-hyperframes",
           "displayName": "heygen-com/hyperframes",
-          "stars": 78922,
+          "stars": 79541,
           "category": "Community Skills",
           "description": "Write videos as HTML and render them to MP4: launch films, explainers, captions, charts and 450+ ready-made blocks, by HeyGen",
           "locationSource": "virtual_market"
         },
         {
+          "slug": "qingyuna-answer-me-with-html",
+          "displayName": "QingYunA/answer-me-with-html",
+          "stars": 5399,
+          "category": "Community Skills",
+          "description": "Answers hard questions as readable, self-contained HTML pages",
+          "locationSource": "virtual_market"
+        },
+        {
           "slug": "hotcoffeeshake-tong-jincheng-skill",
           "displayName": "hotcoffeeshake/tong-jincheng-skill",
-          "stars": 2975,
+          "stars": 2979,
           "category": "EverythingSkill / Relationship",
           "description": "Let Tong Jincheng — the godfather of heartfelt candor — cut through your relationship confusion with brutal clarity and human insight. No sugarcoating, just the truth you weren't ready to hear.",
           "locationSource": "virtual_market"
@@ -6337,7 +6409,7 @@
         {
           "slug": "leilei926524-tech-anti-distill",
           "displayName": "leilei926524-tech/anti-distill",
-          "stars": 2477,
+          "stars": 2480,
           "category": "EverythingSkill / Defense",
           "description": "Poison your Skill docs when forced to write them — keep your core knowledge safe.",
           "locationSource": "virtual_market"
@@ -6345,17 +6417,33 @@
         {
           "slug": "eatmoreduck-boss-zhipin-scraper",
           "displayName": "eatmoreduck/boss-zhipin-scraper",
-          "stars": 1706,
+          "stars": 1718,
           "category": "Community Skills",
           "description": "BOSS Zhipin (zhipin.com) job scraper via Chrome CDP, plaintext salaries",
           "locationSource": "virtual_market"
         },
         {
+          "slug": "chatcut-inc-talking-head-guide",
+          "displayName": "ChatCut-Inc/talking-head-guide",
+          "stars": 1006,
+          "category": "Community Skills",
+          "description": "Edit talking-head videos: remove fillers, pauses, retakes; add captions, B-roll",
+          "locationSource": "virtual_market"
+        },
+        {
           "slug": "garethmanning-regenerative-project-design-orchestrator",
           "displayName": "GarethManning/regenerative-project-design-orchestrator",
-          "stars": 949,
+          "stars": 955,
           "category": "Community Skills",
           "description": "Orchestrates proportionate regenerative learning projects with safeguards and stewardship",
+          "locationSource": "virtual_market"
+        },
+        {
+          "slug": "salemalem-npmscan-mcp-plugin",
+          "displayName": "salemalem/npmscan-mcp-plugin",
+          "stars": 526,
+          "category": "Community Skills",
+          "description": "Audit npm packages for malware and trust vulnerabilities",
           "locationSource": "virtual_market"
         },
         {
@@ -6367,17 +6455,9 @@
           "locationSource": "virtual_market"
         },
         {
-          "slug": "salemalem-npmscan-mcp-plugin",
-          "displayName": "salemalem/npmscan-mcp-plugin",
-          "stars": 521,
-          "category": "Community Skills",
-          "description": "Audit npm packages for malware and trust vulnerabilities",
-          "locationSource": "virtual_market"
-        },
-        {
           "slug": "voidforall-fengshui-skill",
           "displayName": "voidforall/fengshui.skill",
-          "stars": 385,
+          "stars": 386,
           "category": "Persona Distill Skills",
           "description": "从传统堪舆典籍中整理玄空飞星、八宅明镜与择日方法，形成以三元世家传人视角为人格的风水顾问技能。",
           "locationSource": "github_profile"
@@ -6393,7 +6473,7 @@
         {
           "slug": "glacierphonk-naming",
           "displayName": "glacierphonk/naming",
-          "stars": 129,
+          "stars": 130,
           "category": "Skills by Binance",
           "description": "Metaphor-driven naming for products, SaaS, brands, and open source projects",
           "locationSource": "virtual_market"
@@ -6401,7 +6481,7 @@
         {
           "slug": "exmergo-explore",
           "displayName": "exmergo/explore",
-          "stars": 110,
+          "stars": 114,
           "category": "Skills by Binance",
           "description": "Profile warehouses, verify joins, and map schemas",
           "locationSource": "virtual_market"
@@ -6409,17 +6489,9 @@
         {
           "slug": "sametcelikbicak-rolecraft",
           "displayName": "sametcelikbicak/rolecraft",
-          "stars": 98,
+          "stars": 97,
           "category": "Skills by Binance",
           "description": "Zero-dependency CLI to install AI agent skills as roles & behaviors from any source. Works with opencode, claude-code, cursor, and all spec-compliant agents",
-          "locationSource": "virtual_market"
-        },
-        {
-          "slug": "jgsystemsconsulting-jgs-se-knowledge-packs",
-          "displayName": "jgsystemsconsulting/jgs-se-knowledge-packs",
-          "stars": 74,
-          "category": "Community Skills",
-          "description": "74 licence-vetted systems-engineering reference packs for coding agents",
           "locationSource": "virtual_market"
         },
         {
@@ -6428,6 +6500,14 @@
           "stars": 68,
           "category": "Community Skills",
           "description": "Graph-based long-term memory skill for AI (LLM) coding agents — faster context, fewer tokens, safer refactors",
+          "locationSource": "virtual_market"
+        },
+        {
+          "slug": "jgsystemsconsulting-jgs-se-knowledge-packs",
+          "displayName": "jgsystemsconsulting/jgs-se-knowledge-packs",
+          "stars": 51,
+          "category": "Community Skills",
+          "description": "74 licence-vetted systems-engineering reference packs for coding agents",
           "locationSource": "virtual_market"
         },
         {
@@ -6770,12 +6850,12 @@
       "topSkill": {
         "slug": "heygen-com-hyperframes",
         "displayName": "heygen-com/hyperframes",
-        "stars": 78922,
+        "stars": 79541,
         "category": "Community Skills",
         "description": "Write videos as HTML and render them to MP4: launch films, explainers, captions, charts and 450+ ready-made blocks, by HeyGen",
         "locationSource": "virtual_market"
       },
-      "skillCount": 56
+      "skillCount": 58
     },
     {
       "id": "virtual-new-york",
@@ -6788,7 +6868,7 @@
         {
           "slug": "hesreallyhim-awesome-claude-code",
           "displayName": "hesreallyhim/awesome-claude-code",
-          "stars": 57261,
+          "stars": 57329,
           "category": "How do I know if a skill is safe to use?",
           "description": "Curated list of skills and tools for Claude Code.",
           "locationSource": "virtual_market"
@@ -6796,7 +6876,7 @@
         {
           "slug": "vercel-labs-composition-patterns",
           "displayName": "vercel-labs/composition-patterns",
-          "stars": 33546,
+          "stars": 33597,
           "category": "Official Skills by",
           "description": "Scalable React composition patterns for reusable component APIs",
           "locationSource": "virtual_market"
@@ -6804,7 +6884,7 @@
         {
           "slug": "muratcankoylan-context-fundamentals",
           "displayName": "muratcankoylan/context-fundamentals",
-          "stars": 18299,
+          "stars": 18309,
           "category": "Community Skills",
           "description": "Understand what context is, why it matters, and the anatomy of context in agent systems",
           "locationSource": "virtual_market"
@@ -6812,7 +6892,7 @@
         {
           "slug": "czlonkowski-n8n-code-javascript",
           "displayName": "czlonkowski/n8n-code-javascript",
-          "stars": 6589,
+          "stars": 6595,
           "category": "Community Skills",
           "description": "JavaScript in n8n Code nodes with data access patterns",
           "locationSource": "virtual_market"
@@ -6820,7 +6900,7 @@
         {
           "slug": "therealxiaomanchu-ex-skill",
           "displayName": "therealXiaomanChu/ex-skill",
-          "stars": 6585,
+          "stars": 6590,
           "category": "EverythingSkill / Relationship",
           "description": "Distill your ex into an AI Skill — talks to you in their way.",
           "locationSource": "virtual_market"
@@ -6828,7 +6908,7 @@
         {
           "slug": "nowork-studio-notfair-plugin",
           "displayName": "nowork-studio/notfair-plugin",
-          "stars": 4112,
+          "stars": 4114,
           "category": "Community Skills",
           "description": "SEO, GEO, Google Ads, and Meta Ads skills with live data",
           "locationSource": "virtual_market"
@@ -6836,15 +6916,23 @@
         {
           "slug": "paramchoudhary-resumeskills",
           "displayName": "Paramchoudhary/ResumeSkills",
-          "stars": 3032,
+          "stars": 3045,
           "category": "Community Skills",
           "description": "20 specialized skills for resume optimization, ATS analysis, interview prep, and career transitions",
           "locationSource": "virtual_market"
         },
         {
+          "slug": "zhuyansen-new-term-radar",
+          "displayName": "zhuyansen/new-term-radar",
+          "stars": 2114,
+          "category": "Community Skills",
+          "description": "Daily radar of new AI names and their search demand",
+          "locationSource": "virtual_market"
+        },
+        {
           "slug": "tjboudreaux-cc-thinking-skills",
           "displayName": "tjboudreaux/cc-thinking-skills",
-          "stars": 1701,
+          "stars": 1708,
           "category": "Community Skills",
           "description": "28 eval-informed mental models for decisions, debugging, systems, and strategy",
           "locationSource": "virtual_market"
@@ -6852,7 +6940,7 @@
         {
           "slug": "fujibee-agmsg",
           "displayName": "fujibee/agmsg",
-          "stars": 1575,
+          "stars": 1578,
           "category": "Community Skills",
           "description": "Message passing between Claude Code, Codex and Gemini CLI sessions",
           "locationSource": "virtual_market"
@@ -6860,7 +6948,7 @@
         {
           "slug": "meodai-skill-color-expert",
           "displayName": "meodai/skill.color-expert",
-          "stars": 632,
+          "stars": 634,
           "category": "Community Skills",
           "description": "Color science expert skill with 286K words of reference material covering OKLCH/OKLAB, palette generation, accessibility/contrast, color naming, pigment mixing, and historical color theory",
           "locationSource": "virtual_market"
@@ -6868,7 +6956,7 @@
         {
           "slug": "ohad6k-emulo",
           "displayName": "ohad6k/emulo",
-          "stars": 303,
+          "stars": 302,
           "category": "Community Skills",
           "description": "Mines AI coding logs into personal agent profiles",
           "locationSource": "virtual_market"
@@ -6876,7 +6964,7 @@
         {
           "slug": "smixs-creative-director-skill",
           "displayName": "smixs/creative-director-skill",
-          "stars": 296,
+          "stars": 299,
           "category": "Community Skills",
           "description": "AI creative director with recursive self-assessment: 20+ methodologies (SIT, TRIZ, Bisociation, SCAMPER, Synectics), 3-axis evaluation calibrated against Cannes/D&AD/HumanKind, 5-phase process from brief to presentation",
           "locationSource": "virtual_market"
@@ -6884,7 +6972,7 @@
         {
           "slug": "oliver-zehentleitner-keep-the-why",
           "displayName": "oliver-zehentleitner/keep-the-why",
-          "stars": 233,
+          "stars": 234,
           "category": "Community Skills",
           "description": "Preserves the reasoning behind a codebase — decisions, workarounds, rejected alternatives",
           "locationSource": "virtual_market"
@@ -6932,7 +7020,7 @@
         {
           "slug": "csthink-dashmotion",
           "displayName": "csthink/dashmotion",
-          "stars": 188,
+          "stars": 191,
           "category": "Community Skills",
           "description": "Animated technical diagrams from plain English or Mermaid, self-contained HTML/SVG",
           "locationSource": "virtual_market"
@@ -6940,7 +7028,7 @@
         {
           "slug": "pattern-ai-labs-agentcall",
           "displayName": "pattern-ai-labs/agentcall",
-          "stars": 177,
+          "stars": 178,
           "category": "Community Skills",
           "description": "Let your AI agents join Google Meet, Zoom, Teams calls and collaborate like a real team-mate.",
           "locationSource": "virtual_market"
@@ -6964,7 +7052,7 @@
         {
           "slug": "yikuaibanzi-forge-skill",
           "displayName": "YIKUAIBANZI/forge-skill",
-          "stars": 129,
+          "stars": 132,
           "category": "EverythingSkill / Tool",
           "description": "Persona distillation engine — distill yourself to see clearly, distill loved ones to preserve warmth.",
           "locationSource": "virtual_market"
@@ -6996,7 +7084,7 @@
         {
           "slug": "danoszz-penthera",
           "displayName": "danoszz/penthera",
-          "stars": 90,
+          "stars": 91,
           "category": "Community Skills",
           "description": "Offline rule-based security checks for repos, dependencies and agent configs",
           "locationSource": "github_profile"
@@ -7052,7 +7140,7 @@
         {
           "slug": "yujxzjcn-teaching-skills",
           "displayName": "yujxzjcn/teaching-skills",
-          "stars": 45,
+          "stars": 49,
           "category": "Skills by Binance",
           "description": "University teaching lifecycle for professors: course design, lessons, exams, grading (Codex: YujxZJCN/teaching-skills-codex)",
           "locationSource": "virtual_market"
@@ -7063,6 +7151,14 @@
           "stars": 33,
           "category": "Community Skills",
           "description": "B2B SaaS marketing team: 90 agents, one orchestrator",
+          "locationSource": "virtual_market"
+        },
+        {
+          "slug": "celo-org-celopedia",
+          "displayName": "celo-org/celopedia",
+          "stars": 29,
+          "category": "Community Skills",
+          "description": "Verified Celo contracts, protocols, MiniPay, grants, and agent tooling",
           "locationSource": "virtual_market"
         },
         {
@@ -7677,12 +7773,12 @@
       "topSkill": {
         "slug": "hesreallyhim-awesome-claude-code",
         "displayName": "hesreallyhim/awesome-claude-code",
-        "stars": 57261,
+        "stars": 57329,
         "category": "How do I know if a skill is safe to use?",
         "description": "Curated list of skills and tools for Claude Code.",
         "locationSource": "virtual_market"
       },
-      "skillCount": 111
+      "skillCount": 113
     },
     {
       "id": "china",
@@ -7695,7 +7791,7 @@
         {
           "slug": "alchaincyf-nuwa-skill",
           "displayName": "alchaincyf/nuwa-skill",
-          "stars": 37495,
+          "stars": 37607,
           "category": "EverythingSkill / Tool",
           "description": "The ultimate tool that can distill anyone — distill whoever you want.",
           "locationSource": "github_profile"
@@ -7703,7 +7799,7 @@
         {
           "slug": "alchaincyf-zhangxuefeng-skill",
           "displayName": "alchaincyf/zhangxuefeng-skill",
-          "stars": 10705,
+          "stars": 10711,
           "category": "EverythingSkill / Education",
           "description": "Down-to-earth roasting + practical education advice.",
           "locationSource": "github_profile"
@@ -7711,7 +7807,7 @@
         {
           "slug": "alchaincyf-x-mentor-skill",
           "displayName": "alchaincyf/x-mentor-skill",
-          "stars": 1324,
+          "stars": 1327,
           "category": "EverythingSkill / Social Media",
           "description": "X/Twitter operations mentor — analyzes your account, writes tweets, provides diagnostic reports.",
           "locationSource": "github_profile"
@@ -7751,7 +7847,7 @@
         {
           "slug": "alchaincyf-karpathy-skill",
           "displayName": "alchaincyf/karpathy-skill",
-          "stars": 325,
+          "stars": 324,
           "category": "EverythingSkill / Education",
           "description": "AI/Deep Learning teaching + technical intuition.",
           "locationSource": "github_profile"
@@ -7775,7 +7871,7 @@
         {
           "slug": "alchaincyf-naval-skill",
           "displayName": "alchaincyf/naval-skill",
-          "stars": 269,
+          "stars": 268,
           "category": "EverythingSkill / Celebrity",
           "description": "Wealth, happiness, life philosophy — podcast-level wisdom.",
           "locationSource": "github_profile"
@@ -7783,7 +7879,7 @@
         {
           "slug": "shouldnotappearcalm-a-share-skill",
           "displayName": "shouldnotappearcalm/a-share-skill",
-          "stars": 257,
+          "stars": 258,
           "category": "Community Skills",
           "description": "China A-share (Shanghai/Shenzhen) skills: real-time quotes, K-line history, technical indicators, events, capital flows, sector heatmaps, and paper trading. Works with Claude Code, Cursor, Codex, and Qoder",
           "locationSource": "github_profile"
@@ -7799,7 +7895,7 @@
         {
           "slug": "xianyu110-ecommerce-image-skills",
           "displayName": "xianyu110/ecommerce-image-skills",
-          "stars": 143,
+          "stars": 151,
           "category": "Skills by Binance",
           "description": "12 skills for ecommerce product images (Amazon main image, A+, banners)",
           "locationSource": "github_profile"
@@ -7872,7 +7968,7 @@
       "topSkill": {
         "slug": "alchaincyf-nuwa-skill",
         "displayName": "alchaincyf/nuwa-skill",
-        "stars": 37495,
+        "stars": 37607,
         "category": "EverythingSkill / Tool",
         "description": "The ultimate tool that can distill anyone — distill whoever you want.",
         "locationSource": "github_profile"
@@ -7881,7 +7977,7 @@
     },
     {
       "id": "berlin",
-      "label": "Berlin",
+      "label": "Berlin, Germany",
       "lat": 52.52,
       "lon": 13.405,
       "source": "github_profile",
@@ -7890,7 +7986,7 @@
         {
           "slug": "mukul975-anthropic-cybersecurity-skills",
           "displayName": "mukul975/Anthropic-Cybersecurity-Skills",
-          "stars": 35580,
+          "stars": 35648,
           "category": "Community Skills",
           "description": "753 cybersecurity skills across 38 domains: cloud security, pentesting, red teaming, DFIR, malware analysis, threat intel, and more (MITRE ATT&CK mapped)",
           "locationSource": "github_profile"
@@ -7898,7 +7994,7 @@
         {
           "slug": "agricidaniel-claude-seo",
           "displayName": "AgriciDaniel/claude-seo",
-          "stars": 26649,
+          "stars": 26919,
           "category": "Community Skills",
           "description": "Universal SEO skill for comprehensive website analysis and optimization",
           "locationSource": "virtual_market"
@@ -7906,7 +8002,7 @@
         {
           "slug": "notdog1998-yourself-skill",
           "displayName": "notdog1998/yourself-skill",
-          "stars": 3517,
+          "stars": 3519,
           "category": "EverythingSkill / Persona",
           "description": "Distill yourself into AI — digital immortality / second brain.",
           "locationSource": "virtual_market"
@@ -7914,7 +8010,7 @@
         {
           "slug": "khazp-vibe-coding-prompt-template",
           "displayName": "KhazP/vibe-coding-prompt-template",
-          "stars": 3223,
+          "stars": 3224,
           "category": "Community Skills",
           "description": "Plan MVPs into PRD, tech design, and AGENTS.md",
           "locationSource": "virtual_market"
@@ -7922,7 +8018,7 @@
         {
           "slug": "chrisryugj-kordoc",
           "displayName": "chrisryugj/kordoc",
-          "stars": 2914,
+          "stars": 2928,
           "category": "Community Skills",
           "description": "Convert Korean HWP/HWPX documents to Markdown, fill forms, generate HWPX",
           "locationSource": "virtual_market"
@@ -7930,7 +8026,7 @@
         {
           "slug": "roundtable02-tutor-skills",
           "displayName": "roundtable02/tutor-skills",
-          "stars": 1389,
+          "stars": 1390,
           "category": "Skills by Binance",
           "description": "Transform docs or codebases into interactive StudyVaults",
           "locationSource": "virtual_market"
@@ -7938,7 +8034,7 @@
         {
           "slug": "dmoshehun-prog-learn-from-materials",
           "displayName": "dmoshehun-prog/learn-from-materials",
-          "stars": 1314,
+          "stars": 1322,
           "category": "Community Skills",
           "description": "Turn documents into source-grounded interactive learning pages for AI agents",
           "locationSource": "virtual_market"
@@ -7946,7 +8042,7 @@
         {
           "slug": "renezander030-capcut-edit",
           "displayName": "renezander030/capcut-edit",
-          "stars": 1111,
+          "stars": 1114,
           "category": "Community Skills",
           "description": "Edit CapCut and JianYing video projects from any agent",
           "locationSource": "github_profile"
@@ -7962,7 +8058,7 @@
         {
           "slug": "laolaoshiren-zh-code-reviewer",
           "displayName": "laolaoshiren/zh-code-reviewer",
-          "stars": 904,
+          "stars": 905,
           "category": "Community Skills",
           "description": "Chinese-output code review skill with structured findings and fix suggestions",
           "locationSource": "virtual_market"
@@ -7970,7 +8066,7 @@
         {
           "slug": "777genius-agent-notifications",
           "displayName": "777genius/agent-notifications",
-          "stars": 824,
+          "stars": 823,
           "category": "Community Skills",
           "description": "Send desktop attention and progress alerts during agent tasks",
           "locationSource": "virtual_market"
@@ -7978,7 +8074,7 @@
         {
           "slug": "yuwen-cool-yuwen-publish-precheck",
           "displayName": "yuwen-cool/yuwen-publish-precheck",
-          "stars": 802,
+          "stars": 803,
           "category": "Community Skills",
           "description": "Review Chinese social content before publishing, with source-backed corrections",
           "locationSource": "virtual_market"
@@ -7986,7 +8082,7 @@
         {
           "slug": "emotixco-claude-skills-founder",
           "displayName": "emotixco/claude-skills-founder",
-          "stars": 780,
+          "stars": 785,
           "category": "Community Skills",
           "description": "Validate ideas, research competitors, price, pitch, and plan launches.",
           "locationSource": "virtual_market"
@@ -8000,9 +8096,17 @@
           "locationSource": "github_profile"
         },
         {
+          "slug": "federicodeponte-autonomous-research",
+          "displayName": "federicodeponte/autonomous-research",
+          "stars": 526,
+          "category": "Community Skills",
+          "description": "One topic line to a cited paper, every DOI checked",
+          "locationSource": "github_profile"
+        },
+        {
           "slug": "luchasarie-bro",
           "displayName": "luchasarie/bro",
-          "stars": 432,
+          "stars": 433,
           "category": "Community Skills",
           "description": "Re-explains the last reply in plain language",
           "locationSource": "virtual_market"
@@ -8026,7 +8130,7 @@
         {
           "slug": "hyacehila-humanizer-zh-next",
           "displayName": "Hyacehila/humanizer-zh-next",
-          "stars": 240,
+          "stars": 241,
           "category": "Community Skills",
           "description": "Chinese writing editor with academic and grant proposal modes",
           "locationSource": "virtual_market"
@@ -8034,7 +8138,7 @@
         {
           "slug": "edonadei-evaluate-skill",
           "displayName": "edonadei/evaluate-skill",
-          "stars": 229,
+          "stars": 226,
           "category": "Community Skills",
           "description": "Measures skill reliability with repeated runs, with and without it",
           "locationSource": "virtual_market"
@@ -8058,7 +8162,7 @@
         {
           "slug": "ukorvl-lightweight-charts-react-components",
           "displayName": "ukorvl/lightweight-charts-react-components",
-          "stars": 146,
+          "stars": 141,
           "category": "Skills by Binance",
           "description": "React financial-chart integration recipes for coding agents",
           "locationSource": "virtual_market"
@@ -8483,12 +8587,12 @@
       "topSkill": {
         "slug": "mukul975-anthropic-cybersecurity-skills",
         "displayName": "mukul975/Anthropic-Cybersecurity-Skills",
-        "stars": 35580,
+        "stars": 35648,
         "category": "Community Skills",
         "description": "753 cybersecurity skills across 38 domains: cloud security, pentesting, red teaming, DFIR, malware analysis, threat intel, and more (MITRE ATT&CK mapped)",
         "locationSource": "github_profile"
       },
-      "skillCount": 74
+      "skillCount": 75
     },
     {
       "id": "germany",
@@ -8501,7 +8605,7 @@
         {
           "slug": "xberg-io-xberg",
           "displayName": "xberg-io/xberg",
-          "stars": 9536,
+          "stars": 9545,
           "category": "Community Skills",
           "description": "Extract text, tables, and metadata from 101+ document formats",
           "locationSource": "github_profile"
@@ -8509,7 +8613,7 @@
         {
           "slug": "pleaseprompto-notebooklm-skill",
           "displayName": "PleasePrompto/notebooklm-skill",
-          "stars": 7786,
+          "stars": 7785,
           "category": "Community Skills",
           "description": "Interact with NotebookLM for document-based conversations",
           "locationSource": "github_profile"
@@ -8542,7 +8646,7 @@
       "topSkill": {
         "slug": "xberg-io-xberg",
         "displayName": "xberg-io/xberg",
-        "stars": 9536,
+        "stars": 9545,
         "category": "Community Skills",
         "description": "Extract text, tables, and metadata from 101+ document formats",
         "locationSource": "github_profile"
@@ -8560,7 +8664,7 @@
         {
           "slug": "wiltodelta-remove-ai-watermarks",
           "displayName": "wiltodelta/remove-ai-watermarks",
-          "stars": 6278,
+          "stars": 6289,
           "category": "Community Skills",
           "description": "Remove AI watermarks and provenance metadata from images you own",
           "locationSource": "virtual_market"
@@ -8568,7 +8672,7 @@
         {
           "slug": "rlaope-oh-my-hermes",
           "displayName": "rlaope/oh-my-hermes",
-          "stars": 5119,
+          "stars": 5173,
           "category": "Community Skills",
           "description": "Workflow skills, project memory, and model routing for Hermes Agent",
           "locationSource": "virtual_market"
@@ -8576,7 +8680,7 @@
         {
           "slug": "nowork-studio-seo",
           "displayName": "nowork-studio/seo",
-          "stars": 4112,
+          "stars": 4114,
           "category": "Skills by NotFair",
           "description": "SEO and GEO: site analysis, keyword research, meta tags, schema markup, and content writing",
           "locationSource": "virtual_market"
@@ -8584,7 +8688,7 @@
         {
           "slug": "neolabhq-write-concisely",
           "displayName": "NeoLabHQ/write-concisely",
-          "stars": 1800,
+          "stars": 1803,
           "category": "Community Skills",
           "description": "Applies the famous *The Elements of Style* book principles to make documentation and writing clearer and more professional by eliminating wordiness and improving structure.",
           "locationSource": "virtual_market"
@@ -8592,7 +8696,7 @@
         {
           "slug": "aklofas-kicad-happy",
           "displayName": "aklofas/kicad-happy",
-          "stars": 1585,
+          "stars": 1591,
           "category": "Community Skills",
           "description": "AI-powered KiCad electronics design review and analysis",
           "locationSource": "virtual_market"
@@ -8600,7 +8704,7 @@
         {
           "slug": "ganyuanran-aegis",
           "displayName": "GanyuanRan/Aegis",
-          "stars": 1416,
+          "stars": 1419,
           "category": "Community Skills",
           "description": "Evidence-driven method pack for AI coding agents",
           "locationSource": "virtual_market"
@@ -8608,7 +8712,7 @@
         {
           "slug": "ehmo-platform-design-skills",
           "displayName": "ehmo/platform-design-skills",
-          "stars": 639,
+          "stars": 638,
           "category": "Community Skills",
           "description": "300+ design rules from Apple HIG, Material Design 3, and WCAG 2.2 for cross-platform apps",
           "locationSource": "virtual_market"
@@ -8624,7 +8728,7 @@
         {
           "slug": "abubakrchan-product-launch-motion",
           "displayName": "AbubakrChan/product-launch-motion",
-          "stars": 421,
+          "stars": 423,
           "category": "Community Skills",
           "description": "Website URL to 60 fps launch video with music.",
           "locationSource": "virtual_market"
@@ -8632,7 +8736,7 @@
         {
           "slug": "onewave-ai-claude-skills",
           "displayName": "OneWave-AI/claude-skills",
-          "stars": 414,
+          "stars": 415,
           "category": "Community Skills",
           "description": "225 business, everyday-life, and coding skills, many with scripts",
           "locationSource": "virtual_market"
@@ -8648,7 +8752,7 @@
         {
           "slug": "drogers0-github-image-upload",
           "displayName": "drogers0/github-image-upload",
-          "stars": 281,
+          "stars": 282,
           "category": "Community Skills",
           "description": "Attach screenshots, PDFs, logs, zips, and videos to GitHub PRs, issues, and comments, returning canonical user-attachments URLs. GitHub has no public attachment-upload API. Works with Claude Code, Codex, Cursor, and Gemini CLI",
           "locationSource": "virtual_market"
@@ -8696,7 +8800,7 @@
         {
           "slug": "siril9-presentation-skill",
           "displayName": "siril9/presentation-skill",
-          "stars": 93,
+          "stars": 95,
           "category": "Community Skills",
           "description": "Generate editable PowerPoint decks from source with visual QA.",
           "locationSource": "virtual_market"
@@ -8736,7 +8840,7 @@
         {
           "slug": "verdikta-verdikta-bounties-onboarding",
           "displayName": "verdikta/verdikta-bounties-onboarding",
-          "stars": 48,
+          "stars": 49,
           "category": "Community Skills",
           "description": "Hunt and post AI-judged escrow bounties on Base",
           "locationSource": "virtual_market"
@@ -9017,7 +9121,7 @@
       "topSkill": {
         "slug": "wiltodelta-remove-ai-watermarks",
         "displayName": "wiltodelta/remove-ai-watermarks",
-        "stars": 6278,
+        "stars": 6289,
         "category": "Community Skills",
         "description": "Remove AI watermarks and provenance metadata from images you own",
         "locationSource": "virtual_market"
@@ -9035,7 +9139,7 @@
         {
           "slug": "avdlee-swiftui-expert-skill",
           "displayName": "AvdLee/swiftui-expert-skill",
-          "stars": 3827,
+          "stars": 3830,
           "category": "Community Skills",
           "description": "Modern SwiftUI best practices and iOS 26+ Liquid Glass adoption",
           "locationSource": "github_profile"
@@ -9092,7 +9196,7 @@
       "topSkill": {
         "slug": "avdlee-swiftui-expert-skill",
         "displayName": "AvdLee/swiftui-expert-skill",
-        "stars": 3827,
+        "stars": 3830,
         "category": "Community Skills",
         "description": "Modern SwiftUI best practices and iOS 26+ Liquid Glass adoption",
         "locationSource": "github_profile"
@@ -9110,7 +9214,7 @@
         {
           "slug": "jinchenma94-bazi-skill",
           "displayName": "jinchenma94/bazi-skill",
-          "stars": 3798,
+          "stars": 3815,
           "category": "EverythingSkill / Mystical",
           "description": "BaZi (Eight Characters) chart reading and destiny analysis tool.",
           "locationSource": "github_profile"
@@ -9118,7 +9222,7 @@
         {
           "slug": "op7418-nanobanana-ppt-skills",
           "displayName": "op7418/NanoBanana-PPT-Skills",
-          "stars": 3346,
+          "stars": 3349,
           "category": "Community Skills",
           "description": "AI-powered PPT generation with document analysis and styled images",
           "locationSource": "github_profile"
@@ -9126,7 +9230,7 @@
         {
           "slug": "deusyu-translate-book",
           "displayName": "deusyu/translate-book",
-          "stars": 2315,
+          "stars": 2330,
           "category": "Community Skills",
           "description": "Translate books (PDF/DOCX/EPUB) via parallel sub-agents with resume",
           "locationSource": "github_profile"
@@ -9134,7 +9238,7 @@
         {
           "slug": "op7418-youtube-clipper-skill",
           "displayName": "op7418/Youtube-clipper-skill",
-          "stars": 2284,
+          "stars": 2285,
           "category": "Community Skills",
           "description": "YouTube clip generation and editing with automated workflows",
           "locationSource": "github_profile"
@@ -9142,7 +9246,7 @@
         {
           "slug": "leezythu-maoxuan-skill",
           "displayName": "leezythu/maoxuan-skill",
-          "stars": 1274,
+          "stars": 1276,
           "category": "EverythingSkill / Celebrity",
           "description": "Distills contradiction analysis, base-area thinking, and strategy judgment frameworks from Mao's Selected Works. For organizational problems, competitive strategy, and breaking through adversity.",
           "locationSource": "github_profile"
@@ -9150,7 +9254,7 @@
         {
           "slug": "zhanghandong-makepad-skills",
           "displayName": "ZhangHanDong/makepad-skills",
-          "stars": 753,
+          "stars": 752,
           "category": "Community Skills",
           "description": "Makepad UI development skills for Rust apps: setup, patterns, shaders, packaging, and troubleshooting.",
           "locationSource": "github_profile"
@@ -9166,7 +9270,7 @@
         {
           "slug": "janlaywss-hu-chenfeng-skill",
           "displayName": "Janlaywss/hu-chenfeng-skill",
-          "stars": 247,
+          "stars": 248,
           "category": "EverythingSkill / Celebrity",
           "description": "Content creator Hu Chenfeng's purchasing power challenge perspective on consumption and life choices.",
           "locationSource": "github_profile"
@@ -9174,7 +9278,7 @@
         {
           "slug": "hqhq1025-skill-optimizer",
           "displayName": "hqhq1025/skill-optimizer",
-          "stars": 189,
+          "stars": 190,
           "category": "Community Skills",
           "description": "Diagnose and optimize Agent Skills (SKILL.md) with real session data and research-backed static analysis. Works with Claude Code, Codex, and any Agent Skills-compatible agent",
           "locationSource": "github_profile"
@@ -9207,7 +9311,7 @@
       "topSkill": {
         "slug": "jinchenma94-bazi-skill",
         "displayName": "jinchenma94/bazi-skill",
-        "stars": 3798,
+        "stars": 3815,
         "category": "EverythingSkill / Mystical",
         "description": "BaZi (Eight Characters) chart reading and destiny analysis tool.",
         "locationSource": "github_profile"
@@ -9223,9 +9327,17 @@
       "key": "30.2741,120.1551",
       "skills": [
         {
+          "slug": "antvis-ava",
+          "displayName": "antvis/ava",
+          "stars": 1608,
+          "category": "Community Skills",
+          "description": "Analyze files and databases, reuse definitions, render interactive charts",
+          "locationSource": "github_profile"
+        },
+        {
           "slug": "chubbyguan-chubbyskills",
           "displayName": "chubbyguan/chubbyskills",
-          "stars": 1303,
+          "stars": 1306,
           "category": "Skills by Binance",
           "description": "14 skills for ingesting Chinese content (Douyin, Bilibili, Xiaohongshu, WeChat, X/Twitter, podcasts) into a personal knowledge base — auto image/video routing, subtitle-first transcription, RSS/YouTube subscription scheduling, and a knowledge-base MCP server",
           "locationSource": "github_profile"
@@ -9241,7 +9353,7 @@
         {
           "slug": "ericyoung-183-alpha-insights",
           "displayName": "Ericyoung-183/alpha-insights",
-          "stars": 71,
+          "stars": 72,
           "category": "Community Skills",
           "description": "Harness-enforced business research for Claude Code and Codex",
           "locationSource": "github_profile"
@@ -9272,14 +9384,14 @@
         }
       ],
       "topSkill": {
-        "slug": "chubbyguan-chubbyskills",
-        "displayName": "chubbyguan/chubbyskills",
-        "stars": 1303,
-        "category": "Skills by Binance",
-        "description": "14 skills for ingesting Chinese content (Douyin, Bilibili, Xiaohongshu, WeChat, X/Twitter, podcasts) into a personal knowledge base — auto image/video routing, subtitle-first transcription, RSS/YouTube subscription scheduling, and a knowledge-base MCP server",
+        "slug": "antvis-ava",
+        "displayName": "antvis/ava",
+        "stars": 1608,
+        "category": "Community Skills",
+        "description": "Analyze files and databases, reuse definitions, render interactive charts",
         "locationSource": "github_profile"
       },
-      "skillCount": 6
+      "skillCount": 7
     },
     {
       "id": "canada",
@@ -9292,7 +9404,7 @@
         {
           "slug": "moizibnyousaf-ai-agent-skills",
           "displayName": "moizibnyousaf/ai-agent-skills",
-          "stars": 1155,
+          "stars": 1156,
           "category": "Skills by Binance",
           "description": "SkillCreator.ai collection with CLI installer",
           "locationSource": "github_profile"
@@ -9309,7 +9421,7 @@
       "topSkill": {
         "slug": "moizibnyousaf-ai-agent-skills",
         "displayName": "moizibnyousaf/ai-agent-skills",
-        "stars": 1155,
+        "stars": 1156,
         "category": "Skills by Binance",
         "description": "SkillCreator.ai collection with CLI installer",
         "locationSource": "github_profile"
@@ -9335,7 +9447,7 @@
         {
           "slug": "mblode-agent-skills",
           "displayName": "mblode/agent-skills",
-          "stars": 183,
+          "stars": 186,
           "category": "Skills by Binance",
           "description": "26 skills for UI audits, typography, docs, PR review, and releases",
           "locationSource": "github_profile"
@@ -9362,7 +9474,7 @@
         {
           "slug": "indranilbanerjee-digital-marketing-pro",
           "displayName": "indranilbanerjee/digital-marketing-pro",
-          "stars": 925,
+          "stars": 926,
           "category": "Community Skills",
           "description": "150-skill engagement methodology — 12-Part Strategy Flow, 25 specialist agents, EU AI Act Article 50 ready (C2PA signing), 6-platform AEO/GEO incl. Google AI Mode",
           "locationSource": "github_profile"
@@ -9370,7 +9482,7 @@
         {
           "slug": "jaypokale-chisle",
           "displayName": "JayPokale/chisle",
-          "stars": 739,
+          "stars": 741,
           "category": "Community Skills",
           "description": "Cuts agent tokens: terse prose, lean code, trimmed tool output",
           "locationSource": "github_profile"
@@ -9378,7 +9490,7 @@
         {
           "slug": "karanb192-awesome-claude-skills",
           "displayName": "karanb192/awesome-claude-skills",
-          "stars": 584,
+          "stars": 583,
           "category": "Skills by Binance",
           "description": "50+ verified skills for Claude Code and Claude.ai",
           "locationSource": "github_profile"
@@ -9394,7 +9506,7 @@
         {
           "slug": "vaibhavarora14-job-application-agent",
           "displayName": "vaibhavarora14/job-application-agent",
-          "stars": 174,
+          "stars": 173,
           "category": "Community Skills",
           "description": "JobAppAgent: free MIT open-source job application agent, one verified résumé",
           "locationSource": "github_profile"
@@ -9426,7 +9538,7 @@
         {
           "slug": "ysskrishna-ai-agent-skills",
           "displayName": "ysskrishna/ai-agent-skills",
-          "stars": 20,
+          "stars": 21,
           "category": "Community Skills",
           "description": "Structured thinking skills: five whys, pre-mortem, trade-offs",
           "locationSource": "github_profile"
@@ -9435,7 +9547,7 @@
       "topSkill": {
         "slug": "indranilbanerjee-digital-marketing-pro",
         "displayName": "indranilbanerjee/digital-marketing-pro",
-        "stars": 925,
+        "stars": 926,
         "category": "Community Skills",
         "description": "150-skill engagement methodology — 12-Part Strategy Flow, 25 specialist agents, EU AI Act Article 50 ready (C2PA signing), 6-platform AEO/GEO incl. Google AI Mode",
         "locationSource": "github_profile"
@@ -9453,7 +9565,7 @@
         {
           "slug": "gotalab-skillport",
           "displayName": "gotalab/skillport",
-          "stars": 420,
+          "stars": 421,
           "category": "Skills by Binance",
           "description": "Skills distribution via CLI or MCP",
           "locationSource": "github_profile"
@@ -9470,7 +9582,7 @@
       "topSkill": {
         "slug": "gotalab-skillport",
         "displayName": "gotalab/skillport",
-        "stars": 420,
+        "stars": 421,
         "category": "Skills by Binance",
         "description": "Skills distribution via CLI or MCP",
         "locationSource": "github_profile"
@@ -9531,7 +9643,7 @@
         {
           "slug": "uucz-moyu",
           "displayName": "uucz/moyu",
-          "stars": 292,
+          "stars": 294,
           "category": "Community Skills",
           "description": "Anti-over-engineering skill with 5 variants and 10 platforms",
           "locationSource": "github_profile"
@@ -9540,7 +9652,7 @@
       "topSkill": {
         "slug": "uucz-moyu",
         "displayName": "uucz/moyu",
-        "stars": 292,
+        "stars": 294,
         "category": "Community Skills",
         "description": "Anti-over-engineering skill with 5 variants and 10 platforms",
         "locationSource": "github_profile"
@@ -9705,7 +9817,7 @@
         {
           "slug": "elithril-blender-kiln",
           "displayName": "elithril/blender-kiln",
-          "stars": 106,
+          "stars": 108,
           "category": "Community Skills",
           "description": "Text or photo to game-ready GLB through Blender MCP",
           "locationSource": "github_profile"
@@ -9713,7 +9825,7 @@
         {
           "slug": "javimosch-supercli",
           "displayName": "javimosch/supercli",
-          "stars": 56,
+          "stars": 57,
           "category": "Skills by SuperCLI",
           "description": "Universal CLI router with 4,795+ agent skills (`SKILL.md`). Agents discover CLI tools by intent via `sc skills search`, inspect schemas via `sc inspect`, and execute with deterministic JSON output. Each plugin ships with its own `skills/quickstart/SKILL.md` — instant agent onboarding for 7,000+ CLI tools.",
           "locationSource": "github_profile"
@@ -9722,7 +9834,7 @@
       "topSkill": {
         "slug": "elithril-blender-kiln",
         "displayName": "elithril/blender-kiln",
-        "stars": 106,
+        "stars": 108,
         "category": "Community Skills",
         "description": "Text or photo to game-ready GLB through Blender MCP",
         "locationSource": "github_profile"
@@ -9740,7 +9852,7 @@
         {
           "slug": "chadboyda-agent-gtm-skills",
           "displayName": "chadboyda/agent-gtm-skills",
-          "stars": 86,
+          "stars": 87,
           "category": "Skills by Binance",
           "description": "18 go-to-market skills: pricing, outbound, SEO, ads, retention, and ops",
           "locationSource": "github_profile"
@@ -9749,7 +9861,7 @@
       "topSkill": {
         "slug": "chadboyda-agent-gtm-skills",
         "displayName": "chadboyda/agent-gtm-skills",
-        "stars": 86,
+        "stars": 87,
         "category": "Skills by Binance",
         "description": "18 go-to-market skills: pricing, outbound, SEO, ads, retention, and ops",
         "locationSource": "github_profile"

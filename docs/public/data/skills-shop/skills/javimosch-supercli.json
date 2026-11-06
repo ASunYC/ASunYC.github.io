@@ -4,7 +4,7 @@
   "name": "supercli",
   "displayName": "javimosch/supercli",
   "description": "Universal CLI router with 4,795+ agent skills (`SKILL.md`). Agents discover CLI tools by intent via `sc skills search`, inspect schemas via `sc inspect`, and execute with deterministic JSON output. Each plugin ships with its own `skills/quickstart/SKILL.md` — instant agent onboarding for 7,000+ CLI tools.",
-  "stars": 56,
+  "stars": 57,
   "category": "Skills by SuperCLI",
   "source": "heilcheng",
   "url": "https://github.com/javimosch/supercli",
@@ -31,7 +31,7 @@
     {
       "slug": "elithril-blender-kiln",
       "displayName": "elithril/blender-kiln",
-      "stars": 106,
+      "stars": 108,
       "relation": "shared_tag",
       "evidence": "location:france"
     }

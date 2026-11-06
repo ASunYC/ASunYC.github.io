@@ -1,0 +1,89 @@
+{
+  "id": "skill:0design-unslop-skill",
+  "slug": "0design-unslop-skill",
+  "name": "unslop-skill",
+  "displayName": "0design/unslop-skill",
+  "description": "Audit plugin for Claude Code and Codex",
+  "stars": 31,
+  "category": "Community Skills",
+  "source": "voltagent",
+  "url": "https://github.com/0design/unslop-skill",
+  "githubRepo": "0design/unslop-skill",
+  "readme": "\"I asked you to get rid of this slop everywhere.\"<br>— You, to your AI-Agent\n\n# Get started\n\nunslop is an auditor. It checks the design your agent has already generated for the typical bad decisions AI makes in generated designs, and proposes fixes.\n\nClaude Code, in your shell:\n\n```sh\nclaude plugin marketplace add 0design/unslop-skill\nclaude plugin install unslop@unslop\n```\n\nCodex:\n\n```sh\ncodex plugin marketplace add 0design/unslop-skill\ncodex plugin add unslop@unslop\n```\n\nStart a new session and run `/unslop:audit`. In Codex, ask for an unslop audit instead; it lists the skill as `unslop:audit`. Your agent checks every screen against the canon and writes a fix plan to `plans/`. It changes no code.\n\n## Install\n\nThe plugin holds the skill, the detector, the canon client and the rule texts, and declares the canon server at `https://oleg.design/unslop/mcp`; your client connects to it at session start. The canon client needs Node.js 20 or newer and the MCP SDK; where the SDK is missing, the skill tells your agent to ask before it downloads anything and, without your agreement, to report no verified canon and issue no pass. These steps are instructions, not a technical lock; your agent's own permission prompts still apply. To remove the plugin: `claude plugin uninstall unslop@unslop` or `codex plugin remove unslop@unslop`.\n\nCursor and Lovable get a prompt instead of a plugin; it is on https://oleg.design/unslop.\n\nOr install the skill alone with the [skills CLI](https://skills.sh):\n\n```sh\nnpx skills add 0design/unslop-skill\n```\n\nThis copies `skills/audit` into your agent's skills folder, with the detector and the canon client in `skills/audit/scripts`. The detector needs only Node.js 20 or newer and runs its machine checks from there. The canon client also needs the MCP SDK, which only the plugin can install, so a skill-only audit has no verified canon and issues no pass; install the plugin where your agent supports one.\n\n## How it works\n\n```\n  /unslop:audit\n       │\n       ▼\n  your agent ◀──── MCP ────▶ canon server (read-only): index read once, version and checksum pinned for the run\n       ├── no `unslop` server ──▶ your agent offers the connect command, runs it only after you agree\n       ├── unreadable index or checksum mismatch ──▶ \"no verified canon\", no pass\n       ▼\n  recon ──▶ stack, design system, conventions, documented decisions\n       │\n       ▼\n  detector ──▶ \"B-1   RED  button.css:2  color: #ff0044;\"\n       │\n       ▼\n  judgement against the pinned rules; every finding re-checked before it counts\n       │\n       ▼\n  plans/NNN-slug.md, one per fix or per tight cluster of findings, for a cheaper model to execute\n       │\n       ▼\n  \"unslop execute <plan>\", said to your agent ──▶ one plan in an isolated worktree, then the diff\n```\n\nunslop gives your agent a designer's quality criteria: verifiable, not taste by eye. Every finding is a `file:line` and a fix plan. It does not guarantee good design: that decision is yours; unslop only keeps your agent from breaking it. The catalogue of slop criteria keeps changing, so the audit reads it from the canon server, not from the plugin's own copy: one version per run, pinned by version and checksum, never a silent fallback to local files. A rule fixed or added on the server reaches every agent on its next run, with no reinstall.\n\n## What's in this repo\n\n- [`skills/audit`](skills/audit): the audit skill, its reference on design-system integrity, and everything it runs in [`skills/audit/scripts`](skills/audit/scripts).\n- [`.claude-plugin`](.claude-plugin) and [`.mcp.json`](.mcp.json): the plugin and marketplace manifests, and the canon server they declare.\n- [`skills/audit/scripts/detect.mjs`](skills/audit/scripts/detect.mjs) and [`skills/audit/scripts/rules`](skills/audit/scripts/rules): the detector, 37 machine checks over CSS and markup, no network, no dependencies; [`scripts/fixtures`](scripts/fixtures) holds a sample per check.\n- [`skills/audit/scripts/canon-route.mjs`](skills/audit/scripts/canon-route.mjs) and [`skills/audit/scripts/lib`](skills/audit/scripts/lib): the canon client that reads the index, routes topics and checks checksums.\n- [`scripts`](scripts): the tests and the public text guard; they are not part of the skill.\n- [`canon/public/records.json`](canon/public/records.json): the 49 rules, the source of truth; [`canon/public-generated`](canon/public-generated): what the server serves, version `public-2026.10.11-1`, never edited by hand.\n\n## Contribute\n\nYou can improve the skill, the detector or the canon, or propose a rule.\n\n1. Fork the repository and make a branch.\n2. Make your change and run the checks: `npm ci`, `npm test`. A rule change is a new canon version: raise the version in `canon/public/records.json`, run `npm run canon:generate:public` and add a `CHANGELOG.md` entry in the same pull request.\n3. Open a pull request. The tests run on Node.js 22 for a pull request (20 and 22 on a push to a release line), and a second check keeps internal wording out of the public text.\n\nA rule accepted from a pull request reaches everyone with the next canon version. Have an idea? [Open an issue](https://github.com/0design/unslop-skill/issues/new) and describe what result you want.\n\n## Links\n\n- Site: https://oleg.design/unslop\n- Canon server: https://oleg.design/unslop/mcp (resources only, no tools); health: https://oleg.design/unslop/mcp/health\n- Changelog, credits, file list: [CHANGELOG.md](CHANGELOG.md), [CREDITS.md](CREDITS.md), [PUBLIC_MANIFEST.md](PUBLIC_MANIFEST.md)\n- For AI agents: the audit is read-only, plans only, no pass without a connected canon. The rules are in [the skill](skills/audit/SKILL.md).\n- License: [MIT](LICENSE) for the code and skill files, [CC BY 4.0](LICENSE-RULES.md) for the rule texts\n",
+  "readmeHtml": "<p>\"I asked you to get rid of this slop everywhere.\"&lt;br&gt;— You, to your AI-Agent</p>\n<h1>Get started</h1>\n<p>unslop is an auditor. It checks the design your agent has already generated for the typical bad decisions AI makes in generated designs, and proposes fixes.</p>\n<p>Claude Code, in your shell:</p>\n<pre><code>\nclaude plugin marketplace add 0design/unslop-skill\n\nclaude plugin install unslop@unslop\n\n</code></pre>\n<p>Codex:</p>\n<pre><code>\ncodex plugin marketplace add 0design/unslop-skill\n\ncodex plugin add unslop@unslop\n\n</code></pre>\n<p>Start a new session and run <code>/unslop:audit</code>. In Codex, ask for an unslop audit instead; it lists the skill as <code>unslop:audit</code>. Your agent checks every screen against the canon and writes a fix plan to <code>plans/</code>. It changes no code.</p>\n<h2>Install</h2>\n<p>The plugin holds the skill, the detector, the canon client and the rule texts, and declares the canon server at <code>https://oleg.design/unslop/mcp</code>; your client connects to it at session start. The canon client needs Node.js 20 or newer and the MCP SDK; where the SDK is missing, the skill tells your agent to ask before it downloads anything and, without your agreement, to report no verified canon and issue no pass. These steps are instructions, not a technical lock; your agent's own permission prompts still apply. To remove the plugin: <code>claude plugin uninstall unslop@unslop</code> or <code>codex plugin remove unslop@unslop</code>.</p>\n<p>Cursor and Lovable get a prompt instead of a plugin; it is on https://oleg.design/unslop.</p>\n<p>Or install the skill alone with the <a href=\"https://skills.sh\" target=\"_blank\" rel=\"noreferrer\">skills CLI</a>:</p>\n<pre><code>\nnpx skills add 0design/unslop-skill\n\n</code></pre>\n<p>This copies <code>skills/audit</code> into your agent's skills folder, with the detector and the canon client in <code>skills/audit/scripts</code>. The detector needs only Node.js 20 or newer and runs its machine checks from there. The canon client also needs the MCP SDK, which only the plugin can install, so a skill-only audit has no verified canon and issues no pass; install the plugin where your agent supports one.</p>\n<h2>How it works</h2>\n<pre><code>\n  /unslop:audit\n\n       │\n\n       ▼\n\n  your agent ◀──── MCP ────▶ canon server (read-only): index read once, version and checksum pinned for the run\n\n       ├── no `unslop` server ──▶ your agent offers the connect command, runs it only after you agree\n\n       ├── unreadable index or checksum mismatch ──▶ \"no verified canon\", no pass\n\n       ▼\n\n  recon ──▶ stack, design system, conventions, documented decisions\n\n       │\n\n       ▼\n\n  detector ──▶ \"B-1   RED  button.css:2  color: #ff0044;\"\n\n       │\n\n       ▼\n\n  judgement against the pinned rules; every finding re-checked before it counts\n\n       │\n\n       ▼\n\n  plans/NNN-slug.md, one per fix or per tight cluster of findings, for a cheaper model to execute\n\n       │\n\n       ▼\n\n  \"unslop execute &lt;plan&gt;\", said to your agent ──▶ one plan in an isolated worktree, then the diff\n\n</code></pre>\n<p>unslop gives your agent a designer's quality criteria: verifiable, not taste by eye. Every finding is a <code>file:line</code> and a fix plan. It does not guarantee good design: that decision is yours; unslop only keeps your agent from breaking it. The catalogue of slop criteria keeps changing, so the audit reads it from the canon server, not from the plugin's own copy: one version per run, pinned by version and checksum, never a silent fallback to local files. A rule fixed or added on the server reaches every agent on its next run, with no reinstall.</p>\n<h2>What's in this repo</h2>\n<ul>\n<li>[<code>skills/audit</code>](skills/audit): the audit skill, its reference on design-system integrity, and everything it runs in [<code>skills/audit/scripts</code>](skills/audit/scripts).</li>\n<li>[<code>.claude-plugin</code>](.claude-plugin) and [<code>.mcp.json</code>](.mcp.json): the plugin and marketplace manifests, and the canon server they declare.</li>\n<li>[<code>skills/audit/scripts/detect.mjs</code>](skills/audit/scripts/detect.mjs) and [<code>skills/audit/scripts/rules</code>](skills/audit/scripts/rules): the detector, 37 machine checks over CSS and markup, no network, no dependencies; [<code>scripts/fixtures</code>](scripts/fixtures) holds a sample per check.</li>\n<li>[<code>skills/audit/scripts/canon-route.mjs</code>](skills/audit/scripts/canon-route.mjs) and [<code>skills/audit/scripts/lib</code>](skills/audit/scripts/lib): the canon client that reads the index, routes topics and checks checksums.</li>\n<li>[<code>scripts</code>](scripts): the tests and the public text guard; they are not part of the skill.</li>\n<li>[<code>canon/public/records.json</code>](canon/public/records.json): the 49 rules, the source of truth; [<code>canon/public-generated</code>](canon/public-generated): what the server serves, version <code>public-2026.10.11-1</code>, never edited by hand.</li>\n</ul>\n<h2>Contribute</h2>\n<p>You can improve the skill, the detector or the canon, or propose a rule.</p>\n<p>1. Fork the repository and make a branch.</p>\n<p>2. Make your change and run the checks: <code>npm ci</code>, <code>npm test</code>. A rule change is a new canon version: raise the version in <code>canon/public/records.json</code>, run <code>npm run canon:generate:public</code> and add a <code>CHANGELOG.md</code> entry in the same pull request.</p>\n<p>3. Open a pull request. The tests run on Node.js 22 for a pull request (20 and 22 on a push to a release line), and a second check keeps internal wording out of the public text.</p>\n<p>A rule accepted from a pull request reaches everyone with the next canon version. Have an idea? <a href=\"https://github.com/0design/unslop-skill/issues/new\" target=\"_blank\" rel=\"noreferrer\">Open an issue</a> and describe what result you want.</p>\n<h2>Links</h2>\n<ul>\n<li>Site: https://oleg.design/unslop</li>\n<li>Canon server: https://oleg.design/unslop/mcp (resources only, no tools); health: https://oleg.design/unslop/mcp/health</li>\n<li>Changelog, credits, file list: [CHANGELOG.md](CHANGELOG.md), [CREDITS.md](CREDITS.md), [PUBLIC_MANIFEST.md](PUBLIC_MANIFEST.md)</li>\n<li>For AI agents: the audit is read-only, plans only, no pass without a connected canon. The rules are in [the skill](skills/audit/SKILL.md).</li>\n<li>License: [MIT](LICENSE) for the code and skill files, [CC BY 4.0](LICENSE-RULES.md) for the rule texts</li>\n</ul>",
+  "skillMd": "",
+  "updatedAt": "2026-11-05T22:57:05Z",
+  "author": {
+    "login": "0design",
+    "name": "Oleg.Design",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/284230990?v=4",
+    "profileUrl": "https://github.com/0design",
+    "location": "Kyiv, Ukraine"
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "morluto-rea",
+      "displayName": "morluto/rea",
+      "stars": 434238,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mattpocock-skills",
+      "displayName": "mattpocock/skills",
+      "stars": 315166,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "obra-brainstorming",
+      "displayName": "obra/brainstorming",
+      "stars": 313001,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
+      "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "stars": 145698,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 113520,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "leonxlnx-taste-skill",
+      "displayName": "Leonxlnx/taste-skill",
+      "stars": 110644,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "panniantong-agent-reach",
+      "displayName": "Panniantong/Agent-Reach",
+      "stars": 109202,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "tt-a1i-archify",
+      "displayName": "tt-a1i/archify",
+      "stars": 93846,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-tokyo",
+    "label": "Global Skill Market / Tokyo / Community Skills",
+    "lat": 35.6762,
+    "lon": 139.6503,
+    "source": "virtual_market"
+  }
+}
