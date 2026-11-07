@@ -12,7 +12,7 @@
   "readme": "# redhat/openshift-skillpack\n\nProvision, inventory, and report on OpenShift clusters — spanning Assisted Installer, OCM, ROSA, ARO, and kubeconfig fleets — through a single conversational workflow.",
   "readmeHtml": "<h1>redhat/openshift-skillpack</h1>\n<p>Provision, inventory, and report on OpenShift clusters — spanning Assisted Installer, OCM, ROSA, ARO, and kubeconfig fleets — through a single conversational workflow.</p>",
   "skillMd": "",
-  "updatedAt": "2026-11-06T23:52:25.252Z",
+  "updatedAt": "2026-11-07T22:31:10.497Z",
   "author": {
     "login": "redhat",
     "name": "redhat",
@@ -53,7 +53,7 @@
     {
       "slug": "coreyhaines31-ab-testing",
       "displayName": "coreyhaines31/ab-testing",
-      "stars": 58916,
+      "stars": 59050,
       "relation": "shared_tag",
       "evidence": "TypeScript Skills"
     },
@@ -67,14 +67,14 @@
     {
       "slug": "phuryn-ab-test-analysis",
       "displayName": "phuryn/ab-test-analysis",
-      "stars": 27743,
+      "stars": 27754,
       "relation": "shared_tag",
       "evidence": "TypeScript Skills"
     },
     {
       "slug": "google-cloud-agent-platform-skill-registry",
       "displayName": "google/cloud/agent-platform-skill-registry",
-      "stars": 22809,
+      "stars": 23333,
       "relation": "shared_tag",
       "evidence": "TypeScript Skills"
     }
