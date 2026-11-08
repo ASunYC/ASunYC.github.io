@@ -12,7 +12,7 @@
   "readme": "# firecrawl/firecrawl-build-search\n\nIntegrate Firecrawl `/search` for query-first discovery with optional content hydration",
   "readmeHtml": "<h1>firecrawl/firecrawl-build-search</h1>\n<p>Integrate Firecrawl <code>/search</code> for query-first discovery with optional content hydration</p>",
   "skillMd": "",
-  "updatedAt": "2026-11-07T22:31:10.437Z",
+  "updatedAt": "2026-11-08T22:50:53.423Z",
   "author": {
     "login": "firecrawl",
     "name": "Firecrawl",
@@ -31,7 +31,7 @@
     {
       "slug": "firecrawl-firecrawl-alexandria",
       "displayName": "firecrawl/firecrawl-alexandria",
-      "stars": 678,
+      "stars": 679,
       "relation": "source_overlap",
       "evidence": "author:firecrawl"
     },
@@ -73,14 +73,14 @@
     {
       "slug": "cloudflare-security-audit-skill",
       "displayName": "cloudflare/security-audit-skill",
-      "stars": 65555,
+      "stars": 66762,
       "relation": "shared_tag",
       "evidence": "Official Skills by"
     },
     {
       "slug": "vercel-labs-composition-patterns",
       "displayName": "vercel-labs/composition-patterns",
-      "stars": 33689,
+      "stars": 33724,
       "relation": "shared_tag",
       "evidence": "Official Skills by"
     }
