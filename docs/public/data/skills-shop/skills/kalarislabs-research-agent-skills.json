@@ -4,7 +4,7 @@
   "name": "research-agent-skills",
   "displayName": "KalarisLabs/research-agent-skills",
   "description": "280+ skills for literature review, analysis, and paper writing",
-  "stars": 110,
+  "stars": 112,
   "category": "Community Skills",
   "source": "voltagent",
   "url": "https://github.com/KalarisLabs/research-agent-skills",
@@ -18,72 +18,78 @@
     "name": "Kalarislabs",
     "avatarUrl": "https://avatars.githubusercontent.com/u/300878568?v=4",
     "profileUrl": "https://github.com/KalarisLabs",
-    "location": ""
+    "location": "India"
   },
-  "location": null,
+  "location": {
+    "id": "india",
+    "label": "Banglore, India",
+    "lat": 20.5937,
+    "lon": 78.9629,
+    "source": "github_profile"
+  },
   "related": [
     {
       "slug": "morluto-rea",
       "displayName": "morluto/rea",
-      "stars": 443553,
+      "stars": 447067,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "mattpocock-skills",
       "displayName": "mattpocock/skills",
-      "stars": 318454,
+      "stars": 319770,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "obra-brainstorming",
       "displayName": "obra/brainstorming",
-      "stars": 314560,
+      "stars": 315177,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
       "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
-      "stars": 146892,
+      "stars": 147386,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "thedotmack-claude-mem",
       "displayName": "thedotmack/claude-mem",
-      "stars": 114866,
+      "stars": 115414,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "leonxlnx-taste-skill",
       "displayName": "Leonxlnx/taste-skill",
-      "stars": 112012,
+      "stars": 112541,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "panniantong-agent-reach",
       "displayName": "Panniantong/Agent-Reach",
-      "stars": 110282,
+      "stars": 110630,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "tt-a1i-archify",
       "displayName": "tt-a1i/archify",
-      "stars": 94715,
+      "stars": 95067,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     }
   ],
   "mapLocation": {
-    "id": "virtual-paris",
-    "label": "Global Skill Market / Paris / Community Skills",
-    "lat": 48.8566,
-    "lon": 2.3522,
-    "source": "virtual_market"
+    "id": "india",
+    "label": "Banglore, India",
+    "lat": 20.5937,
+    "lon": 78.9629,
+    "source": "github_profile"
   }
 }
