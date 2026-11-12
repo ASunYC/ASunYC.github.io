@@ -9,10 +9,10 @@
   "source": "voltagent",
   "url": "https://github.com/SHADOWPR0/security-bluebook-builder",
   "githubRepo": "SHADOWPR0/security-bluebook-builder",
-  "readme": "# security-bluebook-builder\n\nSecurity Bluebook builder skill for agents\n\nThis repo is an agent skill: see `SKILL.md` for the instructions and `references/` for supporting material.\n",
-  "readmeHtml": "<h1>security-bluebook-builder</h1>\n<p>Security Bluebook builder skill for agents</p>\n<p>This repo is an agent skill: see <code>SKILL.md</code> for the instructions and <code>references/</code> for supporting material.</p>",
+  "readme": "# security-bluebook-builder\n\nAn agent skill that writes a short, enforceable security policy (a \"Blue Book\") for any app that handles sensitive data.\n\n## What it is\nYou describe your app in a few lines. The skill returns one Markdown document that states, in MUST / SHOULD / CAN language, how the app classifies data, where its trust boundaries sit, how sessions and tokens are handled, what gets logged, how long data is kept, and what happens during an incident. It ends with a go/no-go checklist you can run before each release.\n\nUnknowns never get papered over. Anything you can't answer yet appears as `TODO` with a stated assumption, so the gaps stay visible.\n\n## Who it's for\n- Founders and small teams shipping an app that touches PII, PHI, financial data or OAuth tokens, with no security lead on staff.\n- Engineers who need a written policy before a security review, a vendor questionnaire or a partner integration.\n- Agent builders who want their agents to follow written data rules instead of improvising them.\n\n## Quick start\n1. Copy the skill into your agent's skills folder:\n   ```bash\n   git clone https://github.com/SHADOWPR0/security-bluebook-builder.git\n   cp -R security-bluebook-builder ~/.claude/skills/security-bluebook-builder\n   ```\n   Other agent environments: point the skill or rules loader at `SKILL.md`.\n2. Ask your agent:\n   ```text\n   Use the security-bluebook-builder skill. Write a Blue Book for our app.\n   ```\n3. Answer up to six short questions (data classes, trust boundaries, auth, storage, third parties, retention). Skip any you can't answer; they become TODOs.\n\n## Example\nPrompt:\n```text\nUse the security-bluebook-builder skill. App: a client portal for a small\naccounting firm. Clients upload tax documents. Google sign-in. Files in S3,\nmetadata in Postgres. Email via a transactional provider. Keep files 7 years.\n```\n\nExcerpt of the output:\n```markdown\n## Data Classification and Handling\n- Financial (tax documents): MUST be encrypted at rest (S3 SSE-KMS) and in\n  transit (TLS 1.2+). MUST NOT appear in logs, error reports or email bodies.\n- Tokens/credentials: OAuth refresh tokens MUST be stored server-side only,\n  encrypted, and revoked on sign-out.\n\n## Retention and Deletion\n- Default retention: 7 years for client tax documents (firm requirement).\n- User-initiated deletion: TODO (assumption: deletion requests are reviewed\n  against the 7-year requirement before files are removed).\n\n## Security Gates (go/no-go)\n- [ ] No financial data in application logs (checked against a sample of 100 log lines)\n- [ ] Refresh-token revocation tested on sign-out\n```\n\n## How it works\n1. **Gather:** the skill asks only for what the template needs, at most six questions.\n2. **Draft:** it fills `references/bluebook_template.md`, a fixed outline of fifteen sections, from scope and threat model to security gates and a pre-launch go/no-go checklist, so every Blue Book has the same shape and reviewers know where to look.\n3. **Guardrails:** it never writes secrets or credentials into the document, marks unknowns as TODO with an assumption, fails closed when a required control isn't available, and adds nothing you didn't ask for.\n4. **Check:** before returning, it confirms every required section is present.\n\n## Files\n```text\nsecurity-bluebook-builder/\n  SKILL.md                         # the skill instructions\n  references/bluebook_template.md  # the Blue Book outline the skill fills\n```\n\n## Limits\nThe Blue Book is a working policy, not a certification or legal advice. Have a qualified reviewer check it before you rely on it for compliance.\n\n## Author\nMaintained by the owner of [@SHADOWPR0](https://github.com/SHADOWPR0). Issues and suggestions are welcome in this repo.\n",
+  "readmeHtml": "<h1>security-bluebook-builder</h1>\n<p>An agent skill that writes a short, enforceable security policy (a \"Blue Book\") for any app that handles sensitive data.</p>\n<h2>What it is</h2>\n<p>You describe your app in a few lines. The skill returns one Markdown document that states, in MUST / SHOULD / CAN language, how the app classifies data, where its trust boundaries sit, how sessions and tokens are handled, what gets logged, how long data is kept, and what happens during an incident. It ends with a go/no-go checklist you can run before each release.</p>\n<p>Unknowns never get papered over. Anything you can't answer yet appears as <code>TODO</code> with a stated assumption, so the gaps stay visible.</p>\n<h2>Who it's for</h2>\n<ul>\n<li>Founders and small teams shipping an app that touches PII, PHI, financial data or OAuth tokens, with no security lead on staff.</li>\n<li>Engineers who need a written policy before a security review, a vendor questionnaire or a partner integration.</li>\n<li>Agent builders who want their agents to follow written data rules instead of improvising them.</li>\n</ul>\n<h2>Quick start</h2>\n<p>1. Copy the skill into your agent's skills folder:</p>\n<pre><code>\n   git clone https://github.com/SHADOWPR0/security-bluebook-builder.git\n\n   cp -R security-bluebook-builder ~/.claude/skills/security-bluebook-builder\n\n</code></pre>\n<p>   Other agent environments: point the skill or rules loader at <code>SKILL.md</code>.</p>\n<p>2. Ask your agent:</p>\n<pre><code>\n   Use the security-bluebook-builder skill. Write a Blue Book for our app.\n\n</code></pre>\n<p>3. Answer up to six short questions (data classes, trust boundaries, auth, storage, third parties, retention). Skip any you can't answer; they become TODOs.</p>\n<h2>Example</h2>\n<p>Prompt:</p>\n<pre><code>\nUse the security-bluebook-builder skill. App: a client portal for a small\n\naccounting firm. Clients upload tax documents. Google sign-in. Files in S3,\n\nmetadata in Postgres. Email via a transactional provider. Keep files 7 years.\n\n</code></pre>\n<p>Excerpt of the output:</p>\n<pre><code>\n## Data Classification and Handling\n\n- Financial (tax documents): MUST be encrypted at rest (S3 SSE-KMS) and in\n\n  transit (TLS 1.2+). MUST NOT appear in logs, error reports or email bodies.\n\n- Tokens/credentials: OAuth refresh tokens MUST be stored server-side only,\n\n  encrypted, and revoked on sign-out.\n\n\n\n## Retention and Deletion\n\n- Default retention: 7 years for client tax documents (firm requirement).\n\n- User-initiated deletion: TODO (assumption: deletion requests are reviewed\n\n  against the 7-year requirement before files are removed).\n\n\n\n## Security Gates (go/no-go)\n\n- [ ] No financial data in application logs (checked against a sample of 100 log lines)\n\n- [ ] Refresh-token revocation tested on sign-out\n\n</code></pre>\n<h2>How it works</h2>\n<p>1. <strong>Gather:</strong> the skill asks only for what the template needs, at most six questions.</p>\n<p>2. <strong>Draft:</strong> it fills <code>references/bluebook_template.md</code>, a fixed outline of fifteen sections, from scope and threat model to security gates and a pre-launch go/no-go checklist, so every Blue Book has the same shape and reviewers know where to look.</p>\n<p>3. <strong>Guardrails:</strong> it never writes secrets or credentials into the document, marks unknowns as TODO with an assumption, fails closed when a required control isn't available, and adds nothing you didn't ask for.</p>\n<p>4. <strong>Check:</strong> before returning, it confirms every required section is present.</p>\n<h2>Files</h2>\n<pre><code>\nsecurity-bluebook-builder/\n\n  SKILL.md                         # the skill instructions\n\n  references/bluebook_template.md  # the Blue Book outline the skill fills\n\n</code></pre>\n<h2>Limits</h2>\n<p>The Blue Book is a working policy, not a certification or legal advice. Have a qualified reviewer check it before you rely on it for compliance.</p>\n<h2>Author</h2>\n<p>Maintained by the owner of <a href=\"https://github.com/SHADOWPR0\" target=\"_blank\" rel=\"noreferrer\">@SHADOWPR0</a>. Issues and suggestions are welcome in this repo.</p>",
   "skillMd": "---\nname: security-bluebook-builder\ndescription: Create or refine a concise, normative security policy (\"Blue Book\") for sensitive applications. Use when users need a threat model, data classification rules, auth/session policy, logging and audit requirements, retention/deletion expectations, incident response, or security gates for apps handling PII/PHI/financial data.\n---\n\n# Security Bluebook Builder\n\n## Overview\nBuild a minimal but real security policy for sensitive apps. The output is a single, coherent Blue Book document using MUST/SHOULD/CAN language, with explicit assumptions, scope, and security gates.\n\n## Workflow\n\n### 1) Gather inputs (ask only if missing)\nCollect just enough context to fill the template. If the user has not provided details, ask up to 6 short questions:\n- What data classes are handled (PII, PHI, financial, tokens, content)?\n- What are the trust boundaries (client/server/third parties)?\n- How do users authenticate (OAuth, email/password, SSO, device sessions)?\n- What storage is used (DB, object storage, logs, analytics)?\n- What connectors or third parties are used?\n- Retention and deletion expectations (default + user-initiated)?\n\nIf the user cannot answer, proceed with safe defaults and mark TODOs.\n\n### 2) Draft the Blue Book\nLoad `references/bluebook_template.md` and fill it with the provided details. Keep it concise, deterministic, and enforceable.\n\n### 3) Enforce guardrails\n- Do not include secrets, tokens, or internal credentials.\n- If something is unknown, write \"TODO\" plus a clear assumption.\n- Fail closed: if a capability is required but unavailable, call it out explicitly.\n- Keep scope minimal; do not add features or tools beyond what the user asked for.\n\n### 4) Quality checks\nConfirm the Blue Book includes:\n- Threat model (assumptions + out-of-scope)\n- Data classification + handling rules\n- Trust boundaries + controls\n- Auth/session policy\n- Token handling policy\n- Logging/audit policy\n- Retention/deletion\n- Incident response mini-runbook\n- Security gates + go/no-go checklist\n\n## Resources\n- `references/bluebook_template.md`\n",
-  "updatedAt": "2026-10-26T23:41:56Z",
+  "updatedAt": "2026-11-11T20:09:37Z",
   "author": {
     "login": "SHADOWPR0",
     "name": "SHADOWPR0",
@@ -32,49 +32,49 @@
     {
       "slug": "morluto-rea",
       "displayName": "morluto/rea",
-      "stars": 449871,
+      "stars": 452752,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "mattpocock-skills",
       "displayName": "mattpocock/skills",
-      "stars": 320868,
+      "stars": 322034,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "obra-brainstorming",
       "displayName": "obra/brainstorming",
-      "stars": 315738,
+      "stars": 316305,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
       "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
-      "stars": 147792,
+      "stars": 148222,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "thedotmack-claude-mem",
       "displayName": "thedotmack/claude-mem",
-      "stars": 115803,
+      "stars": 116233,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "leonxlnx-taste-skill",
       "displayName": "Leonxlnx/taste-skill",
-      "stars": 112988,
+      "stars": 113570,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "panniantong-agent-reach",
       "displayName": "Panniantong/Agent-Reach",
-      "stars": 110907,
+      "stars": 111132,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     }
