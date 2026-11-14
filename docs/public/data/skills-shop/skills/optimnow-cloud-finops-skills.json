@@ -4,7 +4,7 @@
   "name": "cloud-finops-skills",
   "displayName": "OptimNow/cloud-finops-skills",
   "description": "FinOps knowledge: cloud billing mechanics, commitments, allocation, AI spend",
-  "stars": 71,
+  "stars": 72,
   "category": "Community Skills",
   "source": "voltagent",
   "url": "https://github.com/OptimNow/cloud-finops-skills/tree/main/skills/cloud-finops",
@@ -12,7 +12,7 @@
   "readme": "# Moved\n\nThe skill now lives at\n[`plugins/cloud-finops/skills/cloud-finops/`](../../plugins/cloud-finops/skills/cloud-finops/),\ninside the folder that the Claude plugin directory installs. This stub keeps the old\nlink alive; nothing else is here.\n",
   "readmeHtml": "<h1>Moved</h1>\n<p>The skill now lives at</p>\n<p>[<code>plugins/cloud-finops/skills/cloud-finops/</code>](../../plugins/cloud-finops/skills/cloud-finops/),</p>\n<p>inside the folder that the Claude plugin directory installs. This stub keeps the old</p>\n<p>link alive; nothing else is here.</p>",
   "skillMd": "",
-  "updatedAt": "2026-11-12T22:20:35Z",
+  "updatedAt": "2026-11-13T08:11:37Z",
   "author": {
     "login": "OptimNow",
     "name": "Jean Latiere",
@@ -25,56 +25,56 @@
     {
       "slug": "morluto-rea",
       "displayName": "morluto/rea",
-      "stars": 455207,
+      "stars": 457589,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "mattpocock-skills",
       "displayName": "mattpocock/skills",
-      "stars": 322996,
+      "stars": 323801,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "obra-brainstorming",
       "displayName": "obra/brainstorming",
-      "stars": 316759,
+      "stars": 317224,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
       "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
-      "stars": 148659,
+      "stars": 149090,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "thedotmack-claude-mem",
       "displayName": "thedotmack/claude-mem",
-      "stars": 116558,
+      "stars": 116839,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "leonxlnx-taste-skill",
       "displayName": "Leonxlnx/taste-skill",
-      "stars": 114280,
+      "stars": 115025,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "panniantong-agent-reach",
       "displayName": "Panniantong/Agent-Reach",
-      "stars": 111346,
+      "stars": 111568,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "tt-a1i-archify",
       "displayName": "tt-a1i/archify",
-      "stars": 95912,
+      "stars": 96220,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     }
