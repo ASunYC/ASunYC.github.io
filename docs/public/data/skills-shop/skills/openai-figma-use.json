@@ -12,7 +12,7 @@
   "readme": "# openai/figma-use\n\nPrerequisite skill for every use_figma tool call — write/read actions in Figma context",
   "readmeHtml": "<h1>openai/figma-use</h1>\n<p>Prerequisite skill for every use_figma tool call — write/read actions in Figma context</p>",
   "skillMd": "",
-  "updatedAt": "2026-11-14T23:10:36.832Z",
+  "updatedAt": "2026-11-15T23:32:20.087Z",
   "author": {
     "login": "openai",
     "name": "OpenAI",
@@ -25,13 +25,6 @@
     {
       "slug": "openai-cloudflare-deploy",
       "displayName": "openai/cloudflare-deploy",
-      "stars": 0,
-      "relation": "source_overlap",
-      "evidence": "author:openai"
-    },
-    {
-      "slug": "openai-develop-web-game",
-      "displayName": "openai/develop-web-game",
       "stars": 0,
       "relation": "source_overlap",
       "evidence": "author:openai"
@@ -74,6 +67,13 @@
     {
       "slug": "openai-linear",
       "displayName": "openai/linear",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:openai"
+    },
+    {
+      "slug": "openai-netlify-deploy",
+      "displayName": "openai/netlify-deploy",
       "stars": 0,
       "relation": "source_overlap",
       "evidence": "author:openai"

@@ -1,0 +1,95 @@
+{
+  "id": "skill:adkit-ads-skills",
+  "slug": "adkit-ads-skills",
+  "name": "ads-skills",
+  "displayName": "adkit/ads-skills",
+  "description": "Create, edit and report on campaigns across eight ad platforms",
+  "stars": 40,
+  "category": "Community Skills",
+  "source": "voltagent",
+  "url": "https://github.com/adkit/ads-skills",
+  "githubRepo": "adkit/ads-skills",
+  "readme": "# Ads Skills for AI Agents\n\nThese skills teach your agent how to run ads. They cover advertising strategy for both Meta and Google (and soon LinkedIn, TikTok, X, and Reddit).\n\n<p align=\"center\">\n  <img src=\"./ads-skills.png\" alt=\"Ads Skills for AI Agents\" />\n</p>\n\nInstall once, and your agent plans campaigns using real frameworks instead of hallucinating settings.\n\n```bash\nnpx skills add adkit/ads-skills --skill '*'\n```\n\nWorks with Claude Code, Cursor, Copilot, Windsurf, OpenAI Codex, and any agent that support skills.\n\n### Claude.ai and Claude Cowork (no terminal)\n\nIn Claude, go to **Customize → Plugins → Add marketplace** and add this repository:\n\n```text\nhttps://github.com/adkit/ads-skills\n```\n\nThen install the **AdKit Ads Skills** plugin. The skills show up in chat and in Cowork, and update automatically when this repo does.\n\n## What changes\n\n|                    | ❌ Without Ads Skills        | ✅ With Ads Skills                                                     |\n| ------------------ | ---------------------------- | ---------------------------------------------------------------------- |\n| Campaign structure | Agent hallucinates structure | Agent follows proven frameworks                                        |\n| Budget             | Agent sets random amounts    | Agent follow a structure that won't nuke your accounts or waste budget |\n| Creative           | Agent writes generic copy    | Agent crafts hooks that compete with entertainment, not other ads      |\n| Analysis           | Agent reads numbers          | Agent diagnoses issues and recommends specific fixes                   |\n\n## Skills\n\n### Platform skills\n\nEach skill tells your agent how to run one ad platform with [AdKit](https://adkit.so/features/ads-mcp): the steps, the platform's rules, and examples. They all use the same AdKit connector, `https://mcp.adkit.so`.\n\n| Skill                                    | Platform             | Page                                                                   |\n| ---------------------------------------- | -------------------- | ---------------------------------------------------------------------- |\n| [meta-ads](./skills/meta-ads/)           | Facebook & Instagram | [Meta Ads MCP setup](https://adkit.so/features/ads-mcp/meta)           |\n| [google-ads](./skills/google-ads/)       | Google Ads           | [Google Ads MCP setup](https://adkit.so/features/ads-mcp/google)       |\n| [tiktok-ads](./skills/tiktok-ads/)       | TikTok               | [TikTok Ads MCP setup](https://adkit.so/features/ads-mcp/tiktok)       |\n| [linkedin-ads](./skills/linkedin-ads/)   | LinkedIn             | [LinkedIn Ads MCP setup](https://adkit.so/features/ads-mcp/linkedin)   |\n| [microsoft-ads](./skills/microsoft-ads/) | Microsoft (Bing)     | [Microsoft Ads MCP setup](https://adkit.so/features/ads-mcp/microsoft) |\n| [reddit-ads](./skills/reddit-ads/)       | Reddit               | [Reddit Ads MCP setup](https://adkit.so/features/ads-mcp/reddit)       |\n| [x-ads](./skills/x-ads/)                 | X (Twitter)          | [X Ads MCP setup](https://adkit.so/features/ads-mcp/x)                 |\n| [pinterest-ads](./skills/pinterest-ads/) | Pinterest            | [Pinterest Ads MCP setup](https://adkit.so/features/ads-mcp/pinterest) |\n\n### Strategy skills\n\nEach covers a single platform end-to-end: campaign structure, audience targeting, creative strategy, budget management, and performance analysis.\n\n| Skill                                                | Platform             | Description                                                                                                  |\n| ---------------------------------------------------- | -------------------- | ------------------------------------------------------------------------------------------------------------ |\n| [meta-ads-strategy](./skills/meta-ads-strategy/)     | Facebook & Instagram | Auction mechanics, Setup, creative formats, targeting, ROAS tracking. Includes a built-in ad brief workflow. |\n| [google-ads-strategy](./skills/google-ads-strategy/) | Google Search        | Keyword mining, account structure, ad copy, negative keyword architecture, Quality Score.                    |\n\n## How it works\n\n1. **Install the skills** — one command, all skills load into your agent\n2. **Your agent reads the brief** — Skills includes a built-in brief workflow (product, audience, market, KPIs so it understands the campaign you want to run)\n3. **Your agent plans the campaign** — following the platform-specific strategy skill\n4. **BONUS: Your agent launch everything for you** — connect [AdKit](https://adkit.so) to let your agent creates and publishes campaigns directly (100% optional, works just fine without, the agent will guide you!)\n\n```\nBrief (built into strategy skills)\n    |\n    v\nStrategy skill (meta / google / linkedin / ...)\n    |\n    v\nAdKit skill (optional — create + publish via MCP or CLI)\n```\n\n## What's inside\n\nEach strategy skill covers the full campaign lifecycle:\n\n- **Platform mechanics**: how the auction/algorithm works and how to work with it\n- **Campaign structure**: hierarchy, objective selection, optimization events\n- **Audience targeting**: broad vs. interest-based vs. lookalike, when to use each\n- **Budget management**: starting budgets, scaling rules, kill criteria\n- **Ad creative**: hook frameworks, format selection (static vs. video vs. carousel), platform-specific specs\n- **Ad copy**: headline formulas, description frameworks, CTA patterns\n- **Performance diagnostics**: symptom → cause → action framework for reading metrics\n- **Account setup**: compliance rules, pixel/tag configuration, ban prevention\n\n## FAQ\n\n**What agents are supported?**\nAny agent that supports skills: Claude Code, Cursor, Copilot, Windsurf, OpenAI Codex, and 17+ others.\n\n**Do I need AdKit to use these skills?**\nNo. The skills work standalone for strategy and planning. AdKit is only needed if you want your agent to create and publish campaigns without logging into Ads Manager.\n\n## Author\n\nHi! I'm [Nico](https://jeannen.com?src=adkit-skills) ([@nico_jeannen](https://x.com/nico_jeannen)). I've been in digital advertising for almost 10 years, and managed over \\$1M+ in ad spend.\n\nI built and sold three apps ($290k combined), two of them grown primarily through paid acquisition. Now building [AdKit](https://adkit.so), the advertising toolbox for SaaS founders and their agents.\n\n## License\n\nMIT, see [LICENSE](./LICENSE). Two exceptions: [meta-ads-strategy](./skills/meta-ads-strategy/LICENSE) and [google-ads-strategy](./skills/google-ads-strategy/LICENSE) use the AdKit Skills License in their folders: free to use, but no redistribution and no use in competing products.\n",
+  "readmeHtml": "<h1>Ads Skills for AI Agents</h1>\n<p>These skills teach your agent how to run ads. They cover advertising strategy for both Meta and Google (and soon LinkedIn, TikTok, X, and Reddit).</p>\n<p>&lt;p align=\"center\"&gt;</p>\n<p>  &lt;img src=\"./ads-skills.png\" alt=\"Ads Skills for AI Agents\" /&gt;</p>\n<p>&lt;/p&gt;</p>\n<p>Install once, and your agent plans campaigns using real frameworks instead of hallucinating settings.</p>\n<pre><code>\nnpx skills add adkit/ads-skills --skill '*'\n\n</code></pre>\n<p>Works with Claude Code, Cursor, Copilot, Windsurf, OpenAI Codex, and any agent that support skills.</p>\n<h3>Claude.ai and Claude Cowork (no terminal)</h3>\n<p>In Claude, go to <strong>Customize → Plugins → Add marketplace</strong> and add this repository:</p>\n<pre><code>\nhttps://github.com/adkit/ads-skills\n\n</code></pre>\n<p>Then install the <strong>AdKit Ads Skills</strong> plugin. The skills show up in chat and in Cowork, and update automatically when this repo does.</p>\n<h2>What changes</h2>\n<p>|                    | ❌ Without Ads Skills        | ✅ With Ads Skills                                                     |</p>\n<p>| ------------------ | ---------------------------- | ---------------------------------------------------------------------- |</p>\n<p>| Campaign structure | Agent hallucinates structure | Agent follows proven frameworks                                        |</p>\n<p>| Budget             | Agent sets random amounts    | Agent follow a structure that won't nuke your accounts or waste budget |</p>\n<p>| Creative           | Agent writes generic copy    | Agent crafts hooks that compete with entertainment, not other ads      |</p>\n<p>| Analysis           | Agent reads numbers          | Agent diagnoses issues and recommends specific fixes                   |</p>\n<h2>Skills</h2>\n<h3>Platform skills</h3>\n<p>Each skill tells your agent how to run one ad platform with <a href=\"https://adkit.so/features/ads-mcp\" target=\"_blank\" rel=\"noreferrer\">AdKit</a>: the steps, the platform's rules, and examples. They all use the same AdKit connector, <code>https://mcp.adkit.so</code>.</p>\n<p>| Skill                                    | Platform             | Page                                                                   |</p>\n<p>| ---------------------------------------- | -------------------- | ---------------------------------------------------------------------- |</p>\n<p>| [meta-ads](./skills/meta-ads/)           | Facebook &amp; Instagram | <a href=\"https://adkit.so/features/ads-mcp/meta\" target=\"_blank\" rel=\"noreferrer\">Meta Ads MCP setup</a>           |</p>\n<p>| [google-ads](./skills/google-ads/)       | Google Ads           | <a href=\"https://adkit.so/features/ads-mcp/google\" target=\"_blank\" rel=\"noreferrer\">Google Ads MCP setup</a>       |</p>\n<p>| [tiktok-ads](./skills/tiktok-ads/)       | TikTok               | <a href=\"https://adkit.so/features/ads-mcp/tiktok\" target=\"_blank\" rel=\"noreferrer\">TikTok Ads MCP setup</a>       |</p>\n<p>| [linkedin-ads](./skills/linkedin-ads/)   | LinkedIn             | <a href=\"https://adkit.so/features/ads-mcp/linkedin\" target=\"_blank\" rel=\"noreferrer\">LinkedIn Ads MCP setup</a>   |</p>\n<p>| [microsoft-ads](./skills/microsoft-ads/) | Microsoft (Bing)     | <a href=\"https://adkit.so/features/ads-mcp/microsoft\" target=\"_blank\" rel=\"noreferrer\">Microsoft Ads MCP setup</a> |</p>\n<p>| [reddit-ads](./skills/reddit-ads/)       | Reddit               | <a href=\"https://adkit.so/features/ads-mcp/reddit\" target=\"_blank\" rel=\"noreferrer\">Reddit Ads MCP setup</a>       |</p>\n<p>| [x-ads](./skills/x-ads/)                 | X (Twitter)          | <a href=\"https://adkit.so/features/ads-mcp/x\" target=\"_blank\" rel=\"noreferrer\">X Ads MCP setup</a>                 |</p>\n<p>| [pinterest-ads](./skills/pinterest-ads/) | Pinterest            | <a href=\"https://adkit.so/features/ads-mcp/pinterest\" target=\"_blank\" rel=\"noreferrer\">Pinterest Ads MCP setup</a> |</p>\n<h3>Strategy skills</h3>\n<p>Each covers a single platform end-to-end: campaign structure, audience targeting, creative strategy, budget management, and performance analysis.</p>\n<p>| Skill                                                | Platform             | Description                                                                                                  |</p>\n<p>| ---------------------------------------------------- | -------------------- | ------------------------------------------------------------------------------------------------------------ |</p>\n<p>| [meta-ads-strategy](./skills/meta-ads-strategy/)     | Facebook &amp; Instagram | Auction mechanics, Setup, creative formats, targeting, ROAS tracking. Includes a built-in ad brief workflow. |</p>\n<p>| [google-ads-strategy](./skills/google-ads-strategy/) | Google Search        | Keyword mining, account structure, ad copy, negative keyword architecture, Quality Score.                    |</p>\n<h2>How it works</h2>\n<p>1. <strong>Install the skills</strong> — one command, all skills load into your agent</p>\n<p>2. <strong>Your agent reads the brief</strong> — Skills includes a built-in brief workflow (product, audience, market, KPIs so it understands the campaign you want to run)</p>\n<p>3. <strong>Your agent plans the campaign</strong> — following the platform-specific strategy skill</p>\n<p>4. <strong>BONUS: Your agent launch everything for you</strong> — connect <a href=\"https://adkit.so\" target=\"_blank\" rel=\"noreferrer\">AdKit</a> to let your agent creates and publishes campaigns directly (100% optional, works just fine without, the agent will guide you!)</p>\n<pre><code>\nBrief (built into strategy skills)\n\n    |\n\n    v\n\nStrategy skill (meta / google / linkedin / ...)\n\n    |\n\n    v\n\nAdKit skill (optional — create + publish via MCP or CLI)\n\n</code></pre>\n<h2>What's inside</h2>\n<p>Each strategy skill covers the full campaign lifecycle:</p>\n<ul>\n<li><strong>Platform mechanics</strong>: how the auction/algorithm works and how to work with it</li>\n<li><strong>Campaign structure</strong>: hierarchy, objective selection, optimization events</li>\n<li><strong>Audience targeting</strong>: broad vs. interest-based vs. lookalike, when to use each</li>\n<li><strong>Budget management</strong>: starting budgets, scaling rules, kill criteria</li>\n<li><strong>Ad creative</strong>: hook frameworks, format selection (static vs. video vs. carousel), platform-specific specs</li>\n<li><strong>Ad copy</strong>: headline formulas, description frameworks, CTA patterns</li>\n<li><strong>Performance diagnostics</strong>: symptom → cause → action framework for reading metrics</li>\n<li><strong>Account setup</strong>: compliance rules, pixel/tag configuration, ban prevention</li>\n</ul>\n<h2>FAQ</h2>\n<p><strong>What agents are supported?</strong></p>\n<p>Any agent that supports skills: Claude Code, Cursor, Copilot, Windsurf, OpenAI Codex, and 17+ others.</p>\n<p><strong>Do I need AdKit to use these skills?</strong></p>\n<p>No. The skills work standalone for strategy and planning. AdKit is only needed if you want your agent to create and publish campaigns without logging into Ads Manager.</p>\n<h2>Author</h2>\n<p>Hi! I'm <a href=\"https://jeannen.com?src=adkit-skills\" target=\"_blank\" rel=\"noreferrer\">Nico</a> (<a href=\"https://x.com/nico_jeannen\" target=\"_blank\" rel=\"noreferrer\">@nico_jeannen</a>). I've been in digital advertising for almost 10 years, and managed over \\$1M+ in ad spend.</p>\n<p>I built and sold three apps ($290k combined), two of them grown primarily through paid acquisition. Now building <a href=\"https://adkit.so\" target=\"_blank\" rel=\"noreferrer\">AdKit</a>, the advertising toolbox for SaaS founders and their agents.</p>\n<h2>License</h2>\n<p>MIT, see [LICENSE](./LICENSE). Two exceptions: [meta-ads-strategy](./skills/meta-ads-strategy/LICENSE) and [google-ads-strategy](./skills/google-ads-strategy/LICENSE) use the AdKit Skills License in their folders: free to use, but no redistribution and no use in competing products.</p>",
+  "skillMd": "",
+  "updatedAt": "2026-11-14T04:47:42Z",
+  "author": {
+    "login": "adkit",
+    "name": "AdKit",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/242531394?v=4",
+    "profileUrl": "https://github.com/adkit",
+    "location": "United States of America"
+  },
+  "location": {
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
+  },
+  "related": [
+    {
+      "slug": "morluto-rea",
+      "displayName": "morluto/rea",
+      "stars": 461854,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mattpocock-skills",
+      "displayName": "mattpocock/skills",
+      "stars": 325126,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "obra-brainstorming",
+      "displayName": "obra/brainstorming",
+      "stars": 318053,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
+      "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "stars": 149944,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 117356,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "leonxlnx-taste-skill",
+      "displayName": "Leonxlnx/taste-skill",
+      "stars": 116197,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "panniantong-agent-reach",
+      "displayName": "Panniantong/Agent-Reach",
+      "stars": 112056,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "tt-a1i-archify",
+      "displayName": "tt-a1i/archify",
+      "stars": 96781,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "united-states",
+    "label": "United States of America",
+    "lat": 39.8283,
+    "lon": -98.5795,
+    "source": "github_profile"
+  }
+}

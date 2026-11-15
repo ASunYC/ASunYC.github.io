@@ -12,7 +12,7 @@
   "readme": "# openai/cloudflare-deploy\n\nDeploy apps to Cloudflare using Workers, Pages, and platform services",
   "readmeHtml": "<h1>openai/cloudflare-deploy</h1>\n<p>Deploy apps to Cloudflare using Workers, Pages, and platform services</p>",
   "skillMd": "",
-  "updatedAt": "2026-11-14T23:10:36.816Z",
+  "updatedAt": "2026-11-15T23:32:20.085Z",
   "author": {
     "login": "openai",
     "name": "OpenAI",
@@ -22,13 +22,6 @@
   },
   "location": null,
   "related": [
-    {
-      "slug": "openai-develop-web-game",
-      "displayName": "openai/develop-web-game",
-      "stars": 0,
-      "relation": "source_overlap",
-      "evidence": "author:openai"
-    },
     {
       "slug": "openai-doc",
       "displayName": "openai/doc",
@@ -74,6 +67,13 @@
     {
       "slug": "openai-netlify-deploy",
       "displayName": "openai/netlify-deploy",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:openai"
+    },
+    {
+      "slug": "openai-notion-knowledge-capture",
+      "displayName": "openai/notion-knowledge-capture",
       "stars": 0,
       "relation": "source_overlap",
       "evidence": "author:openai"

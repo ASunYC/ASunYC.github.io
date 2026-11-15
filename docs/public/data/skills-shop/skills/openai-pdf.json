@@ -12,7 +12,7 @@
   "readme": "# openai/pdf\n\nRead, create, and review PDFs with layout and visual formatting integrity",
   "readmeHtml": "<h1>openai/pdf</h1>\n<p>Read, create, and review PDFs with layout and visual formatting integrity</p>",
   "skillMd": "",
-  "updatedAt": "2026-11-14T23:10:36.831Z",
+  "updatedAt": "2026-11-15T23:32:20.086Z",
   "author": {
     "login": "openai",
     "name": "OpenAI",
@@ -32,13 +32,6 @@
     {
       "slug": "openai-cloudflare-deploy",
       "displayName": "openai/cloudflare-deploy",
-      "stars": 0,
-      "relation": "source_overlap",
-      "evidence": "author:openai"
-    },
-    {
-      "slug": "openai-develop-web-game",
-      "displayName": "openai/develop-web-game",
       "stars": 0,
       "relation": "source_overlap",
       "evidence": "author:openai"
@@ -74,6 +67,13 @@
     {
       "slug": "openai-jupyter-notebook",
       "displayName": "openai/jupyter-notebook",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:openai"
+    },
+    {
+      "slug": "openai-linear",
+      "displayName": "openai/linear",
       "stars": 0,
       "relation": "source_overlap",
       "evidence": "author:openai"

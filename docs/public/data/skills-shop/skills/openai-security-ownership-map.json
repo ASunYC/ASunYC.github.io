@@ -12,7 +12,7 @@
   "readme": "# openai/security-ownership-map\n\nMap people-to-file ownership, compute bus factor, and identify risks",
   "readmeHtml": "<h1>openai/security-ownership-map</h1>\n<p>Map people-to-file ownership, compute bus factor, and identify risks</p>",
   "skillMd": "",
-  "updatedAt": "2026-11-14T23:10:36.831Z",
+  "updatedAt": "2026-11-15T23:32:20.086Z",
   "author": {
     "login": "openai",
     "name": "OpenAI",
@@ -25,13 +25,6 @@
     {
       "slug": "openai-cloudflare-deploy",
       "displayName": "openai/cloudflare-deploy",
-      "stars": 0,
-      "relation": "source_overlap",
-      "evidence": "author:openai"
-    },
-    {
-      "slug": "openai-develop-web-game",
-      "displayName": "openai/develop-web-game",
       "stars": 0,
       "relation": "source_overlap",
       "evidence": "author:openai"
@@ -74,6 +67,13 @@
     {
       "slug": "openai-linear",
       "displayName": "openai/linear",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:openai"
+    },
+    {
+      "slug": "openai-netlify-deploy",
+      "displayName": "openai/netlify-deploy",
       "stars": 0,
       "relation": "source_overlap",
       "evidence": "author:openai"

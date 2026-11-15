@@ -12,7 +12,7 @@
   "readme": "# openai/jupyter-notebook\n\nCreate clean, reproducible Jupyter notebooks for experiments and tutorials",
   "readmeHtml": "<h1>openai/jupyter-notebook</h1>\n<p>Create clean, reproducible Jupyter notebooks for experiments and tutorials</p>",
   "skillMd": "",
-  "updatedAt": "2026-11-14T23:10:36.830Z",
+  "updatedAt": "2026-11-15T23:32:20.086Z",
   "author": {
     "login": "openai",
     "name": "OpenAI",
@@ -25,13 +25,6 @@
     {
       "slug": "openai-cloudflare-deploy",
       "displayName": "openai/cloudflare-deploy",
-      "stars": 0,
-      "relation": "source_overlap",
-      "evidence": "author:openai"
-    },
-    {
-      "slug": "openai-develop-web-game",
-      "displayName": "openai/develop-web-game",
       "stars": 0,
       "relation": "source_overlap",
       "evidence": "author:openai"
@@ -74,6 +67,13 @@
     {
       "slug": "openai-netlify-deploy",
       "displayName": "openai/netlify-deploy",
+      "stars": 0,
+      "relation": "source_overlap",
+      "evidence": "author:openai"
+    },
+    {
+      "slug": "openai-notion-knowledge-capture",
+      "displayName": "openai/notion-knowledge-capture",
       "stars": 0,
       "relation": "source_overlap",
       "evidence": "author:openai"

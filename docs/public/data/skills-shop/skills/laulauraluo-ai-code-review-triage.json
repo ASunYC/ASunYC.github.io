@@ -1,0 +1,89 @@
+{
+  "id": "skill:laulauraluo-ai-code-review-triage",
+  "slug": "laulauraluo-ai-code-review-triage",
+  "name": "ai-code-review-triage",
+  "displayName": "laulauraluo/ai-code-review-triage",
+  "description": "Three-pass review workflow for AI-generated pull requests",
+  "stars": 86,
+  "category": "Community Skills",
+  "source": "voltagent",
+  "url": "https://github.com/laulauraluo/ai-code-review-triage",
+  "githubRepo": "laulauraluo/ai-code-review-triage",
+  "readme": "<div align=\"center\">\n\n# AI Code Review Triage\n\n**AI writes code faster than you can read it. Stop reading harder and review differently.**\n\n**English** · [简体中文](README.zh-CN.md)\n\n<img src=\"assets/social-preview.png\" alt=\"AI Code Review Triage: catch bugs, align context, own the sign-off\" width=\"760\">\n\nA [Claude Code](https://claude.com/claude-code) skill that reviews AI-generated pull requests by splitting \"reading the code\" into three separate jobs.\n\n[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)\n![Claude Code Skill](https://img.shields.io/badge/Claude%20Code-skill-d97757)\n![Version](https://img.shields.io/badge/version-1.0.0-blue)\n\n</div>\n\n---\n\n## The problem\n\nAgent-written PRs pile up faster than anyone can review them line by line. Reading harder doesn't help much either: the code is tidy on the surface, so the real problems hide well enough to survive a careful read. \"Just merge and roll back if it breaks\" works technically, but a human still answers for the incident.\n\n## The idea\n\n\"Reviewing code\" has always bundled three different jobs. That worked when code arrived slowly. At agent speed, each job needs its own process:\n\n```mermaid\nflowchart LR\n    PR([AI-written PR]) --> T{Step 0<br/>Triage<br/>risk tier}\n    T --> B[\"**1 · Catch bugs**<br/>fresh-context sub-agent<br/>+ tests / repro\"]\n    B --> C[\"**2 · Align context**<br/>orders of magnitude<br/>history & neighbors<br/>requirement match\"]\n    C --> S[\"**3 · Own the sign-off**<br/>explain · detect · undo<br/>scoped approval\"]\n    S --> R([Review report])\n```\n\n| Job | Question | Who does it best |\n|---|---|---|\n| **Catch bugs** | Is the code wrong? | Machines, with an *independent* second pass |\n| **Align context** | Is this the right change for this product, today? | A human, checking angles the diff can't show |\n| **Own the sign-off** | Will I put my name on this? | The approver, with an explicit scope |\n\nLow-risk PRs only run Step 1. High-risk PRs (production behavior, data, security, money) run all three.\n\n## What it catches that line-by-line review misses\n\n> A PR changes `SESSION_TIMEOUT = 30` to `30000` and drops one line of unit conversion. Tests pass. The code is clean. A line-by-line reader approves it in 30 seconds.\n>\n> - **Step 1** has a fresh-context sub-agent add a boundary test. Result: sessions now expire after **30 seconds**.\n> - **Step 2** checks history and callers. The same change was reverted once before, the mobile client hard-codes the old value, and the request was only for \"remember me\" users while the diff changes everyone.\n> - **Step 3** blocks the approval. Nobody can explain what the PR actually does.\n>\n> Full run: [examples/session-timeout-walkthrough.md](examples/session-timeout-walkthrough.md)\n\nA second runnable example follows a pagination change from `100` to `1000` rows per request: a capped API returns 100 rows, and the exporter silently stops with 150 of 250 rows missing. See [the pagination walkthrough](examples/pagination-limit-walkthrough.md) for the contract check, reproduction, and recovery scope. Both walkthroughs use invented scenarios.\n\n## Install\n\n**As a plugin** (inside Claude Code):\n\n```\n/plugin marketplace add laulauraluo/ai-code-review-triage\n/plugin install ai-code-review-triage@ai-code-review-triage\n```\n\n**As a standalone skill:**\n\n```bash\ngit clone https://github.com/laulauraluo/ai-code-review-triage.git\ncp -r ai-code-review-triage/skills/ai-code-review-triage ~/.claude/skills/\n```\n\n## Usage\n\nAsk Claude Code something like:\n\n- *\"Review this AI-generated PR before I merge it.\"*\n- *\"Can this diff be merged? Claude wrote it.\"*\n- *\"I'm about to approve #123. What should I verify first?\"*\n\nThe skill triggers on its own and returns a report (illustrative example):\n\n```markdown\n## Extend session lifetime for \"remember me\" · Risk: High\n\n### 1. Bugs (independent fresh-context review)\n- [CONFIRMED] auth/session.py:3 — unit conversion dropped; sessions expire after 30 s. Repro: test_session_expires_after_timeout\n\n### 2. Context\n- Magnitudes: SESSION_TIMEOUT 30 → 30000 (comment says min, code treats as ms) — suspicious\n- History / neighbors: reverted once before (a1b2c3d); mobile/src/config.ts hard-codes 30 min\n- Requirement match: asked for remember-me users only; diff changes everyone\n\n### 3. Sign-off\n- Detection: login-rate and 401-rate alerts · Rollback: config revert\n- Recommendation: request changes\n- Verification scope: verified units and callers; did not load-test\n```\n\n## Review questions and limitations\n\n- [How do I review AI-generated code before merging?](docs/review-ai-generated-code.md#what-should-you-check-in-an-ai-written-pull-request)\n- [Why can passing tests miss incomplete exports?](docs/review-ai-generated-code.md#why-can-tests-pass-while-an-export-silently-loses-data)\n- [Can this review Codex, Copilot, or Cursor output?](docs/review-ai-generated-code.md#can-it-review-code-written-by-codex-copilot-or-cursor)\n- [Does it replace scanners or human review?](docs/review-ai-generated-code.md#does-it-replace-linters-security-scanners-or-human-review)\n\nThe installation targets Claude Code. The workflow can review code from other agents; native integration with those tools is not provided.\n\n## Repository layout\n\n```\n.claude-plugin/\n  plugin.json          # plugin manifest\n  marketplace.json     # lets /plugin marketplace add this repo\nskills/\n  ai-code-review-triage/\n    SKILL.md           # the skill itself\nexamples/\n  session-timeout-walkthrough.md   # timeout units and requirement scope\n  pagination-limit-walkthrough.md # API contract mismatch, runnable repro\n```\n\n## Works well with\n\nThis skill organizes the review and decides what has to be true before you approve. It doesn't replace specialized checkers. Run them inside Step 1:\n\n- correctness-focused review (e.g. Claude Code's built-in `/code-review`)\n- security / performance checklists\n- over-engineering reviews\n\n## Acknowledgments\n\nThe three-job framing was inspired by [a public talk](https://www.bilibili.com/video/BV1mRn66JERc/) on reviewing AI-written code.\n\n## License\n\n[MIT](LICENSE)\n\n---\n\n<div align=\"center\">\n\nIf this caught a bad merge for you, a ⭐ helps other reviewers find it.\n\n</div>\n",
+  "readmeHtml": "<p>&lt;div align=\"center\"&gt;</p>\n<h1>AI Code Review Triage</h1>\n<p><strong>AI writes code faster than you can read it. Stop reading harder and review differently.</strong></p>\n<p><strong>English</strong> · [简体中文](README.zh-CN.md)</p>\n<p>&lt;img src=\"assets/social-preview.png\" alt=\"AI Code Review Triage: catch bugs, align context, own the sign-off\" width=\"760\"&gt;</p>\n<p>A <a href=\"https://claude.com/claude-code\" target=\"_blank\" rel=\"noreferrer\">Claude Code</a> skill that reviews AI-generated pull requests by splitting \"reading the code\" into three separate jobs.</p>\n<p><a href=\"https://img.shields.io/badge/License-MIT-yellow.svg\" target=\"_blank\" rel=\"noreferrer\">![License: MIT</a>](LICENSE)</p>\n<p>!<a href=\"https://img.shields.io/badge/Claude%20Code-skill-d97757\" target=\"_blank\" rel=\"noreferrer\">Claude Code Skill</a></p>\n<p>!<a href=\"https://img.shields.io/badge/version-1.0.0-blue\" target=\"_blank\" rel=\"noreferrer\">Version</a></p>\n<p>&lt;/div&gt;</p>\n<p>---</p>\n<h2>The problem</h2>\n<p>Agent-written PRs pile up faster than anyone can review them line by line. Reading harder doesn't help much either: the code is tidy on the surface, so the real problems hide well enough to survive a careful read. \"Just merge and roll back if it breaks\" works technically, but a human still answers for the incident.</p>\n<h2>The idea</h2>\n<p>\"Reviewing code\" has always bundled three different jobs. That worked when code arrived slowly. At agent speed, each job needs its own process:</p>\n<pre><code>\nflowchart LR\n\n    PR([AI-written PR]) --&gt; T{Step 0&lt;br/&gt;Triage&lt;br/&gt;risk tier}\n\n    T --&gt; B[\"**1 · Catch bugs**&lt;br/&gt;fresh-context sub-agent&lt;br/&gt;+ tests / repro\"]\n\n    B --&gt; C[\"**2 · Align context**&lt;br/&gt;orders of magnitude&lt;br/&gt;history &amp; neighbors&lt;br/&gt;requirement match\"]\n\n    C --&gt; S[\"**3 · Own the sign-off**&lt;br/&gt;explain · detect · undo&lt;br/&gt;scoped approval\"]\n\n    S --&gt; R([Review report])\n\n</code></pre>\n<p>| Job | Question | Who does it best |</p>\n<p>|---|---|---|</p>\n<p>| <strong>Catch bugs</strong> | Is the code wrong? | Machines, with an *independent* second pass |</p>\n<p>| <strong>Align context</strong> | Is this the right change for this product, today? | A human, checking angles the diff can't show |</p>\n<p>| <strong>Own the sign-off</strong> | Will I put my name on this? | The approver, with an explicit scope |</p>\n<p>Low-risk PRs only run Step 1. High-risk PRs (production behavior, data, security, money) run all three.</p>\n<h2>What it catches that line-by-line review misses</h2>\n<p>&gt; A PR changes <code>SESSION_TIMEOUT = 30</code> to <code>30000</code> and drops one line of unit conversion. Tests pass. The code is clean. A line-by-line reader approves it in 30 seconds.</p>\n<p>&gt;</p>\n<p>&gt; - <strong>Step 1</strong> has a fresh-context sub-agent add a boundary test. Result: sessions now expire after <strong>30 seconds</strong>.</p>\n<p>&gt; - <strong>Step 2</strong> checks history and callers. The same change was reverted once before, the mobile client hard-codes the old value, and the request was only for \"remember me\" users while the diff changes everyone.</p>\n<p>&gt; - <strong>Step 3</strong> blocks the approval. Nobody can explain what the PR actually does.</p>\n<p>&gt;</p>\n<p>&gt; Full run: [examples/session-timeout-walkthrough.md](examples/session-timeout-walkthrough.md)</p>\n<p>A second runnable example follows a pagination change from <code>100</code> to <code>1000</code> rows per request: a capped API returns 100 rows, and the exporter silently stops with 150 of 250 rows missing. See [the pagination walkthrough](examples/pagination-limit-walkthrough.md) for the contract check, reproduction, and recovery scope. Both walkthroughs use invented scenarios.</p>\n<h2>Install</h2>\n<p><strong>As a plugin</strong> (inside Claude Code):</p>\n<pre><code>\n/plugin marketplace add laulauraluo/ai-code-review-triage\n\n/plugin install ai-code-review-triage@ai-code-review-triage\n\n</code></pre>\n<p><strong>As a standalone skill:</strong></p>\n<pre><code>\ngit clone https://github.com/laulauraluo/ai-code-review-triage.git\n\ncp -r ai-code-review-triage/skills/ai-code-review-triage ~/.claude/skills/\n\n</code></pre>\n<h2>Usage</h2>\n<p>Ask Claude Code something like:</p>\n<ul>\n<li>*\"Review this AI-generated PR before I merge it.\"*</li>\n<li>*\"Can this diff be merged? Claude wrote it.\"*</li>\n<li>*\"I'm about to approve #123. What should I verify first?\"*</li>\n</ul>\n<p>The skill triggers on its own and returns a report (illustrative example):</p>\n<pre><code>\n## Extend session lifetime for \"remember me\" · Risk: High\n\n\n\n### 1. Bugs (independent fresh-context review)\n\n- [CONFIRMED] auth/session.py:3 — unit conversion dropped; sessions expire after 30 s. Repro: test_session_expires_after_timeout\n\n\n\n### 2. Context\n\n- Magnitudes: SESSION_TIMEOUT 30 → 30000 (comment says min, code treats as ms) — suspicious\n\n- History / neighbors: reverted once before (a1b2c3d); mobile/src/config.ts hard-codes 30 min\n\n- Requirement match: asked for remember-me users only; diff changes everyone\n\n\n\n### 3. Sign-off\n\n- Detection: login-rate and 401-rate alerts · Rollback: config revert\n\n- Recommendation: request changes\n\n- Verification scope: verified units and callers; did not load-test\n\n</code></pre>\n<h2>Review questions and limitations</h2>\n<ul>\n<li>[How do I review AI-generated code before merging?](docs/review-ai-generated-code.md#what-should-you-check-in-an-ai-written-pull-request)</li>\n<li>[Why can passing tests miss incomplete exports?](docs/review-ai-generated-code.md#why-can-tests-pass-while-an-export-silently-loses-data)</li>\n<li>[Can this review Codex, Copilot, or Cursor output?](docs/review-ai-generated-code.md#can-it-review-code-written-by-codex-copilot-or-cursor)</li>\n<li>[Does it replace scanners or human review?](docs/review-ai-generated-code.md#does-it-replace-linters-security-scanners-or-human-review)</li>\n</ul>\n<p>The installation targets Claude Code. The workflow can review code from other agents; native integration with those tools is not provided.</p>\n<h2>Repository layout</h2>\n<pre><code>\n.claude-plugin/\n\n  plugin.json          # plugin manifest\n\n  marketplace.json     # lets /plugin marketplace add this repo\n\nskills/\n\n  ai-code-review-triage/\n\n    SKILL.md           # the skill itself\n\nexamples/\n\n  session-timeout-walkthrough.md   # timeout units and requirement scope\n\n  pagination-limit-walkthrough.md # API contract mismatch, runnable repro\n\n</code></pre>\n<h2>Works well with</h2>\n<p>This skill organizes the review and decides what has to be true before you approve. It doesn't replace specialized checkers. Run them inside Step 1:</p>\n<ul>\n<li>correctness-focused review (e.g. Claude Code's built-in <code>/code-review</code>)</li>\n<li>security / performance checklists</li>\n<li>over-engineering reviews</li>\n</ul>\n<h2>Acknowledgments</h2>\n<p>The three-job framing was inspired by <a href=\"https://www.bilibili.com/video/BV1mRn66JERc/\" target=\"_blank\" rel=\"noreferrer\">a public talk</a> on reviewing AI-written code.</p>\n<h2>License</h2>\n<p>[MIT](LICENSE)</p>\n<p>---</p>\n<p>&lt;div align=\"center\"&gt;</p>\n<p>If this caught a bad merge for you, a ⭐ helps other reviewers find it.</p>\n<p>&lt;/div&gt;</p>",
+  "skillMd": "",
+  "updatedAt": "2026-10-25T02:36:52Z",
+  "author": {
+    "login": "laulauraluo",
+    "name": "llllaulaulau",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/12486304?v=4",
+    "profileUrl": "https://github.com/laulauraluo",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "morluto-rea",
+      "displayName": "morluto/rea",
+      "stars": 461854,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mattpocock-skills",
+      "displayName": "mattpocock/skills",
+      "stars": 325126,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "obra-brainstorming",
+      "displayName": "obra/brainstorming",
+      "stars": 318053,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
+      "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "stars": 149944,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 117356,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "leonxlnx-taste-skill",
+      "displayName": "Leonxlnx/taste-skill",
+      "stars": 116197,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "panniantong-agent-reach",
+      "displayName": "Panniantong/Agent-Reach",
+      "stars": 112056,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "tt-a1i-archify",
+      "displayName": "tt-a1i/archify",
+      "stars": 96781,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-tokyo",
+    "label": "Global Skill Market / Tokyo / Community Skills",
+    "lat": 35.6762,
+    "lon": 139.6503,
+    "source": "virtual_market"
+  }
+}

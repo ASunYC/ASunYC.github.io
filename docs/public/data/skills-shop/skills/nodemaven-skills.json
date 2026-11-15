@@ -1,0 +1,89 @@
+{
+  "id": "skill:nodemaven-skills",
+  "slug": "nodemaven-skills",
+  "name": "skills",
+  "displayName": "nodemaven/skills",
+  "description": "Residential proxies, Google search scraping, proxy benchmarking and troubleshooting",
+  "stars": 14,
+  "category": "Community Skills",
+  "source": "voltagent",
+  "url": "https://github.com/nodemaven/skills",
+  "githubRepo": "nodemaven/skills",
+  "readme": "# NodeMaven skills for Claude Code\n\n[![2 GB free with code GITHUB](https://img.shields.io/badge/%F0%9F%8E%81%202%20GB%20free-code%20GITHUB-1153FC)](https://dashboard.nodemaven.com/accounts/signup/?utm_source=github&utm_medium=readme&utm_campaign=skills&utm_content=promo_badge)\n\nA Claude Code plugin that teaches Claude to work with\n[NodeMaven](https://nodemaven.com) residential proxies and the open-source tools\naround them, plus the read-only NodeMaven MCP server and the SERP Maven search server.\n\n## Install\n\nIn Claude Code 2.1.275 or later:\n\n```\n/plugin install nodemaven --marketplace nodemaven/skills\n```\n\nOn earlier versions:\n\n```\n/plugin marketplace add nodemaven/skills\n/plugin install nodemaven@nodemaven\n```\n\nThe read-only MCP server for the account is a second plugin in the same marketplace:\n`/plugin install nodemaven-mcp@nodemaven`. Claude Code asks for an optional NodeMaven API key\nwhen it is enabled; it is used only by the MCP server and stored as a sensitive value.\n\nLive Google search for the agent is a third plugin, `/plugin install serpmaven@nodemaven`. It\nstarts the [SERP Maven](https://github.com/nodemaven/serpmaven) MCP server and uses the proxy\nlogin saved once with `uvx serpmaven login`; `uvx serpmaven install` downloads its browser.\nBoth need [uv](https://docs.astral.sh/uv/).\n\nAll three plugins work in Cursor too (`.cursor-plugin/`); there the NodeMaven MCP server reads\nthe API key from `NODEMAVEN_APIKEY` in the environment Cursor starts in.\n\n> [!TIP]\n> 🎁 **2 GB of free traffic.** No account yet? [Sign up](https://dashboard.nodemaven.com/accounts/signup/?utm_source=github&utm_medium=readme&utm_campaign=skills&utm_content=signup_promo) and enter the code **GITHUB**. Once per account.\n\n## Skills\n\n| skill | Claude uses it to |\n|---|---|\n| `nodemaven-proxy` | connect code to the gateway: username format, geo-targeting, sticky sessions, rotation, setup for requests, httpx, aiohttp, curl, Node, Playwright, Puppeteer, Selenium, Scrapy |\n| `nodemaven-sdk` | write code with the Python, Rust and Go SDKs: validated proxy URLs, session pools, `check()`, the API client |\n| `nodemaven-account-api` | call the dashboard REST API: traffic, statistics, locations, sub-users, IP whitelist, and the quirks generated clients get wrong |\n| `serpmaven` | scrape Google results to JSON with a real browser (SERP Maven): CLI, Python, local HTTP API, MCP server, Docker |\n| `proxy-benchmark` | measure and compare proxy providers and scraping browsers with the open-source harness |\n| `proxy-troubleshooting` | diagnose 407, 406, 410 and 500 answers, hangs, Playwright and Chrome proxy auth, sticky sessions that move, traffic from idle Chrome |\n\nSkills load on their own when a request matches. They can also be called by\nname, e.g. `/nodemaven:nodemaven-proxy`.\n\n## MCP server\n\nThe NodeMaven MCP server is a separate plugin in this marketplace, `nodemaven-mcp`, so this\none is skills only. It starts [`nodemaven-mcp`](https://github.com/nodemaven/nodemaven-mcp)\n0.2.3 with `uvx nodemaven-mcp==0.2.3`, so [uv](https://docs.astral.sh/uv/) has to be\ninstalled, and asks for the dashboard API key when it is enabled. Its read tools are\n`proxy_url`, `check_proxy`, `test_proxy_on_site`, `list_locations`, `account_status`,\n`traffic_stats`, `top_domains`, `list_sub_users` and `list_whitelist_ips`. Its tools that\nchange sub-users and whitelisted IPs stay off: the plugin does not set\n`NODEMAVEN_MCP_ALLOW_WRITE`. Proxy passwords are kept out of tool results.\n\n## Evals\n\nEach skill has two cases under `plugins/nodemaven/evals/`. From\n`plugins/nodemaven`:\n\n```bash\nclaude plugin eval .\nclaude plugin eval . --case proxy-sid-with-dash --runs 1\n```\n\nResults go to `evals/results/`, which is not committed.\n\n## Related\n\n- [nodemaven-python](https://github.com/nodemaven/nodemaven-python),\n  [nodemaven-rust](https://github.com/nodemaven/nodemaven-rust),\n  [nodemaven-go](https://github.com/nodemaven/nodemaven-go)\n- [nodemaven-mcp](https://github.com/nodemaven/nodemaven-mcp)\n- [SERP Maven](https://github.com/nodemaven/serpmaven)\n- [proxy-benchmark](https://github.com/nodemaven/proxy-benchmark)\n\n## License\n\nMIT\n",
+  "readmeHtml": "<h1>NodeMaven skills for Claude Code</h1>\n<p><a href=\"https://img.shields.io/badge/%F0%9F%8E%81%202%20GB%20free-code%20GITHUB-1153FC\" target=\"_blank\" rel=\"noreferrer\">![2 GB free with code GITHUB</a>](https://dashboard.nodemaven.com/accounts/signup/?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=skills&amp;utm_content=promo_badge)</p>\n<p>A Claude Code plugin that teaches Claude to work with</p>\n<p><a href=\"https://nodemaven.com\" target=\"_blank\" rel=\"noreferrer\">NodeMaven</a> residential proxies and the open-source tools</p>\n<p>around them, plus the read-only NodeMaven MCP server and the SERP Maven search server.</p>\n<h2>Install</h2>\n<p>In Claude Code 2.1.275 or later:</p>\n<pre><code>\n/plugin install nodemaven --marketplace nodemaven/skills\n\n</code></pre>\n<p>On earlier versions:</p>\n<pre><code>\n/plugin marketplace add nodemaven/skills\n\n/plugin install nodemaven@nodemaven\n\n</code></pre>\n<p>The read-only MCP server for the account is a second plugin in the same marketplace:</p>\n<p><code>/plugin install nodemaven-mcp@nodemaven</code>. Claude Code asks for an optional NodeMaven API key</p>\n<p>when it is enabled; it is used only by the MCP server and stored as a sensitive value.</p>\n<p>Live Google search for the agent is a third plugin, <code>/plugin install serpmaven@nodemaven</code>. It</p>\n<p>starts the <a href=\"https://github.com/nodemaven/serpmaven\" target=\"_blank\" rel=\"noreferrer\">SERP Maven</a> MCP server and uses the proxy</p>\n<p>login saved once with <code>uvx serpmaven login</code>; <code>uvx serpmaven install</code> downloads its browser.</p>\n<p>Both need <a href=\"https://docs.astral.sh/uv/\" target=\"_blank\" rel=\"noreferrer\">uv</a>.</p>\n<p>All three plugins work in Cursor too (<code>.cursor-plugin/</code>); there the NodeMaven MCP server reads</p>\n<p>the API key from <code>NODEMAVEN_APIKEY</code> in the environment Cursor starts in.</p>\n<p>&gt; [!TIP]</p>\n<p>&gt; 🎁 <strong>2 GB of free traffic.</strong> No account yet? <a href=\"https://dashboard.nodemaven.com/accounts/signup/?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=skills&amp;utm_content=signup_promo\" target=\"_blank\" rel=\"noreferrer\">Sign up</a> and enter the code <strong>GITHUB</strong>. Once per account.</p>\n<h2>Skills</h2>\n<p>| skill | Claude uses it to |</p>\n<p>|---|---|</p>\n<p>| <code>nodemaven-proxy</code> | connect code to the gateway: username format, geo-targeting, sticky sessions, rotation, setup for requests, httpx, aiohttp, curl, Node, Playwright, Puppeteer, Selenium, Scrapy |</p>\n<p>| <code>nodemaven-sdk</code> | write code with the Python, Rust and Go SDKs: validated proxy URLs, session pools, <code>check()</code>, the API client |</p>\n<p>| <code>nodemaven-account-api</code> | call the dashboard REST API: traffic, statistics, locations, sub-users, IP whitelist, and the quirks generated clients get wrong |</p>\n<p>| <code>serpmaven</code> | scrape Google results to JSON with a real browser (SERP Maven): CLI, Python, local HTTP API, MCP server, Docker |</p>\n<p>| <code>proxy-benchmark</code> | measure and compare proxy providers and scraping browsers with the open-source harness |</p>\n<p>| <code>proxy-troubleshooting</code> | diagnose 407, 406, 410 and 500 answers, hangs, Playwright and Chrome proxy auth, sticky sessions that move, traffic from idle Chrome |</p>\n<p>Skills load on their own when a request matches. They can also be called by</p>\n<p>name, e.g. <code>/nodemaven:nodemaven-proxy</code>.</p>\n<h2>MCP server</h2>\n<p>The NodeMaven MCP server is a separate plugin in this marketplace, <code>nodemaven-mcp</code>, so this</p>\n<p>one is skills only. It starts <a href=\"https://github.com/nodemaven/nodemaven-mcp\" target=\"_blank\" rel=\"noreferrer\"><code>nodemaven-mcp</code></a></p>\n<p>0.2.3 with <code>uvx nodemaven-mcp==0.2.3</code>, so <a href=\"https://docs.astral.sh/uv/\" target=\"_blank\" rel=\"noreferrer\">uv</a> has to be</p>\n<p>installed, and asks for the dashboard API key when it is enabled. Its read tools are</p>\n<p><code>proxy_url</code>, <code>check_proxy</code>, <code>test_proxy_on_site</code>, <code>list_locations</code>, <code>account_status</code>,</p>\n<p><code>traffic_stats</code>, <code>top_domains</code>, <code>list_sub_users</code> and <code>list_whitelist_ips</code>. Its tools that</p>\n<p>change sub-users and whitelisted IPs stay off: the plugin does not set</p>\n<p><code>NODEMAVEN_MCP_ALLOW_WRITE</code>. Proxy passwords are kept out of tool results.</p>\n<h2>Evals</h2>\n<p>Each skill has two cases under <code>plugins/nodemaven/evals/</code>. From</p>\n<p><code>plugins/nodemaven</code>:</p>\n<pre><code>\nclaude plugin eval .\n\nclaude plugin eval . --case proxy-sid-with-dash --runs 1\n\n</code></pre>\n<p>Results go to <code>evals/results/</code>, which is not committed.</p>\n<h2>Related</h2>\n<ul>\n<li><a href=\"https://github.com/nodemaven/nodemaven-python\" target=\"_blank\" rel=\"noreferrer\">nodemaven-python</a>,</li>\n</ul>\n<p>  <a href=\"https://github.com/nodemaven/nodemaven-rust\" target=\"_blank\" rel=\"noreferrer\">nodemaven-rust</a>,</p>\n<p>  <a href=\"https://github.com/nodemaven/nodemaven-go\" target=\"_blank\" rel=\"noreferrer\">nodemaven-go</a></p>\n<ul>\n<li><a href=\"https://github.com/nodemaven/nodemaven-mcp\" target=\"_blank\" rel=\"noreferrer\">nodemaven-mcp</a></li>\n<li><a href=\"https://github.com/nodemaven/serpmaven\" target=\"_blank\" rel=\"noreferrer\">SERP Maven</a></li>\n<li><a href=\"https://github.com/nodemaven/proxy-benchmark\" target=\"_blank\" rel=\"noreferrer\">proxy-benchmark</a></li>\n</ul>\n<h2>License</h2>\n<p>MIT</p>",
+  "skillMd": "",
+  "updatedAt": "2026-11-13T10:46:05Z",
+  "author": {
+    "login": "nodemaven",
+    "name": "Nodemaven",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/129779877?v=4",
+    "profileUrl": "https://github.com/nodemaven",
+    "location": ""
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "morluto-rea",
+      "displayName": "morluto/rea",
+      "stars": 461854,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "mattpocock-skills",
+      "displayName": "mattpocock/skills",
+      "stars": 325126,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "obra-brainstorming",
+      "displayName": "obra/brainstorming",
+      "stars": 318053,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
+      "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "stars": 149944,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "thedotmack-claude-mem",
+      "displayName": "thedotmack/claude-mem",
+      "stars": 117356,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "leonxlnx-taste-skill",
+      "displayName": "Leonxlnx/taste-skill",
+      "stars": 116197,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "panniantong-agent-reach",
+      "displayName": "Panniantong/Agent-Reach",
+      "stars": 112056,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    },
+    {
+      "slug": "tt-a1i-archify",
+      "displayName": "tt-a1i/archify",
+      "stars": 96781,
+      "relation": "shared_tag",
+      "evidence": "Community Skills"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-toronto",
+    "label": "Global Skill Market / Toronto / Community Skills",
+    "lat": 43.6532,
+    "lon": -79.3832,
+    "source": "virtual_market"
+  }
+}
