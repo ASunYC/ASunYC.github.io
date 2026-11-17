@@ -12,7 +12,7 @@
   "readme": "# clickhouse/clickhousectl-cloud-deploy\n\nDeploy to ClickHouse Cloud and migrate from local setups with clickhousectl",
   "readmeHtml": "<h1>clickhouse/clickhousectl-cloud-deploy</h1>\n<p>Deploy to ClickHouse Cloud and migrate from local setups with clickhousectl</p>",
   "skillMd": "",
-  "updatedAt": "2026-11-15T23:32:20.029Z",
+  "updatedAt": "2026-11-17T02:35:30.653Z",
   "author": {
     "login": "ClickHouse",
     "name": "ClickHouse",
@@ -73,14 +73,14 @@
     {
       "slug": "cloudflare-security-audit-skill",
       "displayName": "cloudflare/security-audit-skill",
-      "stars": 73192,
+      "stars": 73990,
       "relation": "shared_tag",
       "evidence": "Official Skills by"
     },
     {
       "slug": "vercel-labs-composition-patterns",
       "displayName": "vercel-labs/composition-patterns",
-      "stars": 34123,
+      "stars": 34209,
       "relation": "shared_tag",
       "evidence": "Official Skills by"
     }

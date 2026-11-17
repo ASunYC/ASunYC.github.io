@@ -3,16 +3,16 @@
   "slug": "replicate-replicate",
   "name": "replicate",
   "displayName": "replicate/replicate",
-  "description": "Discover, compare, and run AI models using Replicate's API",
+  "description": "Discover and run AI models via API",
   "stars": 0,
-  "category": "Official Skills by",
-  "source": "voltagent",
-  "url": "https://officialskills.sh/replicate/skills/replicate",
-  "githubRepo": "",
-  "readme": "# replicate/replicate\n\nDiscover, compare, and run AI models using Replicate's API",
-  "readmeHtml": "<h1>replicate/replicate</h1>\n<p>Discover, compare, and run AI models using Replicate's API</p>",
+  "category": "Skills by Replicate",
+  "source": "heilcheng",
+  "url": "https://github.com/replicate/skills",
+  "githubRepo": "replicate/skills",
+  "readme": "# replicate/replicate\n\nDiscover and run AI models via API",
+  "readmeHtml": "<h1>replicate/replicate</h1>\n<p>Discover and run AI models via API</p>",
   "skillMd": "",
-  "updatedAt": "2026-11-15T23:32:20.029Z",
+  "updatedAt": "2026-11-17T02:35:30.708Z",
   "author": {
     "login": "replicate",
     "name": "Replicate",
@@ -21,69 +21,12 @@
     "location": ""
   },
   "location": null,
-  "related": [
-    {
-      "slug": "anthropics-docx",
-      "displayName": "anthropics/docx",
-      "stars": 0,
-      "relation": "shared_tag",
-      "evidence": "Official Skills by"
-    },
-    {
-      "slug": "cloudflare-security-audit-skill",
-      "displayName": "cloudflare/security-audit-skill",
-      "stars": 73192,
-      "relation": "shared_tag",
-      "evidence": "Official Skills by"
-    },
-    {
-      "slug": "vercel-labs-composition-patterns",
-      "displayName": "vercel-labs/composition-patterns",
-      "stars": 34123,
-      "relation": "shared_tag",
-      "evidence": "Official Skills by"
-    },
-    {
-      "slug": "googleworkspace-gws-drive",
-      "displayName": "googleworkspace/gws-drive",
-      "stars": 0,
-      "relation": "shared_tag",
-      "evidence": "Official Skills by"
-    },
-    {
-      "slug": "huggingface-hf-cli",
-      "displayName": "huggingface/hf-cli",
-      "stars": 0,
-      "relation": "shared_tag",
-      "evidence": "Official Skills by"
-    },
-    {
-      "slug": "google-labs-code-design-md",
-      "displayName": "google-labs-code/design-md",
-      "stars": 0,
-      "relation": "shared_tag",
-      "evidence": "Official Skills by"
-    },
-    {
-      "slug": "trailofbits-audit-context-building",
-      "displayName": "trailofbits/audit-context-building",
-      "stars": 0,
-      "relation": "shared_tag",
-      "evidence": "Official Skills by"
-    },
-    {
-      "slug": "remotion-dev-remotion",
-      "displayName": "remotion-dev/remotion",
-      "stars": 0,
-      "relation": "shared_tag",
-      "evidence": "Official Skills by"
-    }
-  ],
+  "related": [],
   "mapLocation": {
-    "id": "virtual-berlin",
-    "label": "Global Skill Market / Berlin / Official Skills by",
-    "lat": 52.52,
-    "lon": 13.405,
+    "id": "virtual-singapore",
+    "label": "Global Skill Market / Singapore / Skills by Replicate",
+    "lat": 1.3521,
+    "lon": 103.8198,
     "source": "virtual_market"
   }
 }
