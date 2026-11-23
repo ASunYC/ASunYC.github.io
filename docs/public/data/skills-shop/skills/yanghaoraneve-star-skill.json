@@ -4,7 +4,7 @@
   "name": "star-skill",
   "displayName": "yanghaoraneve/star-skill",
   "description": "Extracts singers or idols' expression styles and interaction methods from lyrics, videos, Weibo, and comments into a dialogue-capable digital persona skill.",
-  "stars": 8,
+  "stars": 9,
   "category": "EverythingSkill / Celebrity",
   "source": "everythingskill",
   "url": "https://github.com/yanghaoraneve/star-skill",
@@ -32,14 +32,14 @@
     {
       "slug": "alchaincyf-steve-jobs-skill",
       "displayName": "alchaincyf/steve-jobs-skill",
-      "stars": 983,
+      "stars": 985,
       "relation": "shared_tag",
       "evidence": "EverythingSkill / Celebrity"
     },
     {
       "slug": "alchaincyf-elon-musk-skill",
       "displayName": "alchaincyf/elon-musk-skill",
-      "stars": 581,
+      "stars": 583,
       "relation": "shared_tag",
       "evidence": "EverythingSkill / Celebrity"
     },
