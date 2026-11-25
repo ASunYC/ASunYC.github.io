@@ -1,0 +1,89 @@
+{
+  "id": "skill:0xs4n4tg-kinetograph",
+  "slug": "0xs4n4tg-kinetograph",
+  "name": "kinetograph",
+  "displayName": "0xs4n4tg/kinetograph",
+  "description": "Write, check and render Remotion-style TypeScript videos without a browser",
+  "stars": 545,
+  "category": "Skills by Binance",
+  "source": "heilcheng",
+  "url": "https://github.com/0xS4N4TG/kinetograph/tree/main/packages/cli/skills/kinetograph",
+  "githubRepo": "0xS4N4TG/kinetograph",
+  "readme": "<p align=\"center\">\n  <img src=\"docs/readme/hero.webp\" alt=\"Shots from the Kinetograph launch film: an 1891 Edison film with tracked captions, a film camera, printing receipts, 3D, isometric, shader, canvas and glass shots, then the kinetograph. wordmark\" width=\"100%\">\n</p>\n\n<h1 align=\"center\">kinetograph.</h1>\n\n<p align=\"center\"><b>A blazingly fast programmatic video engine, made for agents.</b></p>\n\n<p align=\"center\">\n  <a href=\"https://github.com/0xS4N4TG/kinetograph/stargazers\"><img src=\"https://img.shields.io/github/stars/0xS4N4TG/kinetograph?style=flat&logo=github\" alt=\"GitHub stars\"></a>\n  <a href=\"https://www.npmjs.com/package/kinetograph\"><img src=\"https://img.shields.io/npm/v/kinetograph?style=flat&logo=npm\" alt=\"npm version\"></a>\n  <a href=\"https://www.npmjs.com/package/kinetograph\"><img src=\"https://img.shields.io/npm/dm/kinetograph?style=flat\" alt=\"npm downloads\"></a>\n  <a href=\"https://github.com/0xS4N4TG/kinetograph/actions/workflows/native.yml\"><img src=\"https://github.com/0xS4N4TG/kinetograph/actions/workflows/native.yml/badge.svg\" alt=\"Build\"></a>\n  <a href=\"https://kinetograph.dev/docs/\"><img src=\"https://img.shields.io/badge/docs-kinetograph.dev-black?style=flat\" alt=\"Docs\"></a>\n</p>\n\nKinetograph makes videos from code, without a browser. You (or an agent) write a video in TypeScript with Remotion's\nAPI, or as a plain HTML page. Node runs the code, and a Rust GPU compositor draws every frame: CSS, SVG, Canvas 2D,\nWebGL shaders, 3D and Web Audio. Existing Remotion projects render as they are, and so do\n[HyperFrames](https://github.com/heygen-com/hyperframes) projects. The film above is one TypeScript project in\n[`examples/launch`](examples/launch).\n\nKinetograph is in beta (version 0.3.0). APIs can still change between versions.\n\n## Install\n\nYou need Node.js 22 or newer. The prebuilt package covers macOS on Apple Silicon, Linux x64 and Windows x64, and\ninstalls in about a minute with nothing else to set up:\n\n```sh\nnpm install kinetograph\nnpx kinetograph doctor\nnpx kinetograph skills update   # agent skills for Claude Code, Codex and Cursor, user-wide\n```\n\nBuilding from source is only for working on the engine, or for a platform with no prebuilt package. It needs Rust and\nthe FFmpeg libraries and takes 15 to 30 minutes: see\n[Installation: From source](https://kinetograph.dev/docs/getting-started/installation/#from-source).\n\n### Install with a coding agent\n\nPaste this into Claude Code, Codex or another coding agent:\n\n```text\nSet up Kinetograph (https://github.com/0xS4N4TG/kinetograph) for me by following its AGENTS.md:\nhttps://github.com/0xS4N4TG/kinetograph/blob/main/AGENTS.md\nAsk me first whether I want the prebuilt package (recommended) or a build from source,\nand ask before installing anything system-wide or installing the Kinetograph agent skills.\n```\n\n## Make a video\n\nStart a project in an empty folder:\n\n```sh\nnpx kinetograph init          # TSX, Remotion-style\nnpx kinetograph init --html   # or an HTML / HyperFrames page\nnpm install\n```\n\n`init` makes `src/` for code (or `html/` for a page), `public/` for images, fonts, audio and video, and `out/` for\neverything Kinetograph writes. It also writes a starter title card. Render it:\n\n```sh\nnpx kinetograph render src/index.tsx      # writes out/renders/Main.mp4\nnpx kinetograph render html/index.html    # for an HTML project\n```\n\n## How it works\n\n<picture>\n  <source media=\"(prefers-color-scheme: dark)\" srcset=\"docs/readme/engine-dark.svg\">\n  <img src=\"docs/readme/engine-light.svg\" alt=\"Diagram of how Kinetograph makes a frame: a Remotion project or HyperFrames page is bundled, run in Node as layers and DOM islands, laid out and painted in the Rust addon, composited on the GPU and encoded to MP4, with Web Audio rendered offline as a side input\" width=\"100%\">\n</picture>\n\nNode runs your project and a Rust addon draws each frame on the GPU. The [Engine](https://kinetograph.dev/docs/internals/engine/) page walks through the six steps.\n\n## Docs\n\nEverything else is on the docs site, [kinetograph.dev/docs](https://kinetograph.dev/docs/):\n\n- [Installation](https://kinetograph.dev/docs/getting-started/installation/) and [First video](https://kinetograph.dev/docs/getting-started/first-video/)\n- [Authoring](https://kinetograph.dev/docs/guides/authoring/) and [Remotion compatibility](https://kinetograph.dev/docs/compat/)\n- [Studio](https://kinetograph.dev/docs/guides/studio/), the local editor\n- [Use with agents](https://kinetograph.dev/docs/guides/agents/)\n- [Engine](https://kinetograph.dev/docs/internals/engine/) and [What works](https://kinetograph.dev/docs/compat/)\n- [Changelog](CHANGELOG.md) and [Contributing](https://kinetograph.dev/docs/contributing/)\n\n<details>\n<summary>Credits for the film's footage</summary>\n\n- \"Blacksmith Scene\" (Edison, 1893) and \"Fred Ott's Sneeze\" (Edison, 1894), public domain.\n- \"Armistice Day Parade, Columbus, Ohio, 1927\", US National Archives\n  ([archive.org/details/111-h-1555](https://archive.org/details/111-h-1555)), a US government work.\n- SMPTE Universal Leader, public domain.\n- The handwritten \"FILM\" and the 16mm film burn are from licensed overlay packs (\"Text Animation Overlays\" and\n  \"Custom Transitions: Film Burns\"); they are not in the repo.\n\n</details>\n\n## License\n\nKinetograph is open source under the [Apache License 2.0](LICENSE.md), free for any use, including commercial. Vendored\ncrates keep their own licences ([vendor/README.md](vendor/README.md)).\n",
+  "readmeHtml": "<p>&lt;p align=\"center\"&gt;</p>\n<p>  &lt;img src=\"docs/readme/hero.webp\" alt=\"Shots from the Kinetograph launch film: an 1891 Edison film with tracked captions, a film camera, printing receipts, 3D, isometric, shader, canvas and glass shots, then the kinetograph. wordmark\" width=\"100%\"&gt;</p>\n<p>&lt;/p&gt;</p>\n<p>&lt;h1 align=\"center\"&gt;kinetograph.&lt;/h1&gt;</p>\n<p>&lt;p align=\"center\"&gt;&lt;b&gt;A blazingly fast programmatic video engine, made for agents.&lt;/b&gt;&lt;/p&gt;</p>\n<p>&lt;p align=\"center\"&gt;</p>\n<p>  &lt;a href=\"https://github.com/0xS4N4TG/kinetograph/stargazers\"&gt;&lt;img src=\"https://img.shields.io/github/stars/0xS4N4TG/kinetograph?style=flat&amp;logo=github\" alt=\"GitHub stars\"&gt;&lt;/a&gt;</p>\n<p>  &lt;a href=\"https://www.npmjs.com/package/kinetograph\"&gt;&lt;img src=\"https://img.shields.io/npm/v/kinetograph?style=flat&amp;logo=npm\" alt=\"npm version\"&gt;&lt;/a&gt;</p>\n<p>  &lt;a href=\"https://www.npmjs.com/package/kinetograph\"&gt;&lt;img src=\"https://img.shields.io/npm/dm/kinetograph?style=flat\" alt=\"npm downloads\"&gt;&lt;/a&gt;</p>\n<p>  &lt;a href=\"https://github.com/0xS4N4TG/kinetograph/actions/workflows/native.yml\"&gt;&lt;img src=\"https://github.com/0xS4N4TG/kinetograph/actions/workflows/native.yml/badge.svg\" alt=\"Build\"&gt;&lt;/a&gt;</p>\n<p>  &lt;a href=\"https://kinetograph.dev/docs/\"&gt;&lt;img src=\"https://img.shields.io/badge/docs-kinetograph.dev-black?style=flat\" alt=\"Docs\"&gt;&lt;/a&gt;</p>\n<p>&lt;/p&gt;</p>\n<p>Kinetograph makes videos from code, without a browser. You (or an agent) write a video in TypeScript with Remotion's</p>\n<p>API, or as a plain HTML page. Node runs the code, and a Rust GPU compositor draws every frame: CSS, SVG, Canvas 2D,</p>\n<p>WebGL shaders, 3D and Web Audio. Existing Remotion projects render as they are, and so do</p>\n<p><a href=\"https://github.com/heygen-com/hyperframes\" target=\"_blank\" rel=\"noreferrer\">HyperFrames</a> projects. The film above is one TypeScript project in</p>\n<p>[<code>examples/launch</code>](examples/launch).</p>\n<p>Kinetograph is in beta (version 0.3.0). APIs can still change between versions.</p>\n<h2>Install</h2>\n<p>You need Node.js 22 or newer. The prebuilt package covers macOS on Apple Silicon, Linux x64 and Windows x64, and</p>\n<p>installs in about a minute with nothing else to set up:</p>\n<pre><code>\nnpm install kinetograph\n\nnpx kinetograph doctor\n\nnpx kinetograph skills update   # agent skills for Claude Code, Codex and Cursor, user-wide\n\n</code></pre>\n<p>Building from source is only for working on the engine, or for a platform with no prebuilt package. It needs Rust and</p>\n<p>the FFmpeg libraries and takes 15 to 30 minutes: see</p>\n<p><a href=\"https://kinetograph.dev/docs/getting-started/installation/#from-source\" target=\"_blank\" rel=\"noreferrer\">Installation: From source</a>.</p>\n<h3>Install with a coding agent</h3>\n<p>Paste this into Claude Code, Codex or another coding agent:</p>\n<pre><code>\nSet up Kinetograph (https://github.com/0xS4N4TG/kinetograph) for me by following its AGENTS.md:\n\nhttps://github.com/0xS4N4TG/kinetograph/blob/main/AGENTS.md\n\nAsk me first whether I want the prebuilt package (recommended) or a build from source,\n\nand ask before installing anything system-wide or installing the Kinetograph agent skills.\n\n</code></pre>\n<h2>Make a video</h2>\n<p>Start a project in an empty folder:</p>\n<pre><code>\nnpx kinetograph init          # TSX, Remotion-style\n\nnpx kinetograph init --html   # or an HTML / HyperFrames page\n\nnpm install\n\n</code></pre>\n<p><code>init</code> makes <code>src/</code> for code (or <code>html/</code> for a page), <code>public/</code> for images, fonts, audio and video, and <code>out/</code> for</p>\n<p>everything Kinetograph writes. It also writes a starter title card. Render it:</p>\n<pre><code>\nnpx kinetograph render src/index.tsx      # writes out/renders/Main.mp4\n\nnpx kinetograph render html/index.html    # for an HTML project\n\n</code></pre>\n<h2>How it works</h2>\n<p>&lt;picture&gt;</p>\n<p>  &lt;source media=\"(prefers-color-scheme: dark)\" srcset=\"docs/readme/engine-dark.svg\"&gt;</p>\n<p>  &lt;img src=\"docs/readme/engine-light.svg\" alt=\"Diagram of how Kinetograph makes a frame: a Remotion project or HyperFrames page is bundled, run in Node as layers and DOM islands, laid out and painted in the Rust addon, composited on the GPU and encoded to MP4, with Web Audio rendered offline as a side input\" width=\"100%\"&gt;</p>\n<p>&lt;/picture&gt;</p>\n<p>Node runs your project and a Rust addon draws each frame on the GPU. The <a href=\"https://kinetograph.dev/docs/internals/engine/\" target=\"_blank\" rel=\"noreferrer\">Engine</a> page walks through the six steps.</p>\n<h2>Docs</h2>\n<p>Everything else is on the docs site, <a href=\"https://kinetograph.dev/docs/\" target=\"_blank\" rel=\"noreferrer\">kinetograph.dev/docs</a>:</p>\n<ul>\n<li><a href=\"https://kinetograph.dev/docs/getting-started/installation/\" target=\"_blank\" rel=\"noreferrer\">Installation</a> and <a href=\"https://kinetograph.dev/docs/getting-started/first-video/\" target=\"_blank\" rel=\"noreferrer\">First video</a></li>\n<li><a href=\"https://kinetograph.dev/docs/guides/authoring/\" target=\"_blank\" rel=\"noreferrer\">Authoring</a> and <a href=\"https://kinetograph.dev/docs/compat/\" target=\"_blank\" rel=\"noreferrer\">Remotion compatibility</a></li>\n<li><a href=\"https://kinetograph.dev/docs/guides/studio/\" target=\"_blank\" rel=\"noreferrer\">Studio</a>, the local editor</li>\n<li><a href=\"https://kinetograph.dev/docs/guides/agents/\" target=\"_blank\" rel=\"noreferrer\">Use with agents</a></li>\n<li><a href=\"https://kinetograph.dev/docs/internals/engine/\" target=\"_blank\" rel=\"noreferrer\">Engine</a> and <a href=\"https://kinetograph.dev/docs/compat/\" target=\"_blank\" rel=\"noreferrer\">What works</a></li>\n<li>[Changelog](CHANGELOG.md) and <a href=\"https://kinetograph.dev/docs/contributing/\" target=\"_blank\" rel=\"noreferrer\">Contributing</a></li>\n</ul>\n<p>&lt;details&gt;</p>\n<p>&lt;summary&gt;Credits for the film's footage&lt;/summary&gt;</p>\n<ul>\n<li>\"Blacksmith Scene\" (Edison, 1893) and \"Fred Ott's Sneeze\" (Edison, 1894), public domain.</li>\n<li>\"Armistice Day Parade, Columbus, Ohio, 1927\", US National Archives</li>\n</ul>\n<p>  (<a href=\"https://archive.org/details/111-h-1555\" target=\"_blank\" rel=\"noreferrer\">archive.org/details/111-h-1555</a>), a US government work.</p>\n<ul>\n<li>SMPTE Universal Leader, public domain.</li>\n<li>The handwritten \"FILM\" and the 16mm film burn are from licensed overlay packs (\"Text Animation Overlays\" and</li>\n</ul>\n<p>  \"Custom Transitions: Film Burns\"); they are not in the repo.</p>\n<p>&lt;/details&gt;</p>\n<h2>License</h2>\n<p>Kinetograph is open source under the [Apache License 2.0](LICENSE.md), free for any use, including commercial. Vendored</p>\n<p>crates keep their own licences ([vendor/README.md](vendor/README.md)).</p>",
+  "skillMd": "---\nname: kinetograph\ndescription: Entry point for making videos and motion graphics with Kinetograph, a video engine with no browser in it. Use first when asked to build, edit, preview or render a video, animation, title card or sound design with Kinetograph, or to run any `kinetograph` command; it says which kinetograph-* skill to load next.\nmetadata:\n  version: \"0.4.0-rc.1\"\n---\n\n# Kinetograph\n\nKinetograph renders video without a browser. You write TypeScript with the Remotion API and a few native elements (or an\nHTML page with GSAP, and HyperFrames projects render as they are); Node runs it; a GPU compositor draws it. You cannot\nwatch a video, so you look at single frames and read the scene graph.\n\nRun everything as `npx kinetograph <command>`. Add `--json` to get one JSON object you can parse; a failure is\n`{ \"error\": { \"code\", \"message\" } }` with exit code 1. Over MCP (`kinetograph mcp`) there is one tool per command except\n`studio`, named like the command (`audio analyze` is `audio_analyze`), with the same arguments; `still`, `strip` and `onion`\nreturn the image itself.\n\n## Which skill\n\nLoad the one that fits the step, and read its SKILL.md before you act. They are installed together.\n\n| When | Skill |\n|---|---|\n| Start a project or a composition, add a component, template or taste | `kinetograph-create` |\n| Write or change a composition: layout, text, media, effects, sound, fonts, timing, plugins, what the engine draws | `kinetograph-markup` |\n| Look at frames, check, export (`still`, `strip`, `onion`, `inspect`, `lint`, `render`, `doctor`) | `kinetograph-render` |\n| The person wants to preview, mark up, tune props or answer a panel in Studio | `kinetograph-studio` |\n| Look something up in the Kinetograph docs | `kinetograph-docs` |\n| Update `kinetograph`, its packages and these skills | `kinetograph-upgrade` |\n| Move an existing Remotion project onto Kinetograph | `kinetograph-migrate` |\n\n## The loop\n\n1. **Create** the project once (`kinetograph-create`).\n2. **Write** the composition (`kinetograph-markup`).\n3. **Look and check**: `strip` first, then `lint` and `inspect` (`kinetograph-render`). Fix and repeat; a still takes well\n   under a second.\n4. **Render** to a file (`kinetograph-render`).\n\nRendering is a pure function of the frame number: nothing reads the clock, and `random(seed)` is Remotion's.\n\n## Out-of-date notices\n\nIf a Kinetograph command prints that the CLI or the skills are out of date (a line on stderr, a `notices` field in\n`--json`, or an extra text part on the first MCP tool result), tell the user and ask whether to update. Don't update\nwithout a yes; then use `kinetograph-upgrade`.\n",
+  "updatedAt": "2026-11-23T15:18:39Z",
+  "author": {
+    "login": "0xS4N4TG",
+    "name": "sanat",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/62789975?v=4",
+    "profileUrl": "https://github.com/0xS4N4TG",
+    "location": "root"
+  },
+  "location": null,
+  "related": [
+    {
+      "slug": "kkkkhazix-aihot",
+      "displayName": "kkkkhazix/aihot",
+      "stars": 22522,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "deanchensj-jiangshan-atlas",
+      "displayName": "deanchensj/jiangshan-atlas",
+      "stars": 9141,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "sawyerhood-dev-browser",
+      "displayName": "sawyerhood/dev-browser",
+      "stars": 6753,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "onehumanbeing-handsy",
+      "displayName": "onehumanbeing/handsy",
+      "stars": 5320,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "ajnart-self-host",
+      "displayName": "ajnart/self-host",
+      "stars": 1602,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "alexgaoth-find-reverse-engineered",
+      "displayName": "alexgaoth/find-reverse-engineered",
+      "stars": 1555,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "roundtable02-tutor-skills",
+      "displayName": "roundtable02/tutor-skills",
+      "stars": 1420,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    },
+    {
+      "slug": "chubbyguan-chubbyskills",
+      "displayName": "chubbyguan/chubbyskills",
+      "stars": 1347,
+      "relation": "shared_tag",
+      "evidence": "Skills by Binance"
+    }
+  ],
+  "mapLocation": {
+    "id": "virtual-berlin",
+    "label": "Global Skill Market / Berlin / Skills by Binance",
+    "lat": 52.52,
+    "lon": 13.405,
+    "source": "virtual_market"
+  }
+}

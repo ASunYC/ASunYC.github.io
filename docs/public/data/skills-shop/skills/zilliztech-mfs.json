@@ -4,7 +4,7 @@
   "name": "mfs",
   "displayName": "zilliztech/mfs",
   "description": "`mfs-find` / `mfs-ingest` skills that search, grep and read across your code, docs, chat (Slack/Gmail/Jira), databases and object stores as one file-like, searchable namespace; self-hosted with local ONNX embeddings",
-  "stars": 159,
+  "stars": 160,
   "category": "Community Skills",
   "source": "voltagent",
   "url": "https://github.com/zilliztech/mfs",
@@ -31,56 +31,56 @@
     {
       "slug": "zilliztech-milvus-skill",
       "displayName": "zilliztech/milvus-skill",
-      "stars": 48,
+      "stars": 49,
       "relation": "source_overlap",
       "evidence": "author:zilliztech"
     },
     {
       "slug": "morluto-rea",
       "displayName": "morluto/rea",
-      "stars": 475797,
+      "stars": 477229,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "mattpocock-skills",
       "displayName": "mattpocock/skills",
-      "stars": 331511,
+      "stars": 332238,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "obra-brainstorming",
       "displayName": "obra/brainstorming",
-      "stars": 325203,
+      "stars": 325879,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
       "displayName": "nextlevelbuilder/ui-ux-pro-max-skill",
-      "stars": 153360,
+      "stars": 153789,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "leonxlnx-taste-skill",
       "displayName": "Leonxlnx/taste-skill",
-      "stars": 120734,
+      "stars": 121152,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "thedotmack-claude-mem",
       "displayName": "thedotmack/claude-mem",
-      "stars": 119355,
+      "stars": 119575,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     },
     {
       "slug": "panniantong-agent-reach",
       "displayName": "Panniantong/Agent-Reach",
-      "stars": 114297,
+      "stars": 114536,
       "relation": "shared_tag",
       "evidence": "Community Skills"
     }
