@@ -4,7 +4,7 @@
   "name": "firecrawl-alexandria",
   "displayName": "firecrawl/firecrawl-alexandria",
   "description": "Find and run Firecrawl Alexandria tools for structured data",
-  "stars": 699,
+  "stars": 700,
   "category": "Official Skills by",
   "source": "voltagent",
   "url": "https://github.com/firecrawl/cli/tree/main/skills/firecrawl-alexandria",
@@ -38,7 +38,7 @@
     {
       "slug": "firecrawl-firecrawl",
       "displayName": "firecrawl/firecrawl",
-      "stars": 175,
+      "stars": 176,
       "relation": "source_overlap",
       "evidence": "author:firecrawl"
     },
