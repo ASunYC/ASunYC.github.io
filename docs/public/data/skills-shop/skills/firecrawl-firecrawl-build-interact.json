@@ -12,7 +12,7 @@
   "readme": "# firecrawl/firecrawl-build-interact\n\nMulti-step Firecrawl browser flows: clicks, form fills, pagination, and auth-aware navigation",
   "readmeHtml": "<h1>firecrawl/firecrawl-build-interact</h1>\n<p>Multi-step Firecrawl browser flows: clicks, form fills, pagination, and auth-aware navigation</p>",
   "skillMd": "",
-  "updatedAt": "2026-11-27T02:29:35.036Z",
+  "updatedAt": "2026-11-28T02:11:03.709Z",
   "author": {
     "login": "firecrawl",
     "name": "Firecrawl",
@@ -31,14 +31,14 @@
     {
       "slug": "firecrawl-firecrawl-alexandria",
       "displayName": "firecrawl/firecrawl-alexandria",
-      "stars": 700,
+      "stars": 703,
       "relation": "source_overlap",
       "evidence": "author:firecrawl"
     },
     {
       "slug": "firecrawl-firecrawl",
       "displayName": "firecrawl/firecrawl",
-      "stars": 176,
+      "stars": 179,
       "relation": "source_overlap",
       "evidence": "author:firecrawl"
     },
@@ -80,7 +80,7 @@
     {
       "slug": "cloudflare-security-audit-skill",
       "displayName": "cloudflare/security-audit-skill",
-      "stars": 78879,
+      "stars": 79283,
       "relation": "shared_tag",
       "evidence": "Official Skills by"
     }
